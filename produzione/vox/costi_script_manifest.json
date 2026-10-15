@@ -1,1 +1,85 @@
-{"topic": "I costi nascosti che il backtest non ti mostra", "genre": "education", "animation_mode": "fully_animated", "channel_type": "Explainer", "style": "Editorial Motion Graphics", "through_line": {"name": "la pila di monete viola", "asset": "coin_stack", "progression": "alta e intatta, poi rosicchiata pezzo dopo pezzo dai costi, più bassa a ogni operazione", "resolution": "protetta sotto una campana di vetro con le etichette dei costi appuntate accanto: i costi ora sono visti e messi in conto"}, "arc": {"hook": 1, "build": [], "turn": 2, "payoff": 3}, "blocks": [{"n": 1, "arc_role": "hook", "vo_line": "Duemilaquattrocento dollari di costi in cinque mesi. Il mio backtest non ne mostrava uno, ma il conto della challenge li ha pagati tutti.", "location": "disc_stage", "through_line_state": "pila alta che perde le prime monete", "shots": ["MEDIUM straight-on: the tall coin stack drops onto the stage with a bounce in front of the big disc, then the halftone trader cutout slides in beside it, staggered", "ECU top-down: one coin lifts off the top of the stack and flies out of frame, a marker arrow draws itself pointing at the gap", "WIDE low angle: a pinned backtest card with a rising unlabeled line tapes down next to the trader, smooth and perfect", "CU lateral: the giant hand enters and plucks two more coins off the stack, the stack visibly shorter", "MEDIUM high angle: the trader cutout stares deadpan at the shorter stack as a marker circle stamps around it and settles"], "assets_used": ["disc_stage", "trader_c", "coin_stack", "giant_hand"]}, {"n": 2, "arc_role": "turn", "vo_line": "Il bot con più operazioni sembrava il migliore, eppure ogni trade pagava spread e commissioni, quindi era proprio il più costoso.", "location": "notebook_grid", "through_line_state": "pila a meta, rosicchiata a ogni operazione", "shots": ["WIDE straight-on: on the grid notebook stage a dot-matrix bar chart grows dot by dot, the tallest bar flips to the accent color", "MEDIUM lateral: the trader cutout points at the tallest bar while tiny trade arrow cutouts snap in one after another, staggered", "ECU macro: each arrow that lands nibbles one coin off the half-height stack, coins pop away in rhythm", "CU low angle: a redaction bar stamps down across the tallest bar of the chart with an impact", "MEDIUM high angle: the stack now half height, the trader cutout crosses arms beside it, the frame settles with a slow push-in"], "assets_used": ["notebook_grid", "trader_c", "coin_stack"]}, {"n": 3, "arc_role": "payoff", "vo_line": "Ora testo ogni bot con spread, commissioni e swap reali del mio broker, e quei duemilaquattrocento dollari smettono di essere una sorpresa.", "location": "evidence_board", "through_line_state": "pila protetta sotto una campana di vetro, costi appuntati sulla bacheca", "shots": ["MEDIUM straight-on: on the dark evidence board three blank cost cards pin down one after another, staggered, connected by marker strokes", "CU top-down: the giant hand lowers a glass dome over the remaining coin stack and it snaps shut", "ECU lateral: a marker circle draws itself around the protected stack, a check symbol stamps beside it", "WIDE low angle: the trader cutout steps in front of the board and nods once, deadpan", "MEDIUM high angle: the whole arrangement settles, cards, strings and the domed stack, gentle drift"], "assets_used": ["evidence_board", "trader_c", "coin_stack", "giant_hand"]}], "sources": ["https://www.investopedia.com/terms/s/slippage.asp", "https://www.investopedia.com/terms/s/spread.asp", "https://www.investopedia.com/terms/r/rollover.asp"]}
+{
+  "topic": "I costi nascosti che il backtest non ti mostra",
+  "genre": "education",
+  "animation_mode": "fully_animated",
+  "channel_type": "Explainer",
+  "style": "Editorial Motion Graphics",
+  "through_line": {
+    "name": "la pila di monete viola",
+    "asset": "coin_stack",
+    "progression": "alta e intatta, poi rosicchiata pezzo dopo pezzo dai costi, più bassa a ogni operazione",
+    "resolution": "protetta sotto una campana di vetro con le etichette dei costi appuntate accanto: i costi ora sono visti e messi in conto"
+  },
+  "arc": {
+    "hook": 1,
+    "build": [],
+    "turn": 2,
+    "payoff": 3
+  },
+  "blocks": [
+    {
+      "n": 1,
+      "arc_role": "hook",
+      "vo_line": "Duemilaquattrocento dollari di costi in cinque mesi. Il mio backtest non ne mostrava uno, ma il conto della challenge li ha pagati tutti.",
+      "location": "disc_stage",
+      "through_line_state": "pila alta che perde le prime monete",
+      "shots": [
+        "MEDIUM straight-on: the tall coin stack drops onto the stage with a bounce in front of the big disc, then the halftone trader cutout slides in beside it, staggered",
+        "ECU top-down: one coin lifts off the top of the stack and flies out of frame, a marker arrow draws itself pointing at the gap",
+        "WIDE low angle: a pinned backtest card with a rising unlabeled line tapes down next to the trader, smooth and perfect",
+        "CU lateral: the giant hand enters and plucks two more coins off the stack, the stack visibly shorter",
+        "MEDIUM high angle: the trader cutout stares deadpan at the shorter stack as a marker circle stamps around it and settles"
+      ],
+      "assets_used": [
+        "disc_stage",
+        "trader_c",
+        "coin_stack",
+        "giant_hand"
+      ]
+    },
+    {
+      "n": 2,
+      "arc_role": "turn",
+      "vo_line": "Il bot con più operazioni sembrava il migliore, eppure ogni trade pagava spread e commissioni, quindi era proprio il più costoso.",
+      "location": "notebook_grid",
+      "through_line_state": "pila a meta, rosicchiata a ogni operazione",
+      "shots": [
+        "WIDE straight-on: on the grid notebook stage a dot-matrix bar chart grows dot by dot, the tallest bar flips to the accent color",
+        "MEDIUM lateral: the trader cutout points at the tallest bar while tiny trade arrow cutouts snap in one after another, staggered",
+        "ECU macro: each arrow that lands nibbles one coin off the half-height stack, coins pop away in rhythm",
+        "CU low angle: a redaction bar stamps down across the tallest bar of the chart with an impact",
+        "MEDIUM high angle: the stack now half height, the trader cutout crosses arms beside it, the frame settles with a slow push-in"
+      ],
+      "assets_used": [
+        "notebook_grid",
+        "trader_c",
+        "coin_stack"
+      ]
+    },
+    {
+      "n": 3,
+      "arc_role": "payoff",
+      "vo_line": "Ora testo ogni bot con spread, commissioni e swap reali del mio broker. Ma prima di farlo, avevo già pagato...",
+      "location": "evidence_board",
+      "through_line_state": "pila protetta sotto una campana di vetro, costi appuntati sulla bacheca",
+      "shots": [
+        "MEDIUM straight-on: on the dark evidence board three blank cost cards pin down one after another, staggered, connected by marker strokes",
+        "CU top-down: the giant hand lowers a glass dome over the remaining coin stack and it snaps shut",
+        "ECU lateral: a marker circle draws itself around the protected stack, a check symbol stamps beside it",
+        "WIDE low angle: the trader cutout steps in front of the board and nods once, deadpan",
+        "MEDIUM high angle: the whole arrangement settles, cards, strings and the domed stack, gentle drift"
+      ],
+      "assets_used": [
+        "evidence_board",
+        "trader_c",
+        "coin_stack",
+        "giant_hand"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.investopedia.com/terms/s/slippage.asp",
+    "https://www.investopedia.com/terms/s/spread.asp",
+    "https://www.investopedia.com/terms/r/rollover.asp"
+  ]
+}

@@ -26,7 +26,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Crediti Higgsfield al 15/10 sera: ~29.
 
 ## Video Vox «I costi che il backtest non ti dice» (#3) — pronto, NON programmato
-- MP4 finale: https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/bc7c7427-2b92-40c0-b10d-b343195bc7bf.mp4 (30 s, 1440×2560, voce Julian + sottotitoli)
+- MP4 finale (v2 loop + valzer Burton, 28,4 s): https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/baa14867-296f-414d-98db-a8a8fff160c7.mp4
 - Copertina: produzione/brand/cover_costi.jpg (caricarla su Higgsfield per avere l'URL coverUrl)
 - Sorgenti: produzione/vox/costi_script_manifest.json
 - Da programmare appena la coda Publora ha un posto libero (dopo il 16/10 18:30).
