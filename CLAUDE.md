@@ -15,7 +15,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 ## Regole generali
 - Non pubblicare, inviare o comprare niente senza l'ok esplicito di Marco.
 - ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @marco_stanga_trader, alle 18:30 ora italiana, senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a fxmafialtd@gmail.com.
-- Crediti Higgsfield: se scendono sotto 10, non generare più nulla a pagamento e manda subito una email a Marco per decidere come procedere. Niente video a pagamento (Seedance ecc.) senza ok esplicito.
+- Crediti Higgsfield: se scendono sotto 10, non generare più nulla a pagamento e manda subito una email a Marco per decidere come procedere. Video a pagamento AUTORIZZATI da Marco il 15/10/2026: per i reel puoi usare i modelli top (Seedance 2.5, Katana, Kling 3.0 ecc.), al massimo ~40 crediti per contenuto, sempre lasciando almeno 10 crediti di scorta. Preferisci 1 clip forte (gancio iniziale) al posto di tante clip.
 - Se Publora non ha più quota (post mensili o coda piena), non forzare: email a Marco e fermati.
 - Leggi i file della Theory solo quando servono, per risparmiare token.
 
@@ -28,6 +28,10 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - Volto della pagina: personaggio AI «C» (caschetto viola a scodella, collo lungo, orecchie a sventola, baffoni neri, sguardo impassibile, giacca nera, camicia viola #5b3fd6, cravatta nera). Scheda Higgsfield job d889c713-1473-478c-b73a-df0a2e57d25f; versione palette job 59c21fa3-ba3f-4da5-b893-1ab7b8c0c703. Usare sempre come riferimento per restare identico. In bio: «🤖 personaggio AI · dietro c'è Marco».
 - Voce reel: ElevenLabs via Higgsfield, preset «Julian» 95429266-c0ac-4137-a209-63b8812b0f23. Caption con «🎙️ Voce generata con AI».
 - Prima del link Algory: NON nominare Algory. Serie «Dentro il mio sistema». Dopo il link: reel di rivelazione + «Commenta BOT» + #ad + avviso di rischio.
+
+## Qualità (richiesta di Marco)
+- Ogni contenuto al massimo livello: gancio forte nei primi 3 s, animazioni dinamiche, sottotitoli, voce + base + effetti, copertina curata.
+- Il personaggio AI «C» compare SEMPRE: nelle copertine e, quando possibile, nel gancio del reel (immagine generata con Higgsfield usando come riferimento il job 59c21fa3-ba3f-4da5-b893-1ab7b8c0c703, oppure clip animata se ci sono crediti). Deve restare identico.
 
 ## Dove sono le cose (repository marco-social)
 - Stato pubblicazioni: `docs/STATO.md` — leggilo all'inizio e aggiornalo dopo ogni pubblicazione.
