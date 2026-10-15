@@ -33,6 +33,8 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - Ogni contenuto al massimo livello: gancio forte nei primi 3 s, animazioni dinamiche, sottotitoli, voce + base + effetti, copertina curata.
 - Il personaggio AI «C» compare SEMPRE: nelle copertine e, quando possibile, nel gancio del reel (immagine generata con Higgsfield usando come riferimento il job 59c21fa3-ba3f-4da5-b893-1ab7b8c0c703, oppure clip animata se ci sono crediti). Deve restare identico.
 
+- COPERTINE (priorità alta): ogni reel ha una copertina dedicata e ogni carosello una prima slide da copertina. Regole: personaggio C ben visibile (ritagliato, mezzo busto, con espressione legata al tema), titolo grande in Anton di massimo 5–6 parole, un solo colore d'accento viola (rosso solo per perdite), numero della serie (#1, #2…). Deve leggersi anche nel ritaglio 4:5 della griglia (zona centrale 1080×1350 del 1080×1920): controllalo sempre generando l'anteprima ritagliata prima di caricare. La griglia del profilo deve sembrare coerente.
+
 ## Dove sono le cose (repository marco-social)
 - Stato pubblicazioni: `docs/STATO.md` — leggilo all'inizio e aggiornalo dopo ogni pubblicazione.
 - Piano del mese: `docs/PIANO-30-GIORNI.md`. Kit e regole Algory: `docs/kit-instagram-algory.md`.
