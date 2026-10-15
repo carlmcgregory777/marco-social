@@ -14,6 +14,9 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Regole generali
 - Non pubblicare, inviare o comprare niente senza l'ok esplicito di Marco.
+- ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @marco_stanga_trader, alle 18:30 ora italiana, senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a mark.92.2222@gmail.com.
+- Crediti Higgsfield: se scendono sotto 10, non generare più nulla a pagamento e manda subito una email a Marco per decidere come procedere. Niente video a pagamento (Seedance ecc.) senza ok esplicito.
+- Se Publora non ha più quota (post mensili o coda piena), non forzare: email a Marco e fermati.
 - Leggi i file della Theory solo quando servono, per risparmiare token.
 
 ## Publora
