@@ -44,3 +44,6 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - Stato pubblicazioni: `docs/STATO.md` — leggilo all'inizio e aggiornalo dopo ogni pubblicazione.
 - Piano del mese: `docs/PIANO-30-GIORNI.md`. Kit e regole Algory: `docs/kit-instagram-algory.md`.
 - Script grafiche e reel: `produzione/script/` (vedi README). Media generati: non committare MP4/frame, solo sorgenti e brand.
+
+## Stile video approvato da Marco (15/10/2026)
+- Reel Vox: chiusura a LOOP (l'ultima frase si aggancia alla prima), valzer «alla Tim Burton» sotto la voce (`produzione/script/burton_waltz.py`, gratis), video finale velocizzato ×1,1 (ffmpeg setpts=PTS/1.1 + atempo=1.1).
