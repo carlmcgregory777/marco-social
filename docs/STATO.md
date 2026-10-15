@@ -24,3 +24,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Partnership Algory: domanda inviata il 15/10, risposta a fxmafialtd@gmail.com. Link non ancora disponibile.
 - Publora: piano Starter (15 post/mese condivisi con guidoio_, 3 in coda). Marco valuta Pro (~11$/mese).
 - Crediti Higgsfield al 15/10 sera: ~29.
+
+## Video Vox «I costi che il backtest non ti dice» (#3) — pronto, NON programmato
+- MP4 finale: https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/bc7c7427-2b92-40c0-b10d-b343195bc7bf.mp4 (30 s, 1440×2560, voce Julian + sottotitoli)
+- Copertina: produzione/brand/cover_costi.jpg (caricarla su Higgsfield per avere l'URL coverUrl)
+- Sorgenti: produzione/vox/costi_script_manifest.json
+- Da programmare appena la coda Publora ha un posto libero (dopo il 16/10 18:30).
