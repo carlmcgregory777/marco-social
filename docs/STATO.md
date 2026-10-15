@@ -30,3 +30,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Copertina: produzione/brand/cover_costi.jpg (caricarla su Higgsfield per avere l'URL coverUrl)
 - Sorgenti: produzione/vox/costi_script_manifest.json
 - Da programmare appena la coda Publora ha un posto libero (dopo il 16/10 18:30).
+
+## Aggiornamento 15/10 notte (stile approvato applicato alla coda)
+- Reel 1 (16/10 18:30, 6ad1366410a1cbf1ad93113d): nuovo video con valzer Burton variante 1 + ×1,1 (30 s) — media 028fdc43…mp4
+- Carosello «4 test» (17/10 18:30, 6ad1382558d8b1502d3c61b0): aggiunta copertina con C (#2) come prima slide, 8 slide, numerazione 1/8…
+- Reel 2 (18/10 18:30, 6ad13b4c58d8b1502d3c776c): nuovo video con valzer Burton variante 2 + ×1,1 (31,4 s) — media e4e8116a…mp4
+- Vox «costi» v3 approvato: da programmare al primo posto libero in coda.

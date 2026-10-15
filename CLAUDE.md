@@ -47,3 +47,6 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Stile video approvato da Marco (15/10/2026)
 - Reel Vox: chiusura a LOOP (l'ultima frase si aggancia alla prima), valzer «alla Tim Burton» sotto la voce (`produzione/script/burton_waltz.py`, gratis), video finale velocizzato ×1,1 (ffmpeg setpts=PTS/1.1 + atempo=1.1).
+- BUDGET: il Vox costa ~70 crediti → MASSIMO 1 a settimana, solo per i temi più forti. Gli altri reel si fanno col codice (gratis) ma con lo stesso stile: valzer Burton, ×1,1, loop quando possibile, C in copertina.
+- MUSICA: NON usare sempre la stessa. `burton_waltz.py <durata> <out.wav> <variante>`: varianti 0/1/2 (Rem/Mim/Lam, melodie e strumenti diversi). Ruotale; se servono più varianti, aggiungerne nello script.
+- Caroselli: prima slide = copertina 4:5 con C (`produzione/script/cover_c45.mjs "titolo" "sotto" "#n" pers_C.png out.jpg`), poi le slide con numerazione che conta anche la copertina.
