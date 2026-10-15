@@ -1,0 +1,69 @@
+<html><head><style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700&family=JetBrains+Mono:wght@500&display=swap');
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1920px;background:#0b0a10;overflow:hidden;font-family:Inter;color:#fff;position:relative}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:60px 60px}
+.glow{position:absolute;width:1300px;height:1300px;border-radius:50%;background:radial-gradient(#5b3fd650,transparent 62%);left:-100px;top:-400px}
+canvas{position:absolute;left:0;top:640px}
+.t{position:absolute;left:80px;right:80px;font-family:Anton;text-transform:uppercase;line-height:1.0;letter-spacing:1px;opacity:0}
+.big{font-size:132px;top:200px}.mid{font-size:96px;top:230px}
+.v{color:#8b6dff}.r{color:#ff4d5e}
+.sub{position:absolute;left:80px;right:80px;top:1440px;font-size:50px;line-height:1.3;color:#cfcbd9;opacity:0;font-weight:500}
+.sub b{color:#fff}
+.stat{position:absolute;top:1280px;font-family:'JetBrains Mono';font-size:54px;opacity:0}
+.tag{position:absolute;left:80px;top:120px;font-family:'JetBrains Mono';font-size:34px;color:#8b6dff;letter-spacing:2px}
+.foot{position:absolute;left:80px;right:80px;bottom:120px;display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:30px;color:#7d7a88}
+.oos{position:absolute;top:640px;height:600px;background:repeating-linear-gradient(135deg,#ff4d5e14 0 18px,transparent 18px 36px);border-left:4px dashed #ff4d5e;opacity:0}
+.oosl{position:absolute;top:600px;font-family:'JetBrains Mono';font-size:32px;color:#ff4d5e;opacity:0}
+.flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style></head><body>
+<div class=grid></div><div class=glow></div>
+<div class=tag>// TRADING ALGORITMICO</div>
+<div class=oos id=oos></div><div class=oosl id=oosl>DATI MAI VISTI ▸</div>
+<canvas id=c width=1080 height=600></canvas>
+<div class="t big" id=t1>Questo backtest<br>è <span class=v>perfetto.</span></div>
+<div class="t big" id=t2>Poi lo metto<br><span class=r>live.</span></div>
+<div class="t big" id=t2b><span class=r>Crolla.</span></div>
+<div class=sub id=u2b>Sui dati che non aveva mai visto, il bot perde tutto quello che «guadagnava».</div>
+<div class="t mid" id=t3>Non aveva<br>un vantaggio.<br><span class=v>Aveva imparato<br>a memoria.</span></div>
+<div class="t mid" id=t4>Il test che<br>lo <span class=v>smaschera:</span></div>
+<div class="t big" id=t5>Segui per<br>la <span class=v>parte 2</span></div>
+<div class=stat id=s1 style="left:80px;color:#8b6dff">+0%</div>
+<div class=stat id=s2 style="right:80px;color:#cfcbd9">DD 0%</div>
+<div class=sub id=u1>Curva liscia, drawdown minimo. <b>Esempio dimostrativo.</b></div>
+<div class=sub id=u3>Il bot aveva trovato le regole che funzionavano <b>solo su quei dati</b>. Si chiama overfitting.</div>
+<div class=sub id=u4><b>Allenalo sul 70%</b> dello storico. <b>Giudicalo sul 30%</b> che non ha mai visto. Se lì crolla, scartalo.</div>
+<div class=sub id=u5>Gli altri 3 test che uso prima di mettere un bot sul conto.</div>
+<div class=foot><span><b style="font-family:Anton;font-size:40px;color:#fff;letter-spacing:2px">MS</b>&nbsp;&nbsp;@marco_stanga_trader</span><span>#1</span></div>
+<div class=flash id=fl></div>
+<script>
+const W=1080,H=600,ctx=document.getElementById('c').getContext('2d');
+let s=7,rnd=()=>{s=(s*16807)%2147483647;return s/2147483647};
+const N=300,IS=200,pts=[];let v=0;
+for(let i=0;i<N;i++){ if(i<IS) v+=0.9+(rnd()-0.35)*2.2; else v+=-1.6+(rnd()-0.55)*4.5; pts.push(v);}
+const mn=Math.min(...pts),mx=Math.max(...pts);
+const X=i=>60+i*(W-120)/(N-1), Y=y=>H-40-(y-mn)/(mx-mn)*(H-80);
+const cl=(x,a,b)=>Math.max(0,Math.min(1,(x-a)/(b-a))), ease=x=>1-Math.pow(1-x,3);
+function show(id,a,b,f=0.25){const e=document.getElementById(id);let o=Math.min(cl(T,a,a+f),1-cl(T,b-f,b));e.style.opacity=o;e.style.transform=`translateY(${(1-ease(cl(T,a,a+f)))*40}px)`;}
+let T=0;
+window.render=t=>{T=t;
+ ['t1','u1'].forEach(i=>show(i,0.2,7.95)); ['s1','s2'].forEach(i=>show(i,2.0,7.95));
+ show('t2',8.0,9.95); show('t2b',10.1,12.6); show('u2b',10.3,12.6); show('t3',12.7,19.3); show('u3',13.0,19.3); show('t4',19.4,28.5); show('u4',19.8,28.5); show('t5',28.6,33.5); show('u5',29.0,33.5);
+ // curve
+ let k = t<7.95 ? ease(cl(t,0.3,5.5))*IS : t<10.0 ? IS : IS+ease(cl(t,10.0,12.4))*(N-IS-1);
+ if(t>=12.4) k=N-1;
+ ctx.clearRect(0,0,W,H);
+ const curveOn = t<17.6 || t>17.8;
+ const fade = t>28.5 ? 1-cl(t,28.5,28.9) : 1;
+ ctx.globalAlpha=fade;
+ ctx.lineWidth=8;ctx.lineJoin='round';
+ ctx.beginPath();for(let i=0;i<=Math.min(k,IS);i++){i?ctx.lineTo(X(i),Y(pts[i])):ctx.moveTo(X(i),Y(pts[i]));}ctx.strokeStyle='#8b6dff';ctx.shadowColor='#8b6dff';ctx.shadowBlur=24;ctx.stroke();
+ if(k>IS){ctx.beginPath();ctx.moveTo(X(IS),Y(pts[IS]));for(let i=IS;i<=k;i++)ctx.lineTo(X(i),Y(pts[i]));ctx.strokeStyle='#ff4d5e';ctx.shadowColor='#ff4d5e';ctx.stroke();}
+ ctx.shadowBlur=0;ctx.globalAlpha=1;
+ const kk=Math.floor(Math.min(k,IS)); const ret=Math.round((pts[kk]-pts[0])*0.9); 
+ document.getElementById('s1').textContent='+'+Math.max(0,ret)+'%'; document.getElementById('s2').textContent='DD '+(t<2?0:3.1)+'%';
+ const o=document.getElementById('oos'),ol=document.getElementById('oosl'); const xo=X(IS);
+ o.style.left=xo+'px';o.style.width=(W-60-xo)+'px';ol.style.left=(xo+16)+'px';
+ const oo=Math.min(cl(t,9.8,10.1),1-cl(t,28.5,28.9)); o.style.opacity=oo; ol.style.opacity=oo;
+ document.getElementById('fl').style.opacity = t>10.0&&t<10.3 ? 0.35*(1-cl(t,10.0,10.3)) : 0;
+};
+</script></body></html>
