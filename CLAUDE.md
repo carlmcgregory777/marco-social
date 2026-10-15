@@ -35,6 +35,11 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 - COPERTINE (priorità alta): ogni reel ha una copertina dedicata e ogni carosello una prima slide da copertina. Regole: personaggio C ben visibile (ritagliato, mezzo busto, con espressione legata al tema), titolo grande in Anton di massimo 5–6 parole, un solo colore d'accento viola (rosso solo per perdite), numero della serie (#1, #2…). Deve leggersi anche nel ritaglio 4:5 della griglia (zona centrale 1080×1350 del 1080×1920): controllalo sempre generando l'anteprima ritagliata prima di caricare. La griglia del profilo deve sembrare coerente.
 
+## Strumenti Higgsfield utilizzabili in cloud
+- NO: comandi After Effects/Premiere/Photoshop/Illustrator/Blender/DaVinci/TouchDesigner (richiedono app locali).
+- SÌ: faceless narrati (`/vox-mixed-media` stile Vox — preferito per spiegoni; `/stickman-explainer`, `/faceless-paper-diorama`, `/faceless-hand-drawn`), `/marketing-hook-variants` (varianti di gancio), `/marketing-adapt-video`, Katana, Seedance 2.5, Kling 3, Nano Banana Pro, GPT Image 2.
+- Prima di un flusso faceless o Katana: mostra il costo stimato. Senza ok di Marco non superare ~40 crediti per contenuto.
+
 ## Dove sono le cose (repository marco-social)
 - Stato pubblicazioni: `docs/STATO.md` — leggilo all'inizio e aggiornalo dopo ogni pubblicazione.
 - Piano del mese: `docs/PIANO-30-GIORNI.md`. Kit e regole Algory: `docs/kit-instagram-algory.md`.
