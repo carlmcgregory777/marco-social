@@ -40,6 +40,11 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - SÌ: faceless narrati (`/vox-mixed-media` stile Vox — preferito per spiegoni; `/stickman-explainer`, `/faceless-paper-diorama`, `/faceless-hand-drawn`), `/marketing-hook-variants` (varianti di gancio), `/marketing-adapt-video`, Katana, Seedance 2.5, Kling 3, Nano Banana Pro, GPT Image 2.
 - Prima di un flusso faceless o Katana: mostra il costo stimato. Senza ok di Marco non superare ~40 crediti per contenuto.
 
+## Memoria e promemoria (richiesta di Marco, 16/10/2026)
+- All'inizio di OGNI sessione leggi `docs/MEMORIA.md`: decisioni prese, ipotesi da verificare, promemoria con scadenza. Aggiornalo quando Marco decide qualcosa.
+- Ricorda a Marco i promemoria quando sono vicini (entro 3 giorni) o quando l'argomento esce in chat; nell'email giornaliera aggiungi una sezione «Promemoria» con quelli in scadenza.
+- Piano strategico: `docs/war-plan/War-Plan-MS.pdf` (metodo Theory). Le decisioni lì dentro valgono finché Marco non le cambia.
+
 ## Dove sono le cose (repository marco-social)
 - Stato pubblicazioni: `docs/STATO.md` — leggilo all'inizio e aggiornalo dopo ogni pubblicazione.
 - Piano del mese: `docs/PIANO-30-GIORNI.md`. Kit e regole Algory: `docs/kit-instagram-algory.md`.
