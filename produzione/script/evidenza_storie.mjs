@@ -5,7 +5,7 @@ import fs from 'fs';
 const [img, out] = process.argv.slice(2);
 const b64 = fs.readFileSync(img).toString('base64');
 // Ogni storia = teaser di UN post del piano (docs/PIANO-30-GIORNI.md), da pubblicare lo stesso giorno del post
-// dopo le 18:30, con lo sticker del post nel riquadro tratteggiato. Poi «Aggiungi in evidenza» nel gruppo indicato.
+// dopo le 18:30, con lo sticker LINK al post nello spazio vuoto (il testo guida grigio resta sotto lo sticker). Poi «Aggiungi in evidenza» nel gruppo indicato.
 // Non anticipa i contenuti dei post futuri. File: <gruppo>/<data>_<post>.jpg
 const S = {
   '1_INIZIA_QUI': [
@@ -28,7 +28,7 @@ const S = {
   ],
   '5_FAQ': [
     { f: '15-10_C-6regole', tag: 'FAQ · CAROSELLO', big: '6', h: 'Regole di una <em>challenge</em>', p: 'Quelle che ti fanno saltare il conto anche se sei in profitto.', post: true },
-    { f: 'oggi_domanda', tag: 'FAQ', h: 'Hai una <em>domanda?</em>', p: 'Scrivila qui sotto: le migliori diventano un reel.', box: 'sticker DOMANDA' },
+    { f: 'oggi_domanda', tag: 'FAQ', h: 'Hai una <em>domanda?</em>', p: 'Scrivila qui sotto: le migliori diventano un reel.', box: 'sticker DOMANDA<br>«Fammi una domanda»', q: true },
   ],
 };
 const css = `@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800&family=JetBrains+Mono:wght@500&display=swap');
@@ -44,7 +44,7 @@ p{font-size:50px;line-height:1.35;color:#cfcbd9}p b{color:#fff}
 ul{list-style:none;display:flex;flex-direction:column;gap:22px}
 li{font-size:52px;font-weight:800;padding-left:56px;position:relative}li:before{content:"";position:absolute;left:0;top:18px;width:28px;height:28px;border-radius:8px;background:#5b3fd6}
 .face{width:380px;height:380px;border-radius:50%;border:10px solid #5b3fd6;background:url(data:image/png;base64,${b64}) center 18%/150% no-repeat}
-.box{border:none;visibility:hidden;border-radius:30px;height:220px;display:flex;align-items:center;justify-content:center;color:#8d8a98;font-family:'JetBrains Mono';font-size:32px}
+.box{height:140px;text-align:center;line-height:1.3;display:flex;align-items:center;justify-content:center;color:#8d8a98;font-family:'JetBrains Mono';font-size:26px;color:#4a4757}.box.q{height:380px}
 .ms{position:absolute;left:90px;bottom:160px;font-family:'JetBrains Mono';font-size:30px;color:#7d7a88}.ms b{font-family:Anton;font-size:40px;color:#fff;letter-spacing:2px}`;
 const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 for (const [grp, list] of Object.entries(S)) {
@@ -52,7 +52,7 @@ for (const [grp, list] of Object.entries(S)) {
   for (const s of list) {
     const html = `<div class=grid></div><div class=glow></div><div class=wrap>
       <div class=tag>// ${s.tag}</div>${s.face ? '<div class=face></div>' : ''}${s.big ? `<div class="big${s.red ? ' red' : ''}">${s.big}</div>` : ''}
-      <h1>${s.h}</h1>${s.list ? `<ul>${s.list.map(x => `<li>${x}</li>`).join('')}</ul>` : ''}${s.p ? `<p>${s.p}</p>` : ''}${s.box ? `<div class=box>${s.box}</div>` : ''}${s.post ? '<div class=box>sticker del post · «guardalo ora»</div>' : ''}</div>
+      <h1>${s.h}</h1>${s.list ? `<ul>${s.list.map(x => `<li>${x}</li>`).join('')}</ul>` : ''}${s.p ? `<p>${s.p}</p>` : ''}${s.box ? `<div class="box${s.q ? ' q' : ''}">${s.box}</div>` : ''}${s.post ? '<div class=box>sticker LINK<br>link del post · «Guardalo ora»</div>' : ''}</div>
       <div class=ms><b>MS</b>&nbsp;&nbsp;@marco_stanga_trader</div>`;
     await p.setContent(`<html><head><style>${css}</style></head><body>${html}</body></html>`, { waitUntil: 'networkidle' });
     await p.evaluate(() => document.fonts.ready);

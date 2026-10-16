@@ -41,3 +41,4 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 | da ~10k follower | media kit e primi sponsor (solo regolamentati) | Claude + Marco |
 | facoltativo | scollegare guidoio_ da Publora per sicurezza | Marco |
 | in sospeso | Guido io: compilare CLAUDE.md e brand.json nella sessione locale | Marco |
+- 16/10: storie con sticker → spazio vuoto a misura di sticker + testo guida grigio (regola in CLAUDE.md, sezione Qualità).

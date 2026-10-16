@@ -34,6 +34,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - Il personaggio AI «C» compare SEMPRE: nelle copertine e, quando possibile, nel gancio del reel (immagine generata con Higgsfield usando come riferimento il job 59c21fa3-ba3f-4da5-b893-1ab7b8c0c703, oppure clip animata se ci sono crediti). Deve restare identico.
 
 - COPERTINE (priorità alta): ogni reel ha una copertina dedicata e ogni carosello una prima slide da copertina. Regole: personaggio C ben visibile (ritagliato, mezzo busto, con espressione legata al tema), titolo grande in Anton di massimo 5–6 parole, un solo colore d'accento viola (rosso solo per perdite), numero della serie (#1, #2…). Deve leggersi anche nel ritaglio 4:5 della griglia (zona centrale 1080×1350 del 1080×1920): controllalo sempre generando l'anteprima ritagliata prima di caricare. La griglia del profilo deve sembrare coerente.
+- STORIE CON STICKER (regola di Marco, 16/10/2026): mai riquadri tratteggiati. Lascia uno spazio vuoto grande quanto lo sticker vero (misure su 1080×1920: SONDAGGIO ~600×330, QUIZ ~650×400, DOMANDA ~700×380, CONTO ALLA ROVESCIA ~700×230, LINK ~500×140) e scrivici in piccolo, grigio scuro, cosa mettere (es. «sticker QUIZ · «Sì»/«No» (giusta: No)»): lo sticker lo copre. Nel messaggio a Marco ripeti sempre quale sticker e con che testo.
 
 ## Strumenti Higgsfield utilizzabili in cloud
 - NO: comandi After Effects/Premiere/Photoshop/Illustrator/Blender/DaVinci/TouchDesigner (richiedono app locali).
