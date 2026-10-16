@@ -36,3 +36,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Carosello «4 test» (17/10 18:30, 6ad1382558d8b1502d3c61b0): aggiunta copertina con C (#2) come prima slide, 8 slide, numerazione 1/8…
 - Reel 2 (18/10 18:30, 6ad13b4c58d8b1502d3c776c): nuovo video con valzer Burton variante 2 + ×1,1 (31,4 s) — media e4e8116a…mp4
 - Vox «costi» v3 approvato: da programmare al primo posto libero in coda.
+
+## Pronti in anticipo (16/10) — NON rifarli, programmare questi file
+- **R3 «Ogni bot ha una scadenza» (20/10 18:30)**: video https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/b0e0c414-5782-4ae7-8a3c-db1d8b8c01bb.mp4 (30 s, voce Julian, valzer variante 0, ×1,1, loop «ho imparato a mie spese che… → nessun bot funziona per sempre») · copertina #3 https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/86bc40ee-6b53-47a1-a340-6e4b6a4abf3d.jpg · sorgente produzione/script/reel3.html
+  Caption: «Nessun bot funziona per sempre. Chi ti dice il contrario ti sta vendendo qualcosa.\n\nOgni strategia vive finché il mercato resta com'era quando è nata. Io ricontrollo i miei bot sui dati nuovi e li divido in tre: tiene, si indebolisce, da sostituire. Quello che cala lo cambio con uno nuovo, che riparte dal rischio più basso.\n\nE prima di toglierlo controllo sempre posizioni e ordini pendenti. Il 22 ti racconto quanto mi è costato non farlo.\n\nSeguimi per non perderlo.\n🎙️ Voce generata con AI · Il trading comporta un alto rischio di perdita.\n#algotrading #tradingbot #propfirm #tradingitalia»
+- **Vox «costi» (24/10)**: copertina aggiornata a **#4** https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/a6224858-64e5-4a88-ad94-661ee52927af.jpg
+- **Storie in evidenza**: copertine pronte in produzione/evidenza/ (01 INIZIA QUI … 05 FAQ subito; 06 SCONTO 20%, 07 IL TOOL, 08 PROVE dopo il link).
