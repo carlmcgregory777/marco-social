@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>War Plan MS</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+@page{size:A4;margin:0}
+:root{--ink:#14121c;--muted:#5f5b6e;--line:#e2def0;--violet:#5b3fd6;--accent:#8b6dff;--red:#d93848;--green:#14935c;--paper:#ffffff;--soft:#f4f2fb;--dark:#0b0a10}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-size:10.5pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;min-height:297mm;padding:16mm 16mm 18mm;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+.foot{position:absolute;left:16mm;right:16mm;bottom:8mm;display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:7.5pt;color:var(--muted);border-top:1px solid var(--line);padding-top:3mm}
+h1,h2,h3{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;margin:0;letter-spacing:.3px}
+h2{font-size:26pt;line-height:1;margin-bottom:2mm}
+h2 em,h1 em{font-style:normal;color:var(--violet)}
+h3{font-size:13pt;margin:4mm 0 1.5mm;color:var(--ink)}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:8pt;letter-spacing:2px;color:var(--violet);text-transform:uppercase;margin-bottom:2mm}
+.sub{color:var(--muted);font-size:10.5pt;margin:0 0 4mm;max-width:160mm}
+p{margin:0 0 2mm}
+ul{margin:0 0 2mm;padding-left:5mm}
+li{margin-bottom:1mm}
+b{font-weight:700}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.cols3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm}
+.box{border:1px solid var(--line);border-radius:3mm;padding:4mm;background:var(--paper)}
+.box.soft{background:var(--soft);border-color:transparent}
+.box.red{border-color:var(--red)}
+.box.red h3{color:var(--red)}
+.box.green{border-color:var(--green)}
+.box.green h3{color:var(--green)}
+.box.vio{border-color:var(--violet)}
+.box h3{margin-top:0}
+.truth{border-left:3px solid var(--red);padding:2mm 0 2mm 4mm;margin:3mm 0;background:#fff5f6}
+.truth b{color:var(--red)}
+.dec{border-left:3px solid var(--violet);padding:2mm 0 2mm 4mm;margin:3mm 0;background:var(--soft)}
+.dec b{color:var(--violet)}
+table{width:100%;border-collapse:collapse;font-size:9.5pt;margin:2mm 0 3mm}
+th{font-family:'JetBrains Mono',monospace;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:left;padding:2mm;border-bottom:1.5px solid var(--ink)}
+td{padding:2mm;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{text-align:right;font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.c td{background:#fff5f6}
+tr.c td:first-child{font-weight:700;color:var(--red)}
+.big{font-family:'Anton',sans-serif;font-size:30pt;line-height:1;color:var(--violet)}
+.lbl{font-family:'JetBrains Mono',monospace;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.steps{display:flex;flex-direction:column;gap:0;border-left:2px solid var(--line);margin:2mm 0 2mm 2mm}
+.st{position:relative;padding:0 0 3.5mm 6mm}
+.st::before{content:"";position:absolute;left:-2.1mm;top:1mm;width:3mm;height:3mm;border-radius:50%;background:#fff;border:2px solid var(--violet)}
+.st.on::before{background:var(--violet)}
+.st .w{font-family:'JetBrains Mono',monospace;font-size:7.5pt;color:var(--violet);letter-spacing:1px;text-transform:uppercase}
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5mm;margin:2mm 0}
+.jn{border:1px solid var(--line);border-radius:2.5mm;padding:2.5mm;font-size:8.8pt;min-height:22mm}
+.jn .lbl{color:var(--violet)}
+.jn.hole{border-color:var(--red);background:#fff5f6}
+.jn.hole .lbl{color:var(--red)}
+/* cover */
+.cover{background:var(--dark);color:#f4f3f7;display:flex;flex-direction:column;justify-content:space-between}
+.cover .kicker{color:var(--accent)}
+.cover h1{font-size:66pt;line-height:.92;color:#fff}
+.cover h1 em{color:var(--accent)}
+.cover .grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:9mm 9mm}
+.cover .glow{position:absolute;width:190mm;height:190mm;border-radius:50%;background:radial-gradient(#5b3fd666,transparent 65%);right:-60mm;top:40mm}
+.cover .z{position:relative}
+.cover .meta{font-family:'JetBrains Mono',monospace;font-size:8.5pt;color:#a29fae;line-height:1.8}
+.cover .stamp{display:inline-block;border:2px solid var(--red);color:var(--red);font-family:'JetBrains Mono',monospace;font-size:9pt;letter-spacing:3px;padding:1.5mm 4mm;transform:rotate(-3deg);margin-top:6mm}
+.cover .one{font-size:13pt;color:#cfcbd9;max-width:150mm;margin-top:8mm;line-height:1.5}
+.cover .one b{color:#fff}
+.toc{columns:2;column-gap:10mm;font-size:9.5pt;margin-top:4mm}
+.toc div{break-inside:avoid;padding:1.2mm 0;border-bottom:1px dotted var(--line);display:flex;justify-content:space-between}
+.toc span:first-child b{font-family:'JetBrains Mono',monospace;color:var(--violet);margin-right:2mm}
+svg text{font-family:'JetBrains Mono',monospace}
+</style></head><body>
+
+<!-- COPERTINA -->
+<section class="page cover">
+  <div class="grid"></div><div class="glow"></div>
+  <div class="z">
+    <div class="kicker">War Plan · documento privato · metodo Theory University</div>
+    <div class="stamp">RISERVATO</div>
+  </div>
+  <div class="z">
+    <h1>War Plan<br><em>@marco_<br>stanga_trader</em></h1>
+    <p class="one">Il riferimento italiano per chi usa i <b>bot di trading in modo serio</b>: testati, misurati, senza promesse. Contenuti di valore → follower → abbonati con il link affiliato → sponsor → prodotto proprio.</p>
+  </div>
+  <div class="z meta">
+    Versione 1 · 16 ottobre 2026 · orizzonte 12 mesi (ott 2026 → ott 2027) con big idea a 3 anni<br>
+    Struttura: censimento · campo di battaglia · big idea · prodotto · finance · branding · marketing · customer journey · vendite · organizzazione · leadership · KPI · simulazione A/B/C<br>
+    Regola del metodo: si pianifica sullo <b style="color:#fff">scenario C</b>. Se arriva A, è un regalo.
+  </div>
+</section>
+
+<!-- SINTESI -->
+<section class="page">
+  <div class="kicker">00 · Sintesi in una pagina</div>
+  <h2>La guerra <em>in 60 secondi</em></h2>
+  <div class="cols">
+    <div class="box vio"><h3>Dove andiamo</h3>
+      <p><b>12 mesi (piano su C):</b> 5.000 follower, 15 abbonati, costi coperti.</p>
+      <p><b>12 mesi (obiettivo B):</b> 15.000 follower, 75 abbonati, ~15.000 $ l'anno, primi sponsor.</p>
+      <p><b>3 anni (big idea):</b> 100.000 persone tra Instagram, TikTok, YouTube e Telegram; 3 fonti di entrata; <b>100.000 $ l'anno</b>.</p></div>
+    <div class="box red"><h3>Le verità scomode</h3>
+      <ul><li>La partnership Algory <b>non è ancora approvata</b> e non conosciamo la commissione.</li>
+      <li>Il conto di Marco è <b>in perdita (−5.439 $)</b>: un rischio di credibilità se non lo gestiamo con trasparenza.</li>
+      <li>Una sola fonte di entrata e un solo social: <b>siamo sostituibili</b>.</li>
+      <li>Pagina piccola, nicchia piena di truffatori: la fiducia va costruita da zero.</li></ul></div>
+  </div>
+  <h3>Il tipo di guerra</h3>
+  <p><b>Guerriglia.</b> Non sfidiamo i grandi creator di trading sul loro terreno (lifestyle, analisi, corsi). Prendiamo la parte scomoda che nessuno vuole: <b>mostrare come si testa davvero un bot, perdite comprese</b>. Il nostro nemico è il bot miracoloso comprato su Telegram.</p>
+  <h3>Le 5 mosse dei prossimi 90 giorni</h3>
+  <table><thead><tr><th>#</th><th>Mossa</th><th>Chi</th><th>Entro</th></tr></thead><tbody>
+    <tr><td>1</td><td>1 post al giorno nello stile approvato (C, valzer, copertine)</td><td>Claude, in automatico</td><td class="n">sempre</td></tr>
+    <tr><td>2</td><td>Link affiliato + «Commenta BOT» automatico (ManyChat)</td><td>Marco + Claude</td><td class="n">appena approvati</td></tr>
+    <tr><td>3</td><td>Publora Pro, per non fermarsi a metà mese</td><td>Marco</td><td class="n">25/10</td></tr>
+    <tr><td>4</td><td>15 minuti di commenti al giorno su pagine del settore</td><td>Marco (testi di Claude)</td><td class="n">ogni giorno</td></tr>
+    <tr><td>5</td><td>Stessi reel su TikTok e YouTube Shorts + canale Telegram</td><td>Claude + Marco</td><td class="n">dicembre</td></tr>
+  </tbody></table>
+  <div class="dec"><b>Decisione chiave:</b> per 90 giorni non si cambia strategia. Una manovra si vede dopo circa 90 giorni (Theory, BP 1): a metà gennaio si giudica con i numeri, non prima.</div>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>2</span></div>
+</section>
+
+<!-- CENSIMENTO -->
+<section class="page">
+  <div class="kicker">01 · Censimento</div>
+  <h2>Contiamo <em>l'esercito</em></h2>
+  <p class="sub">Prima di scegliere la guerra si conta chi siamo, cosa sappiamo fare, quanto tempo e quanti soldi abbiamo. Mentire qui porta a errori mortali.</p>
+  <div class="cols">
+    <div class="box green"><h3>Armi che abbiamo</h3>
+      <ul>
+        <li><b>Esperienza vera</b>: Marco usa bot su un conto prop reale, con un vault di 962 strategie testate.</li>
+        <li><b>Storie vere da raccontare</b>: 6 bot sullo yen persi insieme, l'ordine dimenticato da 245 $, i 2.400 $ di costi in 5 mesi.</li>
+        <li><b>Produzione quasi gratuita</b>: Claude produce caroselli, reel, copertine e musica col codice; Higgsfield solo per i pezzi forti.</li>
+        <li><b>Identità riconoscibile</b>: il personaggio C, il valzer alla Tim Burton, la palette viola.</li>
+        <li><b>Automazione</b>: programmazione giornaliera e email di riepilogo già attive.</li>
+        <li><b>Metodo</b>: la Theory University studiata tutta.</li>
+      </ul></div>
+    <div class="box red"><h3>Debolezze (crude)</h3>
+      <ul>
+        <li><b>Un solo uomo</b>, non programmatore, oggi anche malato: tutto dipende dalla sua costanza.</li>
+        <li><b>Il conto è in perdita</b> (PF 0,89, −5.439 $, di cui 2.424 $ di costi). Chi ci segue lo scoprirà: meglio dirlo noi.</li>
+        <li><b>Volto anonimo</b>: C è un personaggio AI. Ci vuole più tempo per creare fiducia.</li>
+        <li><b>Zero pubblico</b> di partenza, nessuna lista di contatti.</li>
+        <li><b>Dipendenza da terzi</b>: Algory, Instagram, Publora, Higgsfield.</li>
+        <li><b>Tempo limitato</b>: altri progetti in corso (Guido io, FORGE).</li>
+      </ul></div>
+  </div>
+  <div class="cols3" style="margin-top:4mm">
+    <div class="box soft"><div class="lbl">Tempo di Marco</div><div class="big">45'</div><p>al giorno: storie, commenti, risposte, approvazioni.</p></div>
+    <div class="box soft"><div class="lbl">Budget</div><div class="big">~70 $</div><p>al mese: Publora Pro, crediti, ManyChat.</p></div>
+    <div class="box soft"><div class="lbl">Esercito</div><div class="big">1+AI</div><p>Marco (volto e decisioni) + Claude (produzione) + aiutanti.</p></div>
+  </div>
+  <div class="dec"><b>Decisione:</b> niente guerre costose (pubblicità a pagamento, studio video, dipendenti). Nicchia stretta, esecuzione costante, e la perdita del conto <b>diventa contenuto</b>: «ecco cosa ho sbagliato e come lo testo adesso». La trasparenza è l'arma che i venditori di bot non possono copiare.</div>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>3</span></div>
+</section>
+
+<!-- CAMPO DI BATTAGLIA -->
+<section class="page">
+  <div class="kicker">02 · Campo di battaglia</div>
+  <h2>Mercato e <em>nemici</em></h2>
+  <p class="sub">Mercato di tipo 5 (online, nazionale): tutti sono concorrenti e restare generici è un suicidio. Si parte dai concorrenti, non dalla dimensione del mercato.</p>
+  <table><thead><tr><th>Concorrente</th><th>Cosa offre</th><th>Valore percepito</th><th>Il nostro fianco</th></tr></thead><tbody>
+    <tr><td><b>Educatori di trading</b><br><span class="lbl">es. @maricaguglielmi_, @gianluigi_ventre</span></td><td>Analisi, volumetrica, mindset, lifestyle, libri</td><td>Alto: volto, live, autorità</td><td>Non parlano di bot testati. Li usiamo come «stagni» dove commentare.</td></tr>
+    <tr><td><b>Trading sistematico «alto»</b><br><span class="lbl">es. @unger_academy</span></td><td>Corsi su sistemi automatici, autorità storica</td><td>Molto alto, prezzo alto</td><td>Noi siamo l'ingresso pratico ed economico: «cosa succede davvero sul mio conto».</td></tr>
+    <tr><td><b>Venditori di EA/segnali</b><br><span class="lbl">Telegram, «bot che rende il 30% al mese»</span></td><td>Promesse, screenshot di profitti</td><td>Alto per i principianti, poi delusione</td><td><b>Il nemico.</b> Ogni contenuto mostra come smascherarli.</td></tr>
+    <tr><td><b>Altri tool di generazione strategie</b><br><span class="lbl">es. StrategyQuant e simili</span></td><td>Software potenti, spesso in inglese</td><td>Per esperti</td><td>Noi spieghiamo in italiano semplice; il tool è un mezzo.</td></tr>
+    <tr><td><b>Il «divano»</b></td><td>Fare trading a mano, oppure non fare niente</td><td>Gratis, abitudine</td><td>Mostrare il costo degli errori manuali e dell'emotività.</td></tr>
+  </tbody></table>
+  <div class="cols">
+    <div class="box vio"><h3>La nostra «giungla»</h3>
+      <p>Il <b>trader italiano tra 25 e 45 anni</b> che ha già provato una prop firm o un bot comprato, si è bruciato, e adesso cerca un metodo serio. È scomodo: diffidente, ha già perso soldi, non crede alle promesse. Proprio per questo gli altri non lo vogliono, e chi lo conquista se lo tiene.</p></div>
+    <div class="box"><h3>Tipo di guerra: guerriglia</h3>
+      <ul><li><b>Frontale</b>: no, non abbiamo né soldi né volto famoso.</li>
+      <li><b>Sui fianchi</b>: sì, sui test e sui costi siamo più specifici di tutti.</li>
+      <li><b>Guerriglia</b>: sì, prendiamo la parte che gli altri evitano (perdite, test, fallimenti).</li></ul></div>
+  </div>
+  <div class="truth"><b>Verità:</b> «nessuno fa quello che facciamo» non è un vantaggio di per sé. Il lago ha pesci (persone che comprano bot e tool), ma va educato. Per questo servono 90 giorni di contenuti prima di aspettarsi vendite.</div>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>4</span></div>
+</section>
+
+<!-- BIG IDEA -->
+<section class="page">
+  <div class="kicker">03 · Big idea</div>
+  <h2>Un sogno grande, <em>a gradini</em></h2>
+  <p class="sub">Un sogno realizzabile, trasformato in numero, poi in tappe come i campi base dell'Everest. Le prime tappe sono le più lente e le più preziose.</p>
+  <div class="box vio" style="margin-bottom:4mm"><div class="lbl">Big idea a 3 anni · ottobre 2029</div>
+    <p style="font-size:13pt;margin-top:1.5mm"><b>100.000 persone</b> che ci seguono tra Instagram, TikTok, YouTube e Telegram · <b>3 fonti di entrata</b> (affiliazioni, sponsor, prodotto proprio) · <b>100.000 $ l'anno</b> · il nome che viene in mente in Italia quando si dice «testare un bot».</p></div>
+  <div class="cols">
+    <div>
+      <h3>I campi base</h3>
+      <div class="steps">
+        <div class="st on"><div class="w">Campo 1 · nov 2026</div><b>1.000 follower</b>: il formato funziona.</div>
+        <div class="st"><div class="w">Campo 2 · dopo il link</div><b>Primo abbonato</b>: il funnel vende davvero.</div>
+        <div class="st"><div class="w">Campo 3 · gen 2027</div><b>10 abbonati</b> e costi coperti.</div>
+        <div class="st"><div class="w">Campo 4 · mar 2027</div><b>5.000 follower + 500 su Telegram</b>: il pubblico è anche nostro.</div>
+        <div class="st"><div class="w">Campo 5 · mag 2027</div><b>Primo sponsor</b> regolamentato.</div>
+        <div class="st"><div class="w">Campo 6 · ott 2027</div><b>15.000 follower, 75 abbonati</b>, ~15.000 $ l'anno.</div>
+        <div class="st"><div class="w">Campo 7 · 2028</div><b>Prodotto proprio</b> (guida o corso «come testo i bot»).</div>
+        <div class="st"><div class="w">Vetta · 2029</div><b>100.000 persone, 100.000 $ l'anno.</b></div>
+      </div>
+    </div>
+    <div>
+      <h3>Legge del guadagno (Theory)</h3>
+      <p><b>valore × transazioni × durata ÷ sostituibilità</b></p>
+      <table><tbody>
+        <tr><td>Valore</td><td>Insegniamo a non bruciare soldi: alto.</td></tr>
+        <tr><td>Transazioni</td><td>Oggi 1 sola (Algory). Servono sponsor e prodotto proprio.</td></tr>
+        <tr><td>Durata</td><td>Abbonamento ricorrente: buona, se il cliente resta.</td></tr>
+        <tr class="c"><td>Sostituibilità</td><td>Alta: chiunque può fare l'affiliato. Si abbassa con C, la nostra storia vera, Telegram e un prodotto nostro.</td></tr>
+      </tbody></table>
+      <h3>Il prezzo dell'ambizione</h3>
+      <ul><li>45 minuti al giorno, tutti i giorni, anche quando i numeri non si muovono.</li>
+      <li>Mostrare le proprie perdite in pubblico.</li>
+      <li>Dire di no a sponsor facili e poco seri.</li>
+      <li>~70 $ al mese reinvestiti, senza toccare le entrate per il primo anno.</li></ul>
+    </div>
+  </div>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>5</span></div>
+</section>
+
+<!-- PRODOTTO + BRANDING -->
+<section class="page">
+  <div class="kicker">04 · Prodotto · 06 · Branding</div>
+  <h2>Cosa vendiamo e <em>chi siamo</em></h2>
+  <h3>Prodotto: i motori in serie</h3>
+  <p>Un motore piccolo accende quello medio, che accende quello grande (Theory, BP 2).</p>
+  <table><thead><tr><th>Motore</th><th>Cosa</th><th>Quando</th><th>Rischio</th></tr></thead><tbody>
+    <tr><td><b>1 · Contenuti</b></td><td>Reel, caroselli, storie di valore gratis: «lo zucchero intorno al seme»</td><td class="n">ora</td><td>Reach di Instagram</td></tr>
+    <tr><td><b>2 · Affiliazione</b></td><td>Algory con 20% di sconto per chi entra dal link</td><td class="n">appena approvata</td><td>Termini e prodotto non nostri</td></tr>
+    <tr><td><b>3 · Community</b></td><td>Canale Telegram: test della settimana, diario del conto</td><td class="n">dic 2026</td><td>Tempo per gestirla</td></tr>
+    <tr><td><b>4 · Sponsor</b></td><td>Prop firm, broker e tool regolamentati</td><td class="n">da ~10k</td><td>Reputazione</td></tr>
+    <tr><td><b>5 · Prodotto proprio</b></td><td>Guida/corso «Come testo un bot prima di metterci soldi» + checklist</td><td class="n">2027–28</td><td>Va fatto bene, non in fretta</td></tr>
+  </tbody></table>
+  <div class="truth"><b>Verità:</b> oggi il motore 2 non esiste ancora (partnership in attesa). Se Algory dice no o cambia i termini, i motori 1 e 3 restano nostri e si collegano a un altro tool o al prodotto proprio. Per questo <b>non nominiamo Algory prima del link</b>: il pubblico segue noi, non il tool.</div>
+  <h3>Branding: perché ci ricordano</h3>
+  <div class="cols">
+    <div class="box"><ul>
+      <li><b>Volto:</b> il personaggio AI «C» (caschetto viola, baffoni, sguardo impassibile), dichiarato come AI; dietro c'è Marco.</li>
+      <li><b>Suono:</b> il valzer alla Tim Burton in 3 varianti, con la voce Julian.</li>
+      <li><b>Colori:</b> viola, nero, bianco; rosso solo per le perdite.</li>
+      <li><b>Formato firma:</b> video in stile Vox con chiusura a loop, 1 a settimana.</li></ul></div>
+    <div class="box vio"><ul>
+      <li><b>Filosofia:</b> «un bot si giudica sui dati che non ha mai visto».</li>
+      <li><b>Nemico:</b> il bot miracoloso e lo screenshot dei profitti.</li>
+      <li><b>Claim possibile:</b> «Dentro il mio sistema».</li>
+      <li><b>Sottocategoria:</b> non «trading», ma «bot testati sul serio». Contro i grandi non si fa guerra frontale: si crea una categoria nuova.</li></ul></div>
+  </div>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>6</span></div>
+</section>
+
+<!-- FINANCE -->
+<section class="page">
+  <div class="kicker">05 · Finance</div>
+  <h2>I numeri <em>che decidono</em></h2>
+  <p class="sub">Un dato vale solo se porta a una decisione. Si registra l'incassato, non il venduto.</p>
+  <div class="cols3">
+    <div class="box soft"><div class="lbl">Valore di 1 abbonato</div><div class="big">~175 $</div><p>97 $/mese × ~6 mesi × ~30% di commissione (ipotesi da verificare).</p></div>
+    <div class="box soft"><div class="lbl">Costi fissi</div><div class="big">~70 $</div><p>al mese: Publora Pro 11, crediti Higgsfield ~40, ManyChat ~15.</p></div>
+    <div class="box soft"><div class="lbl">Pareggio</div><div class="big">5</div><p>abbonati l'anno coprono tutti i costi (≈ 840 $).</p></div>
+  </div>
+  <h3>Regola di conversione (da verificare con i dati veri)</h3>
+  <p>Ogni <b>1.000 follower veri</b> ≈ <b>3–6 abbonati l'anno</b> ≈ <b>525–1.050 $</b>. Più la pagina dà valore, più la percentuale sale.</p>
+  <h3>Regole sui soldi</h3>
+  <table><tbody>
+    <tr><td><b>Cassa separata</b></td><td>Le entrate della pagina restano separate dal conto di trading e dagli altri progetti.</td></tr>
+    <tr><td><b>Primo anno: reinvestire</b></td><td>Nessun prelievo finché non si superano 10 abbonati stabili. Togliere soldi a un'attività giovane è come togliere gli omogeneizzati a un neonato.</td></tr>
+    <tr><td><b>Tetto crediti</b></td><td>Massimo ~40 crediti per contenuto, ~70 per il Vox settimanale, mai sotto 10 di scorta.</td></tr>
+    <tr><td><b>Stop loss sui formati</b></td><td>Un formato che per 3 settimane fa meno della metà della media si ferma e si cambia.</td></tr>
+    <tr><td><b>Niente ads</b></td><td>Finché un abbonato non vale almeno 3 volte quanto costa portarlo, niente pubblicità a pagamento.</td></tr>
+  </tbody></table>
+  <h3>Se succede X, facciamo Y</h3>
+  <table><thead><tr><th>Segnale</th><th>Decisione</th></tr></thead><tbody>
+    <tr><td>Reel sotto 500 visualizzazioni per 2 settimane</td><td>Cambiare i ganci (primi 3 secondi), testare 3 varianti con lo stesso contenuto.</td></tr>
+    <tr><td>Molti «BOT» nei commenti, pochi abbonati</td><td>Il buco è dopo il link: rivedere messaggio ManyChat, FAQ, guida ai primi 7 giorni.</td></tr>
+    <tr><td>Follower che arrivano ma non interagiscono</td><td>Più caroselli da salvare, domande nelle storie, risposte a tutti i commenti.</td></tr>
+    <tr><td>Algory rifiuta la partnership</td><td>Motore 2 su un altro tool o su prodotto proprio; i contenuti non cambiano.</td></tr>
+    <tr><td>Crediti Higgsfield sotto 10</td><td>Stop ai video a pagamento, solo produzione col codice; email a Marco.</td></tr>
+  </tbody></table>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>7</span></div>
+</section>
+
+<!-- MARKETING + CUSTOMER JOURNEY + VENDITE -->
+<section class="page">
+  <div class="kicker">07 · Marketing · 08 · Customer journey · 09 · Vendite</div>
+  <h2>Il viaggio <em>del cliente</em></h2>
+  <p class="sub">Simulare il viaggio dall'inizio alla fine: quasi sempre il buco è lì, non negli strumenti. In rosso i buchi di oggi.</p>
+  <div class="journey">
+    <div class="jn"><div class="lbl">1 · Scoperta</div>Vede un reel o un nostro commento sotto una pagina grande.</div>
+    <div class="jn"><div class="lbl">2 · Profilo</div>Bio chiara, C, storie in evidenza «INIZIA QUI», griglia coerente.</div>
+    <div class="jn"><div class="lbl">3 · Fiducia</div>7–14 giorni di contenuti: test, errori veri, sistema.</div>
+    <div class="jn hole"><div class="lbl">4 · Desiderio · buco</div>Reel di rivelazione + «Commenta BOT». Manca il link.</div>
+    <div class="jn hole"><div class="lbl">5 · DM · buco</div>ManyChat: segui → link con 20% + #ad + rischio. Da configurare.</div>
+    <div class="jn"><div class="lbl">6 · Prova</div>Piano gratuito di Algory, senza carta.</div>
+    <div class="jn hole"><div class="lbl">7 · Acquisto · buco</div>Passaggio al Pro: non lo controlliamo. Serve una guida «primi 7 giorni».</div>
+    <div class="jn hole"><div class="lbl">8 · Restare · buco</div>Nessun contatto diretto dopo l'acquisto: serve Telegram o newsletter.</div>
+  </div>
+  <div class="cols">
+    <div class="box"><h3>Marketing: le leve</h3>
+      <ul><li><b>Costanza:</b> 1 post al giorno alle 18:30, 2 storie al giorno.</li>
+      <li><b>Distribuzione:</b> 15' di commenti al giorno su pagine del settore; stessi reel su TikTok e YouTube.</li>
+      <li><b>Offerta d'ingresso:</b> contenuti gratis veri, poi piano gratuito del tool, poi Pro con il 20%.</li>
+      <li><b>Storie in evidenza:</b> valore subito, «SCONTO 20%» in prima posizione appena c'è il link.</li>
+      <li><b>Mai copiare chi ci attacca:</b> si alza l'asticella sul nostro terreno (test e trasparenza).</li></ul></div>
+    <div class="box"><h3>Vendite: le regole</h3>
+      <ul><li>Si vende rispondendo: ogni DM riceve risposta entro 24 ore.</li>
+      <li>Un solo invito all'azione per contenuto, mai due.</li>
+      <li>Sempre «link affiliato», #ad e «il trading comporta un alto rischio di perdita».</li>
+      <li>Nessun numero di guadagno, nessuna promessa, risultati solo veri.</li>
+      <li>Domande frequenti raccolte e trasformate in contenuti (storia FAQ).</li></ul></div>
+  </div>
+  <div class="dec"><b>Decisione:</b> appena arriva il link, prima di pubblicare qualsiasi altra cosa si chiudono i buchi 4 e 5 (reel di rivelazione + ManyChat). Entro dicembre si chiude il buco 8 con Telegram: il pubblico diventa nostro e non dipende più solo da Instagram.</div>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>8</span></div>
+</section>
+
+<!-- ORGANIZZAZIONE + LEADERSHIP + KPI -->
+<section class="page">
+  <div class="kicker">10 · Organizzazione · 11 · Leadership · 12 · KPI</div>
+  <h2>Chi fa <em>cosa</em>, e cosa guardiamo</h2>
+  <table><thead><tr><th>Ruolo</th><th>Chi</th><th>Compiti</th></tr></thead><tbody>
+    <tr><td><b>Generale</b></td><td>Marco</td><td>Decide, approva, ci mette la faccia (storie, commenti, DM), legge i numeri la domenica.</td></tr>
+    <tr><td><b>Produzione</b></td><td>Claude (cloud)</td><td>Caroselli, reel, copertine, musica, caption; programma 1 post al giorno; email di riepilogo.</td></tr>
+    <tr><td><b>Operazioni locali</b></td><td>Claude (VPS / telefono)</td><td>Bot di trading, dati reali del conto per i contenuti, bozze di commenti.</td></tr>
+    <tr><td><b>Mercenari</b></td><td>Aiutanti AI, Higgsfield, Publora, ManyChat</td><td>Lavori ripetitivi e strumenti: pagati a consumo, sostituibili.</td></tr>
+  </tbody></table>
+  <div class="cols">
+    <div class="box"><h3>Il ritmo</h3>
+      <ul><li><b>Ogni giorno (45'):</b> storia mattina + storia pomeriggio, 15' di commenti, risposte ai DM, condivisione del post alle 18:30.</li>
+      <li><b>Ogni domenica (20'):</b> screenshot delle statistiche → Claude aggiorna i KPI e propone le correzioni → ok alla settimana.</li>
+      <li><b>Ogni mese:</b> aggiornare questo War Plan con i numeri veri.</li>
+      <li><b>Ogni 90 giorni:</b> giudizio sulla strategia, scenario A, B o C.</li></ul></div>
+    <div class="box vio"><h3>Leadership: chiarezza, non motivazione</h3>
+      <p>Chi ha bisogno di caricarsi ogni mattina molla alla prima settimana senza risultati. Chi sa perché fa i sacrifici li accetta con il sorriso. I primi 90 giorni saranno lenti: è previsto, è nel piano, non è un segnale di fallimento.</p></div>
+  </div>
+  <h3>KPI: pochi e specifici</h3>
+  <table><thead><tr><th>KPI</th><th>Perché</th><th class="n">C (minimo)</th><th class="n">B (obiettivo)</th></tr></thead><tbody>
+    <tr><td>Follower nuovi a settimana</td><td>Il piano funziona?</td><td class="n">+50</td><td class="n">+150</td></tr>
+    <tr><td>Visualizzazioni medie reel</td><td>Instagram ci mostra a nuovi?</td><td class="n">500</td><td class="n">1.500</td></tr>
+    <tr><td>Salvataggi + condivisioni per post</td><td>Il segnale più premiato</td><td class="n">10</td><td class="n">30</td></tr>
+    <tr><td>Commenti «BOT» e DM a settimana</td><td>Interesse per il link</td><td class="n">3</td><td class="n">15</td></tr>
+    <tr><td>Abbonati dal link al mese</td><td>Soldi veri</td><td class="n">1</td><td class="n">6</td></tr>
+  </tbody></table>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>9</span></div>
+</section>
+
+<!-- SIMULAZIONE -->
+<section class="page">
+  <div class="kicker">13 · Simulazione A / B / C</div>
+  <h2>3, 6 e 12 mesi: <em>si pianifica su C</em></h2>
+  <p class="sub">Per ogni orizzonte tre scenari. Se per due trimestri di fila centriamo C, il piano si riscrive su C. Le entrate sono cumulate dall'inizio.</p>
+  <table><thead><tr><th>Scenario</th><th class="n">3 mesi · gen 2027</th><th class="n">6 mesi · apr 2027</th><th class="n">12 mesi · ott 2027</th></tr></thead><tbody>
+    <tr><td><b>A · ambizioso</b><br><span class="lbl">un reel esplode, sponsor dal 6° mese</span></td><td class="n">3.000 fol<br>12 abb.<br>~2.100 $</td><td class="n">10.000 fol<br>45 abb.<br>~10.000 $</td><td class="n">50.000 fol<br>300 abb.<br>~60.000 $</td></tr>
+    <tr><td><b>B · realistico</b><br><span class="lbl">crescita costante, sponsor dal 9° mese</span></td><td class="n">1.500 fol<br>6 abb.<br>~1.000 $</td><td class="n">5.000 fol<br>22 abb.<br>~3.900 $</td><td class="n">15.000 fol<br>75 abb.<br>~15.000 $</td></tr>
+    <tr class="c"><td>C · prudente (si pianifica qui)<br><span class="lbl" style="color:var(--muted)">crescita lenta, niente sponsor</span></td><td class="n">700 fol<br>2 abb.<br>~350 $</td><td class="n">2.000 fol<br>7 abb.<br>~1.200 $</td><td class="n">5.000 fol<br>15 abb.<br>~2.600 $</td></tr>
+  </tbody></table>
+  <svg viewBox="0 0 600 190" style="width:72%;display:block;margin:0 auto 1mm">
+    <g stroke="#e2def0" stroke-width="1">
+      <line x1="50" x2="590" y1="160" y2="160"/><line x1="50" x2="590" y1="122" y2="122"/><line x1="50" x2="590" y1="84" y2="84"/><line x1="50" x2="590" y1="46" y2="46"/><line x1="50" x2="590" y1="8" y2="8"/>
+    </g>
+    <g font-size="9" fill="#5f5b6e" text-anchor="end"><text x="44" y="163">0</text><text x="44" y="125">12,5k</text><text x="44" y="87">25k</text><text x="44" y="49">37,5k</text><text x="44" y="11">50k</text></g>
+    <g font-size="9" fill="#5f5b6e" text-anchor="middle"><text x="50" y="178">ott 26</text><text x="185" y="178">gen 27</text><text x="320" y="178">apr 27</text><text x="455" y="178">lug 27</text><text x="590" y="178" text-anchor="end">ott 27</text></g>
+    <polyline fill="none" stroke="#14935c" stroke-width="2.5" points="50,160 185,150.9 320,129.6 590,8"/>
+    <polyline fill="none" stroke="#5b3fd6" stroke-width="2.5" points="50,160 185,155.4 320,144.8 590,114.4"/>
+    <polyline fill="none" stroke="#d93848" stroke-width="2.5" points="50,160 185,157.9 320,153.9 590,144.8"/>
+    <g font-size="9.5" font-weight="600"><text x="578" y="12" text-anchor="end" fill="#14935c">A 50k</text><text x="584" y="108" text-anchor="end" fill="#5b3fd6">B 15k</text><text x="584" y="139" text-anchor="end" fill="#d93848">C 5k</text></g>
+  </svg>
+  <div class="cols">
+    <div class="box red"><h3>Rischi e contromosse</h3>
+      <table><tbody>
+        <tr><td>Algory dice no</td><td>Altro tool o prodotto proprio</td></tr>
+        <tr><td>Calo di reach Instagram</td><td>TikTok, YouTube, Telegram dal 2° mese</td></tr>
+        <tr><td>Accuse di «truffa»</td><td>Perdite mostrate, #ad, niente promesse</td></tr>
+        <tr><td>Regole sulla pubblicità finanziaria</td><td>Solo sponsor regolamentati, avvisi di rischio sempre</td></tr>
+        <tr><td>Marco senza tempo o malato</td><td>Produzione e programmazione automatiche, minimo vitale: 2 storie</td></tr>
+      </tbody></table></div>
+    <div class="box green"><h3>Ipotesi da verificare</h3>
+      <ul><li>Commissione Algory (ipotesi ~30% ricorrente).</li>
+      <li>Durata media di un abbonato (ipotesi ~6 mesi).</li>
+      <li>Conversione follower → abbonati (ipotesi 0,3–0,6% l'anno).</li>
+      <li>Tariffe sponsor nella nicchia italiana.</li></ul>
+      <p style="margin-top:1mm">Si aggiornano al primo dato vero. <b>Stime per decidere, non promesse.</b></p></div>
+  </div>
+  <div class="foot"><span>War Plan @marco_stanga_trader · riservato</span><span>10</span></div>
+</section>
+
+</body></html>
