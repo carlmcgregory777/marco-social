@@ -43,3 +43,4 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 | in sospeso | Guido io: compilare CLAUDE.md e brand.json nella sessione locale | Marco |
 - 16/10: storie con sticker → spazio vuoto a misura di sticker + testo guida grigio (regola in CLAUDE.md, sezione Qualità).
 - 16/10: link in bio = https://marcostangatrader.netlify.app (sorgente sito/link, Netlify collegato a marco-social, deploy automatico). Lista d'attesa su Netlify → Forms «lista-attesa». Pulsante #ad nascosto (data-dal) da attivare quando arriva il link Algory. Da fare: contaclic GoatCounter.
+- 16/10: attività giornaliera spostata su un nuovo compito programmato (trig_012igWqTcTLDC8A68mrXGbCj, 09:53 Roma) che lavora in QUESTA sessione cloud (ha già l'accesso a GitHub). Il vecchio (trig_0192ibqMR9YNF6RGCq6ruvS2) è disattivato: partiva da sessioni nuove senza accesso al repository.
