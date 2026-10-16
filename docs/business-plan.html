@@ -1,0 +1,212 @@
+<title>Piano MS 2027</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: una colonna stretta da leggere al volo, blocchi a griglia che diventano una colonna sul telefono. Brand @marco_stanga_trader. */
+:root{
+  --bg:#0b0a10; --panel:#15131d; --line:#2a2638; --fg:#f4f3f7; --muted:#a29fae;
+  --violet:#5b3fd6; --accent:#8b6dff; --red:#ff4d5e; --good:#3ecf8e;
+  --display:'Anton',Impact,'Arial Narrow',sans-serif; --body:'Inter',system-ui,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f6f5fa;--panel:#ffffff;--line:#e2def0;--fg:#14121c;--muted:#5f5b6e;--accent:#5b3fd6;--good:#14935c;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f6f5fa;--panel:#ffffff;--line:#e2def0;--fg:#14121c;--muted:#5f5b6e;--accent:#5b3fd6;--good:#14935c;color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:860px;margin:0 auto;padding-block:32px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:40px}
+h1,h2{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.5px;text-wrap:balance;margin:0}
+h1{font-size:clamp(44px,9vw,80px);line-height:.95}
+h1 em,h2 em{font-style:normal;color:var(--accent)}
+h2{font-size:30px;line-height:1.05;margin-bottom:14px}
+.tag{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--accent);text-transform:uppercase}
+p{margin:0}
+.lead{font-size:19px;color:var(--muted);max-width:62ch;margin-top:14px}
+.lead b{color:var(--fg)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.num{font-variant-numeric:tabular-nums}
+section{display:flex;flex-direction:column;gap:12px;min-width:0}
+
+/* scenari */
+.scen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.card.hi{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.card .k{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.card .big{font-family:var(--display);font-size:44px;line-height:1;color:var(--fg)}
+.card.hi .big{color:var(--accent)}
+.row{display:flex;justify-content:space-between;gap:8px;font-size:14px;border-top:1px solid var(--line);padding-top:6px}
+.row span:last-child{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* grafico */
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 12px 6px}
+.chart svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);padding:4px 6px 8px}
+.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+
+/* entrate */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.inc h3{margin:0;font-size:17px}
+.pill{align-self:flex-start;font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+.pill.now{border-color:var(--good);color:var(--good)}
+
+/* roadmap */
+.road{display:flex;flex-direction:column;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.step{position:relative;padding:0 0 22px 22px;display:flex;flex-direction:column;gap:4px}
+.step::before{content:"";position:absolute;left:-8px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.step.now::before{background:var(--accent)}
+.step .when{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:1px;text-transform:uppercase}
+.step h3{margin:0;font-size:18px}
+.step ul{margin:2px 0 0;padding-left:18px;color:var(--muted)}
+.kpi{font-family:var(--mono);font-size:13px;color:var(--fg)}
+
+table{border-collapse:collapse;width:100%;font-size:14px}
+.tw{overflow-x:auto}
+td,th{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:500}
+td.r{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.rules{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.foot{border-top:1px solid var(--line);padding-top:14px;font-size:12px;color:var(--muted)}
+@media (max-width:640px){.scen,.grid2{grid-template-columns:1fr}.card .big{font-size:38px}}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="tag">@marco_stanga_trader · piano a 12 mesi · ott 2026 → set 2027</div>
+  <h1>Il riferimento italiano per i <em>bot di trading</em> fatti sul serio</h1>
+  <p class="lead">Una pagina che insegna a <b>testare e misurare</b> i bot, senza promesse. Il valore porta follower, i follower portano abbonati con il link affiliato, il pubblico porta sponsor. Obiettivo realistico a un anno: <b>15.000 follower e circa 15.000 $ l'anno</b>; obiettivo ambizioso: <b>50.000 follower e oltre 50.000 $</b>.</p>
+</header>
+
+<section>
+  <h2>Dove possiamo <em>arrivare</em> in 12 mesi</h2>
+  <div class="scen">
+    <div class="card">
+      <div class="k">Prudente</div>
+      <div class="big num">5k</div>
+      <div class="muted small">follower</div>
+      <div class="row"><span>Abbonati dal link</span><span>15</span></div>
+      <div class="row"><span>Affiliazione</span><span>~2.600 $</span></div>
+      <div class="row"><span>Sponsor</span><span>0 $</span></div>
+      <div class="row"><span><b>Totale anno</b></span><span><b>~2.600 $</b></span></div>
+    </div>
+    <div class="card hi">
+      <div class="k">Realistico</div>
+      <div class="big num">15k</div>
+      <div class="muted small">follower</div>
+      <div class="row"><span>Abbonati dal link</span><span>75</span></div>
+      <div class="row"><span>Affiliazione</span><span>~13.000 $</span></div>
+      <div class="row"><span>Sponsor</span><span>~2.000 $</span></div>
+      <div class="row"><span><b>Totale anno</b></span><span><b>~15.000 $</b></span></div>
+    </div>
+    <div class="card">
+      <div class="k">Ambizioso</div>
+      <div class="big num">50k</div>
+      <div class="muted small">follower</div>
+      <div class="row"><span>Abbonati dal link</span><span>300</span></div>
+      <div class="row"><span>Affiliazione</span><span>~52.000 $</span></div>
+      <div class="row"><span>Sponsor</span><span>~10.000 $</span></div>
+      <div class="row"><span><b>Totale anno</b></span><span><b>~60.000 $</b></span></div>
+    </div>
+  </div>
+  <p class="muted small">Regola semplice per leggerlo: ogni 1.000 follower veri ≈ 5 abbonati l'anno ≈ 875 $. Il secondo anno le cifre crescono senza ripartire da zero, perché gli abbonati restano e la pagina è già grande.</p>
+</section>
+
+<section>
+  <h2>Crescita <em>follower</em> attesa</h2>
+  <div class="chart">
+    <div class="legend">
+      <span><i style="background:var(--muted)"></i>Prudente</span>
+      <span><i style="background:var(--accent)"></i>Realistico</span>
+      <span><i style="background:var(--good)"></i>Ambizioso</span>
+    </div>
+    <svg id="ch" viewBox="0 0 640 260" role="img" aria-label="Follower previsti mese per mese nei tre scenari"></svg>
+  </div>
+  <p class="muted small">La crescita non è una linea dritta: i primi mesi sono lenti, poi un reel che funziona accelera tutto. Per questo la costanza (1 post al giorno) conta più del singolo contenuto.</p>
+</section>
+
+<section>
+  <h2>Da dove arrivano <em>i soldi</em></h2>
+  <div class="grid2">
+    <div class="card inc"><span class="pill now">Da subito</span><h3>Affiliazione Algory</h3><p class="muted">Commissione su chi si abbona con il tuo link (20% di sconto per loro). Entrata che si ripete finché restano abbonati.</p></div>
+    <div class="card inc"><span class="pill">Da ~10k follower</span><h3>Sponsor</h3><p class="muted">Prop firm, tool e broker regolamentati pagano per post, storie o per cliente portato. La finanza è tra le nicchie che pagano di più.</p></div>
+    <div class="card inc"><span class="pill">Da ~5k follower</span><h3>Altri canali, stessi video</h3><p class="muted">Gli stessi reel su TikTok e YouTube Shorts: più pubblico a costo zero, e non dipendiamo solo da Instagram.</p></div>
+    <div class="card inc"><span class="pill">Da ~20k follower</span><h3>Un prodotto tuo</h3><p class="muted">Guida o mini-corso «come testo i miei bot» (come il libro di @maricaguglielmi_). Entrata che non dipende da Algory.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>La <em>strada</em>, fase per fase</h2>
+  <div class="road">
+    <div class="step now"><div class="when">Ott – Nov 2026 · adesso</div><h3>Fondamenta</h3>
+      <ul><li>1 post al giorno con C, valzer e copertine curate</li><li>15 minuti di commenti al giorno su pagine del settore</li><li>Link Algory + «Commenta BOT» automatico</li></ul>
+      <div class="kpi">Traguardo: 1.000 follower · primi 5 abbonati</div></div>
+    <div class="step"><div class="when">Dic 2026 – Feb 2027</div><h3>Moltiplicare</h3>
+      <ul><li>Stessi reel su TikTok e YouTube Shorts</li><li>Canale Telegram o newsletter: il pubblico diventa nostro</li><li>1 video Vox a settimana sui temi più forti</li></ul>
+      <div class="kpi">Traguardo: 5.000 follower · 30 abbonati · 500 iscritti Telegram</div></div>
+    <div class="step"><div class="when">Mar – Mag 2027</div><h3>Sponsor</h3>
+      <ul><li>Media kit con numeri reali</li><li>Primi sponsor regolamentati, collaborazioni con altri creator</li></ul>
+      <div class="kpi">Traguardo: 10–15k follower · 1–2 sponsor al mese</div></div>
+    <div class="step"><div class="when">Giu – Set 2027</div><h3>Prodotto proprio</h3>
+      <ul><li>Guida o corso sul testare i bot</li><li>Più fonti di entrata, meno rischio</li></ul>
+      <div class="kpi">Traguardo: 25–50k follower · 30–60k $ l'anno</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>I numeri da guardare <em>ogni domenica</em></h2>
+  <div class="tw"><table>
+    <thead><tr><th>Cosa</th><th>Perché conta</th><th>Obiettivo a novembre</th></tr></thead>
+    <tbody>
+      <tr><td>Follower nuovi</td><td class="muted">Misura se il piano funziona</td><td class="r">+150 / sett.</td></tr>
+      <tr><td>Visualizzazioni medie reel</td><td class="muted">Instagram ci mostra a nuove persone?</td><td class="r">1.000+</td></tr>
+      <tr><td>Salvataggi e condivisioni</td><td class="muted">Il segnale che Instagram premia di più</td><td class="r">20+ a post</td></tr>
+      <tr><td>Commenti «BOT» / DM</td><td class="muted">Persone interessate al link</td><td class="r">10+ / sett.</td></tr>
+      <tr><td>Abbonati dal link</td><td class="muted">Soldi veri</td><td class="r">1–2 / sett.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<div class="grid2">
+  <section>
+    <h2>Costi <em>mensili</em></h2>
+    <div class="tw"><table><tbody>
+      <tr><td>Publora Pro</td><td class="r">~11 $</td></tr>
+      <tr><td>Crediti Higgsfield</td><td class="r">~40 $</td></tr>
+      <tr><td>ManyChat (risposte automatiche)</td><td class="r">~15 $</td></tr>
+      <tr><td><b>Totale</b></td><td class="r"><b>~70 $</b></td></tr>
+    </tbody></table></div>
+    <p class="muted small">Si ripaga con meno di 1 abbonato al mese.</p>
+  </section>
+  <section>
+    <h2>Regole che ci <em>proteggono</em></h2>
+    <ul class="rules">
+      <li>Mai promettere guadagni; mostriamo anche le perdite.</li>
+      <li>Sempre #ad e avviso di rischio con il link.</li>
+      <li>Solo sponsor regolamentati: la fiducia è il nostro capitale.</li>
+      <li>Non dipendere da un solo prodotto né da un solo social.</li>
+      <li>C resta dichiarato come personaggio AI.</li>
+    </ul>
+  </section>
+</div>
+
+<p class="foot">Ipotesi usate: abbonato medio Algory ~97 $/mese per ~6 mesi e commissione ~30% ricorrente ≈ 175 $ per abbonato (da sostituire con i termini reali del programma partner appena arrivano). Conversione follower → abbonati in un anno: 0,3% prudente, 0,5% realistico, 0,6% ambizioso. Tariffe sponsor e costi indicativi. Sono stime per orientarci, non garanzie: le aggiorniamo ogni mese con i numeri veri.</p>
+
+</div>
+
+<script>
+(function(){
+  const svg=document.getElementById('ch'), W=640,H=260,L=48,R=16,T=12,B=30, max=50000;
+  const S=[['var(--muted)',5000,1.3],['var(--accent)',15000,1.6],['var(--good)',50000,2.0]];
+  const x=m=>L+(W-L-R)*m/12, y=v=>T+(H-T-B)*(1-v/max);
+  let g='';
+  [0,10000,20000,30000,40000,50000].forEach(v=>{g+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-width="1"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="var(--muted)" font-family="JetBrains Mono, monospace">${v?v/1000+'k':'0'}</text>`});
+  const mesi=['ott','nov','dic','gen','feb','mar','apr','mag','giu','lug','ago','set','ott'];
+  for(let m=0;m<=12;m+=2) g+=`<text x="${x(m)}" y="${H-10}" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="JetBrains Mono, monospace">${mesi[m]}</text>`;
+  S.forEach(([c,t,p])=>{
+    let d='';for(let m=0;m<=12;m++){const v=t*Math.pow(m/12,p);d+=(m?'L':'M')+x(m).toFixed(1)+' '+y(v).toFixed(1)}
+    g+=`<path d="${d}" fill="none" stroke="${c}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>`;
+    g+=`<circle cx="${x(12)}" cy="${y(t)}" r="4.5" fill="${c}"/><text x="${x(12)-8}" y="${y(t)-9}" text-anchor="end" font-size="12" font-weight="600" fill="${c}" font-family="Inter, sans-serif">${t/1000}k</text>`;
+  });
+  svg.innerHTML=g;
+})();
+</script>
