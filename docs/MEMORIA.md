@@ -42,3 +42,4 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 | facoltativo | scollegare guidoio_ da Publora per sicurezza | Marco |
 | in sospeso | Guido io: compilare CLAUDE.md e brand.json nella sessione locale | Marco |
 - 16/10: storie con sticker → spazio vuoto a misura di sticker + testo guida grigio (regola in CLAUDE.md, sezione Qualità).
+- 16/10: link in bio = https://marcostangatrader.netlify.app (sorgente sito/link, Netlify collegato a marco-social, deploy automatico). Lista d'attesa su Netlify → Forms «lista-attesa». Pulsante #ad nascosto (data-dal) da attivare quando arriva il link Algory. Da fare: contaclic GoatCounter.
