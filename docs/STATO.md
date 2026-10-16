@@ -22,14 +22,14 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 
 ## Note
 - Partnership Algory: domanda inviata il 15/10, risposta a fxmafialtd@gmail.com. Link non ancora disponibile.
-- Publora: piano Starter (15 post/mese condivisi con guidoio_, 3 in coda). Marco valuta Pro (~11$/mese).
-- Crediti Higgsfield al 15/10 sera: ~29.
+- Publora: piano Starter (15 post/mese, ora tutti per marco_stanga_trader: guidoio_ pubblica in locale; 3 in coda). Ottobre: 4 usati al 16/10 → con 1 post/giorno la quota finisce verso il 26/10 → serve Pro (~11$/mese).
+- Crediti Higgsfield al 16/10: ~161.
 
 ## Video Vox «I costi che il backtest non ti dice» (#3) — pronto, NON programmato
 - MP4 finale (v3 loop + valzer Burton, velocizzato x1.1, 25,8 s — APPROVATO da Marco): https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/115bf51a-57ab-44bd-9cf4-9b3e2d796f14.mp4
 - Copertina: produzione/brand/cover_costi.jpg (caricarla su Higgsfield per avere l'URL coverUrl)
 - Sorgenti: produzione/vox/costi_script_manifest.json
-- Da programmare appena la coda Publora ha un posto libero (dopo il 16/10 18:30).
+- Usarlo come R5 «costi nascosti» del 24/10 (piano settimana 2): NON rifarlo, programmare questo MP4 con la copertina cover_costi.jpg.
 
 ## Aggiornamento 15/10 notte (stile approvato applicato alla coda)
 - Reel 1 (16/10 18:30, 6ad1366410a1cbf1ad93113d): nuovo video con valzer Burton variante 1 + ×1,1 (30 s) — media 028fdc43…mp4
