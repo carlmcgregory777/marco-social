@@ -26,3 +26,20 @@ Copertine: cerchio nero #0b0a10, icona/parola viola #8b6dff, C solo in «INIZIA 
 - Nessun numero di guadagno inventato, nessuna promessa. Risultati solo reali e con contesto.
 - Ogni storia di valore finisce con UNA call to action (seguire, salvare o SCONTO 20%), mai due.
 - Rinnovare SCONTO 20% ogni 2–3 settimane con una storia nuova in cima (Instagram mostra la data di aggiornamento).
+
+## Storie collegate ai post (decisione 16/10/2026)
+Regola: ogni storia in evidenza rimanda a UN post del piano e si pubblica lo **stesso giorno del post, dopo le 18:30**, con lo sticker del post nel riquadro tratteggiato. Poi «Aggiungi in evidenza» nel gruppo giusto. Mai anticipare i contenuti dei post futuri.
+File: `produzione/evidenza/storie/<gruppo>/` · script `produzione/script/evidenza_storie.mjs` (per i post nuovi aggiungere una voce e rigenerare).
+
+| Quando | Gruppo | File | Post collegato |
+|---|---|---|---|
+| subito | INIZIA QUI | oggi_1/2/3 | — (crea il gruppo) |
+| subito | FAQ | 15-10_C-6regole + oggi_domanda | carosello 6 regole (già uscito) |
+| 16/10 | TEST | 16-10_R1 | Reel 1 backtest perfetto |
+| 17/10 | TEST | 17-10_C-4test | carosello 4 test |
+| 18/10 | ERRORI | 18-10_R2 | Reel 2 6 bot yen |
+| 19/10 | SISTEMA | 19-10_C-sistema1 | carosello Sistema #1 |
+| 20/10 | SISTEMA | 20-10_R3 | Reel 3 scadenza |
+| 22/10 | ERRORI | 22-10_R4 | Reel 4 ordine dimenticato |
+| 24/10 | ERRORI | 24-10_R5 | Vox costi |
+Dal 21/10 in poi: l'attività giornaliera genera la storia del post del giorno (gruppo: Sistema #n → SISTEMA; errori/costi/miti → ERRORI; test/strategie/dashboard finte → TEST; domande/challenge → FAQ) e la indica nell'email.
