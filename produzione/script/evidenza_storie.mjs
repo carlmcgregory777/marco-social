@@ -44,7 +44,7 @@ p{font-size:50px;line-height:1.35;color:#cfcbd9}p b{color:#fff}
 ul{list-style:none;display:flex;flex-direction:column;gap:22px}
 li{font-size:52px;font-weight:800;padding-left:56px;position:relative}li:before{content:"";position:absolute;left:0;top:18px;width:28px;height:28px;border-radius:8px;background:#5b3fd6}
 .face{width:380px;height:380px;border-radius:50%;border:10px solid #5b3fd6;background:url(data:image/png;base64,${b64}) center 18%/150% no-repeat}
-.box{border:4px dashed #5b3fd6;border-radius:30px;height:220px;display:flex;align-items:center;justify-content:center;color:#8d8a98;font-family:'JetBrains Mono';font-size:32px}
+.box{border:none;visibility:hidden;border-radius:30px;height:220px;display:flex;align-items:center;justify-content:center;color:#8d8a98;font-family:'JetBrains Mono';font-size:32px}
 .ms{position:absolute;left:90px;bottom:160px;font-family:'JetBrains Mono';font-size:30px;color:#7d7a88}.ms b{font-family:Anton;font-size:40px;color:#fff;letter-spacing:2px}`;
 const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 for (const [grp, list] of Object.entries(S)) {
