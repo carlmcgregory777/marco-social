@@ -1,0 +1,6 @@
+# Pagina link in bio di @marco_stanga_trader (sito/link). Netlify pubblica solo quella cartella
+# e salta il deploy se non cambia niente in sito/.
+[build]
+  publish = "sito/link"
+  command = ""
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- sito/ netlify.toml"

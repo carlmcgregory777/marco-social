@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marco Stanga · C</title>
+<meta name="description" content="Trading con i bot, testati sul serio: test, errori e sistema.">
+<link rel="icon" href="c.png">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--v:#5b3fd6;--a:#8b6dff;--n:#0b0a10;--c:#14121c;--b:#2c2838;--g:#8d8a98}
+*{margin:0;box-sizing:border-box}
+body{background:var(--n);color:#fff;font-family:Inter,sans-serif;min-height:100vh;
+ background-image:radial-gradient(circle at 50% 0,#5b3fd640,transparent 55%),linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);
+ background-size:auto,40px 40px,40px 40px}
+main{max-width:480px;margin:0 auto;padding:40px 16px 32px;display:flex;flex-direction:column;gap:14px}
+.av{width:120px;height:120px;border-radius:50%;border:5px solid var(--v);margin:0 auto;background:url(c.png) center/cover}
+h1{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:34px;text-align:center;letter-spacing:1px;margin-top:6px}
+h1 em{font-style:normal;color:var(--a)}
+.bio{text-align:center;color:#cfcbd9;font-size:15px;line-height:1.45}
+.tag{text-align:center;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--g)}
+.btn{display:block;text-decoration:none;color:#fff;background:var(--c);border:2px solid var(--b);border-radius:16px;padding:16px 18px;transition:transform .15s,border-color .15s}
+.btn:hover{transform:translateY(-2px);border-color:var(--a)}
+.btn b{display:block;font-size:16px;font-weight:800}
+.btn span{display:block;font-size:13px;color:var(--g);margin-top:3px}
+.btn.top{background:var(--v);border-color:var(--v)}.btn.top span{color:#e4ddff}
+.btn[data-dal]{display:none}
+form{background:var(--c);border:2px solid var(--b);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;scroll-margin-top:20px}
+form h2{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:22px}
+form p{font-size:13px;color:var(--g);line-height:1.4}
+input{background:var(--n);border:2px solid var(--b);border-radius:12px;color:#fff;font:500 15px Inter,sans-serif;padding:13px 14px}
+input:focus{outline:none;border-color:var(--a)}
+button{background:var(--v);border:0;border-radius:12px;color:#fff;font:800 15px Inter,sans-serif;padding:14px;cursor:pointer}
+.ok{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:var(--g)}.ok input{padding:0;margin-top:2px}
+.hp{display:none}
+footer{font-size:11px;line-height:1.5;color:#6d6a78;text-align:center;margin-top:10px}
+footer b{font-family:Anton,sans-serif;font-weight:400;font-size:16px;color:#fff;letter-spacing:1px}
+</style>
+</head>
+<body>
+<main>
+  <div class="av" role="img" aria-label="C, il personaggio AI della pagina"></div>
+  <h1>Marco Stanga · <em>C</em></h1>
+  <p class="bio">Trading con i bot, testati sul serio.<br>Ti mostro i test, gli errori e il mio sistema, anche quando perdo.</p>
+  <p class="tag">🤖 personaggio AI · dietro c'è Marco</p>
+
+  <a class="btn top" href="#lista"><b>📩 Lista d'attesa: il mio sistema completo</b><span>Ti scrivo quando lo mostro tutto, prima che esca sul profilo.</span></a>
+  <a class="btn" href="https://www.instagram.com/marco_stanga_trader/"><b>▶ Inizia qui</b><span>Le storie in evidenza: test, errori, sistema.</span></a>
+  <a class="btn" href="https://ig.me/m/marco_stanga_trader"><b>💬 Fammi una domanda</b><span>Rispondo in privato. Le migliori diventano un reel.</span></a>
+  <!-- Pulsanti programmati: compaiono dalla data in data-dal (AAAA-MM-GG). Il link Algory va qui solo quando c'è, con #ad. -->
+  <a class="btn top" data-dal="2099-01-01" href="#"><b>🤖 Il tool che uso per i bot · #ad</b><span>Link affiliato: se ti iscrivi ricevo una commissione.</span></a>
+
+  <form id="lista" name="lista-attesa" method="POST" action="/grazie.html" data-netlify="true" netlify-honeypot="sito">
+    <input type="hidden" name="form-name" value="lista-attesa">
+    <p class="hp"><label>Non compilare: <input name="sito"></label></p>
+    <h2>Lista d'attesa</h2>
+    <p>Quando mostro il sistema completo (come scelgo, provo e gestisco i bot) lo mando prima a chi è in lista. Niente spam.</p>
+    <input type="email" name="email" placeholder="La tua email" required autocomplete="email">
+    <input type="text" name="instagram" placeholder="Il tuo @instagram (facoltativo)">
+    <label class="ok"><input type="checkbox" name="consenso" required> Ok a ricevere le email di Marco Stanga. Mi cancello quando voglio rispondendo «stop».</label>
+    <button type="submit">Mettimi in lista</button>
+  </form>
+
+  <footer>
+    <b>MS</b><br>
+    Il trading comporta rischi elevati: puoi perdere tutto il capitale investito. Niente di quello che pubblico è una consulenza finanziaria e i risultati passati non garantiscono quelli futuri.
+  </footer>
+</main>
+<script>
+const oggi=new Date().toISOString().slice(0,10);
+document.querySelectorAll('[data-dal]').forEach(e=>{if(e.dataset.dal<=oggi)e.style.display='block'});
+</script>
+</body>
+</html>
