@@ -21,7 +21,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Publora
 - Per Algory usa SOLO `instagram-17841457719707733` (@marco_stanga_trader). Mai `guidoio_` (altro progetto).
-- Piano Starter: 15 post al mese in tutto l'account (condivisi con guidoio_), 3 programmati alla volta, massimo 7 giorni avanti, statistiche non incluse.
+- Piano Starter: 15 post al mese in tutto l'account (dal 16/10 guidoio_ NON usa più Publora: pubblica dal telefono in locale, quindi la quota è tutta per marco_stanga_trader), 3 programmati alla volta, massimo 7 giorni avanti, statistiche non incluse.
 
 ## Brand @marco_stanga_trader
 - Palette: viola #5b3fd6 (accento #8b6dff), nero #0b0a10, bianco, grigio; rosso #ff4d5e solo per perdite/FAIL. Titoli Anton maiuscolo, testo Inter, dettagli JetBrains Mono, marchio «MS».
