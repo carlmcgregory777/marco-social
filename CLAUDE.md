@@ -47,6 +47,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Dove sono le cose (repository marco-social)
 - Stato pubblicazioni: `docs/STATO.md` — leggilo all'inizio e aggiornalo dopo ogni pubblicazione.
+- Storie in evidenza: `docs/STORIE-IN-EVIDENZA.md` — con ogni post prepara la sua storia collegata (stesso giorno, dopo le 18:30) e indicala nell'email.
 - Piano del mese: `docs/PIANO-30-GIORNI.md`. Kit e regole Algory: `docs/kit-instagram-algory.md`.
 - Script grafiche e reel: `produzione/script/` (vedi README). Media generati: non committare MP4/frame, solo sorgenti e brand.
 
