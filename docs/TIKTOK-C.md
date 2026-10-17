@@ -14,10 +14,18 @@ Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su 
 - Didascalie nello stile di jean_philanthrope: UNA riga corta, impassibile, più il tormentone fisso di C. Posizione sempre attiva (luoghi della finanza). Etichetta «contenuto generato dall'IA» sempre attiva.
 - Motion transfer: Seedance 2.5 su fal, stessi parametri del video «strada azzurro» di Bianca (task reference, 720p, 9:16, generate_audio=false, bitrate_mode=high), immagine di C in alta definizione come @Image1, video di base muto come @Video1. Mostrare a Marco immagine, prompt e video di base PRIMA di generare.
 
+- VIDEO DI BASE DA TIKTOK (regola di Marco, 17/10): prima di tutto tagliare la parte nera finale con il logo e il suono di TikTok (ffmpeg blackdetect + controllo dell'audio finale). Così niente jingle nel risultato.
+- Pipeline: taglio → video muto → Seedance 2.5 (come sopra) → upscale 1080p con Higgsfield (bytedance_video_upscale, preset aigc, 24 fps) → audio rimesso con ffmpeg.
+- Tormentone deciso: «Priced in.» Stile Londra.
+
 ## Da decidere con Marco
-- Ambientazione: Londra/City (proposta) oppure Dubai.
-- Tormentone fisso delle didascalie.
 
 ## Video fatti
 - mt01 (17/10): scalinata con colonne. Base: video di Marco (Downloads/video_2026-10-17_21-31-31.mp4). Immagine: produzione/brand/C_intero.jpg (C a figura intera dalla scheda Higgsfield d889c713, outfit cambiato con google/nano-banana-2.1/edit 2K, puntini in più tolti a mano). Seedance 2.5 request 01a14b8a-7f87-7aa0-a624-1d08130c9f5b, seed 543907823. File: produzione/tiktok/mt01/fal-C-con-audio.mp4 (non nel repo). Non ancora pubblicato.
 - Per i prossimi video usare sempre produzione/brand/C_intero.jpg come @Image1.
+- mt02 (17/10): POV in Ferrari (Downloads/generation (7).mp4, niente nero finale). Seedance 2.5 request 01a14ba2-c80d-7813-96bb-58a0f7f71d05, seed 216037707; upscale Higgsfield fe0da0d0. File: produzione/tiktok/mt02/C-mt02-1080.mp4. Viso meno fedele del mt01 (luce forte, caschetto poco visibile). Non pubblicato.
+
+## jean_philanthrope (analisi 17/10, da urlebird)
+- 10 video pubblici in circa 4 settimane (il primo «Jab, crochet» 15,7 M): 3 nella 4ª settimana fa, 3 nella 3ª, 3 nella 2ª, 1 nell'ultima → circa 2-3 video a settimana, in calo nell'ultima.
+- 283 K follower e 4 M like con 10 video. Visualizzazioni: 1,5–15,7 M a video.
+- Didascalie: una frase + «Oui Madame.» (a volte solo il luogo: «Tour Eiffel. Oui Madame.»). Temi: Parigi, moda, ballo con i pugni («Jab, crochet»), ristoranti di lusso.
