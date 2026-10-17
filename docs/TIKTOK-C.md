@@ -23,7 +23,8 @@ Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su 
 ## Video fatti
 - mt01 (17/10): scalinata con colonne. Base: video di Marco (Downloads/video_2026-10-17_21-31-31.mp4). Immagine: produzione/brand/C_intero.jpg (C a figura intera dalla scheda Higgsfield d889c713, outfit cambiato con google/nano-banana-2.1/edit 2K, puntini in più tolti a mano). Seedance 2.5 request 01a14b8a-7f87-7aa0-a624-1d08130c9f5b, seed 543907823. File: produzione/tiktok/mt01/fal-C-con-audio.mp4 (non nel repo). Non ancora pubblicato.
 - Per i prossimi video usare sempre produzione/brand/C_intero.jpg come @Image1.
-- mt02 (17/10): POV in Ferrari (Downloads/generation (7).mp4, niente nero finale). Seedance 2.5 request 01a14ba2-c80d-7813-96bb-58a0f7f71d05, seed 216037707; upscale Higgsfield fe0da0d0. File: produzione/tiktok/mt02/C-mt02-1080.mp4. Viso meno fedele del mt01 (luce forte, caschetto poco visibile). Non pubblicato.
+- mt02 (17/10): POV in Ferrari (Downloads/generation (7).mp4, niente nero finale). Seedance 2.5 request 01a14ba2-c80d-7813-96bb-58a0f7f71d05, seed 216037707; upscale Higgsfield fe0da0d0. File: produzione/tiktok/mt02/C-mt02-1080.mp4. Viso meno fedele del mt01 (luce forte, caschetto poco visibile). Labiale: Marco ha risolto ritardando l'audio di 0,31 s → finale produzione/tiktok/mt02/C-mt02-1080-finale.mp4. Non pubblicato.
+- LABIALE (lezione 17/10): se non coincide, prima prova gratis spostando l'audio di pochi decimi (ffmpeg adelay) e fai sentire a Marco; il lip-sync a pagamento (fal-ai/sync-lipsync/v3, ~1,30 $ per 10 s) solo se lo spostamento non basta.
 
 ## jean_philanthrope (analisi 17/10, da urlebird)
 - 10 video pubblici in circa 4 settimane (il primo «Jab, crochet» 15,7 M): 3 nella 4ª settimana fa, 3 nella 3ª, 3 nella 2ª, 1 nell'ultima → circa 2-3 video a settimana, in calo nell'ultima.
