@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<!-- Sorgente del PDF regalo «I 4 test prima di mettere un bot sul conto». Rigenera con: node produzione/script/checklist_pdf.mjs -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:0}
+*{margin:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;color:#fff;background:#0b0a10;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pg{width:210mm;height:297mm;padding:18mm 16mm;position:relative;overflow:hidden;page-break-after:always;
+ background:radial-gradient(circle at 80% 0,#5b3fd640,transparent 50%),#0b0a10}
+.tag{font-family:'JetBrains Mono',monospace;font-size:10pt;color:#8b6dff;letter-spacing:2px}
+h1{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:38pt;line-height:1;margin:5mm 0 4mm}
+h1 em,h2 em{font-style:normal;color:#8b6dff}
+.lead{font-size:11pt;line-height:1.5;color:#cfcbd9;max-width:150mm}
+.c{position:absolute;right:12mm;top:14mm;width:42mm;height:42mm;border-radius:50%;border:2mm solid #5b3fd6;background:url(c.png) center/cover}
+.t{border:1.5px solid #2c2838;background:#14121c;border-radius:5mm;padding:4.5mm 6mm;margin-top:4.5mm;display:grid;grid-template-columns:20mm 1fr;gap:5mm}
+.n{font-family:Anton,sans-serif;font-size:34pt;color:#8b6dff;line-height:1}
+h2{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:18pt;line-height:1.1}
+.t p{font-size:10pt;line-height:1.45;color:#cfcbd9;margin-top:1.5mm}
+.t b{color:#fff}
+.ok{font-family:'JetBrains Mono',monospace;font-size:9pt;color:#8b6dff;margin-top:3mm}
+.box{display:inline-block;width:4mm;height:4mm;border:1.5px solid #8b6dff;border-radius:1mm;vertical-align:-0.6mm;margin-right:2mm}
+.foot{position:absolute;left:16mm;right:16mm;bottom:12mm;font-size:8pt;line-height:1.5;color:#6d6a78;border-top:1px solid #2c2838;padding-top:3mm}
+.foot b{font-family:Anton,sans-serif;font-weight:400;font-size:12pt;color:#fff;letter-spacing:1px;margin-right:3mm}
+ul{list-style:none;margin-top:4mm}li{font-size:11pt;line-height:1.5;color:#cfcbd9;margin:2.5mm 0}
+</style></head><body>
+<section class="pg">
+  <div class="c"></div>
+  <div class="tag">// CHECKLIST GRATUITA · DENTRO IL MIO SISTEMA</div>
+  <h1>I 4 test prima di<br>mettere un bot<br><em>sul conto</em></h1>
+  <p class="lead">Quelli che faccio io prima di far toccare a un bot i soldi del mio conto prop. Se ne fallisce anche uno solo, è fuori. Stampala, o tienila aperta mentre valuti il prossimo bot.</p>
+
+  <div class="t"><div class="n">01</div><div><h2>Dati <em>mai visti</em></h2>
+    <p>Dividi lo storico: il bot si costruisce sul <b>70%</b> e lo giudichi solo sul <b>30%</b> che non ha mai visto. Se guadagna solo sul passato che conosce, l'ha imparato a memoria.</p>
+    <p class="ok"><span class="box"></span>Sul 30% nuovo resta in profitto, con un drawdown simile</p></div></div>
+
+  <div class="t"><div class="n">02</div><div><h2>Battere <em>il caso</em></h2>
+    <p>Sullo stesso periodo fai girare <b>100 strategie casuali</b>. Il bot deve fare meglio della grande maggioranza. Se il caso fa uguale, era fortuna.</p>
+    <p class="ok"><span class="box"></span>Batte almeno 95 strategie casuali su 100</p></div></div>
+
+  <div class="t"><div class="n">03</div><div><h2>Rimescolare <em>1.000 volte</em></h2>
+    <p>Rimescola l'ordine delle operazioni 1.000 volte (Monte Carlo) e guarda il drawdown peggiore. Un bot sano non esplode quando la sfortuna arriva tutta insieme.</p>
+    <p class="ok"><span class="box"></span>Il drawdown peggiore resta sotto il limite del tuo conto</p></div></div>
+
+  <div class="t"><div class="n">04</div><div><h2>Ritoccare <em>i parametri</em></h2>
+    <p>Sposta un po' i parametri (periodi, stop, soglie). Se basta un ritocco per farlo crollare, era cucito su misura sul passato.</p>
+    <p class="ok"><span class="box"></span>Almeno metà delle varianti resta in profitto</p></div></div>
+
+  <div class="foot"><b>MS</b>@marco_stanga_trader · 🤖 C è un personaggio AI, dietro c'è Marco. Il trading comporta rischi elevati: puoi perdere tutto il capitale. Questo documento è materiale educativo, non una consulenza finanziaria.</div>
+</section>
+
+<section class="pg">
+  <div class="tag">// PRIMA DI ACCENDERLO DAL VIVO</div>
+  <h1>3 controlli che<br>il backtest <em>non fa</em></h1>
+  <p class="lead">Hai un bot che passa i 4 test? Bene. Prima di accenderlo controlla anche questo: sono gli errori che ho pagato io.</p>
+
+  <div class="t"><div class="n">A</div><div><h2>I costi <em>veri</em></h2>
+    <p>Rifai il test con <b>commissioni e swap reali</b> del tuo broker. In 5 mesi a me sono costati 2.424 $ che il backtest non mostrava.</p>
+    <p class="ok"><span class="box"></span>Resta in profitto anche con i costi reali</p></div></div>
+
+  <div class="t"><div class="n">B</div><div><h2>Non scommettere <em>due volte</em></h2>
+    <p>Se hai già altri bot, controlla che non lavorino tutti sullo stesso mercato. Io avevo 6 bot sullo yen: quando si è mosso, hanno perso tutti insieme.</p>
+    <p class="ok"><span class="box"></span>Non si muove come i bot che hai già</p></div></div>
+
+  <div class="t"><div class="n">C</div><div><h2>Parti <em>piano</em></h2>
+    <p>Ogni bot nuovo parte al <b>25% del rischio</b>. Dopo circa 10 operazioni sane sale a metà, dopo circa 30 a rischio pieno. Il resto se lo guadagna dal vivo.</p>
+    <p class="ok"><span class="box"></span>Rischio iniziale impostato al 25%</p></div></div>
+
+  <h2 style="margin-top:9mm">E quando lo <em>sostituisci</em></h2>
+  <ul>
+    <li><span class="box"></span>Chiudi o controlla le <b style="color:#fff">posizioni aperte</b></li>
+    <li><span class="box"></span>Cancella gli <b style="color:#fff">ordini pendenti</b> (a me uno dimenticato è costato 245 $)</li>
+  </ul>
+
+  <div class="foot"><b>MS</b>Ogni giorno alle 18:30 un nuovo pezzo del sistema su Instagram: @marco_stanga_trader. Il trading comporta rischi elevati: puoi perdere tutto il capitale. Materiale educativo, non consulenza finanziaria. I risultati passati non garantiscono quelli futuri.</div>
+</section>
+</body></html>
