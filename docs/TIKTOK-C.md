@@ -17,3 +17,7 @@ Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su 
 ## Da decidere con Marco
 - Ambientazione: Londra/City (proposta) oppure Dubai.
 - Tormentone fisso delle didascalie.
+
+## Video fatti
+- mt01 (17/10): scalinata con colonne. Base: video di Marco (Downloads/video_2026-10-17_21-31-31.mp4). Immagine: produzione/brand/C_intero.jpg (C a figura intera dalla scheda Higgsfield d889c713, outfit cambiato con google/nano-banana-2.1/edit 2K, puntini in più tolti a mano). Seedance 2.5 request 01a14b8a-7f87-7aa0-a624-1d08130c9f5b, seed 543907823. File: produzione/tiktok/mt01/fal-C-con-audio.mp4 (non nel repo). Non ancora pubblicato.
+- Per i prossimi video usare sempre produzione/brand/C_intero.jpg come @Image1.
