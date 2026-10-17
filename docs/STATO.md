@@ -5,12 +5,12 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 | Data (ora IT) | Contenuto | Publora postGroupId | Stato |
 |---|---|---|---|
 | 15/10 22:30 | Carosello «6 regole challenge» (f2) | 6ad137e110a1cbf1ad931cfd | pubblicato |
-| 16/10 18:30 | Reel 1 «Il backtest perfetto» | 6ad1366410a1cbf1ad93113d | programmato |
+| 16/10 18:30 | Reel 1 «Il backtest perfetto» | 6ad1366410a1cbf1ad93113d | pubblicato |
 | 17/10 18:30 | Carosello «4 test» parte 2 (f1) | 6ad1382558d8b1502d3c61b0 | programmato |
 | 18/10 18:30 | Reel 2 «Avevo 6 bot» | 6ad13b4c58d8b1502d3c776c | programmato |
+| 19/10 18:30 | Carosello «Dentro il mio sistema #1» (s1, 8 slide con copertina C #1; immagini in sito/link/p/s1) | 6ad38f3ad9bbd9a04e6778b5 | programmato |
 
 ## Pronti, non ancora programmati
-- Carosello «Dentro il mio sistema #1» evoluzione (s1.json)
 - Carosello «Dentro il mio sistema #2» scheda strategia (s2.json)
 - Carosello «Dentro il mio sistema #3» diversificazione (s3.json)
 - Carosello «Dentro il mio sistema #4» parity MT5 (s4.json)
@@ -23,7 +23,8 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 ## Note
 - Partnership Algory: domanda inviata il 15/10, risposta a fxmafialtd@gmail.com. Link non ancora disponibile.
 - Publora: piano Starter (15 post/mese, ora tutti per marco_stanga_trader: guidoio_ pubblica in locale; 3 in coda). Ottobre: 4 usati al 16/10 → con 1 post/giorno la quota finisce verso il 26/10 → serve Pro (~11$/mese).
-- Crediti Higgsfield al 16/10: ~161.
+- Crediti Higgsfield al 17/10: 42,27 (al 16/10 erano ~161: consumati ~119, probabilmente dalla sessione locale di Guido io — i crediti sono condivisi).
+- Immagini dei caroselli: si possono pubblicare da sito/link/p/<nome>/ (Netlify, URL pubblici) invece che da Higgsfield.
 
 ## Video Vox «I costi che il backtest non ti dice» (#3) — pronto, NON programmato
 - MP4 finale (v3 loop + valzer Burton, velocizzato x1.1, 25,8 s — APPROVATO da Marco): https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/115bf51a-57ab-44bd-9cf4-9b3e2d796f14.mp4
