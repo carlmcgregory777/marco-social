@@ -6,7 +6,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 |---|---|---|---|
 | 15/10 22:30 | Carosello «6 regole challenge» (f2) | 6ad137e110a1cbf1ad931cfd | pubblicato |
 | 16/10 18:30 | Reel 1 «Il backtest perfetto» | 6ad1366410a1cbf1ad93113d | pubblicato |
-| 17/10 18:30 | Carosello «4 test» parte 2 (f1) | 6ad1382558d8b1502d3c61b0 | programmato |
+| 17/10 18:30 | Carosello «4 test» parte 2 (f1) — didascalia con «Commenta CHECKLIST» (aggiunta 17/10 18:21) | 6ad1382558d8b1502d3c61b0 | programmato |
 | 18/10 18:30 | Reel 2 «Avevo 6 bot» | 6ad13b4c58d8b1502d3c776c | programmato |
 | 19/10 18:30 | Carosello «Dentro il mio sistema #1» (s1, 8 slide con copertina C #1; immagini in sito/link/p/s1) | 6ad38f3ad9bbd9a04e6778b5 | programmato |
 
@@ -43,3 +43,6 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
   Caption: «Nessun bot funziona per sempre. Chi ti dice il contrario ti sta vendendo qualcosa.\n\nOgni strategia vive finché il mercato resta com'era quando è nata. Io ricontrollo i miei bot sui dati nuovi e li divido in tre: tiene, si indebolisce, da sostituire. Quello che cala lo cambio con uno nuovo, che riparte dal rischio più basso.\n\nE prima di toglierlo controllo sempre posizioni e ordini pendenti. Il 22 ti racconto quanto mi è costato non farlo.\n\nSeguimi per non perderlo.\n🎙️ Voce generata con AI · Il trading comporta un alto rischio di perdita.\n#algotrading #tradingbot #propfirm #tradingitalia»
 - **Vox «costi» (24/10)**: copertina aggiornata a **#4** https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/a6224858-64e5-4a88-ad94-661ee52927af.jpg
 - **Storie in evidenza**: copertine pronte in produzione/evidenza/ (01 INIZIA QUI … 05 FAQ subito; 06 SCONTO 20%, 07 IL TOOL, 08 PROVE dopo il link).
+
+## ManyChat (17/10, sessione locale)
+- Collegato a @marco_stanga_trader, piano Free: 1 post alla volta, max 25 contatti. Automazione CHECKLIST solo sul carosello «4 test» del 17/10 (DM con link a https://marcostangatrader.netlify.app/#checklist). Gli altri post NON hanno la CTA CHECKLIST finché non si passa a Pro. Flusso BOT spento fino al link Algory. Testi in docs/LEAD-E-RISPONDITORE.md.
