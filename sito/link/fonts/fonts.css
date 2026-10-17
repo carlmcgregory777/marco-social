@@ -1,0 +1,4 @@
+/* Font ospitati sul sito (non da Google): nessun dato dei visitatori va a Google (GDPR). Tutti OFL. */
+@font-face{font-family:Anton;font-style:normal;font-weight:400;font-display:swap;src:url(anton.woff2) format('woff2')}
+@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(inter.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(jetbrains-mono.woff2) format('woff2')}

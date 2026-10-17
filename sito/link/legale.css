@@ -1,0 +1,15 @@
+/* Stile comune delle pagine legali (privacy, note legali): stessa palette della pagina link. */
+*{margin:0;box-sizing:border-box}
+body{background:#0b0a10;color:#cfcbd9;font-family:Inter,sans-serif;font-size:15px;line-height:1.6}
+main{max-width:680px;margin:0 auto;padding:28px 16px 48px}
+.back{display:inline-block;color:#8b6dff;text-decoration:none;font:500 13px 'JetBrains Mono',monospace;margin-bottom:22px}
+h1{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:40px;line-height:1}
+h1 em{font-style:normal;color:#8b6dff}
+h2{color:#fff;font-size:17px;font-weight:800;margin:28px 0 8px}
+h2.r{color:#ff4d5e}
+p,ul{margin-top:8px}
+ul{padding-left:20px}
+li{margin:4px 0}
+b{color:#fff}
+a{color:#8b6dff}
+.agg{font-family:'JetBrains Mono',monospace;font-size:12px;color:#8d8a98;margin-top:10px}

@@ -3,3 +3,7 @@
 [build]
   publish = "sito/link"
   command = ""
+
+[functions]
+  # Funzioni del sito: submission-created copia i lead del modulo checklist in Brevo.
+  directory = "netlify/functions"

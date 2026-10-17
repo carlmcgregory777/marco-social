@@ -9,7 +9,7 @@
 <meta property="og:description" content="Checklist gratuita: i 4 test prima di mettere un bot sul conto.">
 <meta property="og:image" content="hero.jpg">
 <link rel="icon" href="c.png">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 :root{--v:#5b3fd6;--a:#8b6dff;--n:#0b0a10;--c:#14121c;--b:#2c2838;--g:#8d8a98}
 *{margin:0;box-sizing:border-box}
@@ -52,6 +52,8 @@ button{background:var(--v);border:0;border-radius:12px;color:#fff;font:800 15px 
 .ok{display:flex;gap:8px;align-items:flex-start;font-size:11.5px;color:var(--g);line-height:1.4}.ok input{width:auto;padding:0;margin-top:2px}
 .hp{display:none}
 footer{padding:20px 16px 0;font-size:11px;line-height:1.55;color:#6d6a78;text-align:center}
+footer a{color:#8d8a98}
+.ok a{color:var(--a)}
 footer b{font-family:Anton,sans-serif;font-weight:400;font-size:18px;color:#fff;letter-spacing:1px}
 .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#fff;color:#000;font:700 13px Inter,sans-serif;padding:10px 16px;border-radius:99px;opacity:0;transition:opacity .2s}
 </style>
@@ -105,14 +107,15 @@ footer b{font-family:Anton,sans-serif;font-weight:400;font-size:18px;color:#fff;
       </ul>
       <input type="email" name="email" placeholder="La tua email" required autocomplete="email">
       <input type="text" name="instagram" placeholder="Il tuo @instagram (facoltativo)">
-      <label class="ok"><input type="checkbox" name="consenso" required> Ok a ricevere la checklist e le email di Marco Stanga sui bot. Mi cancello quando voglio rispondendo «stop».</label>
+      <label class="ok"><input type="checkbox" name="consenso" value="si" required> <span>Ho almeno 18 anni e voglio ricevere la checklist e le email di Marco sui bot di trading (1-2 a settimana, a volte con link affiliati #ad). Mi cancello quando voglio. Ho letto l'<a href="privacy.html">informativa privacy</a>.</span></label>
       <button type="submit">Mandami la checklist</button>
     </form>
   </main>
 
   <footer>
     <b>MS</b><br>
-    Il trading comporta rischi elevati: puoi perdere tutto il capitale investito. Niente di quello che pubblico è una consulenza finanziaria e i risultati passati non garantiscono quelli futuri.
+    Il trading comporta rischi elevati: puoi perdere tutto il capitale investito. Niente di quello che pubblico è una consulenza finanziaria e i risultati passati non garantiscono quelli futuri.<br>
+    <a href="privacy.html">Privacy</a> · <a href="note-legali.html">Note legali</a> · Nessun cookie
   </footer>
 </div>
 <div class="toast" id="toast">Link copiato</div>
