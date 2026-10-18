@@ -2,3 +2,6 @@ node_modules/
 *.mp4
 frames/
 out/
+*.wav
+*.m4a
+*.opus
