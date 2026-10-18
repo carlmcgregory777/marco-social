@@ -9,6 +9,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 | 17/10 18:30 | Carosello «4 test» parte 2 (f1) — didascalia con «Commenta CHECKLIST» (aggiunta 17/10 18:21) | 6ad1382558d8b1502d3c61b0 | pubblicato (instagram.com/p/Demivt9IINv) |
 | 18/10 18:30 | Reel 2 «Avevo 6 bot» | 6ad13b4c58d8b1502d3c776c | programmato |
 | 19/10 18:30 | Carosello «Dentro il mio sistema #1» (s1, 8 slide con copertina C #1; immagini in sito/link/p/s1) | 6ad38f3ad9bbd9a04e6778b5 | programmato |
+| 20/10 18:30 | Reel 3 «Ogni bot ha una scadenza» (copertina #3, rimando alla checklist in bio) | 6ad47b34c012b79dd39edd73 | programmato |
 
 ## Pronti, non ancora programmati
 - Carosello «Dentro il mio sistema #2» scheda strategia (s2.json)
@@ -23,7 +24,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 ## Note
 - Partnership Algory: domanda inviata il 15/10, risposta a fxmafialtd@gmail.com. Link non ancora disponibile.
 - Publora: piano Starter (15 post/mese, ora tutti per marco_stanga_trader: guidoio_ pubblica in locale; 3 in coda). Ottobre: 4 usati al 16/10 → con 1 post/giorno la quota finisce verso il 26/10 → serve Pro (~11$/mese).
-- Crediti Higgsfield al 17/10: 42,27 (al 16/10 erano ~161: consumati ~119, probabilmente dalla sessione locale di Guido io — i crediti sono condivisi).
+- Crediti Higgsfield al 18/10: 2,35 (SOTTO 10: stop alle generazioni a pagamento, email mandata a Marco). Al 17/10: 42,27 (al 16/10 erano ~161: consumati ~119, probabilmente dalla sessione locale di Guido io — i crediti sono condivisi).
 - Immagini dei caroselli: si possono pubblicare da sito/link/p/<nome>/ (Netlify, URL pubblici) invece che da Higgsfield.
 
 ## Video Vox «I costi che il backtest non ti dice» (#3) — pronto, NON programmato
@@ -39,7 +40,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Vox «costi» v3 approvato: da programmare al primo posto libero in coda.
 
 ## Pronti in anticipo (16/10) — NON rifarli, programmare questi file
-- **R3 «Ogni bot ha una scadenza» (20/10 18:30)**: video https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/b0e0c414-5782-4ae7-8a3c-db1d8b8c01bb.mp4 (30 s, voce Julian, valzer variante 0, ×1,1, loop «ho imparato a mie spese che… → nessun bot funziona per sempre») · copertina #3 https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/86bc40ee-6b53-47a1-a340-6e4b6a4abf3d.jpg · sorgente produzione/script/reel3.html
+- **R3 «Ogni bot ha una scadenza» (20/10 18:30) — PROGRAMMATO il 18/10**: video https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/b0e0c414-5782-4ae7-8a3c-db1d8b8c01bb.mp4 (30 s, voce Julian, valzer variante 0, ×1,1, loop «ho imparato a mie spese che… → nessun bot funziona per sempre») · copertina #3 https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/86bc40ee-6b53-47a1-a340-6e4b6a4abf3d.jpg · sorgente produzione/script/reel3.html
   Caption: «Nessun bot funziona per sempre. Chi ti dice il contrario ti sta vendendo qualcosa.\n\nOgni strategia vive finché il mercato resta com'era quando è nata. Io ricontrollo i miei bot sui dati nuovi e li divido in tre: tiene, si indebolisce, da sostituire. Quello che cala lo cambio con uno nuovo, che riparte dal rischio più basso.\n\nE prima di toglierlo controllo sempre posizioni e ordini pendenti. Il 22 ti racconto quanto mi è costato non farlo.\n\nSeguimi per non perderlo.\n🎙️ Voce generata con AI · Il trading comporta un alto rischio di perdita.\n#algotrading #tradingbot #propfirm #tradingitalia»
 - **Vox «costi» (24/10)**: copertina aggiornata a **#4** https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/a6224858-64e5-4a88-ad94-661ee52927af.jpg
 - **Storie in evidenza**: copertine pronte in produzione/evidenza/ (01 INIZIA QUI … 05 FAQ subito; 06 SCONTO 20%, 07 IL TOOL, 08 PROVE dopo il link).
