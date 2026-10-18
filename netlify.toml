@@ -1,4 +1,4 @@
-# Pagina link in bio di @marco_stanga_trader (sito/link). Netlify pubblica solo quella cartella
+# Pagina link in bio di @cthe.trader (sito/link). Netlify pubblica solo quella cartella
 # (cartella pubblicata: sito/link).
 [build]
   publish = "sito/link"

@@ -1,6 +1,6 @@
 # marco-social
 
-Produzione contenuti Instagram per @marco_stanga_trader (trading algoritmico, poi affiliazione Algory).
+Produzione contenuti Instagram per @cthe.trader (trading algoritmico, poi affiliazione Algory).
 
 - `CLAUDE.md` — istruzioni per Claude (lette a ogni sessione).
 - `.claude/skills`, `.claude/agents` — skill di marketing/Instagram e agenti economici.

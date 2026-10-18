@@ -18,5 +18,5 @@ h1 em{font-style:normal;color:#8b6dff}
 <path d="M90 380 L200 340 L290 330 L380 280 L470 260 L560 200 L650 170 L720 110" stroke="#8b6dff" stroke-width=10 fill=none filter="url(#g)" stroke-linejoin="round"/>
 <path d="M720 110 L790 190 L850 170 L920 290 L990 360" stroke="#ff4d5e" stroke-width=10 fill=none filter="url(#g)" stroke-linejoin="round"/>
 <line x1=720 y1=40 x2=720 y2=420 stroke="#ff4d5e" stroke-width=3 stroke-dasharray="10 10"/></svg>
-<div class=sub>${sub}</div><div class=ms><b>MS</b>&nbsp;&nbsp;@marco_stanga_trader</div></body></html>`,{waitUntil:'networkidle'});
+<div class=sub>${sub}</div><div class=ms><b>MS</b>&nbsp;&nbsp;@cthe.trader</div></body></html>`,{waitUntil:'networkidle'});
 await p.evaluate(()=>document.fonts.ready); await p.screenshot({path:out,type:'jpeg',quality:95}); await b.close();

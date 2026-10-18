@@ -16,5 +16,5 @@ Leggi in quest'ordine: CLAUDE.md → docs/MEMORIA.md → docs/STATO.md → docs/
 1. `git pull` e lavora sempre su questo repo; a fine lavoro commit + push (la sessione cloud legge da GitHub).
 2. Collegamenti MCP da verificare: Publora, Higgsfield, Gmail. Se mancano, guida Marco a collegarli.
 3. Strumenti: node + Playwright (gli script importano da /opt/node22/... → cambia l'import col percorso di `npm root -g`), ffmpeg, python3 con Pillow.
-4. Telefono (adb, app Instagram): solo @marco_stanga_trader per questo progetto; pubblicare/commentare SOLO con ok esplicito di Marco per ogni azione; mai toccare @guidoio_ o altri account.
+4. Telefono (adb, app Instagram): solo @cthe.trader per questo progetto; pubblicare/commentare SOLO con ok esplicito di Marco per ogni azione; mai toccare @guidoio_ o altri account.
 5. Velocizzare: storie del giorno con sticker, 15' di commenti alle pagine di docs/PAGINE-COMMENTI.md, risposte ai DM/commenti — sempre con ok di Marco.

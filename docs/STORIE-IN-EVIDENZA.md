@@ -1,4 +1,4 @@
-# Storie in evidenza @marco_stanga_trader (piano)
+# Storie in evidenza @cthe.trader (piano)
 
 Ordine sul profilo = ordine di questa lista (le prime 4 si vedono senza scorrere).
 Copertine: cerchio nero #0b0a10, icona/parola viola #8b6dff, C solo in «INIZIA QUI». Da generare col codice (gratis).

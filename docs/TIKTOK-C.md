@@ -1,10 +1,10 @@
 # TikTok @cthe.trader («C-The trader») — impostazioni e stile
 
-Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su Instagram @marco_stanga_trader.
+Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su Instagram @cthe.trader.
 
 ## Profilo (impostato il 17/10 dal telefono)
 - Foto: produzione/brand/foto_profilo_personaggio.jpg (la stessa di Instagram).
-- Bio: «Instagram : marco_stanga_trader» — solo testo, nessun link cliccabile: TikTok non può bloccarlo. Il link nel profilo TikTok arriva solo a 1.000 follower.
+- Bio: «Instagram : cthe.trader» — solo testo, nessun link cliccabile: TikTok non può bloccarlo. Il link nel profilo TikTok arriva solo a 1.000 follower.
 - Instagram rimanda a TikTok: bio «- TikTok: cthe.trader» + icona e scheda sulla pagina link (sito/link).
 - Su TikTok niente Algory, niente link affiliati, niente promesse di guadagno: solo il personaggio.
 

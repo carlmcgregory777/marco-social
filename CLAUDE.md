@@ -14,16 +14,16 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Regole generali
 - Non pubblicare, inviare o comprare niente senza l'ok esplicito di Marco.
-- ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @marco_stanga_trader, alle 18:30 ora italiana (fino al 24/10: 16:30 UTC; dal 25/10, ora solare: 17:30 UTC), senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a fxmafialtd@gmail.com.
+- ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @cthe.trader, alle 18:30 ora italiana (fino al 24/10: 16:30 UTC; dal 25/10, ora solare: 17:30 UTC), senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a fxmafialtd@gmail.com.
 - Crediti Higgsfield: se scendono sotto 10, non generare più nulla a pagamento e manda subito una email a Marco per decidere come procedere. Video a pagamento AUTORIZZATI da Marco il 15/10/2026: per i reel puoi usare i modelli top (Seedance 2.5, Katana, Kling 3.0 ecc.), al massimo ~40 crediti per contenuto, sempre lasciando almeno 10 crediti di scorta. Preferisci 1 clip forte (gancio iniziale) al posto di tante clip.
 - Se Publora non ha più quota (post mensili o coda piena), non forzare: email a Marco e fermati.
 - Leggi i file della Theory solo quando servono, per risparmiare token.
 
 ## Publora
-- Per Algory usa SOLO `instagram-17841457719707733` (@marco_stanga_trader). Mai `guidoio_` (altro progetto).
-- Piano Starter: 15 post al mese in tutto l'account (dal 16/10 guidoio_ NON usa più Publora: pubblica dal telefono in locale, quindi la quota è tutta per marco_stanga_trader), 3 programmati alla volta, massimo 7 giorni avanti, statistiche non incluse.
+- Per Algory usa SOLO `instagram-17841457719707733` (@cthe.trader). Mai `guidoio_` (altro progetto).
+- Piano Starter: 15 post al mese in tutto l'account (dal 16/10 guidoio_ NON usa più Publora: pubblica dal telefono in locale, quindi la quota è tutta per cthe.trader), 3 programmati alla volta, massimo 7 giorni avanti, statistiche non incluse.
 
-## Brand @marco_stanga_trader
+## Brand @cthe.trader
 - Palette: viola #5b3fd6 (accento #8b6dff), nero #0b0a10, bianco, grigio; rosso #ff4d5e solo per perdite/FAIL. Titoli Anton maiuscolo, testo Inter, dettagli JetBrains Mono, marchio «MS».
 - Volto della pagina: personaggio AI «C» (caschetto viola a scodella, collo lungo, orecchie a sventola, baffoni neri, sguardo impassibile, giacca nera, camicia viola #5b3fd6, cravatta nera). Scheda Higgsfield job d889c713-1473-478c-b73a-df0a2e57d25f; versione palette job 59c21fa3-ba3f-4da5-b893-1ab7b8c0c703. Usare sempre come riferimento per restare identico. In bio: «🤖 personaggio AI · dietro c'è Marco».
 - Voce reel: ElevenLabs via Higgsfield, preset «Julian» 95429266-c0ac-4137-a209-63b8812b0f23. Caption con «🎙️ Voce generata con AI».

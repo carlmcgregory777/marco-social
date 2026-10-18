@@ -15,7 +15,7 @@ Le chiavi le inserisce Marco: Claude non scrive password o chiavi API.
 5. app.netlify.com → sito marcostangatrader → Site configuration → Environment variables → aggiungi `BREVO_API_KEY` (la chiave) e `BREVO_LIST_ID` (il numero della lista).
 6. Deploys → «Trigger deploy» → «Deploy site».
 7. Importa chi si è già iscritto: Netlify Forms → CSV → Brevo → Contatti → Importa → lista `Checklist bot`.
-8. Brevo → Automazioni → «Messaggio di benvenuto»: quando un contatto entra in `Checklist bot`, invia l'email qui sotto. Mittente: Marco · @marco_stanga_trader. Il link «cancellati» Brevo lo aggiunge da solo.
+8. Brevo → Automazioni → «Messaggio di benvenuto»: quando un contatto entra in `Checklist bot`, invia l'email qui sotto. Mittente: Marco · @cthe.trader. Il link «cancellati» Brevo lo aggiunge da solo.
 9. Dimmi «Brevo fatto»: faccio un'iscrizione di prova e controllo che arrivi.
 
 ### Email di benvenuto (Brevo)
@@ -39,7 +39,7 @@ Oggetto: La tua checklist dei 4 test
 Serve ManyChat, il servizio ufficiale che Meta permette per i DM automatici e per «commenta una parola → ricevi il link». Partire dal piano gratuito; controllare il prezzo del Pro al momento, servirà solo se il gratuito non basta.
 
 ### Da fare una volta (Marco, ~5 minuti)
-1. Vai su manychat.com → «Get started» → Instagram → accedi con @marco_stanga_trader (NON con guidoio_) e accetta i permessi.
+1. Vai su manychat.com → «Get started» → Instagram → accedi con @cthe.trader (NON con guidoio_) e accetta i permessi.
 2. Sul telefono: Instagram → Impostazioni → Messaggi e risposte alle storie → Strumenti collegati → attiva «Consenti accesso ai messaggi».
 3. Dimmi «ManyChat fatto»: ti guido a creare i flussi con i testi qui sotto (o li creo io dal browser con te).
 

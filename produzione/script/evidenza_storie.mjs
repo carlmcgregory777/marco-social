@@ -1,4 +1,4 @@
-// Storie per le «storie in evidenza» di @marco_stanga_trader (fase 1, prima del link: niente Algory).
+// Storie per le «storie in evidenza» di @cthe.trader (fase 1, prima del link: niente Algory).
 // Uso: node evidenza_storie.mjs <pers_C.png> <cartella_out>
 import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
 import fs from 'fs';
@@ -53,7 +53,7 @@ for (const [grp, list] of Object.entries(S)) {
     const html = `<div class=grid></div><div class=glow></div><div class=wrap>
       <div class=tag>// ${s.tag}</div>${s.face ? '<div class=face></div>' : ''}${s.big ? `<div class="big${s.red ? ' red' : ''}">${s.big}</div>` : ''}
       <h1>${s.h}</h1>${s.list ? `<ul>${s.list.map(x => `<li>${x}</li>`).join('')}</ul>` : ''}${s.p ? `<p>${s.p}</p>` : ''}${s.box ? `<div class="box${s.q ? ' q' : ''}">${s.box}</div>` : ''}${s.post ? '<div class=box>sticker LINK<br>link del post · «Guardalo ora»</div>' : ''}</div>
-      <div class=ms><b>MS</b>&nbsp;&nbsp;@marco_stanga_trader</div>`;
+      <div class=ms><b>MS</b>&nbsp;&nbsp;@cthe.trader</div>`;
     await p.setContent(`<html><head><style>${css}</style></head><body>${html}</body></html>`, { waitUntil: 'networkidle' });
     await p.evaluate(() => document.fonts.ready);
     await p.screenshot({ path: `${out}/${grp}/${s.f}.jpg`, type: 'jpeg', quality: 90 });

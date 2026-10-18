@@ -1,4 +1,4 @@
-# Kit Instagram Algory: @marco_stanga_trader
+# Kit Instagram Algory: @cthe.trader
 
 Regole del programma partner, valide per ogni contenuto con il link:
 - **#ad** (più #adv per la legge italiana) ben visibile;
@@ -16,13 +16,13 @@ Modulo: https://algory.app/partners.html#apply (in inglese). Testi da incollare:
 **EMAIL:** [la tua email]
 
 **HOW BIG IS YOUR AUDIENCE?**
-> Small and starting: about 100 followers on Instagram (@marco_stanga_trader). I'm relaunching the account now, focused only on algorithmic trading with Algory. I'm also active in the Vaga FX community.
+> Small and starting: about 100 followers on Instagram (@cthe.trader). I'm relaunching the account now, focused only on algorithmic trading with Algory. I'm also active in the Vaga FX community.
 
 **WHAT PLATFORM IS YOUR AUDIENCE ON?**
 > Instagram (Reels and carousels), with TikTok to follow.
 
 **LINKS TO YOUR CONTENT:**
-> https://www.instagram.com/marco_stanga_trader/
+> https://www.instagram.com/cthe.trader/
 
 **COUNTRY AND LANGUAGE OF YOUR AUDIENCE:**
 > Italy, Italian.
@@ -42,7 +42,7 @@ Modulo: https://algory.app/partners.html#apply (in inglese). Testi da incollare:
 |---|---|---|
 | Foto | da controllare | ? |
 | Nome (campo cercabile) | «marcostanghelinifx \| ᴘʀᴏᴘᴛʀᴀᴅᴇʀ» | da rifare: niente parola chiave leggibile |
-| @handle | marco_stanga_trader | ok, si tiene |
+| @handle | cthe.trader | ok, si tiene |
 | Bio | «il tuo amichevole trader di quartiere / proptrader / @vagafx Student» | da rifare: non dice cosa trova chi ti segue |
 | Link | Linktree → ebook | da rifare: non porta ad Algory |
 | Categoria | Entrepreneur | da cambiare |

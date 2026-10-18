@@ -11,5 +11,5 @@ h1 em{font-style:normal;color:#8b6dff}
 p{position:absolute;left:90px;right:90px;font-size:48px;line-height:1.3;color:#cfcbd9}
 .box{position:absolute;left:90px;right:90px;border:3px dashed #5b3fd6;border-radius:30px;color:#8d8a98;font-family:'JetBrains Mono';font-size:30px;display:flex;align-items:center;justify-content:center}
 .ms{position:absolute;left:90px;bottom:140px;font-family:'JetBrains Mono';font-size:30px;color:#7d7a88}.ms b{font-family:Anton;font-size:40px;color:#fff;letter-spacing:2px}
-</style></head><body><div class=grid></div><div class=glow></div>${html}<div class=ms><b>MS</b>&nbsp;&nbsp;@marco_stanga_trader</div></body></html>`,{waitUntil:'networkidle'});
+</style></head><body><div class=grid></div><div class=glow></div>${html}<div class=ms><b>MS</b>&nbsp;&nbsp;@cthe.trader</div></body></html>`,{waitUntil:'networkidle'});
 await p.evaluate(()=>document.fonts.ready); await p.screenshot({path:out,type:'jpeg',quality:95}); await b.close();

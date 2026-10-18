@@ -1,4 +1,4 @@
-# Stato pubblicazioni @marco_stanga_trader
+# Stato pubblicazioni @cthe.trader
 
 Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 
@@ -23,7 +23,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 
 ## Note
 - Partnership Algory: domanda inviata il 15/10, risposta a fxmafialtd@gmail.com. Link non ancora disponibile.
-- Publora: piano Starter (15 post/mese, ora tutti per marco_stanga_trader: guidoio_ pubblica in locale; 3 in coda). Ottobre: 4 usati al 16/10 → con 1 post/giorno la quota finisce verso il 26/10 → serve Pro (~11$/mese).
+- Publora: piano Starter (15 post/mese, ora tutti per cthe.trader: guidoio_ pubblica in locale; 3 in coda). Ottobre: 4 usati al 16/10 → con 1 post/giorno la quota finisce verso il 26/10 → serve Pro (~11$/mese).
 - Crediti Higgsfield al 18/10: 2,35 (SOTTO 10: stop alle generazioni a pagamento, email mandata a Marco). Al 17/10: 42,27 (al 16/10 erano ~161: consumati ~119, probabilmente dalla sessione locale di Guido io — i crediti sono condivisi).
 - Immagini dei caroselli: si possono pubblicare da sito/link/p/<nome>/ (Netlify, URL pubblici) invece che da Higgsfield.
 
@@ -46,7 +46,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - **Storie in evidenza**: copertine pronte in produzione/evidenza/ (01 INIZIA QUI … 05 FAQ subito; 06 SCONTO 20%, 07 IL TOOL, 08 PROVE dopo il link).
 
 ## ManyChat (17/10, sessione locale)
-- Collegato a @marco_stanga_trader, piano Free: 1 post alla volta, max 25 contatti. Automazione CHECKLIST solo sul carosello «4 test» del 17/10 (DM con link a https://marcostangatrader.netlify.app/#checklist). Gli altri post NON hanno la CTA CHECKLIST finché non si passa a Pro. Flusso BOT spento fino al link Algory. Testi in docs/LEAD-E-RISPONDITORE.md.
+- Collegato a @cthe.trader, piano Free: 1 post alla volta, max 25 contatti. Automazione CHECKLIST solo sul carosello «4 test» del 17/10 (DM con link a https://marcostangatrader.netlify.app/#checklist). Gli altri post NON hanno la CTA CHECKLIST finché non si passa a Pro. Flusso BOT spento fino al link Algory. Testi in docs/LEAD-E-RISPONDITORE.md.
 - 17/10 18:42: automazione CHECKLIST ATTIVA (Go Live) sul carosello «4 test».
 - 17/10 18:46: link in bio aggiunto dal telefono: «Checklist gratis: i 4 test» → https://marcostangatrader.netlify.app (prima non c'era nessun link).
 - 17/10 18:57: storia 17-10_C-4test pubblicata con sticker LINK «Guardalo ora» al post. Evidenza TEST creata (copertina 02_TEST) con le storie del 16/10 e del 17/10. Ordine evidenze ora: TEST, FAQ, INIZIA QUI (Instagram mette la più nuova a sinistra).

@@ -1,4 +1,4 @@
-// Copertine storie in evidenza @marco_stanga_trader (1080×1920, icona dentro il cerchio centrale che Instagram ritaglia).
+// Copertine storie in evidenza @cthe.trader (1080×1920, icona dentro il cerchio centrale che Instagram ritaglia).
 // Uso: node highlights.mjs <pers_C.png> <cartella_out>
 import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
 import fs from 'fs';

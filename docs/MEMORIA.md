@@ -1,4 +1,4 @@
-# Memoria del progetto @marco_stanga_trader
+# Memoria del progetto @cthe.trader
 
 Leggere all'inizio di ogni sessione. Aggiornare quando Marco decide qualcosa o una scadenza passa.
 Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quando si apre una sessione).
@@ -16,7 +16,7 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 - Il conto in perdita (−5.439 $) si racconta con trasparenza: «cosa ho sbagliato e come testo adesso».
 - Stile video approvato (15/10): Vox con loop + valzer Burton (varianti a rotazione) + ×1,1. Vox max 1 a settimana (~70 crediti); il resto col codice, gratis.
 - C sempre in copertina; caroselli con prima slide-copertina 4:5.
-- Publora: solo marco_stanga_trader. Guido io pubblica in locale dal telefono, NON con Publora (repo separato `guidoio.social`).
+- Publora: solo cthe.trader. Guido io pubblica in locale dal telefono, NON con Publora (repo separato `guidoio.social`).
 - Per 90 giorni non si cambia strategia: giudizio con i numeri a metà gennaio 2027.
 - Prima regola economica: niente pubblicità a pagamento, niente prelievi nel primo anno finché non ci sono 10 abbonati stabili.
 
@@ -47,3 +47,4 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 - 16/10: attività giornaliera spostata su un nuovo compito programmato (trig_012igWqTcTLDC8A68mrXGbCj, 09:53 Roma) che lavora in QUESTA sessione cloud (ha già l'accesso a GitHub). Il vecchio (trig_0192ibqMR9YNF6RGCq6ruvS2) è disattivato: partiva da sessioni nuove senza accesso al repository.
 - 17/10: pagina link rifatta stile Linktree. Regalo = checklist PDF «I 4 test prima di mettere un bot sul conto» (sito/link/checklist.html → produzione/script/checklist_pdf.mjs); email su Netlify → Forms «checklist» (il vecchio form «lista-attesa» non si usa più). Nascosti con data-dal, pronti da attivare: TikTok (icona + card), Patreon (idea futura: report mensile del conto), tool #ad (link Algory). Funnel: reel → bio → checklist (email) → al lancio email + pulsante tool.
 - 17/10 (sessione locale): sito a norma GDPR. Aggiunte `privacy.html` (titolare Marco Stanghelini, fxmafialtd@gmail.com, Netlify + Brevo) e `note-legali.html` (rischi, #ad, personaggio AI). Casella del consenso con 18+ e link all'informativa. Font ospitati sul sito (niente Google Fonts) e nessun cookie, quindi niente banner. Lead: Netlify Forms + funzione `netlify/functions/submission-created.mjs` che li copia in Brevo quando Marco imposta BREVO_API_KEY e BREVO_LIST_ID. Risponditore ManyChat: flusso CHECKLIST subito, flusso BOT pronto per il lancio. Passi e testi in `docs/LEAD-E-RISPONDITORE.md`. Al lancio del link Algory va aggiunta la Partita IVA nel footer.
+- 18/10: REBRAND deciso da Marco. Instagram ora @cthe.trader (stesso nome di TikTok), nome visualizzato «C-The Trader | Algo trader». Bio lasciata in italiano. Sostituito marco_stanga_trader → cthe.trader in tutto il repo, nella pagina link (titolo «C — The Trader») e nel sito c-thetrader.com; PDF checklist rigenerato. Restano invariati: id Publora instagram-17841457719707733, indirizzo marcostangatrader.netlify.app (è nella bio). I post già pubblicati hanno ancora il vecchio handle nelle grafiche. Instagram: il vecchio nome si può riprendere solo entro il 1/11. TikTok in inglese, Instagram in italiano (da rivedere coi paesi del pubblico TikTok).
