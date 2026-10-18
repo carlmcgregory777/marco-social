@@ -16,6 +16,7 @@ Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su 
 
 - VIDEO DI BASE DA TIKTOK (regola di Marco, 17/10): prima di tutto tagliare la parte nera finale con il logo e il suono di TikTok (ffmpeg blackdetect + controllo dell'audio finale). Così niente jingle nel risultato.
 - Pipeline: taglio → video muto → Seedance 2.5 (come sopra) → upscale 1080p con Higgsfield (bytedance_video_upscale, preset aigc, 24 fps) → audio rimesso con ffmpeg.
+- MODELLO FISSO (Marco, 18/10): solo Seedance 2.5, l'unico con qualità pari a Genjutsu. Niente Kling/Wan. Si risparmia cambiando fornitore, non modello: fal ~0,46 $/s a 720p, BytePlus ModelArk diretto ~0,23 $/s, Dreamina 64 crediti/s a 720p.
 - Tormentone deciso: «Priced in.» Stile Londra.
 
 ## Da decidere con Marco
