@@ -14,7 +14,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Regole generali
 - Non pubblicare, inviare o comprare niente senza l'ok esplicito di Marco.
-- ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @marco_stanga_trader, alle 18:30 ora italiana, senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a fxmafialtd@gmail.com.
+- ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @marco_stanga_trader, alle 18:30 ora italiana (fino al 24/10: 16:30 UTC; dal 25/10, ora solare: 17:30 UTC), senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a fxmafialtd@gmail.com.
 - Crediti Higgsfield: se scendono sotto 10, non generare più nulla a pagamento e manda subito una email a Marco per decidere come procedere. Video a pagamento AUTORIZZATI da Marco il 15/10/2026: per i reel puoi usare i modelli top (Seedance 2.5, Katana, Kling 3.0 ecc.), al massimo ~40 crediti per contenuto, sempre lasciando almeno 10 crediti di scorta. Preferisci 1 clip forte (gancio iniziale) al posto di tante clip.
 - Se Publora non ha più quota (post mensili o coda piena), non forzare: email a Marco e fermati.
 - Leggi i file della Theory solo quando servono, per risparmiare token.
