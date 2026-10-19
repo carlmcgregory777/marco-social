@@ -8,7 +8,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 | 16/10 18:30 | Reel 1 «Il backtest perfetto» | 6ad1366410a1cbf1ad93113d | pubblicato |
 | 17/10 18:30 | Carosello «4 test» parte 2 (f1) — didascalia con «Commenta CHECKLIST» (aggiunta 17/10 18:21) | 6ad1382558d8b1502d3c61b0 | pubblicato (instagram.com/p/Demivt9IINv) |
 | 18/10 18:30 | Reel 2 «Avevo 6 bot» | 6ad13b4c58d8b1502d3c776c | programmato |
-| 19/10 18:30 | Carosello «Dentro il mio sistema #1» (s1, 8 slide con copertina C #1; immagini in sito/link/p/s1) | 6ad38f3ad9bbd9a04e6778b5 | programmato |
+| 19/10 18:30 | Carosello «Dentro il mio sistema #1» (s1, 8 slide con copertina C #1; immagini in sito/link/p/s1) | 6ad38f3ad9bbd9a04e6778b5 → FALLITO alle 18:30 (Instagram non ha scaricato la slide 6, errore momentaneo); ripubblicato subito con ok di Marco alle 19:31: 6ad653ed72ec65f9411eee95 | pubblicato |
 | 20/10 18:30 | Reel 3 «Ogni bot ha una scadenza» (copertina #3, rimando alla checklist in bio) | 6ad47b34c012b79dd39edd73 | programmato |
 | 21/10 18:30 | Carosello «Dentro il mio sistema #2» (s2, copertina C #2; immagini in sito/link/p/s2; primo post col nuovo handle @cthe.trader) | 6ad5ccf4d9bbd9a04e79daed | programmato |
 
