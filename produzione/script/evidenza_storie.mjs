@@ -27,6 +27,7 @@ const S = {
     { f: '20-10_R3', tag: 'SISTEMA · REEL', h: 'Ogni bot ha una <em>scadenza</em>', p: 'Nessun bot funziona per sempre. Ecco come capisco quando cambiarlo.', post: true },
     { f: '21-10_C-sistema2', tag: 'SISTEMA · #2', h: 'Un bot che <em>non capisci</em> non va sul conto', p: 'Le 4 cose che guardo nella scheda di ogni strategia, prima di accenderla.', post: true },
     { f: '22-10_C-sistema3', tag: 'SISTEMA · #3', h: '10 bot <em>non sono</em> diversificazione', p: 'Le 4 cose che controllo prima di aggiungere un bot al portafoglio.', post: true },
+    { f: '23-10_C-sistema4', tag: 'SISTEMA · #4', h: 'Backtest e MT5 <em>sono d\'accordo?</em>', p: 'Il controllo che quasi nessuno fa prima di accendere un bot.', post: true },
   ],
   '5_FAQ': [
     { f: '15-10_C-6regole', tag: 'FAQ · CAROSELLO', big: '6', h: 'Regole di una <em>challenge</em>', p: 'Quelle che ti fanno saltare il conto anche se sei in profitto.', post: true },
