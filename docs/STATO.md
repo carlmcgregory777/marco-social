@@ -51,3 +51,8 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - 17/10 18:42: automazione CHECKLIST ATTIVA (Go Live) sul carosello «4 test».
 - 17/10 18:46: link in bio aggiunto dal telefono: «Checklist gratis: i 4 test» → https://marcostangatrader.netlify.app (prima non c'era nessun link).
 - 17/10 18:57: storia 17-10_C-4test pubblicata con sticker LINK «Guardalo ora» al post. Evidenza TEST creata (copertina 02_TEST) con le storie del 16/10 e del 17/10. Ordine evidenze ora: TEST, FAQ, INIZIA QUI (Instagram mette la più nuova a sinistra).
+
+## 21/10 sera (dal telefono, con ok di Marco)
+- Storie recuperate: condivisi in storia i 4 post Reel 2, carosello s1, Reel 3 e carosello s2 (condividi → Aggiungi alla storia, post incorporato cliccabile).
+- Commenti (like + commento): @unger_academy (reel EP7 «switching strategies»), @gianluigi_ventre (post Gran Canaria, primo commento), @maricaguglielmi_ (reel «bolla AI»; sul carosello «più compratori» avevamo già commentato), @nicolaparatrading (reel «trading system sì o no»).
+- Link in bio aggiornato: https://c-thetrader.com/link (titolo «Checklist gratis: i 4 test»). Evidenze TEST, FAQ, INIZIA QUI presenti.
