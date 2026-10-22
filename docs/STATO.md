@@ -10,9 +10,10 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 | 18/10 18:30 | Reel 2 «Avevo 6 bot» | 6ad13b4c58d8b1502d3c776c | pubblicato |
 | 19/10 18:30 | Carosello «Dentro il mio sistema #1» (s1, 8 slide con copertina C #1; immagini in sito/link/p/s1) | 6ad38f3ad9bbd9a04e6778b5 → FALLITO alle 18:30 (Instagram non ha scaricato la slide 6, errore momentaneo); ripubblicato subito con ok di Marco alle 19:31: 6ad653ed72ec65f9411eee95 | pubblicato |
 | 20/10 18:30 | Reel 3 «Ogni bot ha una scadenza» (copertina #3, rimando alla checklist in bio) | 6ad47b34c012b79dd39edd73 | pubblicato |
-| 21/10 18:30 | Carosello «Dentro il mio sistema #2» (s2, copertina C #2; immagini in sito/link/p/s2; primo post col nuovo handle @cthe.trader) | 6ad5ccf4d9bbd9a04e79daed | programmato |
+| 21/10 18:30 | Carosello «Dentro il mio sistema #2» (s2, copertina C #2; immagini in sito/link/p/s2; primo post col nuovo handle @cthe.trader) | 6ad5ccf4d9bbd9a04e79daed | pubblicato |
 | 22/10 18:30 | Carosello «Dentro il mio sistema #3» (s3, copertina C #3; al posto del Reel 4 perché i crediti Higgsfield sono a 2,35 e il reel ha bisogno della voce) | 6ad71e8c148435f640548f7d | programmato |
 | 23/10 18:30 | Carosello «Dentro il mio sistema #4» (s4, copertina C #4, numeri slide 2 dimostrativi) | 6ad86fec21989ff30dd7a830 | programmato |
+| 24/10 18:30 | Reel Vox «I costi che il backtest non ti mostra» (copertina #4) | 6ad9c159d0abccef3b5d7fe6 | programmato |
 
 ## Pronti, non ancora programmati
 - Reel 4 «245 $ per un ordine dimenticato»: spostato a quando ci sono crediti per la voce (1-2 crediti).
@@ -43,7 +44,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 ## Pronti in anticipo (16/10) — NON rifarli, programmare questi file
 - **R3 «Ogni bot ha una scadenza» (20/10 18:30) — PROGRAMMATO il 18/10**: video https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/b0e0c414-5782-4ae7-8a3c-db1d8b8c01bb.mp4 (30 s, voce Julian, valzer variante 0, ×1,1, loop «ho imparato a mie spese che… → nessun bot funziona per sempre») · copertina #3 https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/86bc40ee-6b53-47a1-a340-6e4b6a4abf3d.jpg · sorgente produzione/script/reel3.html
   Caption: «Nessun bot funziona per sempre. Chi ti dice il contrario ti sta vendendo qualcosa.\n\nOgni strategia vive finché il mercato resta com'era quando è nata. Io ricontrollo i miei bot sui dati nuovi e li divido in tre: tiene, si indebolisce, da sostituire. Quello che cala lo cambio con uno nuovo, che riparte dal rischio più basso.\n\nE prima di toglierlo controllo sempre posizioni e ordini pendenti. Il 22 ti racconto quanto mi è costato non farlo.\n\nSeguimi per non perderlo.\n🎙️ Voce generata con AI · Il trading comporta un alto rischio di perdita.\n#algotrading #tradingbot #propfirm #tradingitalia»
-- **Vox «costi» (24/10)**: copertina aggiornata a **#4** https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/a6224858-64e5-4a88-ad94-661ee52927af.jpg
+- **Vox «costi» (24/10) — PROGRAMMATO il 22/10**: copertina aggiornata a **#4** https://d2ol7oe51mr4n9.cloudfront.net/user_38pS3u7QPAeRJAJ39iqbkPjL2W4/a6224858-64e5-4a88-ad94-661ee52927af.jpg
 - **Storie in evidenza**: copertine pronte in produzione/evidenza/ (01 INIZIA QUI … 05 FAQ subito; 06 SCONTO 20%, 07 IL TOOL, 08 PROVE dopo il link).
 
 ## ManyChat (17/10, sessione locale)
