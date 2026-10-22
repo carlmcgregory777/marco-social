@@ -63,3 +63,4 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
   - 23/10 DA FARE C2 (mt02 Ferrari, «Leasing. Priced in.»), 24/10 DA FARE C3 (mt03 elicottero, «Exit strategy. Priced in.»). File già sul telefono in DCIM/C (media id 1000144861 e 1000144862).
   - Incidente: il primo tentativo è uscito su @guidoio_ (app su quell'account); Marco l'ha tolto. Prima di pubblicare controllare sempre l'account attivo.
 - 22/10 follow mirati: giovannaluigipassaro, abre2022, gianlucaforex, michele_monch, nicolaparatrading, giovannilapidari, edutradingit. Commenti di oggi non ancora fatti (interrotto).
+- 22/10 sera: storie del giorno pubblicate (carosello s3 «10 bot non sono diversificazione» + reel C1, condivisi in storia; C1 a 125 views dopo ~11 ore). Evidenze ora: ERRORI (storia Reel 2), SISTEMA (s1, s2, Reel 3, s3), TEST, FAQ, INIZIA QUI.
