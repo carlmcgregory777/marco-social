@@ -57,3 +57,8 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - BUDGET: il Vox costa ~70 crediti → MASSIMO 1 a settimana, solo per i temi più forti. Gli altri reel si fanno col codice (gratis) ma con lo stesso stile: valzer Burton, ×1,1, loop quando possibile, C in copertina.
 - MUSICA: NON usare sempre la stessa. `burton_waltz.py <durata> <out.wav> <variante>`: varianti 0/1/2 (Rem/Mim/Lam, melodie e strumenti diversi). Ruotale; se servono più varianti, aggiungerne nello script.
 - Caroselli: prima slide = copertina 4:5 con C (`produzione/script/cover_c45.mjs "titolo" "sotto" "#n" pers_C.png out.jpg`), poi le slide con numerazione che conta anche la copertina.
+
+## Caroselli e formato (decisione di Marco, 23/10/2026)
+- CAROSELLI SEMPRE CON MUSICA: le API (Publora) non aggiungono musica, quindi i caroselli si pubblicano dall'app sul telefono con un brano scelto da Instagram (o si aggiunge la musica subito dopo, se l'app lo permette).
+- MENO CAROSELLI: fanno 6-22 views contro le 90-125 dei reel. Massimo 1-2 a settimana.
+- FORMATO: dopo il Vox «costi» si decide la direzione. Se performa bene, si punta sui Vox; i reel di C (motion transfer) restano solo nella scheda Reels, uno al giorno finché ci sono video.
