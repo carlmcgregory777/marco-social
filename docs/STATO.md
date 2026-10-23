@@ -11,9 +11,10 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 | 19/10 18:30 | Carosello «Dentro il mio sistema #1» (s1, 8 slide con copertina C #1; immagini in sito/link/p/s1) | 6ad38f3ad9bbd9a04e6778b5 → FALLITO alle 18:30 (Instagram non ha scaricato la slide 6, errore momentaneo); ripubblicato subito con ok di Marco alle 19:31: 6ad653ed72ec65f9411eee95 | pubblicato |
 | 20/10 18:30 | Reel 3 «Ogni bot ha una scadenza» (copertina #3, rimando alla checklist in bio) | 6ad47b34c012b79dd39edd73 | pubblicato |
 | 21/10 18:30 | Carosello «Dentro il mio sistema #2» (s2, copertina C #2; immagini in sito/link/p/s2; primo post col nuovo handle @cthe.trader) | 6ad5ccf4d9bbd9a04e79daed | pubblicato |
-| 22/10 18:30 | Carosello «Dentro il mio sistema #3» (s3, copertina C #3; al posto del Reel 4 perché i crediti Higgsfield sono a 2,35 e il reel ha bisogno della voce) | 6ad71e8c148435f640548f7d | programmato |
+| 22/10 18:30 | Carosello «Dentro il mio sistema #3» (s3, copertina C #3; al posto del Reel 4 perché i crediti Higgsfield sono a 2,35 e il reel ha bisogno della voce) | 6ad71e8c148435f640548f7d | pubblicato |
 | 23/10 18:30 | Carosello «Dentro il mio sistema #4» (s4, copertina C #4, numeri slide 2 dimostrativi) | 6ad86fec21989ff30dd7a830 | programmato |
 | 24/10 18:30 | Reel Vox «I costi che il backtest non ti mostra» (copertina #4) | 6ad9c159d0abccef3b5d7fe6 | programmato |
+| 25/10 18:30 (17:30 UTC, ora solare) | Carosello «Dentro il mio sistema #5 – Il rischio si guadagna» (s5 nuovo, copertina C #5) | 6adb12edf7d077aaaa797f56 | programmato |
 
 ## Pronti, non ancora programmati
 - Reel 4 «245 $ per un ordine dimenticato»: spostato a quando ci sono crediti per la voce (1-2 crediti).
