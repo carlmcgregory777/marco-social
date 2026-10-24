@@ -1,0 +1,6 @@
+Strict video edit. Preserve @Video1 exactly: same body movements, same gestures, same timing, same camera angle and camera movement, same framing, including the opening and closing sky shots. Make only these changes:
+1. PERSON: replace the man with C from @Image1, a fictional AI-generated character: identical face, purple bowl haircut, single dot between the eyebrows, thick black mustache, big ears, long neck, slim tall body. No balaclava, face fully visible. His face stays completely deadpan and expressionless the whole time, mouth closed, calm bored stare.
+2. OUTFIT: exactly C's outfit from @Image1: slim black suit, deep violet shirt, thin black tie, black leather oxford shoes. Natural fabric movement.
+3. CAR: replace the car with a glossy rosso corsa red Ferrari 458 Italia, black five-spoke wheels, black leather interior, same position, angle, size and open driver door as the original car. No license plate, no logos other than the Ferrari prancing horse.
+4. BACKGROUND: an elegant street in Kensington, London: white stucco Victorian townhouses with columned porches, black iron railings, black lamp posts, a few London plane trees, grey English daylight with soft clouds. Same perspective and natural shadows.
+Photorealistic, sharp focus, natural skin texture, no flicker, no morphing, consistent across all frames, no text, no watermark.
