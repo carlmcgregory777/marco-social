@@ -13,11 +13,12 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 | 21/10 18:30 | Carosello «Dentro il mio sistema #2» (s2, copertina C #2; immagini in sito/link/p/s2; primo post col nuovo handle @cthe.trader) | 6ad5ccf4d9bbd9a04e79daed | pubblicato |
 | 22/10 18:30 | Carosello «Dentro il mio sistema #3» (s3, copertina C #3; al posto del Reel 4 perché i crediti Higgsfield sono a 2,35 e il reel ha bisogno della voce) | 6ad71e8c148435f640548f7d | pubblicato |
 | 23/10 18:30 | Carosello «Dentro il mio sistema #4» (s4, copertina C #4, numeri slide 2 dimostrativi) | 6ad86fec21989ff30dd7a830 | pubblicato |
-| 24/10 18:30 | Reel Vox «I costi che il backtest non ti mostra» (copertina #4) | 6ad9c159d0abccef3b5d7fe6 | programmato |
+| 24/10 18:30 | Reel Vox «I costi che il backtest non ti mostra» (copertina #4) | 6ad9c159d0abccef3b5d7fe6 | pubblicato |
 | 25/10 18:30 (17:30 UTC, ora solare) | Carosello «Dentro il mio sistema #5 – Il rischio si guadagna» (s5 nuovo, copertina C #5) | 6adb12edf7d077aaaa797f56 | programmato |
 
 ## Attività automatica (24/10)
 - 24/10: NON programmato niente per il 26/10. Regola del 23/10: meno caroselli (max 1-2 a settimana) e solo dal telefono con musica; i reel col codice richiedono la voce (crediti 2,35). Il Sistema #5 del 25/10 (Publora, senza musica) era già programmato prima della regola: chiesto a Marco se tenerlo o toglierlo. Formato da decidere dopo i numeri del Vox «costi» (24/10).
+- 25/10: nessuna risposta di Marco sul Sistema #5 → resta programmato (esce stasera senza musica). Niente di nuovo programmato per il 27/10: in attesa della decisione sul formato.
 
 ## Pronti, non ancora programmati
 - Reel 4 «245 $ per un ordine dimenticato»: spostato a quando ci sono crediti per la voce (1-2 crediti).
