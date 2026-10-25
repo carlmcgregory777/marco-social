@@ -39,3 +39,8 @@ Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su 
 - BytePlus ModelArk: chiave in ARK_API_KEY (strumenti/imposta-chiave-byteplus.cmd), script produzione/script/byteplus_seedance.py pronto. Seedance 2.5 si attiva solo comprando almeno 30 $ (AI Savings Plan o resource pack): non comprato al 25/10. File di riferimento temporanei su cthetrader.netlify.app/r/ (da togliere).
 - mt04 PUBBLICATO 25/10 ~10:10 su Instagram (solo griglia Reels, storia, etichetta IA, luogo Kensington London, musica «Sprinter» Dave & Central Cee dal punto più usato, testo della canzone tolto) e ~10:20 su TikTok da TikTok Studio (suono «Sprinter - Central Cee Verse», audio originale muto, luogo Kensington, copertina C + Ferrari, etichetta IA). Didascalia «Weekend in Kensington. Priced in.» (+ hashtag su IG). Musica: Marco vuole drill/trap UK di tendenza.
 - TikTok al 25/10 mattina: Priced in 604 views/51 like, Leasing 600/31, Exit strategy 321/7.
+
+## Vox su Dreamina (25/10, giudizio di Marco)
+- Reel 4 Dreamina «può andare bene» ma sotto il livello del Vox fatto con Higgsfield (/vox-mixed-media): meno dinamico e immagini meno realistiche.
+- Per avvicinarsi: immagini con modello migliore (gpt_image_2 o seedream_5.0_pro invece di seedream_4.7), più inquadrature per frase (il Vox Higgsfield ne aveva 5 per blocco, tagli ogni ~1 s), animazione con seedance_2.0_fast/2.5 invece di mini, foto vere ritagliate in mezzo tono come nel manifest costi. Voce sempre Julian.
+- Se ci sono crediti Higgsfield, il Vox resta meglio lì.
