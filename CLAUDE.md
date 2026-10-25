@@ -26,7 +26,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 ## Brand @cthe.trader
 - Palette: viola #5b3fd6 (accento #8b6dff), nero #0b0a10, bianco, grigio; rosso #ff4d5e solo per perdite/FAIL. Titoli Anton maiuscolo, testo Inter, dettagli JetBrains Mono, marchio «MS».
 - Volto della pagina: personaggio AI «C» (caschetto viola a scodella, collo lungo, orecchie a sventola, baffoni neri, sguardo impassibile, giacca nera, camicia viola #5b3fd6, cravatta nera). Scheda Higgsfield job d889c713-1473-478c-b73a-df0a2e57d25f; versione palette job 59c21fa3-ba3f-4da5-b893-1ab7b8c0c703. Usare sempre come riferimento per restare identico. In bio: «🤖 personaggio AI · dietro c'è Marco».
-- Voce reel: ElevenLabs via Higgsfield, preset «Julian» 95429266-c0ac-4137-a209-63b8812b0f23. Caption con «🎙️ Voce generata con AI».
+- Voce reel: SEMPRE ElevenLabs via Higgsfield, preset «Julian» 95429266-c0ac-4137-a209-63b8812b0f23 (Marco 25/10: mai cambiarla; ~1 credito per 20 s, generate_audio model text2speech_v2 variant elevenlabs). Caption con «🎙️ Voce generata con AI».
 - Prima del link Algory: NON nominare Algory. Serie «Dentro il mio sistema». Dopo il link: reel di rivelazione + «Commenta BOT» + #ad + avviso di rischio.
 
 ## Qualità (richiesta di Marco)
