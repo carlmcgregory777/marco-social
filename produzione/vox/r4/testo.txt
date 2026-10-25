@@ -1,0 +1,3 @@
+Duecentoquarantacinque dollari persi con un bot che avevo già spento.
+L'avevo tolto dal grafico, ma il suo ordine pendente sul Nasdaq era rimasto lì. Il prezzo l'ha raggiunto e l'ordine si è aperto da solo.
+Ora, prima di togliere un bot, controllo sempre posizioni e ordini pendenti. Perché anche un bot spento può costarti...
