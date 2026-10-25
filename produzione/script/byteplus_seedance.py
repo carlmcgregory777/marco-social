@@ -9,6 +9,7 @@ import os
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.request
 
 BASE = "https://ark.ap-southeast.bytepluses.com/api/v3"
@@ -32,8 +33,11 @@ def chiama(metodo, percorso, corpo=None):
         BASE + percorso, method=metodo,
         data=json.dumps(corpo).encode() if corpo else None,
         headers={"Content-Type": "application/json", "Authorization": "Bearer " + chiave()})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        sys.exit(f"HTTP {e.code}: {e.read().decode(errors='replace')[:800]}")
 
 
 def main():
