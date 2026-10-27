@@ -9,26 +9,26 @@ Style: C,Impact,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:01.08,0:00:02.68,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}245${\c&HFFFFFF&} DOLLARI PERSI
-Dialogue: 0,0:00:02.68,0:00:03.22,C,,0,0,0,,{\fad(40,0)}CON UN BOT
-Dialogue: 0,0:00:03.22,0:00:04.02,C,,0,0,0,,{\fad(40,0)}CHE AVEVO GIÀ
-Dialogue: 0,0:00:04.02,0:00:05.14,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}SPENTO.{\c&HFFFFFF&}
-Dialogue: 0,0:00:05.14,0:00:05.92,C,,0,0,0,,{\fad(40,0)}L'AVEVO TOLTO
-Dialogue: 0,0:00:05.92,0:00:07.10,C,,0,0,0,,{\fad(40,0)}DAL GRAFICO,
-Dialogue: 0,0:00:07.10,0:00:07.70,C,,0,0,0,,{\fad(40,0)}MA IL SUO
-Dialogue: 0,0:00:07.70,0:00:08.94,C,,0,0,0,,{\fad(40,0)}ORDINE {\c&HD66D8B&}PENDENTE{\c&HFFFFFF&} SUL
-Dialogue: 0,0:00:08.94,0:00:10.34,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}NASDAQ{\c&HFFFFFF&} ERA RIMASTO
-Dialogue: 0,0:00:10.34,0:00:11.30,C,,0,0,0,,{\fad(40,0)}LÌ.
-Dialogue: 0,0:00:11.30,0:00:12.08,C,,0,0,0,,{\fad(40,0)}IL PREZZO L
-Dialogue: 0,0:00:12.08,0:00:12.92,C,,0,0,0,,{\fad(40,0)}'HA RAGGIUNTO E
-Dialogue: 0,0:00:12.92,0:00:13.58,C,,0,0,0,,{\fad(40,0)}L'ORDINE SI
-Dialogue: 0,0:00:13.58,0:00:14.26,C,,0,0,0,,{\fad(40,0)}È APERTO DA
-Dialogue: 0,0:00:14.26,0:00:15.18,C,,0,0,0,,{\fad(40,0)}SOLO.
-Dialogue: 0,0:00:15.26,0:00:15.94,C,,0,0,0,,{\fad(40,0)}ORA,
-Dialogue: 0,0:00:15.94,0:00:16.76,C,,0,0,0,,{\fad(40,0)}PRIMA DI TOGLIERE
-Dialogue: 0,0:00:16.76,0:00:17.60,C,,0,0,0,,{\fad(40,0)}UN BOT,
-Dialogue: 0,0:00:17.60,0:00:19.18,C,,0,0,0,,{\fad(40,0)}CONTROLLO SEMPRE POSIZIONI
-Dialogue: 0,0:00:19.18,0:00:20.96,C,,0,0,0,,{\fad(40,0)}E ORDINI {\c&HD66D8B&}PENDENTI.{\c&HFFFFFF&}
-Dialogue: 0,0:00:20.98,0:00:22.00,C,,0,0,0,,{\fad(40,0)}PERCHÉ ANCHE UN
-Dialogue: 0,0:00:22.00,0:00:23.06,C,,0,0,0,,{\fad(40,0)}BOT {\c&HD66D8B&}SPENTO{\c&HFFFFFF&} PUÒ
-Dialogue: 0,0:00:23.06,0:00:24.06,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}COSTARTI...{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.60,0:00:02.02,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}245${\c&HFFFFFF&} DOLLARI PERSI
+Dialogue: 0,0:00:02.02,0:00:02.50,C,,0,0,0,,{\fad(40,0)}CON UN BOT
+Dialogue: 0,0:00:02.50,0:00:03.22,C,,0,0,0,,{\fad(40,0)}CHE AVEVO GIÀ
+Dialogue: 0,0:00:03.22,0:00:04.24,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}SPENTO.{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.24,0:00:04.88,C,,0,0,0,,{\fad(40,0)}L'AVEVO TOLTO
+Dialogue: 0,0:00:04.88,0:00:06.02,C,,0,0,0,,{\fad(40,0)}DAL GRAFICO,
+Dialogue: 0,0:00:06.02,0:00:06.42,C,,0,0,0,,{\fad(40,0)}MA IL SUO
+Dialogue: 0,0:00:06.42,0:00:07.42,C,,0,0,0,,{\fad(40,0)}ORDINE {\c&HD66D8B&}PENDENTE{\c&HFFFFFF&} SUL
+Dialogue: 0,0:00:07.42,0:00:08.56,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}NASDAQ{\c&HFFFFFF&} ERA RIMASTO
+Dialogue: 0,0:00:08.56,0:00:09.38,C,,0,0,0,,{\fad(40,0)}LÌ.
+Dialogue: 0,0:00:09.38,0:00:09.94,C,,0,0,0,,{\fad(40,0)}IL PREZZO L
+Dialogue: 0,0:00:09.94,0:00:10.86,C,,0,0,0,,{\fad(40,0)}'HA RAGGIUNTO E
+Dialogue: 0,0:00:10.86,0:00:11.50,C,,0,0,0,,{\fad(40,0)}L'ORDINE SI
+Dialogue: 0,0:00:11.50,0:00:12.02,C,,0,0,0,,{\fad(40,0)}È APERTO DA
+Dialogue: 0,0:00:12.02,0:00:12.94,C,,0,0,0,,{\fad(40,0)}SOLO.
+Dialogue: 0,0:00:12.98,0:00:13.52,C,,0,0,0,,{\fad(40,0)}ORA,
+Dialogue: 0,0:00:13.52,0:00:14.18,C,,0,0,0,,{\fad(40,0)}PRIMA DI TOGLIERE
+Dialogue: 0,0:00:14.18,0:00:15.02,C,,0,0,0,,{\fad(40,0)}UN BOT,
+Dialogue: 0,0:00:15.02,0:00:16.66,C,,0,0,0,,{\fad(40,0)}CONTROLLO SEMPRE POSIZIONI
+Dialogue: 0,0:00:16.66,0:00:18.40,C,,0,0,0,,{\fad(40,0)}E ORDINI {\c&HD66D8B&}PENDENTI.{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.40,0:00:19.10,C,,0,0,0,,{\fad(40,0)}PERCHÉ ANCHE UN
+Dialogue: 0,0:00:19.10,0:00:20.26,C,,0,0,0,,{\fad(40,0)}BOT {\c&HD66D8B&}SPENTO{\c&HFFFFFF&} PUÒ
+Dialogue: 0,0:00:20.26,0:00:21.68,C,,0,0,0,,{\fad(40,0)}{\c&HD66D8B&}COSTARTI...{\c&HFFFFFF&}
