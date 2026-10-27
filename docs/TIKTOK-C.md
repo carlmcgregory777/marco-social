@@ -44,3 +44,8 @@ Creato da Marco il 17/10/2026. Scopo: video virali di C che portano traffico su 
 - Reel 4 Dreamina «può andare bene» ma sotto il livello del Vox fatto con Higgsfield (/vox-mixed-media): meno dinamico e immagini meno realistiche.
 - Per avvicinarsi: immagini con modello migliore (gpt_image_2 o seedream_5.0_pro invece di seedream_4.7), più inquadrature per frase (il Vox Higgsfield ne aveva 5 per blocco, tagli ogni ~1 s), animazione con seedance_2.0_fast/2.5 invece di mini, foto vere ritagliate in mezzo tono come nel manifest costi. Voce sempre Julian.
 - Se ci sono crediti Higgsfield, il Vox resta meglio lì.
+
+## mt05 «getting ready» (27/10/2026)
+- Base: video di un creator (camicia, cravatta, fermacravatta, orologio d'oro, giacca, profumo), 10,8 s → produzione/tiktok/mt05/base.mp4.
+- Higgsfield Genjutsu Motion transfer, NUOVO account creato da Marco su Chrome, generazione gratuita (1), 720p 11 s; accordo di caricamento accettato da Marco. Riferimento personaggio: brand/C_intero.jpg. Prompt: volto identico + colori del brand (camicia viola, cravatta nera con fermacravatta oro, giacca nera). Coda gratuita ~10 min.
+- Risultato buono: C riconoscibile, outfit viola/nero. File: C-mt05-1080.mp4 (lanczos+unsharp), C-mt05-web.mp4 (8,6 MB per TikTok). NON pubblicato.
