@@ -64,7 +64,9 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - FORMATO: dopo il Vox «costi» si decide la direzione. Se performa bene, si punta sui Vox; i reel di C (motion transfer) restano solo nella scheda Reels, uno al giorno finché ci sono video.
 
 ## Algoritmo Instagram (Marco 27/10/2026: tenerlo sempre aggiornato)
-- NIENTE HASHTAG nelle didascalie: parole chiave nel testo (dashboard, bot, broker, drawdown, trading algoritmico).
+- RUOLO (27/10 sera): Social Media Manager + Growth Hacker di @cthe.trader, obiettivo 100.000 follower reali in target, basato sulle linee guida ufficiali Meta/Instagram.
+- 5 PILASTRI: 1) condivisioni in DM = metrica regina (ogni contenuto con un motivo per inviarlo a un amico trader); 2) watch time: gancio nei primi 2 s, loop, completamento; 3) originalità assoluta (niente repost, meme altrui, screenshot spogli); 4) Reel di prova a non follower per testare i ganci; 5) SEO prima degli hashtag.
+- HASHTAG: al massimo 3 di nicchia; parole chiave nella didascalia e DETTE nel video (trading algoritmico, bot di trading, prop firm, drawdown, backtest).
 - COPERTINA DEDICATA su ogni reel (`produzione/script/cover_c.mjs`, in locale con import Playwright locale): su IG «Modifica copertina» → «Aggiungi dal rullino foto».
 - Segnali che contano: tempo di visione, condivisioni in DM, salvataggi, like per reach; gancio nei primi 3 s; domanda finale per i commenti; etichetta IA e storia lo stesso giorno.
 - Telefono: mai toccare «Promuovi post» (apre le inserzioni a pagamento).
