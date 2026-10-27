@@ -70,3 +70,5 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - COPERTINA DEDICATA su ogni reel (`produzione/script/cover_c.mjs`, in locale con import Playwright locale): su IG «Modifica copertina» → «Aggiungi dal rullino foto».
 - Segnali che contano: tempo di visione, condivisioni in DM, salvataggi, like per reach; gancio nei primi 3 s; domanda finale per i commenti; etichetta IA e storia lo stesso giorno.
 - Telefono: mai toccare «Promuovi post» (apre le inserzioni a pagamento).
+- TIKTOK (Marco 27/10): modus operandi diverso da Instagram. Descrizione cortissima in inglese nello stile «… Priced in.», NIENTE hashtag. Instagram resta in italiano.
+- REEL DI C (motion transfer, solo scheda Reels): NIENTE copertina grafica, solo un fotogramma forte di C scelto nel video.
