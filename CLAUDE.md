@@ -62,3 +62,9 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - CAROSELLI SEMPRE CON MUSICA: le API (Publora) non aggiungono musica, quindi i caroselli si pubblicano dall'app sul telefono con un brano scelto da Instagram (o si aggiunge la musica subito dopo, se l'app lo permette).
 - MENO CAROSELLI: fanno 6-22 views contro le 90-125 dei reel. Massimo 1-2 a settimana.
 - FORMATO: dopo il Vox «costi» si decide la direzione. Se performa bene, si punta sui Vox; i reel di C (motion transfer) restano solo nella scheda Reels, uno al giorno finché ci sono video.
+
+## Algoritmo Instagram (Marco 27/10/2026: tenerlo sempre aggiornato)
+- NIENTE HASHTAG nelle didascalie: parole chiave nel testo (dashboard, bot, broker, drawdown, trading algoritmico).
+- COPERTINA DEDICATA su ogni reel (`produzione/script/cover_c.mjs`, in locale con import Playwright locale): su IG «Modifica copertina» → «Aggiungi dal rullino foto».
+- Segnali che contano: tempo di visione, condivisioni in DM, salvataggi, like per reach; gancio nei primi 3 s; domanda finale per i commenti; etichetta IA e storia lo stesso giorno.
+- Telefono: mai toccare «Promuovi post» (apre le inserzioni a pagamento).
