@@ -3,6 +3,8 @@
 [build]
   publish = "sito/link"
   command = ""
+  # Pubblica SOLO se cambia il sito (sito/, funzioni, questo file): i salvataggi di docs/ e produzione/ non consumano crediti Netlify.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- sito/ netlify/ netlify.toml"
 
 [functions]
   # Funzioni del sito: submission-created copia i lead del modulo checklist in Brevo.
