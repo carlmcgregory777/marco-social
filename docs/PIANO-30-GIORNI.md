@@ -70,6 +70,34 @@
 - **YouTube**: programmazione da YouTube Studio, come gli Short già fatti.
 - Si produce **a blocchi di una settimana**, poi si programma la settimana intera. Non si può programmare un video che non esiste ancora.
 
+## Programmazione: cosa faremo e quando (deciso il 30/10)
+Regola: un video entra in programmazione solo quando è finito e approvato da Marco.
+- **Publora** (spiegoni e ALGORY): al massimo 3 in coda, 7 giorni avanti, quindi si carica ogni 2-3 giorni.
+- **Reel di C**: dall'app sul Redmi, dopo aver controllato che l'account attivo sia @cthe.trader.
+
+| Quando | Cosa si programma | Dove | Chi |
+|---|---|---|---|
+| 30/10 | R8 Instagram 18:30 (fatto) e R9 Instagram 01/11 18:30 (fatto) | Publora | Claude |
+| 30/10 | R8 TikTok 30/10 20:00 e R9 TikTok 01/11 20:00 | TikTok Studio web | Claude |
+| 30/10 | R8 Short 31/10 12:30 e R9 Short 02/11 12:30 | YouTube Studio | Claude |
+| 30-31/10 | ALGORY #1: copione → voce → montaggio → ok di Marco → Instagram 03/11 18:30, TikTok 03/11, Short 04/11 | Publora + Studio | Claude, ok Marco |
+| 31/10 | Reel di C Halloween 18:30 (base scelta da Marco) | app Redmi | Marco + Claude |
+| entro 02/11 | Blocco 1: spiegone Parity test (05/11) e ALGORY #2 (07/11) | Publora + Studio | Claude |
+| ogni 2 giorni | Reel di C (02, 04, 06/11…): Marco sceglie 3-4 basi TikTok la domenica, Claude le monta, poi Instagram dall'app, TikTok e Short | app + Studio | Marco + Claude |
+| dom 01/11 | Revisione: screenshot statistiche + ok al Blocco 2 (08-14/11) | chat | Marco |
+| entro 06/11 | Blocco 2: Rotazione (08/11), ALGORY #3 (11/11), 5 miti (13/11) | Publora + Studio | Claude |
+| dom 08/11 | Revisione + ok al Blocco 3 (15-21/11) | chat | Marco |
+| entro 13/11 | Blocco 3: ALGORY #4 (15/11), Automazioni (17/11), Risposta al commento (19/11), ALGORY #5 (21/11) | Publora + Studio | Claude |
+| 15-20/11 | Video lungo YouTube: registrazioni MT5 dalla VPS + montaggio, uscita 22/11 | YouTube Studio | Marco (registrazioni) + Claude |
+| dom 15/11 | Revisione + ok al Blocco 4 (22-29/11) | chat | Marco |
+| entro 20/11 | Blocco 4: Drawdown (24/11), Diario dei trade (26/11), ALGORY #6 Black Friday (27/11) | Publora + Studio | Claude |
+
+- **Orari fissi:**
+  - Instagram alle 18:30;
+  - TikTok alle 20:00 dello stesso giorno (descrizione inglese, niente hashtag);
+  - Short YouTube il giorno dopo alle 12:30.
+- **Agente del mattino** (09:53, cloud): legge questa tabella e STATO.md. Non rifà un video già in coda e programma su Publora solo i video già pronti nel repository.
+
 ## Cosa serve per partire
 - **Voce Julian con licenza commerciale**: ElevenLabs Starter (~5 $/mese) oppure crediti Higgsfield. Il piano gratis non permette l'uso commerciale.
 - **Immagini dei reel ALGORY**: crediti Dreamina, circa 50-130 per reel come R8.
