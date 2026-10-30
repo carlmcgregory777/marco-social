@@ -1,0 +1,730 @@
+WEBVTT
+
+00:00:03.040 --> 00:00:06.470
+Welcome to the first lesson in our course.
+
+00:00:06.500 --> 00:00:09.480
+Today, you're going to make three videos.
+
+00:00:09.480 --> 00:00:13.840
+You'll make the first one before I explain
+anything, just so you can see how
+
+00:00:13.840 --> 00:00:18.240
+simple this can be. To take you from a
+rough idea to a finished video, we'll
+
+00:00:18.240 --> 00:00:22.230
+use three tools, each solving a different
+part of the process.
+
+00:00:22.400 --> 00:00:27.090
+First, Seedance 2.5. It creates some of
+the most realistic AI video out
+
+00:00:27.100 --> 00:00:31.080
+there, footage that can look almost
+indistinguishable from a real shoot.
+
+00:00:31.080 --> 00:00:34.750
+Top studios use it, and what skilled
+creators are making with it is
+
+00:00:34.900 --> 00:00:38.600
+genuinely mind-blowing. Second,
+Supercomputer.
+
+00:00:38.600 --> 00:00:42.660
+Think of it as a creative partner you can
+talk to in plain language.
+
+00:00:42.660 --> 00:00:47.210
+When you're not sure how to express an
+idea, it helps you develop it, add
+
+00:00:47.320 --> 00:00:50.230
+detail, and shape it into something the
+model can understand.
+
+00:00:50.600 --> 00:00:54.120
+It combines technical knowledge with
+creative judgment, and helps you push
+
+00:00:54.120 --> 00:00:59.220
+an idea much further. And finally, a
+ready-made preset, it gives you a
+
+00:00:59.220 --> 00:01:01.860
+cinematic video in just a couple of
+clicks.
+
+00:01:01.860 --> 00:01:05.830
+All you have to do is upload a photo of
+yourself or your character, and
+
+00:01:05.960 --> 00:01:08.470
+click generate.
+
+00:01:11.620 --> 00:01:15.460
+Here's how it'll work. I'll do something,
+then I'll say pause.
+
+00:01:15.460 --> 00:01:19.230
+You'll pause the lesson, open the
+platform, and do exactly what I just did.
+
+00:01:19.640 --> 00:01:24.520
+Then you'll come back, and we'll look at
+both results, mine and yours.
+
+00:01:24.520 --> 00:01:27.660
+This part matters. Don't watch this lesson
+like a movie from the
+
+00:01:27.660 --> 00:01:32.990
+couch. My result won't teach you much,
+yours
+
+00:01:33.100 --> 00:01:36.320
+will teach you everything.
+
+00:01:36.320 --> 00:01:38.760
+And let's deal with two fears right away.
+
+00:01:38.760 --> 00:01:41.230
+I know you have them, I had them too.
+
+00:01:41.620 --> 00:01:46.420
+The first, there are so many words I don't
+understand.
+
+00:01:46.420 --> 00:01:49.400
+True. And I'll explain every one of them.
+
+00:01:49.400 --> 00:01:53.430
+More importantly, I'll show you how to
+find the answer yourself when I'm not
+
+00:01:53.440 --> 00:01:57.200
+around. The second, there are a hundred
+models.
+
+00:01:57.200 --> 00:01:59.280
+I'm going to get confused.
+
+00:01:59.280 --> 00:02:01.230
+There really are a lot of models.
+
+00:02:02.120 --> 00:02:05.860
+But think of them as tools in a workshop.
+
+00:02:05.860 --> 00:02:08.420
+A hammer doesn't compete with a
+screwdriver.
+
+00:02:08.420 --> 00:02:12.440
+Each tool has its own strengths, and every
+time we use one, I'll tell you
+
+00:02:12.440 --> 00:02:14.940
+which one we're using and why.
+
+00:02:14.940 --> 00:02:18.730
+You won't have to guess. Two of the three
+videos you make today will
+
+00:02:18.760 --> 00:02:21.320
+probably be worse than the one you saw in
+the intro.
+
+00:02:21.320 --> 00:02:24.340
+That's normal. That's part of the plan.
+
+00:02:24.340 --> 00:02:27.190
+The third one will get you there.
+
+00:02:30.800 --> 00:02:33.640
+Let's start with the simplest possible
+request.
+
+00:02:33.640 --> 00:02:38.130
+What happens if we ask the model to create
+a sci-fi movie scene in a single
+
+00:02:38.240 --> 00:02:42.120
+sentence? No references, no technical
+details.
+
+00:02:42.120 --> 00:02:45.840
+Let's find out. We're going to
+Higgsfield.ai.
+
+00:02:45.840 --> 00:02:49.620
+When you first open the site, you'll see
+lots of tabs and information.
+
+00:02:49.620 --> 00:02:53.380
+It may seem overwhelming at first, but
+don't worry, you'll quickly figure
+
+00:02:53.380 --> 00:02:58.310
+out what's what. Right now, we're looking
+for the Cinema Studio tab.
+
+00:02:58.440 --> 00:03:02.180
+For the moment, all we need is this
+control panel, where we'll enter our
+
+00:03:02.180 --> 00:03:06.490
+first prompt. This is where you can
+generate both images and videos.
+
+00:03:06.540 --> 00:03:11.340
+Let's switch to the Video tab, select the
+C Dense 2.5 model, and quickly go
+
+00:03:11.340 --> 00:03:16.770
+through the settings. We'll choose a 21/9
+aspect ratio because it looks more
+
+00:03:16.800 --> 00:03:20.540
+cinematic. Next, to avoid spending
+unnecessary credits, we'll set the
+
+00:03:20.540 --> 00:03:24.380
+quality to 720p. That's enough to get a
+good result.
+
+00:03:24.380 --> 00:03:28.860
+We usually use 1080p only when we're
+confident in the prompt and the output
+
+00:03:28.860 --> 00:03:33.000
+it will produce. Next, we'll set the
+duration to 15 seconds and make sure
+
+00:03:33.000 --> 00:03:36.230
+we're generating only one video, not four
+at once.
+
+00:03:36.380 --> 00:03:40.100
+We'll leave the sound on and enter our
+prompt in the text box.
+
+00:03:40.100 --> 00:03:44.680
+Create a 15-second video of an epic sci-fi
+scene.
+
+00:03:44.680 --> 00:03:49.360
+Before starting the generation, make sure
+that one video costs 98 credits.
+
+00:03:49.360 --> 00:03:53.020
+It's easy to select the wrong settings by
+mistake and accidentally spend
+
+00:03:53.020 --> 00:03:57.200
+more than you intended. Now hit Generate.
+
+00:03:57.200 --> 00:04:01.410
+Generation usually takes 5 to 10 minutes
+and your video will appear here
+
+00:04:01.500 --> 00:04:03.230
+when it's ready. Now it's your turn.
+
+00:04:03.580 --> 00:04:08.360
+Pause the lesson, follow the same steps,
+and either enter the exact same
+
+00:04:08.360 --> 00:04:10.660
+prompt or try something similar.
+
+00:04:10.660 --> 00:04:14.540
+Create a 15-second video of an epic sci-fi
+scene.
+
+00:04:14.540 --> 00:04:19.470
+Keep it that simple. Start the generation,
+then come back and we'll discuss
+
+00:04:19.580 --> 00:04:24.120
+what we just did. Look at how simple that
+prompt is.
+
+00:04:24.120 --> 00:04:28.480
+I didn't specify the main character, the
+world, the location, or the camera
+
+00:04:28.480 --> 00:04:31.230
+movement. I only gave it a format and a
+vibe.
+
+00:04:31.880 --> 00:04:34.460
+This is what I call a lazy prompt.
+
+00:04:34.460 --> 00:04:37.940
+It gets you moving without forcing you to
+write the perfect creative brief
+
+00:04:37.940 --> 00:04:40.760
+on your first try. But there's a catch.
+
+00:04:40.760 --> 00:04:44.410
+Anything you leave out, the model decides
+for you.
+
+00:04:44.460 --> 00:04:49.010
+Sometimes it'll surprise you, other times
+it'll create something beautiful
+
+00:04:49.280 --> 00:04:51.230
+that has nothing to do with what you
+imagined.
+
+00:04:51.620 --> 00:04:55.440
+That's exactly why we're starting with
+this one short sentence.
+
+00:04:55.440 --> 00:04:59.140
+First, we'll see what the model does on
+its own, then we'll take the same
+
+00:04:59.140 --> 00:05:02.240
+idea and learn how to direct the result.
+
+00:05:02.240 --> 00:05:05.200
+You're waiting for your generation, and so
+am I.
+
+00:05:05.200 --> 00:05:10.200
+We never just wait, so let's talk credits
+and how not to waste
+
+00:05:10.200 --> 00:05:15.270
+them. Before you generate, you can always
+see exactly
+
+00:05:15.360 --> 00:05:17.600
+how many credits it will cost.
+
+00:05:17.600 --> 00:05:22.890
+Here's your remaining balance, and if you
+need more, you can get them here.
+
+00:05:23.800 --> 00:05:26.960
+It's all on one screen. No surprises.
+
+00:05:26.960 --> 00:05:28.680
+You can check the details on your own.
+
+00:05:28.680 --> 00:05:31.230
+The link is in the description.
+
+00:05:31.920 --> 00:05:34.140
+And I want to be honest about one thing.
+
+00:05:34.140 --> 00:05:37.940
+A bad attempt still uses credits.
+
+00:05:37.940 --> 00:05:42.180
+You're paying for the generation, not for
+whether you like the result.
+
+00:05:42.180 --> 00:05:44.240
+Think of it like a real shoot.
+
+00:05:44.240 --> 00:05:48.980
+Once you film a take, the time and
+resources are spent, even if that take
+
+00:05:48.980 --> 00:05:50.620
+never makes the final cut.
+
+00:05:50.620 --> 00:05:53.230
+My generation is ready. Let's watch it.
+
+00:06:09.100 --> 00:06:11.000
+That explosion looks pretty good.
+
+00:06:11.000 --> 00:06:14.320
+And the little ship flying past this
+enormous thing gives you a real sense
+
+00:06:14.320 --> 00:06:18.160
+of scale. But follow the laser for a
+second.
+
+00:06:18.160 --> 00:06:21.120
+In one shot, it looks like the big ship is
+attacking.
+
+00:06:21.120 --> 00:06:24.230
+In the next, I can't tell where the beam
+is coming from.
+
+00:06:24.760 --> 00:06:29.730
+Then everything explodes. I wanted to
+watch one ship outsmart the other.
+
+00:06:29.740 --> 00:06:32.640
+Instead, I'm trying to work out what just
+happened.
+
+00:06:32.640 --> 00:06:37.100
+And don't get me wrong. For one sentence
+that took a few seconds to write,
+
+00:06:37.100 --> 00:06:42.100
+this is honestly not bad, but it isn't the
+scene I wanted.
+
+00:06:42.100 --> 00:06:45.800
+Remember that feeling? No, that's not it.
+
+00:06:45.800 --> 00:06:50.230
+In a moment, it's going to become the most
+useful tool in this lesson.
+
+00:06:50.460 --> 00:06:54.880
+Your first video should be ready by now,
+and it deserves a full watch.
+
+00:06:54.880 --> 00:06:56.980
+Go check it out before we move on.
+
+00:06:56.980 --> 00:06:59.950
+I'll wait.
+
+00:07:02.260 --> 00:07:07.160
+Now, the same idea, except this time,
+we're using a supercomputer.
+
+00:07:07.160 --> 00:07:10.230
+Back on Higgsfield, click supercomputer in
+the top menu.
+
+00:07:10.380 --> 00:07:14.020
+This is supercomputer, not a random
+chatbot.
+
+00:07:14.020 --> 00:07:19.200
+It knows how Sea Dance works right now,
+and its whole job is to turn
+
+00:07:19.200 --> 00:07:22.940
+the idea in your head into language the
+model understands.
+
+00:07:22.940 --> 00:07:28.270
+Think of it as someone next to you who has
+made 10,000 videos and never gets
+
+00:07:28.280 --> 00:07:33.330
+tired. Now I type, "Create a 15-second
+video of an epic sci-fi scene
+
+00:07:33.500 --> 00:07:38.800
+and send it." Sometimes, supercomputer
+asks a question or
+
+00:07:38.800 --> 00:07:41.500
+two first. Answer in plain language.
+
+00:07:41.500 --> 00:07:43.800
+What kind of battle? What era?
+
+00:07:43.800 --> 00:07:46.240
+What mood? I'll skip the wait.
+
+00:07:46.240 --> 00:07:49.730
+Let's watch.
+
+00:08:02.180 --> 00:08:07.180
+Okay, we see the pilot, then the small
+ship launches a missile, and look at
+
+00:08:07.180 --> 00:08:09.460
+where it hits the larger ship.
+
+00:08:09.460 --> 00:08:13.020
+It's not just spaceships and explosions,
+there's a progression.
+
+00:08:13.020 --> 00:08:17.880
+The threat, the pilot, the counterattack,
+then the payoff.
+
+00:08:17.880 --> 00:08:20.080
+I asked for an epic space battle.
+
+00:08:20.080 --> 00:08:22.240
+It worked out how to show one.
+
+00:08:22.240 --> 00:08:27.180
+Now it's your turn. Now, let's compare the
+
+00:08:27.180 --> 00:08:30.220
+results. Left, my one-line prompt.
+
+00:08:30.220 --> 00:08:33.580
+Right, the same idea through
+supercomputer.
+
+00:08:33.580 --> 00:08:37.360
+The left looks cinematic, but the laser's
+direction is confusing.
+
+00:08:37.360 --> 00:08:41.280
+The big ship explodes, and I'm not sure
+who fired the shot.
+
+00:08:41.280 --> 00:08:45.820
+On the right, we see the pilot, a missile
+launch, and the hit that leads to
+
+00:08:45.820 --> 00:08:49.420
+the explosion. The action is easier to
+follow.
+
+00:08:49.420 --> 00:08:51.230
+That's the whole lesson in one frame.
+
+00:08:51.720 --> 00:08:55.980
+Not talent, not years of experience, a
+clearer prompt.
+
+00:08:55.980 --> 00:08:59.960
+One more important thing. Sometimes, a
+generation starts, but doesn't
+
+00:08:59.960 --> 00:09:04.680
+produce a finished video. You might see
+failed or not safe for
+
+00:09:04.680 --> 00:09:08.640
+work. It could be a technical issue or a
+safety filter.
+
+00:09:08.640 --> 00:09:12.090
+There's also an intellectual property
+check, which looks for protected
+
+00:09:12.280 --> 00:09:13.280
+characters and franchise.
+
+00:09:14.100 --> 00:09:18.400
+Your prompt, or the video itself, can
+trigger a block, even if you never
+
+00:09:18.400 --> 00:09:20.940
+asked for a famous character.
+
+00:09:20.940 --> 00:09:25.400
+Credits are always returned automatically
+for failed or blocked attempts.
+
+00:09:25.400 --> 00:09:28.040
+Same prompt can give you a different
+video.
+
+00:09:28.040 --> 00:09:32.440
+You're not ordering a pizza, you're
+rolling a die, except you get to design
+
+00:09:32.440 --> 00:09:36.890
+the sides. The better the prompt, the more
+sides you'll be happy
+
+00:09:36.980 --> 00:09:41.840
+with. In this course, we'll teach you how
+to reduce that randomness and get
+
+00:09:41.840 --> 00:09:47.160
+more consistent results. Earlier, we ran
+our test generation in 720p to
+
+00:09:47.160 --> 00:09:50.680
+save credits instead of going straight to
+1080p.
+
+00:09:50.680 --> 00:09:54.640
+But when I'm trying to get a specific
+scene right, or want to test an idea
+
+00:09:54.640 --> 00:09:58.600
+with a few different versions, there's a
+simple trick to save even more
+
+00:09:58.600 --> 00:10:02.530
+credits. It's called "Cdense 2.5 Draft".
+
+00:10:02.620 --> 00:10:06.830
+So I select "Cdense 2.5 Draft" and keep it
+at
+
+00:10:07.160 --> 00:10:12.440
+480p. I'm using the same sci-fi prompt,
+but this time I'll
+
+00:10:12.440 --> 00:10:15.540
+generate four versions in one batch.
+
+00:10:15.540 --> 00:10:20.430
+Each 15 second draft costs 45 credits, so
+all four cost
+
+00:10:21.020 --> 00:10:22.510
+180.
+
+00:10:24.320 --> 00:10:28.390
+I can compare the results and pick the one
+with the action and camera
+
+00:10:28.460 --> 00:10:33.630
+movement I like best. If none of them
+works, I can adjust the prompt
+
+00:10:33.960 --> 00:10:38.520
+and try another batch. Once I get a take I
+want to keep, I click "Generate"
+
+00:10:38.520 --> 00:10:43.710
+in 1080p. That costs another 180 credits
+and gives me an
+
+00:10:43.720 --> 00:10:46.230
+identical result at a higher resolution.
+
+00:10:46.700 --> 00:10:50.690
+Generating all four directly in 1080p
+would cost 720
+
+00:10:50.960 --> 00:10:56.190
+credits. Four drafts, then taking only my
+favorite to 1080p,
+
+00:10:56.260 --> 00:11:00.620
+costs 360. That's half as much.
+
+00:11:00.620 --> 00:11:04.880
+Test the idea first. Spend on final
+quality once you've found the shot you
+
+00:11:04.880 --> 00:11:06.650
+want.
+
+00:11:10.000 --> 00:11:12.580
+Remember when I said you'd make three
+videos today?
+
+00:11:12.580 --> 00:11:14.530
+You've made the first two?
+
+00:11:14.560 --> 00:11:18.320
+Now, let's make the third, the one you saw
+at the beginning.
+
+00:11:18.320 --> 00:11:21.220
+This time, I'm not writing anything.
+
+00:11:21.220 --> 00:11:24.320
+Not a single word. This is a ready-made
+preset.
+
+00:11:24.320 --> 00:11:28.000
+Someone else has already done the hard
+part, developed the scene, chosen the
+
+00:11:28.000 --> 00:11:32.780
+camera movement, lighting, and sound,
+tested dozens of versions, and kept
+
+00:11:32.780 --> 00:11:37.480
+the best one. Then they packaged it, so
+you only have to change one thing,
+
+00:11:37.480 --> 00:11:41.360
+the main character. All you need is one
+image.
+
+00:11:41.360 --> 00:11:45.780
+It can be a photo of you or a friend,
+watch the clicks, and follow along.
+
+00:11:45.780 --> 00:11:51.110
+I open the preset, I upload the image
+here, I check that the face is clearly
+
+00:11:51.160 --> 00:11:53.830
+visible, then I click "Generate".
+
+00:12:08.860 --> 00:12:11.220
+Take a second and think about that.
+
+00:12:11.220 --> 00:12:14.380
+Ten minutes ago, you didn't know what a
+prompt was.
+
+00:12:14.380 --> 00:12:19.060
+Now you have a cinematic video with you or
+your character in the
+
+00:12:19.060 --> 00:12:22.610
+lead. Pause here, choose any image, and
+use this
+
+00:12:22.640 --> 00:12:25.150
+preset.
+
+00:12:27.200 --> 00:12:30.680
+Simple. Everything I did today, you do
+with your own hands.
+
+00:12:30.680 --> 00:12:35.600
+Three videos, the lazy prompt, the same
+prompt through supercomputer, and
+
+00:12:35.600 --> 00:12:38.540
+the preset with your own image.
+
+00:12:38.540 --> 00:12:41.640
+Apply your homework in the window below,
+and that's it.
+
+00:12:41.640 --> 00:12:43.380
+One more thing before you go.
+
+00:12:43.380 --> 00:12:47.840
+What you just made in ten minutes used to
+take a crew and a budget.
+
+00:12:47.840 --> 00:12:51.230
+Not because you're a genius, the tool
+changed.
+
+00:12:51.540 --> 00:12:54.900
+When a tool changes this much, a short
+window opens.
+
+00:12:54.900 --> 00:12:58.480
+Far fewer people can use it than need it.
+
+00:12:58.480 --> 00:13:00.980
+We're inside that window. Want to go
+deeper?
+
+00:13:00.980 --> 00:13:05.540
+You'll find a PDF below with more on
+sedents and supercomputer.
+
+00:13:05.540 --> 00:13:09.080
+In the next lesson, you're going to get a
+second brain.
+
+00:13:09.080 --> 00:13:13.840
+That's not a metaphor. It's a real tool
+that will completely change how you
+
+00:13:13.840 --> 00:13:16.230
+work with the platform. You'll see.

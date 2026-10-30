@@ -1,0 +1,430 @@
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+01 / 17
+PRODUCT
+IMAGES & ADS
+03
+Prepare references, make useful photos and choose a video format.
+FIND WHAT YOU NEED
+02
+Check a term
+03
+Prepare the references
+06
+Plan and review the photos
+09
+Make and review the video
+14
+Practise and review
+15
+Check your finished campaign
+16
+Decide what to fix
+17
+Open useful links
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+02 / 17
+CONTENTS
+GLOSSARY
+Essential terms
+A raised number marks each term's first use in the main text.
+01
+Reference images
+Images attached to guide the product and setting, plus a creator if
+your idea needs one. A character sheet shows the chosen person's
+face, full body and outfit.
+ PRODUCT
+CREATOR
+LOCATION
+02
+Skill
+A prepared workflow for a task in SuperComputer. Character Sheet
+helps with casting; Product Photographer helps plan the product
+shoot. Describe what you want, then review the proposal.
+03
+UGC
+User-generated content. Here, you are making an AI version of a
+casual creator video: someone shows or uses the product while
+speaking. The words should match the visible action.
+04
+Cinema Studio
+The video-generation tool used for the lesson's fashion commercial.
+Attach your reference images in SuperComputer and ask it to
+generate a video through Cinema Studio.
+/product
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+03 / 17
+CONTENTS
+01
+PREPARE THE REFERENCES
+Keep the product recognisable
+Photograph the whole object in clear light. Keep its edges and important details visible.
+01 ORIGINAL
+02 ACTUAL CLEANUP
+03 PREPARED PRODUCT
+The starting photo on the desk.
+Table texture remains inside the lenses.
+A separate supplied image used for the
+shoot.
+PROMPT
+Remove the table and put the glasses on a plain background. Keep the glasses exactly as they are.
+Compare the outline, bridge, arms and lens colour with the original. Removing a background is not
+permission to redesign the product.
+ATTACH THE IMAGE YOU INTEND TO USE
+In a new SuperComputer chat: plus > Attach file > Assets > Upload media. Select your photo and wait for
+its thumbnail. When switching to the prepared reference, attach it and say that this is the product for the
+shoot.
+IF CLEANUP CHANGES THE PRODUCT
+Keep the original photo as your reference, or retake it against a plain background. For the lesson
+sunglasses, use the separate prepared PRODUCT from the practice files.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+04 / 17
+CONTENTS
+REFERENCE / CREATOR
+Choose a face and an outfit
+Add a person only if your campaign needs one.
+The chosen character sheet: actress 14. Full body on the left, face on the right. Layout: 16:9.
+YOUR FIRST TRY: CHANGE 20 TO 3
+PROMPT
+Make 20 different Asian women in their 20s with a stylish Y2K look: black hair in two buns, a fitted
+white tee, grey cargo pants and sneakers.
+Type a slash, search for "character" and choose Character Sheet. The lesson uses Soul 2.0. A skill2
+supplies a process for a job; you describe the look and review the proposal before approving.
+START WITH FEWER OPTIONS
+Choose a face and outfit that suit your product. Keep the sheet at 16:9; ask for vertical campaign
+images later. For a product-only idea, skip this step.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+05 / 17
+CONTENTS
+REFERENCE / LOCATION
+Find a place for the product
+Choose a background that helps the product stand out.
+HARLEM
+BROOKLYN BRIDGE PARK
+WEST VILLAGE
+1 Three selected references. The West Village pink facade is used for the creator video.
+YOUR FIRST TRY: ASK FOR ONE LOCATION
+PROMPT
+I need 10 Instagram/Pinterest street locations in NY that I can use for UGC3 content. 9:16.
+PROMPT
+Add some color and bright details to the background. I want a location that really pops, you know?
+Give me 10 options, 9:16.
+Adil then asks, "Make 10 more." He compares three batches before choosing. For your campaign, start
+with one location you would want to photograph your product in.
+Download the chosen image, attach it in the campaign chat and name its role. A saved link alone does not
+attach the image.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+06 / 17
+CONTENTS
+02
+PLAN AND REVIEW THE PHOTOS
+Give the photoshoot a clear
+job
+Use Product Photographer to develop the lighting and compositions.
+PRODUCT
+CREATOR
+LOCATION
+The exact object.
+The person and outfit.
+The setting for the shoot.
+The demo attaches the prepared product, actress 14 and all three selected streets. In the same chat,
+search for "product" and choose Product Photographer.
+PROMPT
+Make a cool photoshoot for these sunglasses with our girl in the three New York locations we
+picked. Six photos: three with her and three of just the glasses. Make them vertical, 9:16.
+SHOT MIX
+Three with the creator and three of the product alone.
+REFERENCES
+The chosen product, creator and locations are identified.
+SETTINGS
+Six images, each 9:16. Check the displayed model, quality and total before approving.
+FOR YOUR SMALLER SHOOT
+Use one location and three useful views: a close-up, the whole product, and the product being
+used. Without a creator, replace that last view with another product detail.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+07 / 17
+CONTENTS
+PHOTOS / RESULT
+Review the shoot as a set
+Look for useful variation while checking that it is still the same product.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+08 / 17
+CONTENTS
+PHOTOS / RESULT
+Review the shoot as a set / continued
+01 Harlem portrait
+02 Creator on location
+03 Pier full body
+04 Product on the pier
+05 West Village close-up
+06 Product in Harlem
+Compare the frame, bridge, arms and lenses with the product reference. Save photos that show different
+useful views and still fit one campaign.
+PAUSE HERE / SAVE THREE USEFUL PHOTOS
+Save three useful photos of your own before continuing to video.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+09 / 17
+CONTENTS
+03
+MAKE AND REVIEW THE VIDEO
+Choose how the product
+speaks
+The lesson demonstrates both routes. Your practice needs only one.
+CREATOR AD
+FASHION COMMERCIAL
+30 seconds / 9:16
+12 seconds / 9:16
+Speech and actions introduce the glasses. In this
+example, a friend films an outfit reveal in front of the
+pink house.
+Movement, expressions and close-ups carry the
+idea. The glasses get attention through the framing
+and performance.
+SAME THREE REFERENCE ROLES
+Use the character sheet, selected product photo and location image separately. The campaign
+photos are useful outputs; they do not have to become one combined starting image for the video.
+For a product-only ad, use the product and location without a creator. Describe one simple action or
+camera move that shows the object clearly.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+10 / 17
+CONTENTS
+VIDEO / CREATOR AD
+Give speech a visible action
+UGC means user-generated content. Here, you are making an AI version of a casual creator video.
+Attach ugc-video-creator.md in the same chat using plus > Attach file > Upload media. Attach the
+character sheet, prepared product and West Village image separately. Wait for the file and image
+attachments to load.
+PROMPT
+Use the attached UGC skill. Make a fun 30-second vertical video of our girl in front of the pink
+house. Her friend is filming. She shows the glasses up close, puts them on, then shows her outfit
+and silver sneakers. Have her say these exact lines, in order: Okay wait — are you SEEING these?
+proper FIT check. and THAT is how you finish an outfit. tee, cargos, silver kicks — DONE. this blue
+on the pink? COME ON. bye.
+For your own product, replace the scene, action and dialogue. Give the creator something simple to do:
+show it, try it or use it. Write speech that fits that action.
+Three image references and the UGC instruction file attached in the chat.
+READ BEFORE APPROVING
+Check the speech and its order, the three references, 30 seconds, 9:16, your intended quality and
+the displayed total. The instruction file guides the job; the result still needs a review.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+11 / 17
+CONTENTS
+VIDEO / CREATOR REVIEW
+Watch the action and listen
+Watch the full 30-second example with sound before judging individual moments.
+SHOW THE PRODUCT
+PUT IT ON
+SHOW THE OUTFIT
+Frames from the lesson video. Still frames cannot confirm timing, motion or complete speech.
+PRODUCT
+Compare the shape, blue frame and amber lenses with the reference, including when
+the hands touch them.
+ACTION
+Does she show the glasses, put them on and reveal the outfit in a readable sequence?
+SPEECH
+Listen to all six lines. Check that the words fit the visible action and the ending is
+complete.
+KEEP IT IF IT WORKS
+If a moment distracts from the product, name that moment and one change. Recheck the person,
+outfit and setting too: a new generation can change details you wanted to keep.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+12 / 17
+CONTENTS
+VIDEO / COMMERCIAL
+Set up the Cinema Studio
+version
+4
+The same creator, glasses and location support a different kind of ad.
+Stay in the same SuperComputer chat. Attach the character sheet, location and product image, then ask
+SuperComputer to generate a video through Cinema Studio.
+THREE IMAGES + ONE REQUEST
+Three reference images attached with the Cinema Studio request in SuperComputer.
+PROMPT
+Generate a video in Cinema Studio using these images. create a viral cinematic reels sunglasses
+commercial
+For your own ad, replace the sunglasses idea with your product and describe the mood, action or camera
+movement you want.
+CHECK THE PROPOSAL BEFORE APPROVING
+Confirm the intended references, duration, vertical 9:16, quality and displayed total. The lesson
+example is 12 seconds; check the settings because this short request does not specify a duration.
+Watch the whole result, then choose whether to keep it or request one useful change.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+13 / 17
+CONTENTS
+VIDEO / ITERATION
+Compare, then choose a
+version
+The demonstration generates three commercials. You can stop as soon as your result works.
+01 FIRST TAKE
+02 MORE DYNAMIC
+03 CHOSEN TAKE
+Example frames from the three 12-second videos. Watch each full take to compare motion and timing.
+PROMPT
+make it more dynamic, add couple more interesting camera angles
+PROMPT
+Generate it again.
+The first note changes the direction; the second asks for another version. Neither guarantees a better
+result. Compare the glasses, movement, framing and complete ending before choosing.
+For a targeted fix, name the problem and what should stay. Read the revised prompt, then request a new
+take and recheck the references, settings and quote before approving.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+14 / 17
+CONTENTS
+04
+PRACTISE AND REVIEW
+Make your own small campaign
+One object, one location, three photos and one finished vertical ad.
+PRODUCT
+AUDIENCE
+LOOK + LOCATION
+Fill in the plan above, then replace [audience] and [look] in the request. Use a creator only if the idea needs
+one; attach your references, name their roles and keep the campaign in the same chat.
+PROMPT
+Use my attached product and selected location. Make three vertical 9:16 campaign photos for
+[audience] in this style: [look]. Show one close-up, one whole-product view and one showing it
+being used. If a creator sheet is attached, use that person and outfit in the usage shot. Keep the
+product's shape, colour and important details the same. Show me the shots and settings before
+generating.
+For a product-only set, replace "being used" with another product detail and add "No people." Review the
+proposed shots, references, format, count and cost; then approve and check the results.
+CHOOSE ONE VIDEO ROUTE
+Carry the same audience and look into one video. Creator ad: attach the UGC file and write a natural action
+with matching speech. Commercial: attach your images and ask SuperComputer to generate through
+Cinema Studio. Check the proposal and generate one vertical video.
+SAVE AND VERIFY
+Review the whole result. Keep it or request one specific change if needed. Download the chosen
+video, open the saved file with sound and watch through the ending. Save your three chosen
+photos too.
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+15 / 17
+CONTENTS
+FINAL CHECKLIST
+Check your finished campaign
+Review your photos and video against each point before saving the final set.
+The product is recognisable
+Its shape, colour and important details match the selected product reference in your photos and
+video.
+The three photos offer useful views
+The set shows the product clearly from different views, with a consistent look and your chosen
+location.
+The creator and setting stay consistent
+When using a creator, the person and outfit match the chosen sheet. The setting matches the
+selected location.
+The action, camera and ending are clear
+The product action is easy to follow and the camera keeps it visible. The final action or spoken line
+finishes before the cut.
+Sound supports the action
+Speech is clear and matches the visible action. In a commercial, the sound supports the movement.
+The creative choice fits the audience
+The look and format suit your intended viewer and make the product's appeal clear. The product
+remains the focus.
+SAVE YOUR CAMPAIGN
+A working draft is enough. If a moment distracts from the product, keep this version and choose
+one specific fix. Save the original product photo, three selected photos and your chosen video
+together.
+If something needs a fix >
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+16 / 17
+CONTENTS
+REVIEW / NEXT STEPS
+If something needs a fix
+Use the issue you noticed to choose the next action.
+01
+The product changed during cleanup or generation.
+Compare the outline, colour and important details with the original. Reuse the original or retake it if
+cleanup changes the object. For a later generation, attach the intended product reference and
+name the detail to preserve.
+Review the product comparison >
+02
+The person, outfit or location drifted.
+Check that the intended images are attached and identify each role: creator, product and location.
+Name what must stay consistent. For a product-only ad, omit the creator.
+Review the two video routes >
+03
+A moment in the video does not work.
+Name the moment and request one specific change. Read the revised prompt, then recheck
+references, duration, format and quote before approving. Watch the whole new version to confirm
+that the parts you liked still work.
+Review the iteration steps >
+PRACTICE FILES
+The accompanying Lesson 3 - Practice Files.zip contains the original and prepared product, actress
+14, the three locations and ugc-video-creator.md. Unzip it and attach the files you choose in your
+chat.
+Next lesson: compare image-generation models, explore their strengths and weaknesses, and create
+cinematic-looking images.
+Open SuperComputer >
+
+Academy
+Course 01 / Lesson 03
+PRODUCT IMAGES AND ADS
+17 / 17
+CONTENTS
+USEFUL LINKS
+Further reading & practice
+Selected resources for this lesson. Click a title to open it.
+01
+A Three-Step Workflow for Realistic AI Ads
+HIGGSFIELD / VIDEO TUTORIAL
+Watch a practical workflow for creating realistic advertising visuals.
+02
+Marketing Studio: Ready-Made Ad Presets
+HIGGSFIELD / CREATIVE TOOL
+Browse ready-made presets for product shots, UGC, motion, ads, posters and marketplace
+images. Choose a format, add your product assets and generate content around them. Use the
+gallery to find a starting visual direction for your campaign.
+03
+A Cinematic Car Commercial: Full Breakdown
+HIGGSFIELD / WORKED EXAMPLE
+Study a complete commercial workflow with prompts you can adapt to your own product and
+campaign.
+04
+Nano Banana: Product Images, Editing & Text
+GOOGLE CLOUD / PROMPTING GUIDE
+Learn how to describe product shots, use reference images, preserve details during edits and
+specify readable text.

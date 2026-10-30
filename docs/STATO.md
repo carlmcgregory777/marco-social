@@ -85,3 +85,76 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - 27/10 SITO GIÙ: c-thetrader.com risponde 503 «usage_exceeded». Netlify ha disattivato TUTTI i siti dell'account mark.92.2222 il 25/10 (crediti del piano gratuito finiti); i crediti ripartono il 13/11. Il link in bio non funziona finché non si sceglie: aspettare, pagare Netlify o spostare il sito su un hosting gratuito (serve cambiare il DNS su Aruba).
 - 27/10 sera: Marco ha ricaricato 500 crediti Netlify → tutti i siti di nuovo online (c-thetrader.com, /link, guidoio, FORGE: tutti 200). Regola: raggruppare le modifiche e fare meno deploy possibili (ogni deploy consuma crediti).
 - 27/10 ~21:08 PUBBLICATO mt05 «getting ready» di C (Higgsfield Genjutsu gratis, nuovo account; audio originale) — Instagram: solo scheda Reels, etichetta IA, copertina = fotogramma di C col pugno/orologio (NIENTE grafica per i reel di C: Marco 27/10), didascalia italiana corta + 3 hashtag. TikTok dal telefono: descrizione «ready for london session. priced in.» (stile TikTok in inglese, corto, SENZA hashtag), etichetta IA, stesso fotogramma. La descrizione TikTok si modifica da TikTok Studio web (1 volta al giorno, entro 7 giorni).
+
+## 27/10/2026 sera: Vox episodio 1 programmato
+- «Le prop firm guadagnano quando perdi?» (#8), PROGRAMMATO su Publora per il 28/10 alle 18:30 (17:30 UTC), solo Instagram (Marco: niente TikTok per questo). Post group 6ae11a23e11e5a8e83577500.
+- Video: produzione/vox/ep1/EP1-prop-firm-v2.mp4 (64 s), fatto in Remotion: spot-animati/src/PropFirm.tsx, tempi da produzione/vox/ep1/tempi.py, materiali da assets.py. La v1 a immagini ferme è stata bocciata da Marco («lento, poco animato, senza transizioni»).
+- Voce Julian clonata con Seed Audio (Higgsfield web, nuovo account), pause tagliate e x1,12. Copertina cover-ep1.jpg (pers_C), caricata su Higgsfield per avere il coverUrl. Didascalia in didascalia.txt, con avviso di rischio; Algory nominato su richiesta di Marco.
+- Etichetta IA: Publora non la imposta. Dopo la pubblicazione controllare dal telefono (menu reel > Modifica) e attivarla.
+- fal è senza credito (upload bloccato il 27/10).
+
+## 27/10/2026 sera: TikTok mt06-mt08 (Higgsfield Genjutsu Lite, generazioni gratuite 1080p)
+- ~23:15 PUBBLICATO su TikTok (app sul telefono, account @cthe.trader verificato) mt07 «Mayfair commute. Priced in.»: Rolls-Royce in Mayfair, luogo Mayfair, etichetta IA, copertina = C con giacca viola davanti all'auto, audio originale (Happy Nation, inglese).
+- ~23:17 PUBBLICATO mt06 «Closed green. Bought flowers. Priced in.»: ballo nel parco + mazzo di fiori, luogo Regent's Park, etichetta IA, copertina = primo piano di C, audio originale (strumentale, senza voce). Lo sfondo NON è cambiato (parco originale): il prompt sul luogo è stato ignorato.
+- mt08 (terrazza sul tetto): la v1 con «tetti di ardesia di Londra» è stata bocciata da Marco («sembra molto finto, prospettive sbagliate»): cambiare il pavimento sotto i piedi rompe la prospettiva. v2 rifatta tenendo TUTTO come nell'originale e cambiando solo il ragazzo dietro (giovane inglese, giubbotto blu): realistica. Audio originale francese → da sostituire con un suono inglese di TikTok (drill/trap UK). Non pubblicato.
+- LEZIONE prompt Genjutsu: cambiare solo le persone; lo sfondo lontano (facciate) si può cambiare, il suolo e la prospettiva no.
+- Dopo il ricaricamento della pagina, «Use free generations» si SPEGNE: riaccenderlo e verificare la scritta «Free» sul pulsante prima di Generate. Restano 6 generazioni gratuite.
+- File: produzione/tiktok/mt0X/genjutsu.mp4 (mt08 v1 in genjutsu-v1-scartato.mp4).
+
+## 28/10/2026 mattina: mt07 e mt06 anche su Instagram (dal telefono)
+- ~09:43 PUBBLICATO mt07 su IG: «Pendolare di Mayfair: pantofole in macchina, giacca viola fuori. Priced in. #tradingalgoritmico #propfirm #trading», luogo Mayfair, etichetta IA, storia attiva, copertina = C con giacca viola davanti all'auto (ritaglio griglia con la testa dentro). L'opzione «solo scheda Reels» non c'è più in fase di pubblicazione: ora si trova nel menu del reel pubblicato («Rimuovi dalla griglia principale»).
+- ~09:47 mt06 su IG (audio originale tenuto, scelta di Marco). Uscito senza didascalia, corretto alle 09:54 da «Modifica»: «Chiusura in verde. Fiori comprati. Priced in. #tradingalgoritmico #propfirm #trading», luogo Regent's Park. Instagram mostra già «Contenuto probabilmente creato con l'IA»; il reel è solo nella scheda Reels (non nella griglia).
+- mt08 v3 (con il lord inglese in tweed e coppola dietro, controluce del tramonto) e mt09 (POV di C con Ferrari Roma rossa, valigetta nera, hotel di lusso) generati con Genjutsu gratis: buoni, NON pubblicati. Restano 4 generazioni gratuite. Su Genjutsu il file input si raggiunge rendendolo visibile via JS e poi file_upload.
+- ~10:16 PUBBLICATO su TikTok mt09 «Client meeting. Priced in.» (POV Ferrari Roma rossa, audio originale, etichetta IA, copertina = Ferrari davanti all'hotel, SENZA luogo).
+- ~10:17 PUBBLICATO su TikTok mt08 «The Lord approves. Priced in.» (C + lord inglese sul tetto, audio originale francese tenuto, etichetta IA, copertina predefinita, SENZA luogo).
+- REGOLE di Marco del 28/10: 1) mai cambiare o aggiungere audio senza che lo chieda lui (tenere l'originale); 2) niente luogo sui video («penalizza il video»).
+
+## 28/10/2026 sera: mt10 e mt11 su TikTok e Instagram
+- mt10 (bar all'aperto, croissant sostituito con colazione inglese completa; C al posto del biondo): Genjutsu gratis 1080p, 28,5 s, `hf_20261028_141748_05c9d053-…`. Audio originale (strumentale).
+  - TikTok ~20:04: «Full English. Full position. Priced in.», etichetta IA, niente luogo.
+  - Instagram ~20:15: «Colazione inglese completa prima della sessione di Londra. Priced in. #tradingalgoritmico #propfirm #trading», etichetta IA, niente luogo.
+- mt11 (brasserie, ostriche; C con pochette viola e anello d'oro, flûte di champagne al posto del vino): Genjutsu gratis 1080p, 26,1 s, `hf_20261028_142407_be9ef0ad-…`. Audio originale (rap inglese con una parola esplicita: segnalato a Marco).
+  - TikTok ~20:03: «Oysters on a green day. Priced in.», etichetta IA, niente luogo. TikTok ha mostrato un avviso generico «situazione in rapida evoluzione»: confermato Pubblica.
+  - Instagram ~20:07: «Ostriche e champagne: giornata chiusa in verde. Priced in. #tradingalgoritmico #propfirm #trading», etichetta IA, niente luogo.
+- Trappola adb: `input text` con `%23` NON diventa «#». Scrivere gli hashtag con `adb shell "input text '#parola'"`.
+- Trappola adb: a metà sessione il telefono è andato «offline»; servito ricollegare il cavo e riaccettare il debug USB.
+- Genjutsu: restano 2 generazioni gratis.
+- 20:30 mt11 RIPUBBLICATO su TikTok: il primo era fermo a 0 visualizzazioni (rap con insulto razziale nel testo, nessuna notifica di violazione). Nuovo post con suono di tendenza «BbY WOW» (Karol G, scelto da Marco), audio originale a 0 (nessuna sovrapposizione), stessa descrizione, etichetta IA. Il vecchio post non compare più nel profilo.
+- Marco 28/10: per mt10 dice «audio sovrapposto», ma il file ha esattamente l'audio originale (correlazione 1,0): era già nel video sorgente.
+
+## 29/10/2026: canale YouTube rifatto per C
+- Canale youtube.com/@cthe.trader («C - The Trader», ex «Marco Stanga» @marco_stanga_fx, 5.020 iscritti): banner e foto di C (produzione/script/yt_banner.mjs → produzione/youtube/banner.jpg, avatar.jpg), descrizione con avviso di rischio, link IG e TikTok, filigrana C. Lingua del canale: italiano.
+- Short: 18 file in produzione/youtube/shorts (titoli, descrizioni e calendario in TITOLI.md), miniature in produzione/youtube/mini (stesso nome del video). mt11 escluso (insulto nell'audio).
+- Impostazioni per ogni Short: non per bambini, «contenuti alterati/sintetici» = Sì, lingua italiano, categoria Istruzione (Vox) o Intrattenimento (reel di C).
+- 29/10 ~11:45 PUBBLICATO Short 01 «Le prop firm guadagnano quando perdi?» con miniatura cover-ep1: https://youtube.com/shorts/DKoW641x3Iw
+- I file sopra i 10 MB non si caricano da Chrome con lo strumento: Marco trascina i video in Studio, io compilo i dettagli.
+- Da decidere: vecchi video del canale (Su e giù, lezioni ICT private, Sensi, Smigole, live del 2024, bozza «MI PRESENTO»).
+- 29/10 PROGRAMMATO Short 07 «I costi che il backtest non ti mostra» per il 29/10 18:30 (miniatura cover_costi): https://youtube.com/shorts/RzvX4rLE9WQ. Regola: Marco carica un video alla volta, io lo metto nel primo slot libero (12:30 / 18:30).
+- 29/10 PROGRAMMATI (conferma «Video programmato» vista): 03 «La dashboard al 300% è finta» 30/10 12:30 (youtube.com/shorts/cUFzDupU-wI), 04 «Colazione inglese…» 30/10 18:30 (youtube.com/shorts/eVlicWEmBv0).
+- 05 «245 $ persi con un bot già spento»: dettagli compilati (titolo, descrizione, miniatura, IA, italiano, 31/10 12:30), ma il salvataggio dava errore «nuovo tentativo», con Studio lentissimo mentre caricava 14 video. Fermati su richiesta di Marco: ricontrollare 05 e fare 06, 08-18 (in Studio come bozze private).
+- Calendario restante: 06 31/10 18:30, 08 01/11 12:30, 09 01/11 18:30, 10 02/11 12:30, 11 02/11 18:30, 12 03/11 12:30, 13 03/11 18:30, 14 04/11 12:30, 15 04/11 18:30, 16 05/11 12:30, 17 05/11 18:30, 18 06/11 12:30 (02-mt12 forse non caricato: verificare).
+- Trappola Studio: nel menu lingua un clic sbagliato mette «Kikuyu»; controllare sempre che sia Italiano.
+- 29/10 (ripresa): 05 risultava già PROGRAMMATO per il 31/10 12:30 (il salvataggio era andato a buon fine). PROGRAMMATI con titolo, descrizione, miniatura, IA = Sì e lingua italiano: 06 31/10 18:30 · 08 01/11 12:30 · 09 01/11 18:30 · 10 02/11 12:30 · 11 02/11 18:30 · 13 03/11 12:30 · 14 03/11 18:30 · 15 04/11 12:30 · 17 04/11 18:30 · 18 05/11 12:30 · 02 05/11 18:30. Questo calendario sostituisce quello «restante» scritto sopra.
+- 12-mt08-lord e 16-mt03-elicottero: Marco ha deciso di NON caricarli su YouTube (29/10).
+- Metodo veloce in Studio: titolo e descrizione si scrivono a mano; miniatura con file_upload; il resto (bambini, IA, lingua, Avanti ×3, data scritta nel campo «1 nov 2026», ora dal menu, Programma) con uno script JS nella pagina (window.__ytSched), che si ferma se un controllo non torna.
+
+## 29/10/2026 pomeriggio: mt09 e mt12 su Instagram (dal Redmi, account @cthe.trader verificato)
+- PUBBLICATO mt09: «Riunione con il cliente. Priced in. #tradingalgoritmico #propfirm #trading», etichetta IA, niente luogo, storia attiva, copertina = Ferrari rossa davanti all'hotel (ultimo fotogramma).
+- PUBBLICATO mt12: «Challenge passata, jet prenotato. Priced in. #tradingalgoritmico #propfirm #trading», etichetta IA, niente luogo, storia attiva, copertina = C sulla scaletta del jet con il tappeto viola «C».
+- mt08 «Il Lord approva»: Marco NON lo vuole su Instagram.
+- Profilo: 16 post, 94 follower.
+- Piano riscritto (docs/PIANO-30-GIORNI.md): dal 30/10 al 15/11 solo reel, alternando spiegoni col codice e reel di C. I caroselli (Sistema #5-#7, 5 miti, FAQ) diventano reel.
+- R8 «4.000 strategie in una notte» (spiegone del 30/10): copione in produzione/r8/copione.md; 5 immagini collage Dreamina seedream_5.0_pro (50 crediti, nodi in r8/nodi.txt) + 3 animazioni seedance_2.0_fast 4 s (84 crediti, r8/vnodi.txt), tela 92997bbb, profilo CLI «nuovo» (C:\Users\stang\bin\dreamina-canvas.exe). Montaggio con REMOTION (progetto produzione/remotion-c, composizione R8; `npx remotion render R8 out.mp4`), valzer variante 1 + effetti synth.py. File R8-remotion-senza-voce.mp4 (30 s), copertina r8/cover-r8.jpg. MANCA la voce Julian (crediti Higgsfield) (numeri 4.000/1.240/310/38/11 confermati da Marco il 29/10). Dopo la voce: tempi dei sottotitoli dalle parole vere, poi ×1,1.
+- cover_c.mjs ora gira anche su Windows (aspetta il caricamento dei font) e il badge #n non esce più dal ritaglio 4:5.
+
+### 29/10/2026 sera: voce R8
+- Higgsfield a 0,1 crediti: voce fatta dal sito di ElevenLabs (piano gratis, la libreria via API è bloccata), voce «Julian - Deep, Rich and Mature», modello Eleven v4 (Marco: «usiamo la versione aggiornata»). History id HiUrUPetpcY57MZhjoT7. Attenzione: il piano free ElevenLabs non dà diritto all'uso commerciale.
+- Voce ×1,1 → `produzione/r8/voce-x11.wav` (32,5 s); tempi parole con faster-whisper locale → `parole.json` → `remotion-c/src/r8-parole.ts`.
+- R8 ritimato a 990 frame (33 s), sfx e valzer (variante 1) rifatti a 33 s. Video finale: `produzione/r8/R8-con-voce.mp4` (niente ×1,1 globale: la voce è già accelerata). Anteprima mandata a Marco.
+- 29/10 23:13: R8 PROGRAMMATO su Publora per il 30/10 alle 18:30 (17:30 UTC), post group 6ae3b6c096672348b1f08153, solo @cthe.trader, copertina cover-r8.jpg (URL CDN Higgsfield), didascalia di `produzione/r8/copione.md`. Marco ha scelto Publora perché il telefono era bloccato (batteria 5%). Publora NON mette l'etichetta IA: aggiungerla dall'app subito dopo l'uscita, se Instagram lo permette. Quota Publora di ottobre: dopo questo restano 2 post. fal senza credito.
+- Da fare il 30/10 dopo le 18:30: storia con sondaggio «Testi i tuoi bot su dati mai visti?» (Marco, dal telefono); Short YouTube + TikTok («4,000 strategies overnight. 11 survived. Priced in.»).
+
+### 30/10/2026: nota per l'attività giornaliera in cloud
+- GitHub era fermo al 27/10 perché la sessione locale non aveva fatto push. Ora è allineato: dal 28/10 al 29/10 sono usciti mt06, mt07, mt10, mt11 (IG + TikTok), mt09 e mt12 (IG), il Short 01 su YouTube più 17 Short programmati fino al 05/11 (vedi sopra), e R8 è PROGRAMMATO su Publora per stasera 30/10 18:30.
+- La pagina NON è ferma. Prima di dire «nessun post da giorni», controlla anche i post Publora con status scheduled/published (non solo failed) e queste note.
+- Non programmare un doppione di R8. Prossimi: 31/10 reel di C (sessione locale, dal telefono), 01/11 spiegone «incubazione».

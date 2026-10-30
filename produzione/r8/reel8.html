@@ -1,0 +1,83 @@
+<html><head><style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1920px;background:#0b0a10;overflow:hidden;font-family:Inter;color:#fff}
+#cam{position:absolute;inset:0;transform-origin:50% 45%}
+.grid{position:absolute;inset:-200px;background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);background-size:60px 60px}
+.glow{position:absolute;width:1400px;height:1400px;border-radius:50%;left:-160px;top:100px;background:radial-gradient(#5b3fd655,transparent 62%)}
+.L{position:absolute;left:0;right:0;text-align:center;font-family:Anton;text-transform:uppercase;line-height:1;letter-spacing:1px;opacity:0}
+.v{color:#8b6dff}.r{color:#ff4d5e}.g{color:#8d8a98}
+.tag{position:absolute;left:80px;top:120px;font-family:'JetBrains Mono';font-size:34px;color:#8b6dff;letter-spacing:2px}
+.foot{position:absolute;left:80px;right:80px;bottom:110px;display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:30px;color:#7d7a88}
+.sub{position:absolute;left:70px;right:70px;top:1520px;text-align:center;font-size:46px;font-weight:800;line-height:1.25;text-shadow:0 4px 18px #000}
+.sub span{background:#5b3fd6;padding:2px 10px;border-radius:8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.cav{position:absolute;left:390px;top:230px;width:300px;height:300px;border-radius:50%;border:10px solid #5b3fd6;overflow:hidden;background:url(../brand/pers_C.png) center 18%/150% no-repeat;opacity:0}
+.cnt{position:absolute;left:0;right:0;top:600px;text-align:center;font-family:Anton;font-size:300px;line-height:1;opacity:0}
+.mono{font-family:'JetBrains Mono';font-weight:700}
+.row{position:absolute;left:80px;right:80px;height:190px;border-radius:26px;background:#14121c;border:2px solid #2c2838;padding:24px 32px;opacity:0}
+.row .n{font-family:'JetBrains Mono';font-weight:700;font-size:34px;color:#cfcbd9}
+.row .k{position:absolute;right:32px;top:22px;font-family:Anton;font-size:92px;line-height:1}
+.row .bar{position:absolute;left:32px;right:300px;bottom:36px;height:26px;border-radius:13px;background:#24202f;overflow:hidden}
+.row .bar i{display:block;height:100%;border-radius:13px;background:#8b6dff}
+.row .x{position:absolute;left:32px;bottom:72px;font-size:30px;color:#ff4d5e;font-weight:700}
+.lock{position:absolute;left:390px;top:520px;width:300px;height:300px;opacity:0}
+</style></head><body>
+<div id=cam><div class=grid></div><div class=glow></div>
+<div class=tag>// DENTRO IL MIO SISTEMA</div>
+<div class=cav id=cav></div>
+<div class=cnt id=cnt><span id=num>0</span></div>
+<div class=L id=a1 style="top:920px;font-size:96px">strategie<br><span class=v>mentre dormivo</span></div>
+<div class=L id=a2 style="top:1150px;font-size:120px">Rimaste: <span class=r id=left>11</span></div>
+<div class=L id=b0 style="top:250px;font-size:100px">3 filtri,<br><span class=v>zero pietà</span></div>
+<div class=row id=r1 style="top:560px"><div class=n>1 · dati mai visti</div><div class=x id=x1>− backtest truccati</div><div class=bar><i id=i1></i></div><div class="k" id=k1>1.240</div></div>
+<div class=row id=r2 style="top:780px"><div class=n>2 · costi veri</div><div class=x id=x2>− spread · commissioni · slippage</div><div class=bar><i id=i2></i></div><div class="k" id=k2>310</div></div>
+<div class=row id=r3 style="top:1000px"><div class=n>3 · drawdown</div><div class=x id=x3>− oltre il limite della prop firm</div><div class=bar><i id=i3></i></div><div class="k" id=k3>38</div></div>
+<div class=row id=r4 style="top:1220px;border-color:#5b3fd6"><div class=n style="color:#8b6dff">incubazione · conto demo</div><div class=bar><i id=i4></i></div><div class="k v" id=k4>11</div></div>
+<svg class=lock id=lock viewBox="0 0 100 100"><rect x="18" y="44" width="64" height="48" rx="8" fill="#5b3fd6"/><path id=shk d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#8b6dff" stroke-width="9" stroke-linecap="round"/><circle cx="50" cy="66" r="7" fill="#0b0a10"/></svg>
+<div class=L id=c1 style="top:880px;font-size:130px">Il conto vero</div>
+<div class=L id=c2 style="top:1030px;font-size:130px"><span class=v>si guadagna</span></div>
+<div class=L id=d1 style="top:920px;font-size:120px">Stanotte<br><span class=v>si ricomincia</span></div>
+</div>
+<div class=sub id=sub></div>
+<div class=foot><span><b style="font-family:Anton;font-size:40px;color:#fff;letter-spacing:2px">MS</b>&nbsp;&nbsp;@cthe.trader</span><span>#8</span></div>
+<script>
+const LINES=[[0.2,2.6,"Il mio PC ha provato 4.000 strategie mentre dormivo."],[2.8,5.6,"Stamattina ne erano rimaste 11."],
+[5.9,10.0,"Primo filtro: dati mai visti. Se guadagnano solo sul passato, fuori."],
+[10.2,14.0,"Secondo filtro: i costi veri. Spread, commissioni, slippage."],
+[14.2,18.0,"Terzo filtro: il drawdown. Oltre il limite della prop firm, fuori."],
+[18.2,21.8,"Le ultime 11 vanno in incubazione su un conto demo."],
+[22.0,25.8,"Il conto vero non si regala: si guadagna."],
+[26.0,29.6,"Stanotte si ricomincia da zero. Perché ogni notte…"]];
+const cl=(x,a,b)=>Math.max(0,Math.min(1,(x-a)/(b-a))),eo=x=>1-Math.pow(1-x,3),eb=x=>{const c=1.7;x=Math.max(0,Math.min(1,x));return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const $=id=>document.getElementById(id);
+const fmt=n=>n>=1000?Math.floor(n/1000)+'.'+String(n%1000).padStart(3,'0'):String(n);
+function show(id,a,b,dy=50){const e=$(id);const k=Math.min(eo(cl(T,a,a+0.35)),1-cl(T,b-0.2,b));e.style.opacity=k;e.style.transform=`translateY(${(1-eo(cl(T,a,a+0.35)))*dy}px)`;return k}
+let T=0;
+window.render=function(t){T=t;
+ $('cam').style.transform=`scale(${1+0.015*Math.sin(t*0.6)})`;
+ // S1 gancio: contatore che corre fino a 4.000, poi «rimaste 11»
+ const c=$('cav');const ka=Math.min(eb(cl(t,0.05,0.5)),1-cl(t,5.6,5.8));c.style.opacity=Math.min(1,cl(t,0.05,0.2))*(1-cl(t,5.6,5.8));c.style.transform=`scale(${Math.max(0,ka)})`;
+ const cn=$('cnt');cn.style.opacity=Math.min(cl(t,0.1,0.3),1-cl(t,5.6,5.8));
+ const n=Math.round(4000*eo(cl(t,0.15,2.4)));$('num').textContent=fmt(n);
+ $('num').style.color=t>2.4?'#8b6dff':'#fff';cn.style.transform=`scale(${1+0.06*Math.max(0,1-Math.abs(t-2.45)/0.3)})`;
+ show('a1',0.4,5.8);show('a2',2.8,5.8,30);
+ $('a2').style.transform+=` scale(${t>2.8?eb(cl(t,2.8,3.1)):1})`;
+ // S2 tre filtri a imbuto (barre in scala logaritmica)
+ show('b0',5.9,21.9);
+ const W=v=>Math.log10(v)/Math.log10(4000);
+ [['r1',6.0,'i1',1240,'x1',7.4],['r2',10.2,'i2',310,'x2',11.6],['r3',14.2,'i3',38,'x3',15.8],['r4',18.2,'i4',11,null,0]].forEach(([id,a,bar,v,x,xa])=>{
+   const k=Math.min(eo(cl(t,a,a+0.35)),1-cl(t,21.7,21.9));const e=$(id);e.style.opacity=k;e.style.transform=`translateY(${(1-eo(cl(t,a,a+0.35)))*60}px)`;
+   $(bar).style.width=(100*(1-(1-W(v))*eo(cl(t,a+0.4,a+1.6))))+'%';
+   const kk=$('k'+id[1]);kk.textContent=fmt(Math.round(Math.pow(10,Math.log10(4000)-(Math.log10(4000)-Math.log10(v))*eo(cl(t,a+0.4,a+1.6)))));
+   if(x){$(x).style.opacity=cl(t,xa,xa+0.3)}});
+ // S3 lucchetto: il conto vero si guadagna
+ const lk=$('lock');lk.style.opacity=Math.min(cl(t,22.0,22.3),1-cl(t,25.7,25.9));lk.style.transform=`scale(${eb(cl(t,22.0,22.5))})`;
+ $('shk').setAttribute('transform',`translate(0 ${-10*eo(cl(t,24.2,24.6))})`);
+ show('c1',22.2,25.9);show('c2',22.8,25.9);
+ // S4 loop: il contatore torna a zero
+ show('d1',26.0,29.9);
+ if(t>27.4){cn.style.opacity=Math.min(cl(t,27.4,27.7),1);cn.style.top='420px';$('num').style.color='#fff';$('num').textContent=fmt(Math.round(4000*(1-eo(cl(t,27.6,29.2)))));}else cn.style.top='600px';
+ // sottotitoli
+ const L=LINES.find(l=>t>=l[0]&&t<=l[1]);$('sub').innerHTML=L?`<span>${L[2]}</span>`:'';$('sub').style.opacity=L?1:0;
+};
+window.render(0);
+</script></body></html>

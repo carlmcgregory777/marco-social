@@ -5,3 +5,12 @@ out/
 *.wav
 *.m4a
 *.opus
+__pycache__/
+*.mp3
+*.log
+produzione/remotion-c/public/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.webp

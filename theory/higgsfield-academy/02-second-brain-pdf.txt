@@ -1,0 +1,495 @@
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+01 / 18
+SECOND
+BRAIN
+02
+Give the assistant a job. Develop an idea through conversation.
+FIND WHAT YOU NEED
+02
+Check a term
+03
+Give a useful brief
+04
+Check the research
+06
+Develop a scene
+08
+Review before generating
+10
+Watch and revise
+15
+Practise and review
+18
+Open useful links
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+02 / 18
+CONTENTS
+GLOSSARY
+Essential terms
+A raised number marks each term's first use in the main text.
+01
+LLM
+A large language model learns patterns from text during training. It
+can help explain a subject, write, plan or code. The Model settings
+menu under Auto chooses the language model you talk to. A
+separate video model generates the footage.
+02
+Context
+The information the assistant needs about your task: who you are,
+what you need, what it should do and the form of the answer. Useful
+notes, data, images and references can also provide context when
+the tool can read them.
+03
+Ask before generating
+The Ask mode setting used in the lesson to request approval before
+generation. To get creative questions before the prompt is written,
+ask for an interview in your message as well.
+I
+make
+YouTube
+videos
+about
+generative
+AI.
+Research
+the
+most
+important
+AI
+news
+from
+the
+last
+few
+days
+and
+rank
+it
+-
+most
+trending
+first.
+For
+each
+item,
+one
+line
+on
+why
+my
+audience
+would
+care.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+03 / 18
+CONTENTS
+01
+GIVE A USEFUL BRIEF
+Give the job four parts
+The labels help you think. You can write the request as an ordinary paragraph.
+PROMPT
+Find me AI news
+The first answer was a useful weekly roundup. The request still left the timeframe, audience and purpose
+for the assistant to infer.
+PROMPT
+I make YouTube videos about generative AI. Research the most important AI news from the last few
+days and rank it - most trending first. For each item, one line on why my audience would care.
+I AM
+Who you are and who the work is for.
+In the example: A YouTube creator covering generative AI.
+I NEED
+The outcome and any relevant timeframe.
+In the example: Important AI news from the last few days.
+DO
+The action you want the assistant to take.
+In the example: Research and rank the stories.
+FORMAT
+The form and level of detail of the answer.
+In the example: A list with one audience-relevance line per item.
+SAME JOB, SAME CHAT
+Add missing details in the existing conversation. The lesson opens a fresh chat only to compare the
+two briefs.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+04 / 18
+CONTENTS
+02
+CHECK THE RESEARCH
+Check the answer
+A well-specified request still needs a careful read of the response.
+Recorded response excerpt: the ranking, audience note and source links are visible.
+Timeframe
+Check event and article dates against the period you requested.
+Evidence
+Find the passage in the source that supports the claim.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+05 / 18
+CONTENTS
+02
+CHECK THE RESEARCH
+Check the answer / continued
+Usefulness
+Check how the ranking was made and whether it helps you choose a story.
+WORKED CHECK / RELEASE DATE
+CLAIM
+GPT-6 Astra was released on September 3, 2026.
+SOURCE
+OpenAI's announcement is dated September 3, 2026 and announces the release that day.
+VERDICT
+The release date is supported. Other claims in the screenshot still need separate checks.
+Open OpenAI's dated announcement >
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+06 / 18
+CONTENTS
+03
+DEVELOP A SCENE
+Start with your scene
+Describe who is there, where they are and what happens. Bring the moment you want to see.
+PROMPT
+A bartender closes his empty bar at three in the morning. He switches the lights off one by one, and
+when he kills the last light, he walks slowly to the big window and stands there, sad and tired,
+looking far into the distance. Outside the window, far away in the dark, hangs the Earth - his bar is
+in space. Use the person in my attached photo as the bartender. Before you write the video prompt,
+ask me the questions you need answered to make this great. Write the prompt only after I've
+answered.
+WHO
+One bartender, using the attached person as the reference.
+WHERE
+An empty bar at 3 AM. The final view reveals that it is in space.
+WHAT HAPPENS
+He switches the lights off, walks to the window and looks out at Earth.
+IF IT SKIPS THE QUESTIONS
+Ask again for the questions first. Answer them before asking for the video prompt, and add any important
+detail the interview missed.
+ATTACH THE REFERENCE BEFORE SENDING
+In the lesson: + > Attach file > Assets > Upload media. Wait for the thumbnail, then send the idea
+with the photo instruction and the interview request.
+For your own exercise, use one person and one location. Attach your photo if you want to appear. Your
+scene can have a different setting and ending.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+07 / 18
+CONTENTS
+VIDEO / INTERVIEW
+Answer the creative questions
+These are the five answers in the lesson. Your questions and options may differ.
+01
+Frame
+Sets the shape of the finished
+video.
+ANSWER FROM THE LESSON
+16:9 widescreen (cinematic)
+02
+Length
+Sets the time available for the
+action and ending.
+ANSWER FROM THE LESSON
+~15 seconds
+03
+Bar
+Defines the materials, atmosphere
+and physical setting.
+ANSWER FROM THE LESSON
+Realistic. A warm wooden bar with normal gravity, not a neon
+sci-fi set.
+04
+Camera
+Specifies the intended framing,
+camera move and timing of the
+reveal.
+ANSWER FROM THE LESSON
+One continuous slow camera move towards the window.
+Keep the window outside the opening frame. Reveal the Earth
+only when he reaches the window at the end.
+05
+Sound
+Defines what should be heard.
+Diegetic sound belongs to the
+scene, such as footsteps or
+switches.
+ANSWER FROM THE LESSON
+Diegetic sounds only, no music
+TWO DIFFERENT REQUESTS
+Ask before generating3 controls approval. The interview sentence asks for creative questions
+before the prompt is written.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+08 / 18
+CONTENTS
+04
+REVIEW BEFORE GENERATING
+Read the prompt first
+Compare the instructions with your idea before asking for a paid take.
+ORIGINAL EXCERPT
+kills the last light
+KEEP THIS INSTRUCTION
+switching the lights off one by one
+The initial prompt reduced the action to the last light. It already kept the window out of frame during the
+approach. The correction restores the light sequence while keeping the ending.
+PROMPT
+Write only the revised prompt, do not generate yet. Show him switching several lights off one by
+one before the slow walk to the window. Keep 15 seconds, 16:9, one continuous shot, normal
+gravity, my attached photo as the only bartender, and Earth revealed only at the end.
+CHECK THE REVISED ACTION
+Read the revised prompt for the person, bar, light sequence, continuous camera move and late Earth
+reveal. If a line is unclear or changes your idea, ask for another text revision.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+09 / 18
+CONTENTS
+VIDEO / GENERATION
+Request a draft, then approve
+Use a draft to test the scene. Check the proposal before submitting it.
+PROMPT
+Generate it at 480p, it's a draft. Keep 15 seconds, 16:9, and the attached photo as the bartender
+reference. Ask for approval before generation.
+REVIEW THE REFERENCE, MODEL, SETTINGS AND QUOTE
+Approval demo · Draft 2. The recorded proposal shows 38 credits; check the quote for your own request.
+Recorded demo: Seedance 2.5 / 15 seconds / 16:9 / 480p.
+The model, settings and number of videos can affect the quote. Recheck it after a change.
+FOR YOUR PRACTICE
+Start with one draft. If the recorded setup is unavailable, ask for a supported model, duration and
+low resolution with a new quote. Keep Ask before generating on. Review the proposal before
+approving.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+10 / 18
+CONTENTS
+05
+WATCH AND REVISE
+Watch the whole take
+The prompt can describe the right scene while the generated video still misses a detail.
+Draft 1, opening frame. The window is already visible behind the bartender.
+PERSON
+Does the bartender resemble the attached person? Is the performance tired and
+quietly sad?
+PLACE
+Does the space feel like the warm wooden bar you described? Check the details you
+asked to preserve.
+ACTION
+Do several lights go off in sequence, followed by the slow walk to the window?
+ENDING
+When does the window first enter the frame? Does Earth appear at the moment you
+intended?
+Watch with sound from beginning to end. Choose the one change that matters most to your idea.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+11 / 18
+CONTENTS
+VIDEO / REVISION
+Give one specific note
+Name the problem, state the change, and say what should stay. Ask to revise the text first.
+PROMPT
+The window is visible from the start. Keep it outside the opening frame and reveal it with Earth only
+when the bartender reaches it at the end. Keep the person from my photo, warm wooden bar,
+lights-off action, slow continuous camera move and quiet mood. Rewrite the prompt first; do not
+generate yet. Use readable paragraphs, outside a code block.
+The reply added a curtain. That changed the room instead of only changing the framing, so the next
+message narrowed the instruction.
+PROMPT
+Keep the original bar with no curtains. Change only camera framing: begin facing the solid side wall
+and follow him along it, then pan towards the window only when he arrives. Preserve the same
+person, lights-off action, 15-second continuous take and quiet mood. Reply with only the revised
+SHOT paragraph, under 120 words. Do not generate.
+SHOT is the part of this prompt describing the action and camera; the assistant may use a different
+heading.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+12 / 18
+CONTENTS
+VIDEO / REVISION
+Give one specific note / continued
+READ THE REVISION AGAIN
+A later revision said "One cut." Adil clarified "Zero cuts, one continuous take" before generating.
+Check that a new version keeps the constraints you still want.
+PROBLEM
+The window appears too early.
+CHANGE
+Keep it outside the opening frame; reveal it at the end.
+PRESERVE
+The same person, wooden bar, lights-off action and quiet mood.
+IF YOU NEED A SECOND DRAFT
+Stay in the same chat. Read the revised prompt, then request generation with the same reference
+and draft settings. Recheck the model, reference, settings and quote before approving.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+13 / 18
+CONTENTS
+VIDEO / SAVE
+Compare and keep a take
+Compare the same moment in each version, then watch both full videos.
+DRAFT 1
+DRAFT 2
+0:00 / Window visible in the opening.
+0:00 / Opening faces the wooden wall.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+14 / 18
+CONTENTS
+VIDEO / SAVE
+Compare and keep a take / continued
+0:14.5 / Final view of Earth.
+0:14.5 / Final view of Earth.
+The opening framing changed, and both takes end at the window. To judge the reveal, check when it
+happens during the whole shot; the first and last frames alone cannot tell you that.
+A new generation may also change details you wanted to keep. Recheck the person, clothing, setting,
+action and sound, not just the part you corrected.
+SAVE THE VIDEO AND ITS MATCHING PROMPT
+Download the take you prefer from its viewer. Select the text in that same viewer's Prompt field and copy it
+with Command-C on Mac or Control-C on Windows. Keep the idea, generating prompt and video together.
+A WORKING FIRST TAKE IS ENOUGH
+Stop after at most two drafts for this exercise. If work remains, label the video as a draft and note
+the next change.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+15 / 18
+CONTENTS
+06
+PRACTISE AND REVIEW
+Try it on your own
+Use a real task and an original scene. Write brief notes before opening the chat.
+01
+A TASK YOU NEED DONE THIS WEEK
+Choose a task with an answer you can use. Start a new chat, supply the four parts, then check the
+response and any facts you will rely on.
+I AM
+I NEED
+DO
+FORMAT
+If something is missing, add it in the same chat and review the revision. Save a usable answer.
+02
+A SCENE YOU WANT TO SEE
+Start a new chat. Describe one person in one location in three sentences. Ask for the interview, answer its
+questions, then review the prompt.
+WHO
+WHERE
+WHAT HAPPENS
+ONE DRAFT, THEN REVIEW
+The demo uses Seedance 2.5, 15s, 16:9, 480p. Request one draft. If this setup is unavailable, ask
+for a supported alternative and its quote before approving. Keep the take if it works; allow at most
+one more after a specific text revision.
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+16 / 18
+CONTENTS
+FINAL CHECKLIST
+Check your finished work
+Use these checks on your research answer and chosen video.
+Research I can use
+The saved answer helps with my task and fits the audience, timeframe and format I requested.
+Supported facts
+The facts I plan to use have supporting sources. Where dates matter, they fit the period I asked
+about.
+Clear action and ending
+The main action reads clearly, and the ending delivers the moment I intended.
+A recognisable person and place
+The character and setting stay coherent. Where I used a photo reference, the person remains
+recognisable.
+Coherent camera and sound
+The camera move is understandable, sound fits the action, and unplanned jumps or noises do not
+interrupt the scene.
+Chosen take and matching prompt saved
+The saved video plays through the ending. Its idea and exact generating prompt are saved with it.
+A WORKING DRAFT IS VALID
+If a video check still needs work, label the take Draft and record the single next fix. You do not need
+another paid take to complete this exercise.
+KEEP TOGETHER
+Research answer, chosen video, idea and exact generating prompt. Add a short note on what worked and
+the next fix, if needed.
+If something needs a fix >
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+17 / 18
+CONTENTS
+REVIEW / FIXES
+If something needs a fix
+Find the problem, make a focused change, then check your work again.
+01
+The research is too broad or hard to trust
+Add the missing audience, timeframe, task context2 or format in the same chat. Open the cited
+sources and check the claims and dates before saving a usable answer.
+Review the four-part brief >
+02
+The prompt or generation settings are wrong
+Correct the text before generating. Check the scene, reference, model, duration, aspect ratio,
+resolution and credit quote. Approve only when the proposal matches your request.
+Review the prompt and proposal >
+03
+The take misses an important detail
+Name one problem, say what should change and what should stay, then revise the text first.
+Generate another draft only if needed, within the two-draft limit. Keep a usable take; note any
+remaining issue.
+Review the iteration and save steps >
+NEXT LESSON
+Choose an object you'd like to advertise and prepare a clear photo of it. You can also use the
+supplied sunglasses references in Lesson 3.
+Open SuperComputer >
+Higgsfield Help Center >
+
+Academy
+Course 01 / Lesson 02
+SECOND BRAIN
+18 / 18
+CONTENTS
+USEFUL LINKS
+Further reading & practice
+Selected resources for this lesson. Click a title to open it.
+01
+Explore Supercomputer
+HIGGSFIELD / OVERVIEW
+Explore how a conversational assistant can help you develop ideas, work with references and
+create content.
+02
+Write Clearer Prompts
+OPENAI / PRACTICAL GUIDE
+Practise giving clear instructions, adding useful context and refining a response through
+conversation.
+03
+Connect Higgsfield to Claude or ChatGPT
+HIGGSFIELD / OPTIONAL SETUP
+Connecting your Higgsfield account gives the assistant access to Higgsfield tools inside your chat.
+You can develop an idea, ask it to generate an image or video, then request another version in the
+same conversation. The assistant runs the generation through Higgsfield, and the results are
+saved to your Higgsfield Assets.
+The connection can also check your credit balance and retrieve recent generations. An active
+Higgsfield subscription is required, and generations through the connection use Higgsfield credits.
+Ask the assistant to show the proposed settings and cost before it generates. Follow the linked
+guide for the setup in your chosen app.

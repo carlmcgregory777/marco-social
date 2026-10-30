@@ -1,0 +1,97 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Anton,118,&H0016110F,&H0016110F,&H00EEF4F6,&H50000000,0,0,0,0,100,100,1,0,1,5,0,2,80,80,350,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.16,C,,0,0,0,,{\fad(40,0)}LE {\c&HD63F5B&}PROP{\c&H16110F&} {\c&HD63F5B&}FIRM{\c&H16110F&}
+Dialogue: 0,0:00:01.16,0:00:02.72,C,,0,0,0,,{\fad(40,0)}GUADAGNANO QUANDO {\c&HD63F5B&}PERDI,{\c&H16110F&}
+Dialogue: 0,0:00:02.72,0:00:04.10,C,,0,0,0,,{\fad(40,0)}RISPOSTA BREVE.
+Dialogue: 0,0:00:04.10,0:00:05.30,C,,0,0,0,,{\fad(40,0)}SPESSO SÌ.
+Dialogue: 0,0:00:05.30,0:00:06.18,C,,0,0,0,,{\fad(40,0)}UNO.
+Dialogue: 0,0:00:06.26,0:00:07.06,C,,0,0,0,,{\fad(40,0)}LA {\c&HD63F5B&}CHALLENGE,{\c&H16110F&}
+Dialogue: 0,0:00:07.06,0:00:07.88,C,,0,0,0,,{\fad(40,0)}PAGHI 100,
+Dialogue: 0,0:00:07.88,0:00:08.58,C,,0,0,0,,{\fad(40,0)}300,
+Dialogue: 0,0:00:08.58,0:00:09.58,C,,0,0,0,,{\fad(40,0)}500 EURO PER
+Dialogue: 0,0:00:09.58,0:00:10.08,C,,0,0,0,,{\fad(40,0)}UN CONTO DI
+Dialogue: 0,0:00:10.08,0:00:10.82,C,,0,0,0,,{\fad(40,0)}PROVA.
+Dialogue: 0,0:00:10.82,0:00:11.52,C,,0,0,0,,{\fad(40,0)}GRAN PARTE DEI
+Dialogue: 0,0:00:11.52,0:00:12.44,C,,0,0,0,,{\fad(40,0)}LORO INCASSI ARRIVA
+Dialogue: 0,0:00:12.44,0:00:13.52,C,,0,0,0,,{\fad(40,0)}DA QUESTE {\c&HD63F5B&}QUOTE,{\c&H16110F&}
+Dialogue: 0,0:00:13.52,0:00:14.98,C,,0,0,0,,{\fad(40,0)}NON DAI MERCATI.
+Dialogue: 0,0:00:14.98,0:00:15.98,C,,0,0,0,,{\fad(40,0)}DUE.
+Dialogue: 0,0:00:16.00,0:00:17.12,C,,0,0,0,,{\fad(40,0)}I NUMERI.
+Dialogue: 0,0:00:17.12,0:00:17.56,C,,0,0,0,,{\fad(40,0)}MENO DI UN
+Dialogue: 0,0:00:17.56,0:00:18.32,C,,0,0,0,,{\fad(40,0)}TRADER SU {\c&HD63F5B&}10{\c&H16110F&}
+Dialogue: 0,0:00:18.32,0:00:19.72,C,,0,0,0,,{\fad(40,0)}PASSA LA {\c&HD63F5B&}CHALLENGE,{\c&H16110F&}
+Dialogue: 0,0:00:19.72,0:00:20.18,C,,0,0,0,,{\fad(40,0)}E SOLO UNA
+Dialogue: 0,0:00:20.18,0:00:21.22,C,,0,0,0,,{\fad(40,0)}PICCOLA PARTE RICEVE
+Dialogue: 0,0:00:21.22,0:00:22.84,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}DAVVERO{\c&H16110F&} UN PAGAMENTO.
+Dialogue: 0,0:00:23.00,0:00:23.86,C,,0,0,0,,{\fad(40,0)}TRE.
+Dialogue: 0,0:00:23.86,0:00:24.72,C,,0,0,0,,{\fad(40,0)}IL CONTO,
+Dialogue: 0,0:00:24.72,0:00:25.48,C,,0,0,0,,{\fad(40,0)}QUASI SEMPRE È
+Dialogue: 0,0:00:25.48,0:00:26.58,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}SIMULATO.{\c&H16110F&}
+Dialogue: 0,0:00:26.62,0:00:27.16,C,,0,0,0,,{\fad(40,0)}I TUOI TRADE
+Dialogue: 0,0:00:27.16,0:00:27.92,C,,0,0,0,,{\fad(40,0)}NON TOCCANO IL
+Dialogue: 0,0:00:27.92,0:00:28.66,C,,0,0,0,,{\fad(40,0)}MERCATO VERO.
+Dialogue: 0,0:00:28.66,0:00:29.80,C,,0,0,0,,{\fad(40,0)}I PAGAMENTI DEI
+Dialogue: 0,0:00:29.80,0:00:30.94,C,,0,0,0,,{\fad(40,0)}VINCENTI LI COPRONO
+Dialogue: 0,0:00:30.94,0:00:31.50,C,,0,0,0,,{\fad(40,0)}LE {\c&HD63F5B&}QUOTE{\c&H16110F&} DI
+Dialogue: 0,0:00:31.50,0:00:32.60,C,,0,0,0,,{\fad(40,0)}CHI HA {\c&HD63F5B&}PERSO.{\c&H16110F&}
+Dialogue: 0,0:00:32.60,0:00:33.56,C,,0,0,0,,{\fad(40,0)}QUATTRO.
+Dialogue: 0,0:00:33.64,0:00:34.16,C,,0,0,0,,{\fad(40,0)}ALLORA È UNA
+Dialogue: 0,0:00:34.16,0:00:35.00,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}TRUFFA?{\c&H16110F&}
+Dialogue: 0,0:00:35.00,0:00:35.66,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}NO.{\c&H16110F&}
+Dialogue: 0,0:00:35.66,0:00:36.14,C,,0,0,0,,{\fad(40,0)}È UN MODELLO
+Dialogue: 0,0:00:36.14,0:00:36.88,C,,0,0,0,,{\fad(40,0)}DI BUSINESS,
+Dialogue: 0,0:00:36.88,0:00:37.86,C,,0,0,0,,{\fad(40,0)}COME UN {\c&HD63F5B&}CASINÒ.{\c&H16110F&}
+Dialogue: 0,0:00:37.86,0:00:38.54,C,,0,0,0,,{\fad(40,0)}IL {\c&HD63F5B&}BANCO{\c&H16110F&} VINCE
+Dialogue: 0,0:00:38.54,0:00:39.12,C,,0,0,0,,{\fad(40,0)}SULLA {\c&HD63F5B&}MEDIA,{\c&H16110F&}
+Dialogue: 0,0:00:39.12,0:00:40.38,C,,0,0,0,,{\fad(40,0)}NON SUL SINGOLO.
+Dialogue: 0,0:00:40.38,0:00:41.38,C,,0,0,0,,{\fad(40,0)}CINQUE.
+Dialogue: 0,0:00:41.38,0:00:42.08,C,,0,0,0,,{\fad(40,0)}LE REGOLE.
+Dialogue: 0,0:00:42.08,0:00:43.42,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}DRAWDOWN{\c&H16110F&} GIORNALIERO.
+Dialogue: 0,0:00:43.42,0:00:44.26,C,,0,0,0,,{\fad(40,0)}GIORNI MINIMI.
+Dialogue: 0,0:00:44.26,0:00:45.28,C,,0,0,0,,{\fad(40,0)}NIENTE NOTIZIE.
+Dialogue: 0,0:00:45.28,0:00:45.86,C,,0,0,0,,{\fad(40,0)}BASTA UN SOLO
+Dialogue: 0,0:00:45.86,0:00:46.62,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}ERRORE{\c&H16110F&} UMANO PER
+Dialogue: 0,0:00:46.62,0:00:47.54,C,,0,0,0,,{\fad(40,0)}FARLE SCATTARE.
+Dialogue: 0,0:00:47.54,0:00:48.16,C,,0,0,0,,{\fad(40,0)}SEI.
+Dialogue: 0,0:00:48.16,0:00:49.18,C,,0,0,0,,{\fad(40,0)}IL {\c&HD63F5B&}RIACQUISTO.{\c&H16110F&}
+Dialogue: 0,0:00:49.18,0:00:49.78,C,,0,0,0,,{\fad(40,0)}CHI BRUCIA UNA
+Dialogue: 0,0:00:49.78,0:00:50.86,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}CHALLENGE{\c&H16110F&} NE RICOMPRA
+Dialogue: 0,0:00:50.86,0:00:51.94,C,,0,0,0,,{\fad(40,0)}SUBITO UN'ALTRA,
+Dialogue: 0,0:00:51.94,0:00:53.46,C,,0,0,0,,{\fad(40,0)}SPESSO SCONTATA.
+Dialogue: 0,0:00:53.46,0:00:53.92,C,,0,0,0,,{\fad(40,0)}È LÌ CHE
+Dialogue: 0,0:00:53.92,0:00:54.64,C,,0,0,0,,{\fad(40,0)}LA {\c&HD63F5B&}PROP{\c&H16110F&} GUADAGNA
+Dialogue: 0,0:00:54.64,0:00:55.28,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}DAVVERO.{\c&H16110F&}
+Dialogue: 0,0:00:55.28,0:00:55.94,C,,0,0,0,,{\fad(40,0)}SETTE.
+Dialogue: 0,0:00:55.94,0:00:56.30,C,,0,0,0,,{\fad(40,0)}CHI VINCE.
+Dialogue: 0,0:00:56.30,0:00:57.48,C,,0,0,0,,{\fad(40,0)}CHI PASSA NON INDOVINA
+Dialogue: 0,0:00:57.48,0:00:58.18,C,,0,0,0,,{\fad(40,0)}IL MERCATO MEGLIO
+Dialogue: 0,0:00:58.18,0:00:58.96,C,,0,0,0,,{\fad(40,0)}DEGLI ALTRI.
+Dialogue: 0,0:00:58.96,0:00:59.44,C,,0,0,0,,{\fad(40,0)}HA UN {\c&HD63F5B&}SISTEMA{\c&H16110F&}
+Dialogue: 0,0:00:59.44,0:01:00.10,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}SCRITTO,{\c&H16110F&}
+Dialogue: 0,0:01:00.10,0:01:00.94,C,,0,0,0,,{\fad(40,0)}RISCHIO FISSO,
+Dialogue: 0,0:01:00.94,0:01:02.20,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}ZERO{\c&H16110F&} EMOZIONI.
+Dialogue: 0,0:01:02.20,0:01:02.56,C,,0,0,0,,{\fad(40,0)}ED È QUELLO
+Dialogue: 0,0:01:02.56,0:01:03.62,C,,0,0,0,,{\fad(40,0)}CHE FACCIO IO.
+Dialogue: 0,0:01:03.62,0:01:04.26,C,,0,0,0,,{\fad(40,0)}IL MIO {\c&HD63F5B&}SISTEMA{\c&H16110F&}
+Dialogue: 0,0:01:04.26,0:01:04.96,C,,0,0,0,,{\fad(40,0)}LO GENERO CON
+Dialogue: 0,0:01:04.96,0:01:05.68,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}ALGORY,{\c&H16110F&}
+Dialogue: 0,0:01:05.68,0:01:06.44,C,,0,0,0,,{\fad(40,0)}LO TESTO,
+Dialogue: 0,0:01:06.44,0:01:06.88,C,,0,0,0,,{\fad(40,0)}E LO LASCIO
+Dialogue: 0,0:01:06.88,0:01:07.84,C,,0,0,0,,{\fad(40,0)}LAVORARE CON REGOLE
+Dialogue: 0,0:01:07.84,0:01:08.48,C,,0,0,0,,{\fad(40,0)}FISSE.
+Dialogue: 0,0:01:08.48,0:01:09.62,C,,0,0,0,,{\fad(40,0)}VUOI VEDERE COME?
+Dialogue: 0,0:01:09.62,0:01:10.72,C,,0,0,0,,{\fad(40,0)}NUMERI COMPRESI.
+Dialogue: 0,0:01:10.72,0:01:11.30,C,,0,0,0,,{\fad(40,0)}{\c&HD63F5B&}SEGUIMI.{\c&H16110F&}
+Dialogue: 0,0:01:11.30,0:01:11.86,C,,0,0,0,,{\fad(40,0)}PERCHÉ SE SEI
+Dialogue: 0,0:01:11.86,0:01:12.80,C,,0,0,0,,{\fad(40,0)}NELLA {\c&HD63F5B&}MEDIA,{\c&H16110F&}
+Dialogue: 0,0:01:12.80,0:01:13.44,C,,0,0,0,,{\fad(40,0)}LE {\c&HD63F5B&}PROP{\c&H16110F&} {\c&HD63F5B&}FIRM{\c&H16110F&}
+Dialogue: 0,0:01:13.44,0:01:15.16,C,,0,0,0,,{\fad(40,0)}GUADAGNANO QUANDO {\c&HD63F5B&}PERDI.{\c&H16110F&}
