@@ -27,7 +27,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 - Palette: viola #5b3fd6 (accento #8b6dff), nero #0b0a10, bianco, grigio; rosso #ff4d5e solo per perdite/FAIL. Titoli Anton maiuscolo, testo Inter, dettagli JetBrains Mono, marchio «MS».
 - Volto della pagina: personaggio AI «C» (caschetto viola a scodella, collo lungo, orecchie a sventola, baffoni neri, sguardo impassibile, giacca nera, camicia viola #5b3fd6, cravatta nera). Scheda Higgsfield job d889c713-1473-478c-b73a-df0a2e57d25f; versione palette job 59c21fa3-ba3f-4da5-b893-1ab7b8c0c703. Usare sempre come riferimento per restare identico. In bio: «🤖 personaggio AI · dietro c'è Marco».
 - Voce reel: SEMPRE ElevenLabs via Higgsfield, preset «Julian» 95429266-c0ac-4137-a209-63b8812b0f23 (Marco 25/10: mai cambiarla; ~1 credito per 20 s, generate_audio model text2speech_v2 variant elevenlabs). Caption con «🎙️ Voce generata con AI».
-- Prima del link Algory: NON nominare Algory. Serie «Dentro il mio sistema». Dopo il link: reel di rivelazione + «Commenta BOT» + #ad + avviso di rischio.
+- ALGORY (decisione di Marco del 30/10/2026, sostituisce la vecchia regola «non nominarlo»): da ora si dice apertamente che la strategia di Marco gira su Algory (vero: conto funded gestito dai bot Algory). Reel ALGORY stile Vox 1 a settimana, commento «ALGO». Finché non c'è il link affiliato: niente #ad e niente link, il DM porta alla checklist gratis. Con il link: #ad + avviso di rischio + link nel DM. Calendario in `docs/PIANO-30-GIORNI.md`.
 
 ## Qualità (richiesta di Marco)
 - Ogni contenuto al massimo livello: gancio forte nei primi 3 s, animazioni dinamiche, sottotitoli, voce + base + effetti, copertina curata.
