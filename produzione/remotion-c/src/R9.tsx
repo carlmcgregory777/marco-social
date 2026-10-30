@@ -4,6 +4,8 @@ import {
   AbsoluteFill,
   Audio,
   Img,
+  Loop,
+  OffthreadVideo,
   Sequence,
   interpolate,
   spring,
@@ -84,23 +86,45 @@ const Timbro: React.FC<{ children: React.ReactNode; top: number; d: number; size
 const Gancio: React.FC = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const n = k(f, fps, 108, 8, 200);
+  const n = k(f, fps, 120, 8, 200);
   return (
     <Pannello titolo="// QUANTI BOT SERVONO?">
       {Array.from({ length: 19 }).map((_, i) => (
         <Bot key={i} x={70 + (i % 7) * 122} y={110 + Math.floor(i / 7) * 122} s={86} d={6 + i * 4} />
       ))}
       <div style={{ position: "absolute", left: 0, right: 0, top: 360, textAlign: "center", fontFamily: ANTON, fontSize: 420, lineHeight: 1, color: "#fff", transform: `scale(${n})`, textShadow: `0 0 80px ${VIOLA}, 0 10px 40px #000` }}>19</div>
-      <Nota x={520} y={700} d={118} rot={-6}>i miei, oggi</Nota>
+      <Nota x={520} y={700} d={150} rot={-6}>ti spiego perché</Nota>
     </Pannello>
   );
 };
 
-// 2 · un bot solo: un mese con 6 operazioni
+// 2 · la challenge: un obiettivo sopra, un limite sotto
+const Challenge: React.FC = () => {
+  const f = useCurrentFrame();
+  const W = 860, H = 520, OB = 0.12, LIM = 0.82;
+  const pts = [0.5, 0.47, 0.44, 0.46, 0.41, 0.38, 0.4, 0.35, 0.37, 0.42, 0.5, 0.63, 0.78, 0.9];
+  const kk = Math.min(pts.length, Math.floor(interpolate(f, [10, 200], [2, pts.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })));
+  const rotto = pts.slice(0, kk).some((p) => p > LIM);
+  const path = pts.slice(0, kk).map((p, i) => `${i ? "L" : "M"}${(i / (pts.length - 1)) * W},${p * H}`).join(" ");
+  return (
+    <Pannello titolo="// COS'È UNA CHALLENGE">
+      <svg width={W} height={H} style={{ position: "absolute", left: 50, top: 110, overflow: "visible", transform: `translateX(${rotto ? Math.sin(f * 2.3) * 6 : 0}px)` }}>
+        <line x1={0} x2={W} y1={OB * H} y2={OB * H} stroke="#2ecc71" strokeWidth={6} strokeDasharray="22 14" opacity={f > 40 ? 1 : 0} />
+        <text x={W} y={OB * H - 16} textAnchor="end" fill="#2ecc71" style={{ fontFamily: MONO, fontSize: 32, fontWeight: 700 }} opacity={f > 40 ? 1 : 0}>OBIETTIVO</text>
+        <line x1={0} x2={W} y1={LIM * H} y2={LIM * H} stroke={ROSSO} strokeWidth={6} strokeDasharray="22 14" opacity={f > 105 ? 1 : 0} />
+        <text x={W} y={LIM * H + 44} textAnchor="end" fill={ROSSO} style={{ fontFamily: MONO, fontSize: 32, fontWeight: 700 }} opacity={f > 105 ? 1 : 0}>LIMITE DI PERDITA DEL GIORNO</text>
+        <path d={path} fill="none" stroke={rotto ? ROSSO : ACCENTO} strokeWidth={10} strokeLinejoin="round" strokeLinecap="round" style={{ filter: `drop-shadow(0 0 14px ${rotto ? ROSSO : ACCENTO})` }} />
+      </svg>
+      {rotto ? <Timbro top={660} d={0} size={120} bg={ROSSO}>Sei fuori</Timbro> : null}
+    </Pannello>
+  );
+};
+
+// 3 · un bot solo: un mese con 6 operazioni
 const UnoSolo: React.FC = () => {
   const f = useCurrentFrame();
   const giorni = [3, 8, 13, 18, 23, 27];
-  const rosso = f > 122;
+  const rosso = f > 179;
   return (
     <Pannello titolo="// 1 BOT · 1 MESE">
       <Bot x={60} y={110} s={150} d={0} />
@@ -112,7 +136,7 @@ const UnoSolo: React.FC = () => {
         const c = on ? (rosso && idx >= 3 ? ROSSO : ACCENTO) : "#ffffff14";
         return <div key={i} style={{ position: "absolute", left: 60 + (i % 10) * 88, top: 330 + Math.floor(i / 10) * 88, width: 72, height: 72, borderRadius: 14, background: c, boxShadow: on ? `0 0 24px ${c}` : "none" }} />;
       })}
-      <Timbro top={640} d={70} size={110} bg={ROSSO}>Troppo lento</Timbro>
+      <Timbro top={640} d={120} size={110} bg={ROSSO}>Ci metti una vita</Timbro>
     </Pannello>
   );
 };
@@ -121,9 +145,9 @@ const UnoSolo: React.FC = () => {
 const Tanti: React.FC = () => {
   const f = useCurrentFrame();
   const LIM = 260;
-  const h = interpolate(f, [20, 120], [10, LIM + 30], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
+  const h = interpolate(f, [30, 195], [10, LIM + 30], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
   const rotto = h > LIM;
-  const shake = rotto && f < 140 ? Math.sin(f * 2.4) * 8 : 0;
+  const shake = rotto && f < 215 ? Math.sin(f * 2.4) * 8 : 0;
   return (
     <Pannello titolo="// TANTI BOT = RISCHIO SOMMATO">
       {Array.from({ length: 19 }).map((_, i) => (
@@ -143,9 +167,9 @@ const Scala: React.FC = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const gradini = [
-    { p: "0,25%", t: "INCUBAZIONE", d: 100 },
-    { p: "0,5%", t: "PROVA", d: 140 },
-    { p: "1%", t: "PIENO", d: 160 },
+    { p: "0,25%", t: "INCUBAZIONE", d: 135 },
+    { p: "0,5%", t: "PROVA", d: 290 },
+    { p: "1%", t: "PIENO", d: 380 },
   ];
   return (
     <Pannello titolo="// IL RISCHIO SI GUADAGNA">
@@ -159,9 +183,14 @@ const Scala: React.FC = () => {
           </div>
         );
       })}
-      <Bot x={95} y={300} s={110} d={20} />
-      <Nota x={300} y={110} d={60} rot={-4}>nessuno parte al massimo</Nota>
-      <Nota x={330} y={190} d={150} rot={-4} color="#fff">se lo deve guadagnare</Nota>
+      {(() => {
+        const st = f > 389 ? 2 : f > 296 ? 1 : 0;
+        const p = k(f, fps, [135, 296, 389][st], 10, 160);
+        const hh = 190 + st * 140;
+        return <Bot x={135 + st * 300} y={820 - 70 - hh - 125 - (1 - p) * 60} s={110} d={135} />;
+      })()}
+      <Nota x={300} y={110} d={46} rot={-4}>nessuno parte al massimo</Nota>
+      <Nota x={330} y={190} d={250} rot={-4} color="#fff">se lo deve guadagnare</Nota>
     </Pannello>
   );
 };
@@ -173,19 +202,20 @@ const Backtest: React.FC = () => {
   const banda = (x: number) => 0.62 - 0.45 * x;
   let s = 7;
   const rnd = () => ((s = (s * 16807) % 2147483647), s / 2147483647);
-  const punti = Array.from({ length: 22 }).map((_, i) => ({ x: (i + 0.5) / 22, y: banda((i + 0.5) / 22) + (rnd() - 0.5) * 0.16 }));
-  const visti = Math.floor(interpolate(f, [10, 110], [0, punti.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  const punti = Array.from({ length: 22 }).map((_, i) => { const x = (i + 0.5) / 22; const fuori = i >= 9; return { x, y: banda(x) + (fuori ? 0.22 + (i - 9) * 0.03 : 0) + (rnd() - 0.5) * 0.12, fuori }; });
+  const visti = Math.floor(interpolate(f, [4, 120], [0, punti.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   const sup = `M0,${banda(0) * H - 70} L${W},${banda(1) * H - 70} L${W},${banda(1) * H + 70} L0,${banda(0) * H + 70} Z`;
   return (
-    <Pannello titolo="// DAL VIVO COME NEL BACKTEST?">
+    <Pannello titolo="// E SE DAL VIVO FA PEGGIO?">
       <svg width={W} height={H} style={{ position: "absolute", left: 50, top: 110, overflow: "visible" }}>
         <path d={sup} fill={`${VIOLA}44`} stroke={ACCENTO} strokeWidth={3} strokeDasharray="14 10" />
         {punti.slice(0, visti).map((p, i) => (
-          <circle key={i} cx={p.x * W} cy={p.y * H} r={16} fill="#fff" style={{ filter: `drop-shadow(0 0 10px ${ACCENTO})` }} />
+          <circle key={i} cx={p.x * W} cy={p.y * H} r={16} fill={p.fuori ? ROSSO : "#fff"} style={{ filter: `drop-shadow(0 0 10px ${p.fuori ? ROSSO : ACCENTO})` }} />
         ))}
       </svg>
       <div style={{ position: "absolute", left: 60, top: 600, fontFamily: MONO, fontSize: 30, color: "#cfcbd9" }}>● operazioni vere &nbsp;&nbsp; ▒ fascia del backtest</div>
-      <Timbro top={665} d={118} size={100} bg={VIOLA}>Massimo: 1%</Timbro>
+      <Timbro top={560} d={66} size={96} bg={ROSSO}>Non sale</Timbro>
+      <Timbro top={680} d={131} size={96} bg={VIOLA}>Lo cambio</Timbro>
     </Pannello>
   );
 };
@@ -232,6 +262,25 @@ const Finale: React.FC = () => {
   );
 };
 
+// Meme sotto, sulle parole della voce: [file, frame d'inizio, durata]
+const MEME: [string, number, number][] = [
+  ["a_explain", 153, 55], ["b_getout", 405, 62], ["c_skeleton", 556, 80], ["d_escalated", 850, 80], ["e_baby", 986, 95],
+  ["f_spider", 1143, 66], ["g_bye", 1418, 48], ["h_pass", 1500, 95], ["i_fine", 1717, 62], ["j_math", 1790, 53],
+];
+const MEME_DUR: Record<string, number> = { a_explain: 70, b_getout: 63, c_skeleton: 150, d_escalated: 101, e_baby: 133, f_spider: 76, g_bye: 34, h_pass: 162, i_fine: 89, j_math: 88 };
+const Meme: React.FC<{ nome: string }> = ({ nome }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = k(f, fps, 0, 11, 260);
+  return (
+    <AbsoluteFill style={{ backgroundColor: NERO, transform: `scale(${1.15 - 0.15 * a})`, opacity: Math.min(1, a * 2) }}>
+      <Loop durationInFrames={MEME_DUR[nome]}>
+        <OffthreadVideo src={staticFile(`r9/meme/${nome}.mp4`)} muted style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+      </Loop>
+    </AbsoluteFill>
+  );
+};
+
 // C in basso, come una «camera»: ritratto con zoom lento e piccolo colpo a ogni frase
 const Camera: React.FC = () => {
   const f = useCurrentFrame();
@@ -240,11 +289,15 @@ const Camera: React.FC = () => {
   const inizi = PAROLE.filter((p, i) => i === 0 || PAROLE[i - 1][2] !== p[2]).map((p) => p[0]);
   const ultimo = inizi.filter((a) => a <= t).pop() ?? 0;
   const colpo = k(f, fps, Math.round(ultimo * fps), 10, 240);
-  const s = interpolate(f, [0, 1208], [1.05, 1.25]) * (1.03 - 0.03 * colpo);
+  const s = interpolate(f, [0, 1843], [1.05, 1.25]) * (1.03 - 0.03 * colpo);
   return (
     <div style={{ position: "absolute", left: 80, right: 80, top: 1200, height: 620, borderRadius: 34, overflow: "hidden", border: `3px solid ${ACCENTO}66`, boxShadow: `0 0 70px ${VIOLA}55`, background: NERO }}>
       <Img src={staticFile("r9/pers_C.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 22%", transform: `scale(${s})`, transformOrigin: "50% 35%" }} />
-      <div style={{ position: "absolute", left: 24, top: 20, fontFamily: MONO, fontSize: 26, color: "#fff", background: "#0b0a10aa", padding: "4px 14px", borderRadius: 10 }}>● C · personaggio AI</div>
+      {MEME.map(([nome, da, dur]) => (
+        <Sequence key={nome} from={da} durationInFrames={dur}>
+          <Meme nome={nome} />
+        </Sequence>
+      ))}
     </div>
   );
 };
@@ -277,26 +330,27 @@ const Cornice: React.FC = () => (
 
 export const R9: React.FC = () => {
   const f = useCurrentFrame();
-  const tagli = [155, 329, 490, 668, 830, 985, 1129];
+  const tagli = [207, 437, 672, 881, 1288, 1446, 1601, 1756];
   const flash = tagli.some((c) => f >= c && f < c + 3);
   return (
     <AbsoluteFill style={{ backgroundColor: NERO, fontFamily: INTER }}>
       <AbsoluteFill style={{ backgroundImage: "linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px)", backgroundSize: "60px 60px" }} />
       <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 30%, ${VIOLA}33, transparent 60%)` }} />
-      <Sequence name="Gancio 19" durationInFrames={155}><Gancio /></Sequence>
-      <Sequence name="Uno solo" from={155} durationInFrames={174}><UnoSolo /></Sequence>
-      <Sequence name="Tanti" from={329} durationInFrames={161}><Tanti /></Sequence>
-      <Sequence name="Scala" from={490} durationInFrames={178}><Scala /></Sequence>
-      <Sequence name="Backtest" from={668} durationInFrames={162}><Backtest /></Sequence>
-      <Sequence name="Tetto" from={830} durationInFrames={155}><Tetto /></Sequence>
-      <Sequence name="Tutti insieme" from={985} durationInFrames={144}><Tetto crollo={90} /></Sequence>
-      <Sequence name="Finale" from={1129} durationInFrames={79}><Finale /></Sequence>
+      <Sequence name="Gancio 19" durationInFrames={207}><Gancio /></Sequence>
+      <Sequence name="Challenge" from={207} durationInFrames={230}><Challenge /></Sequence>
+      <Sequence name="Uno solo" from={437} durationInFrames={235}><UnoSolo /></Sequence>
+      <Sequence name="Tanti" from={672} durationInFrames={209}><Tanti /></Sequence>
+      <Sequence name="Scala" from={881} durationInFrames={407}><Scala /></Sequence>
+      <Sequence name="Backtest" from={1288} durationInFrames={158}><Backtest /></Sequence>
+      <Sequence name="Tetto" from={1446} durationInFrames={155}><Tetto /></Sequence>
+      <Sequence name="Tutti insieme" from={1601} durationInFrames={155}><Tetto crollo={116} /></Sequence>
+      <Sequence name="Finale" from={1756} durationInFrames={87}><Finale /></Sequence>
       <Camera />
       {flash ? <AbsoluteFill style={{ backgroundColor: "#fff", opacity: 0.3 }} /> : null}
       <Sottotitoli />
       <Cornice />
       <Audio src={staticFile("r9/voce.wav")} volume={1} />
-      <Audio src={staticFile("r9/musica.wav")} volume={0.2} />
+      <Audio src={staticFile("r9/musica.wav")} volume={0.13} />
       <Audio src={staticFile("r9/sfx.wav")} volume={0.45} />
     </AbsoluteFill>
   );
