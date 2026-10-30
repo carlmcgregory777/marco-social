@@ -23,11 +23,11 @@
 | Data | Formato | Tema | Commento |
 |------|---------|------|----------|
 | sab 31/10 | Reel di C | base nuova (Halloween: C impassibile tra le zucche, «Il mio bot non ha paura. Priced in.») | – |
-| dom 01/11 | Spiegone | Incubazione: perché un bot nuovo non va subito sul conto | TEST |
+| dom 01/11 | Spiegone | Quanti bot servono per una challenge (copione in produzione/r9/copione.md) | – |
 | lun 02/11 | Reel di C | base nuova | – |
 | mar 03/11 | ALGORY #1 | «Il software su cui gira il mio conto da 100.000 $»: rivelazione, cos'è Algory e perché l'ho scelto | ALGO |
 | mer 04/11 | Reel di C | base nuova | – |
-| gio 05/11 | Spiegone | Quanti bot servono per passare una challenge | – |
+| gio 05/11 | Spiegone | Parity test: il bot sul conto vero fa le stesse operazioni del backtest? | – |
 | ven 06/11 | Reel di C | base nuova | – |
 | sab 07/11 | ALGORY #2 | Dentro Algory: come scelgo i bot tra 962 strategie (schema che si costruisce) | ALGO |
 | dom 08/11 | Spiegone | Rotazione: quando spengo un bot e ne accendo un altro | – |
