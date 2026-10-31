@@ -91,3 +91,12 @@ C di riferimento: `pers_C.png` = resource 5abbb247-5fbe-4530-8c70-8003095fc111.
 - C (primissimo piano): ritaglio digitale di A1 in Remotion (Angoli «vicino» cambia poco).
 - File in `produzione/format-c/set2/`: **A1.jpg** (scelta: senza treppiede in vista), A2-A4 (alternative con telefono sul treppiede in campo), **B1.jpg**.
 - Caricare un file sul sito: l'input non si vede. Si carica il file su un URL pubblico, poi in pagina `fetch` → `File` → `DragEvent('drop')` sul box `.references-*`.
+
+## Labiale v3: Avatar IA (OmniHuman 1.5), provato con ALGORY #1 il 31/10/2026
+- Sito Dreamina → Crea → **Avatar IA**, modello **Avatar Turbo**, 5 crediti al secondo. Avatar = A1 (o B1 per le opinioni); «Carica audio» = il pezzo di voce **esatto** della scena (da `from` per la durata della scena, max ~6 s; la voce intera da 42 s viene rifiutata).
+- Azioni: «Talks straight into the phone camera like a creator, deadpan face, small natural head movements…» (per B: «Interview style: talks to someone just off camera…»).
+- Il video esce muto («audio protetto»): non importa, l'audio è la nostra `voce.wav`. Siccome lo spezzone nasce dal pezzo che parte da `from`, in Remotion `inizio` = 0 e il labiale è a tempo.
+- Caricare l'audio dal sito: `window.showOpenFilePicker` sostituito in pagina con un handle che restituisce il file (WAV tagliato in pagina con AudioContext), poi clic vero su «Carica audio».
+- Le coperture (ex R1/R2) diventano grafiche sopra il set sfocato (gratis). C primissimo piano = `zoom: 1.4` sulla scena (A ritagliato).
+- Scritte e numeri vanno **sopra la testa** (top 260-550): il volto del set 2 occupa il centro. Copertina: `CoverC` con `sposta={0}`.
+- Costo ALGORY #1 v3: set 28 + 5 spezzoni 120 = 148 crediti.

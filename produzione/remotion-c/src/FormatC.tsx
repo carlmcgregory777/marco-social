@@ -32,17 +32,18 @@ export const ROSSO = "#ff4d5e";
 export const VERDE = "#2ecc71";
 
 export type Parola = [number, string, number];
-export type Scena = { from: number; dur: number; clip?: string; inizio?: number; grafica?: React.ReactNode; sopra?: React.ReactNode };
+// zoom: ingrandimento di base dello spezzone (es. 1.4 = primissimo piano ritagliato dal frontale)
+export type Scena = { from: number; dur: number; clip?: string; inizio?: number; zoom?: number; grafica?: React.ReactNode; sopra?: React.ReactNode };
 
 export const molla = (f: number, fps: number, d = 0, damping = 12, stiffness = 200) => spring({ frame: f - d, fps, config: { damping, stiffness } });
 
 // Spezzone video con push-in lento e «punch-in» sulle frasi indicate (frame relativi)
-const Clip: React.FC<{ src: string; inizio: number; punch: number[] }> = ({ src, inizio, punch }) => {
+const Clip: React.FC<{ src: string; inizio: number; punch: number[]; zoom?: number }> = ({ src, inizio, punch, zoom = 1 }) => {
   const f = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const ultimo = punch.filter((p) => p <= f).pop();
   const colpo = ultimo === undefined ? 0 : 1 - molla(f, fps, ultimo, 14, 260);
-  const s = interpolate(f, [0, durationInFrames], [1.0, 1.06]) + 0.08 * Math.max(0, colpo);
+  const s = zoom * interpolate(f, [0, durationInFrames], [1.0, 1.06]) + 0.08 * Math.max(0, colpo);
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <OffthreadVideo src={staticFile(src)} startFrom={inizio} muted style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s})`, transformOrigin: "50% 38%" }} />
@@ -212,7 +213,7 @@ export const FormatC: React.FC<{
       {scene.map((s, i) => (
         <Sequence key={i} from={s.from} durationInFrames={s.dur}>
           <Entrata>
-            {s.clip ? <Clip src={`${cartella}/${s.clip}`} inizio={s.inizio ?? 0} punch={punch.map((p) => p - s.from).filter((p) => p > 0 && p < s.dur)} /> : null}
+            {s.clip ? <Clip src={`${cartella}/${s.clip}`} inizio={s.inizio ?? 0} zoom={s.zoom} punch={punch.map((p) => p - s.from).filter((p) => p > 0 && p < s.dur)} /> : null}
             {s.grafica}
           </Entrata>
           {s.sopra}

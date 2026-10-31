@@ -99,6 +99,16 @@ const Barrata: React.FC<{ d: number; top: number }> = ({ d, top }) => {
   );
 };
 
+// Grafica R1 · i 19 bot si accendono uno dopo l'altro sopra il set sfocato
+const Diciannove: React.FC = () => (
+  <>
+    <SfondoSet img={`${CARTELLA}/setA.png`} />
+    {Array.from({ length: 19 }).map((_, i) => (
+      <Bot key={i} x={135 + (i % 5) * 170} y={560 + Math.floor(i / 5) * 150} s={100} d={6 + i * 3} />
+    ))}
+  </>
+);
+
 // Carta degli schermi (R2)
 const Carta: React.FC<{ d: number; y: number; t: string; s: string; c: string }> = ({ d, y, t, s, c }) => (
   <Card3D d={d} x={90} y={y} w={900} h={190} colore={c}>
@@ -107,50 +117,50 @@ const Carta: React.FC<{ d: number; y: number; t: string; s: string; c: string }>
   </Card3D>
 );
 
-// Ritardo del labiale negli spezzoni Dreamina (misurato sull'audio): si parte da lì
+// Spezzoni Avatar IA (OmniHuman): ognuno è generato sul pezzo di voce che parte da `from`, quindi labiale a tempo con inizio 0
 const SCENE: Scena[] = [
-  { from: 0, dur: 138, clip: "T1.mp4", inizio: 15, sopra: (
+  { from: 0, dur: 138, clip: "T1.mp4", sopra: (
     <>
-      <Conta d={20} da={0} a={100000} durata={24} top={880} suffisso=" $" size={170} />
-      <Sticker d={110} top={1165} size={110} bg={VIOLA}>19 bot</Sticker>
+      <Conta d={20} da={0} a={100000} durata={24} top={290} suffisso=" $" size={170} />
+      <Sticker d={110} top={545} size={110} bg={VIOLA}>19 bot</Sticker>
     </>
   ) },
-  { from: 138, dur: 152, clip: "R1.mp4", sopra: (
+  { from: 138, dur: 152, grafica: <Diciannove />, sopra: (
     <>
       <Nota x={90} y={330} d={24} rot={-4} color="#fff" size={84}>non li scrivo io…</Nota>
       <Sticker d={121} top={960} size={190} bg={`linear-gradient(120deg,${VIOLA},${ACCENTO})` as string}>Algory</Sticker>
     </>
   ) },
-  { from: 290, dur: 133, clip: "T2.mp4", inizio: 9, sopra: (
+  { from: 290, dur: 133, clip: "T2.mp4", sopra: (
     <>
-      <Conta d={47} da={0} a={4000} durata={30} top={960} size={170} />
-      <Sticker d={58} top={1170} size={70} color={ACCENTO} fino={104}>strategie</Sticker>
-      <Sticker d={105} top={1170} size={70} color={VERDE}>backtest sul passato</Sticker>
+      <Conta d={47} da={0} a={4000} durata={30} top={290} size={170} />
+      <Sticker d={58} top={500} size={70} color={ACCENTO} fino={104}>strategie</Sticker>
+      <Sticker d={105} top={500} size={70} color={VERDE}>backtest sul passato</Sticker>
     </>
   ) },
   { from: 423, dur: 125, grafica: <Cadono /> },
-  { from: 548, dur: 134, clip: "T3.mp4", inizio: 17, sopra: (
+  { from: 548, dur: 134, clip: "T3.mp4", sopra: (
     <>
-      <Sticker d={56} top={940} size={210} bg={VIOLA}>0,25%</Sticker>
-      <Nota x={330} y={1190} d={80} rot={-4} color="#fff" size={80}>di rischio</Nota>
+      <Sticker d={56} top={260} size={210} bg={VIOLA}>0,25%</Sticker>
+      <Nota x={330} y={520} d={80} rot={-4} color="#fff" size={80}>di rischio</Nota>
     </>
   ) },
   { from: 682, dur: 160, grafica: <Scala /> },
-  { from: 842, dur: 160, clip: "T4.mp4", inizio: 8, sopra: (
+  { from: 842, dur: 160, clip: "T4.mp4", sopra: (
     <>
-      <Barrata d={8} top={930} />
-      <Sticker d={32} top={1110} size={96} bg={VIOLA} fino={100}>Nessuna promessa</Sticker>
-      <Sticker d={110} top={1080} size={120} color={ROSSO} rot={2}>−1,1% · −0,6%</Sticker>
+      <Barrata d={8} top={300} />
+      <Sticker d={32} top={450} size={96} bg={VIOLA} fino={100}>Nessuna promessa</Sticker>
+      <Sticker d={110} top={450} size={120} color={ROSSO} rot={2}>−1,1% · −0,6%</Sticker>
     </>
   ) },
-  { from: 1002, dur: 137, clip: "R2.mp4", sopra: (
+  { from: 1002, dur: 137, grafica: <SfondoSet img={`${CARTELLA}/setA.png`} />, sopra: (
     <>
       <Carta d={49} y={330} t="STRATEGIE" s="come le scelgo" c={ACCENTO} />
       <Carta d={76} y={560} t="CONTO" s="il saldo vero" c={ACCENTO} />
       <Carta d={98} y={790} t="PERDITE" s="comprese" c={ROSSO} />
     </>
   ) },
-  { from: 1139, dur: 144, clip: "T5.mp4", inizio: 8, sopra: (
+  { from: 1139, dur: 144, clip: "T5.mp4", zoom: 1.4, sopra: (
     <>
       <BoxCommento d={13} parola="ALGO" top={1520} />
       <Sticker d={114} top={1680} size={100} bg={VIOLA}>Seguimi</Sticker>
@@ -161,9 +171,10 @@ const SCENE: Scena[] = [
 export const ALGORY1C: React.FC = () => <FormatC scene={SCENE} parole={PAROLE} chiave={CHIAVE} cartella={CARTELLA} etichetta="ALGORY · EP. 1" />;
 
 // Copertina del format: foto del set a tutto schermo, titolo in alto dentro la zona 4:5
-export const CoverC: React.FC<{ titolo: string; sotto: string; numero: string; img: string }> = ({ titolo, sotto, numero, img }) => (
+// sposta: quanto abbassare la foto (330 per il vecchio set, 0 per il set 2 dove C è già più in basso)
+export const CoverC: React.FC<{ titolo: string; sotto: string; numero: string; img: string; sposta?: number }> = ({ titolo, sotto, numero, img, sposta = 330 }) => (
   <div style={{ position: "absolute", inset: 0, backgroundColor: "#0b0a10" }}>
-    <img src={staticFile(img)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", transform: "scale(1.0) translateY(330px)" }} />
+    <img src={staticFile(img)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", transform: `translateY(${sposta}px)` }} />
     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#0b0a10f2 0%, #0b0a10cc 22%, transparent 42%, transparent 70%, #0b0a10cc 100%)" }} />
     <div style={{ position: "absolute", left: 70, right: 70, top: 330, fontFamily: ANTON, fontSize: 132, lineHeight: 1.02, color: "#fff", textTransform: "uppercase", textShadow: "0 8px 30px #000" }}>{titolo}</div>
     <div style={{ position: "absolute", right: 70, top: 300, fontFamily: ANTON, fontSize: 64, color: "#fff", background: VIOLA, padding: "0 20px", borderRadius: 14 }}>{numero}</div>
@@ -172,4 +183,4 @@ export const CoverC: React.FC<{ titolo: string; sotto: string; numero: string; i
     </div>
   </div>
 );
-export const CoverAlgory1: React.FC = () => <CoverC titolo="Il software dei miei bot" sotto="Si chiama Algory" numero="#1" img={`${CARTELLA}/setA.png`} />;
+export const CoverAlgory1: React.FC = () => <CoverC titolo="Il software dei miei bot" sotto="Si chiama Algory" numero="#1" img={`${CARTELLA}/setA.png`} sposta={0} />;
