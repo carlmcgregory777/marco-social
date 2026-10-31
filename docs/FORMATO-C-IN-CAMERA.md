@@ -79,3 +79,8 @@ C di riferimento: `pers_C.png` = resource 5abbb247-5fbe-4530-8c70-8003095fc111.
 7. **Render.** `npx remotion render src/index.ts <ID> out.mp4`, poi `loudnorm=I=-14:TP=-1.5:LRA=11`.
 
 **Costo tipico** di un episodio da 40 s: 5 spezzoni parlati + 2 di copertura ≈ 180 crediti Dreamina; set già pronto = 0.
+
+## Bocciatura di Marco su ALGORY1C (31/10/2026 sera)
+- **Labiale poco sincronizzato.** Causa: la voce era una traccia unica sopra gli spezzoni, allineata a mano con un ritardo stimato. Da ora: nelle scene parlate si usa l'**audio dello spezzone stesso** (quello che Seedance ha sincronizzato), non la traccia separata. La traccia unica serve solo sotto spezzoni e grafiche.
+- **Sfondi troppo finti.** Il set generato (A/B/C) sembra rendering. Da rifare con aspetto da foto di telefono (luce imperfetta, oggetti veri, disordine leggero) oppure partendo da una foto vera della stanza di Marco.
+- **Sistema Cosentino** (theory/reference-cosentino-nuova-era-social.md): ogni video ha un solo ruolo e il contesto nei primi 3 s; dal 02/11 un'Attualità di C al giorno.
