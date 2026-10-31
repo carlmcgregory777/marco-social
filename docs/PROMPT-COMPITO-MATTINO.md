@@ -1,0 +1,19 @@
+# Testo nuovo del compito delle 09:53 (31/10/2026)
+
+Il compito «Post giornaliero» (trig_012igWqTcTLDC8A68mrXGbCj) si può modificare solo dalla sua conversazione. Marco: apri quella conversazione e scrivi «Aggiorna il prompt del tuo compito delle 09:53 con il testo di docs/PROMPT-COMPITO-MATTINO.md (dopo git pull origin main)».
+
+---
+
+Attività giornaliera @cthe.trader (autorizzata da Marco nel CLAUDE.md). Lavora in /home/user/marco-social: prima `git pull origin main`; se la cartella manca, clonala da https://github.com/carlmcgregory777/marco-social. Rileggi CLAUDE.md, docs/MEMORIA.md, docs/STATO.md, docs/PIANO-30-GIORNI.md, docs/STORIE-IN-EVIDENZA.md e theory/reference-cosentino-nuova-era-social.md e seguili alla lettera.
+0. CONTROLLO USCITE: con Publora list_posts (status failed, ultimi 3 giorni) e get_post verifica che i post programmati dei giorni scorsi siano davvero «published». Se uno è «failed»: NON ripubblicarlo da solo; scrivi in cima all'email il motivo dell'errore e proponi a Marco di ripubblicarlo (lui risponde in chat).
+1. Limiti: Publora account_context + list_connections (SOLO instagram-17841457719707733), crediti Higgsfield con balance. Se Publora non ha quota o la coda è piena (3 programmati): non programmare, ma PRODUCI comunque il video del giorno, lascialo pronto per l'app sul Redmi e scrivilo nell'email. Se i crediti sono < 10: non generare NULLA a pagamento (puoi fare contenuti solo col codice), e scrivilo nell'email.
+2. VIDEO DEL GIORNO (decisione di Marco del 31/10: un video al giorno col sistema Cosentino). Guarda il calendario in PIANO-30-GIORNI.md per oggi:
+   - se è «Attualità di C»: cerca sul web le notizie delle ultime 24-48 ore (prop firm, bot/IA nel trading, mercati, Consob/ESMA); scegline una che accende indignazione, rivelazione o identificazione; verifica i fatti su almeno 2 fonti affidabili (o 1 ufficiale) e scrivi le fonti nel copione; usa il ruolo del calendario (cambialo solo se la notizia lo chiede, e annotalo in STATO.md). Se nessuna notizia passa il filtro, prendi un tema dalla «Riserva». Copione con la checklist di 7 punti: contesto nei primi 3 s per uno sconosciuto, punto di vista di C, chiusura sulla notizia, niente svolta forzata su Algory, loop. Mai temi già fatti (regola «Niente doppioni»).
+   - se è ALGORY o YouTube: segui il piano. Algory si nomina apertamente (decisione del 30/10); finché non c'è il link affiliato niente #ad e niente link, la parola ALGO porta alla checklist gratis.
+   Produci con gli script di produzione/script, nello stile approvato (C in copertina, voce Julian, valzer Burton a rotazione, ×1,1, loop, copertina con ritaglio 4:5 controllato). Niente guadagni inventati; «🎙️ Voce generata con AI» e avviso di rischio quando serve.
+3. Controlla fotogrammi/copertina e correggi.
+4. Carica su Publora e PROGRAMMA alle 18:30 ora italiana di oggi (ora solare: 17:30Z; verifica con `TZ=Europe/Rome date -d <ora UTC>`).
+5. Prepara anche la storia collegata per le storie in evidenza (regola sticker del CLAUDE.md).
+6. Aggiorna STATO.md (notizia scelta, fonti, ruolo), commit + push su main (solo sorgenti, niente MP4).
+7. Email a fxmafialtd@gmail.com, oggetto «[cthe.trader] Programmato: <titolo> – <data>»: esito del controllo uscite, notizia scelta + fonti + leva + ruolo, cosa hai programmato, caption, storia del giorno (gruppo e sticker da mettere), crediti Higgsfield, post Publora rimasti, sezione «Promemoria» da MEMORIA.md.
+Se qualcosa fallisce non ripetere all'infinito: scrivi l'errore nell'email e fermati.
