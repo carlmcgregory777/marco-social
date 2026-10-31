@@ -53,3 +53,19 @@ Sticker DOMANDA: «Cosa vuoi vedere di Algory?»
 ## Da confermare con Marco
 - I «diciannove bot» sono tutti generati con Algory? Sì / No.
 - Va bene mostrare nel video le schermate vere di Algory (senza licenza)? Le faccio io dal PC oppure le mandi tu.
+
+## Versione 2 «C in camera» (31/10, dopo il no di Marco allo schermo diviso)
+Stessa voce (42,5 s). Schema in docs/FORMATO-C-IN-CAMERA.md.
+
+| Tempo | Inquadratura | Contenuto | Crediti Dreamina |
+|---|---|---|---|
+| 0-5,1 | A: C primo piano, parla | «Su un conto da 100.000 $… 19 bot» + 100.000 $ e 19 bot animati sopra | 25 |
+| 5,1-9,7 | spezzone | C a braccia conserte, gli schermi scrivono codice da soli, si accende ALGORY | 25 |
+| 9,7-14,1 | spezzone | macchina che sputa migliaia di carte-strategia, C impassibile | 25 |
+| 14,1-18,3 | spezzone | le carte sbattono contro un muro di vetro e cadono, ne passano pochissime | 25 |
+| 18,3-22,7 | spezzone | robottino viola sul primo gradino piccolo, 0,25% grafica sopra | 25 |
+| 22,7-28,1 | spezzone | il robottino sale; uno diventa rosso, C lo toglie e ne mette uno nuovo | 30 |
+| 28,1-33,4 | B: C tre quarti, parla | «Perché l'ho scelto? … anche quando sono rossi» + promessa barrata | 30 |
+| 33,4-38 | spezzone | C apre un caveau: tre schermi STRATEGIE / CONTO / PERDITE | 25 |
+| 38-42,5 | C: C primissimo piano, parla | «Commenta ALGO… Seguimi» + finto box commento | 25 |
+| **Totale** | | | **~235** (+25 già spesi per il test) |
