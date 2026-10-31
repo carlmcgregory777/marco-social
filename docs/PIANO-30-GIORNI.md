@@ -66,6 +66,8 @@ Ogni giorno senza ALGORY o YouTube = **Attualità di C**: la notizia del giorno 
 
 **Riserva (temi senza scadenza, per i giorni senza notizia buona):** Parity test: il bot sul conto vero fa le stesse operazioni del backtest?; Rotazione: quando spengo un bot e ne accendo un altro; 5 miti sul trading algoritmico (un mito ogni 3 s); Le automazioni che lavorano mentre dormo (VPS, MT5, avvisi); Risposta al commento più utile del mese; Drawdown giornaliero: la regola che fa saltare più challenge; Il diario dei trade: gli errori che ti costano davvero (Traidingdesk solo se Marco lo ha provato e ha detto sì).
 
+**Stile visivo delle Attualità (Marco 31/10 sera):** come i reel di Mik Cosentino, cioè titolo nero stile macchina da scrivere in alto, apertura sulla fonte e C in camera per il punto di vista. Schema, regole e budget in `docs/FORMATO-ATTUALITA-C.md`.
+
 **Come si fa ogni mattina (agente delle 09:53):** 1) cerca le notizie delle ultime 24-48 ore (prop firm, bot/IA nel trading, mercati, Consob/ESMA); 2) scegline una che accende indignazione, rivelazione o identificazione; 3) verifica i fatti su almeno 2 fonti affidabili, oppure 1 ufficiale; 4) scrivi il copione con la checklist di `theory/reference-cosentino-nuova-era-social.md` (contesto nei primi 3 s per chi non conosce C, punto di vista di C, chiusura sulla notizia, niente svolta su Algory, loop); 5) produci col codice (gratis: voce Julian, valzer a rotazione, ×1,1, C in copertina) e programma alle 18:30.
 **Reel di C (motion transfer):** non hanno più un giorno fisso. Escono come extra nella scheda Reels dall'app sul Redmi, quando ci sono basi, senza consumare la quota di Publora.
 
