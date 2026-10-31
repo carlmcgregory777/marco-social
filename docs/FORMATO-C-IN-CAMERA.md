@@ -84,3 +84,10 @@ C di riferimento: `pers_C.png` = resource 5abbb247-5fbe-4530-8c70-8003095fc111.
 - **Labiale poco sincronizzato.** Causa: la voce era una traccia unica sopra gli spezzoni, allineata a mano con un ritardo stimato. Da ora: nelle scene parlate si usa l'**audio dello spezzone stesso** (quello che Seedance ha sincronizzato), non la traccia separata. La traccia unica serve solo sotto spezzoni e grafiche.
 - **Sfondi troppo finti.** Il set generato (A/B/C) sembra rendering. Da rifare con aspetto da foto di telefono (luce imperfetta, oggetti veri, disordine leggero) oppure partendo da una foto vera della stanza di Marco.
 - **Sistema Cosentino** (theory/reference-cosentino-nuova-era-social.md): ogni video ha un solo ruolo e il contesto nei primi 3 s; dal 02/11 un'Attualità di C al giorno.
+
+## Set 2 «stanza vera» (31/10/2026 sera, sostituisce A/B/C)
+- Fatto sul sito Dreamina (account del browser, non quello della CLI): Immagine IA, Seedream 5.0 Lite, 9:16 2K, riferimento `pers_C.png`, prompt «Candid smartphone photo… real small home office in an Italian apartment… no neon, no purple lighting, not a 3D render». Costo 24 crediti per 4 immagini.
+- B (tre quarti): strumento **Angoli** sul sito, rotazione ~315°, inclinazione 0, distanza media: 2 crediti.
+- C (primissimo piano): ritaglio digitale di A1 in Remotion (Angoli «vicino» cambia poco).
+- File in `produzione/format-c/set2/`: **A1.jpg** (scelta: senza treppiede in vista), A2-A4 (alternative con telefono sul treppiede in campo), **B1.jpg**.
+- Caricare un file sul sito: l'input non si vede. Si carica il file su un URL pubblico, poi in pagina `fetch` → `File` → `DragEvent('drop')` sul box `.references-*`.
