@@ -14,44 +14,53 @@
 - Finale: finto box commento con la parola («Commenta ALGO») + «seguimi», poi loop sulla prima frase.
 - Gancio nei primi 2 s con un numero vero o una frase scomoda.
 
+## Il sistema Cosentino (video del 31/10, dettagli in `theory/reference-cosentino-nuova-era-social.md`)
+- **Ogni reel è il primo incontro con uno sconosciuto** (89% delle views da non follower): contesto nei primi 3 s, niente «come dicevo ieri».
+- **Il filo di C è il suo modo di ragionare** (impassibile, testa tutto, numeri veri, «Priced in.»), non il singolo tema. Per questo si allarga: nuovo formato **ATTUALITÀ DI C**, 1 a settimana al posto di un Reel di C (prop firm, IA/bot, mercati, regole). Sempre con un punto di vista e fatti verificati (fonte nel copione).
+- **Filtro 3 leve**: ogni tema deve accendere indignazione, rivelazione o identificazione; se no, si scarta.
+- **Niente svolta forzata su Algory**: Algory sta nei reel ALGORY, non in coda a ogni notizia o spiegone.
+- **Un solo ruolo per contenuto** (colonna «Ruolo» qui sotto) e si giudica solo sulla metrica del suo ruolo: Attenzione = views da non follower e condivisioni; Autorità = salvataggi e follower; Educazione = watch time e salvataggi; Conversione = commenti con la parola, email, click. La parola da commentare va dove il ruolo è Conversione o fa da ponte a YouTube.
+- **Instagram = porta, YouTube = casa**: mai «seguimi su YouTube». Dal 22/11 una parola chiave (proposta: «30») → ManyChat → link al video lungo che risponde alla domanda aperta dal reel; il video lungo chiude con checklist / Algory.
+
 ## Formati
 - **ALGORY (stile Vox, 1 a settimana)**: montaggio Remotion come R8 (immagini Dreamina + voce Julian + valzer), 40-60 s, schermo diviso. Commento: ALGO.
 - **SPIEGONE (2 a settimana)**: col codice, 30-35 s, voce Julian, loop.
+- **ATTUALITÀ DI C (1 a settimana)**: col codice, 30-40 s, voce Julian, C in copertina. Una notizia vera + l'opinione di C, chiusura sulla notizia (non su Algory).
 - **REEL DI C (3-4 a settimana)**: motion transfer Genjutsu, «… Priced in.», solo scheda Reels. Chiusura con scritta «Segui: un bot vero ogni giorno».
 
 ## Calendario
-| Data | Formato | Tema | Commento |
-|------|---------|------|----------|
-| sab 31/10 | Reel di C | base nuova (Halloween: C impassibile tra le zucche, «Il mio bot non ha paura. Priced in.») | – |
-| dom 01/11 | Spiegone | Quanti bot servono per una challenge (copione in produzione/r9/copione.md) | – |
-| lun 02/11 | Reel di C | base nuova | – |
-| mar 03/11 | ALGORY #1 | «Il software su cui gira il mio conto da 100.000 $»: rivelazione, cos'è Algory e perché l'ho scelto | ALGO |
-| mer 04/11 | Reel di C | base nuova | – |
-| gio 05/11 | Spiegone | Parity test: il bot sul conto vero fa le stesse operazioni del backtest? | – |
-| ven 06/11 | Reel di C | base nuova | – |
-| sab 07/11 | ALGORY #2 | Dentro Algory: come scelgo i bot tra 962 strategie (schema che si costruisce) | ALGO |
-| dom 08/11 | Spiegone | Rotazione: quando spengo un bot e ne accendo un altro | – |
-| lun 09/11 | Reel di C | base nuova | – |
-| mar 10/11 | Reel di C | base nuova | – |
-| mer 11/11 | ALGORY #3 | «Il mio conto è a −5.439 $. Perché non spengo i bot» (verità, numeri veri) | ALGO |
-| gio 12/11 | Reel di C | base nuova | – |
-| ven 13/11 | Spiegone | 5 miti sul trading algoritmico (un mito ogni 3 s) | – |
-| sab 14/11 | Reel di C | base nuova | – |
-| dom 15/11 | ALGORY #4 | Algory contro il bot da 99 $ comprato su Telegram | ALGO |
-| lun 16/11 | Reel di C | base nuova | – |
-| mar 17/11 | Spiegone | Le automazioni che lavorano mentre dormo (VPS, MT5, avvisi) | – |
-| mer 18/11 | Reel di C | base nuova | – |
-| gio 19/11 | Spiegone | Risposta al commento più utile del mese | – |
-| ven 20/11 | Reel di C | base nuova | – |
-| sab 21/11 | ALGORY #5 | 30 giorni di challenge con Algory: tutti i numeri | ALGO |
-| dom 22/11 | **YouTube lungo** | stesso tema, 8-12 min (vedi sotto) + Short di lancio | – |
-| lun 23/11 | Reel di C | base nuova | – |
-| mar 24/11 | Spiegone | Drawdown giornaliero: la regola che fa saltare più challenge | – |
-| mer 25/11 | Reel di C | base nuova | – |
-| gio 26/11 | Spiegone | Il diario dei trade: gli errori che ti costano davvero (Traidingdesk solo se Marco lo ha provato e ha detto sì) | – |
-| ven 27/11 | ALGORY #6 | Black Friday delle prop firm: sconto vero o trappola? | ALGO |
-| sab 28/11 | Reel di C | base nuova | – |
-| dom 29/11 | Reel di C | base nuova | – |
+| Data | Formato | Ruolo | Tema | Commento |
+|------|---------|-------|------|----------|
+| sab 31/10 | Reel di C | Attenzione | base nuova (Halloween: C impassibile tra le zucche, «Il mio bot non ha paura. Priced in.») | – |
+| dom 01/11 | Spiegone | Educazione | Quanti bot servono per una challenge (copione in produzione/r9/copione.md) | – |
+| lun 02/11 | Reel di C | Attenzione | base nuova | – |
+| mar 03/11 | ALGORY #1 | Conversione | «Il software su cui gira il mio conto da 100.000 $»: rivelazione, cos'è Algory e perché l'ho scelto | ALGO |
+| mer 04/11 | Reel di C | Attenzione | base nuova | – |
+| gio 05/11 | Spiegone | Autorità | Parity test: il bot sul conto vero fa le stesse operazioni del backtest? | – |
+| ven 06/11 | Attualità di C | Attenzione | notizia della settimana (es. prop firm che cambia regole o nega payout): cosa ne pensa C, fatti verificati | – |
+| sab 07/11 | ALGORY #2 | Conversione | Dentro Algory: come scelgo i bot tra 962 strategie (schema che si costruisce) | ALGO |
+| dom 08/11 | Spiegone | Educazione | Rotazione: quando spengo un bot e ne accendo un altro | – |
+| lun 09/11 | Reel di C | Attenzione | base nuova | – |
+| mar 10/11 | Reel di C | Attenzione | base nuova | – |
+| mer 11/11 | ALGORY #3 | Autorità | «Il mio conto è a −5.439 $. Perché non spengo i bot» (verità, numeri veri) | ALGO |
+| gio 12/11 | Attualità di C | Attenzione | notizia della settimana (IA/bot: truffa o «bot miracoloso» del momento) | – |
+| ven 13/11 | Spiegone | Attenzione | 5 miti sul trading algoritmico (un mito ogni 3 s) | – |
+| sab 14/11 | Reel di C | Attenzione | base nuova | – |
+| dom 15/11 | ALGORY #4 | Conversione | Algory contro il bot da 99 $ comprato su Telegram | ALGO |
+| lun 16/11 | Reel di C | Attenzione | base nuova | – |
+| mar 17/11 | Spiegone | Educazione | Le automazioni che lavorano mentre dormo (VPS, MT5, avvisi) | – |
+| mer 18/11 | Attualità di C | Attenzione | notizia della settimana (mercati: Fed/BCE/oro, cosa cambia per chi ha un bot acceso) | – |
+| gio 19/11 | Spiegone | Educazione | Risposta al commento più utile del mese | – |
+| ven 20/11 | Reel di C | Attenzione | base nuova | – |
+| sab 21/11 | ALGORY #5 | Conversione | 30 giorni di challenge con Algory: tutti i numeri | ALGO |
+| dom 22/11 | **YouTube lungo** | Fiducia (Autorità+Educazione) | stesso tema, 8-12 min (vedi sotto) + Short di lancio | – |
+| lun 23/11 | Reel di C | Attenzione | base nuova | – |
+| mar 24/11 | Spiegone | Educazione | Drawdown giornaliero: la regola che fa saltare più challenge | – |
+| mer 25/11 | Attualità di C | Attenzione | notizia della settimana (prop firm / Consob / regole) | – |
+| gio 26/11 | Spiegone | Educazione | Il diario dei trade: gli errori che ti costano davvero (Traidingdesk solo se Marco lo ha provato e ha detto sì) | – |
+| ven 27/11 | ALGORY #6 | Conversione | Black Friday delle prop firm: sconto vero o trappola? | ALGO |
+| sab 28/11 | Reel di C | Attenzione | base nuova | – |
+| dom 29/11 | Reel di C | Attenzione | base nuova | – |
 
 ## YouTube
 - **Short**: tutti i reel sopra, il giorno dopo alle 12:30 (già programmati fino al 05/11; poi si continua da qui).
