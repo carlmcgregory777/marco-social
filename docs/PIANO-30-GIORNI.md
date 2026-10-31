@@ -16,7 +16,7 @@
 
 ## Il sistema Cosentino (video del 31/10, dettagli in `theory/reference-cosentino-nuova-era-social.md`)
 - **Ogni reel è il primo incontro con uno sconosciuto** (89% delle views da non follower): contesto nei primi 3 s, niente «come dicevo ieri».
-- **Il filo di C è il suo modo di ragionare** (impassibile, testa tutto, numeri veri, «Priced in.»), non il singolo tema. Per questo si allarga: nuovo formato **ATTUALITÀ DI C**, 1 a settimana al posto di un Reel di C (prop firm, IA/bot, mercati, regole). Sempre con un punto di vista e fatti verificati (fonte nel copione).
+- **Il filo di C è il suo modo di ragionare** (impassibile, testa tutto, numeri veri, «Priced in.»), non il singolo tema. Per questo si allarga: nuovo formato **ATTUALITÀ DI C**, ogni giorno (Marco 31/10) (prop firm, IA/bot, mercati, regole). Sempre con un punto di vista e fatti verificati (fonte nel copione).
 - **Filtro 3 leve**: ogni tema deve accendere indignazione, rivelazione o identificazione; se no, si scarta.
 - **Niente svolta forzata su Algory**: Algory sta nei reel ALGORY, non in coda a ogni notizia o spiegone.
 - **Un solo ruolo per contenuto** (colonna «Ruolo» qui sotto) e si giudica solo sulla metrica del suo ruolo: Attenzione = views da non follower e condivisioni; Autorità = salvataggi e follower; Educazione = watch time e salvataggi; Conversione = commenti con la parola, email, click. La parola da commentare va dove il ruolo è Conversione o fa da ponte a YouTube.
@@ -24,43 +24,50 @@
 
 ## Formati
 - **ALGORY (stile Vox, 1 a settimana)**: montaggio Remotion come R8 (immagini Dreamina + voce Julian + valzer), 40-60 s, schermo diviso. Commento: ALGO.
-- **SPIEGONE (2 a settimana)**: col codice, 30-35 s, voce Julian, loop.
-- **ATTUALITÀ DI C (1 a settimana)**: col codice, 30-40 s, voce Julian, C in copertina. Una notizia vera + l'opinione di C, chiusura sulla notizia (non su Algory).
-- **REEL DI C (3-4 a settimana)**: motion transfer Genjutsu, «… Priced in.», solo scheda Reels. Chiusura con scritta «Segui: un bot vero ogni giorno».
+- **SPIEGONE**: non ha più giorni fissi; i temi sono nella «Riserva» e si usano quando manca una notizia buona.
+- **ATTUALITÀ DI C (ogni giorno, tranne i giorni ALGORY/YouTube)**: col codice, 30-40 s, voce Julian, C in copertina. Una notizia vera + l'opinione di C, chiusura sulla notizia (non su Algory).
+- **REEL DI C (extra, senza giorno fisso)**: motion transfer Genjutsu, «… Priced in.», solo scheda Reels. Chiusura con scritta «Segui: un bot vero ogni giorno».
 
-## Calendario
+## Calendario (dal 02/11: UN VIDEO AL GIORNO col sistema Cosentino, decisione di Marco del 31/10)
+Ogni giorno senza ALGORY o YouTube = **Attualità di C**: la notizia del giorno su prop firm, bot/IA, mercati o regole, filtrata con le 3 leve, con l'opinione di C e i fatti verificati (fonti scritte nel copione). Il ruolo indicato è quello di partenza: se la notizia del giorno si presta meglio a un altro ruolo, si cambia e si annota in STATO.md. Se nessuna notizia del giorno passa il filtro, si prende un tema dalla «Riserva» qui sotto, raccontato con lo stesso stile.
+
 | Data | Formato | Ruolo | Tema | Commento |
 |------|---------|-------|------|----------|
 | sab 31/10 | Reel di C | Attenzione | base nuova (Halloween: C impassibile tra le zucche, «Il mio bot non ha paura. Priced in.») | – |
 | dom 01/11 | Spiegone | Educazione | Quanti bot servono per una challenge (copione in produzione/r9/copione.md) | – |
-| lun 02/11 | Reel di C | Attenzione | base nuova | – |
+| lun 02/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | mar 03/11 | ALGORY #1 | Conversione | «Il software su cui gira il mio conto da 100.000 $»: rivelazione, cos'è Algory e perché l'ho scelto | ALGO |
-| mer 04/11 | Reel di C | Attenzione | base nuova | – |
-| gio 05/11 | Spiegone | Autorità | Parity test: il bot sul conto vero fa le stesse operazioni del backtest? | – |
-| ven 06/11 | Attualità di C | Attenzione | notizia della settimana (es. prop firm che cambia regole o nega payout): cosa ne pensa C, fatti verificati | – |
+| mer 04/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| gio 05/11 | Attualità di C | Autorità | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| ven 06/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | sab 07/11 | ALGORY #2 | Conversione | Dentro Algory: come scelgo i bot tra 962 strategie (schema che si costruisce) | ALGO |
-| dom 08/11 | Spiegone | Educazione | Rotazione: quando spengo un bot e ne accendo un altro | – |
-| lun 09/11 | Reel di C | Attenzione | base nuova | – |
-| mar 10/11 | Reel di C | Attenzione | base nuova | – |
+| dom 08/11 | Attualità di C | Educazione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| lun 09/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| mar 10/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | mer 11/11 | ALGORY #3 | Autorità | «Il mio conto è a −5.439 $. Perché non spengo i bot» (verità, numeri veri) | ALGO |
-| gio 12/11 | Attualità di C | Attenzione | notizia della settimana (IA/bot: truffa o «bot miracoloso» del momento) | – |
-| ven 13/11 | Spiegone | Attenzione | 5 miti sul trading algoritmico (un mito ogni 3 s) | – |
-| sab 14/11 | Reel di C | Attenzione | base nuova | – |
+| gio 12/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| ven 13/11 | Attualità di C | Autorità | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| sab 14/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | dom 15/11 | ALGORY #4 | Conversione | Algory contro il bot da 99 $ comprato su Telegram | ALGO |
-| lun 16/11 | Reel di C | Attenzione | base nuova | – |
-| mar 17/11 | Spiegone | Educazione | Le automazioni che lavorano mentre dormo (VPS, MT5, avvisi) | – |
-| mer 18/11 | Attualità di C | Attenzione | notizia della settimana (mercati: Fed/BCE/oro, cosa cambia per chi ha un bot acceso) | – |
-| gio 19/11 | Spiegone | Educazione | Risposta al commento più utile del mese | – |
-| ven 20/11 | Reel di C | Attenzione | base nuova | – |
+| lun 16/11 | Attualità di C | Educazione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| mar 17/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| mer 18/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| gio 19/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| ven 20/11 | Attualità di C | Autorità | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | sab 21/11 | ALGORY #5 | Conversione | 30 giorni di challenge con Algory: tutti i numeri | ALGO |
 | dom 22/11 | **YouTube lungo** | Fiducia (Autorità+Educazione) | stesso tema, 8-12 min (vedi sotto) + Short di lancio | – |
-| lun 23/11 | Reel di C | Attenzione | base nuova | – |
-| mar 24/11 | Spiegone | Educazione | Drawdown giornaliero: la regola che fa saltare più challenge | – |
-| mer 25/11 | Attualità di C | Attenzione | notizia della settimana (prop firm / Consob / regole) | – |
-| gio 26/11 | Spiegone | Educazione | Il diario dei trade: gli errori che ti costano davvero (Traidingdesk solo se Marco lo ha provato e ha detto sì) | – |
+| lun 23/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| mar 24/11 | Attualità di C | Educazione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| mer 25/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| gio 26/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | ven 27/11 | ALGORY #6 | Conversione | Black Friday delle prop firm: sconto vero o trappola? | ALGO |
-| sab 28/11 | Reel di C | Attenzione | base nuova | – |
-| dom 29/11 | Reel di C | Attenzione | base nuova | – |
+| sab 28/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+| dom 29/11 | Attualità di C | Autorità | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
+
+**Riserva (temi senza scadenza, per i giorni senza notizia buona):** Parity test: il bot sul conto vero fa le stesse operazioni del backtest?; Rotazione: quando spengo un bot e ne accendo un altro; 5 miti sul trading algoritmico (un mito ogni 3 s); Le automazioni che lavorano mentre dormo (VPS, MT5, avvisi); Risposta al commento più utile del mese; Drawdown giornaliero: la regola che fa saltare più challenge; Il diario dei trade: gli errori che ti costano davvero (Traidingdesk solo se Marco lo ha provato e ha detto sì).
+
+**Come si fa ogni mattina (agente delle 09:53):** 1) cerca le notizie delle ultime 24-48 ore (prop firm, bot/IA nel trading, mercati, Consob/ESMA); 2) scegline una che accende indignazione, rivelazione o identificazione; 3) verifica i fatti su almeno 2 fonti affidabili, oppure 1 ufficiale; 4) scrivi il copione con la checklist di `theory/reference-cosentino-nuova-era-social.md` (contesto nei primi 3 s per chi non conosce C, punto di vista di C, chiusura sulla notizia, niente svolta su Algory, loop); 5) produci col codice (gratis: voce Julian, valzer a rotazione, ×1,1, C in copertina) e programma alle 18:30.
+**Reel di C (motion transfer):** non hanno più un giorno fisso. Escono come extra nella scheda Reels dall'app sul Redmi, quando ci sono basi, senza consumare la quota di Publora.
 
 ## YouTube
 - **Short**: tutti i reel sopra, il giorno dopo alle 12:30 (già programmati fino al 05/11; poi si continua da qui).
@@ -80,6 +87,8 @@
 - Si produce **a blocchi di una settimana**, poi si programma la settimana intera. Non si può programmare un video che non esiste ancora.
 
 ## Programmazione: cosa faremo e quando (deciso il 30/10)
+**Aggiornamento 31/10:** i blocchi qui sotto con gli spiegoni a data fissa sono superati dal video giornaliero (vedi Calendario). Restano validi solo gli ALGORY, il video lungo del 22/11 e le revisioni della domenica. Le Attualità si fanno il giorno stesso o al massimo il giorno prima, perché la notizia deve essere fresca. **Quota Publora:** 1 video al giorno sono circa 30 post al mese, mentre lo Starter ne dà 15. Serve il piano Pro; finché non c'è, quando la quota finisce si pubblica dall'app sul Redmi.
+
 Regola: un video entra in programmazione solo quando è finito e approvato da Marco.
 - **Publora** (spiegoni e ALGORY): al massimo 3 in coda, 7 giorni avanti, quindi si carica ogni 2-3 giorni.
 - **Reel di C**: dall'app sul Redmi, dopo aver controllato che l'account attivo sia @cthe.trader.
