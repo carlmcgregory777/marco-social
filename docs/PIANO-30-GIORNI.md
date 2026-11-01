@@ -25,7 +25,7 @@
 ## Formati
 - **ALGORY (stile Vox, 1 a settimana)**: montaggio Remotion come R8 (immagini Dreamina + voce Julian + valzer), 40-60 s, schermo diviso. Commento: ALGO.
 - **SPIEGONE**: non ha più giorni fissi; i temi sono nella «Riserva» e si usano quando manca una notizia buona.
-- **ATTUALITÀ DI C (ogni giorno, tranne i giorni ALGORY/YouTube)**: col codice, 30-40 s, voce Julian, C in copertina. Una notizia vera + l'opinione di C, chiusura sulla notizia (non su Algory).
+- **ATTUALITÀ DI C (ogni giorno, tranne i giorni ALGORY/YouTube)**: dal 01/11 fatto del mondo letto da trader (vedi docs/FORMATO-ATTUALITA-C.md, «Direzione di Marco 01/11»), 45-90 s (prima: 30-40 s), voce Julian, C in copertina. Una notizia vera + l'opinione di C, chiusura sulla notizia (non su Algory).
 - **REEL DI C (extra, senza giorno fisso)**: motion transfer Genjutsu, «… Priced in.», solo scheda Reels. Chiusura con scritta «Segui: un bot vero ogni giorno».
 
 ## Calendario (dal 02/11: UN VIDEO AL GIORNO col sistema Cosentino, decisione di Marco del 31/10)

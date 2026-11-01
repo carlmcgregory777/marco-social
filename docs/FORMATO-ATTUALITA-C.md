@@ -1,5 +1,48 @@
 # Formato «Attualità di C» (Marco 31/10/2026: «prendiamo spunto dai reel di Mik Cosentino e dalle dritte del suo video»)
 
+## DIREZIONE DI MARCO 01/11/2026 (vale sopra tutto il resto del file)
+«I video d'ora in poi dovranno essere tipo quelli di Mik Cosentino. Mixare attualità e trading, perché i mercati finanziari sono fortemente correlati a quello che accade nel mondo. Un reel al giorno sulle cose che accadono nel mondo; una volta a settimana un video su Algory e su come opero.»
+
+**Cos'è un'Attualità di C:** un fatto del mondo di oggi (politica, guerre, energia, tasse, carovita, tecnologia, cronaca economica) letto con gli occhi di un trader: cosa si è mosso sui mercati, perché, e cosa vuol dire per i soldi di chi guarda. Non più solo prop firm e bot: si parla di tutto quello che muove i soldi.
+
+**Tesi fissa di C** (sostituisce la proposta del 01/11 mattina; il filo di tutti i video): «Tutto quello che succede nel mondo arriva sul tuo conto. Chi reagisce alla notizia arriva tardi: il mercato l'ha già prezzata. Vince chi ha un sistema testato, non chi insegue i titoli.» Firma: «Priced in.»
+- **Pain broad**: i soldi (spesa, benzina, mutuo, risparmi, stipendio) che cambiano per decisioni prese da altri.
+- **Nemico**: chi ti vende panico o certezze (titoli allarmistici, guru, venditori di segnali e bot miracolosi) e le decisioni documentate che costano soldi a chi risparmia o investe. Si attacca la decisione, con il numero e la fonte, mai una categoria di persone.
+
+**Catena del video (schema A di Mik adattato al trading, senza CTA):**
+| Tempo | Blocco | Cosa si dice / si vede |
+|---|---|---|
+| 0-3 s | NOTIZIA NUDA | Titolo fisso in alto (riquadro nero, macchina da scrivere, parentesi-svolta). Luogo, soggetto e numero subito. Sotto, la «prova»: titolo dell'agenzia rifatto col codice o foto della notizia. |
+| 3-12 s | IL MERCATO HA GIÀ RISPOSTO | Cosa si è mosso e di quanto (oro, petrolio, Borsa, euro-dollaro, Bitcoin, spread), con grafico e ora. È il marchio di C: nessun altro creator di attualità lo fa. |
+| 12-25 s | PARADOSSO + PERCHÉ | La contraddizione e chi ne è responsabile; il meccanismo spiegato come al telegiornale (test della nonna). Concessione: «è vero che…». |
+| 25-40 s | COSA VUOL DIRE PER TE | Conseguenza concreta su spesa, mutuo, risparmi o operatività. Scudo preventivo contro l'obiezione più ovvia. |
+| 40-60 s | TESI DI C + PUNCHLINE | Il principio netto con una metafora, poi il mic drop: «Priced in.» o una frase da inoltrare. |
+- Durata: 45-90 s (il parlato di C costa poco con la voce sopra le grafiche); mai oltre 2:59.
+- Un video su sette è ALGORY: quel giorno sostituisce l'Attualità (resta un video al giorno).
+
+### Come si sono risolti i conflitti tra le regole di Marco e le lezioni di Mik (01/11/2026)
+Regola di Marco: se un suo dettame va contro le strategie di acquisizione di lead, follower e clienti, si adatta per far combaciare le due cose. Niente è stato cancellato: le regole vecchie sono qui sotto, con la versione aggiornata.
+1. **«Mai politica di partito» (31/10) → aggiornata.** La politica e la geopolitica entrano quando muovono i soldi (manovra, tasse, energia, dazi, guerre, banche centrali). Come Mik: si criticano decisioni e numeri di chiunque, da qualunque parte arrivino, mai dire per chi votare, mai categorie di persone. Si scartano i temi senza legame con soldi o mercati (sicurezza, immigrazione, cronaca nera): attirerebbero un pubblico che non compra mai (broad casuale) e allontanerebbero i futuri sponsor regolamentati.
+2. **«Domanda finale per i commenti» (regola Instagram del 27/10) → spostata.** Mik chiude sempre con la punchline e non chiede niente: i commenti arrivano dal punto di vista netto. La domanda divisiva va nella didascalia, non nel parlato. Il finale del video è il mic drop.
+3. **«Seguimi» nel finale (ALGORY, 31/10) → tolto.** Mik non dice mai «seguimi», «condividi», «invialo». Nelle Attualità niente CTA; negli ALGORY una sola: la parola ALGO.
+4. **Loop finale dei Vox → resta, se è naturale.** La punchline può riagganciarsi al titolo; se forzarlo indebolisce il mic drop, vince il mic drop.
+5. **ALGORY 1 a settimana → resta, con lo schema C di Mik.** È l'unico contenuto con CTA (Conversione): promessa forte, valore completo (come opera davvero Marco, numeri veri anche negativi), prova, obiezione anticipata, ponte, «commenta ALGO». Nella prima parte non si chiede niente. Questo rispetta la proporzione di Mik (CTA rare) e la decisione di Marco.
+6. **Temi «solo prop firm/bot/mercati» (31/10) → allargati** a tutto il mondo che muove i mercati. Prop firm e bot restano tra i temi possibili.
+7. **30-40 s (piano del 31/10) → 45-90 s.** Mik sta tra 1 e 3 minuti; la voce costa ~1 credito ogni 20 s, quindi si allunga dove c'è sostanza, non per riempire.
+8. **Publora**: un reel al giorno sono ~30 post al mese, il piano Starter ne ha 15. Serve il piano Pro (decisione di Marco) oppure pubblicare una parte dal telefono.
+
+### Primi temi presi dai reel di Mik (ultima settimana, 24-31/10/2026). Ogni fatto va VERIFICATO sulle fonti prima del copione.
+| Reel di Mik (views) | Angolo di C (mondo → mercati) |
+|---|---|
+| «La soluzione al carovita e alla disoccupazione» (803K, 2.754 commenti) | Inflazione ISTAT e tassi BCE: perché la spesa costa di più anche quando «l'inflazione scende». Cosa ha fatto l'euro, cosa fanno i BTP. |
+| «Le vetrine rotte… hanno solo dato più lavoro ai vetrai» (180K) | La «finestra rotta» di Bastiat: la distruzione non crea ricchezza, la sposta. Lo stesso errore di chi pensa che una guerra «faccia bene» alla Borsa. Evergreen (format identità). |
+| «Consiglio dei Ministri appena concluso (e 3 verità da sapere)» (304K) | Cosa cambia per chi investe nella manovra (tasse su guadagni, cripto, conti): solo misure confermate dal comunicato ufficiale. |
+| «Il Piano di Emergenza in tutta Europa» (220K) | Cosa prevede davvero (fonte: Commissione UE) e cosa hanno fatto oro e titoli della difesa. |
+| «A Montecitorio gli agricoltori in rivolta» (471K) | Prezzi alimentari e materie prime agricole (grano, cacao, caffè): chi decide il prezzo del tuo carrello. |
+| «Meloni ha messo in vendita le targhe personalizzate» (171K) | Lo Stato che cerca entrate: debito pubblico, spread, cosa paga chi ha BTP. |
+| «I giovani italiani… hanno il DOVERE di aumentare il proprio valore» (244K) | Format identità: i giovani e l'interesse composto; 1.000 € oggi contro 1.000 € fra 30 anni (numeri veri). |
+Scartati: esercito nelle città, scarcerazioni, «maranza» (nessun legame con i soldi: broad casuale).
+
 Base: format «C in camera» (docs/FORMATO-C-IN-CAMERA.md, set 2 «stanza vera», labiale Avatar IA). Regole di contenuto: theory/reference-cosentino-nuova-era-social.md (checklist di 7 punti).
 
 ## Cosa fanno i reel di @mikcosentino (osservati il 31/10/2026, 659K follower)
