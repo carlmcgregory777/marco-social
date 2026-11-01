@@ -24,6 +24,21 @@ Base: format «C in camera» (docs/FORMATO-C-IN-CAMERA.md, set 2 «stanza vera»
 - **Temi (in orbita soldi/IA/mercati, mai politica di partito):** prop firm (chiusure, regole cambiate, payout negati), truffe con bot e IA, Fed/BCE/oro/crolli, Consob/ESMA, tasse sul trading. L'indignazione va su fatti verificabili (regole, numeri, comunicati), mai sulle persone o sulle fazioni.
 - **Ruolo:** quasi sempre Attenzione. Si giudica su views da non follower e condivisioni in DM.
 
+## Aggiornamento 01/11/2026: il sistema completo di Cosentino (`theory/reference-cosentino-sistema-2027.md`)
+- **Tesi fissa di C** (da confermare con Marco): «Nel trading vincono i sistemi testati e i numeri veri, non le promesse. Chi ti vende certezze ti sta vendendo un prodotto.» Ogni Attualità la dimostra con un fatto nuovo. Test di coerenza: chi condivide il video accetta la tesi? Se no, non si pubblica.
+- **Ordine del parlato (schema A, senza CTA)**, dentro i blocchi della tabella sopra:
+  1. notizia nuda: luogo, soggetto e numero subito (titolo fisso in alto);
+  2. paradosso: l'incoerenza e chi ne è responsabile;
+  3. secondo caso, se c'è (non è un'eccezione, è uno schema);
+  4. concessione: «è vero che…»;
+  5. scudo preventivo contro l'obiezione più ovvia («non sto dicendo che…, sto dicendo che…»);
+  6. tesi di C con un principio netto e una metafora;
+  7. punchline finale «mic drop», di solito «Priced in.».
+- **Format a rotazione**: cronaca commentata (base), dato che ribalta, reaction (con analisi originale, mai 2 di fila), identità (evergreen, ripubblicabile), soluzione (l'unico con la parola da commentare).
+- **Prima del copione**: i 5 controlli anti-flop (novità negli ultimi 7 giorni, specificità con fonte, motivo per il DM, una sola emozione, frase da inoltrare scritta per prima).
+- **Nemico**: una condotta documentata (prop firm, venditori di bot, finfluencer sanzionati, commissioni nascoste), mai una categoria di persone e mai un nome senza un documento pubblico.
+- **Durata**: 35-60 s, mai oltre 2:59.
+
 ## Budget (da decidere con Marco)
 - Un parlato con labiale vero costa ~25 crediti ogni 5 s (Avatar Turbo, account Dreamina del browser). Un'Attualità al giorno tutta in camera (~4 scene parlate) costerebbe ~100 crediti al giorno: troppo.
 - **Proposta:** 1-2 scene parlate a video (gancio e punto di vista, ~50 crediti). Il resto con la voce sopra le grafiche della fonte, come fa Cosentino quando mostra la notizia.
