@@ -15,6 +15,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 | 23/10 18:30 | Carosello «Dentro il mio sistema #4» (s4, copertina C #4, numeri slide 2 dimostrativi) | 6ad86fec21989ff30dd7a830 | pubblicato |
 | 24/10 18:30 | Reel Vox «I costi che il backtest non ti mostra» (copertina #4) | 6ad9c159d0abccef3b5d7fe6 | pubblicato |
 | 25/10 18:30 (17:30 UTC, ora solare) | Carosello «Dentro il mio sistema #5 – Il rischio si guadagna» (s5 nuovo, copertina C #5) | 6adb12edf7d077aaaa797f56 | pubblicato |
+| 02/11 15:23 | Attualità di C #2 «Roma, notte di Halloween: 13enne molestata» (A2ROMA, Lumina Seedance 2.5, clip portate a 1080p, copertina cover-a2roma) — pubblicato subito su richiesta di Marco | 6ae89ca5110c9c4a3ebd5a13 (IG id 17941720830143427) | pubblicato — etichetta IA da aggiungere dall app |
 
 ## Attività automatica (24/10)
 - 24/10: NON programmato niente per il 26/10. Regola del 23/10: meno caroselli (max 1-2 a settimana) e solo dal telefono con musica; i reel col codice richiedono la voce (crediti 2,35). Il Sistema #5 del 25/10 (Publora, senza musica) era già programmato prima della regola: chiesto a Marco se tenerlo o toglierlo. Formato da decidere dopo i numeri del Vox «costi» (24/10).
