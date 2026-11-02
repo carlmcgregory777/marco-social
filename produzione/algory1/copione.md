@@ -19,6 +19,20 @@
 8. E da oggi li vedi anche tu: strategie, conto, perdite comprese.
 9. Commenta ALGO e ti mando la checklist che uso prima di accendere un bot. Seguimi: su un conto da centomila dollari… (loop sulla frase 1)
 
+## Voce v5 (01/11/2026): gancio collaudato + parlato stile Cosentino
+- **Gancio:** formula «ho fatto X con posta alta + loop aperto» (metodo outlier di mate.jimenez), contesto nei primi 3 s (Cosentino).
+- **Stile Cosentino:** frasi corte e secche, «tu» diretto, domande retoriche, ripetizione di rinforzo, pause tagliate (jump cut), una sola emozione (sorpresa impassibile), chiusura secca.
+
+1. Ho dato un conto da centomila dollari a diciannove bot. E ti faccio vedere cosa fanno.
+2. Allora. I bot non li ho scritti io. Li crea un software. Si chiama Algory.
+3. Funziona così: genera migliaia di strategie e le prova sul passato. Fin qui, niente di speciale.
+4. Il trucco è dopo. Le mette su dati che non hanno mai visto. E lì cadono quasi tutte. Quasi tutte.
+5. Quelle che restano partono piccole. Zero virgola venticinque per cento di rischio. Non di più.
+6. Salgono solo se dal vivo fanno quello che facevano nel test. E se smettono? Fuori. Le cambio.
+7. E sai perché l'ho scelto? Perché non mi promette niente. Mi fa vedere i numeri. Anche quando sono rossi.
+8. E da oggi li vedi anche tu. Strategie, conto, perdite comprese.
+9. Commenta ALGO e ti mando la checklist che uso prima di accendere un bot. Seguimi. (loop sulla frase 1)
+
 ## Scene sopra (cosa si vede)
 1. Saldo del conto 100.000 $ (numero del conto coperto) e 19 piccoli bot che si accendono uno dopo l'altro.
 2. Logo/schermata principale di Algory. Scritta a mano: «non li scrivo io».
@@ -69,3 +83,30 @@ Stessa voce (42,5 s). Schema in docs/FORMATO-C-IN-CAMERA.md.
 | 33,4-38 | spezzone | C apre un caveau: tre schermi STRATEGIE / CONTO / PERDITE | 25 |
 | 38-42,5 | C: C primissimo piano, parla | «Commenta ALGO… Seguimi» + finto box commento | 25 |
 | **Totale** | | | **~235** (+25 già spesi per il test) |
+
+## Versione 5 (01-02/11/2026): montaggio finale
+- **Video:** `produzione/algory1/v5/ALGORY1V5.mp4` (44,6 s, -14 LUFS). Copertina: `produzione/algory1/v5/cover-algory1-v5.jpg`.
+- **Remotion:** composizioni `ALGORY1V5` e `CoverAlgory1V5` (`remotion-c/src/ALGORY1V5.tsx`).
+- **Scene parlate:** Seedance 2.5 su Dreamina, set A4 (T4 su B4), con l'audio della clip stessa: il labiale coincide. Grafiche con la voce ElevenLabs v5. La traccia viene da `dreamina/sd25/v5/monta_voce.py`.
+- **Montaggio:**
+  - titolo fisso nero in alto: «HO DATO 100.000 $ / A 19 BOT DI TRADING / (ECCO COSA FANNO)»;
+  - jump cut a ogni frase;
+  - zoom di scatto, scossa e colpo sonoro su: 19, Algory, niente di speciale, trucco, cadono, quasi tutte, non di più, fuori, rossi, perdite, ALGO;
+  - sottotitoli piccoli con la parola chiave su fondo viola.
+
+### Didascalia Instagram v5
+Ho dato un conto da 100.000 $ a 19 bot di trading. E non li ho scritti io.
+
+Li crea Algory: genera migliaia di strategie, le prova sul passato e poi su dati che non hanno mai visto. Quasi tutte cadono lì. Quelle che restano partono allo 0,25% di rischio e salgono solo se dal vivo fanno come nel backtest. Se smettono, fuori.
+
+Da oggi ti faccio vedere tutto: strategie, conto, perdite comprese.
+
+Commenta ALGO e ti mando la checklist che uso prima di accendere un bot 👇
+Mandalo a chi pensa che i bot di trading siano tutti truffe.
+
+🤖 C è un personaggio AI · dietro c'è Marco · 🎙️ Voce generata con AI
+⚠️ Non è consulenza finanziaria. Il trading comporta un alto rischio di perdita.
+#tradingalgoritmico #botditrading #propfirm
+
+### TikTok v5 (inglese, senza hashtag)
+Gave a $100k account to 19 bots. Priced in.

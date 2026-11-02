@@ -28,7 +28,7 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 ## Promemoria con scadenza
 | Quando | Cosa | Chi |
 |---|---|---|
-| ogni giorno | 2 storie (mattina/pomeriggio), 15' commenti, risposte DM, condividere il post delle 18:30 | Marco |
+| ogni giorno | 2 storie (mattina/pomeriggio), 15' commenti, risposte DM, condividere il post delle 12:30 | Marco |
 | ogni domenica | screenshot statistiche → KPI aggiornati + ok alla settimana | Marco + Claude |
 | entro 25/10/2026 | Publora Pro (la quota Starter finisce verso il 26/10) | Marco |
 | 24/10/2026 | programmare il Vox «costi» come reel R5 (già pronto, non rifarlo) | Claude |
@@ -57,5 +57,7 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 - 31/10/2026 (dopo): Marco decide «un video al giorno su questa strategia d'ora in poi». Calendario riscritto: dal 02/11 Attualità di C ogni giorno (ruoli a rotazione), ALGORY 1/sett. e YouTube lungo 22/11 invariati, spiegoni nella «Riserva», reel di C come extra dal Redmi. Serve Publora Pro (circa 30 post al mese).
 
 - 31/10/2026 sera: Marco approva la direzione di ALGORY #1 v3 («mi piace molto, possiamo migliorare ma siamo sulla strada giusta»). Attualità di C: stile dei reel di Mik Cosentino (docs/FORMATO-ATTUALITA-C.md). DA DECIDERE: budget crediti per le scene in camera (proposta: 1-2 scene parlate a video, ~50 crediti).
+- 01/11/2026: decisioni di Marco su ALGORY #1. Si usa un gancio collaudato. Il set deve sembrare vero, ordinato, con luci realistiche e inquadratura stretta da selfie (regole Cosentino); la stanza disordinata è bocciata («stanza di un disperato»). Parlato stile Cosentino: frasi corte, «tu», domande retoriche, ripetizioni. Montaggio: espressioni e tagli sottolineano le enfasi (zoom di scatto, jump cut, sottotitoli con la chiave evidenziata, colpi sonori). Per i video parlati si usa Dreamina con Seedance 2.5 (Riferimento universale + audio menzionato con @), non fal o Higgsfield.
+- 02/11/2026: Marco sposta le pubblicazioni Instagram (Publora) dalle 18:30 alle 12:30 ora italiana (11:30Z in ora solare). ALGORY #1 esce lun 02/11 alle 12:30. Gli Short YouTube già programmati in Studio restano ai loro orari.
 - 01/11/2026: Marco: «i video d'ora in poi come quelli di Mik Cosentino, mixando attualità e trading (i mercati sono correlati a quello che accade nel mondo); un reel al giorno, ALGORY 1 a settimana; se un mio dettame va contro l'acquisizione di lead/follower/clienti, adattalo senza cancellare il resto». Fatto: tesi fissa di C, catena notizia → mercati → tuoi soldi → «Priced in.», 8 conflitti risolti e primi temi presi dai reel di Mik in `docs/FORMATO-ATTUALITA-C.md`; fonti in `docs/FONTI-NOTIZIE.md`; lezioni del video «crescere sui social nel 2027» in `theory/reference-cosentino-sistema-2027.md`. Prossimo passo: analizzare i video YouTube di Mik. DA DECIDERE: budget scene parlate; piano Publora Pro (30 post/mese).
 - 01/11/2026 (dopo): studiati 7 video YouTube di Mik Cosentino (`theory/reference-cosentino-youtube.md`). DA DECIDERE con Marco: bio + storia in evidenza «Inizia da qui» come funnel; seconda parola chiave (es. «PREZZO») con una risorsa per il pubblico delle Attualità; sequenza email in 6 step dopo la checklist.

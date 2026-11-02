@@ -12,7 +12,7 @@ Attività giornaliera @cthe.trader (autorizzata da Marco nel CLAUDE.md). Lavora 
    - se è ALGORY o YouTube: segui il piano. Algory si nomina apertamente (decisione del 30/10); finché non c'è il link affiliato niente #ad e niente link, la parola ALGO porta alla checklist gratis.
    Produci con gli script di produzione/script, nello stile approvato (C in copertina, voce Julian, valzer Burton a rotazione, ×1,1, loop, copertina con ritaglio 4:5 controllato). Niente guadagni inventati; «🎙️ Voce generata con AI» e avviso di rischio quando serve.
 3. Controlla fotogrammi/copertina e correggi.
-4. Carica su Publora e PROGRAMMA alle 18:30 ora italiana di oggi (ora solare: 17:30Z; verifica con `TZ=Europe/Rome date -d <ora UTC>`).
+4. Carica su Publora e PROGRAMMA alle 12:30 ora italiana di oggi (Marco 02/11/2026; ora solare: 11:30Z; verifica con `TZ=Europe/Rome date -d <ora UTC>`).
 5. Prepara anche la storia collegata per le storie in evidenza (regola sticker del CLAUDE.md).
 6. Aggiorna STATO.md (notizia scelta, fonti, ruolo), commit + push su main (solo sorgenti, niente MP4).
 7. Email a fxmafialtd@gmail.com, oggetto «[cthe.trader] Programmato: <titolo> – <data>»: esito del controllo uscite, notizia scelta + fonti + leva + ruolo, cosa hai programmato, caption, storia del giorno (gruppo e sticker da mettere), crediti Higgsfield, post Publora rimasti, sezione «Promemoria» da MEMORIA.md.

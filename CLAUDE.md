@@ -14,7 +14,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Regole generali
 - Non pubblicare, inviare o comprare niente senza l'ok esplicito di Marco.
-- ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @cthe.trader, alle 18:30 ora italiana (fino al 24/10: 16:30 UTC; dal 25/10, ora solare: 17:30 UTC), senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a fxmafialtd@gmail.com.
+- ECCEZIONE autorizzata da Marco il 15/10/2026: l'attività giornaliera può produrre e PROGRAMMARE su Publora 1 post al giorno del piano (`docs/PIANO-30-GIORNI.md`) su @cthe.trader, alle 12:30 ora italiana (Marco 02/11/2026: le pubblicazioni passano da 18:30 a 12:30; ora solare: 11:30 UTC; con l'ora legale dal 29/03/2027: 10:30 UTC), senza chiedere ogni volta. Dopo ogni azione manda una email di riepilogo a fxmafialtd@gmail.com.
 - Crediti Higgsfield: se scendono sotto 10, non generare più nulla a pagamento e manda subito una email a Marco per decidere come procedere. Video a pagamento AUTORIZZATI da Marco il 15/10/2026: per i reel puoi usare i modelli top (Seedance 2.5, Katana, Kling 3.0 ecc.), al massimo ~40 crediti per contenuto, sempre lasciando almeno 10 crediti di scorta. Preferisci 1 clip forte (gancio iniziale) al posto di tante clip.
 - Se Publora non ha più quota (post mensili o coda piena), non forzare: email a Marco e fermati.
 - Leggi i file della Theory solo quando servono, per risparmiare token.
@@ -48,7 +48,7 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 
 ## Dove sono le cose (repository marco-social)
 - Stato pubblicazioni: `docs/STATO.md` — leggilo all'inizio e aggiornalo dopo ogni pubblicazione.
-- Storie in evidenza: `docs/STORIE-IN-EVIDENZA.md` — con ogni post prepara la sua storia collegata (stesso giorno, dopo le 18:30) e indicala nell'email.
+- Storie in evidenza: `docs/STORIE-IN-EVIDENZA.md` — con ogni post prepara la sua storia collegata (stesso giorno, dopo le 12:30) e indicala nell'email.
 - Piano del mese: `docs/PIANO-30-GIORNI.md`. Kit e regole Algory: `docs/kit-instagram-algory.md`.
 - Script grafiche e reel: `produzione/script/` (vedi README). Media generati: non committare MP4/frame, solo sorgenti e brand.
 

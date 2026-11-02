@@ -4,7 +4,7 @@
 1. **Il problema è views → follower** (7.156 views, +3 follower). Ogni reel finisce con un motivo per seguire e una parola da commentare.
 2. **Algory si nomina da ora** (decisione di Marco del 30/10): «la mia strategia gira su Algory, ci trado il conto». È vero (conto funded gestito dai bot Algory). Finché non c'è il link affiliato: niente #ad e niente link; la parola da commentare porta alla checklist gratis. Quando arriva il link: #ad + avviso di rischio, e il DM manda il link.
 3. **Niente doppioni.** Temi già usati, da non rifare: costi del backtest, prop firm guadagnano quando perdi, dashboard al 300%, ordine dimenticato da 245 $, 10 bot ≠ diversificazione, Sistema #1-#5, 4 test, 4.000 strategie (R8).
-4. **Stessa base, 3 piattaforme.** Ogni reel: Instagram 18:30 (italiano) → TikTok lo stesso giorno (descrizione inglese corta «… Priced in.», niente hashtag) → Short YouTube il giorno dopo alle 12:30.
+4. **Stessa base, 3 piattaforme.** Ogni reel: Instagram 12:30 (italiano; era 18:30 fino al 01/11) → TikTok lo stesso giorno (descrizione inglese corta «… Priced in.», niente hashtag) → Short YouTube il giorno dopo alle 12:30.
 
 ## Le tecniche di attenzione (dal reel @filscale del 30/10 + Vaga)
 - Schermo diviso: sopra la grafica che si muove (schema, numeri, MT5), sotto C che parla.
@@ -35,8 +35,8 @@ Ogni giorno senza ALGORY o YouTube = **Attualità di C**: la notizia del giorno 
 |------|---------|-------|------|----------|
 | sab 31/10 | Reel di C | Attenzione | base nuova (Halloween: C impassibile tra le zucche, «Il mio bot non ha paura. Priced in.») | – |
 | dom 01/11 | Spiegone | Educazione | Quanti bot servono per una challenge (copione in produzione/r9/copione.md) | – |
-| lun 02/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
-| mar 03/11 | ALGORY #1 | Conversione | «Il software su cui gira il mio conto da 100.000 $»: rivelazione, cos'è Algory e perché l'ho scelto | ALGO |
+| lun 02/11 | ALGORY #1 (anticipato da Marco, GIÀ PROGRAMMATO alle 12:30) | Conversione | «Ho dato 100.000 $ a 19 bot»: niente Attualità oggi | ALGO |
+| mar 03/11 | Attualità di C | Attenzione | bozza: «Inflazione al 5,4% (il mercato lo sapeva un mese fa)», produzione/attualita/A1-inflazione/copione.md (ALGORY #1 anticipato a lun 02/11) | – |
 | mer 04/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | gio 05/11 | Attualità di C | Autorità | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | ven 06/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
@@ -113,7 +113,7 @@ Regola: un video entra in programmazione solo quando è finito e approvato da Ma
 | entro 20/11 | Blocco 4: Drawdown (24/11), Diario dei trade (26/11), ALGORY #6 Black Friday (27/11) | Publora + Studio | Claude |
 
 - **Orari fissi:**
-  - Instagram alle 18:30;
+  - Instagram alle 12:30 (Marco 02/11/2026, prima 18:30);
   - TikTok alle 20:00 dello stesso giorno (descrizione inglese, niente hashtag);
   - Short YouTube il giorno dopo alle 12:30.
 - **Agente del mattino** (09:53, cloud): legge questa tabella e STATO.md. Non rifà un video già in coda e programma su Publora solo i video già pronti nel repository.

@@ -2,13 +2,13 @@
 import React from "react";
 import { interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { PAROLE } from "./algory1-parole";
-import { ACCENTO, ANTON, BoxCommento, Card3D, Conta, FormatC, MONO, MANO, Nota, ROSSO, Scena, SfondoSet, Sticker, VERDE, VIOLA, molla } from "./FormatC";
+import { ACCENTO, ANTON, BoxCommento, Card3D, Conta, FormatC, MONO, MANO, Nota, ROSSO, Scena, SfondoSet, Sticker, VIOLA, molla } from "./FormatC";
 
 const CHIAVE = /^(19|100\.000|ALGORY|ALGO|0,25%|ROSSI|NIENTE|PERDITE|CADONO|SOFTWARE|MIGLIAIA|TEST)/;
 const CARTELLA = "algory1c";
 
 // Icona di un bot
-const Bot: React.FC<{ x: number; y: number; s?: number; d: number; color?: string }> = ({ x, y, s = 70, d, color = ACCENTO }) => {
+export const Bot: React.FC<{ x: number; y: number; s?: number; d: number; color?: string }> = ({ x, y, s = 70, d, color = ACCENTO }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const a = molla(f, fps, d, 9, 220);
@@ -23,14 +23,15 @@ const Bot: React.FC<{ x: number; y: number; s?: number; d: number; color?: strin
 // Grafica 1 · dati mai visti: migliaia di strategie, quasi tutte cadono
 const COL = 18, RIG = 14;
 const vive = (i: number) => (i * 7919) % 31 === 0;
-const Cadono: React.FC = () => {
+// caduta: frame in cui cadono; scritta: frame dello sticker finale
+export const Cadono: React.FC<{ caduta?: number; scritta?: number; testo?: string; img?: string; top?: number; scala?: number }> = ({ caduta = 78, scritta = 94, testo = "Quasi tutte fuori", img = `${CARTELLA}/setA.png`, top = 230, scala = 1 }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const caduta = 78;
   const muro = molla(f, fps, 20, 14, 160);
   return (
     <>
-      <SfondoSet img={`${CARTELLA}/setA.png`} />
+      <SfondoSet img={img} />
+      <div style={{ position: "absolute", inset: 0, transform: `translateY(${top - 230}px) scale(${scala})`, transformOrigin: "50% 230px" }}>
       <Card3D d={0} x={60} y={230} w={960} h={1020}>
         <div style={{ position: "absolute", left: 40, top: 30, fontFamily: MONO, fontSize: 32, color: ACCENTO, letterSpacing: 3 }}>// DATI MAI VISTI</div>
         {Array.from({ length: COL * RIG }).map((_, i) => {
@@ -44,24 +45,27 @@ const Cadono: React.FC = () => {
         <div style={{ position: "absolute", left: 40, right: 40, top: 790, height: 8, background: ACCENTO, transform: `scaleX(${muro})`, boxShadow: `0 0 30px ${ACCENTO}` }} />
         <div style={{ position: "absolute", left: 44, top: 820, fontFamily: MONO, fontSize: 30, fontWeight: 700, color: ACCENTO, opacity: muro }}>IL FUTURO NON SI PUÒ TRUCCARE</div>
       </Card3D>
-      <Sticker d={94} top={620} size={110} bg={ROSSO}>Quasi tutte fuori</Sticker>
+      </div>
+      <Sticker d={scritta} top={620} size={110} bg={ROSSO}>{testo}</Sticker>
     </>
   );
 };
 
 // Grafica 2 · la scala del rischio: sale solo se dal vivo fa come nel test, altrimenti lo cambio
-const Scala: React.FC = () => {
+// passi: frame dei due salti; rossoDa: il bot diventa rosso; viaDa: viene buttato fuori; nuovo: arriva il sostituto
+export const Scala: React.FC<{ passi?: [number, number]; rossoDa?: number; viaDa?: number; nuovo?: number; img?: string; top?: number; scala?: number }> = ({ passi = [20, 84], rossoDa = 112, viaDa = 128, nuovo = 135, img = `${CARTELLA}/setA.png`, top = 230, scala = 1 }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const st = f > 84 ? 2 : f > 20 ? 1 : 0;
-  const salto = molla(f, fps, [0, 20, 84][st], 10, 160);
-  const rosso = f > 112;
-  const via = interpolate(f, [128, 142], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const st = f > passi[1] ? 2 : f > passi[0] ? 1 : 0;
+  const salto = molla(f, fps, [0, ...passi][st], 10, 160);
+  const rosso = f > rossoDa;
+  const via = interpolate(f, [viaDa, viaDa + 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const gr = [{ p: "0,25%", t: "PARTENZA" }, { p: "0,5%", t: "PROVA" }, { p: "1%", t: "PIENO" }];
   const base = 1180;
   return (
     <>
-      <SfondoSet img={`${CARTELLA}/setA.png`} />
+      <SfondoSet img={img} />
+      <div style={{ position: "absolute", inset: 0, transform: `translateY(${top - 230}px) scale(${scala})`, transformOrigin: "50% 230px" }}>
       <Card3D d={0} x={60} y={230} w={960} h={1020}>
         <div style={{ position: "absolute", left: 40, top: 30, fontFamily: MONO, fontSize: 32, color: ACCENTO, letterSpacing: 3 }}>// IL RISCHIO SI GUADAGNA</div>
         {gr.map((g, i) => {
@@ -76,16 +80,17 @@ const Scala: React.FC = () => {
         <div style={{ position: "absolute", left: 0, top: 0, transform: `translate(${via * 900}px, ${via * 300}px) rotate(${via * 90}deg)`, opacity: 1 - via }}>
           <Bot x={125 + st * 300} y={1020 - 60 - (220 + st * 180) - 125 - (1 - salto) * 60} s={110} d={-30} color={rosso ? ROSSO : ACCENTO} />
         </div>
-        {f > 135 ? <Bot x={125} y={1020 - 60 - 220 - 125} s={110} d={135} /> : null}
+        {f > nuovo ? <Bot x={125} y={1020 - 60 - 220 - 125} s={110} d={nuovo} /> : null}
         <Nota x={40} y={110} d={8} rot={-3} size={62} color="#fff">sale solo se dal vivo fa come nel test</Nota>
       </Card3D>
-      <Sticker d={135} top={base - 120} size={110} bg={ROSSO}>Lo cambio</Sticker>
+      </div>
+      <Sticker d={nuovo} top={base - 120} size={110} bg={ROSSO}>Lo cambio</Sticker>
     </>
   );
 };
 
 // Promessa barrata (T4)
-const Barrata: React.FC<{ d: number; top: number }> = ({ d, top }) => {
+export const Barrata: React.FC<{ d: number; top: number }> = ({ d, top }) => {
   const f = useCurrentFrame();
   if (f < d) return null;
   const w = interpolate(f, [d + 10, d + 20], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -100,9 +105,9 @@ const Barrata: React.FC<{ d: number; top: number }> = ({ d, top }) => {
 };
 
 // Grafica R1 · i 19 bot si accendono uno dopo l'altro sopra il set sfocato
-const Diciannove: React.FC = () => (
+export const Diciannove: React.FC<{ img?: string }> = ({ img = `${CARTELLA}/setA.png` }) => (
   <>
-    <SfondoSet img={`${CARTELLA}/setA.png`} />
+    <SfondoSet img={img} />
     {Array.from({ length: 19 }).map((_, i) => (
       <Bot key={i} x={135 + (i % 5) * 170} y={560 + Math.floor(i / 5) * 150} s={100} d={6 + i * 3} />
     ))}
@@ -110,7 +115,7 @@ const Diciannove: React.FC = () => (
 );
 
 // Carta degli schermi (R2)
-const Carta: React.FC<{ d: number; y: number; t: string; s: string; c: string }> = ({ d, y, t, s, c }) => (
+export const Carta: React.FC<{ d: number; y: number; t: string; s: string; c: string }> = ({ d, y, t, s, c }) => (
   <Card3D d={d} x={90} y={y} w={900} h={190} colore={c}>
     <div style={{ position: "absolute", left: 40, top: 22, fontFamily: ANTON, fontSize: 100, lineHeight: 1, color: "#fff" }}>{t}</div>
     <div style={{ position: "absolute", left: 44, top: 126, fontFamily: MANO, fontSize: 52, fontWeight: 700, color: c }}>{s}</div>
@@ -135,7 +140,7 @@ const SCENE: Scena[] = [
     <>
       <Conta d={47} da={0} a={4000} durata={30} top={290} size={170} />
       <Sticker d={58} top={500} size={70} color={ACCENTO} fino={104}>strategie</Sticker>
-      <Sticker d={105} top={500} size={70} color={VERDE}>backtest sul passato</Sticker>
+      <Sticker d={105} top={500} size={70} color={ACCENTO}>backtest sul passato</Sticker>
     </>
   ) },
   { from: 423, dur: 125, grafica: <Cadono /> },
@@ -155,8 +160,8 @@ const SCENE: Scena[] = [
   ) },
   { from: 1002, dur: 137, grafica: <SfondoSet img={`${CARTELLA}/setA.png`} />, sopra: (
     <>
-      <Carta d={49} y={330} t="STRATEGIE" s="come le scelgo" c={ACCENTO} />
-      <Carta d={76} y={560} t="CONTO" s="il saldo vero" c={ACCENTO} />
+      <Carta d={4} y={330} t="STRATEGIE" s="come le scelgo" c={ACCENTO} />
+      <Carta d={50} y={560} t="CONTO" s="il saldo vero" c={ACCENTO} />
       <Carta d={98} y={790} t="PERDITE" s="comprese" c={ROSSO} />
     </>
   ) },
@@ -172,11 +177,12 @@ export const ALGORY1C: React.FC = () => <FormatC scene={SCENE} parole={PAROLE} c
 
 // Copertina del format: foto del set a tutto schermo, titolo in alto dentro la zona 4:5
 // sposta: quanto abbassare la foto (330 per il vecchio set, 0 per il set 2 dove C è già più in basso)
-export const CoverC: React.FC<{ titolo: string; sotto: string; numero: string; img: string; sposta?: number }> = ({ titolo, sotto, numero, img, sposta = 330 }) => (
+// destra: margine destro del titolo (più largo se il titolo finirebbe sotto il numero)
+export const CoverC: React.FC<{ titolo: string; sotto: string; numero: string; img: string; sposta?: number; destra?: number }> = ({ titolo, sotto, numero, img, sposta = 330, destra = 70 }) => (
   <div style={{ position: "absolute", inset: 0, backgroundColor: "#0b0a10" }}>
     <img src={staticFile(img)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", transform: `translateY(${sposta}px)` }} />
     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#0b0a10f2 0%, #0b0a10cc 22%, transparent 42%, transparent 70%, #0b0a10cc 100%)" }} />
-    <div style={{ position: "absolute", left: 70, right: 70, top: 330, fontFamily: ANTON, fontSize: 132, lineHeight: 1.02, color: "#fff", textTransform: "uppercase", textShadow: "0 8px 30px #000" }}>{titolo}</div>
+    <div style={{ position: "absolute", left: 70, right: destra, top: 330, fontFamily: ANTON, fontSize: 132, lineHeight: 1.02, color: "#fff", textTransform: "uppercase", textShadow: "0 8px 30px #000" }}>{titolo}</div>
     <div style={{ position: "absolute", right: 70, top: 300, fontFamily: ANTON, fontSize: 64, color: "#fff", background: VIOLA, padding: "0 20px", borderRadius: 14 }}>{numero}</div>
     <div style={{ position: "absolute", left: 0, right: 0, top: 1420, textAlign: "center" }}>
       <span style={{ fontFamily: ANTON, fontSize: 92, color: "#fff", background: VIOLA, padding: "4px 32px", borderRadius: 16, textTransform: "uppercase", boxShadow: `0 0 60px ${VIOLA}` }}>{sotto}</span>

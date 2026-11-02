@@ -27,7 +27,7 @@ Oggetto: La tua checklist dei 4 test
 >
 > Se un bot ne fallisce anche uno solo, per me è fuori. La seconda pagina è quella che mi è costata di più: 2.424 $ di costi che il backtest non mostrava e 245 $ per un ordine pendente dimenticato.
 >
-> Ogni giorno alle 18:30 su Instagram aggiungo un pezzo del mio sistema, perdite comprese.
+> Ogni giorno alle 12:30 su Instagram aggiungo un pezzo del mio sistema, perdite comprese.
 >
 > Una domanda: qual è il bot o la strategia che stai valutando adesso? Rispondi a questa email: le leggo tutte io.
 >

@@ -19,11 +19,13 @@ import { loadFont as loadAnton } from "@remotion/google-fonts/Anton";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 import { loadFont as loadMono } from "@remotion/google-fonts/JetBrainsMono";
 import { loadFont as loadCaveat } from "@remotion/google-fonts/Caveat";
+import { loadFont as loadElite } from "@remotion/google-fonts/SpecialElite";
 
 export const { fontFamily: ANTON } = loadAnton();
 export const { fontFamily: INTER } = loadInter();
 export const { fontFamily: MONO } = loadMono();
 export const { fontFamily: MANO } = loadCaveat();
+export const { fontFamily: MACCHINA } = loadElite();
 
 export const VIOLA = "#5b3fd6";
 export const ACCENTO = "#8b6dff";
@@ -38,12 +40,18 @@ export type Scena = { from: number; dur: number; clip?: string; inizio?: number;
 export const molla = (f: number, fps: number, d = 0, damping = 12, stiffness = 200) => spring({ frame: f - d, fps, config: { damping, stiffness } });
 
 // Spezzone video con push-in lento e «punch-in» sulle frasi indicate (frame relativi)
-const Clip: React.FC<{ src: string; inizio: number; punch: number[]; zoom?: number }> = ({ src, inizio, punch, zoom = 1 }) => {
+// jump: ogni nuova frase alterna inquadratura larga e stretta con un taglio secco (jump cut)
+// enfasi: frame della parola forte, zoom di scatto che resta per ~1 s
+const Clip: React.FC<{ src: string; inizio: number; punch: number[]; zoom?: number; jump?: boolean; enfasi?: number[] }> = ({ src, inizio, punch, zoom = 1, jump = false, enfasi = [] }) => {
   const f = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
-  const ultimo = punch.filter((p) => p <= f).pop();
-  const colpo = ultimo === undefined ? 0 : 1 - molla(f, fps, ultimo, 14, 260);
-  const s = zoom * interpolate(f, [0, durationInFrames], [1.0, 1.06]) + 0.08 * Math.max(0, colpo);
+  const passati = punch.filter((p) => p <= f);
+  const ultimo = passati[passati.length - 1];
+  const colpo = jump || ultimo === undefined ? 0 : 1 - molla(f, fps, ultimo, 14, 260);
+  const stretto = jump && passati.length % 2 === 1 ? 0.12 : 0;
+  const e = enfasi.filter((p) => p <= f && f - p < 34).pop();
+  const scatto = e === undefined ? 0 : 0.2 * molla(f, fps, e, 18, 520) * interpolate(f - e, [26, 34], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const s = zoom * interpolate(f, [0, durationInFrames], [1.0, 1.06]) + 0.08 * Math.max(0, colpo) + stretto + scatto;
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <OffthreadVideo src={staticFile(src)} startFrom={inizio} muted style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s})`, transformOrigin: "50% 38%" }} />
@@ -67,6 +75,28 @@ const Entrata: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const f = useCurrentFrame();
   const t = interpolate(f, [0, 7], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   return <AbsoluteFill style={{ transform: `scale(${1 + 0.22 * t})`, filter: t > 0.01 ? `blur(${14 * t}px)` : undefined }}>{children}</AbsoluteFill>;
+};
+
+// Scossa breve dell'inquadratura sulle parole forti
+const Scossa: React.FC<{ enfasi: number[]; children: React.ReactNode }> = ({ enfasi, children }) => {
+  const f = useCurrentFrame();
+  const e = enfasi.filter((p) => p <= f && f - p < 8).pop();
+  const k = e === undefined ? 0 : (8 - (f - e)) / 8;
+  return <AbsoluteFill style={{ transform: k ? `translate(${Math.sin(f * 9.1) * 14 * k}px, ${Math.cos(f * 7.3) * 10 * k}px)` : undefined }}>{children}</AbsoluteFill>;
+};
+
+// Titolo fisso in alto stile Cosentino: riquadro nero, maiuscolo da macchina da scrivere, svolta in giallo
+export const TitoloFisso: React.FC<{ righe: string[]; svolta?: string; top?: number }> = ({ righe, svolta, top = 200 }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = molla(f, fps, 0, 14, 220);
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, top, display: "flex", flexDirection: "column", alignItems: "center", transform: `translateY(${(1 - a) * -40}px)`, opacity: a }}>
+      {[...righe, ...(svolta ? [svolta] : [])].map((r, i) => (
+        <div key={i} style={{ fontFamily: MACCHINA, fontSize: i === righe.length ? 44 : 56, lineHeight: 1.15, color: i === righe.length ? "#ffd84d" : "#fff", background: "#000", padding: "6px 22px", textTransform: "uppercase", letterSpacing: 1 }}>{r}</div>
+      ))}
+    </div>
+  );
 };
 
 // Lampo + luce viola che attraversa lo schermo sui tagli
@@ -178,6 +208,31 @@ const Sottotitoli: React.FC<{ parole: Parola[]; chiave: RegExp; top: number }> =
   );
 };
 
+// Sottotitoli piccoli stile creator: max 3 parole, la parola chiave su fondo viola
+const SottotitoliPiccoli: React.FC<{ parole: Parola[]; chiave: RegExp; top: number }> = ({ parole, chiave, top }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = f / fps;
+  const viste = parole.filter(([a]) => t >= a);
+  if (!viste.length) return null;
+  const ult = viste[viste.length - 1];
+  const gruppo = parole.filter((p) => p[2] === ult[2]);
+  const idx = gruppo.indexOf(ult);
+  const inizio = Math.floor(idx / 3) * 3;
+  const blocco = gruppo.slice(inizio, inizio + 3);
+  const entra = molla(f, fps, Math.round(blocco[0][0] * fps), 14, 300);
+  return (
+    <div style={{ position: "absolute", left: 40, right: 40, top, textAlign: "center", fontFamily: INTER, fontWeight: 900, fontSize: 64, lineHeight: 1.2, textTransform: "uppercase", whiteSpace: "nowrap", transform: `scale(${0.9 + 0.1 * entra})` }}>
+      {blocco.map(([a, p]) => {
+        const detta = t >= a;
+        const k = chiave.test(p.toUpperCase());
+        const s = molla(f, fps, Math.round(a * fps), 10, 320);
+        return <span key={a} style={{ display: "inline-block", margin: "0 8px", padding: k ? "0 14px" : 0, borderRadius: 10, background: k && detta ? VIOLA : "transparent", color: detta ? "#fff" : "#ffffff55", WebkitTextStroke: k && detta ? undefined : "6px #000", paintOrder: "stroke fill", transform: k && detta ? `scale(${1.06 + 0.15 * (1 - s)}) rotate(-2deg)` : undefined, boxShadow: k && detta ? `0 8px 30px #000a, 0 0 40px ${VIOLA}` : undefined }}>{p}</span>;
+      })}
+    </div>
+  );
+};
+
 // Grana e vignetta, per il look «girato con la camera»
 const Grana: React.FC = () => {
   const f = useCurrentFrame();
@@ -205,27 +260,36 @@ export const FormatC: React.FC<{
   cartella: string;
   etichetta: string;
   sottotitoliTop?: number;
-}> = ({ scene, parole, chiave, cartella, etichetta, sottotitoliTop = 1340 }) => {
+  titolo?: React.ReactNode;
+  piccoli?: boolean;
+  jump?: boolean;
+  enfasi?: number[];
+  voce?: string;
+  musicaVol?: number;
+}> = ({ scene, parole, chiave, cartella, etichetta, sottotitoliTop = 1340, titolo, piccoli = false, jump = false, enfasi = [], voce = "voce.wav", musicaVol = 0.13 }) => {
   const { fps } = useVideoConfig();
   const punch = parole.filter((p, i) => i === 0 || parole[i - 1][2] !== p[2]).map((p) => Math.round(p[0] * fps));
+  const enf = enfasi.map((e) => Math.round(e * fps));
   return (
     <AbsoluteFill style={{ backgroundColor: NERO, fontFamily: INTER }}>
-      {scene.map((s, i) => (
-        <Sequence key={i} from={s.from} durationInFrames={s.dur}>
-          <Entrata>
-            {s.clip ? <Clip src={`${cartella}/${s.clip}`} inizio={s.inizio ?? 0} zoom={s.zoom} punch={punch.map((p) => p - s.from).filter((p) => p > 0 && p < s.dur)} /> : null}
-            {s.grafica}
-          </Entrata>
-          {s.sopra}
-          {i > 0 ? <Taglio /> : null}
-        </Sequence>
-      ))}
+      <Scossa enfasi={enf}>
+        {scene.map((s, i) => (
+          <Sequence key={i} from={s.from} durationInFrames={s.dur}>
+            <Entrata>
+              {s.clip ? <Clip src={`${cartella}/${s.clip}`} inizio={s.inizio ?? 0} zoom={s.zoom} jump={jump} enfasi={enf.map((p) => p - s.from).filter((p) => p >= 0 && p < s.dur)} punch={punch.map((p) => p - s.from).filter((p) => p > 0 && p < s.dur)} /> : null}
+              {s.grafica}
+            </Entrata>
+            {s.sopra}
+            {i > 0 ? <Taglio /> : null}
+          </Sequence>
+        ))}
+      </Scossa>
       <Grana />
-      <Sottotitoli parole={parole} chiave={chiave} top={sottotitoliTop} />
-      <div style={{ position: "absolute", left: 60, top: 70, fontFamily: MONO, fontSize: 28, color: "#ffffffcc", letterSpacing: 2, textShadow: "0 2px 10px #000" }}>{etichetta}</div>
+      {piccoli ? <SottotitoliPiccoli parole={parole} chiave={chiave} top={sottotitoliTop} /> : <Sottotitoli parole={parole} chiave={chiave} top={sottotitoliTop} />}
+      {titolo ?? <div style={{ position: "absolute", left: 60, top: 70, fontFamily: MONO, fontSize: 28, color: "#ffffffcc", letterSpacing: 2, textShadow: "0 2px 10px #000" }}>{etichetta}</div>}
       <Barra />
-      <Audio src={staticFile(`${cartella}/voce.wav`)} volume={1} />
-      <Audio src={staticFile(`${cartella}/musica.wav`)} volume={0.13} />
+      <Audio src={staticFile(`${cartella}/${voce}`)} volume={1} />
+      <Audio src={staticFile(`${cartella}/musica.wav`)} volume={musicaVol} />
       <Audio src={staticFile(`${cartella}/sfx.wav`)} volume={0.4} />
     </AbsoluteFill>
   );
