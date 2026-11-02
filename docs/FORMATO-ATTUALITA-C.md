@@ -43,6 +43,8 @@ Regola di Marco: se un suo dettame va contro le strategie di acquisizione di lea
 | «I giovani italiani… hanno il DOVERE di aumentare il proprio valore» (244K) | Format identità: i giovani e l'interesse composto; 1.000 € oggi contro 1.000 € fra 30 anni (numeri veri). |
 Scartati: esercito nelle città, scarcerazioni, «maranza» (nessun legame con i soldi: broad casuale).
 
+**AGGIORNAMENTO MARCO 02/11/2026 (prevale sullo scarto qui sopra e sul punto 1 dei conflitti):** si possono fare anche i temi molto virali senza legame con i soldi (sicurezza, cronaca, fatti che indignano), come fa Mik. Lo scopo non è uscire di nicchia ma far conoscere il pensiero di C su questi temi ed empatizzare con il pubblico. Paletti che restano: empatia per le vittime, critica a decisioni e silenzi documentati, mai colpe date a categorie di persone (etnia, nazionalità, religione), mai dettagli che identificano le vittime, niente sensazionalismo. Se c'è un ponte naturale col modo di pensare di C (regole, sistemi, conseguenze) si usa, altrimenti niente forzature sui mercati. Primo caso: A2-roma-halloween (reel di Mik https://www.instagram.com/p/DfPGgc4oAji/).
+
 Base: format «C in camera» (docs/FORMATO-C-IN-CAMERA.md, set 2 «stanza vera», labiale Avatar IA). Regole di contenuto: theory/reference-cosentino-nuova-era-social.md (checklist di 7 punti).
 
 ## Cosa fanno i reel di @mikcosentino (osservati il 31/10/2026, 659K follower)

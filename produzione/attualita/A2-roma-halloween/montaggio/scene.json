@@ -1,0 +1,72 @@
+[
+ {
+  "src": "T1.mp4",
+  "pezzo": 0,
+  "from": 0.0,
+  "dur": 0.7667,
+  "inizio": 0.0
+ },
+ {
+  "src": "T1.mp4",
+  "pezzo": 0,
+  "from": 0.7667,
+  "dur": 1.0667,
+  "inizio": 1.0333
+ },
+ {
+  "src": "T1.mp4",
+  "pezzo": 0,
+  "from": 1.8333,
+  "dur": 1.5333,
+  "inizio": 2.4667
+ },
+ {
+  "src": "voce",
+  "pezzo": 1,
+  "from": 3.3667,
+  "dur": 2.2667,
+  "inizio": 3.7667
+ },
+ {
+  "src": "voce",
+  "pezzo": 1,
+  "from": 5.6333,
+  "dur": 8.4333,
+  "inizio": 6.3667
+ },
+ {
+  "src": "voce",
+  "pezzo": 2,
+  "from": 14.0667,
+  "dur": 5.3333,
+  "inizio": 14.8
+ },
+ {
+  "src": "voce",
+  "pezzo": 3,
+  "from": 19.4,
+  "dur": 5.7,
+  "inizio": 20.1
+ },
+ {
+  "src": "T3.mp4",
+  "pezzo": 4,
+  "from": 25.1,
+  "dur": 4.9333,
+  "inizio": 0.0
+ },
+ {
+  "src": "T4.mp4",
+  "pezzo": 5,
+  "from": 30.0333,
+  "dur": 2.4667,
+  "inizio": 0.0
+ },
+ {
+  "src": "T4.mp4",
+  "pezzo": 5,
+  "from": 32.5,
+  "dur": 5.0667,
+  "inizio": 2.7333
+ }
+]
