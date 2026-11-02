@@ -36,7 +36,7 @@ Ogni giorno senza ALGORY o YouTube = **Attualità di C**: la notizia del giorno 
 | sab 31/10 | Reel di C | Attenzione | base nuova (Halloween: C impassibile tra le zucche, «Il mio bot non ha paura. Priced in.») | – |
 | dom 01/11 | Spiegone | Educazione | Quanti bot servono per una challenge (copione in produzione/r9/copione.md) | – |
 | lun 02/11 | ALGORY #1 (anticipato da Marco, GIÀ PROGRAMMATO alle 12:30) | Conversione | «Ho dato 100.000 $ a 19 bot»: niente Attualità oggi | ALGO |
-| mar 03/11 | Attualità di C | Attenzione | bozza: «Inflazione al 5,4% (il mercato lo sapeva un mese fa)», produzione/attualita/A1-inflazione/copione.md (ALGORY #1 anticipato a lun 02/11) | – |
+| mar 03/11 | Attualità di C | Attenzione | PROGRAMMATO 12:30: «Colpo di Stato in Polonia (e il mercato ha già votato)», produzione/attualita/A1-polonia (Publora 6ae88091110c9c4a3ebc2cc1). La bozza «Inflazione al 5,4%» passa a un altro giorno | – |
 | mer 04/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | gio 05/11 | Attualità di C | Autorità | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |
 | ven 06/11 | Attualità di C | Attenzione | notizia del giorno scelta col filtro 3 leve (fonti nel copione) | – |

@@ -35,7 +35,7 @@ export const VERDE = "#2ecc71";
 
 export type Parola = [number, string, number];
 // zoom: ingrandimento di base dello spezzone (es. 1.4 = primissimo piano ritagliato dal frontale)
-export type Scena = { from: number; dur: number; clip?: string; inizio?: number; zoom?: number; grafica?: React.ReactNode; sopra?: React.ReactNode };
+export type Scena = { from: number; dur: number; clip?: string; inizio?: number; zoom?: number; grafica?: React.ReactNode; sopra?: React.ReactNode; secco?: boolean };
 
 export const molla = (f: number, fps: number, d = 0, damping = 12, stiffness = 200) => spring({ frame: f - d, fps, config: { damping, stiffness } });
 
@@ -253,6 +253,9 @@ const Barra: React.FC = () => {
   return <div style={{ position: "absolute", left: 0, bottom: 0, height: 8, width: `${(f / durationInFrames) * 100}%`, background: `linear-gradient(90deg,${VIOLA},${ACCENTO})`, boxShadow: `0 0 20px ${ACCENTO}` }} />;
 };
 
+// secco: jump cut dentro la stessa scena (pausa tagliata), senza entrata né lampo
+const Contenitore: React.FC<{ secco?: boolean; children: React.ReactNode }> = ({ secco, children }) => (secco ? <AbsoluteFill>{children}</AbsoluteFill> : <Entrata>{children}</Entrata>);
+
 export const FormatC: React.FC<{
   scene: Scena[];
   parole: Parola[];
@@ -266,7 +269,8 @@ export const FormatC: React.FC<{
   enfasi?: number[];
   voce?: string;
   musicaVol?: number;
-}> = ({ scene, parole, chiave, cartella, etichetta, sottotitoliTop = 1340, titolo, piccoli = false, jump = false, enfasi = [], voce = "voce.wav", musicaVol = 0.13 }) => {
+  extra?: React.ReactNode;
+}> = ({ scene, parole, chiave, cartella, etichetta, sottotitoliTop = 1340, titolo, piccoli = false, jump = false, enfasi = [], voce = "voce.wav", musicaVol = 0.13, extra }) => {
   const { fps } = useVideoConfig();
   const punch = parole.filter((p, i) => i === 0 || parole[i - 1][2] !== p[2]).map((p) => Math.round(p[0] * fps));
   const enf = enfasi.map((e) => Math.round(e * fps));
@@ -275,14 +279,15 @@ export const FormatC: React.FC<{
       <Scossa enfasi={enf}>
         {scene.map((s, i) => (
           <Sequence key={i} from={s.from} durationInFrames={s.dur}>
-            <Entrata>
+            <Contenitore secco={s.secco}>
               {s.clip ? <Clip src={`${cartella}/${s.clip}`} inizio={s.inizio ?? 0} zoom={s.zoom} jump={jump} enfasi={enf.map((p) => p - s.from).filter((p) => p >= 0 && p < s.dur)} punch={punch.map((p) => p - s.from).filter((p) => p > 0 && p < s.dur)} /> : null}
               {s.grafica}
-            </Entrata>
+            </Contenitore>
             {s.sopra}
-            {i > 0 ? <Taglio /> : null}
+            {i > 0 && !s.secco ? <Taglio /> : null}
           </Sequence>
         ))}
+        {extra}
       </Scossa>
       <Grana />
       {piccoli ? <SottotitoliPiccoli parole={parole} chiave={chiave} top={sottotitoliTop} /> : <Sottotitoli parole={parole} chiave={chiave} top={sottotitoliTop} />}
