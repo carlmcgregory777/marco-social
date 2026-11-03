@@ -23,6 +23,19 @@
   status = 302
   force = true
 
+# Algory, affiliazione principale (03/11/2026): link di Vaga con p=stanga. Si cambia SOLO qui.
+[[redirects]]
+  from = "/vai/algory"
+  to = "https://algory.app/index.html?p=stanga"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/link/vai/algory"
+  to = "https://algory.app/index.html?p=stanga"
+  status = 302
+  force = true
+
 # La stessa pagina si apre anche su /link/ (serve per c-thetrader.com/link, che fa da proxy qui).
 [[redirects]]
   from = "/link/*"
