@@ -10,6 +10,19 @@
   # Funzioni del sito: submission-created copia i lead del modulo checklist in Brevo.
   directory = "netlify/functions"
 
+# Link d'iscrizione a Higgsfield usato nel PDF «Il kit di C»: quando arriva il link affiliato si cambia SOLO qui.
+[[redirects]]
+  from = "/vai/higgsfield"
+  to = "https://higgsfield.ai"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/link/vai/higgsfield"
+  to = "https://higgsfield.ai"
+  status = 302
+  force = true
+
 # La stessa pagina si apre anche su /link/ (serve per c-thetrader.com/link, che fa da proxy qui).
 [[redirects]]
   from = "/link/*"

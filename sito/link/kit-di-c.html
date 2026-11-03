@@ -1,0 +1,126 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<!-- Sorgente del PDF regalo «Il kit di C» (reel affiliato Higgsfield). Rigenera con: node produzione/script/kit_pdf.mjs
+     Il link d'iscrizione punta a /vai/higgsfield (redirect in netlify.toml): quando arriva il link affiliato si cambia lì, il PDF non va rifatto. -->
+<base href="./"><title>Il kit di C</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,sans-serif;color:#0b0a10;font-size:10.5pt;line-height:1.5}
+.pg{width:210mm;height:297mm;padding:16mm 16mm 14mm;position:relative;page-break-after:always;overflow:hidden}
+.pg:last-child{page-break-after:auto}
+.nero{background:#0b0a10;color:#fff}
+h1{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:50pt;line-height:1.15;margin:6mm 0 5mm}
+h1 em,h2 em{font-style:normal;background:#5b3fd6;color:#fff;padding:0 2mm;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+h2{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:22pt;line-height:1.35;margin:1mm 0 4mm}
+h3{font-size:11pt;margin:4mm 0 1.5mm}
+.mono{font-family:"JetBrains Mono",monospace;font-size:8.5pt;letter-spacing:.5px;color:#5b3fd6}
+.nero .mono{color:#8b6dff}
+.sotto{font-size:13pt;color:#cfcbd9;max-width:150mm}
+.c{width:62mm;height:62mm;border-radius:50%;border:2mm solid #5b3fd6;background:url(c.png) center/cover;position:absolute;right:16mm;bottom:40mm}
+.piede{position:absolute;left:16mm;right:16mm;bottom:10mm;font-size:7.5pt;color:#8d8a98;display:flex;justify-content:space-between}
+.btn{display:inline-block;background:#5b3fd6;color:#fff;text-decoration:none;font-weight:700;padding:3.5mm 7mm;border-radius:3mm;font-size:11pt}
+.passo{display:flex;gap:5mm;margin:5mm 0;align-items:flex-start}
+.n{flex:0 0 11mm;height:11mm;border-radius:50%;background:#5b3fd6;color:#fff;font-family:Anton,sans-serif;font-size:16pt;display:flex;align-items:center;justify-content:center}
+.box{border:.5mm solid #e3e0ea;border-left:2mm solid #5b3fd6;border-radius:2mm;padding:3mm 4mm;margin:2.5mm 0;background:#faf9fc}
+.p{font-family:"JetBrains Mono",monospace;font-size:8.3pt;line-height:1.45;background:#f3f1f8;border-radius:2mm;padding:2.5mm 3.5mm;margin:1.5mm 0 3mm}
+.cat{font-family:Anton,sans-serif;text-transform:uppercase;font-size:12pt;color:#5b3fd6;margin:4mm 0 1mm}
+.due{columns:2;column-gap:7mm}
+.due .p{break-inside:avoid}
+small{color:#8d8a98}
+</style></head><body>
+
+<!-- 1 · copertina -->
+<section class="pg nero">
+  <div class="mono">@cthe.trader · guida gratuita</div>
+  <h1>Il kit<br>di <em>C</em></h1>
+  <p class="sotto">Come faccio i video con l'intelligenza artificiale senza camera, senza montaggio e senza metterci la faccia. Collegamento in 2 passaggi e 20 richieste pronte da copiare.</p>
+  <div class="c"></div>
+  <div class="piede"><span>C è un personaggio AI · dietro c'è Marco</span><span>Contiene un link affiliato #ad</span></div>
+</section>
+
+<!-- 2 · cos'è e i 2 passaggi -->
+<section class="pg">
+  <div class="mono">01 · come funziona</div>
+  <h2>Due passaggi.<br><em>Poi scrivi.</em></h2>
+  <p>Higgsfield è una piattaforma che mette insieme i migliori modelli per immagini e video (Seedance, Kling, Nano Banana, GPT Image e altri). Il trucco è collegarla all'assistente AI che usi già: tu scrivi in italiano cosa vuoi, lui sceglie il modello, scrive il prompt tecnico e ti consegna il risultato.</p>
+
+  <div class="passo"><div class="n">1</div><div>
+    <h3>Crea l'account Higgsfield</h3>
+    <p>Iscriviti dal link qui sotto. Guarda i piani: le immagini con alcuni modelli si possono fare anche senza consumare crediti (interruttore «Illimitato» sul sito, vedi pagina 5).</p>
+    <p><a class="btn" href="https://marcostangatrader.netlify.app/vai/higgsfield">Iscriviti a Higgsfield →</a><br><small>Link affiliato #ad: se ti iscrivi da qui ricevo una commissione, a te non costa di più.</small></p>
+  </div></div>
+
+  <div class="passo"><div class="n">2</div><div>
+    <h3>Collegalo al tuo assistente</h3>
+    <div class="box"><b>Claude</b> · Impostazioni → Connettori → cerca «Higgsfield» → Collega, e accedi con lo stesso account del passaggio 1.</div>
+    <div class="box"><b>ChatGPT</b> · usa il plugin ufficiale di Higgsfield per ChatGPT (dal menu «Plugin ChatGPT» sul sito di Higgsfield).</div>
+    <p>Fatto. Apri una chat nuova e chiedi quello che vuoi: «fammi un video di…», «crea un'immagine di…».</p>
+  </div></div>
+
+  <div class="box"><b>La regola d'oro.</b> Non serve saper montare. Serve sapere cosa chiedere. Le prossime pagine sono le richieste che uso io.</div>
+  <div class="piede"><span>Il kit di C</span><span>2</span></div>
+</section>
+
+<!-- 3 · come si scrive una richiesta -->
+<section class="pg">
+  <div class="mono">02 · la richiesta perfetta</div>
+  <h2>Cinque blocchi.<br><em>Sempre gli stessi.</em></h2>
+  <p>Ogni richiesta che funziona dice cinque cose, in quest'ordine. Se ne manca una, il modello la inventa (e di solito sbaglia).</p>
+  <div class="box"><b>1 · Chi.</b> Il soggetto, con i dettagli che non devono cambiare (viso, capelli, vestiti). Se hai una foto, caricala come riferimento e scrivi a cosa serve: «usa questa foto per il volto».</div>
+  <div class="box"><b>2 · Cosa fa.</b> Un'azione sola, semplice: cammina, parla in camera, si gira.</div>
+  <div class="box"><b>3 · Dove.</b> Il luogo e la luce: «strada bagnata di Londra al tramonto», «scrivania con libreria, luce di finestra».</div>
+  <div class="box"><b>4 · Come è ripreso.</b> Inquadratura e camera: «primo piano da selfie», «camera che segue da dietro», «35 mm, sfondo sfocato».</div>
+  <div class="box"><b>5 · Formato.</b> Verticale 9:16 per reel e TikTok, durata in secondi, «niente scritte, niente loghi».</div>
+  <h3>Esempio completo</h3>
+  <div class="p">Video verticale 9:16 di 8 secondi. Il personaggio della foto di riferimento (stesso volto, stessi capelli, giacca nera) cammina verso la camera su una strada bagnata di Londra al tramonto. Camera a mano che arretra davanti a lui, 35 mm, sfondo sfocato, luci calde dei negozi. Niente scritte, niente loghi.</div>
+  <div class="box"><b>Quando il risultato non va:</b> correggi una cosa sola per volta («stessa scena, ma lui sorride»). Se cambi cinque cose insieme, non capisci quale ha funzionato.</div>
+  <div class="piede"><span>Il kit di C</span><span>3</span></div>
+</section>
+
+<!-- 4 · 20 richieste -->
+<section class="pg">
+  <div class="mono">03 · 20 richieste pronte</div>
+  <h2>Copia, cambia<br>le parole in <em>[ ]</em></h2>
+  <div class="due">
+    <div class="cat">Il tuo personaggio</div>
+    <div class="p">1. Crea un personaggio fotorealistico: [descrizione]. Mezzo busto, sfondo neutro scuro, luce da studio. Voglio usarlo in tutti i miei video: fammi anche la versione di fronte, di profilo e a figura intera.</div>
+    <div class="p">2. Il personaggio della foto parla in camera da una scrivania con libreria, inquadratura da selfie, 9:16, 10 secondi. Dice: «[frase]».</div>
+    <div class="p">3. Il personaggio della foto reagisce stupito guardando il telefono, primo piano, 5 secondi.</div>
+    <div class="p">4. Copia i movimenti di questo video [carica il video] sul personaggio della foto.</div>
+    <div class="cat">Per il tuo negozio o attività</div>
+    <div class="p">5. Foto prodotto di [prodotto] su un tavolo di legno, luce di mattina, stile rivista, 4:5.</div>
+    <div class="p">6. Video di 8 s: la camera gira lentamente intorno a [prodotto], sfondo [colore], luce morbida.</div>
+    <div class="p">7. Il mio locale [descrizione] di sera, pieno di gente, camera che entra dalla porta, 9:16.</div>
+    <div class="p">8. Una persona che usa [servizio] e sorride, stile video girato col telefono, realistico.</div>
+    <div class="p">9. Copertina per un reel: [soggetto] in primo piano, terzo inferiore libero per il titolo, niente scritte.</div>
+    <div class="p">10. Stessa foto prodotto, ma ambientata in [stagione o festa].</div>
+    <div class="cat">Storie e contenuti</div>
+    <div class="p">11. Mini cartone di 10 s con il personaggio della foto sulla morale «[morale]», stile animazione 2D, colori caldi.</div>
+    <div class="p">12. Scena da film: [situazione], luce drammatica, 9:16, 8 secondi.</div>
+    <div class="p">13. Prima/dopo: [situazione prima] e [situazione dopo], due immagini con la stessa inquadratura.</div>
+    <div class="p">14. Il personaggio della foto spiega [argomento] davanti a una lavagna, tono calmo.</div>
+    <div class="p">15. Meme: il personaggio della foto con l'espressione [emozione] in [situazione buffa].</div>
+    <div class="p">16. Sfondo verde pieno dietro il personaggio della foto che parla in camera (per il green screen).</div>
+    <div class="cat">Per lavorare meglio</div>
+    <div class="p">17. Prima di generare, dimmi quanti crediti costa e quale modello usi.</div>
+    <div class="p">18. Fammi 3 versioni diverse della scena, poi scelgo io quale animare.</div>
+    <div class="p">19. Anima questa immagine [carica l'immagine]: movimento lento della camera, 5 secondi.</div>
+    <div class="p">20. Riscrivi la mia richiesta nei 5 blocchi (chi, cosa, dove, come, formato) prima di generare.</div>
+  </div>
+  <div class="piede"><span>Il kit di C</span><span>4</span></div>
+</section>
+
+<!-- 5 · errori e chiusura -->
+<section class="pg nero">
+  <div class="mono">04 · gli errori che mi sono costati crediti</div>
+  <h2>Impara dai<br><em>miei errori</em></h2>
+  <div class="passo"><div class="n">1</div><div><h3>Prima chiedi il costo</h3><p>I video costano molto più delle immagini. Chiedi sempre «quanto costa?» prima di generare (richiesta 17).</p></div></div>
+  <div class="passo"><div class="n">2</div><div><h3>Prova con le immagini, poi anima</h3><p>Fai prima l'immagine giusta (costa poco o niente), poi animala. Così paghi il video una volta sola.</p></div></div>
+  <div class="passo"><div class="n">3</div><div><h3>Usa le generazioni illimitate</h3><p>Sul sito di Higgsfield, nella sezione Immagine, alcuni modelli hanno l'interruttore «Illimitato» (io uso Seedream 5.0 lite): una variante alla volta, senza consumare crediti.</p></div></div>
+  <div class="passo"><div class="n">4</div><div><h3>Una foto di riferimento, sempre la stessa</h3><p>Per avere lo stesso personaggio in ogni video carica sempre la stessa foto e scrivi a cosa serve. Io sono la prova: sono identico da un mese.</p></div></div>
+  <p style="margin-top:10mm"><a class="btn" href="https://marcostangatrader.netlify.app/vai/higgsfield">Iscriviti a Higgsfield →</a></p>
+  <p class="sotto" style="font-size:10.5pt">Mi trovi ogni giorno su Instagram: <b>@cthe.trader</b>. Se ti blocchi, scrivimi in DM: rispondo io.</p>
+  <div class="piede"><span>Link affiliato #ad: se ti iscrivi dal link ricevo una commissione, a te non costa di più. Prezzi e offerte cambiano: controllali sul sito di Higgsfield.</span><span>5</span></div>
+</section>
+</body></html>

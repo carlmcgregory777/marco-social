@@ -69,3 +69,16 @@ Serve ManyChat, il servizio ufficiale che Meta permette per i DM automatici e pe
 - Niente promesse di guadagno e niente scarsità finta (Omnibus, Theory).
 - Ogni messaggio con il link affiliato porta #ad e l'avviso di rischio.
 - Quando arriva il link Algory, nel footer del sito va aggiunta la Partita IVA di Marco (attività commerciale).
+
+### Flusso 3, PRONTO (03/11/2026): parola VIDEO (reel affiliato Higgsfield)
+- Regalo: «Il kit di C», PDF di 5 pagine (`sito/link/kit-di-c.pdf`, sorgente `kit-di-c.html`, rigenera con `node produzione/script/kit_pdf.mjs`).
+- Pagina con il modulo: https://marcostangatrader.netlify.app/kit.html → Netlify Forms «kit» (stesso consenso e stessa funzione Brevo della checklist; in Brevo FONTE = «kit»). Dopo l'invio: `grazie-kit.html` con il pulsante per scaricare il PDF.
+- Link affiliato: il PDF punta a https://marcostangatrader.netlify.app/vai/higgsfield. È un redirect in `netlify.toml`: quando arriva il link affiliato si cambia solo lì, il PDF resta uguale. Netlify conta anche i clic.
+- Trigger: commento con «VIDEO» sotto il reel (o DM con «VIDEO»).
+- Risposta pubblica al commento (a rotazione): «Ti ho scritto in DM 📩» · «Controlla i messaggi 👀» · «Mandato!».
+- DM:
+> Eccolo 👇 Il kit di C: come collegare Higgsfield a Claude o ChatGPT e 20 richieste pronte da copiare. Inserisci la tua email e ti arriva subito:
+> https://marcostangatrader.netlify.app/kit.html
+>
+> Se ti blocchi, rispondimi qui: leggo io.
+- Email di benvenuto in Brevo per la lista del kit (oggetto «Il tuo kit di C»): link al PDF + una domanda («che video vorresti fare per primo?») per far rispondere.
