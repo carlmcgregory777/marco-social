@@ -76,7 +76,7 @@ Pezzi della lezione che mancavano nel riassunto del 01/11:
 - **Video gancio per gli sponsor**: prima di proporsi a una banca ha fatto video su «come le banche ti tolgono soldi»; il video virale era già un'ADV perfetta, mancava solo la CTA.
 
 ### Come lo applichiamo a C (aggiunte)
-- **Tracciare la provenienza dei lead**: nel DM di ManyChat aggiungere la domanda «Da quale video ci hai trovato?» oppure una parola chiave diversa per ogni reel con CTA. Ogni domenica annotare in `docs/STATO.md` quale reel ha portato follower e commenti alla parola chiave.
+- **Tracciare la provenienza dei lead**: FATTO il 03/11, domanda «Da quale video mi hai trovato?» in fondo al DM col link (piano Free: le risposte si leggono nella casella ManyChat). Con il Pro si può usare anche una parola chiave diversa per ogni reel con CTA. Ogni domenica annotare in `docs/STATO.md` quale reel ha portato follower e commenti alla parola chiave.
 - **Riciclo degli evergreen**: i reel «identità» e «dato che ribalta» che superano la media di views si possono ripubblicare dopo 6-8 settimane con una copertina nuova. Mai le Attualità, che scadono.
 - **Sequel solo con un fatto nuovo**: se un'Attualità va sopra la media, nei giorni seguenti cercare un secondo fatto sullo stesso tema (dato, reazione dei mercati, decisione ufficiale). Senza un fatto nuovo, niente sequel.
 - **Analisi dei pattern di C**: dopo 20-30 Attualità pubblicate, confrontare copioni e risultati (views da non follower, condivisioni, follower) per trovare gli schemi che funzionano per C. Poi aggiornare questa checklist.
