@@ -114,3 +114,38 @@ Ho messo tutto in una guida gratuita, «Il kit di C», con 20 richieste pronte d
 One sentence. That's the whole shoot. Comment VIDEO for the free guide. #ad
 - Su TikTok niente ManyChat: a chi commenta VIDEO si risponde a mano con il link https://marcostangatrader.netlify.app/kit.html (o lo si mette in bio).
 - Al momento di pubblicare attivare «Contenuto commerciale» → «Contenuto di brand» (link affiliato) e l'etichetta «Contenuto generato con l'IA».
+
+## Versione 2 (03/11/2026 sera) — da approvare
+Marco: «che pena» il primo reel su Instagram. Su TikTok resta la versione 1. Questa è una versione nuova e non la stessa ricaricata, perché Instagram penalizza i duplicati.
+- **Cosa cambia (gratis, stessa voce):**
+  - Gancio grande in Anton: «Questo video / non l'ha girato / NESSUNO» nel riquadro viola. Prima era il titolo piccolo in mono.
+  - C sempre in scena: fotogrammi ritagliati fermi (`c-fermo.png` e `c-su.png`, bocca chiusa, nessun labiale finto) in basso a destra nelle scene «senza», «passi» e «pensa».
+  - Zoom lento sulle schermate. Su «cerchi» lo zoom è 2,1×, così la ricerca «Higgsfield» si legge.
+  - La nota «Impostazioni → Connettori» va in alto.
+  - Gli esempi della scena «pensa» entrano subito: nessuno schermo vuoto.
+- **File:**
+  - `HFAFF2.mp4` (render Remotion `HFAFF` ×1,2, −14 LUFS)
+  - copertina `cover-hfaff2.jpg` (Remotion `CoverHF2`: fotogramma del lancio + «NON L'HA GIRATO NESSUNO» + «fatto con Higgsfield»), controllata nel ritaglio 4:5.
+- **Pubblicazione:**
+  - Pubblicare dal telefono.
+  - Attivare l'etichetta «Partnership pagata» e l'etichetta IA.
+  - Usare la musica di Instagram solo se Marco la vuole: il video ha già il valzer.
+  - Archiviare il vecchio reel solo dopo che il nuovo è uscito.
+  - Spostare l'automazione ManyChat VIDEO sul post nuovo.
+
+### Didascalia Instagram v2
+Questo video non l'ha girato nessuno. E nemmeno io esisto.
+
+Due passaggi:
+1. Ti iscrivi a Higgsfield e lo colleghi a Claude dai Connettori.
+2. Scrivi in italiano cosa vuoi. Il video lo gira l'intelligenza artificiale.
+
+Non serve saper montare. Serve sapere cosa chiedere.
+
+Ho messo tutto nella guida gratuita «Il kit di C», con 20 richieste pronte da copiare. Commenta VIDEO e te la mando in DM.
+
+Mandalo a quell'amico che dice sempre «non ho tempo di fare contenuti».
+
+#ad Il link nella guida è affiliato: se ti iscrivi da lì ricevo una commissione, a te non costa di più.
+🤖 C è un personaggio AI · dietro c'è Marco · 🎙️ Voce generata con AI
+#videoai #intelligenzaartificiale #contentcreator
