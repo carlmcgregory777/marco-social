@@ -93,3 +93,26 @@ Fonti: sito algory.app (03/11/2026), app installata sul PC di Marco (build 1.4.0
 **Da fare.** L'app di Marco è la build 1.4.0.6.0 di luglio: aggiornarla prima di registrare le schermate, così la serie mostra la versione attuale. Algory non pubblica un changelog sul sito: le novità si leggono nel Discord (solo leggere, mai promuovere lì).
 
 **Avviso da mettere ovunque:** «Il trading comporta un alto rischio di perdita. I risultati passati e i backtest non garantiscono risultati futuri. Non è un consiglio finanziario. #ad link affiliato.»
+
+## 4. Cosa insegnano i reel di Vaga (@vagafx, 95k follower, studiati il 03/11/2026)
+
+Studiati 15 reel (aprile-ottobre 2026): parlato trascritto e fotogrammi. Tutti durano circa 30 secondi e chiudono con «Comment ALGO» (link o guida in DM). La parola è la stessa che usiamo noi.
+
+**Novità e numeri precisi che Vaga dice nei reel (più dettagliati del sito):**
+- Test contro il caso: il bot deve battere **almeno 75 su 100** bot casuali sul 30% di dati mai visti.
+- Test dei parametri: si «spinge» ogni parametro; se **meno della metà** delle versioni resta in guadagno, il bot viene buttato.
+- Rimescolamento: 1.000 volte l'ordine dei trade; se la sfortuna porta un drawdown troppo grande, fuori.
+- Bot live ricontrollati sui dati nuovi: quelli che calano vengono sostituiti.
+- **Novità di ottobre 2026, «ricerca da prezzo grezzo»:** un bot che ignora indicatori e concetti noti e cerca da solo le forme nel prezzo. 8 milioni di test in meno di 2 ore, 19 schemi sopravvissuti su un anno di dati mai visti (12 segnali di entrata, 6 filtri), nessuno valido su un secondo mercato. Esempi: EURUSD alle 8:00 dopo un nuovo minimo di swing; EURUSD a mezzogiorno, 71 casi in un anno, 56 su 100 al target.
+- Il piano Free esiste dal lancio pubblico (16/04/2026, dopo 6 mesi di beta nella community).
+
+**I formati che usa (da adattare, mai copiare):**
+1. **Storia vera di finanza quantitativa** (LTCM che perde 4,6 miliardi, Knight Capital che perde 440 milioni in 45 minuti, il «weekend effect» di Jim Simons, la matematica dell'uranio che smonta i pattern) → la lezione → «Comment ALGO». Combacia con le nostre Attualità e i dati che ribaltano.
+2. **«Il mio software ha trovato…»**: un pattern concreto con numeri (ora, mercato, quante volte, percentuale) e la prova sui dati mai visti.
+3. **Risposta a un commento** («Non hai paura del curve fitting?»): il commento a schermo, poi la spiegazione con le schermate.
+4. **Smonta-falsi**: «tutti i video di bot IA che vedi sono animazioni» (le ha rifatte con Claude in un prompt), poi la differenza con un software vero.
+5. **B-roll estetico**: il monitor con l'app accesa, tastiera rossa, una frase sola in sovrimpressione («Prima legge del backtest: se i risultati sono perfetti, hai dimenticato lo spread»).
+
+**Le schermate che mostra (da registrare uguali sul nostro schermo, versione VPS aggiornata):** contatore radiale delle generazioni della campagna; «Live engine feed» con le righe dei test e «saved to vault»; ventaglio delle curve con la linea che separa allenamento e dati mai visti; tabella del vault con le percentuali; inspector di un bot con geni e punteggio (es. 73); numero di «Strategies alive»; pannello Market/Tribe/Generation/Top fitness.
+
+**Cosa ne prendiamo:** ganci da 30 secondi con un numero concreto; la «risposta al commento» come formato fisso (episodio 11 della serie); le storie quant famose nelle Attualità; un episodio extra sulla ricerca da prezzo grezzo. Stile visivo: noi restiamo viola e nero con C, non il rosso di Vaga, così non sembriamo una copia.

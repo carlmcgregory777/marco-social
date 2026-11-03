@@ -112,6 +112,14 @@ Creata il 03/11/2026. Scheda tecnica di riferimento: `docs/ALGORY-PARTNER.md`.
 
 ---
 
+## Episodi extra (dai reel di Vaga, 03/11/2026)
+
+- **11 — «Non hai paura del curve fitting?»** (formato risposta al commento): il commento vero a schermo, poi i 4 controlli con le schermate. Gancio: «Mi hanno scritto: i tuoi bot sono solo adattati al passato. Ti faccio vedere come lo controllo.»
+- **12 — «Il bot che cerca da solo»**: la nuova ricerca da prezzo grezzo di Algory. Gancio: «8 milioni di test in 2 ore. Ne sono sopravvissuti 19.» Numeri solo se verificati sulla versione della VPS.
+- **13 — «Ogni video di bot IA che vedi è finto»**: dashboard animate contro un software che fa trading davvero (le animazioni le facciamo noi in Remotion e lo diciamo).
+
+Regola: le schermate si registrano sulla **VPS**, dove c'è la versione aggiornata di Algory (il PC ha ancora quella di luglio).
+
 ## Didascalia tipo (Instagram)
 
 ```
