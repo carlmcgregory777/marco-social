@@ -29,6 +29,7 @@ Promemoria: ricordarli a Marco quando sono vicini (nell'email giornaliera e quan
 | Quando | Cosa | Chi |
 |---|---|---|
 | ogni giorno | 2 storie (mattina/pomeriggio), 15' commenti, risposte DM, condividere il post delle 12:30 | Marco |
+| 04/11/2026 | recap generale con Marco; Attualità sulle midterm USA (voto del 03/11) stile Cosentino con risultati e reazione dei mercati verificati; rimontare il reel Higgsfield come video nuovo (non ricaricare lo stesso file) e archiviare il vecchio; piano per i follower TikTok (bio con promessa, serie fissa) | Claude + Marco |
 | ogni domenica | screenshot statistiche → KPI aggiornati + ok alla settimana | Marco + Claude |
 | entro 25/10/2026 | Publora Pro (la quota Starter finisce verso il 26/10) | Marco |
 | 24/10/2026 | programmare il Vox «costi» come reel R5 (già pronto, non rifarlo) | Claude |
