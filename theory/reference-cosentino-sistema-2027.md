@@ -65,6 +65,23 @@ Broad (parlo a tutti, tema universale legato alla tesi) → attenzione (primi 3 
 - **Ricerca notizie al mattino**: l'agente delle 09:53 fa la rassegna delle notizie su prop firm, bot/IA, mercati e regole, poi sceglie quella che passa i 5 controlli.
 - **Sponsor futuri**: quando arriveremo a ~10K follower, scegliere prima i settori (broker regolamentati, piattaforme di backtest), guardare le views dei creator che già sponsorizzano e preparare 2-3 video gancio su quel tema da mostrare.
 
+## Integrazione 03/11/2026 (seconda lettura completa della trascrizione)
+Pezzi della lezione che mancavano nel riassunto del 01/11:
+- **Come ha scoperto il broad (prova con i numeri)**: durante la guerra USA-Iran faceva video per smentire le notizie false su Dubai. Al workshop successivo il 70% dei presenti non l'aveva mai visto live e l'aveva scoperto da quei video; dei 30 posti venduti in 3 giorni, l'80% degli acquirenti lo seguiva da meno di 15 giorni. Lo sa perché ha un software che traccia da dove arriva ogni persona. Lezione: i contenuti broad coerenti portano clienti veri, ma va misurato.
+- **Retargeting**: prima del workshop mensile fa un po' di pubblicità a chi ha già visto i suoi video (pubblico caldo).
+- **Analisi dei propri pattern**: ha costruito uno strumento che analizza tutti i suoi 700 video (copioni, tono, tagli, risultati: views → follower → lead → clienti) per capire cosa ha fatto «inconsciamente». I 5 controlli anti-flop e i 3 schemi vengono da lì.
+- **Un fatto forte = più video da angoli diversi**: film su Michael Jackson (5M views, oltre 10K follower in un giorno e mezzo) → video sul film, poi sul possibile sequel, poi sulla dichiarazione della sorella. Ogni volta un fatto nuovo.
+- **Evergreen ripubblicati**: un video «identità» (ADHD) ripubblicato dopo un mese e mezzo è ripartito virale uguale; alcuni li ha pubblicati 3 volte in 4 mesi. Con tanti nuovi follower al mese, quasi nessuno se ne accorge.
+- **La tesi regge anche un video leggero**: un video comico, con la sua faccia solo nei primi 3 s, ha portato follower perché la tesi c'era alla fine.
+- **Video gancio per gli sponsor**: prima di proporsi a una banca ha fatto video su «come le banche ti tolgono soldi»; il video virale era già un'ADV perfetta, mancava solo la CTA.
+
+### Come lo applichiamo a C (aggiunte)
+- **Tracciare la provenienza dei lead**: nel DM di ManyChat aggiungere la domanda «Da quale video ci hai trovato?» oppure una parola chiave diversa per ogni reel con CTA. Ogni domenica annotare in `docs/STATO.md` quale reel ha portato follower e commenti alla parola chiave.
+- **Riciclo degli evergreen**: i reel «identità» e «dato che ribalta» che superano la media di views si possono ripubblicare dopo 6-8 settimane con una copertina nuova. Mai le Attualità, che scadono.
+- **Sequel solo con un fatto nuovo**: se un'Attualità va sopra la media, nei giorni seguenti cercare un secondo fatto sullo stesso tema (dato, reazione dei mercati, decisione ufficiale). Senza un fatto nuovo, niente sequel.
+- **Analisi dei pattern di C**: dopo 20-30 Attualità pubblicate, confrontare copioni e risultati (views da non follower, condivisioni, follower) per trovare gli schemi che funzionano per C. Poi aggiornare questa checklist.
+- **Retargeting**: solo quando ci sarà un'offerta a pagamento (affiliazione Algory o prodotto). Serve l'ok di Marco per ogni euro speso.
+
 ## Checklist anti-flop (da aggiungere ai 7 punti, 10 secondi)
 8. C'è un fatto nuovo negli ultimi 7 giorni?
 9. Chi, cosa, dove, con quale conseguenza (con la fonte)?
