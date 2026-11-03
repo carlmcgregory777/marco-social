@@ -209,7 +209,8 @@ const Sottotitoli: React.FC<{ parole: Parola[]; chiave: RegExp; top: number }> =
 };
 
 // Sottotitoli piccoli stile creator: max 3 parole, la parola chiave su fondo viola
-const SottotitoliPiccoli: React.FC<{ parole: Parola[]; chiave: RegExp; top: number }> = ({ parole, chiave, top }) => {
+// top: numero fisso oppure funzione dei secondi (posizione diversa per scena)
+const SottotitoliPiccoli: React.FC<{ parole: Parola[]; chiave: RegExp; top: number | ((t: number) => number) }> = ({ parole, chiave, top }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = f / fps;
@@ -222,7 +223,7 @@ const SottotitoliPiccoli: React.FC<{ parole: Parola[]; chiave: RegExp; top: numb
   const blocco = gruppo.slice(inizio, inizio + 3);
   const entra = molla(f, fps, Math.round(blocco[0][0] * fps), 14, 300);
   return (
-    <div style={{ position: "absolute", left: 40, right: 40, top, textAlign: "center", fontFamily: INTER, fontWeight: 900, fontSize: 64, lineHeight: 1.2, textTransform: "uppercase", whiteSpace: "nowrap", transform: `scale(${0.9 + 0.1 * entra})` }}>
+    <div style={{ position: "absolute", left: 40, right: 40, top: typeof top === "function" ? top(t) : top, textAlign: "center", fontFamily: INTER, fontWeight: 900, fontSize: 64, lineHeight: 1.2, textTransform: "uppercase", whiteSpace: "nowrap", transform: `scale(${0.9 + 0.1 * entra})` }}>
       {blocco.map(([a, p]) => {
         const detta = t >= a;
         const k = chiave.test(p.toUpperCase());
@@ -262,7 +263,7 @@ export const FormatC: React.FC<{
   chiave: RegExp;
   cartella: string;
   etichetta: string;
-  sottotitoliTop?: number;
+  sottotitoliTop?: number | ((t: number) => number);
   titolo?: React.ReactNode;
   piccoli?: boolean;
   jump?: boolean;
@@ -290,7 +291,7 @@ export const FormatC: React.FC<{
         {extra}
       </Scossa>
       <Grana />
-      {piccoli ? <SottotitoliPiccoli parole={parole} chiave={chiave} top={sottotitoliTop} /> : <Sottotitoli parole={parole} chiave={chiave} top={sottotitoliTop} />}
+      {piccoli ? <SottotitoliPiccoli parole={parole} chiave={chiave} top={sottotitoliTop} /> : <Sottotitoli parole={parole} chiave={chiave} top={typeof sottotitoliTop === "function" ? sottotitoliTop(0) : sottotitoliTop} />}
       {titolo ?? <div style={{ position: "absolute", left: 60, top: 70, fontFamily: MONO, fontSize: 28, color: "#ffffffcc", letterSpacing: 2, textShadow: "0 2px 10px #000" }}>{etichetta}</div>}
       <Barra />
       <Audio src={staticFile(`${cartella}/${voce}`)} volume={1} />

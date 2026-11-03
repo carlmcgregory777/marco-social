@@ -90,3 +90,27 @@ PDF di 4-6 pagine nello stile @cthe.trader:
 - **Gratis:** il video del gancio, se lo facciamo con un modello «Illimitato» del sito (da controllare se esiste per il video); gli screenshot; la registrazione dello schermo, che faccio io; il montaggio; il green screen modo A; la guida PDF.
 - **A pagamento:** le clip parlate nuove di C (scene 1-10, circa 45 s di parlato). Su Lumina 21 crediti/s ≈ 950 crediti; su Higgsfield Seedance va preventivato. Per risparmiare: le scene [GS] possono usare spezzoni già girati con la voce nuova e il labiale rifatto, oppure si genera solo il volto parlante corto e il resto è voce sopra le immagini.
 - **Mancano:** il link affiliato Higgsfield e la decisione su quanti crediti spendere.
+
+## Versione montata (03/11/2026) — APPROVATA da Marco
+- Video: `HFAFF.mp4` (~40 s, pause tagliate, ×1,2), copertina `cover-hfaff.jpg` («L'HO FATTO CON UNA FRASE» + logo Higgsfield).
+- Montaggio: `montaggio/monta.py` (voce, tempi, effetti, musica variante 2) → Remotion `HFAFF` / `CoverHF` in `remotion-c/src/HFAFF.tsx`.
+
+### Didascalia Instagram (finale)
+L'ho fatto con una frase. Niente camera, niente montaggio, niente faccia.
+
+Bastano due passaggi:
+1. Ti iscrivi a Higgsfield e lo colleghi a Claude dai Connettori.
+2. Scrivi in italiano cosa vuoi. Il video lo gira lui.
+
+Non serve saper montare. Serve sapere cosa chiedere.
+
+Ho messo tutto in una guida gratuita, «Il kit di C», con 20 richieste pronte da copiare. Commenta VIDEO e te la mando in DM.
+
+#ad Il link nella guida è affiliato: se ti iscrivi da lì ricevo una commissione, a te non costa di più.
+🤖 C è un personaggio AI · dietro c'è Marco · 🎙️ Voce generata con AI
+#videoai #intelligenzaartificiale #contentcreator
+
+### Descrizione TikTok (inglese, corta, niente hashtag)
+One sentence. That's the whole shoot. Comment VIDEO for the free guide. #ad
+- Su TikTok niente ManyChat: a chi commenta VIDEO si risponde a mano con il link https://marcostangatrader.netlify.app/kit.html (o lo si mette in bio).
+- Al momento di pubblicare attivare «Contenuto commerciale» → «Contenuto di brand» (link affiliato) e l'etichetta «Contenuto generato con l'IA».

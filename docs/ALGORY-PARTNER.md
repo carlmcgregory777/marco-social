@@ -90,7 +90,7 @@ Fonti: sito algory.app (03/11/2026), app installata sul PC di Marco (build 1.4.0
 
 **Lezioni dal conto di Marco (utili e vere, senza nominare la firm).** I bot su NAS100 e GER40 hanno fatto quasi sempre male; H2 e H4 sono i timeframe più fertili, M15 da evitare; uno storico più lungo non dà bot migliori; la colonna RET mostra soprattutto l'in-sample, quella che conta è il ritorno OOS; i bot scaduti diventano inerti.
 
-**Da fare.** L'app di Marco è la build 1.4.0.6.0 di luglio: aggiornarla prima di registrare le schermate, così la serie mostra la versione attuale. Algory non pubblica un changelog sul sito: le novità si leggono nel Discord (solo leggere, mai promuovere lì).
+**Schermate:** si registrano sulla VPS, che ha la versione aggiornata (sul PC c'è ancora la build 1.4.0.6.0 di luglio). Algory non pubblica un changelog sul sito: le novità si leggono nel Discord (solo leggere, mai promuovere lì).
 
 **Avviso da mettere ovunque:** «Il trading comporta un alto rischio di perdita. I risultati passati e i backtest non garantiscono risultati futuri. Non è un consiglio finanziario. #ad link affiliato.»
 

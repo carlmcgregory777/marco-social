@@ -6,10 +6,13 @@ import { ALGORY1C, CoverAlgory1 } from "./ALGORY1C";
 import { ALGORY1V5, CoverAlgory1V5, CoverAlgory1V5Impatto } from "./ALGORY1V5";
 import { A1POLONIA, A1PoloniaGrafiche, CoverA1Polonia } from "./A1POLONIA";
 import { A2ROMA, CoverA2Roma, DURATA_A2 } from "./A2ROMA";
+import { HFAFF, DURATA_HF, CoverHF } from "./HFAFF";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="CoverHF" component={CoverHF} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="HFAFF" component={HFAFF} durationInFrames={DURATA_HF} fps={30} width={1080} height={1920} />
       <Composition id="R8" component={R8} durationInFrames={990} fps={30} width={1080} height={1920} />
       <Composition id="R9" component={R9} durationInFrames={1843} fps={30} width={1080} height={1920} />
       <Composition id="ALGORY1" component={ALGORY1} durationInFrames={1290} fps={30} width={1080} height={1920} />

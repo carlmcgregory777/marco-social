@@ -34,3 +34,4 @@ Descrizione comune (dopo la riga del video):
 | 16 | 16-mt03-elicottero.mp4 | Exit strategy. Priced in. | Uscita pianificata. | 05/11 18:30 |
 | 17 | 17-mt05-ready.mp4 | Pronto per la sessione di Londra. Priced in. | Orologio, pugno, apertura. | 06/11 12:30 |
 | 18 | 18-mt04.mp4 | Parcheggio a Kensington. Priced in. | Ferrari parcheggiata, mercato aperto. | 06/11 18:30 |
+| 19 | 19-mt-parco.mp4 | Cardio del mattino. Priced in. | Allenamento al parco prima dell'apertura di Londra. | 06/11 12:30 |
