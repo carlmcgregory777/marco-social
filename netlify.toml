@@ -13,13 +13,13 @@
 # Link d'iscrizione a Higgsfield usato nel PDF «Il kit di C»: quando arriva il link affiliato si cambia SOLO qui.
 [[redirects]]
   from = "/vai/higgsfield"
-  to = "https://higgsfield.ai"
+  to = "https://higgsfield.ai?fpr=marco-778d82"
   status = 302
   force = true
 
 [[redirects]]
   from = "/link/vai/higgsfield"
-  to = "https://higgsfield.ai"
+  to = "https://higgsfield.ai?fpr=marco-778d82"
   status = 302
   force = true
 

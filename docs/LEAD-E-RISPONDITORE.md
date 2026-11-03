@@ -73,7 +73,7 @@ Serve ManyChat, il servizio ufficiale che Meta permette per i DM automatici e pe
 ### Flusso 3, PRONTO (03/11/2026): parola VIDEO (reel affiliato Higgsfield)
 - Regalo: «Il kit di C», PDF di 5 pagine (`sito/link/kit-di-c.pdf`, sorgente `kit-di-c.html`, rigenera con `node produzione/script/kit_pdf.mjs`).
 - Pagina con il modulo: https://marcostangatrader.netlify.app/kit.html → Netlify Forms «kit» (stesso consenso e stessa funzione Brevo della checklist; in Brevo FONTE = «kit»). Dopo l'invio: `grazie-kit.html` con il pulsante per scaricare il PDF.
-- Link affiliato: il PDF punta a https://marcostangatrader.netlify.app/vai/higgsfield. È un redirect in `netlify.toml`: quando arriva il link affiliato si cambia solo lì, il PDF resta uguale. Netlify conta anche i clic.
+- Link affiliato: il PDF punta a https://marcostangatrader.netlify.app/vai/higgsfield. È un redirect in `netlify.toml`: quando arriva il link affiliato si cambia solo lì, il PDF resta uguale. Netlify conta anche i clic. Link affiliato attivo dal 03/11/2026: https://higgsfield.ai?fpr=marco-778d82
 - Trigger: commento con «VIDEO» sotto il reel (o DM con «VIDEO»).
 - Risposta pubblica al commento (a rotazione): «Ti ho scritto in DM 📩» · «Controlla i messaggi 👀» · «Mandato!».
 - DM:
