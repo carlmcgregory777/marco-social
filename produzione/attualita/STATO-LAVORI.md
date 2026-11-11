@@ -240,3 +240,14 @@ Un labiale InfiniteTalk = **$0,25**. Una copertina Nano Banana = **$0,13**. Un r
   4. `bash script/render-shorts.sh`.
   Costo: 1,39 $ di Runpod (3 inquadrature + 4 labiali) e circa 900 caratteri ElevenLabs.
 - **Disco:** Marco ha liberato spazio, 12 GB liberi l'11/11.
+- **Reel «Shorts Studio» v2 (11/11):** Marco: «la prima schermata è troppo arancione e il montaggio può essere fatto meglio».
+  Tolta la bicromia arancione; stacchi solo a inizio frase (24 righe in `REGIA`, prima 33) senza lampi bianchi; carrellate morbide
+  avanti/indietro; sottotitoli fermi nel terzo basso; scritte grandi in Inter minuscolo al posto dei timbri Anton ruotati;
+  schermata dei Connettori a tutto schermo; sovrimpressioni che escono in dissolvenza; effetti sonori più bassi sugli stacchi.
+  **Regola per i prossimi multicamera:** un'inquadratura dura una frase (2-4 s); lo stacco veloce solo se il parlato lo chiede.
+
+### 11/11/2026 — Analisi dei numeri e didascalie nuove
+
+Tutto in `attualita/ANALISI-E-DIDASCALIE-11-11.md` (numeri di Instagram e TikTok letti dal browser, conclusioni, regole delle
+didascalie, didascalie di A11-A15 e del reel «Shorts Studio»). In breve: vince la cronaca che indigna, la gente lascia a 0:01,
+i video sono troppo lunghi (visione media 6-23 s), condivisioni a zero, TikTok è 87% Italia quindi descrizioni in italiano.
