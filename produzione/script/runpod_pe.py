@@ -15,7 +15,12 @@ def chiave():
     return winreg.QueryValueEx(winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment"), "RUNPOD_API_KEY")[0].strip()
 
 def carica(path):
-    """Carica un file su litterbox (scade in 1 ora) e restituisce l'URL pubblico."""
+    """Carica un file su litterbox (scade in 1 ora) e restituisce l'URL pubblico.
+    Con RUNPOD_B64=1 non carica niente: manda il file dentro la richiesta come data URI (11/11/2026, litterbox giù)."""
+    if os.environ.get("RUNPOD_B64") == "1":
+        import base64, mimetypes
+        tipo = mimetypes.guess_type(path)[0] or "application/octet-stream"
+        return f"data:{tipo};base64," + base64.b64encode(open(path, "rb").read()).decode()
     b = "----" + uuid.uuid4().hex
     nome = os.path.basename(path)
     corpo = (f"--{b}\r\nContent-Disposition: form-data; name=\"reqtype\"\r\n\r\nfileupload\r\n"

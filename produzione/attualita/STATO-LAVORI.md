@@ -63,6 +63,7 @@ dell'episodio, mai a memoria.
 | A13 | `A13-qi` | SchedeC | 84 s | `A13QI` | **FINITO 09/11** da Mik Cosentino: «un titolo non è una prova» (QI 276 contestato, Guinness 1990, kalām, studio SFI finfluencer). Mandato a Marco, da approvare |
 | A14 | `A14-taglio` | SchedeC | 76 s | `A14TAGLIO` | **10/11** da Mik Cosentino (Dfjft3gI_8S): clip Zelensky / re di Svezia vera ma tagliata prima della stretta di mano (Facta, Lead Stories) → falsi che muovono i mercati (2013: 136 mld $ in 3 min; 2025: 2.400 mld in 10 min) → «chi ti vende un corso taglia uguale». Da approvare |
 | A15 | `A15-bollette` | SchedeC | 76 s | `A15BOLLETTE` | **10/11** da Mik Cosentino (DfjdE5tIMGs, corteo di Torino 07/11): tenuti SOLO i fatti verificati (bollette bruciate, percorso, cori), scartati annuncio in arabo, Appendino, 4.000 persone (non trovati nelle cronache). Angolo: inflazione +5,4%, sciopero fino a 1 mld (CGIA), spread 116→107. Da approvare |
+| A16 | `A16-bomba` | SchedeC | 55 s | `A16BOMBA` | **11/11** da the_jashi_project (DfmkMfGqaAg): allarme bomba in ~6.000 scuole (mail «Mikhail Andropov») + frigoriferi hackerati → «l'opportunità è la cybersecurity»; C: CrowdStrike +114% / Palo Alto +99% da inizio anno, poi -17% in 5 giorni → «svegliato quando?». Gancio: vigili (Riviera24) + studenti (Il Messaggero). Da approvare, da far uscire l'11/11 |
 | HF3 | `higgsfield-aff/v3` | green screen | 30 s | `HF3` | **10/11** reel affiliato da Mik (DfieadGI32a, parola MIRACOLO, #higgsfieldcreator): C ritagliato sopra le clip ufficiali di Higgsfield Miracle. Solo cose verificate sul sito (vedi `didascalia.md`). Da approvare |
 
 **YouTube L0** «MI PRESENTO *non giudicatemi*» (youtu.be/RIrsWRF3X8w): caricato in 2K e **PROGRAMMATO per il 09/11/2026 alle 12:00** (08-09/11). Le 3 copertine A/B (`youtube/L0-presentazione/copertine/copertina-A/B/C.jpg`) NON sono caricate: YouTube chiede a Marco la verifica una tantum del canale (telefono) per miniature personalizzate e Test A/B.
@@ -251,3 +252,11 @@ Un labiale InfiniteTalk = **$0,25**. Una copertina Nano Banana = **$0,13**. Un r
 Tutto in `attualita/ANALISI-E-DIDASCALIE-11-11.md` (numeri di Instagram e TikTok letti dal browser, conclusioni, regole delle
 didascalie, didascalie di A11-A15 e del reel «Shorts Studio»). In breve: vince la cronaca che indigna, la gente lascia a 0:01,
 i video sono troppo lunghi (visione media 6-23 s), condivisioni a zero, TikTok è 87% Italia quindi descrizioni in italiano.
+
+### 11/11/2026 — A16 «Svegliato quando?» e Runpod senza litterbox
+
+- **A16** (`A16-bomba`, 55 s, copione 157 parole, voce `script/genera-voce-a16.ps1`): fatti e fonti nei commenti di
+  `montaggio/schede.py`. ATTENZIONE: il -17% di CrowdStrike/Palo Alto NON è causato dagli attacchi (vendite sul software dopo
+  le elezioni di metà mandato): video e didascalia li accostano nel tempo, non dicono che uno causa l'altro.
+- **litterbox giù (HTTP 500).** `runpod_pe.py` ha la modalità `RUNPOD_B64=1`: manda foto e voce dentro la richiesta come
+  data URI, senza caricarle fuori. Tenere il carico piccolo: voce 16 kHz mono, foto in jpg (~3 MB in tutto). Labiale A16 ok, 0,25 $.

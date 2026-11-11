@@ -1,0 +1,13 @@
+{
+  "composizione": "A16BOMBA",
+  "cartella_public": "a16bomba",
+  "valzer": 1,
+  "testo_voce": "attualita/A16-bomba/voce/testo-v1.txt",
+  "chiave": ["BOMBA", "SCUOLE", "SEIMILA", "MAIL", "ANDROPOV", "AEREI", "FRIGORIFERI", "CYBERSECURITY", "OPPORTUNITÀ", "CROWDSTRIKE", "RADDOPPIATE", "DICIASSETTE", "PREZZATA", "USCITA", "QUANDO"],
+  "tagli": [14.0, 24.0, 36.0, 46.0],
+  "enfasi": ["bomba", "seimila", "cinquanta", "opportunità", "prima", "diciassette", "ieri", "uscita", "quando"],
+  "riser": [26.0],
+  "clip_labiale": "attualita/A16-bomba/clip/C-parla.mp4",
+  "copertina": "CoverA16BOMBA",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}
