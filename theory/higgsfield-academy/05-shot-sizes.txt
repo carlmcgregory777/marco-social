@@ -1,0 +1,426 @@
+Today is all about Seedance 2.5 and
+getting AI video that looks and
+feels like real footage. Start with
+characters and a location, then bring
+them together in one cinematic scene.
+Direct the action, shape the camera
+movement, and bring emotion to every
+performance. Use your references to show
+the model what matters.
+Then describe the scene you want to
+create.
+And if the result isn't quite right,
+refine your prompt and try another
+take. Let's build the scene together.
+Hi, I'm Adil. If you've ever watched an AI
+video and thought, "How did they
+get it to do that?" That's what we're
+going to figure out together.
+Think of this as your first day on set.
+You're directing, I'll help you get your
+idea onto the screen.
+Open Cinema Studio and go back to the
+project we used in Lesson 4.
+Our characters, locations, and props are
+already here, so we can pick up
+right where we left off. First, create a
+new folder called Generations and
+open it. Here, we'll write prompts for
+video generations.
+Switch to Video, open the Model menu, and
+choose Seedance
+2.5. You've already used it in the
+previous lessons.
+Now, let's get to know it better.
+Let's bring in our biker from Lesson 4.
+We can drag his image straight into the
+prompt box and refer to it as Image
+1.
+Or, we can save it as an element.
+An element saves an asset under a name.
+A quick @ mention brings its saved
+references into the prompt, so we don't
+have to find and attach the same image for
+every generation.
+Click the three dots, then choose Create
+Element and Image Element.
+Set the category to Character and give it
+a simple name, Biker.
+The category adds the right prefix to the
+element ID automatically.
+Switch the category and you can see that
+prefix change.
+We'll keep Character and click Create.
+Back in Generations, type the @ sign and
+select Biker.
+I'll create elements for our other
+references the same way.
+Our friend, the bar interior, the bar
+entrance, and the
+suitcase. And now, we're ready to write
+the prompt.
+Now, it's your turn. Pause here and
+prepare four or five elements from
+Lesson 4 or the supplied references.
+Give each one a clear, different name.
+Type the @ sign to check the references.
+Come back to the lesson when you're done.
+With Seedance, you can bring a face, a
+place, a camera move, and a voice
+into the same generation. It works with
+text, images, video, and audio
+together. That's what multimodal means.
+The prompt is where you describe what
+happens and what's visible in plain
+language and give the model a guide on
+which reference represents which
+part. Seedance 2.5 can generate 4 to 30
+seconds of video with sound, either
+as one continuous shot or as a sequence of
+shots with cuts.
+It's called multi-shot. Seedance chooses
+the shot structure based on your
+prompt. For a single shot video, describe
+one continuous take.
+For multi-shot, describe each shot and
+where you want the cuts.
+Image references help you specify what
+things look like.
+Each character image gives us that
+person's face and clothes.
+The prop image gives us the object shape,
+color, and details.
+Our location image gives us the space,
+light, and color.
+That's why we spent time creating those
+assets in lesson 4 and why we're
+choosing a clear reference for our prop.
+You can combine up to 30 images, 10
+videos, and 10 audio files, 50
+references in total. In our experience, up
+to 12 images works
+best. For our first scene, we'll use 5
+images, 2 characters, 1
+prop, and 2 views of our location.
+And after that, we give every reference a
+clear job.
+Say which image defines each character,
+which defines the prop, which
+defines the location, and which clip is
+there for the camera movement.
+That's how the references and the prompt
+work together.
+We show sedance the details we care about,
+then describe what happens.
+We'll start with images and build from
+there.
+There's no single right way to do this.
+Sometimes I use several images of the same
+character from different angles
+or a separate reference just for the
+outfit.
+Start with this structure, then play with
+it until your results stay
+consistent. Time to write a prompt and put
+all of this to work.
+Before we write the prompt, let's go
+through the settings first.
+Aspect ratio sets the frame shape.
+I'm using 21 by 9 for a cinematic look.
+Resolution controls the video size, and
+duration is how many seconds sedance
+generates. We'll set that once we've
+planned the action.
+Turn audio on so sedance generates sound
+with the video.
+Now, picture the scene you want to make.
+What's happening in it? That's where our
+prompting begins.
+I want our biker to walk into the bar with
+the suitcase, find his friend,
+and sit down beside him. We'll build the
+prompt in three parts, scene
+context, references, and shots.
+Scene context is the main visible action
+across the whole clip in one or two
+sentences. Here's ours. Scene context.
+Biker enters a bar with a suitcase looking
+for his friend.
+They notice each other, and the biker
+walks over and sits next to him.
+Next, references. We've described what
+happens.
+Now we tell the model which image gives us
+each part of the scene.
+This first one is our biker.
+I want to keep his face, hair, and
+clothes, so I'll ask for him exactly as
+shown. References. The biker, 100% as
+shown in the reference image.
+His friend, 100% as shown in the reference
+image.
+He is seated on a stool on the side of the
+bar counter, directly in front of
+the beer mug shown in location reference.
+Now, the suitcase. Its image gives us the
+shape, color, and details.
+But we also need to say who carries it.
+It belongs to the biker, and he holds it
+in his left hand until he puts it
+on the counter. The suitcase, 100% as
+It belongs to the biker, he carries it in
+his left hand.
+This image gives us the bar, including its
+light, color, and the people in
+the background. I'll also keep the mug in
+place so our friend has the same
+seat throughout the scene.
+The bar interior, 100% as shown in the
+reference image.
+Use it for the light, color, location, and
+background people.
+The beer mug on the counter marks his
+friend's seat.
+Keep the mug in its reference position.
+The bar entrance, entrance of the same
+bar.
+Use it for the color and location, not for
+composition or framing.
+That's what I mean by giving each
+reference a job.
+If you only want someone's face, say that.
+Here, we're keeping the character's full
+appearance.
+All right, so how do we want to film it?
+Our scene, the shot size, controls how
+much we see.
+A wide shot shows the character and their
+surroundings.
+A close-up shows their expression.
+Download the shot size guide below this
+video for visual examples to use
+when you write your prompt.
+For the entrance, I want a medium close-up
+from a low angle with the camera
+rising to reveal his face.
+That upward camera move is called a jib
+shot.
+We'll give it the first five seconds.
+Shot one, zero to five seconds, medium
+close-up, low angle jib shot.
+Then we describe the action in order.
+Someone crosses in front of the camera,
+the biker enters with the case, and
+the camera rises as he looks for his
+friend.
+I'll keep the case in his left hand, just
+as we wrote in references.
+Now, I want to cut to the friend.
+We give that view a new shot number and a
+time range, five to eight seconds.
+A medium shot leaves room for his gesture.
+The camera stays still while he turns and
+raise a hand.
+Shot two, five to eight seconds.
+Keep the camera still at eye level.
+Show his friend from the waist up, from
+behind and slightly to one side.
+He sits at the counter in front of the
+beer mug.
+When he notices the biker, he turns
+halfway towards him and raises a hand in
+greeting. Back to the biker.
+A close-up catches his smile when he
+recognizes his friend before he leaves
+the frame towards the counter.
+Shot three, eight to eleven seconds.
+Close-up at eye level, a three-quarter
+view from the front.
+People pass around the biker and in front
+of the camera.
+The camera holds as he recognizes his
+friend and smiles.
+Then he exits from right to left.
+For the last shot, we're behind the
+counter, looking at both of them.
+The biker sits beside his friend and puts
+the case on the counter with his
+left hand. We can put his line right into
+the action.
+What's up? Then leave a little silence so
+the clip has room to end.
+Shot four, eleven to sixteen seconds.
+Film from behind the bar, looking straight
+at the characters at medium
+distance. The biker enters from the right
+and sits beside his friend, facing
+the camera. He places the suitcase on the
+counter with his left hand while
+saying, "What's up?" to his friend.
+He releases the handle and settles
+comfortably into his seat.
+Second of silence. I'll finish with a few
+details that apply across the
+whole clip. Our friend stays by the mug
+and the bar stays busy.
+I also want depth, something near the
+camera, the main action in the middle,
+and the room behind it. For composition,
+I'll ask for the rule of thirds,
+placing important subjects along the lines
+you get when you divide the frame
+into thirds, horizontally and vertically.
+For details, his friend stays seated on
+the customer side of the bar.
+The beer mug is directly in front of him.
+Keep that mug in the same place throughout
+the scene.
+Give each shot depth. Put something near
+the camera, something in the
+middle, and something at the back.
+Use the rule of thirds. Keep the bar busy
+and fun, like the reference.
+For sound, I want to hear the bar, his
+footsteps, and his clothes as he
+moves. If you've already written his
+dialogue in shot four, I'll leave music
+out. Natural bar ambience, footsteps, and
+clothing movement.
+No music. I always read it once from top
+to bottom.
+If I can picture the scene and I know who
+does what and who's holding the
+case, it's ready. Our last shot ends at 16
+seconds, so that's the duration
+we'll use for this generation.
+Alright, we've described the scene, let's
+see how it plays.
+Before we generate, match the duration to
+the timing in our prompt.
+16 seconds for us. If your last shot ends
+at 12, set 12.
+Check the aspect ratio and resolution we
+chose, keep audio on, and set the
+generation count to 1. Here's the credit
+cost for this take.
+Everything's set, let's generate.
+CDINs 2.5 also has a draft mode.
+It gives us a 480p preview, so we can
+check how the scene plays
+before spending credits on the final
+render.
+Then we can turn our chosen take into a
+1080p video.
+Draft mode is useful when you're testing
+prompts or trying out ideas.
+You can try different versions using fewer
+credits.
+Then upscale only the takes you like to
+1080p.
+We use this workflow for complex scenes,
+where it often takes a few attempts
+to get the result we want.
+I'll be generating in 1080p throughout the
+lesson, but you can follow along
+in CDINs Draft. Now it's your turn.
+Pause here and write a simple scene with
+your two characters, one prop, and
+one location. Use the same three parts,
+give each reference a clear role,
+and name each actor in each shot.
+Then generate one take with your elements.
+Okay, our scene is ready. Let's check it
+out.
+(footsteps)
+What's up? Okay, yeah, that's pretty close
+to what I had in
+mind. Let's take a closer look.
+So after every generation, I ask three
+simple questions.
+Who did what? Is it the right guy each
+time?
+Do I still recognize both of them, the
+case and the bar?
+And did the camera show me what I asked
+for?
+Spot where the problem happened, and fix
+this one thing.
+The case is standing up here.
+I want it lying flat on the counter, ready
+for him to open it.
+That's the part I'd change.
+Keep this take. We might use part of it
+later in the edit.
+Watch the whole clip with sound.
+Choose one thing you want to change.
+If you already like the result, choose a
+variation you'd like to try.
+Keep your prompt and your first take, then
+come back.
+We'll use them to make the next decision.
+For our scene, I want the case flat on the
+counter and a smaller reaction
+when he spots his friend. I'm making two
+small changes in one go here.
+When you're starting out, change one thing
+at a time so you can see exactly
+what it did. In scene context, I'll add
+that he lays the case flat as he
+sits down. In shot three, I'd like a small
+nod instead of the smile.
+And in shot four, I'll be specific about
+the position.
+He lays the closed suitcase flat on the
+counter in front of him with his
+left hand, lit up, and handled toward him,
+saying, "What's up?" to his
+friend. With an action, I write it in
+order.
+What happens first, what happens next?
+With a camera move, I say where it starts
+and what it follows.
+If a character, the prop, or the location
+looks wrong, I go back to its
+reference and to what I asked "see dance"
+to take from it.
+And if the unwanted detail is sitting in
+the image itself, I fix the asset
+before I use it again. When the wrong guy
+does the action, it's almost
+always my wording. If I can't tell who he
+is in a sentence, neither can "see
+dance." With a prop, I also check where
+the prompt puts it, who's supposed
+to hold it, and whether that stays the
+same through the whole scene.
+Then I read the rest of the prompt one
+more time.
+Let's see what that changes.
+Hey! Hey!
+What's up? Yeah, that's better.
+The case is flat on the counter now.
+This is a new take, so I watch the whole
+scene again, not just the fix.
+I want the change I asked for, and I want
+everything I liked in the first
+version to still be there.
+I'm keeping the second take.
+The case is right in front of him, ready
+for the next part of the scene.
+Now, try the change you picked earlier.
+Pause here, update the relevant
+instruction, and generate one new take.
+Compare it with your first version, and
+choose the one you want to keep.
+You've now taken a scene from references
+to a finished take.
+Describe, generate, review, and refine.
+That's the workflow.
+Your homework's those two takes, before
+and after one change, with the
+prompts. Upload them under this lesson.
+Next time, I'll use my phone video for the
+camera move, and my own voice for
+the friend. That's it for this lesson.
+Keep your two takes and prompts, and I'll
+see you in the next one.

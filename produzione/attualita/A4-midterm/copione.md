@@ -19,6 +19,21 @@
 | Ned Davis Research: quando il partito del presidente ha perso la Camera, l'S&P 500 è salito fino a fine anno in 5 casi su 8 dal 1930. | [AOL/Reuters](https://www.aol.com/articles/us-stock-futures-tumble-democrats-045740000.html) |
 | DA RICONTROLLARE prima di pubblicare: apertura di Wall Street di oggi (15:30 ora italiana). Se alle 12:30 non c'è ancora, il video parla solo dei futures della notte. | — |
 
+## v6 = testo della voce finale (04/11, Marco: «ancora più sciolto», voce Julian, stabilità bassa)
+Testo con i tag di ElevenLabs v4, anche in voce/testo-v6.txt.
+
+[casual] Ragazzi... Trump ha perso il Congresso. Stanotte Wall Street giù. E io? [laughs] Io sono contentissimo, ve lo giuro. No vabbè, cioè — in Italia nessuno te lo spiega bene, quindi stammi a sentire un attimo, eh, che è più facile di quanto sembra. E la politica... non c'entra un tubo.
+Allora. Ieri in America c'erano le midterm, le elezioni di metà mandato. Occhio: non si vota il presidente, eh. Si vota il Congresso, cioè quelli che le leggi le scrivono e le approvano. Due camere: Camera e Senato. E stanotte i democratici... se le sono prese tutte e due.
+Quindi? Presidente repubblicano, Congresso democratico. Ognuno tira dalla sua parte. Tipo marito e moglie che non si parlano, hai presente?
+E il mercato stanotte se l'è fatta sotto. [sighs] Il Nasdaq, quello delle aziende tech, meno due per cento. Tokyo meno tre. E sai perché? Perché Trump voleva continuare a pompare soldi nell'economia... e adesso, col Congresso contro, ciao. Non può più. In più i democratici vogliono stare addosso alle big tech e all'intelligenza artificiale.
+Brutta notizia, no? [excited] E invece no. Adesso arriva la parte che nessuno ti dice.
+Quando presidente e Congresso si fanno la guerra, per due anni non passa quasi nessuna legge grossa. Zero riforme a sorpresa, zero tasse nuove dalla sera alla mattina. E il mercato, ragazzi, una cosa la ama più di tutto: sapere cosa succede domani.
+E non lo dico io, eh. Lo dice la storia. Ti ricordi Biden? Fino al duemilaventidue aveva tutto in mano: presidenza, Camera, Senato. Poi alle midterm perde la Camera. Due anni bloccati. E la Borsa americana che fa? [excited] Duemilaventitré: più ventiquattro per cento. Duemilaventiquattro: più ventitré. Cioè, se avevi messo diecimila dollari sull'S&P cinquecento... te ne ritrovavi più di quindicimila. Così, eh.
+E non è un caso. Dal millenovecentoquarantasei a oggi, un anno dopo queste elezioni, la Borsa americana è salita quasi ogni volta.
+Ora, occhio: non vuol dire che domani sale. Le prossime settimane possono essere un casino. Ma una notte di paura e due anni di calma... sono due cose diverse.
+Quindi stanotte, mentre tutti litigavano su chi ha vinto, io guardavo un'altra cosa: chi da oggi non può più fare niente. [laughs] Ragazzi, il tifo lasciatelo allo stadio.
+Ah — e non è un consiglio finanziario, eh. È come la vedo io.
+
 ## v5 = v4 + leva e gancio dal reel di Filippo (04/11, Marco: «le questioni vanno spiegate, sviscerate, e va intrattenuto il pubblico come fanno Jashi e Cosentino»)
 Tono di Jashi: parla a voce, domande, «ragazzi», «allora», spiega tutto come al bar. Struttura per tenere l'attenzione: gancio con contraddizione + loop aperto («ora ti spiego perché») → spiegazione da zero (cosa sono le midterm) → il mercato ha paura e perché → ri-aggancio a metà («ecco la parte che nessuno ti dice») → la prova con i numeri e un esempio in euro → concessione → chiusura umana. Niente «Priced in.». ~1:50 dopo ×1,1 (sotto i 3 minuti).
 

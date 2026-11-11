@@ -1,0 +1,509 @@
+// Attualità di C #6 «Vi stanno vendendo un contratto che non si può eseguire» (07/11/2026).
+// FORMATO: C apre → card Oracle IN ALTO appare brevemente (0.9-5s) → C full-screen con pannelli + sottotitoli sempre.
+// Immagine: A4-midterm/set/C-microfono.png. Labiale: InfiniteTalk con voce.wav.
+// Tempi in secondi della voce (attualita/A6-oracle/montaggio/voce.wav, pause tagliate, ×1,1).
+import React from "react";
+import { AbsoluteFill, Audio, Img, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { ACCENTO, ANTON, INTER, MACCHINA, MANO, MONO, molla, NERO, ROSSO, Sticker, VERDE, VIOLA } from "./FormatC";
+import { CHIAVE_A6ORACLE as CHIAVE_A6, DURATA_A6ORACLE_S as DURATA_A6_S, PAROLE_A6ORACLE as PAROLE_A6 } from "./a6oracle-parole";
+
+const CARTELLA = "a6oracle";
+const F = (s: number) => Math.round(s * 30);
+
+const ROSSO_R = "#e0494f";
+const GIALLO = "#ffd84d";
+const ARANCIO = "#ff6a00";
+const FUCSIA = "#fa005e";
+
+// ---------- mattoni (uguali ad A5/A7) ----------
+export const Segno: React.FC<{ d: number; tipo: "cerchio" | "x" | "sotto" | "freccia"; x: number; y: number; w: number; h: number; col?: string; spessore?: number }> = ({ d, tipo, x, y, w, h, col = GIALLO, spessore = 9 }) => {
+  const f = useCurrentFrame();
+  if (f < d) return null;
+  const p = (a: number) => interpolate(f, [d + a, d + a + 11], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const tracce: Record<string, string[]> = {
+    cerchio: ["M 55 6 C 88 4 99 30 97 52 C 95 80 70 97 45 95 C 17 93 3 72 4 50 C 5 24 26 5 62 9"],
+    x: ["M 8 8 L 92 92", "M 92 8 L 8 92"],
+    sotto: ["M 2 62 Q 28 38 50 55 T 98 42"],
+    freccia: ["M 4 50 Q 50 38 90 50", "M 68 28 L 92 50 L 68 72"],
+  };
+  return (
+    <svg style={{ position: "absolute", left: x, top: y, width: w, height: h, overflow: "visible", filter: "drop-shadow(0 4px 10px #000a)" }} viewBox="0 0 100 100" preserveAspectRatio="none">
+      {tracce[tipo].map((t, i) => (
+        <path key={i} d={t} pathLength={1} fill="none" stroke={col} strokeWidth={spessore} strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" strokeDasharray={1} strokeDashoffset={1 - p(i * 6)} />
+      ))}
+    </svg>
+  );
+};
+
+export const Box: React.FC<{ d: number; x: number; y: number; w: number; h: number; children: React.ReactNode; bg?: string; bordo?: string; fino?: number }> = ({ d, x, y, w, h, children, bg = "#15122a", bordo = ACCENTO, fino }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (f < d || (fino !== undefined && f > fino)) return null;
+  const a = molla(f, fps, d, 13, 220);
+  return (
+    <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 24, background: bg, border: `4px solid ${bordo}`, boxShadow: `0 20px 60px #000c, 0 0 40px ${bordo}44`, transform: `scale(${0.6 + 0.4 * a}) translateY(${(1 - a) * 50}px)`, opacity: Math.min(1, a * 1.6), display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", color: "#fff", fontFamily: ANTON, overflow: "hidden" }}>
+      {children}
+    </div>
+  );
+};
+
+export const Mano: React.FC<{ d: number; x: number; y: number; children: React.ReactNode; size?: number; col?: string; rot?: number }> = ({ d, x, y, children, size = 62, col = GIALLO, rot = -3 }) => {
+  const f = useCurrentFrame();
+  const w = interpolate(f, [d, d + 16], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return <div style={{ position: "absolute", left: x, top: y, fontFamily: MANO, fontWeight: 700, fontSize: size, color: col, transform: `rotate(${rot}deg)`, clipPath: `inset(-20% ${100 - w}% -20% 0)`, whiteSpace: "nowrap", textShadow: "0 4px 16px #000, 0 0 2px #000" }}>{children}</div>;
+};
+
+export const Testata: React.FC<{ d?: number; children: React.ReactNode; y?: number }> = ({ d = 0, children, y = 350 }) => {
+  const f = useCurrentFrame();
+  const o = interpolate(f, [d, d + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return <div style={{ position: "absolute", left: 0, right: 0, top: y, textAlign: "center", fontFamily: MONO, fontSize: 30, letterSpacing: 5, color: ACCENTO, opacity: o }}>{children}</div>;
+};
+
+export const Tra: React.FC<{ a: number; b?: number; children: React.ReactNode }> = ({ a, b, children }) => {
+  const f = useCurrentFrame();
+  return f >= a && (b === undefined || f < b) ? <>{children}</> : null;
+};
+
+const SfondoPannello: React.FC = () => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = molla(f, fps, 0, 14, 240);
+  return (
+    <div style={{ position: "absolute", left: 30, right: 30, top: 325, height: 620, borderRadius: 40, overflow: "hidden", background: "#0b0a10e0", border: `3px solid ${ACCENTO}66`, boxShadow: "0 30px 80px #000c", transform: `translateY(${(1 - a) * 80}px)`, opacity: a }}>
+      <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(#ffffff0a 2px, transparent 2px), linear-gradient(90deg, #ffffff0a 2px, transparent 2px)", backgroundSize: "60px 60px" }} />
+      <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at 50% 60%, ${VIOLA}33, transparent 70%)` }} />
+    </div>
+  );
+};
+
+const Spunta: React.FC<{ d: number; x: number; y: number; testo: string; via?: number }> = ({ d, x, y, testo, via }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (f < d) return null;
+  const a = molla(f, fps, d, 11, 260);
+  const tolto = via !== undefined && f >= via;
+  return (
+    <div style={{ position: "absolute", left: x, top: y, transform: `scale(${a})`, fontFamily: ANTON, fontSize: 58, color: tolto ? ROSSO : "#fff", display: "flex", gap: 16, alignItems: "center" }}>
+      <span style={{ color: tolto ? ROSSO : VERDE }}>{tolto ? "✗" : "✓"}</span>{testo}
+    </div>
+  );
+};
+
+// ---------- Card Oracle: PICCOLA, IN ALTO, appare 0.9-5s poi svanisce ----------
+const CardOracleTop: React.FC = () => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = f / fps;
+  // appare 0.9s, sta fino a ~5s, poi fade out
+  const a = molla(f, fps, F(0.9), 10, 200);
+  const fade = interpolate(f, [F(4.5), F(5.5)], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // grafico che si disegna
+  const tGraf = interpolate(f, [F(1.5), F(4.5)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const grezzi = Array.from({ length: 60 }, (_, i) => {
+    const x = (i / 59) * 360;
+    const base = 120 + i * 1.8;
+    const rumore = Math.sin(i * 1.7) * 5 + Math.sin(i * 0.6) * 3;
+    const rimbalzo = i > 45 ? 50 * Math.sin(((i - 45) / 15) * Math.PI * 0.9) : 0;
+    return [x, Math.max(8, 130 - base + rumore + rimbalzo)];
+  });
+  const visibili = grezzi.slice(0, Math.max(2, Math.round(60 * tGraf)));
+  const d = visibili.map((p, i) => `${i ? "L" : "M"} ${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(" ");
+
+  const CARD_W = 380;
+  return (
+    <div style={{ position: "absolute", left: (1080 - CARD_W) / 2, top: 150, width: CARD_W, transform: `scale(${a})`, opacity: a * fade, borderRadius: 18, overflow: "hidden", background: "#000", boxShadow: "0 20px 60px #000f, 0 0 0 4px #ffffff14", zIndex: 10 }}>
+      {/* barra stato telefono */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 16px 4px", fontFamily: INTER, fontWeight: 700, fontSize: 17, color: "#fff" }}>
+        <span>10:41 <span style={{ opacity: 0.7, fontSize: 13 }}>⟳</span></span>
+        <span style={{ letterSpacing: 2, opacity: 0.8, fontSize: 13 }}>⋯</span>
+      </div>
+      {/* nav */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "2px 12px 8px" }}>
+        <span style={{ width: 26, height: 26, borderRadius: 13, background: "#1d1d1f", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 15 }}>‹</span>
+        <span style={{ width: 26, height: 26, borderRadius: 6, background: ARANCIO, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12 }}>⇪</span>
+      </div>
+      <div style={{ padding: "0 14px 12px" }}>
+        <div style={{ fontFamily: INTER, fontSize: 10, letterSpacing: 2, color: "#8e8e93" }}>ORCL</div>
+        <div style={{ fontFamily: INTER, fontWeight: 400, fontSize: 22, color: "#fff", marginTop: 2 }}>Oracle</div>
+        <div style={{ fontFamily: INTER, fontWeight: 400, fontSize: 22, color: "#fff", display: "flex", alignItems: "center", gap: 6, marginTop: 1 }}>
+          $123.78<span style={{ fontSize: 12, opacity: 0.6 }}>◎</span>
+        </div>
+        <div style={{ fontFamily: INTER, fontWeight: 600, fontSize: 11, color: ARANCIO, marginTop: 3 }}>
+          ▼ $73.69 (37,32%) <span style={{ color: "#8e8e93", fontWeight: 400 }}>YTD</span>
+        </div>
+        <div style={{ fontFamily: INTER, fontSize: 11, color: "#8e8e93", marginTop: 6 }}>Contratto: 7 mld · 100k chip</div>
+        <svg width="100%" height="90" viewBox="0 0 360 130" preserveAspectRatio="none" style={{ display: "block", marginTop: 6 }}>
+          <path d={d} fill="none" stroke={ARANCIO} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+// ---------- pannelli (tempi assoluti in secondi della voce intera) ----------
+type P = { base: number };
+const rel = (base: number) => (s: number) => F(s) - base;
+
+// P1 (19.84-26.75) il contratto più grande di sempre
+const P1Contratto: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(19.84)}>IL CONTRATTO PIÙ GRANDE DI SEMPRE</Testata>
+      <Box d={r(20.76)} x={90} y={430} w={900} h={170} bordo={VERDE}>
+        <div style={{ fontSize: 76, color: VERDE, lineHeight: 1 }}>100.000 CHIP</div>
+      </Box>
+      <Box d={r(20.76)} x={90} y={620} w={900} h={170} bordo={VERDE}>
+        <div style={{ fontSize: 76, color: VERDE, lineHeight: 1 }}>7 MILIARDI</div>
+      </Box>
+      <Mano d={r(25.03)} x={170} y={820} size={58} col="#fff">tutti contenti, tutti a comprare</Mano>
+    </>
+  );
+};
+
+// P2 (26.75-32.91) ma i chip non passano
+const P2Chip: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(26.75)} x={110} y={450} w={860} h={180} bordo={ROSSO_R} bg="#3a1418">
+        <div style={{ fontSize: 58, lineHeight: 1.1 }}>QUEI CHIP<br />NON PASSANO DI LÌ</div>
+      </Box>
+      <Segno d={r(27.6)} tipo="x" x={150} y={465} w={780} h={150} col={ROSSO} spessore={12} />
+      <Mano d={r(29.12)} x={140} y={690} size={56} col="#fff">da una parte gli Stati Uniti…</Mano>
+    </>
+  );
+};
+
+// P3 (32.91-39.94) i due blocchi
+const P3Blocchi: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(32.91)} x={70} y={430} w={450} h={220} bordo={ARANCIO} bg="#3a2414">
+        <div style={{ fontSize: 56, lineHeight: 1.05 }}>USA<br />NON VENDONO</div>
+      </Box>
+      <Box d={r(32.91)} x={560} y={430} w={450} h={220} bordo={ROSSO_R} bg="#3a1418">
+        <div style={{ fontSize: 56, lineHeight: 1.05 }}>CINA<br />NON COMPRA</div>
+      </Box>
+      <Tra a={r(37.59)}>
+        <Box d={r(37.59)} x={110} y={700} w={860} h={170} bordo={ROSSO}>
+          <div style={{ fontSize: 62, color: ROSSO, lineHeight: 1 }}>FIRMATO ≠ ESEGUIBILE</div>
+        </Box>
+        <Segno d={r(38.2)} tipo="cerchio" x={80} y={675} w={920} h={220} col={ROSSO} />
+      </Tra>
+    </>
+  );
+};
+
+// P4 (39.94-46.91) Nvidia
+const P4Nvidia: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(39.94)}>E NON È UN CASO ISOLATO</Testata>
+      <Box d={r(41.36)} x={90} y={440} w={900} h={180} bordo="#76b900">
+        <div style={{ fontFamily: MONO, fontSize: 26, color: "#76b900" }}>NVIDIA, AI VENDITORI</div>
+        <div style={{ fontSize: 72, lineHeight: 1 }}>51% NON CINESE</div>
+      </Box>
+      <Segno d={r(42.4)} tipo="cerchio" x={60} y={415} w={960} h={230} col="#76b900" />
+      <Mano d={r(44.2)} x={180} y={680} size={58} col="#fff">il cinquantuno per cento del business</Mano>
+    </>
+  );
+};
+
+// P5 (46.91-54.42) regola o paura
+const P5Paura: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Tra a={0} b={r(50.52)}>
+        <Box d={r(46.91)} x={140} y={440} w={800} h={170} bordo="#ffffff44">
+          <div style={{ fontSize: 60, lineHeight: 1 }}>DETTO A VOCE</div>
+        </Box>
+        <Box d={r(48.05)} x={140} y={640} w={800} h={170} bordo="#ffffff44">
+          <div style={{ fontSize: 60, lineHeight: 1 }}>NON PER ISCRITTO</div>
+        </Box>
+      </Tra>
+      <Tra a={r(50.52)}>
+        <Box d={r(50.52)} x={90} y={430} w={900} h={170} bordo={ROSSO_R} bg="#3a1418">
+          <div style={{ fontSize: 62, color: ROSSO, lineHeight: 1 }}>NON È UNA REGOLA<br />È UNA PAURA</div>
+        </Box>
+        <Segno d={r(51.1)} tipo="x" x={130} y={445} w={820} h={140} col={ROSSO} spessore={12} />
+        <Mano d={r(53.39)} x={200} y={680} size={58}>ma nei prezzi sì</Mano>
+      </Tra>
+    </>
+  );
+};
+
+// P6 (54.42-63.26) chi ve l'ha raccontato
+const P6Chi: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(54.42)}>LA DOMANDA È UNA SOLA</Testata>
+      <Box d={r(56.01)} x={90} y={470} w={900} h={200} bordo={ACCENTO}>
+        <div style={{ fontSize: 52, lineHeight: 1.12 }}>CHI VE L'HA RACCONTATO,<br />LO SAPEVA O NO?</div>
+      </Box>
+      <Segno d={r(57.0)} tipo="sotto" x={130} y={690} w={820} h={40} />
+      <Mano d={r(60.73)} x={120} y={780} size={54} col="#fff">il contratto c'era, i giornali l'hanno scritto</Mano>
+    </>
+  );
+};
+
+// P7 (63.26-67.66) il confine c'era prima
+const P7Confine: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Sticker d={r(63.26)} top={400} size={90} bg={VIOLA} rot={-3}>Il confine c'era prima</Sticker>
+      <Tra a={r(65.64)}>
+        <Box d={r(65.64)} x={80} y={580} w={440} h={170} bordo="#ffffff44">
+          <div style={{ fontFamily: MONO, fontSize: 24, color: "#ffffff99" }}>chi guarda i numeri</div>
+          <div style={{ fontSize: 58 }}>7 MILIARDI</div>
+        </Box>
+        <Box d={r(67.66)} x={560} y={580} w={440} h={170} bordo={ROSSO_R}>
+          <div style={{ fontFamily: MONO, fontSize: 24, color: "#ffffff99" }}>chi guarda le regole</div>
+          <div style={{ fontSize: 58, color: ROSSO }}>NON INCASSABILI</div>
+        </Box>
+      </Tra>
+    </>
+  );
+};
+
+// P8 (67.66-75.06) il bot e il dato
+const P8Bot: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(67.66)}>LA RICONOSCO AL VOLO</Testata>
+      <Box d={r(71.31)} x={90} y={470} w={900} h={180} bordo={ARANCIO}>
+        <div style={{ fontSize: 56, lineHeight: 1.1 }}>UN BOT COMPRA<br />SU UN DATO</div>
+      </Box>
+      <Tra a={r(75.06)}>
+        <Box d={r(75.06)} x={200} y={690} w={680} h={150} bordo={ROSSO_R}>
+          <div style={{ fontSize: 60, color: ROSSO }}>CHE NON SI ESEGUE</div>
+        </Box>
+      </Tra>
+    </>
+  );
+};
+
+// P9 (75.06-78.66) segnale sì, prezzo no
+const P9Segnale: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(75.06)} x={90} y={430} w={900} h={160} bordo={VERDE}>
+        <div style={{ fontSize: 68, color: VERDE, lineHeight: 1 }}>IL SEGNALE C'È</div>
+      </Box>
+      <Box d={r(75.06)} x={90} y={620} w={900} h={160} bordo={ROSSO_R}>
+        <div style={{ fontSize: 68, color: ROSSO, lineHeight: 1 }}>IL PREZZO NO</div>
+      </Box>
+      <Tra a={r(77.0)}>
+        <Mano d={r(77.0)} x={130} y={820} size={66}>vince chi arriva primo</Mano>
+      </Tra>
+    </>
+  );
+};
+
+// P10 (78.66-83.45) lui legge i numeri, tu i titoli
+const P10Titoli: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(78.66)}>LA PARTE CHE TI RIGUARDA</Testata>
+      <Box d={r(80.4)} x={80} y={430} w={920} h={170} bordo="#ffffff44">
+        <div style={{ fontSize: 50, lineHeight: 1.1 }}>METÀ DELLA POSIZIONE<br />GIÀ CHIUSA A GIUGNO</div>
+      </Box>
+      <Tra a={r(83.45)}>
+        <Box d={r(83.45)} x={80} y={650} w={920} h={180} bordo={ACCENTO}>
+          <div style={{ fontSize: 52, lineHeight: 1.1 }}>LUI I NUMERI LI LEGGE<br />TU LEGGI I TITOLI</div>
+        </Box>
+        <Segno d={r(84.2)} tipo="sotto" x={120} y={850} w={840} h={40} />
+      </Tra>
+    </>
+  );
+};
+
+// P11 (83.45-94.74) dove, non quanto
+const P11Dove: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(83.45)} x={90} y={440} w={900} h={170} bordo="#ffffff44">
+        <div style={{ fontSize: 52 }}>NON «QUANTO HA FATTURATO»</div>
+      </Box>
+      <Box d={r(92.15)} x={90} y={650} w={900} h={190} bordo={ACCENTO}>
+        <div style={{ fontSize: 84, lineHeight: 1 }}>DOV'E</div>
+      </Box>
+      <Segno d={r(92.8)} tipo="cerchio" x={60} y={625} w={960} h={240} />
+    </>
+  );
+};
+
+// P12 (94.74-114.24) la favola con i tuoi soldi
+const P12Favola: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(94.74)} x={80} y={420} w={920} h={180} bordo="#ffffff44">
+        <div style={{ fontSize: 50, lineHeight: 1.1 }}>FIRMATO E ESEGUIBILE<br />SONO DUE COSE DIVERSE</div>
+      </Box>
+      <Box d={r(98.93)} x={110} y={650} w={860} h={170} bordo={ROSSO_R} bg="#3a1418">
+        <div style={{ fontSize: 54, color: ROSSO, lineHeight: 1.1 }}>CI COSTRUISCONO<br />UNA FAVOLA</div>
+      </Box>
+      <Mano d={r(112.94)} x={230} y={860} size={68} col="#fff">con i tuoi soldi</Mano>
+    </>
+  );
+};
+
+const PANNELLI: { a: number; b: number; el: React.FC<P> }[] = [
+  { a: 19.84, b: 26.75, el: P1Contratto },
+  { a: 26.75, b: 32.91, el: P2Chip },
+  { a: 32.91, b: 39.94, el: P3Blocchi },
+  { a: 39.94, b: 46.91, el: P4Nvidia },
+  { a: 46.91, b: 54.42, el: P5Paura },
+  { a: 54.42, b: 63.26, el: P6Chi },
+  { a: 63.26, b: 67.66, el: P7Confine },
+  { a: 67.66, b: 75.06, el: P8Bot },
+  { a: 75.06, b: 78.66, el: P9Segnale },
+  { a: 78.66, b: 83.45, el: P10Titoli },
+  { a: 83.45, b: 94.74, el: P11Dove },
+  { a: 94.74, b: 114.24, el: P12Favola },
+];
+
+export const DURATA_A6 = F(DURATA_A6_S);
+const SCHEDA_Y = 690;
+
+// C che parla: jump cut a ogni frase
+const CParla: React.FC<{ off?: number }> = ({ off = 0 }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = off + f / fps;
+  const n = PAROLE_A6.filter((p, i) => (i === 0 || PAROLE_A6[i - 1][2] !== p[2]) && p[0] <= t).length;
+  const stretto = n % 2 === 0 ? 0.16 : 0;
+  const s = 1.02 + stretto + 0.02 * Math.sin(f / 90);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <OffthreadVideo src={staticFile(`${CARTELLA}/C-parla.mp4`)} muted startFrom={F(off)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s})`, transformOrigin: "50% 32%" }} />
+    </AbsoluteFill>
+  );
+};
+
+// Sottotitoli stile Jashi: 3 parole, parola chiave in fucsia — SEMPRE VISIBILI da quando riparte C (7.9s)
+const Sottotitoli: React.FC = () => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = f / fps;
+  const FONTE_B = 7.9; // quando riparte C dopo la card
+  if (t < FONTE_B) return null;
+  const viste = PAROLE_A6.filter(([a]) => t >= a);
+  if (!viste.length) return null;
+  const ult = viste[viste.length - 1];
+  const gruppo = PAROLE_A6.filter((p) => p[2] === ult[2]);
+  const i = gruppo.indexOf(ult);
+  const blocco = gruppo.slice(Math.floor(i / 3) * 3, Math.floor(i / 3) * 3 + 3);
+  const a = molla(f, fps, F(blocco[0][0]), 10, 300);
+  return (
+    <div key={`s${blocco[0][0]}`} style={{ position: "absolute", left: 40, right: 40, top: 150, textAlign: "center", transform: `scale(${0.92 + 0.08 * a})`, opacity: Math.min(1, a * 1.6) }}>
+      {blocco.map(([s0, p], k) => {
+        const detta = t >= s0;
+        const chiave = CHIAVE_A6.test(p.toUpperCase());
+        return (
+          <span key={k} style={{
+            display: "inline-block", margin: "0 7px 10px",
+            fontFamily: INTER, fontWeight: 900, fontSize: 62, lineHeight: 1.1,
+            color: "#fff", textTransform: "uppercase", letterSpacing: -1,
+            WebkitTextStroke: chiave ? "0" : "6px #000",
+            paintOrder: "stroke fill",
+            background: chiave ? FUCSIA : "transparent",
+            padding: chiave ? "4px 20px" : 0, borderRadius: chiave ? 8 : 0,
+            opacity: detta ? 1 : 0,
+          }}>{p}</span>
+        );
+      })}
+    </div>
+  );
+};
+
+const Grana6: React.FC = () => (
+  <AbsoluteFill style={{ pointerEvents: "none", background: "radial-gradient(ellipse at 50% 40%, transparent 60%, #000a 100%)" }} />
+);
+const Barra6: React.FC = () => {
+  const f = useCurrentFrame();
+  return <div style={{ position: "absolute", left: 0, bottom: 0, height: 8, width: `${(f / DURATA_A6) * 100}%`, background: `linear-gradient(90deg,${VIOLA},${ACCENTO})` }} />;
+};
+const Lampo: React.FC = () => {
+  const f = useCurrentFrame();
+  return <AbsoluteFill style={{ backgroundColor: "#fff", opacity: interpolate(f, [0, 3], [0.35, 0], { extrapolateRight: "clamp" }), pointerEvents: "none" }} />;
+};
+
+// Tempi
+const FONTE_A = 0.9;       // fine intro C («Guarda questo»)
+const CARD_DUR = 4.5;      // card Oracle 0.9 → 5.4s
+const FONTE_B = FONTE_A + CARD_DUR; // 5.4s: riparte C, iniziano pannelli/sottotitoli
+
+export const A6ORACLE: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: NERO, fontFamily: INTER }}>
+    {/* C full-screen SEMPRE */}
+    <CParla off={0} />
+
+    {/* 0-0.9: C apre "Guarda questo" */}
+    <Sequence from={0} durationInFrames={F(FONTE_A)}>
+      <Lampo />
+      <Sticker d={F(0.3)} top={1420} size={92} bg={ROSSO} rot={-3}>GUARDA QUESTO</Sticker>
+    </Sequence>
+
+    {/* 0.9-5.4: Card Oracle IN ALTO, piccola, poi svanisce */}
+    <Sequence from={F(FONTE_A)} durationInFrames={F(CARD_DUR)}>
+      <CardOracleTop />
+    </Sequence>
+
+    {/* 5.4-fine: pannelli + sottotitoli */}
+    {PANNELLI.map((p, i) => (
+      <Sequence key={i} from={F(p.a)} durationInFrames={F(p.b) - F(p.a)}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: SCHEDA_Y, height: 1080 }}>
+          <p.el base={F(p.a)} />
+        </div>
+        <Lampo />
+      </Sequence>
+    ))}
+
+    <Sottotitoli />
+    <div style={{ position: "absolute", left: 50, top: 70, fontFamily: MONO, fontSize: 26, color: "#ffffffbb", letterSpacing: 3, textShadow: "0 2px 8px #000" }}>ATTUALITÀ DI C · #6</div>
+    <Grana6 />
+    <Barra6 />
+
+    {/* AUDIO: voce sempre, musica/sfx da 5.4s */}
+    <Audio src={staticFile(`${CARTELLA}/voce.wav`)} volume={1} />
+    <Sequence from={F(FONTE_B)}>
+      <Audio src={staticFile(`${CARTELLA}/musica.wav`)} volume={0.06} />
+      <Audio src={staticFile(`${CARTELLA}/sfx.wav`)} volume={0.35} />
+    </Sequence>
+  </AbsoluteFill>
+);
+
+export const CoverA6ORACLE: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: NERO }}>
+    <Img src={staticFile(`${CARTELLA}/cover-frame.png`)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%" }} />
+    <AbsoluteFill style={{ background: "linear-gradient(180deg, #000000cc 0%, transparent 30%, transparent 55%, #000000ee 100%)" }} />
+    <div style={{ position: "absolute", left: 60, right: 60, top: 1080, fontFamily: ANTON, fontSize: 116, lineHeight: 1.18, color: "#fff", textTransform: "uppercase", textShadow: "0 8px 30px #000" }}>
+      Vi vendono<br />una <span style={{ background: ROSSO, padding: "0 18px", borderRadius: 14, lineHeight: 1.0, display: "inline-block" }}>favola</span>
+    </div>
+    <div style={{ position: "absolute", left: 60, right: 60, top: 1440, fontFamily: MACCHINA, fontSize: 44, lineHeight: 1.2, color: GIALLO, textTransform: "uppercase" }}>firmato non vuol dire<br />eseguibile</div>
+    <div style={{ position: "absolute", left: 60, top: 300, fontFamily: MONO, fontSize: 34, color: "#ffffffcc", letterSpacing: 4 }}>ATTUALITÀ DI C · #6</div>
+  </AbsoluteFill>
+);

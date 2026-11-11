@@ -1,0 +1,383 @@
+// Attualità di C #8 «Il mercato è crollato. E io ieri non l'ho guardato.» (06/11/2026).
+// FORMATO A5: C a tutto schermo + pannelli con grafiche sul petto, parole giganti sopra la testa.
+// Tono: accusa — il bersaglio è chi vende la paura, non chi ha paura.
+// Grafica centrale: grafico S&P 500 dal 2013 (disegnato, da sostituire con dati veri).
+import React from "react";
+import { AbsoluteFill, Audio, Img, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { ACCENTO, ANTON, INTER, MACCHINA, MANO, MONO, molla, NERO, ROSSO, Sticker, VERDE, VIOLA } from "./FormatC";
+import { CHIAVE_A8MERCATO as CHIAVE_A8, DURATA_A8MERCATO_S as DURATA_A8_S, PAROLE_A8MERCATO as PAROLE_A8 } from "./a8mercato-parole";
+
+const CARTELLA = "a8mercato";
+const F = (s: number) => Math.round(s * 30);
+
+const ROSSO_R = "#e0494f";
+const VERDE_V = "#22c55e";
+const GIALLO = "#ffd84d";
+
+export const Segno: React.FC<{ d: number; tipo: "cerchio" | "x" | "sotto" | "freccia"; x: number; y: number; w: number; h: number; col?: string; spessore?: number }> = ({ d, tipo, x, y, w, h, col = GIALLO, spessore = 9 }) => {
+  const f = useCurrentFrame();
+  if (f < d) return null;
+  const p = (a: number) => interpolate(f, [d + a, d + a + 11], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const tracce: Record<string, string[]> = {
+    cerchio: ["M 55 6 C 88 4 99 30 97 52 C 95 80 70 97 45 95 C 17 93 3 72 4 50 C 5 24 26 5 62 9"],
+    x: ["M 8 8 L 92 92", "M 92 8 L 8 92"],
+    sotto: ["M 2 62 Q 28 38 50 55 T 98 42"],
+    freccia: ["M 4 50 Q 50 38 90 50", "M 68 28 L 92 50 L 68 72"],
+  };
+  return (
+    <svg style={{ position: "absolute", left: x, top: y, width: w, height: h, overflow: "visible", filter: "drop-shadow(0 4px 10px #000a)" }} viewBox="0 0 100 100" preserveAspectRatio="none">
+      {tracce[tipo].map((t, i) => (
+        <path key={i} d={t} pathLength={1} fill="none" stroke={col} strokeWidth={spessore} strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" strokeDasharray={1} strokeDashoffset={1 - p(i * 6)} />
+      ))}
+    </svg>
+  );
+};
+
+export const Box: React.FC<{ d: number; x: number; y: number; w: number; h: number; children: React.ReactNode; bg?: string; bordo?: string; fino?: number }> = ({ d, x, y, w, h, children, bg = "#15122a", bordo = ACCENTO, fino }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (f < d || (fino !== undefined && f > fino)) return null;
+  const a = molla(f, fps, d, 13, 220);
+  return (
+    <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 24, background: bg, border: `4px solid ${bordo}`, boxShadow: `0 20px 60px #000c, 0 0 40px ${bordo}44`, transform: `scale(${0.6 + 0.4 * a}) translateY(${(1 - a) * 50}px)`, opacity: Math.min(1, a * 1.6), display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", color: "#fff", fontFamily: ANTON, overflow: "hidden" }}>
+      {children}
+    </div>
+  );
+};
+
+export const Mano: React.FC<{ d: number; x: number; y: number; children: React.ReactNode; size?: number; col?: string; rot?: number }> = ({ d, x, y, children, size = 62, col = GIALLO, rot = -3 }) => {
+  const f = useCurrentFrame();
+  const w = interpolate(f, [d, d + 16], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return <div style={{ position: "absolute", left: x, top: y, fontFamily: MANO, fontWeight: 700, fontSize: size, color: col, transform: `rotate(${rot}deg)`, clipPath: `inset(-20% ${100 - w}% -20% 0)`, whiteSpace: "nowrap", textShadow: "0 4px 16px #000, 0 0 2px #000" }}>{children}</div>;
+};
+
+export const Testata: React.FC<{ d?: number; children: React.ReactNode; y?: number }> = ({ d = 0, children, y = 350 }) => {
+  const f = useCurrentFrame();
+  const o = interpolate(f, [d, d + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return <div style={{ position: "absolute", left: 0, right: 0, top: y, textAlign: "center", fontFamily: MONO, fontSize: 30, letterSpacing: 5, color: ACCENTO, opacity: o }}>{children}</div>;
+};
+
+export const Tra: React.FC<{ a: number; b?: number; children: React.ReactNode }> = ({ a, b, children }) => {
+  const f = useCurrentFrame();
+  return f >= a && (b === undefined || f < b) ? <>{children}</> : null;
+};
+
+const SfondoPannello: React.FC = () => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = molla(f, fps, 0, 14, 240);
+  return (
+    <div style={{ position: "absolute", left: 30, right: 30, top: 325, height: 620, borderRadius: 40, overflow: "hidden", background: "#0b0a10e0", border: `3px solid ${ACCENTO}66`, boxShadow: "0 30px 80px #000c", transform: `translateY(${(1 - a) * 80}px)`, opacity: a }}>
+      <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(#ffffff0a 2px, transparent 2px), linear-gradient(90deg, #ffffff0a 2px, transparent 2px)", backgroundSize: "60px 60px" }} />
+      <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at 50% 60%, ${VIOLA}33, transparent 70%)` }} />
+    </div>
+  );
+};
+
+// Grafico S&P 500 dal 2013: crescita con i crolli segnati. Da sostituire con dati veri.
+const Grafico: React.FC<{ disegnaDa: number; evidenzia?: number }> = ({ disegnaDa, evidenzia }) => {
+  const f = useCurrentFrame();
+  const t = interpolate(f, [disegnaDa, disegnaDa + F(2.5)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const PUNTI = 70;
+  const punti = Array.from({ length: PUNTI }, (_, i) => {
+    const x = (i / (PUNTI - 1)) * 1000;
+    let y = 320 - i * 3.4;                       // trend in salita
+    y += Math.sin(i * 1.9) * 14 + Math.sin(i * 0.7) * 10;  // rumore
+    if (i === 18) y += 55;   // crollo 2020
+    if (i === 34) y += 70;   // crollo 2022
+    if (i > 60) y += (i - 60) * 6;  // storno recente
+    return [x, Math.max(30, y)];
+  });
+  const vis = punti.slice(0, Math.max(2, Math.round(PUNTI * t)));
+  const d = vis.map((p, i) => `${i ? "L" : "M"} ${p[0].toFixed(0)} ${p[1].toFixed(0)}`).join(" ");
+  return (
+    <svg style={{ position: "absolute", left: 40, right: 40, top: 430, height: 420, overflow: "visible" }} viewBox="0 0 1000 340" preserveAspectRatio="none">
+      <line x1="0" y1="330" x2="1000" y2="330" stroke="#ffffff22" strokeWidth="2" />
+      <path d={d} fill="none" stroke={VERDE_V} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" style={{ filter: `drop-shadow(0 0 14px ${VERDE_V}aa)` }} />
+      {evidenzia !== undefined && f >= evidenzia && (
+        <circle cx={vis[vis.length - 1][0]} cy={vis[vis.length - 1][1]} r="14" fill={VERDE_V} />
+      )}
+    </svg>
+  );
+};
+
+// ---------- pannelli ----------
+type P = { base: number };
+const rel = (base: number) => (s: number) => F(s) - F(base);
+
+// P1 (11.43-19.42) il grafico dal 2013
+const P1Grafico: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Grafico disegnaDa={r(11.43)} evidenzia={r(17.81)} />
+      <Testata d={r(12.60)}>S&P 500 · DAL 2013</Testata>
+      <Tra a={r(17.81)}>
+        <Sticker d={r(17.81)} top={700} size={92} bg={VERDE} rot={-2}>massimi storici</Sticker>
+      </Tra>
+    </>
+  );
+};
+
+// P2 (19.42-27.05) l'ansia per una settimana storta
+const P2Ansia: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(19.42)} x={110} y={440} w={860} h={180} bordo={ROSSO_R}>
+        <div style={{ fontSize: 58, lineHeight: 1.1 }}>UNA SETTIMANA STORTA</div>
+      </Box>
+      <Box d={r(21.05)} x={110} y={650} w={860} h={170} bordo="#ffffff44">
+        <div style={{ fontSize: 54, lineHeight: 1.1 }}>E TU SEI QUI<br />A FARTI VENIRE L'ANSIA</div>
+      </Box>
+      <Segno d={r(22.0)} tipo="x" x={150} y={665} w={780} h={140} col={ROSSO} spessore={12} />
+    </>
+  );
+};
+
+// P3 (27.25-34.62) chi ha interesse
+const P3Interesse: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(27.25)}>LA DOMANDA VERA</Testata>
+      <Box d={r(27.99)} x={80} y={450} w={920} h={200} bordo={ACCENTO}>
+        <div style={{ fontSize: 52, lineHeight: 1.12 }}>CHI HA INTERESSE A FARTI<br />GUARDARE IL GRAFICO?</div>
+      </Box>
+      <Segno d={r(28.9)} tipo="sotto" x={120} y={670} w={840} h={40} />
+      <Mano d={r(30.72)} x={180} y={780} size={58} col="#fff">un grafico giornaliero è inutile</Mano>
+    </>
+  );
+};
+
+// P4 (34.62-42.36) la paura vende
+const P4Paura: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(34.62)} x={200} y={400} w={680} h={150} bordo="#ffffff44">
+        <div style={{ fontSize: 58, lineHeight: 1 }}>NON TI DICE NIENTE</div>
+      </Box>
+      <Box d={r(35.38)} x={200} y={580} w={680} h={150} bordo={ROSSO_R}>
+        <div style={{ fontSize: 66, color: ROSSO, lineHeight: 1 }}>MA TI FA PAURA</div>
+      </Box>
+      <Tra a={r(37.05)}>
+        <Mano d={r(37.05)} x={120} y={770} size={54} col="#fff">abbonamenti · corsi · segnali · consulenze</Mano>
+      </Tra>
+      <Tra a={r(40.89)}>
+        <Box d={r(40.89)} x={140} y={850} w={800} h={140} bordo={ROSSO} bg="#3a1418">
+          <div style={{ fontSize: 60, color: ROSSO }}>LA PAURA È IL PRODOTTO</div>
+        </Box>
+      </Tra>
+    </>
+  );
+};
+
+// P5 (42.36-48.06) sa che la comprerai
+const P5Comprerai: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(42.36)}>HA UN VANTAGGIO CHE TU NON HAI</Testata>
+      <Box d={r(45.39)} x={140} y={490} w={800} h={200} bordo={ROSSO_R} bg="#3a1418">
+        <div style={{ fontSize: 62, color: ROSSO, lineHeight: 1.05 }}>SA CHE TU<br />LA COMPRERAI</div>
+      </Box>
+      <Mano d={r(46.89)} x={300} y={740} size={58}>perché funziona sempre</Mano>
+    </>
+  );
+};
+
+// P6 (48.06-55.81) apri il portafoglio
+const P6Portafoglio: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(48.06)} x={80} y={420} w={920} h={170} bordo="#ffffff44">
+        <div style={{ fontSize: 50, lineHeight: 1.1 }}>TI MOSTRANO IL ROSSO<br />«TE L'AVEVO DETTO»</div>
+      </Box>
+      <Box d={r(52.21)} x={80} y={630} w={920} h={160} bordo={ROSSO_R}>
+        <div style={{ fontSize: 56, color: ROSSO, lineHeight: 1 }}>E TU APRI IL PORTAFOGLIO</div>
+      </Box>
+      <Mano d={r(53.18)} x={150} y={830} size={56} col="#fff">per la tranquillità che ti hanno tolto</Mano>
+    </>
+  );
+};
+
+// P7 (55.81-63.88) chi non ha venduto
+const P7NonVenduto: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(55.81)}>LA PARTE CHE NESSUNO TI DICE</Testata>
+      <Box d={r(57.56)} x={90} y={440} w={900} h={190} bordo={VERDE_V}>
+        <div style={{ fontSize: 52, lineHeight: 1.12 }}>COMPRATO NEL 2013<br />ZERO OPERAZIONI</div>
+      </Box>
+      <Tra a={r(63.88)}>
+        <Box d={r(63.88)} x={140} y={680} w={800} h={160} bordo={VERDE_V}>
+          <div style={{ fontSize: 58, color: VERDE_V, lineHeight: 1.05 }}>OGGI SEI IN GUADAGNO</div>
+        </Box>
+      </Tra>
+    </>
+  );
+};
+
+// P8 (65.00-72.96) la tua unica forza
+const P8Forza: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(65.00)} x={200} y={430} w={680} h={160} bordo="#ffffff44">
+        <div style={{ fontSize: 56 }}>NON PERCHÉ SEI BRAVO</div>
+      </Box>
+      <Box d={r(66.12)} x={140} y={640} w={800} h={190} bordo={ACCENTO}>
+        <div style={{ fontSize: 54, lineHeight: 1.1 }}>LA TUA UNICA FORZA:<br />NON ASCOLTARE NESSUNO</div>
+      </Box>
+      <Segno d={r(67.0)} tipo="sotto" x={180} y={860} w={720} h={40} />
+    </>
+  );
+};
+
+// P9 (73.16-80.50) nel 2013 dov'eri
+const P9Dove: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Testata d={r(73.16)}>CHIEDIGLI UNA COSA SOLA</Testata>
+      <Box d={r(73.16)} x={110} y={470} w={860} h={190} bordo={ACCENTO}>
+        <div style={{ fontSize: 62, lineHeight: 1 }}>E NEL 2013 DOV'ERI?</div>
+      </Box>
+      <Tra a={r(74.77)}>
+        <Box d={r(74.77)} x={90} y={700} w={900} h={170} bordo={ROSSO_R}>
+          <div style={{ fontSize: 50, lineHeight: 1.1 }}>NON TI STA PROTEGGENDO</div>
+        </Box>
+      </Tra>
+    </>
+  );
+};
+
+// P10 (80.50-85.51) il grafico di ieri
+const P10Ieri: React.FC<P> = ({ base }) => {
+  const r = rel(base);
+  return (
+    <>
+      <SfondoPannello />
+      <Box d={r(80.50)} x={90} y={450} w={900} h={180} bordo="#ffffff44">
+        <div style={{ fontSize: 54, lineHeight: 1.1 }}>IL GRAFICO CHE TI MOSTRA<br />È SEMPRE QUELLO DI IERI</div>
+      </Box>
+      <Tra a={r(83.82)}>
+        <Box d={r(83.82)} x={200} y={690} w={680} h={160} bordo={ACCENTO}>
+          <div style={{ fontSize: 66, lineHeight: 1 }}>MAI DI 30 ANNI</div>
+        </Box>
+        <Segno d={r(84.3)} tipo="cerchio" x={170} y={665} w={740} h={210} />
+      </Tra>
+    </>
+  );
+};
+
+const PANNELLI: { a: number; b: number; el: React.FC<P> }[] = [
+  { a: 11.43, b: 19.42, el: P1Grafico },
+  { a: 19.42, b: 27.25, el: P2Ansia },
+  { a: 27.25, b: 34.62, el: P3Interesse },
+  { a: 34.62, b: 42.36, el: P4Paura },
+  { a: 42.36, b: 48.06, el: P5Comprerai },
+  { a: 48.06, b: 55.81, el: P6Portafoglio },
+  { a: 55.81, b: 63.88, el: P7NonVenduto },
+  { a: 63.88, b: 73.16, el: P8Forza },
+  { a: 73.16, b: 80.50, el: P9Dove },
+  { a: 80.50, b: 85.51, el: P10Ieri },
+];
+
+export const DURATA_A8 = F(DURATA_A8_S);
+const SCHEDA_Y = 690;
+
+const CParla: React.FC = () => {
+  const f = useCurrentFrame();
+  const inizi = PAROLE_A8.filter((p, i) => i === 0 || PAROLE_A8[i - 1][2] !== p[2]).map((p) => F(p[0]));
+  const n = inizi.filter((x) => x <= f).length;
+  const stretto = n % 2 === 0 ? 0.16 : 0;
+  const s = 1.02 + stretto + 0.02 * Math.sin(f / 90);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <OffthreadVideo src={staticFile(`${CARTELLA}/C-parla.mp4`)} muted style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s})`, transformOrigin: "50% 32%" }} />
+    </AbsoluteFill>
+  );
+};
+
+const Parolone: React.FC = () => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = f / fps;
+  const viste = PAROLE_A8.filter(([a]) => t >= a);
+  if (!viste.length) return null;
+  const ult = viste[viste.length - 1];
+  const gruppo = PAROLE_A8.filter((p) => p[2] === ult[2]);
+  const i = gruppo.indexOf(ult);
+  const blocco = gruppo.slice(Math.floor(i / 2) * 2, Math.floor(i / 2) * 2 + 2);
+  const a = molla(f, fps, F(blocco[0][0]), 12, 320);
+  return (
+    <div key={`b${blocco[0][0]}`} style={{ position: "absolute", left: 30, right: 30, top: 150, textAlign: "center", fontFamily: INTER, fontWeight: 900, fontSize: 124, lineHeight: 1.0, letterSpacing: -3, transform: `scale(${0.85 + 0.15 * a})`, textShadow: "0 8px 30px #000c" }}>
+      {blocco.map(([s0, p], k) => {
+        const detta = t >= s0;
+        const giallo = CHIAVE_A8.test(p.toUpperCase());
+        return <div key={k} style={{ color: giallo ? GIALLO : "#fff", opacity: detta ? 1 : 0, WebkitTextStroke: "3px #0008", paintOrder: "stroke fill" }}>{p.toLowerCase()}</div>;
+      })}
+    </div>
+  );
+};
+
+const Grana8: React.FC = () => (
+  <AbsoluteFill style={{ pointerEvents: "none", background: "radial-gradient(ellipse at 50% 40%, transparent 60%, #000a 100%)" }} />
+);
+const Barra8: React.FC = () => {
+  const f = useCurrentFrame();
+  return <div style={{ position: "absolute", left: 0, bottom: 0, height: 8, width: `${(f / DURATA_A8) * 100}%`, background: `linear-gradient(90deg,${VIOLA},${ACCENTO})` }} />;
+};
+const Lampo: React.FC = () => {
+  const f = useCurrentFrame();
+  return <AbsoluteFill style={{ backgroundColor: "#fff", opacity: interpolate(f, [0, 3], [0.35, 0], { extrapolateRight: "clamp" }), pointerEvents: "none" }} />;
+};
+
+export const A8MERCATO: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: NERO, fontFamily: INTER }}>
+    <CParla />
+    {PANNELLI.map((p, i) => (
+      <Sequence key={i} from={F(p.a)} durationInFrames={F(p.b) - F(p.a)}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: SCHEDA_Y, height: 1080 }}>
+          <p.el base={p.a} />
+        </div>
+        <Lampo />
+      </Sequence>
+    ))}
+    <Sequence from={0} durationInFrames={F(11.43)}>
+      <Sticker d={F(5.88)} top={1420} size={92} bg={ROSSO} rot={-3}>qualcuno ci ha fatto i soldi</Sticker>
+    </Sequence>
+    <Parolone />
+    <div style={{ position: "absolute", left: 50, top: 70, fontFamily: MONO, fontSize: 26, color: "#ffffffbb", letterSpacing: 3, textShadow: "0 2px 8px #000" }}>ATTUALITÀ DI C · #8</div>
+    <Grana8 />
+    <Barra8 />
+    <Audio src={staticFile(`${CARTELLA}/voce.wav`)} volume={1} />
+    <Audio src={staticFile(`${CARTELLA}/musica.wav`)} volume={0.06} />
+    <Audio src={staticFile(`${CARTELLA}/sfx.wav`)} volume={0.35} />
+  </AbsoluteFill>
+);
+
+export const CoverA8MERCATO: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: NERO }}>
+    <Img src={staticFile(`${CARTELLA}/cover-frame.png`)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%" }} />
+    <AbsoluteFill style={{ background: "linear-gradient(180deg, #000000cc 0%, transparent 30%, transparent 55%, #000000ee 100%)" }} />
+    <div style={{ position: "absolute", left: 60, right: 60, top: 1080, fontFamily: ANTON, fontSize: 118, lineHeight: 1.18, color: "#fff", textTransform: "uppercase", textShadow: "0 8px 30px #000" }}>
+      Il crollo<br />è il <span style={{ background: ROSSO, padding: "0 18px", borderRadius: 14, lineHeight: 1.0, display: "inline-block" }}>prodotto</span>
+    </div>
+    <div style={{ position: "absolute", left: 60, right: 60, top: 1440, fontFamily: MACCHINA, fontSize: 44, lineHeight: 1.2, color: GIALLO, textTransform: "uppercase" }}>chi ti vende la paura<br />sa che la comprerai</div>
+    <div style={{ position: "absolute", left: 60, top: 300, fontFamily: MONO, fontSize: 34, color: "#ffffffcc", letterSpacing: 4 }}>ATTUALITÀ DI C · #8</div>
+  </AbsoluteFill>
+);

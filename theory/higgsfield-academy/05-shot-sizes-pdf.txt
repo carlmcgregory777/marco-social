@@ -1,0 +1,280 @@
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+01 / 09
+SHOT SIZES &
+PROMPTING
+05
+Plan the frame, write the action and refine a take.
+FIND WHAT YOU NEED
+02
+Check a term
+03
+Choose framing and composition
+04
+Give references clear roles
+05
+Plan shots and timing
+06
+Compare and revise a take
+07
+Copy your scene template
+08
+Decide what to fix
+09
+Open useful links
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+02 / 09
+CONTENTS
+00
+GLOSSARY
+Essential terms
+01
+Element
+02
+Scene context
+A saved asset selected through its @ mention.
+A short overview of who is there, where they
+are and what happens.
+03
+Shot
+04
+Take
+One continuous view between cuts.
+One generated version of a scene; it can
+contain several shots.
+05
+Shot size
+06
+Camera angle
+How much of a person or place is visible in the
+frame.
+The direction and height from which the
+camera sees the subject.
+07
+Camera movement
+08
+Continuity
+A change in camera position or viewing direction
+during a shot.
+People, props, positions and actions staying
+consistent through the scene.
+SHOT OR TAKE?
+The lesson scene has four shots. Generating the scene again gives a new take of those four shots.
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+03 / 09
+CONTENTS
+01
+FRAMING
+Framing: size and composition
+Choose a view that keeps the action you want to read inside the frame.
+PLACE
+GESTURE
+UPPER BODY
+REACTION
+A wide shot establishes the place. A medium shot leaves room for a gesture. A medium close-up keeps the
+head and upper chest visible; a close-up gives the face more of the frame.
+Give the image depth
+1 Foreground: nearby stools. 2 Midground: the people. 3 Background: the pool table. Separate these
+layers
+so the main action is easy to find. The thirds grid offers useful placement points; it is a guide, not a
+requirement.
+ADDITIONAL PDF
+Camera - Shot sizes, angles & movement
+Download the additional PDF below this lesson for visual examples, camera-path diagrams and
+reusable prompt clauses.
+3
+2
+1
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+04 / 09
+CONTENTS
+02
+REFERENCE ROLES
+Give each input a clear job
+The image supplies appearance. Your prompt supplies ownership, position and action.
+PERSON
+Identity and clothing.
+Name who performs each
+action.
+PROP
+Shape, colour and details.
+State the owner and
+orientation.
+PLACE
+Space, light and colour.
+Specify the framing
+separately.
+REFERENCE ROLES
+@character_1 and @character_2 are the two people. @prop_1 is the object carried by @character_1.
+@location_1 defines the setting. Keep each person and the object consistent with their references.
+Use the same mentions throughout the prompt. Name the person before each action; state who owns or
+handles the prop. Add a hand, surface or orientation only when that detail matters to the action.
+Connect the mention to the asset
+@character_1
+@prop_1
+@location_1
+These are example names for attached assets. Replace them with your selected Elements. A typed @ label
+alone does not attach a reference.
+Appearance is not an action. An image can show a prop, but the prompt still needs to say who carries it,
+where it goes and how it is placed.
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+05 / 09
+CONTENTS
+03
+SHOTS AND TIMING
+Build a scene from visible
+beats
+Decide what must happen, then choose the views that make each change clear.
+01
+DEFINE THE ACTION
+Write the starting state, the visible changes and the ending. Name who acts and what changes;
+keep the actions in the order they must happen.
+02
+CHOOSE THE VIEW
+Choose a shot size and angle for each beat. Keep hands and objects visible for an interaction;
+move closer when a reaction becomes the important information.
+03
+PLAN CUTS AND MOVEMENT
+Give each cut a new shot number. Within a shot, choose a static camera or describe its move
+and destination. Several actions can share one continuous view.
+04
+ASSIGN THE TIME
+Give each shot a start and end time. Allow time for actions, dialogue and any final hold. The final
+end time should match the duration you select.
+Keep these three choices separate
+SIZE
+How much of the subject is visible.
+ANGLE
+The height and direction from which we see it.
+MOVEMENT
+How the camera changes position or viewing direction.
+CHECK THE PACE
+Watch the result at normal speed. If a beat is rushed, simplify the action or allow more time. If an
+action is hidden, revise the view that needs to show it.
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+06 / 09
+CONTENTS
+04
+REVIEW AND IMPROVE
+Use the result to revise the
+prompt
+Save the tested prompt and take. Write down what happened and what you wanted instead.
+TAKE 1 / UPRIGHT
+TAKE 2 / FLAT
+Turn each mismatch into a clear instruction. For example, if a case stands upright when it should lie flat,
+specify its orientation and supporting surface. You can address several errors in the same revision.
+Ask an LLM to help with the wording
+Give Claude, ChatGPT, Gemini or AI Director the exact prompt you tested, your error list and the intended
+result. Explain the problems in everyday language if you do not know the camera or prompting terms.
+PROMPT REPAIR REQUEST
+Revise the tested prompt below. What went wrong: [describe the errors]. What I want instead:
+[describe the intended result]. Keep the parts that already work. Update every affected line so the
+instructions agree. Return the full revised prompt, then list exactly what you changed or added and
+why.
+Tested prompt: [paste the original prompt].
+Read the revised prompt and the change list. Check that the assistant kept your intent and did not add
+unwanted actions or camera moves. Generate again, then review the whole new take with sound.
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+07 / 09
+CONTENTS
+05
+YOUR SCENE TEMPLATE
+Your scene template
+Use your selected @ mentions. Fill in the scene, actions and timing in plain language.
+COPY & ADAPT
+SCENE CONTEXT
+@character_1 and @character_2 are in @location_1. Starting state: [positions and situation]. Action
+and ending: [what changes, in order, and the visible outcome].
+REFERENCES
+@character_1 and @character_2: identity and clothing. @prop_1: object appearance; carried by
+@character_1. @location_1: space, light and colour.
+SHOTS
+Shot 1, [start-end time]: [shot size and angle]. Camera: [static, or movement with a destination].
+@character_1 [visible action]. Shot 2, [start-end time]: [next view and camera behaviour].
+@character_2 [action or reaction]. @character_2 says: "[dialogue]".
+CONTINUITY & SOUND
+@prop_1: [position and orientation, if needed]. [Other details that must stay consistent]. [Ambience,
+action sounds and music instruction]. [Final hold, if needed].
+Add a shot when you need a cut; keep one shot block for a continuous view. Remove unused references
+and sections. Check that Scene context and the shot instructions describe the same sequence.
+Before generating, match the selected duration to the final timecode and check the attached assets,
+framing, audio and displayed cost.
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+08 / 09
+CONTENTS
+06
+WHAT SHOULD YOU FIX?
+Choose the next step
+Check the input before paying for another attempt.
+Does the same error return across takes?
+YES: inspect the prompt and source assets first. NO: compare the takes; an isolated defect may justify
+another attempt.
+01 / FIX THE ASSET
+The unwanted appearance is already in the reference. Correct that image before reusing it; do not rely
+on extra wording to erase a visible detail.
+02 / FIX THE PROMPT
+The wrong person acts, a prop is misplaced, or camera instructions conflict. Name the actor, state the
+order, and make the related lines agree.
+03 / GENERATE ANOTHER TAKE
+The inputs are clear but this take has an isolated defect, or you want a different staging or sequence.
+Keep the original and compare the whole new clip.
+Check three things
+Action: did the named person do the intended action? Continuity: do the people, prop and place remain
+recognisable? Camera: does the framing keep the important action visible?
+LESSON EXERCISE
+Save Take 1 and its prompt. List the errors and the result you want. Revise the relevant instructions,
+generate Take 2, and compare both clips with sound. Submit both takes and prompts under Lesson
+5.
+
+Academy
+Course 01 / Lesson 05
+SHOT SIZES AND PROMPTING
+09 / 09
+CONTENTS
+USEFUL LINKS
+Further reading & practice
+Selected resources for this lesson. Click a title to open it.
+01
+Build a Scene with Seedance 2.5
+HIGGSFIELD AI / YOUTUBE TUTORIAL
+Start at 13:54 for reference preparation, locations, camera and performance instructions. The
+earlier breakdown shows how failed attempts lead to changes in the inputs and prompt.
+02
+Seedance 2.5: Camera & Scene Prompt Tests
+HIGGSFIELD AI / YOUTUBE TUTORIAL
+Compare the same prompts and inputs across two models. Start at 00:52 for camera movement
+or 14:54 for cinematic scenes. Check how each result follows the camera, action and continuity.
+03
+Seedance 2.5: Official Prompting Guide
+BYTEDANCE / BYTEPLUS MODEL DOCUMENTATION
+Read the official guidance on prompt structure, reference roles, shot timing and camera language.
+Includes worked prompts and troubleshooting examples.
+ALSO INCLUDED WITH LESSON 5
+Camera: Shot Sizes, Angles & Movement
+A separate 20-page PDF accompanies this lesson. Download it alongside this companion from the
+lesson materials.
+Inside: visual examples of shot sizes and camera angles, movement diagrams, practical tips and
+reusable camera prompt clauses. Use it to choose a view or describe a camera move for your own
+scene.

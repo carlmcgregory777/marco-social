@@ -1,0 +1,65 @@
+Cinquecento euro bruciati in un weekend. Challenge bruciate che non conto nemmeno più. E un periodo in cui ero senza lavoro, col conto a zero, a usare gli ultimi risparmi.
+E la cosa interessante non è questa. La cosa interessante è che per uscirne ho dovuto buttare via quasi tutto quello che avevo studiato in dieci anni.
+Faccio trading dal 2016. Ho provato tutto: analisi tecnica, volumi, order flow, quartili, algo con l'inducement. E in questo video ti do le lezioni che contano davvero, divise in quattro blocchi. Come non iniziare. Cosa succede quando arrivano le prop firm. La svolta. E come lavoriamo oggi, che contraddice quasi tutto quello che trovi in giro sul trading.
+Ah, prima che te lo chieda: io sono C. Caschetto viola, baffi, faccia da funerale. Sono un personaggio creato con l'intelligenza artificiale.
+La storia però è vera. È quella di Marco, che c'è dietro di me. Io gli presto la faccia perché non ho paura, non ho fretta e non mi arrabbio quando perdo. Sono il trader che lui ha provato a essere per dieci anni. Tienilo a mente, perché alla fine capirai perché è importante.
+Partiamo dal primo blocco.
+Uno. Vincere a caso è peggio che perdere.
+Duemilasedici. Marco vede la pubblicità di un influencer: macchine, viaggi, «anche tu puoi». Apre un conto, deposita i primi soldi e prova.
+Apre e chiude. A caso. Ma proprio a caso, eh, con una leva folle. E in un'ora: plin. Ottanta euro.
+Ecco. Quella è la cosa peggiore che ti possa succedere. Perché pensi di essere bravo. E da lì ogni perdita la vivi come un'ingiustizia da vendicare.
+Due. Il mercato non è solo il grafico.
+Qualche mese dopo. Venerdì sera, posizione aperta sul petrolio. Marco esce, va al cinema. Non la chiude. «Tanto lunedì è ancora lì.»
+Quello che non sapeva è che nel weekend il mercato è chiuso, ma il mondo no. Escono le notizie. E il lunedì il prezzo non riparte da dove l'avevi lasciato: salta. Lunedì mattina, bom: cinquecento euro. I suoi risparmi.
+Ancora oggi, se gli dici «petrolio» e «cinema» nella stessa frase, cambia faccia. Ed è per questo che noi, sui reel, ti raccontiamo le notizie: perché arrivano sul tuo conto anche quando tu sei al cinema.
+Tre. Le basi servono. Ma non bastano.
+Allora Marco si mette a studiare sul serio. Le prop firm ancora non esistevano. Segue i corsi di un formatore italiano e impara le basi: gestione del rischio, rapporto rischio-rendimento, win rate, le sessioni di mercato.
+E qui impara una cosa che vale ancora oggi: non devi avere ragione sempre. Se ogni volta rischi uno per guadagnare due, puoi sbagliare una volta su due e stare comunque in piedi. Il trading è matematica, non indovinare.
+Poi tutta l'analisi tecnica classica. Medie mobili, trendline, rotture. Tutto giusto, eh. Funziona benissimo… sui grafici del passato.
+Il problema è che sapere le regole non vuol dire seguirle. E questo, tienilo da parte, perché torna.
+Quattro. Una challenge non è un biglietto della lotteria.
+Poi arrivano le prime prop firm. Società che ti danno un conto grosso se superi un esame, la challenge. Al tempo avevi trenta giorni per passarla.
+E sembrava l'unica occasione per vivere di trading: niente capitale tuo, solo la tua bravura. Ma c'era una trappola. Il contatore. Trenta giorni, ventinove, ventotto… e più scende, più forzi. Entri dove non dovresti, perché «il tempo stringe». Marco paga la challenge. La brucia. Ne paga un'altra. La brucia.
+E ogni volta lo stesso film: due giorni perfetti, poi un'operazione storta. Sposti lo stop, «tanto torna». Raddoppi per recuperare. E l'esame finisce in venti minuti.
+Se compri una challenge sperando che stavolta vada bene, non stai facendo trading. Stai comprando un gratta e vinci. Molto caro.
+Cinque. Cambiare metodo non cambia te.
+Allora pensi: mi manca un pezzo. E cominci a cambiare.
+L'analisi volumetrica. L'order flow, chi compra e chi vende, tick per tick. I quartili. Gli algo con l'inducement, la liquidità, le trappole dei grandi. Ogni volta un metodo nuovo, ogni volta la stessa promessa: «questa è la volta buona».
+E il bello è che ogni metodo, qualcosa, funzionava. Il problema non era il metodo. Era quello seduto davanti al grafico.
+Sei. Sopravvivere non è vivere di trading.
+Conti bruciati, conti ripresi, qualche payout. E ogni payout ti fa pensare: «ecco, ci sono». Poi due settimane storte e il conto non c'è più. Su e giù, per anni. Marco è sopravvissuto. Ma sopravvivere non è vivere di trading.
+E arriva il punto più basso. Conto bruciato. Niente lavoro. E gli ultimi risparmi che se ne vanno, uno alla volta.
+E ti fai la domanda che si fanno tutti, prima o poi: «ma chi me lo fa fare?»
+Ci sei passato anche tu, eh? Non dirmi di no.
+Qui tanti la chiudono, ed è anche giusto. Marco no. Perché dopo tutti quegli anni una cosa l'aveva capita. Ed era sicuro.
+Sette. Se si può interpretare, lo interpreterai a tuo favore.
+Il grafico va letto in modo oggettivo. Sempre.
+È come una frase senza grammatica: senza regole, ognuno ci legge quello che vuole. E nel trading quello che vuoi leggere è sempre quello che ti conviene. Quando sei in perdita vedi la ripresa ovunque. Quando sei in guadagno vedi l'inversione ovunque.
+E proprio in quel periodo un amico gli fa vedere il profilo di un trader: Vaga FX. Uno che leggeva il grafico con un metodo totalmente oggettivo. Niente interpretazioni. Regole.
+Otto. Non copiare. Capire.
+E qui c'è la parte che fa la differenza. Marco non copia le operazioni di Vaga. Prende i suoi concetti e ci costruisce sopra una strategia sua, adatta a lui e ai suoi tempi.
+Si compra una challenge. E la passa. E arrivano i payout.
+Dopo anni, la prima volta che le cose girano davvero. Ed è per questo che oggi diciamo, senza problemi, che siamo studenti di Vaga e seguiamo i suoi dettami.
+Nove. Togli te stesso dall'equazione.
+Poi un giorno Vaga se ne esce con un progetto nuovo. Si era appassionato al trading algoritmico. E crea la prima bozza di un software: Algory.
+La fa provare ai veterani della sua community. Tra loro, Marco. Quindi sì: siamo stati tra i beta tester. Aggiornamento dopo aggiornamento l'abbiamo visto crescere, l'abbiamo rotto qualche volta e abbiamo aiutato a migliorarlo. E non si è ancora fermato.
+E qui la domanda è cambiata. Non più «qual è il metodo giusto?». Ma: «posso togliere me stesso dall'equazione?»
+Dieci. Quello che prima richiedeva anni.
+Pensa a cosa voleva dire, prima, fare trading con un sistema. Avere un'idea. Trasformarla in un bot. Testarla. Scoprire che era solo fortuna. Ricominciare. Anni. Ed era roba da programmatori.
+Algory fa tutto questo da solo, in base ai parametri che decidi tu. Crea migliaia di strategie, le mette alla prova su dati che non hanno mai visto e scarta quelle che sono solo fortuna. È come uno studente: non basta che sappia a memoria le domande vecchie, deve passare l'esame con domande nuove. E chi non lo passa, fuori. Come lo fa, te lo spieghiamo pezzo per pezzo nei prossimi video.
+E guarda le tre lezioni del primo blocco. Una strategia non si esalta dopo ottanta euro. Non va al cinema. E non sa interpretare: sa solo eseguire.
+Undici. Si perde anche così.
+Ora, attenzione. Non ti sto dicendo che è una macchina per stampare soldi.
+Si perde anche così. Ogni sistema ha i suoi mesi brutti. La differenza è che adesso sai perché perdi, e sai se è normale o no. Prima di accendere una strategia sai già quanto può scendere nei periodi brutti. Se scende così, è normale: la lasci lavorare. Se scende molto di più, qualcosa non va: la spegni. Una regola, non un'emozione. E dopo dieci anni passati a non saperlo, credimi, è tutta un'altra vita. Meno stress. Niente dieci schermi. Puoi andare a lavorare, uscire, dormire. Anche andare al cinema, finalmente.
+Dodici. Non serve un capitale grosso.
+Ultima. Prima servivano corsi da migliaia di euro, abbonamenti ai segnali, challenge comprate una dopo l'altra sperando.
+Oggi lavoriamo così: il metodo di Vaga, Algory come strumento, un conto da centomila dollari di una prop firm, e un computer in cloud acceso giorno e notte. E si può partire dal piano gratuito.
+Se lo vuoi provare, il link è in descrizione. È un link affiliato: se un giorno passi a un piano a pagamento, a noi arriva una parte e a te non costa niente in più. Anzi, col codice STANGA50 il primo pagamento lo paghi metà.
+Questo è il primo video, e da qui partiamo insieme. Nei prossimi ti portiamo dentro Algory passo per passo: come si usa per una challenge, come si usa sul conto personale, e perché Marco ha smesso del tutto di fare trading a mano.
+E ogni giorno, sui reel, le notizie del mondo spiegate per i tuoi soldi. Senza panico.
+Vogliamo costruire una community di gente che ci ha provato in tutti i modi e si è stancata delle promesse. Scrivimi nei commenti cosa hai provato tu finora. Leggo tutto.
+Ora, la cosa che vorrei ti rimanesse in testa.
+Nessuna di queste dodici lezioni è complicata. Non serve l'indicatore segreto. Non serve il metodo perfetto, perché non esiste. Servono due cose soltanto: regole che non si possono interpretare. E qualcosa che le segua sempre, anche quando tu non ne hai voglia.
+Per dieci anni, quel qualcosa doveva essere Marco. Oggi no.
+Ah, e non è un consiglio finanziario, eh: il trading è rischioso e puoi perdere il capitale.
+Io sono C. Ci vediamo nel prossimo video.

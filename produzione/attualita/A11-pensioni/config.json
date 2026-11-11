@@ -1,0 +1,40 @@
+{
+  "composizione": "A11PENS",
+  "cartella_public": "a11pens",
+  "valzer": 2,
+  "testo_voce": "attualita/A11-pensioni/voce/testo-v1.txt",
+  "chiave": [
+    "PENSIONATI",
+    "LAVORANO",
+    "DINI",
+    "VERSI",
+    "DODICI",
+    "TRENTASEI",
+    "RIMPICCIOLISCE",
+    "QUINDICI",
+    "DICIASSETTE",
+    "CENTONOVEMILA",
+    "RISPARMI",
+    "SCOMMESSA"
+  ],
+  "tagli": [
+    12.0,
+    30.0,
+    50.0,
+    70.0
+  ],
+  "enfasi": [
+    "pensionati",
+    "dini",
+    "dodici",
+    "trentasei",
+    "rimpicciolisce",
+    "scommettere"
+  ],
+  "riser": [
+    30.0
+  ],
+  "clip_labiale": "attualita/A11-pensioni/clip/C-parla.mp4",
+  "copertina": "CoverA11PENS",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

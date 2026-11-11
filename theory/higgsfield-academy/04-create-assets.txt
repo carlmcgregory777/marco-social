@@ -1,0 +1,759 @@
+Yoyoyo. Yoyoyo.
+What separates great AI videos from
+mediocre ones?
+The simple answer is great image
+references.
+The difference between a good generation
+and a bad one starts before you
+write the video prompt. It starts with
+creating your assets.
+Welcome back. Today, we're going deeper
+into a professional AI
+workflow, creating the characters and
+locations for your video.
+First, I want to show you four videos
+created from images generated with
+different models. Look closely and you'll
+notice a significant difference.
+All of the videos were generated in
+Seedance 2.5 using the same two prompts.
+This video model smooths out even the most
+obvious AI slop, but it doesn't
+eliminate it completely, so the quality of
+your assets still plays a crucial
+role. For these videos, I created the
+assets with four models.
+Soul 2.0, Soul Cinema, GPT Image 2.5,
+Sunburst, and Nano Banana Pro.
+The image quality speaks for itself.
+You can see the difference in the finished
+videos.
+To understand where it comes from, let's
+go back to the original images.
+We'll compare the lighting, the textures,
+and the sense of depth.
+Images from the Soul models truly seem to
+have more Soul and a more cinematic
+feel, while Nano Banana and GPT look more
+like standard AI-generated images.
+You can spot repeating patterns in the
+grass, distracting reflections on the
+tiles, excessive image sharpness, lack of
+depth, and the color which will
+completely shape the look of your final
+video.
+Most importantly, generating the images
+with the Soul models costs 24 times
+less. Once you learn to see these
+differences, you'll be a step ahead of the
+average AI creator, and your generations
+will reach a whole new level.
+The goal of this lesson is to teach you
+how to recognize these differences
+and show you the tools you can use to
+achieve this level of
+quality.
+So where do we start? First, we'll cast
+our characters, create the
+locations, and then refine both.
+I'll show you the tools as we go so you
+can see which ones work best for
+you. Alright, let's get our workspace
+ready.
+Open Cinema Studio on Higgsfield.
+We use it for almost every project, from
+YouTube videos to films.
+It keeps all our generations organized
+into projects and folders.
+You can also like your favorite
+generations here, then use the filters to
+find the ones you've liked or downloaded.
+There are more filters too, really helpful
+when you have hundreds of
+generations and need to find a specific
+one.
+Let's give all our scene assets a home.
+I'll click New Project, call it Lesson 4,
+and hit Create.
+Our project name is up here on the left.
+Just below it, you'll find tools like
+Elements, Canvas, and AI Director.
+We'll talk about them later.
+Let's create a folder for our character
+assets.
+Click Add Folder and name it Characters.
+In this lesson, we'll keep our characters
+and locations in separate folders
+within a single project. Down here is the
+Generation panel.
+It has two tabs, Image for Still Images
+and Video for Video Generation.
+Before we create anything, let's look at
+the models we can choose from.
+Click the model name to open this list.
+There's a lot here. We'll focus on five
+that we use for different jobs.
+Let's start with Soul Cinema, our own
+model.
+It's especially good at giving locations a
+cinematic feel, convincing light,
+natural textures, and the sense that
+you're looking at a frame from a real
+film. When you're creating images that
+will later be used for video
+generation, you want smooth, high-quality
+textures, a wide tonal range, and
+preserved detail in both highlights and
+shadows.
+The color of the image is just as
+important because it will directly shape
+the color palette of your final video.
+Lighting matters too. The light sources
+and direction provide important
+context for the video model.
+If the shadows in your image suggest that
+the light is coming from above,
+even when no light source is visible in
+the frame, the generated video will
+preserve that same overhead lighting
+direction.
+With Soul Cinema, you'll never doubt that
+a landscape or location could
+exist in real life. Like any other model,
+Soul Cinema has its own
+limitations and weaknesses.
+First, it supports only two modes,
+generating from a text prompt, text to
+image, or generating from a single image
+with no option to add a prompt and
+guide the result. This second method is
+called image to image.
+I'll explain its superpower in the PDF
+attached to this lesson.
+Second, generations can contain broken
+objects or illogical details that
+feel unnatural in the frame or are simply
+visual clutter.
+If you look closely at evening or
+nighttime scenes, you'll notice the
+shadows can get so dark that you lose all
+the detail.
+And generating a video won't bring that
+detail back.
+Those areas will stay solid black.
+Soul Cinema also isn't as strong at prompt
+following as the other models in
+this lesson. Prompt following simply means
+how precisely a model follows
+your instructions. For example, imagine
+asking for a sofa in the center of
+the room and a window on the right.
+GPT image will follow that composition in
+almost every generation.
+Soul Cinema, by contrast, tends to add its
+own creativity and
+interpretation, slightly changing your
+brief.
+Despite these limitations, Soul Cinema
+remains the most realistic and
+lifelike model available. Learn to work
+around its weaknesses and it can
+deliver the highest quality images.
+It's also extremely affordable.
+Generating one image costs just 0.125
+credits, so you can create
+8 images for a single credit.
+All the prompts used for these generations
+will be included in the lesson
+PDF. You'll also find a large language
+model skill file in the lesson
+materials. You can upload it to your chat
+or app or use it directly in
+supercomputer. This skill will help you
+achieve top tier results with almost
+any generative image model.
+What if we need a fantasy or sci-fi world?
+For those larger, more complex
+environments, we often turn to Seedream
+5.0
+Pro. Look at these examples.
+There's a whole city built inside a huge
+cylindrical structure and a
+landscape with giant eyes emerging beneath
+beams of light.
+Seedream gives us room to work with
+unusual architecture, scale, and ideas
+that go far beyond everyday locations.
+But it can also produce good results with
+ordinary places.
+These streets and this forest were created
+with Seedream 2.
+The lighting is softer, the details are
+more understated, and the locations
+feel familiar. The lesson PDF will include
+guidance on prompting Seedream
+to help you create images like these.
+It's also useful for stylized images.
+Here, the blue tiled room and the red
+carpet with scattered records each
+have a strong visual identity.
+Color, texture, and lighting give the two
+scenes very different moods.
+One thing to watch with Seedream is the
+fine line between realism and a CGI
+look. In our experience, the more
+fantastical the scene and the more details
+we pack into the prompt, the more the
+result tends to look like a 3D render.
+You can see that in these environments.
+There's plenty of detail, but the overall
+finish feels a little too perfect.
+That can suit some projects.
+If you want the image to feel photographed
+though, it's a limitation to keep
+in mind. Another weakness is repetition.
+Seedream can fill a scene with objects or
+textures that look too similar.
+Notice the ferns inside these tanks.
+Their shapes and arrangement repeat across
+the image.
+Something similar happens in this salt
+flat.
+The raised salt formations have a very
+consistent shape and size, creating a
+repeated pattern across much of the
+ground.
+Now, compare that with Soul Cinema's
+result from the same prompt.
+The surface has finer cracks, flatter
+areas, and more variation.
+It doesn't have the same prominent
+repeating pattern, which makes this
+particular result feel more natural.
+Both images describe a salt flat, but the
+way each model handles the surface
+gives us a different sense of realism.
+Seedream is also useful for editing
+existing images.
+We'll come back to that later in the
+lesson and walk through the process in
+detail. For precise text and layouts, we
+use GPT Image.
+It's a reliable all-rounder for text and
+design.
+One of its biggest strengths is prompt
+following.
+It follows detailed instructions very
+closely, so you can specify what
+should be in the image and where it should
+go.
+The more precisely you describe what you
+want, the more closely the result
+can match your brief. Look at this book.
+We've specified the headings, the
+paragraph, and the short descriptions on
+the right-hand page. The model placed that
+text alongside the illustrations
+in a readable layout while keeping the
+whole thing looking like an actual
+book on a table. It's useful for
+storyboards too.
+Here we ask for four shots of one anime
+scene.
+That gives us a visual plan for the
+sequence before we start generating
+video. And here's a smaller detail, an
+American license plate.
+We requested this exact combination of
+letters and numbers, along with the
+state name and the placement of the
+stickers.
+This is where precise instructions are
+especially useful, when a detail
+needs to say something specific, rather
+than just look roughly right.
+With locations though, we have found a
+different trade-off.
+This model can make the image feel
+overloaded with detail.
+Textures can look over-sharpened, and too
+much of the scene competes for
+attention, reducing the sense of depth.
+Look closely at the sky above this road.
+There's a visible noise texture across an
+area that should feel much
+smoother. We've seen this kind of noise
+spread across GPT-generated images,
+rather than staying within individual
+materials.
+In the lantern-lit street, notice the
+sharply defined surfaces and the
+polished finish. There's foreground blur,
+but parts of the environment still
+feel closer to a CGI render than a
+photograph location.
+For text, storyboards, and details that
+need to follow a precise brief, GPT
+is one of our strongest options.
+For locations, we also need to judge the
+depth, texture, and overall
+photographic feel. And then there's Nano
+Banana Pro.
+Like GPT, it follows prompts closely, and
+can handle a wide range of image
+tasks. The trade-off with both GPT and
+Nano is that their results tend to
+have a more obvious AI look than Soul's,
+that default
+artificial finish. So, look at the style
+as well as how closely the image
+follows your request. You can use any
+model
+you like. We mainly use Soul and Seedream
+5.0 Pro for the
+best cinematic results. So, why are we
+spending all this time on still
+images in a video course? Think of it like
+choosing your camera,
+lighting, and visual style before a shoot.
+By the time you generate the video, many
+of those decisions are already
+embedded in the reference.
+Look at these two opening clips.
+Same prompt, different assets, and a
+completely different feel.
+If you're aiming for live action, but your
+reference has plastic textures,
+strange edges, or an artificial finish,
+the video can carry those features
+forward. That's why it's so important to
+spend time preparing your assets.
+High-quality images are a major part of
+what it takes to create a video that
+stands out. Before you start generation,
+take a closer look.
+Do the materials feel believable?
+Does the light make sense?
+Does the mood fit your scene?
+That's where a professional workflow
+starts, making these visual decisions
+deliberately. You choose the face, the
+place, the textures, and the mood
+because they serve your scene.
+Get those choices right and you give the
+video a much stronger starting
+point. One secret technique before we move
+on.
+Add out-of-focus elements in the
+foreground to create more depth and
+simulate the look of a wide open aperture
+in your generated video.
+You can also include shot on an anamorphic
+lens in your Soul Cinema prompt
+to create the distinctive blur and bokeh
+associated with anamorphic glass.
+Carrying that look into your video can
+make the final result feel more
+cinematic and visually distinctive.
+I have a short scene in mind that we'll
+create in lesson 5.
+First, we need to prepare its characters
+and location.
+Let's start with character creation and
+the basics of image editing.
+I'll use AI director to put the character
+sheet together.
+That way we can choose the face and work
+out the outfit in one place.
+Let's open it from the menu on the left,
+the chat appears on the right.
+It's essentially a supercomputer
+configured specifically for cinema studio
+so I can describe what I need in plain
+language.
+I type a main character for a biker road
+movie 25 years old in modern
+clothing. I'll start with that simple
+description.
+To turn that brief into a complete
+character sheet, I'll use a skill.
+I type char and select character sheet.
+It handles the casting, wardrobe, and
+final reference sheet for us.
+It prepares five casting options so I can
+choose a person before committing
+to the full character sheet.
+Here are the casting prompts.
+Different faces and overall looks all
+built around the same character brief.
+I'll approve this batch. These five
+casting images cost just 0.625 credits.
+The director generates the options
+together so I can compare them side by
+side. Now, our casting options are ready.
+Let's open them up and see who fits the
+role.
+I'm looking at the face, hair, clothing,
+and overall presence.
+These are casting options so I don't need
+to refine every detail yet.
+I just want a character I can recognize
+and keep consistent as we build the
+rest of the scene. This one fits.
+I like his look and there's a quiet
+confidence in his eyes.
+I'll use him as our starting point.
+That's candidate 5, the quiet outsider.
+I select him here and submit so the
+director knows which face to keep.
+Next, it asks what the rest of the outfit
+should look like.
+I'll keep the recommended straight leg
+jeans and riding boots.
+That fills in the missing wardrobe details
+and the character sheet will lock
+in his complete outfit. After a short
+wait, the director prepares a three
+view sheet in Sea Dream 5.0 Pro using our
+chosen character and outfit.
+I'll approve it and generate the finished
+sheet.
+Okay, the sheet's ready. We've got a front
+view, a back view, and a larger
+portrait. I checked that the face, hair,
+jacket, and proportions agree
+across the views before using it as a
+reference.
+It also prepares a separate version for
+the next generation steps.
+The smaller face is removed so it doesn't
+compete with the main portrait.
+We found that this simple trick helps
+maintain the character's identity
+during video generation. On a character
+sheet, the face in the full body
+view can differ slightly from the close up
+portrait.
+If both are used as references, the video
+model receives conflicting
+identity cues and the character's face may
+change between wide shots and
+close ups. I want to add and change a few
+details to make this character's
+identity more distinctive.
+Now, let's make a few small changes to his
+outfit.
+I'll use Sea Dream 5.0 Pro for this.
+It lets us adjust individual details while
+keeping the character and the
+image's textures intact. Let's add a
+wallet chain and change the t-shirt
+while keeping everything else as it is.
+I'll drop our character sheet into the
+input, then I'll click in the prompt
+box and describe those changes.
+Give him a silver wallet chain hanging off
+his jeans pocket.
+Replace the black t-shirt with a plain
+white ribbed cotton tank top.
+Same tank top in all views.
+I specify the same tank top in every view
+so the sheet stays consistent.
+Then I click generate. Let's put it next
+to the original.
+The face, jacket, and textures have stayed
+the same.
+We've just added the chain and changed the
+shirt.
+I'll like this version, then download the
+finished character sheet.
+That keeps my chosen result easy to find
+and ready to use as a reference for
+the next shots. For this scene, I'll need
+one more character, this time with
+my own face but still in biker clothing.
+I'll stay in the same AI director chat and
+type.
+I need one more character sheet using the
+face from the first image and the
+outfit from the second image.
+I drag in my photo first, then an image of
+one of the bikers we generated
+earlier. I want to use his outfit for this
+character.
+Then I send the request. The director
+asks, "The second image cuts off
+before the shoes. How should I complete
+the lower outfit?" I'll choose the
+recommended option gray jeans and ankle
+boots.
+The description specifies full length
+straight jeans resting over the boots.
+That's the look I want, so I select it and
+submit.
+With those details confirmed it prepares
+another character sheet.
+I review the prompt and click generate.
+The first version is ready.
+Let's check the outfit. The director
+spotted something that doesn't match
+our request. It says the face and jacket
+match but the jeans are tucked into
+taller boots and asks whether it should
+correct them before finishing.
+You can see it here. The boots are too
+high and the jeans are tucked inside.
+I wanted the fabric to fall over ankle
+height boots.
+I go back and choose correct the jeans and
+The face, jacket and layout should stay
+Only the lower outfit needs another pass.
+The director prepares the correction.
+I check the prompt, then click generate
+again.
+There we go. The jeans now fall over the
+boots just as we asked.
+It also prepares the version with the
+smaller face removed just as it did
+for our first character. Now I have my own
+character in the biker outfit
+ready for the scene. We use AI director to
+make character creation faster
+and easier. But let's take a quick look
+under the hood to understand what
+makes a character feel unique and how to
+assemble your dream cast.
+At the heart of the character sheet skill
+is Soul 2.0, a model we haven't
+covered yet. It is designed to create
+distinctive, realistic characters and
+clothing. To show you what I mean by
+distinctive, let's run a quick
+experiment using the same simple prompt in
+three models, Soul 2.0, Seed
+Dream and Nano Banana. For this test, I'll
+create a separate folder by
+clicking the plus icon next to the
+character folder and naming it model
+testing. Inside the new folder, I'll
+select Soul 2.0 and enter this
+prompt. Portrait of a man in his mid
+thirties.
+I'll run six generations, then switch to
+the other two models and generate
+six images with each of them as well.
+All three batches are ready.
+With Soul, we get six different faces.
+Any of them could work for our scene.
+Seedream and Nano Banana, on the other
+hand, produced six very similar
+looking people. Nano Banana even gave us
+what could pass for twins.
+These models tend to create an averaged,
+idealized appearance.
+They reduce variation and avoid
+imperfections in their results.
+You can refine the prompt and describe a
+face in great detail, but even then
+it can be difficult to guarantee a truly
+unique character.
+Take a closer look at Soul's face.
+They feel like photographs of real people.
+Imperfect skin, unusual features, and
+those little details that give a face
+personality. There is also a significant
+difference in cost.
+A single 2K generation in Nano Banana
+costs three credits, while a generation
+at the same resolution in Soul costs just
+0.125 credits.
+With short prompts like this, you can
+quickly cast characters for your ideas
+at a very low cost. Let's move on and
+learn how to create a
+location.
+While creating the character, I was
+already thinking about where I wanted to
+place him. A small bar, somewhere on the
+outskirts of town, busy with
+people, with a bar counter, and a pool
+table.
+To keep the project organized, I'll create
+a separate folder called
+location. I go straight to the prompt box
+and make sure Soul Cinema is
+selected. I set the aspect ratio to 21 by
+9, which gives the
+composition more room and establishes a
+cinematic widescreen look from the
+start. I could simply type American bar,
+and that would already produce
+interesting results. But I have a clear
+picture of how I want the space to
+look, so I use a more specific prompt.
+Create an empty American dive bar.
+Place a dark wooden bar counter on the
+right, with leather stools and
+illuminated bottles behind it.
+Add a few neon signs, booths along the
+left wall, and a pool table at the
+far end beneath a hanging lamp.
+Frame the shot from the doorway.
+Now I'll run four generations and compare
+the results.
+Four versions are ready. Let's see which
+one gets closest to the bar I had
+in mind. The first one is promising, but
+the heavy grain makes it feel too
+much like a 1990s film. The second feels
+too empty and lacks the
+detail I'm looking for. The third is
+closest to what I pictured, so I won't
+change the prompt. I'll use this image as
+the base for the next step.
+So we have our bar. Let's adapt it to our
+A first result usually needs a few tweaks,
+sometimes a bigger edit.
+That's just part of the process.
+In this case, I want to fill the bar with
+regulars and add one more
+important detail that will help me when I
+generate the video.
+I've already created a separate folder
+where we'll work on the location.
+As I mentioned earlier in the lesson, we
+usually use C Dream 5.0 Pro for
+editing. I drag the downloaded location
+image into the prompt box and
+describe what I want to change.
+For straightforward edits like these,
+plain language is all you need.
+Add eight dive bar regulars, a mix of men
+and women.
+Some are playing pool, others are sitting
+at tables.
+Keep all bar stools empty and place a
+single mug of beer in the middle of
+the bar counter. I'll keep the original
+aspect ratio and generate four
+variations. There we go. They're ready.
+Let's check the changes. This one works.
+We've got people in the bar, the stools
+are empty, and the beer mug is right
+in the middle of the counter.
+The mug acts as a spatial anchor, an
+object I can reference when describing
+the action in my video prompt.
+Instead of explaining the entire layout, I
+can simply say my character is
+sitting on the bar stool beside the beer
+mug in the middle of the counter.
+That gives sedents enough context to place
+him correctly.
+Adding clear visual anchors to a location
+is a useful habit.
+It saves you time, makes spatial
+instructions less ambiguous, and increases
+your chances of getting a successful video
+generation.
+For my scene, I need one more view of this
+A reverse angle facing the door my
+character will walk through.
+I start a new chat in AI director and
+describe the shot.
+I ask it to use SeaDream 5.0 with the
+camera inside the bar
+looking toward the doorway.
+I want a tighter view close to the
+entrance with the door and just a couple
+of stools in frame. Then I drag in the bar
+image as a reference and send the
+request. The director uses that image and
+my instructions to work out the
+new angle. Alright, that one's finished,
+let's have a look.
+We're now looking towards the entrance
+with the counter and stools in the
+foreground, and it even created a jig box
+beside the door.
+This gives me the view I need for my
+character's arrival.
+We now have all the location assets we
+need, and we're ready to move
+on. The next step in preparing the scene
+is creating the props. You can use any of
+the models we covered earlier for
+this. To show you how their results
+differ, I'll compare four models using
+exactly the same prompt. For my scene, I
+need a briefcase.
+I want it to stand out both in my
+character's hand and against the location,
+so I'll make it bright orange.
+This creates a clear focal point in the
+frame and makes the audience wonder
+what might be hidden inside.
+I use this prompt, and here's what each of
+the four image models produced.
+A slim orange hard shell briefcase with a
+ribbed molded lid, rounded
+corners, a black top handle, and two metal
+latches.
+White background, soft studio light, no
+logos or text.
+For this scene, I prefer the first
+briefcase.
+I like its slightly porous texture, and
+the three quarter angle gives
+c-dance clear information about both the
+front and the side.
+That leaves less room for the model to
+interpret its shape, and helps the
+prop remain consistent from shot to shot.
+For more complex objects, with different
+details on the front, back, and
+sides, it's better to create a prop sheet
+that shows every important angle
+and feature. For this briefcase, a prop
+sheet could look like this.
+We'll cover how to prepare detailed assets
+like this, along with more
+advanced techniques for creating and
+editing characters in our advanced
+course. Now that all the assets are
+prepared and organized, I'm ready to
+move on to video generation, a process
+with even more variables to
+consider. But first, it's time for your
+homework.
+Now it's your turn to prepare assets for a
+scene of your own.
+Create one or two characters, and a
+character sheet for each.
+Then, generate a location where your scene
+will take place.
+Make a few deliberate edits to that
+You could add people, change an object, or
+introduce a detail your
+character will interact with.
+Think about what needs to happen in the
+scene, and make your edits serve
+that idea. Upload your character sheets
+and the before and after location
+images to the platform. Include a short
+description of your scene, and
+explain what you changed.
+Now, you should have your cast and your
+location, but how do you bring them
+together and turn separate images into a
+scene that feels connected?
+In lesson five, we'll place our characters
+into the environment and start
+building the scene in motion.
+We'll take a closer look at CDEN's 2.5,
+how it uses your references, how to
+guide the action, and how to get the
+characters and camera to do what you
+have in mind. So, bring the assets you've
+prepared and we'll put them to
+work in the next lesson. See you there.

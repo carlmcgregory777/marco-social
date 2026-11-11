@@ -1,0 +1,44 @@
+{
+  "composizione": "A7SABELLA",
+  "cartella_public": "a7sabella",
+  "valzer": 1,
+  "testo_voce": "attualita/A7-sabella/voce/testo-v1.txt",
+  "chiave": [
+    "SABELLA",
+    "GIUDICE",
+    "BORSEGGIATRICI",
+    "TASSE",
+    "IRPEF",
+    "IVA",
+    "BOLLO",
+    "SICUREZZA",
+    "SERVIZIO",
+    "CONTRATTO",
+    "PAGATO",
+    "INCASSATO",
+    "COLPA",
+    "METROPOLITANA",
+    "STATO",
+    "PERMESSO"
+  ],
+  "tagli": [
+    18.0,
+    38.0,
+    60.0,
+    80.0
+  ],
+  "enfasi": [
+    "Sabella",
+    "tasse",
+    "capita",
+    "sfrutta",
+    "servizio",
+    "pagato"
+  ],
+  "riser": [
+    36.0
+  ],
+  "clip_labiale": "attualita/A7-sabella/clip/C-parla.mp4",
+  "copertina": "CoverA7SABELLA",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

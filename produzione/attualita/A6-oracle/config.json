@@ -1,0 +1,55 @@
+{
+  "composizione": "A6ORACLE",
+  "cartella_public": "a6oracle",
+  "valzer": 0,
+  "testo_voce": "attualita/A6-oracle/voce/testo-v2.txt",
+  "chiave": [
+    "BURRY",
+    "ORACLE",
+    "SHORT",
+    "SETTE",
+    "MILIARDI",
+    "CHIP",
+    "CINQUANTUNO",
+    "51",
+    "CONTRATTO",
+    "ESEGUIRE",
+    "FIRMATO",
+    "CONFINE",
+    "FRONTIERE",
+    "REGOLA",
+    "PAURA",
+    "NUMERI",
+    "TITOLI",
+    "SEGNALE",
+    "PREZZO",
+    "FAVOLA",
+    "DOVE",
+    "CINA",
+    "GEOGRAFIA",
+    "RAGIONE"
+  ],
+  "tagli": [
+    16.0,
+    33.0,
+    52.0,
+    74.0,
+    96.0
+  ],
+  "enfasi": [
+    "Burry",
+    "miliardi",
+    "eseguire",
+    "Nvidia",
+    "cinquanta",
+    "frontiere",
+    "titoli",
+    "favola"
+  ],
+  "riser": [
+    50.0
+  ],
+  "clip_labiale": "attualita/A6-oracle/clip/C-parla.mp4",
+  "copertina": "CoverA6ORACLE",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

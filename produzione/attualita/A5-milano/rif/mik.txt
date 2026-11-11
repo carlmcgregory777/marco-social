@@ -1,0 +1,49 @@
+# Trascrizione del reel di Mik Cosentino (05/11/2026)
+https://www.instagram.com/p/DfWskbeogh6/ — 124 s, 1080x1920, 30 fps
+Trascritta con faster-whisper small (italiano). Refusi automatici lasciati come sono.
+
+[  0.00 ->   6.40] a milano hanno iniziato a scarcerare in maranza del 17 ottobre ragazzi siamo alla foglia il primo è già a casa 24 anni
+[  6.40 ->  13.00] ha restato per la devastazione del centro fuori dal 3 novembre già perchè secondo il jeep non c'è assolutamente prova che abbia aggredito
+[ 13.00 ->  19.08] offerito agenti, secondo lui stava semplicemente assistendo all'arresto di un minore, ma attenzione perchè in fila tutto questo ragazzi c'è anche il
+[ 19.08 ->  23.80] ventunenne già col passamontaniel teschio stampato romanti quello che secondo gli atti contro la polizia ha lanciato
+[ 23.80 ->  29.00] troppe tardi san pietrino, un taurino di metallo e addirittura calci e il PM ha già dato pubblicamente
+[ 29.00 ->  33.60] parere favorevole domiciliare, perè vorrei ricordarvi il preludo di tutta questa storia perchè prima di loro ragazzi
+[ 33.60 ->  38.80] ho uscito anche quello che per la procure era la mente del movimento, il yo sir si era fuori dal 28 ottobre
+[ 38.80 ->  44.80] cazzo perchè la sua secondo il jeep era disobbedienza cemilia, ora però facciamo un attimo i conti perchè qui ragazzi i conti
+[ 44.80 ->  51.80] non li sta facendo un cazzo di nessuno, il 17 e 18 ottobre a milano hanno portato in quest'ora 271 persone 220 erano
+[ 51.80 ->  56.80] meno reni e il più piccolo aveva 11 anni ragazzi e in tutto questo c'è anche un dato che in televisione non passa quasi
+[ 56.80 ->  62.80] mai perchè di quelle 271 persone 60 non avevano per un cazzo la città dinazza italiana perè 60 è meno di un quarto
+[ 62.80 ->  67.80] gli altri 211 in teoria sono italiani magari molte di questi di seconda generazione quindi apparentemente
+[ 67.80 ->  71.80] non è un problema di migrazione ma un problema di figli di questo paese che abbiammente hanno scoperto
+[ 71.80 ->  76.80] che distruggere non costa assolutamente un cazzo ma non solo perchè tutti questi non sono semplicemente
+[ 76.80 ->  80.80] ragazzi delle periferie milanesi ma arrivano da Parma da Bergamo da Monza da Como da Leggo insomma
+[ 80.80 ->  85.80] da tutta Italia e si sono mesi semplicemente in macchina per venire a spaccare le vetrine di Milano
+[ 85.80 ->  90.80] e il conto ragazzi che lo voglio semplicemente ricordare ovviamente per una persona che vicina
+[ 90.80 ->  94.80] alle partiteva è molto importante oltre un milione di euro di danni le boutiques del lustro con
+[ 94.80 ->  98.80] le serrande abbassate e il care fu rassolutamente svultato e in teoria l'accusa di devastazione
+[ 98.80 -> 102.80] saccheggio è andare da 8 a 15 anni poi il 28 ottobre il tribunale mande in carcere 4 minorini
+[102.80 -> 107.80] 1 domicilare i minori in comunità e sono solamente due giorni e ne restano dentro solamente 3 21 se ne
+[107.80 -> 112.80] tormano a casa gambe levate a rimangiare il popcorn il 3 novembre ragazzi e scelva 24 anni
+[112.80 -> 117.80] cioè praticamente sono bastati 15 giorni per dimenticare il 17 ottobre e questo da mio punto di vista
+[117.80 -> 122.80] non è un errore del sistema ragazzi questo è semplicemente come funziona il sistema
+[122.80 -> 123.80] benvenuti in Italia
+
+## Lettura dei numeri (da verificare prima di riusarli)
+| Detto | Valore |
+|---|---|
+| fermati in questura, 17-18 ottobre | 271 |
+| di cui minorenni | 220 |
+| il più piccolo | 11 anni |
+| senza cittadinanza italiana | 60 (meno di un quarto) |
+| quindi italiani | 211 (molti di seconda generazione) |
+| danni | oltre 1 milione di euro |
+| accusa devastazione e saccheggio (art. 419 c.p.) | 8-15 anni |
+| 28 ottobre, provvedimento del tribunale | 4 in carcere, 1 domiciliare, minori in comunità |
+| rimasti dentro dopo due giorni | 3 (21 a casa) |
+| 3 novembre | uno dei fermati, 24 anni, già fuori |
+| tempo per dimenticare | 15 giorni |
+
+## Come è girato
+Unica inquadratura per tutti i 124 s: Mik a mezzo busto, seduto al tavolo, braccia conserte, camicia nera, occhiali, orologio d'oro, tatuaggi. Sfondo stanza bianca con finestra. Sottotitoli bianchi centro-basso, due righe, sans-serif, senza bordo. Micro-movimenti naturali di testa. Nessun taglio, nessuna grafica, nessun B-roll.
+
+Struttura: gancio (0-6) → cronaca con i nomi (6-44) → «i conti non li sta facendo nessuno» + il dato (44-72) → il ribaltamento, «non è migrazione, è figli di questo paese» (72-98) → il conto dei danni e dei giorni (98-118) → tesi + «benvenuti in Italia» (118-124).

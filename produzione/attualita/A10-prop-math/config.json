@@ -1,0 +1,41 @@
+{
+  "composizione": "A10PROP",
+  "cartella_public": "a10prop",
+  "valzer": 1,
+  "testo_voce": "attualita/A10-prop-math/voce/testo-v1.txt",
+  "chiave": [
+    "MONETA",
+    "FORTUNA",
+    "TRECENTO",
+    "SCREENSHOT",
+    "SURVIVORSHIP",
+    "BIAS",
+    "SETTE",
+    "CHALLENGE",
+    "VANTAGGIO",
+    "CONTO",
+    "PAGAMENTI",
+    "CAMPIONI",
+    "SISTEMI"
+  ],
+  "tagli": [
+    12.0,
+    30.0,
+    50.0,
+    70.0
+  ],
+  "enfasi": [
+    "moneta",
+    "trecento",
+    "screenshot",
+    "survivorship",
+    "sette",
+    "conto"
+  ],
+  "riser": [
+    30.0
+  ],
+  "clip_labiale": "attualita/A10-prop-math/clip/C-parla.mp4",
+  "copertina": "CoverA10PROP",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

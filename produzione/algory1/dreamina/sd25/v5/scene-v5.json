@@ -1,0 +1,56 @@
+[
+ {
+  "src": "T1.mp4",
+  "from": 0.0,
+  "dur": 4.5,
+  "inizio": 0.45
+ },
+ {
+  "src": "voce",
+  "from": 4.5,
+  "dur": 4.3,
+  "inizio": 4.15
+ },
+ {
+  "src": "T2.mp4",
+  "from": 8.8,
+  "dur": 5.0,
+  "inizio": 0.0
+ },
+ {
+  "src": "voce",
+  "from": 13.8,
+  "dur": 6.65,
+  "inizio": 13.45
+ },
+ {
+  "src": "T3.mp4",
+  "from": 20.45,
+  "dur": 4.85,
+  "inizio": 0.0
+ },
+ {
+  "src": "voce",
+  "from": 25.3,
+  "dur": 4.95,
+  "inizio": 24.4
+ },
+ {
+  "src": "T4.mp4",
+  "from": 30.25,
+  "dur": 5.95,
+  "inizio": 0.0
+ },
+ {
+  "src": "voce",
+  "from": 36.2,
+  "dur": 3.6,
+  "inizio": 34.5
+ },
+ {
+  "src": "T5.mp4",
+  "from": 39.8,
+  "dur": 4.76,
+  "inizio": 0.3
+ }
+]

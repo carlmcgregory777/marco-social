@@ -1,0 +1,13 @@
+{
+  "composizione": "A15BOLLETTE",
+  "cartella_public": "a15bollette",
+  "valzer": 2,
+  "testo_voce": "attualita/A15-bollette/voce/testo-v1.txt",
+  "chiave": ["BOLLETTE", "NUMERI", "INFLAZIONE", "ENERGIA", "ISTAT", "MILIARDO", "SPREAD", "MERCATI", "CORTEO", "POTERE", "CONTO", "SILENZIOSA", "NUMERO"],
+  "tagli": [16.0, 32.0, 48.0, 66.0],
+  "enfasi": ["fregando", "megafono", "miliardo", "niente", "bolletta", "silenziosa"],
+  "riser": [42.0],
+  "clip_labiale": "attualita/A15-bollette/clip/C-parla.mp4",
+  "copertina": "CoverA15BOLLETTE",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

@@ -1,0 +1,497 @@
+[
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 0,
+  "titolo": "",
+  "testo": "Allora, ti dico subito una cosa. Io in un weekend ho bruciato cinquecento euro. Ed erano praticamente tutti i miei risparmi.",
+  "a": 0.0,
+  "b": 8.15
+ },
+ {
+  "tipo": "G",
+  "nota": "conto che scende a zero",
+  "lezione": 0,
+  "titolo": "",
+  "testo": "Poi ho bruciato challenge su challenge, che a un certo punto ho smesso pure di contarle. E c'è stato un periodo che ero senza lavoro, col conto a zero, e stavo andando avanti con gli ultimi soldi che avevo da parte.",
+  "a": 8.15,
+  "b": 19.89
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 0,
+  "titolo": "",
+  "testo": "Faccio trading dal 2016, quindi sono quasi dieci anni. E in dieci anni ho provato di tutto, eh. Davvero di tutto. Analisi tecnica, analisi volumetrica, order flow, i quartili, gli algo con l'inducement… mettici dentro quello che vuoi, l'ho provato.",
+  "a": 19.89,
+  "b": 36.19
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 0,
+  "titolo": "",
+  "testo": "E oggi? Oggi lavoro in un modo completamente diverso. Molto meno stressante. E soprattutto senza stare attaccato al grafico tutto il giorno. In questo video ti racconto com'è andata, dall'inizio. Gli errori, quelli stupidi e quelli che fanno male. E ti dico le dodici cose che ho imparato, così magari tu non ci metti dieci anni come me.",
+  "a": 36.19,
+  "b": 56.98
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 0,
+  "titolo": "",
+  "testo": "Ah, aspetta, prima che te lo chieda: sì, io non sono una persona vera. Mi chiamo C, sono un personaggio fatto con l'intelligenza artificiale. Il caschetto viola, i baffi… lo so, lo so.",
+  "a": 56.98,
+  "b": 69.86
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 0,
+  "titolo": "",
+  "testo": "Dietro di me c'è Marco. La storia è sua, al cento per cento. Solo che l'ho sentita raccontare così tante volte che ormai te la racconto io, come se fosse mia. E la faccia ce la metto io, perché lui… vabbè, lui preferisce stare dietro le quinte.",
+  "a": 69.86,
+  "b": 85.21
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 1,
+  "titolo": "Vincere a caso è peggio che perdere",
+  "testo": "Allora. 2016, forse 2017. Sto scrollando e mi esce la pubblicità di un tizio che faceva trading. Macchine, viaggi, la solita roba, no? «Anche tu puoi.»",
+  "a": 85.21,
+  "b": 97.0
+ },
+ {
+  "tipo": "I",
+  "nota": "telefono",
+  "lezione": 1,
+  "titolo": "Vincere a caso è peggio che perdere",
+  "testo": "E io ci casco. Apro un conto su un broker, ci metto i primi soldi, e inizio. Senza sapere niente, eh. Apro, chiudo, apro, chiudo. Proprio a caso. Con una leva che… guarda, lasciamo stare. E in un'ora faccio ottanta euro.",
+  "a": 97.0,
+  "b": 112.27
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 1,
+  "titolo": "Vincere a caso è peggio che perdere",
+  "testo": "Ottanta euro in un'ora! Mi sentivo un genio. E invece è stata la cosa peggiore che mi potesse succedere. Perché da quel momento ero convinto di essere bravo. E quando poi perdi, e perdi, non lo accetti. Ti sembra un'ingiustizia. E vuoi rifarti subito.",
+  "a": 112.27,
+  "b": 129.62
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 2,
+  "titolo": "Il mercato non è solo il grafico",
+  "testo": "E infatti, poco dopo, arriva la mazzata. Questa ancora me la ricordo come se fosse ieri. Venerdì sera. Ho una posizione aperta sul petrolio. Esco, vado al cinema. E non la chiudo. Tanto, pensavo, il mercato è chiuso nel weekend, cosa vuoi che succeda?",
+  "a": 129.62,
+  "b": 146.46
+ },
+ {
+  "tipo": "I",
+  "nota": "popcorn",
+  "lezione": 2,
+  "titolo": "Il mercato non è solo il grafico",
+  "testo": "Ecco. Quello che non sapevo è che il mercato nel weekend è chiuso, ma il mondo no. Escono notizie, succedono cose. E il lunedì il prezzo non riparte da dove l'avevi lasciato: riparte da tutt'altra parte. Fa un salto. Si chiama gap.",
+  "a": 146.46,
+  "b": 163.37
+ },
+ {
+  "tipo": "G",
+  "nota": "grafico del petrolio col buco del weekend, scritta «GAP»",
+  "lezione": 2,
+  "titolo": "Il mercato non è solo il grafico",
+  "testo": "Lunedì mattina apro il conto e… cinquecento euro andati. Bruciati. Mentre io mangiavo i popcorn.",
+  "a": 163.37,
+  "b": 170.6
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 2,
+  "titolo": "Il mercato non è solo il grafico",
+  "testo": "Rimasi un attimo shockato, te lo giuro. E da lì ho capito una cosa che ancora oggi è il motivo per cui sui reel ti racconto le notizie: il grafico non è tutto. Quello che succede nel mondo arriva sul tuo conto, che tu lo voglia o no.",
+  "a": 170.6,
+  "b": 185.31
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 3,
+  "titolo": "Le basi servono, ma non bastano",
+  "testo": "Comunque, non mi do per vinto. Mi metto a studiare. E qui ti parlo di un'epoca in cui le prop firm non esistevano nemmeno.",
+  "a": 185.31,
+  "b": 192.46
+ },
+ {
+  "tipo": "I",
+  "nota": "libro",
+  "lezione": 3,
+  "titolo": "Le basi servono, ma non bastano",
+  "testo": "Mi affido a un formatore italiano e imparo le basi. Il money management, cioè quanto rischiare su ogni operazione. Il rapporto rischio-rendimento. Il win rate. Le sessioni di mercato, Londra, New York…",
+  "a": 192.46,
+  "b": 205.85
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 3,
+  "titolo": "Le basi servono, ma non bastano",
+  "testo": "E ti faccio un esempio, perché questa è una cosa che vale ancora oggi. Se ogni volta che entri rischi dieci euro per guadagnarne venti, puoi anche sbagliare una volta su due. Fai il conto: perdi dieci, vinci venti, sei comunque sopra. Il trading è matematica, non è indovinare.",
+  "a": 205.85,
+  "b": 223.19
+ },
+ {
+  "tipo": "G",
+  "nota": "medie mobili, trendline, supporti, resistenze che si sommano",
+  "lezione": 3,
+  "titolo": "Le basi servono, ma non bastano",
+  "testo": "Poi tutta l'analisi tecnica classica. Medie mobili, trendline, rotture di supporti e resistenze, indicatori. Tutta roba giusta, eh, non ti sto dicendo che non serve.",
+  "a": 223.19,
+  "b": 233.77
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 3,
+  "titolo": "Le basi servono, ma non bastano",
+  "testo": "Il problema è che saperle, le regole, non vuol dire rispettarle. Tienitela questa, perché poi torna.",
+  "a": 233.77,
+  "b": 240.63
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 4,
+  "titolo": "Una challenge non è un biglietto della lotteria",
+  "testo": "Poi arrivano le prop firm. Per chi non lo sa: sono società che ti danno un conto grosso, tipo cinquantamila, centomila dollari, se passi un esame. L'esame si chiama challenge. Paghi l'iscrizione, rispetti le regole, raggiungi l'obiettivo, e poi lavori coi soldi loro.",
+  "a": 240.63,
+  "b": 256.54
+ },
+ {
+  "tipo": "G",
+  "nota": "scheda di una challenge col contatore dei giorni che scende",
+  "lezione": 4,
+  "titolo": "Una challenge non è un biglietto della lotteria",
+  "testo": "Al tempo avevi pure trenta giorni per passarla. E a me sembrava l'unica occasione per vivere di trading. Cioè, non ti servono i soldi tuoi, ti serve solo essere bravo. Fantastico, no?",
+  "a": 256.54,
+  "b": 267.35
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 4,
+  "titolo": "Una challenge non è un biglietto della lotteria",
+  "testo": "Il problema è quel contatore. Trenta giorni, ventinove, ventotto… e più scende, più ti agiti. Entri dove non dovresti entrare, perché «eh, il tempo stringe».",
+  "a": 267.35,
+  "b": 278.5
+ },
+ {
+  "tipo": "I",
+  "nota": "strappa",
+  "lezione": 4,
+  "titolo": "Una challenge non è un biglietto della lotteria",
+  "testo": "E io le challenge le pagavo. E le bruciavo. Ne pagavo un'altra. E la bruciavo. Sempre lo stesso film: due giorni perfetti, poi un'operazione che va storta, sposti lo stop, «tanto torna», raddoppi per recuperare… e in venti minuti l'esame è finito.",
+  "a": 278.5,
+  "b": 294.44
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 4,
+  "titolo": "Una challenge non è un biglietto della lotteria",
+  "testo": "E sai cosa ho capito? Che se compri una challenge sperando che stavolta vada bene, non stai facendo trading. Stai comprando un gratta e vinci. Pure caro.",
+  "a": 294.44,
+  "b": 303.87
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 5,
+  "titolo": "Cambiare metodo non cambia te",
+  "testo": "Allora cosa fai? Pensi che ti manchi un pezzo. E inizi a cambiare metodo.",
+  "a": 303.87,
+  "b": 308.46
+ },
+ {
+  "tipo": "G",
+  "nota": "carosello veloce: volumi, order flow, quartili, inducement",
+  "lezione": 5,
+  "titolo": "Cambiare metodo non cambia te",
+  "testo": "Passo all'analisi volumetrica. Poi all'order flow, dove guardi chi compra e chi vende, quasi tick per tick. Poi i quartili. Poi gli algo con l'inducement, la liquidità, le trappole dei grandi operatori… Ogni volta era quello giusto. Ogni volta era «la volta buona».",
+  "a": 308.46,
+  "b": 325.46
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 5,
+  "titolo": "Cambiare metodo non cambia te",
+  "testo": "E la cosa assurda è che un po' funzionavano tutti, eh. Il problema non era il metodo. Il problema ero io. Quello seduto davanti al grafico.",
+  "a": 325.46,
+  "b": 334.31
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 6,
+  "titolo": "Sopravvivere non è vivere di trading",
+  "testo": "Vabbè, da lì ne sono successe di cose. Conti bruciati, conti ripresi, qualche payout… Ogni payout ti fa pensare «ecco, ci sono, ce l'ho fatta». Poi due settimane storte e il conto non c'è più. Su e giù, su e giù, per anni. Sono sopravvissuto, diciamo così. Ma sopravvivere non è vivere di trading.",
+  "a": 334.31,
+  "b": 355.79
+ },
+ {
+  "tipo": "I",
+  "nota": "testa",
+  "lezione": 6,
+  "titolo": "Sopravvivere non è vivere di trading",
+  "testo": "E poi arriva il periodo peggiore. Conto bruciato. Senza lavoro. E stavo attingendo agli ultimi risparmi che avevo.",
+  "a": 355.79,
+  "b": 363.6
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 6,
+  "titolo": "Sopravvivere non è vivere di trading",
+  "testo": "E lì ti fai la domanda che prima o poi si fanno tutti: «ma chi me lo fa fare?» Ci sei passato anche tu? Dai, scrivimelo nei commenti, non ti giudica nessuno.",
+  "a": 363.6,
+  "b": 373.88
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 6,
+  "titolo": "Sopravvivere non è vivere di trading",
+  "testo": "Tanti a quel punto mollano. Ed è pure comprensibile. Io no. Perché dopo tutti quegli anni una cosa l'avevo capita, ed ero sicuro al cento per cento.",
+  "a": 373.88,
+  "b": 383.0
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 7,
+  "titolo": "Se si può interpretare, lo interpreterai a tuo favore",
+  "testo": "Il grafico va letto in modo oggettivo. Totalmente. Sia la lettura, sia i segnali per entrare. Altrimenti è tutto inutile.",
+  "a": 383.0,
+  "b": 392.44
+ },
+ {
+  "tipo": "G",
+  "nota": "una frase senza punteggiatura con le parole mescolate che si ricompone",
+  "lezione": 7,
+  "titolo": "Se si può interpretare, lo interpreterai a tuo favore",
+  "testo": "Ti faccio un paragone. È come una frase senza regole di grammatica: ognuno la legge come vuole. E nel trading, indovina un po', tu la leggi sempre come ti conviene. Se sei in perdita vedi la ripresa dappertutto. Se sei in guadagno vedi l'inversione dappertutto.",
+  "a": 392.44,
+  "b": 408.29
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 7,
+  "titolo": "Se si può interpretare, lo interpreterai a tuo favore",
+  "testo": "Ed è proprio in quel periodo che un mio amico mi fa vedere il profilo di questo trader, Vaga FX. Uno che leggeva il grafico con un metodo completamente oggettivo. Niente interpretazioni, niente «secondo me». Regole. E mi è piaciuto subito. Ma tanto, eh.",
+  "a": 408.29,
+  "b": 424.79
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 8,
+  "titolo": "Non copiare: capire",
+  "testo": "Però attenzione, perché qui c'è la parte importante. Io non ho copiato le sue operazioni. Ho preso i suoi concetti, li ho capiti, e ci ho costruito sopra una strategia mia. Adatta a me, ai miei orari, alla mia vita.",
+  "a": 424.79,
+  "b": 438.35
+ },
+ {
+  "tipo": "G",
+  "nota": "notifiche una sopra l'altra: «Challenge superata», «Payout ricevuto»",
+  "lezione": 8,
+  "titolo": "Non copiare: capire",
+  "testo": "E funziona. Mi prendo una challenge… e la passo. E arrivano i payout.",
+  "a": 438.35,
+  "b": 443.17
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 8,
+  "titolo": "Non copiare: capire",
+  "testo": "Dopo anni. La prima volta che le cose giravano davvero. Ecco perché oggi lo dico senza problemi: siamo studenti di Vaga e seguiamo i suoi insegnamenti.",
+  "a": 443.17,
+  "b": 453.9
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 9,
+  "titolo": "Togliere te stesso dall'equazione",
+  "testo": "E poi un giorno Vaga se ne esce con un progetto nuovo. Si era appassionato al trading algoritmico, e crea la prima bozza di un software. Si chiamava già Algory.",
+  "a": 453.9,
+  "b": 463.88
+ },
+ {
+  "tipo": "I",
+  "nota": "portatile",
+  "lezione": 9,
+  "titolo": "Togliere te stesso dall'equazione",
+  "testo": "Lo fa provare ai veterani della sua community. E tra quelli c'ero io. Quindi sì, siamo stati tra i beta tester. Aggiornamento dopo aggiornamento l'abbiamo visto crescere, ogni tanto l'abbiamo pure rotto, e abbiamo aiutato a migliorarlo. E non si è mai fermato, lo aggiornano di continuo.",
+  "a": 463.88,
+  "b": 481.37
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 9,
+  "titolo": "Togliere te stesso dall'equazione",
+  "testo": "E lì mi è cambiata proprio la domanda. Non più «qual è il metodo giusto?». Ma: «posso togliermi io di mezzo?»",
+  "a": 481.37,
+  "b": 489.56
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 10,
+  "titolo": "Quello che prima richiedeva anni",
+  "testo": "Pensa a cosa voleva dire, prima, fare trading con un sistema automatico. Avevi un'idea, dovevi trasformarla in un bot, testarla, scoprire magari che era solo fortuna, buttarla e ricominciare. Ci volevano anni. Ed era roba da programmatori, non da gente come me.",
+  "a": 489.56,
+  "b": 505.77
+ },
+ {
+  "tipo": "G",
+  "nota": "Algory che genera strategie e i test che si accendono",
+  "lezione": 10,
+  "titolo": "Quello che prima richiedeva anni",
+  "testo": "Algory questa cosa la fa da solo, in base ai parametri che decidi tu. Crea un sacco di strategie, le mette alla prova su dati che non hanno mai visto, e butta via quelle che sono solo fortuna.",
+  "a": 505.77,
+  "b": 516.54
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 10,
+  "titolo": "Quello che prima richiedeva anni",
+  "testo": "È un po' come uno studente, no? Non basta che sappia a memoria le domande dell'anno scorso. Deve passare l'esame con domande nuove. Se non lo passa, fuori. Come fa tutto questo te lo spiego per bene nei prossimi video, pezzo per pezzo. E ripensa a quello che ti ho raccontato prima. Una strategia non si gasa per ottanta euro. Non va al cinema. E non interpreta niente: fa quello che deve fare.",
+  "a": 516.54,
+  "b": 539.63
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 11,
+  "titolo": "Si perde anche così",
+  "testo": "Ora però, occhio. Non ti sto dicendo che è una macchina che stampa soldi. Non esiste, e chi te lo dice ti sta prendendo in giro.",
+  "a": 539.63,
+  "b": 546.73
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 11,
+  "titolo": "Si perde anche così",
+  "testo": "Si perde anche così. Ogni sistema ha i suoi mesi brutti. La differenza è che adesso sai perché perdi. Prima di accendere una strategia sai già più o meno quanto può scendere nei periodi brutti. Se scende così, è normale, la lasci lavorare. Se scende molto di più, qualcosa non va, e la spegni. È una regola, non un'emozione.",
+  "a": 546.73,
+  "b": 567.54
+ },
+ {
+  "tipo": "I",
+  "nota": "caffe",
+  "lezione": 11,
+  "titolo": "Si perde anche così",
+  "testo": "E dopo dieci anni passati a non capirci niente, credimi, è un'altra vita. Meno stress, niente dieci schermi accesi. Puoi andare a lavorare, uscire, dormire. Puoi pure andare al cinema, finalmente.",
+  "a": 567.54,
+  "b": 579.96
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "L'ultima cosa. Prima, per fare sul serio, servivano corsi da migliaia di euro, abbonamenti ai segnali, challenge comprate una dietro l'altra sperando.",
+  "a": 579.96,
+  "b": 589.46
+ },
+ {
+  "tipo": "G",
+  "nota": "schema che si compone: METODO (Vaga FX) → STRUMENTO (Algory) → CONTO (100.000 $ di una prop firm) → COMPUTER IN CLOUD (acceso 24 ore su 24) → QUESTO CANALE",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "Oggi io lavoro così: il metodo di Vaga, Algory come strumento, un conto da centomila dollari di una prop firm, e un computer in cloud che resta acceso giorno e notte. E Algory lo puoi provare partendo dal piano gratuito.",
+  "a": 589.46,
+  "b": 602.54
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "Se ti interessa, ti lascio il link in descrizione. Te lo dico chiaro: è un link affiliato, quindi se un giorno passi a un piano a pagamento a noi arriva una parte, e a te non costa niente di più. Anzi, col codice STANGA50 il primo pagamento lo paghi la metà.",
+  "a": 602.54,
+  "b": 618.04
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "Questo è il primo video del canale, e da qui partiamo. Nei prossimi ti porto dentro Algory passo per passo: come si usa per passare una challenge, come si usa su un conto personale, e perché io il trading a mano l'ho proprio abbandonato.",
+  "a": 618.04,
+  "b": 631.4
+ },
+ {
+  "tipo": "G",
+  "nota": "anteprime dei prossimi video",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "E poi ogni giorno, sui reel, le notizie del mondo spiegate per i tuoi soldi, senza panico.",
+  "a": 631.4,
+  "b": 637.06
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "Quello che voglio costruire qui è una community. Di gente che ci ha provato in tutti i modi, come me, e che si è stufata di sentire promesse. Quindi scrivimi nei commenti cosa hai provato tu finora. Li leggo tutti, davvero.",
+  "a": 637.06,
+  "b": 650.31
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "E ti lascio con una cosa.",
+  "a": 650.31,
+  "b": 651.92
+ },
+ {
+  "tipo": "L",
+  "nota": "",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "Quando ho iniziato, una roba del genere non era neanche nelle mie fantasie più ottimiste. E invece eccoci qua. Nessuna di queste dodici cose è complicata, eh. Non serve l'indicatore segreto, non serve il metodo perfetto, perché non esiste. Servono regole che non si possono interpretare. E qualcosa che le rispetti sempre, anche quando tu non ne hai voglia. Per dieci anni quel qualcosa dovevo essere io. Oggi non più.",
+  "a": 651.92,
+  "b": 677.6
+ },
+ {
+  "tipo": "M",
+  "nota": "",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "Ah, ovviamente non è un consiglio finanziario: il trading è rischioso e puoi perdere i tuoi soldi.",
+  "a": 677.6,
+  "b": 683.21
+ },
+ {
+  "tipo": "I",
+  "nota": "alzata",
+  "lezione": 12,
+  "titolo": "Non serve un capitale grosso",
+  "testo": "Ci vediamo nel prossimo video. Ciao.",
+  "a": 683.21,
+  "b": 685.56
+ }
+]

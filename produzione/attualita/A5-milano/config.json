@@ -1,0 +1,12 @@
+{
+  "composizione": "A5TEST",
+  "cartella_public": "a5test",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png",
+  "testo_voce": "attualita/A5-milano/voce/testo-v2.txt",
+  "clip_labiale": "attualita/A5-milano/clip/C-parla.mp4",
+  "valzer": 2,
+  "chiave": ["271","VENTUNO","SCARCERATO","MISURA","CAUTELARE","GIUDICE","CARCERE","PROCESSO","CODICE","SISTEMA","ESEGUE"],
+  "tagli": [13.55, 25.45, 35.40, 42.77, 49.45],
+  "enfasi": ["271","normale","cautelare","esegue"],
+  "riser": [48.0]
+}

@@ -1,0 +1,41 @@
+{
+  "composizione": "A8MERCATO",
+  "cartella_public": "a8mercato",
+  "valzer": 2,
+  "testo_voce": "attualita/A8-mercato/voce/testo-v2.txt",
+  "chiave": [
+    "CROLLATO",
+    "PAURA",
+    "PRODOTTO",
+    "2013",
+    "VENDUTO",
+    "GUADAGNO",
+    "GRAFICO",
+    "PORTAFOGLIO",
+    "RECORD",
+    "MESTIERE",
+    "ZERO",
+    "TREDICI",
+    "DOV'ERI"
+  ],
+  "tagli": [
+    14.0,
+    34.0,
+    54.0,
+    74.0
+  ],
+  "enfasi": [
+    "crollato",
+    "massimi",
+    "paura",
+    "prodotto",
+    "2013",
+    "venduto"
+  ],
+  "riser": [
+    32.0
+  ],
+  "clip_labiale": "attualita/A8-mercato/clip/C-parla.mp4",
+  "copertina": "CoverA8MERCATO",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

@@ -1,0 +1,40 @@
+{
+  "composizione": "A13QI",
+  "cartella_public": "a13qi",
+  "valzer": 1,
+  "testo_voce": "attualita/A13-qi/voce/testo-v1.txt",
+  "chiave": [
+    "QUOZIENTE",
+    "DIO",
+    "TITOLO",
+    "GUINNESS",
+    "CATENA",
+    "INFINITO",
+    "FILOSOFICO",
+    "DIMOSTRAZIONE",
+    "FINFLUENCER",
+    "FOLLOWER",
+    "PROVA",
+    "NUMERI"
+  ],
+  "tagli": [
+    12.0,
+    30.0,
+    50.0,
+    70.0
+  ],
+  "enfasi": [
+    "matematica",
+    "titolo",
+    "catena",
+    "filosofico",
+    "peggiori",
+    "prova"
+  ],
+  "riser": [
+    30.0
+  ],
+  "clip_labiale": "attualita/A13-qi/clip/C-parla.mp4",
+  "copertina": "CoverA13QI",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

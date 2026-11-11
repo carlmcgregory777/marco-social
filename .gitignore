@@ -14,3 +14,6 @@ produzione/remotion-c/public/
 *.jpeg
 *.pdf
 *.webp
+produzione/remotion-c/build-*/
+produzione/remotion-c/public-*/
+*.webm

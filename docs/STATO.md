@@ -194,3 +194,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
   - YouTube: descrizione del canale con Algory e i due codici spiegati; primo link rinominato «Algory -20% STANGA20».
   - TikTok: non si tocca finché non si raggiunge la soglia di follower.
   - Attualità #4 midterm USA: copione in produzione/attualita/A4-midterm/copione.md (tesi di Jashi: governo diviso = poche leggi = bene per le azioni). Da approvare da Marco, poi produzione.
+
+### 04/11/2026: Attualità #4 «Trump ha perso il Congresso (e io sono contento)», PRIMO video del format «C al microfono»
+- Format nuovo deciso da Marco (solo 2 format: C al microfono + Vox, anche su TikTok). C parla per tutto il video: set Nano Banana 2 Edit su Runpod (attualita/A4-midterm/set/C-microfono.png, 0,13 $), labiale InfiniteTalk su Runpod (0,25 $, script produzione/script/runpod_pe.py), montaggio Remotion A4MIDTERM (jump cut, parole giganti con chiave in giallo, schede dati sopra la scrivania), valzer Burton variante 3 nuova (tempo fisso ~155 BPM) che si abbassa sotto la voce (sidechain) e si ferma sulla pausa a 54-58 s. Copertina CoverA4 = fotogramma + titolo. File: attualita/A4-midterm/finale/.
+- PUBBLICATO su Instagram (Publora, publishNow, postGroupId 6aeb2f599b28ec7726c75792, postedId 18118664620803345, con coverUrl). Quota Publora novembre: 5/15.
+- PUBBLICATO YouTube Short: https://youtube.com/shorts/bWaR81VVKjk (non per bambini, AI = Sì, italiano, Istruzione, miniatura A4-copertina.jpg; file ridotto a 720p 9,4 MB per il limite di caricamento da Chrome).
+- PUBBLICATO su TikTok ~14:57 dal Redmi (account @cthe.trader verificato): «Trump lost Congress. Markets dropped overnight. History says this is usually good news.», lingua Italiano, «Contenuti generati dall'IA» ON, copertina A4-copertina.jpg caricata dalla galleria, niente hashtag né luogo. Quota Publora novembre: 5/15.

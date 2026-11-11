@@ -1,0 +1,595 @@
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+01 / 20
+CAMERA
+Shot sizes, angles & movement
+FIND WHAT YOU NEED
+03
+Shot sizes
+08
+Camera angles
+10
+Camera movements
+19
+Put the camera into words
+20
+Soul Directory
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+02 / 20
+CONTENTS
+FIELD GUIDE
+Contents
+A visual reference for composing stills and planning moving shots.
+01
+Shot sizes
+03
+From environment to a single detail.
+02
+Camera angles
+08
+Eye level, high, low, overhead and Dutch angle.
+03
+Camera movements
+10
+Rotation, translation, zoom and camera handling.
+04
+Put the camera into words
+19
+A short prompt structure and a practical exercise.
+05
+CHEAT CODE - Soul Directory
+20
+An interactive prompt library, builder and lighting lab.
+Read the images as framing studies. Compare frame boundaries and viewpoints in the examples. On
+movement pages, the paired images show the intended change and the diagrams explain the camera path.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+03 / 20
+CONTENTS
+01
+SHOT SIZES
+Start with the frame
+Shot size controls the balance between the person, their actions and the surrounding place.
+Extreme wide / EWS
+ The environment takes priority and the
+person appears very small. This scale
+can make a place feel vast, or a
+character seem isolated within it. Use
+it when geography or distance matters
+more than facial expression. Make the
+figure easy to find through placement
+or contrast.
+PROMPT
+Extreme wide shot; keep the subject small within the surrounding environment.
+Wide / WS or LS
+ The whole person is visible with
+generous space around them. We can
+read where they are, what surrounds
+them and where they might move
+next. Useful for entrances, movement
+and relationships across a location.
+Keep enough space for the action
+without making the subject disappear.
+PROMPT
+Wide shot; full figure with open space around them.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+04 / 20
+CONTENTS
+01
+SHOT SIZES
+Full shot / FS
+The person fills much of the frame
+from head to feet. Posture, clothing
+and the complete physical action
+become the main sources of
+information. Useful for introducing a
+character or showing a stance, walk
+or dance. Keep the head and feet
+inside the composition.
+PROMPT
+Full-body shot; keep the head and feet inside the frame.
+Medium long / MLS
+ A knee-up view keeps the face,
+hands and much of the body
+together. It gives a gesture more
+space than a waist-up shot while
+bringing us closer than a full figure.
+Also called a medium wide shot. Use
+it for standing dialogue, a change of
+posture or an action involving the
+hands and legs.
+PROMPT
+Medium long shot; frame the person from head to knees.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+05 / 20
+CONTENTS
+01
+SHOT SIZES
+Cowboy / mid-thigh
+The frame runs from the head to
+around mid-thigh. It keeps the hands
+and hip area visible while making the
+face more prominent than in a full
+shot. The name comes from
+Westerns, where this framing
+included a gun holster. It also works
+for a reach, a standoff or confident
+body language.
+PROMPT
+Cowboy shot; head to mid-thigh, hands visible.
+Medium / MS
+ A waist-up view balances expression
+with upper-body movement. The
+viewer can follow a conversation and
+notice what the person is doing with
+their hands. A useful starting point for
+dialogue and simple actions. If an
+important gesture falls outside the
+image, make the framing wider.
+PROMPT
+Medium shot; waist-up, camera at eye level.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+06 / 20
+CONTENTS
+01
+SHOT SIZES
+Medium close-up / MCU
+The head, shoulders and upper chest
+fill the image. Expression becomes
+the priority, but a lean, breath or turn
+of the shoulders still has room to
+register. Useful for dialogue and
+reactions that need intimacy without
+the intensity of a tight facial close-up.
+Keep the background from
+competing with the eyes.
+PROMPT
+Medium close-up; head and shoulders, chest at the lower edge.
+Close-up / CU
+ The face dominates and most
+surroundings fall away. Small
+changes in the eyes and mouth
+become readable, making this useful
+for a reaction or a moment of
+recognition. Choose the expression
+that carries the scene. A close-up has
+more impact when the preceding
+wider view has already established
+what the person is reacting to.
+PROMPT
+Close-up of the face; blurred background.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+07 / 20
+CONTENTS
+01
+SHOT SIZES
+Extreme close-up / ECU
+An extreme close-up fills the frame with one small feature: an eye, a fingertip or a crucial part of an object.
+It directs attention to information that could disappear in a wider view.
+Use it to reveal a clue, a tiny physical reaction or a surface detail. Choose exactly what the viewer needs to
+notice: an eye tightening, a finger pressing a button, or a damaged edge.
+PROMPT
+Extreme close-up of the key detail; exclude the surrounding context.
+Size is not lens choice. "Close-up" describes the framing. Focal length and camera distance are separate
+decisions. For a first image test, state the frame boundary before adding lens language.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+08 / 20
+CONTENTS
+02
+CAMERA ANGLES
+Change the viewpoint
+Keep the shot size in mind while moving the camera above or below the subject.
+Eye level
+At the subject’s eye height, the camera feels like a direct
+encounter. This is a useful baseline for dialogue:
+expression and behaviour can lead without an obvious
+view from above or below.
+PROMPT
+Eye-level camera; lens at the subject’s eye height.
+High angle
+Looking down reveals more ground and can make a
+person seem smaller or exposed within the space. Use it
+to clarify position or suggest vulnerability; the scene
+supplies the emotional meaning.
+PROMPT
+Camera above the subject, looking down.
+Low angle
+Looking upward can make a figure or building seem
+imposing. The ground gives way to sky or ceiling, and
+nearby features may appear larger. Useful when height or
+presence matters.
+PROMPT
+Low camera position, looking upward.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+09 / 20
+CONTENTS
+02
+CAMERA ANGLES
+Overhead and off-level
+Camera angle and camera movement are separate choices.
+Overhead / top-down
+ The camera looks almost vertically
+down. The image becomes a map of
+positions, routes and patterns, with
+less emphasis on faces and more on
+how elements occupy the space.
+Useful for choreography, object
+arrangements or revealing how a
+place is organised. An overhead view
+can be static; it does not imply a flying
+camera.
+PROMPT
+Directly overhead; camera looking straight down.
+Dutch angle
+ The camera is rolled off level, so the
+horizon and normally upright lines
+become diagonal. That imbalance can
+support unease, confusion or an
+unstable point of view. Choose the
+slant deliberately. Holding it gives a
+Dutch angle; changing the slant during
+the shot creates a camera roll.
+PROMPT
+Dutch angle; a clearly diagonal horizon.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+10 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Pan: turn on the spot
+The camera rotates horizontally from a fixed position.
+A / START
+B / END
+A pan can follow action, connect two parts of a location or delay a reveal. A slow turn gives the viewer time
+to explore; a fast one can redirect attention abruptly. Choose a direction and a stopping point. The camera
+pivots in place; moving it sideways would be a truck move.
+PROMPT
+Pan right at an even pace from a fixed position; keep the horizon level and settle on the new view.
+Camera
+path
+ A
+/
+LOOK
+LEFT
+B
+/
+LOOK
+RIGHT
+FIXED
+PIVOT
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+11 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Tilt: look up or down
+The camera pivots vertically while its position stays fixed.
+A / START
+B / END
+A tilt reveals a subject vertically: from an object to its owner, or from a building entrance to its roof. The
+change can emphasise height or let information arrive gradually. The lens changes direction; the camera
+does not rise. Use a pedestal or boom when the viewpoint itself needs to become higher.
+PROMPT
+Tilt smoothly upward from a fixed position; keep the camera at the same height and stop on the
+upper subject.
+Camera
+path
+ B
+/
+LOOK
+UP
+A
+/
+LOOK
+AHEAD
+Fixed
+height
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+12 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Rise: pedestal or boom
+The camera changes height; the lens may also be aimed as needed.
+A / START
+B / END
+Raising the camera can uncover a place hidden by the foreground. A broad boom move can turn a close
+human moment into a view of the larger setting. A pedestal raises or lowers the camera vertically. A boom
+or crane can also sweep through space. Decide what the higher viewpoint should reveal.
+PROMPT
+Raise the camera vertically at an even pace; keep the lens level and finish on a higher view.
+Camera
+path
+B
+/
+HIGH
+A
+/
+LOW
+CAMERA
+HEIGHT
+CHANGES
+SIDE
+VIEW
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+13 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Dolly in and dolly out
+The camera travels towards or away from the subject.
+A / CLOSER
+B / FARTHER
+A push-in can concentrate attention on a thought or reaction. A pull-out gives the surroundings more
+weight, revealing context or leaving the person isolated within a larger space. Read B to A for a push-in, or
+A to B for a pull-out. Physical travel changes the relationship between foreground and background; a zoom
+keeps the viewpoint fixed.
+PROMPT
+Dolly slowly forward to a closer view; keep focal length and camera height fixed, with the subject
+near centre.
+Camera
+path
+ DOLLY
+IN
+DOLLY
+OUT
+B
+/
+FAR
+A
+/
+NEAR
+Subject
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+14 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Truck and tracking
+Travel through the scene while deciding what stays steady in the frame.
+Truck: move sideways
+A / OBSTRUCTED VIEW
+B / REVEAL
+A truck moves the camera sideways. Nearby objects shift farther across the frame than the distant
+background. This parallax can reveal a subject or open a new view without moving closer.
+Track: travel with the subject
+A / START
+B / FOLLOW THE SUBJECT
+A tracking shot travels through the scene, often alongside a moving person. Matching their pace keeps us
+with the action while the passing background makes the route and distance felt.
+PROMPT
+Track parallel to the moving subject at a matching pace; keep a steady distance and consistent
+framing.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+15 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Arc: travel around
+The camera follows a curved path around a subject.
+A / SIDE VIEW
+B / FRONTAL VIEW
+Travelling around a subject changes both the visible side and the background behind it. Use this to reveal
+spatial relationships or give a still moment a sense of energy. Keep the subject stationary in a first test. The
+camera changes viewpoint along the curve; the subject does not turn to create the new angle.
+PROMPT
+Arc from a side view to a frontal view at a steady distance; the subject stays still.
+Camera
+path
+Subject
+A
+/
+SIDE
+B
+/
+FRONT
+Top
+view
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+16 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Zoom: change the field of view
+The camera stays in place while the lens changes the framing.
+A / WIDER FIELD
+B / TIGHTER FIELD
+A zoom narrows or widens the field of view. It can direct attention to a detail while preserving the
+viewpoint; foreground and background enlarge together. Choose a dolly when you want travel through
+space. Choose a zoom when you want the framing to tighten or widen from the same position.
+PROMPT
+Increase focal length smoothly from a fixed camera position; finish on a tighter frame of the
+subject.
+Camera
+path
+FIXED
+POSITION
+Wide
+angle
+Narrow
+angle
+Subject
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+17 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Dolly zoom: balance two
+changes
+Camera travel and an opposite zoom keep the subject approximately the same size.
+A / CLOSE + WIDE LENS
+B / FAR + LONG LENS
+The subject stays about the same size while the background expands or recedes. This unsettling change
+can give a moment of shock or sudden realisation a visible spatial effect. In A to B, the camera moves back
+and zooms in. The foreground subject stays similarly sized while the background grows. Test both
+changes together in motion to keep the framing steady.
+PROMPT
+Move the camera backwards while zooming in; keep the subject the same size in frame.
+Camera
+path
+A
+/
+NEAR
++
+WIDE
+LENS
+B
+/
+FAR
++
+LONG
+LENS
+Move
+back
++
+zoom
+in
+=
+same
+subject
+size
+Wider
+angle
+Narrower
+angle
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+18 / 20
+CONTENTS
+03
+CAMERA MOVEMENTS
+Camera handling and speed
+Choose a stable frame, a physical camera feel or a deliberate burst of movement.
+Static
+Lock the viewpoint. The action can change while the frame
+stays steady.
+PROMPT
+Locked-off camera; keep the composition fixed while
+the action unfolds.
+Handheld
+Small variations in position and angle give the shot a
+physical, responsive feel.
+PROMPT
+Restrained handheld drift; keep the subject clearly
+framed.
+Roll
+Rotate around the lens axis so the horizon turns. Holding that
+slant creates a Dutch angle.
+PROMPT
+Slow clockwise camera roll from a level frame.
+Whip pan
+A fast horizontal turn blurs the space between two views,
+redirecting attention abruptly.
+PROMPT
+Whip pan right with brief motion blur; settle on a
+sharp, readable final frame.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+19 / 20
+CONTENTS
+04
+PRACTICE
+Put the camera into words
+Start with framing. Add the angle. Describe movement only when planning video.
+For a still image
+PROMPT
+Medium close-up, eye-level camera. Keep the main subject clearly separated from the background.
+The camera clause does most of the work. The subject and setting give the model somewhere to apply it.
+Inspect the returned frame before adding more detail.
+For a moving shot
+PROMPT
+Begin with a medium shot. Slowly dolly in to a close-up, keeping the subject in the same frame
+position.
+Specify the path, pace, what stays steady and the final composition. For a first test, change one camera
+choice at a time: this makes an unwanted pan, zoom or drift easier to diagnose.
+Try a three-shot sequence
+01
+02
+03
+Wide: establish the subject and the surrounding space.
+Medium: make a small gesture readable.
+Close-up: finish on the reaction.
+
+Academy
+Course 01 / Lesson 05
+CAMERA - SHOT SIZES, ANGLES
+20 / 20
+CONTENTS
+05
+CHEAT CODE
+CHEAT CODE - Soul Directory
+Pick a visual example and copy its prompt as a starting point.
+Open the link below to find camera moves, visual styles and lighting examples with copyable prompts. Use
+the result you like as a starting point, then adapt its prompt to your scene.
+OPEN SOUL DIRECTORY
+soul-directory.higgsfield.app
+01
+Browse the archive
+Explore 33 styles, 46 camera-movement entries and 24 studio or outdoor lighting setups. Cards
+pair visual examples with prompts you can copy.
+02
+Build a shot
+Shot Builder combines a move, an optional style, lighting and your scene into one prompt. Turn
+into video opens Higgsfield for the next step.
+03
+Arrange the light
+Move lights around a 3D figure or start from a preset rig. Adjust position, intensity, colour and
+softness; the simulator writes a lighting prompt from your setup.
+04
+Generate from the prompt
+Render brings archive prompts into an image or video generation workflow. Sign in with Higgsfield
+to use your account’s credits, history and results.
+Try it: keep your scene unchanged and compare a dolly with a zoom. Watch how the background
+behaves, then refine the camera instruction.

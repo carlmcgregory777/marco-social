@@ -1,0 +1,1619 @@
+WEBVTT
+
+00:00:00.980 --> 00:00:03.170
+Yoyoyo. Yoyoyo.
+
+00:00:15.340 --> 00:00:18.600
+What separates great AI videos from
+mediocre ones?
+
+00:00:18.600 --> 00:00:21.840
+The simple answer is great image
+references.
+
+00:00:21.840 --> 00:00:25.120
+The difference between a good generation
+and a bad one starts before you
+
+00:00:25.120 --> 00:00:28.780
+write the video prompt. It starts with
+creating your assets.
+
+00:00:28.780 --> 00:00:33.290
+Welcome back. Today, we're going deeper
+into a professional AI
+
+00:00:33.460 --> 00:00:37.580
+workflow, creating the characters and
+locations for your video.
+
+00:00:37.580 --> 00:00:42.500
+First, I want to show you four videos
+created from images generated with
+
+00:00:42.500 --> 00:00:47.560
+different models. Look closely and you'll
+notice a significant difference.
+
+00:00:47.560 --> 00:00:52.220
+All of the videos were generated in
+Seedance 2.5 using the same two prompts.
+
+00:00:52.220 --> 00:00:56.330
+This video model smooths out even the most
+obvious AI slop, but it doesn't
+
+00:00:56.340 --> 00:00:59.900
+eliminate it completely, so the quality of
+your assets still plays a crucial
+
+00:00:59.900 --> 00:01:04.000
+role. For these videos, I created the
+assets with four models.
+
+00:01:04.000 --> 00:01:08.560
+Soul 2.0, Soul Cinema, GPT Image 2.5,
+
+00:01:08.560 --> 00:01:11.860
+Sunburst, and Nano Banana Pro.
+
+00:01:11.860 --> 00:01:14.820
+The image quality speaks for itself.
+
+00:01:14.820 --> 00:01:17.340
+You can see the difference in the finished
+videos.
+
+00:01:17.340 --> 00:01:21.620
+To understand where it comes from, let's
+go back to the original images.
+
+00:01:21.620 --> 00:01:25.560
+We'll compare the lighting, the textures,
+and the sense of depth.
+
+00:01:25.560 --> 00:01:29.580
+Images from the Soul models truly seem to
+have more Soul and a more cinematic
+
+00:01:29.580 --> 00:01:34.600
+feel, while Nano Banana and GPT look more
+like standard AI-generated images.
+
+00:01:34.600 --> 00:01:38.670
+You can spot repeating patterns in the
+grass, distracting reflections on the
+
+00:01:38.720 --> 00:01:43.730
+tiles, excessive image sharpness, lack of
+depth, and the color which will
+
+00:01:43.820 --> 00:01:46.380
+completely shape the look of your final
+video.
+
+00:01:46.380 --> 00:01:51.590
+Most importantly, generating the images
+with the Soul models costs 24 times
+
+00:01:51.600 --> 00:01:55.480
+less. Once you learn to see these
+differences, you'll be a step ahead of the
+
+00:01:55.480 --> 00:01:59.720
+average AI creator, and your generations
+will reach a whole new level.
+
+00:01:59.720 --> 00:02:03.750
+The goal of this lesson is to teach you
+how to recognize these differences
+
+00:02:04.200 --> 00:02:08.330
+and show you the tools you can use to
+achieve this level of
+
+00:02:08.380 --> 00:02:10.070
+quality.
+
+00:02:12.160 --> 00:02:17.290
+So where do we start? First, we'll cast
+our characters, create the
+
+00:02:17.420 --> 00:02:19.640
+locations, and then refine both.
+
+00:02:19.640 --> 00:02:23.140
+I'll show you the tools as we go so you
+can see which ones work best for
+
+00:02:23.140 --> 00:02:25.600
+you. Alright, let's get our workspace
+ready.
+
+00:02:25.600 --> 00:02:27.740
+Open Cinema Studio on Higgsfield.
+
+00:02:27.740 --> 00:02:31.600
+We use it for almost every project, from
+YouTube videos to films.
+
+00:02:31.600 --> 00:02:35.140
+It keeps all our generations organized
+into projects and folders.
+
+00:02:35.140 --> 00:02:39.080
+You can also like your favorite
+generations here, then use the filters to
+
+00:02:39.080 --> 00:02:42.560
+find the ones you've liked or downloaded.
+
+00:02:42.560 --> 00:02:46.550
+There are more filters too, really helpful
+when you have hundreds of
+
+00:02:46.660 --> 00:02:49.040
+generations and need to find a specific
+one.
+
+00:02:49.040 --> 00:02:51.860
+Let's give all our scene assets a home.
+
+00:02:51.860 --> 00:02:55.960
+I'll click New Project, call it Lesson 4,
+and hit Create.
+
+00:02:55.960 --> 00:02:58.160
+Our project name is up here on the left.
+
+00:02:58.160 --> 00:03:03.400
+Just below it, you'll find tools like
+Elements, Canvas, and AI Director.
+
+00:03:03.400 --> 00:03:04.740
+We'll talk about them later.
+
+00:03:04.740 --> 00:03:07.560
+Let's create a folder for our character
+assets.
+
+00:03:07.560 --> 00:03:10.660
+Click Add Folder and name it Characters.
+
+00:03:10.660 --> 00:03:14.730
+In this lesson, we'll keep our characters
+and locations in separate folders
+
+00:03:14.840 --> 00:03:18.640
+within a single project. Down here is the
+Generation panel.
+
+00:03:18.640 --> 00:03:23.420
+It has two tabs, Image for Still Images
+and Video for Video Generation.
+
+00:03:23.420 --> 00:03:27.710
+Before we create anything, let's look at
+the models we can choose from.
+
+00:03:29.660 --> 00:03:31.940
+Click the model name to open this list.
+
+00:03:31.940 --> 00:03:35.940
+There's a lot here. We'll focus on five
+that we use for different jobs.
+
+00:03:35.940 --> 00:03:38.900
+Let's start with Soul Cinema, our own
+model.
+
+00:03:38.900 --> 00:03:44.000
+It's especially good at giving locations a
+cinematic feel, convincing light,
+
+00:03:44.000 --> 00:03:47.740
+natural textures, and the sense that
+you're looking at a frame from a real
+
+00:03:47.740 --> 00:03:50.810
+film. When you're creating images that
+will later be used for video
+
+00:03:51.040 --> 00:03:56.100
+generation, you want smooth, high-quality
+textures, a wide tonal range, and
+
+00:03:56.100 --> 00:03:58.980
+preserved detail in both highlights and
+shadows.
+
+00:03:58.980 --> 00:04:03.690
+The color of the image is just as
+important because it will directly shape
+
+00:04:03.720 --> 00:04:06.460
+the color palette of your final video.
+
+00:04:06.460 --> 00:04:10.710
+Lighting matters too. The light sources
+and direction provide important
+
+00:04:10.900 --> 00:04:12.620
+context for the video model.
+
+00:04:12.620 --> 00:04:15.640
+If the shadows in your image suggest that
+the light is coming from above,
+
+00:04:15.640 --> 00:04:19.310
+even when no light source is visible in
+the frame, the generated video will
+
+00:04:19.340 --> 00:04:21.660
+preserve that same overhead lighting
+direction.
+
+00:04:21.660 --> 00:04:25.100
+With Soul Cinema, you'll never doubt that
+a landscape or location could
+
+00:04:25.100 --> 00:04:29.130
+exist in real life. Like any other model,
+Soul Cinema has its own
+
+00:04:29.360 --> 00:04:31.800
+limitations and weaknesses.
+
+00:04:31.800 --> 00:04:36.160
+First, it supports only two modes,
+generating from a text prompt, text to
+
+00:04:36.160 --> 00:04:40.660
+image, or generating from a single image
+with no option to add a prompt and
+
+00:04:40.660 --> 00:04:44.060
+guide the result. This second method is
+called image to image.
+
+00:04:44.060 --> 00:04:47.780
+I'll explain its superpower in the PDF
+attached to this lesson.
+
+00:04:47.780 --> 00:04:52.420
+Second, generations can contain broken
+objects or illogical details that
+
+00:04:52.420 --> 00:04:55.980
+feel unnatural in the frame or are simply
+visual clutter.
+
+00:04:55.980 --> 00:04:59.780
+If you look closely at evening or
+nighttime scenes, you'll notice the
+
+00:04:59.780 --> 00:05:03.420
+shadows can get so dark that you lose all
+the detail.
+
+00:05:03.420 --> 00:05:06.340
+And generating a video won't bring that
+detail back.
+
+00:05:06.340 --> 00:05:08.480
+Those areas will stay solid black.
+
+00:05:08.480 --> 00:05:12.540
+Soul Cinema also isn't as strong at prompt
+following as the other models in
+
+00:05:12.540 --> 00:05:17.540
+this lesson. Prompt following simply means
+how precisely a model follows
+
+00:05:17.540 --> 00:05:22.440
+your instructions. For example, imagine
+asking for a sofa in the center of
+
+00:05:22.440 --> 00:05:26.160
+the room and a window on the right.
+
+00:05:26.160 --> 00:05:31.000
+GPT image will follow that composition in
+almost every generation.
+
+00:05:31.000 --> 00:05:34.690
+Soul Cinema, by contrast, tends to add its
+own creativity and
+
+00:05:34.960 --> 00:05:37.220
+interpretation, slightly changing your
+brief.
+
+00:05:37.220 --> 00:05:40.840
+Despite these limitations, Soul Cinema
+remains the most realistic and
+
+00:05:40.840 --> 00:05:44.940
+lifelike model available. Learn to work
+around its weaknesses and it can
+
+00:05:44.940 --> 00:05:47.080
+deliver the highest quality images.
+
+00:05:47.080 --> 00:05:49.200
+It's also extremely affordable.
+
+00:05:49.200 --> 00:05:54.540
+Generating one image costs just 0.125
+credits, so you can create
+
+00:05:54.540 --> 00:05:56.740
+8 images for a single credit.
+
+00:05:56.740 --> 00:06:00.250
+All the prompts used for these generations
+will be included in the lesson
+
+00:06:00.300 --> 00:06:04.130
+PDF. You'll also find a large language
+model skill file in the lesson
+
+00:06:04.220 --> 00:06:08.400
+materials. You can upload it to your chat
+or app or use it directly in
+
+00:06:08.400 --> 00:06:13.010
+supercomputer. This skill will help you
+achieve top tier results with almost
+
+00:06:13.180 --> 00:06:15.120
+any generative image model.
+
+00:06:15.120 --> 00:06:18.580
+What if we need a fantasy or sci-fi world?
+
+00:06:18.580 --> 00:06:23.800
+For those larger, more complex
+environments, we often turn to Seedream
+5.0
+
+00:06:23.800 --> 00:06:26.160
+Pro. Look at these examples.
+
+00:06:26.160 --> 00:06:29.820
+There's a whole city built inside a huge
+cylindrical structure and a
+
+00:06:29.820 --> 00:06:32.780
+landscape with giant eyes emerging beneath
+beams of light.
+
+00:06:32.780 --> 00:06:37.350
+Seedream gives us room to work with
+unusual architecture, scale, and ideas
+
+00:06:37.380 --> 00:06:39.740
+that go far beyond everyday locations.
+
+00:06:39.740 --> 00:06:43.460
+But it can also produce good results with
+ordinary places.
+
+00:06:43.460 --> 00:06:46.860
+These streets and this forest were created
+with Seedream 2.
+
+00:06:46.860 --> 00:06:50.880
+The lighting is softer, the details are
+more understated, and the locations
+
+00:06:50.880 --> 00:06:55.590
+feel familiar. The lesson PDF will include
+guidance on prompting Seedream
+
+00:06:55.760 --> 00:06:57.640
+to help you create images like these.
+
+00:06:57.640 --> 00:07:00.220
+It's also useful for stylized images.
+
+00:07:00.220 --> 00:07:04.120
+Here, the blue tiled room and the red
+carpet with scattered records each
+
+00:07:04.120 --> 00:07:06.320
+have a strong visual identity.
+
+00:07:06.320 --> 00:07:10.460
+Color, texture, and lighting give the two
+scenes very different moods.
+
+00:07:10.460 --> 00:07:15.390
+One thing to watch with Seedream is the
+fine line between realism and a CGI
+
+00:07:15.500 --> 00:07:19.600
+look. In our experience, the more
+fantastical the scene and the more details
+
+00:07:19.600 --> 00:07:23.780
+we pack into the prompt, the more the
+result tends to look like a 3D render.
+
+00:07:23.780 --> 00:07:25.740
+You can see that in these environments.
+
+00:07:25.740 --> 00:07:31.060
+There's plenty of detail, but the overall
+finish feels a little too perfect.
+
+00:07:31.060 --> 00:07:32.700
+That can suit some projects.
+
+00:07:32.700 --> 00:07:36.320
+If you want the image to feel photographed
+though, it's a limitation to keep
+
+00:07:36.320 --> 00:07:39.920
+in mind. Another weakness is repetition.
+
+00:07:39.920 --> 00:07:44.840
+Seedream can fill a scene with objects or
+textures that look too similar.
+
+00:07:44.840 --> 00:07:47.300
+Notice the ferns inside these tanks.
+
+00:07:47.300 --> 00:07:50.820
+Their shapes and arrangement repeat across
+the image.
+
+00:07:50.820 --> 00:07:52.860
+Something similar happens in this salt
+flat.
+
+00:07:52.860 --> 00:07:56.680
+The raised salt formations have a very
+consistent shape and size, creating a
+
+00:07:56.680 --> 00:07:58.720
+repeated pattern across much of the
+ground.
+
+00:07:58.720 --> 00:08:02.600
+Now, compare that with Soul Cinema's
+result from the same prompt.
+
+00:08:02.600 --> 00:08:07.480
+The surface has finer cracks, flatter
+areas, and more variation.
+
+00:08:07.480 --> 00:08:11.200
+It doesn't have the same prominent
+repeating pattern, which makes this
+
+00:08:11.200 --> 00:08:13.940
+particular result feel more natural.
+
+00:08:13.940 --> 00:08:18.110
+Both images describe a salt flat, but the
+way each model handles the surface
+
+00:08:18.340 --> 00:08:20.620
+gives us a different sense of realism.
+
+00:08:20.620 --> 00:08:23.940
+Seedream is also useful for editing
+existing images.
+
+00:08:23.940 --> 00:08:27.400
+We'll come back to that later in the
+lesson and walk through the process in
+
+00:08:27.400 --> 00:08:31.780
+detail. For precise text and layouts, we
+use GPT Image.
+
+00:08:31.780 --> 00:08:34.820
+It's a reliable all-rounder for text and
+design.
+
+00:08:34.820 --> 00:08:37.840
+One of its biggest strengths is prompt
+following.
+
+00:08:37.840 --> 00:08:42.080
+It follows detailed instructions very
+closely, so you can specify what
+
+00:08:42.080 --> 00:08:44.780
+should be in the image and where it should
+go.
+
+00:08:44.780 --> 00:08:49.310
+The more precisely you describe what you
+want, the more closely the result
+
+00:08:49.320 --> 00:08:51.900
+can match your brief. Look at this book.
+
+00:08:51.900 --> 00:08:56.120
+We've specified the headings, the
+paragraph, and the short descriptions on
+
+00:08:56.120 --> 00:08:59.730
+the right-hand page. The model placed that
+text alongside the illustrations
+
+00:08:59.760 --> 00:09:03.240
+in a readable layout while keeping the
+whole thing looking like an actual
+
+00:09:03.240 --> 00:09:06.860
+book on a table. It's useful for
+storyboards too.
+
+00:09:06.860 --> 00:09:10.200
+Here we ask for four shots of one anime
+scene.
+
+00:09:10.200 --> 00:09:14.010
+That gives us a visual plan for the
+sequence before we start generating
+
+00:09:14.020 --> 00:09:17.840
+video. And here's a smaller detail, an
+American license plate.
+
+00:09:17.840 --> 00:09:21.720
+We requested this exact combination of
+letters and numbers, along with the
+
+00:09:21.720 --> 00:09:24.200
+state name and the placement of the
+stickers.
+
+00:09:24.200 --> 00:09:28.100
+This is where precise instructions are
+especially useful, when a detail
+
+00:09:28.100 --> 00:09:32.320
+needs to say something specific, rather
+than just look roughly right.
+
+00:09:32.320 --> 00:09:36.280
+With locations though, we have found a
+different trade-off.
+
+00:09:36.280 --> 00:09:40.040
+This model can make the image feel
+overloaded with detail.
+
+00:09:40.040 --> 00:09:44.530
+Textures can look over-sharpened, and too
+much of the scene competes for
+
+00:09:44.620 --> 00:09:46.980
+attention, reducing the sense of depth.
+
+00:09:46.980 --> 00:09:49.480
+Look closely at the sky above this road.
+
+00:09:49.480 --> 00:09:53.530
+There's a visible noise texture across an
+area that should feel much
+
+00:09:53.620 --> 00:09:57.980
+smoother. We've seen this kind of noise
+spread across GPT-generated images,
+
+00:09:57.980 --> 00:10:00.400
+rather than staying within individual
+materials.
+
+00:10:00.400 --> 00:10:04.020
+In the lantern-lit street, notice the
+sharply defined surfaces and the
+
+00:10:04.020 --> 00:10:07.800
+polished finish. There's foreground blur,
+but parts of the environment still
+
+00:10:07.800 --> 00:10:11.240
+feel closer to a CGI render than a
+photograph location.
+
+00:10:11.240 --> 00:10:16.040
+For text, storyboards, and details that
+need to follow a precise brief, GPT
+
+00:10:16.040 --> 00:10:17.620
+is one of our strongest options.
+
+00:10:17.620 --> 00:10:22.150
+For locations, we also need to judge the
+depth, texture, and overall
+
+00:10:22.260 --> 00:10:25.820
+photographic feel. And then there's Nano
+Banana Pro.
+
+00:10:25.820 --> 00:10:30.610
+Like GPT, it follows prompts closely, and
+can handle a wide range of image
+
+00:10:30.620 --> 00:10:35.160
+tasks. The trade-off with both GPT and
+Nano is that their results tend to
+
+00:10:35.160 --> 00:10:39.850
+have a more obvious AI look than Soul's,
+that default
+
+00:10:40.300 --> 00:10:44.350
+artificial finish. So, look at the style
+as well as how closely the image
+
+00:10:44.420 --> 00:10:49.600
+follows your request. You can use any
+model
+
+00:10:49.600 --> 00:10:54.760
+you like. We mainly use Soul and Seedream
+5.0 Pro for the
+
+00:10:54.760 --> 00:10:59.590
+best cinematic results. So, why are we
+spending all this time on still
+
+00:10:59.620 --> 00:11:04.480
+images in a video course? Think of it like
+choosing your camera,
+
+00:11:04.480 --> 00:11:07.440
+lighting, and visual style before a shoot.
+
+00:11:07.440 --> 00:11:11.970
+By the time you generate the video, many
+of those decisions are already
+
+00:11:12.020 --> 00:11:13.300
+embedded in the reference.
+
+00:11:13.300 --> 00:11:15.340
+Look at these two opening clips.
+
+00:11:15.340 --> 00:11:19.500
+Same prompt, different assets, and a
+completely different feel.
+
+00:11:19.500 --> 00:11:23.100
+If you're aiming for live action, but your
+reference has plastic textures,
+
+00:11:23.100 --> 00:11:27.090
+strange edges, or an artificial finish,
+the video can carry those features
+
+00:11:27.100 --> 00:11:31.100
+forward. That's why it's so important to
+spend time preparing your assets.
+
+00:11:31.100 --> 00:11:34.540
+High-quality images are a major part of
+what it takes to create a video that
+
+00:11:34.540 --> 00:11:38.500
+stands out. Before you start generation,
+take a closer look.
+
+00:11:38.500 --> 00:11:40.880
+Do the materials feel believable?
+
+00:11:40.880 --> 00:11:42.680
+Does the light make sense?
+
+00:11:42.680 --> 00:11:44.820
+Does the mood fit your scene?
+
+00:11:44.820 --> 00:11:48.490
+That's where a professional workflow
+starts, making these visual decisions
+
+00:11:48.720 --> 00:11:53.370
+deliberately. You choose the face, the
+place, the textures, and the mood
+
+00:11:53.500 --> 00:11:55.860
+because they serve your scene.
+
+00:11:55.860 --> 00:12:00.730
+Get those choices right and you give the
+video a much stronger starting
+
+00:12:00.740 --> 00:12:03.560
+point. One secret technique before we move
+on.
+
+00:12:03.560 --> 00:12:08.140
+Add out-of-focus elements in the
+foreground to create more depth and
+
+00:12:08.140 --> 00:12:12.000
+simulate the look of a wide open aperture
+in your generated video.
+
+00:12:12.000 --> 00:12:15.550
+You can also include shot on an anamorphic
+lens in your Soul Cinema prompt
+
+00:12:15.660 --> 00:12:19.900
+to create the distinctive blur and bokeh
+associated with anamorphic glass.
+
+00:12:19.900 --> 00:12:23.770
+Carrying that look into your video can
+make the final result feel more
+
+00:12:23.880 --> 00:12:26.540
+cinematic and visually distinctive.
+
+00:12:26.540 --> 00:12:29.900
+I have a short scene in mind that we'll
+create in lesson 5.
+
+00:12:29.900 --> 00:12:34.470
+First, we need to prepare its characters
+and location.
+
+00:12:35.860 --> 00:12:39.820
+Let's start with character creation and
+the basics of image editing.
+
+00:12:39.820 --> 00:12:43.120
+I'll use AI director to put the character
+sheet together.
+
+00:12:43.120 --> 00:12:47.340
+That way we can choose the face and work
+out the outfit in one place.
+
+00:12:47.340 --> 00:12:51.460
+Let's open it from the menu on the left,
+the chat appears on the right.
+
+00:12:51.460 --> 00:12:55.730
+It's essentially a supercomputer
+configured specifically for cinema studio
+
+00:12:55.980 --> 00:12:59.100
+so I can describe what I need in plain
+language.
+
+00:12:59.100 --> 00:13:04.370
+I type a main character for a biker road
+movie 25 years old in modern
+
+00:13:04.440 --> 00:13:07.020
+clothing. I'll start with that simple
+description.
+
+00:13:07.020 --> 00:13:10.620
+To turn that brief into a complete
+character sheet, I'll use a skill.
+
+00:13:10.620 --> 00:13:13.830
+I type char and select character sheet.
+
+00:13:13.980 --> 00:13:17.700
+It handles the casting, wardrobe, and
+final reference sheet for us.
+
+00:13:17.700 --> 00:13:21.940
+It prepares five casting options so I can
+choose a person before committing
+
+00:13:21.940 --> 00:13:23.880
+to the full character sheet.
+
+00:13:23.880 --> 00:13:25.820
+Here are the casting prompts.
+
+00:13:25.820 --> 00:13:30.340
+Different faces and overall looks all
+built around the same character brief.
+
+00:13:30.340 --> 00:13:35.220
+I'll approve this batch. These five
+casting images cost just 0.625 credits.
+
+00:13:35.220 --> 00:13:38.380
+The director generates the options
+together so I can compare them side by
+
+00:13:38.380 --> 00:13:41.640
+side. Now, our casting options are ready.
+
+00:13:41.640 --> 00:13:43.920
+Let's open them up and see who fits the
+role.
+
+00:13:43.920 --> 00:13:48.540
+I'm looking at the face, hair, clothing,
+and overall presence.
+
+00:13:48.540 --> 00:13:52.160
+These are casting options so I don't need
+to refine every detail yet.
+
+00:13:52.160 --> 00:13:56.060
+I just want a character I can recognize
+and keep consistent as we build the
+
+00:13:56.060 --> 00:13:58.320
+rest of the scene. This one fits.
+
+00:13:58.320 --> 00:14:02.660
+I like his look and there's a quiet
+confidence in his eyes.
+
+00:14:02.660 --> 00:14:04.700
+I'll use him as our starting point.
+
+00:14:04.700 --> 00:14:07.720
+That's candidate 5, the quiet outsider.
+
+00:14:07.720 --> 00:14:12.400
+I select him here and submit so the
+director knows which face to keep.
+
+00:14:12.400 --> 00:14:15.660
+Next, it asks what the rest of the outfit
+should look like.
+
+00:14:15.660 --> 00:14:19.550
+I'll keep the recommended straight leg
+jeans and riding boots.
+
+00:14:19.600 --> 00:14:23.240
+That fills in the missing wardrobe details
+and the character sheet will lock
+
+00:14:23.240 --> 00:14:27.260
+in his complete outfit. After a short
+wait, the director prepares a three
+
+00:14:27.260 --> 00:14:32.260
+view sheet in Sea Dream 5.0 Pro using our
+chosen character and outfit.
+
+00:14:32.260 --> 00:14:35.260
+I'll approve it and generate the finished
+sheet.
+
+00:14:35.260 --> 00:14:39.570
+Okay, the sheet's ready. We've got a front
+view, a back view, and a larger
+
+00:14:39.580 --> 00:14:43.540
+portrait. I checked that the face, hair,
+jacket, and proportions agree
+
+00:14:43.540 --> 00:14:46.200
+across the views before using it as a
+reference.
+
+00:14:46.200 --> 00:14:50.280
+It also prepares a separate version for
+the next generation steps.
+
+00:14:50.280 --> 00:14:54.640
+The smaller face is removed so it doesn't
+compete with the main portrait.
+
+00:14:54.640 --> 00:14:58.310
+We found that this simple trick helps
+maintain the character's identity
+
+00:14:58.520 --> 00:15:03.160
+during video generation. On a character
+sheet, the face in the full body
+
+00:15:03.160 --> 00:15:06.900
+view can differ slightly from the close up
+portrait.
+
+00:15:06.900 --> 00:15:10.570
+If both are used as references, the video
+model receives conflicting
+
+00:15:10.740 --> 00:15:14.840
+identity cues and the character's face may
+change between wide shots and
+
+00:15:14.840 --> 00:15:19.850
+close ups. I want to add and change a few
+details to make this character's
+
+00:15:19.920 --> 00:15:21.660
+identity more distinctive.
+
+00:15:21.660 --> 00:15:24.460
+Now, let's make a few small changes to his
+outfit.
+
+00:15:24.460 --> 00:15:27.440
+I'll use Sea Dream 5.0 Pro for this.
+
+00:15:27.440 --> 00:15:31.020
+It lets us adjust individual details while
+keeping the character and the
+
+00:15:31.020 --> 00:15:36.250
+image's textures intact. Let's add a
+wallet chain and change the t-shirt
+
+00:15:36.460 --> 00:15:39.310
+while keeping everything else as it is.
+
+00:15:39.440 --> 00:15:43.950
+I'll drop our character sheet into the
+input, then I'll click in the prompt
+
+00:15:43.980 --> 00:15:45.780
+box and describe those changes.
+
+00:15:45.780 --> 00:15:49.490
+Give him a silver wallet chain hanging off
+his jeans pocket.
+
+00:15:49.520 --> 00:15:53.900
+Replace the black t-shirt with a plain
+white ribbed cotton tank top.
+
+00:15:53.900 --> 00:15:55.640
+Same tank top in all views.
+
+00:15:55.640 --> 00:16:00.220
+I specify the same tank top in every view
+so the sheet stays consistent.
+
+00:16:00.220 --> 00:16:04.260
+Then I click generate. Let's put it next
+to the original.
+
+00:16:04.260 --> 00:16:07.480
+The face, jacket, and textures have stayed
+the same.
+
+00:16:07.480 --> 00:16:09.900
+We've just added the chain and changed the
+shirt.
+
+00:16:09.900 --> 00:16:14.500
+I'll like this version, then download the
+finished character sheet.
+
+00:16:14.500 --> 00:16:19.200
+That keeps my chosen result easy to find
+and ready to use as a reference for
+
+00:16:19.200 --> 00:16:22.980
+the next shots. For this scene, I'll need
+one more character, this time with
+
+00:16:22.980 --> 00:16:25.440
+my own face but still in biker clothing.
+
+00:16:25.440 --> 00:16:27.840
+I'll stay in the same AI director chat and
+type.
+
+00:16:27.840 --> 00:16:32.290
+I need one more character sheet using the
+face from the first image and the
+
+00:16:32.320 --> 00:16:33.860
+outfit from the second image.
+
+00:16:33.860 --> 00:16:37.970
+I drag in my photo first, then an image of
+one of the bikers we generated
+
+00:16:38.100 --> 00:16:41.790
+earlier. I want to use his outfit for this
+character.
+
+00:16:41.860 --> 00:16:46.410
+Then I send the request. The director
+asks, "The second image cuts off
+
+00:16:46.520 --> 00:16:50.380
+before the shoes. How should I complete
+the lower outfit?" I'll choose the
+
+00:16:50.380 --> 00:16:53.460
+recommended option gray jeans and ankle
+boots.
+
+00:16:53.460 --> 00:16:58.400
+The description specifies full length
+straight jeans resting over the boots.
+
+00:16:58.400 --> 00:17:01.460
+That's the look I want, so I select it and
+submit.
+
+00:17:01.460 --> 00:17:04.800
+With those details confirmed it prepares
+another character sheet.
+
+00:17:04.800 --> 00:17:06.900
+I review the prompt and click generate.
+
+00:17:06.900 --> 00:17:08.060
+The first version is ready.
+
+00:17:08.060 --> 00:17:11.360
+Let's check the outfit. The director
+spotted something that doesn't match
+
+00:17:11.360 --> 00:17:15.740
+our request. It says the face and jacket
+match but the jeans are tucked into
+
+00:17:15.740 --> 00:17:19.100
+taller boots and asks whether it should
+correct them before finishing.
+
+00:17:19.100 --> 00:17:23.960
+You can see it here. The boots are too
+high and the jeans are tucked inside.
+
+00:17:23.960 --> 00:17:26.780
+I wanted the fabric to fall over ankle
+height boots.
+
+00:17:26.780 --> 00:17:29.460
+I go back and choose correct the jeans and
+boots.
+
+00:17:29.460 --> 00:17:32.620
+The face, jacket and layout should stay
+the same.
+
+00:17:32.620 --> 00:17:34.900
+Only the lower outfit needs another pass.
+
+00:17:34.900 --> 00:17:36.560
+The director prepares the correction.
+
+00:17:36.560 --> 00:17:39.220
+I check the prompt, then click generate
+again.
+
+00:17:39.220 --> 00:17:43.380
+There we go. The jeans now fall over the
+boots just as we asked.
+
+00:17:43.380 --> 00:17:46.800
+It also prepares the version with the
+smaller face removed just as it did
+
+00:17:46.800 --> 00:17:50.930
+for our first character. Now I have my own
+character in the biker outfit
+
+00:17:51.120 --> 00:17:55.530
+ready for the scene. We use AI director to
+make character creation faster
+
+00:17:55.580 --> 00:18:00.020
+and easier. But let's take a quick look
+under the hood to understand what
+
+00:18:00.020 --> 00:18:04.620
+makes a character feel unique and how to
+assemble your dream cast.
+
+00:18:04.620 --> 00:18:09.420
+At the heart of the character sheet skill
+is Soul 2.0, a model we haven't
+
+00:18:09.420 --> 00:18:14.300
+covered yet. It is designed to create
+distinctive, realistic characters and
+
+00:18:14.300 --> 00:18:17.610
+clothing. To show you what I mean by
+distinctive, let's run a quick
+
+00:18:17.800 --> 00:18:22.920
+experiment using the same simple prompt in
+three models, Soul 2.0, Seed
+
+00:18:22.920 --> 00:18:27.440
+Dream and Nano Banana. For this test, I'll
+create a separate folder by
+
+00:18:27.440 --> 00:18:32.270
+clicking the plus icon next to the
+character folder and naming it model
+
+00:18:32.380 --> 00:18:36.990
+testing. Inside the new folder, I'll
+select Soul 2.0 and enter this
+
+00:18:37.020 --> 00:18:40.380
+prompt. Portrait of a man in his mid
+thirties.
+
+00:18:40.380 --> 00:18:45.150
+I'll run six generations, then switch to
+the other two models and generate
+
+00:18:45.280 --> 00:18:48.180
+six images with each of them as well.
+
+00:18:48.180 --> 00:18:49.880
+All three batches are ready.
+
+00:18:49.880 --> 00:18:53.200
+With Soul, we get six different faces.
+
+00:18:53.200 --> 00:18:55.220
+Any of them could work for our scene.
+
+00:18:55.220 --> 00:18:59.520
+Seedream and Nano Banana, on the other
+hand, produced six very similar
+
+00:18:59.520 --> 00:19:04.060
+looking people. Nano Banana even gave us
+what could pass for twins.
+
+00:19:04.060 --> 00:19:07.560
+These models tend to create an averaged,
+idealized appearance.
+
+00:19:07.560 --> 00:19:10.960
+They reduce variation and avoid
+imperfections in their results.
+
+00:19:10.960 --> 00:19:15.350
+You can refine the prompt and describe a
+face in great detail, but even then
+
+00:19:15.360 --> 00:19:18.620
+it can be difficult to guarantee a truly
+unique character.
+
+00:19:18.620 --> 00:19:20.820
+Take a closer look at Soul's face.
+
+00:19:20.820 --> 00:19:23.560
+They feel like photographs of real people.
+
+00:19:23.560 --> 00:19:28.050
+Imperfect skin, unusual features, and
+those little details that give a face
+
+00:19:28.220 --> 00:19:31.580
+personality. There is also a significant
+difference in cost.
+
+00:19:31.580 --> 00:19:36.200
+A single 2K generation in Nano Banana
+costs three credits, while a generation
+
+00:19:36.200 --> 00:19:40.740
+at the same resolution in Soul costs just
+0.125 credits.
+
+00:19:40.740 --> 00:19:44.770
+With short prompts like this, you can
+quickly cast characters for your ideas
+
+00:19:44.940 --> 00:19:48.790
+at a very low cost. Let's move on and
+learn how to create a
+
+00:19:48.840 --> 00:19:51.110
+location.
+
+00:19:52.460 --> 00:19:56.260
+While creating the character, I was
+already thinking about where I wanted to
+
+00:19:56.260 --> 00:20:01.270
+place him. A small bar, somewhere on the
+outskirts of town, busy with
+
+00:20:01.320 --> 00:20:04.820
+people, with a bar counter, and a pool
+table.
+
+00:20:04.820 --> 00:20:08.090
+To keep the project organized, I'll create
+a separate folder called
+
+00:20:08.140 --> 00:20:12.790
+location. I go straight to the prompt box
+and make sure Soul Cinema is
+
+00:20:12.800 --> 00:20:17.950
+selected. I set the aspect ratio to 21 by
+9, which gives the
+
+00:20:18.080 --> 00:20:22.960
+composition more room and establishes a
+cinematic widescreen look from the
+
+00:20:22.960 --> 00:20:27.110
+start. I could simply type American bar,
+and that would already produce
+
+00:20:27.160 --> 00:20:31.000
+interesting results. But I have a clear
+picture of how I want the space to
+
+00:20:31.000 --> 00:20:33.640
+look, so I use a more specific prompt.
+
+00:20:33.640 --> 00:20:36.280
+Create an empty American dive bar.
+
+00:20:36.280 --> 00:20:40.430
+Place a dark wooden bar counter on the
+right, with leather stools and
+
+00:20:40.440 --> 00:20:42.160
+illuminated bottles behind it.
+
+00:20:42.160 --> 00:20:47.060
+Add a few neon signs, booths along the
+left wall, and a pool table at the
+
+00:20:47.060 --> 00:20:50.020
+far end beneath a hanging lamp.
+
+00:20:50.020 --> 00:20:52.060
+Frame the shot from the doorway.
+
+00:20:52.060 --> 00:20:54.820
+Now I'll run four generations and compare
+the results.
+
+00:20:54.820 --> 00:20:58.900
+Four versions are ready. Let's see which
+one gets closest to the bar I had
+
+00:20:58.900 --> 00:21:03.320
+in mind. The first one is promising, but
+the heavy grain makes it feel too
+
+00:21:03.320 --> 00:21:08.480
+much like a 1990s film. The second feels
+too empty and lacks the
+
+00:21:08.480 --> 00:21:12.880
+detail I'm looking for. The third is
+closest to what I pictured, so I won't
+
+00:21:12.880 --> 00:21:17.910
+change the prompt. I'll use this image as
+the base for the next step.
+
+00:21:20.040 --> 00:21:23.280
+So we have our bar. Let's adapt it to our
+scene.
+
+00:21:23.280 --> 00:21:27.760
+A first result usually needs a few tweaks,
+sometimes a bigger edit.
+
+00:21:27.760 --> 00:21:29.160
+That's just part of the process.
+
+00:21:29.160 --> 00:21:34.070
+In this case, I want to fill the bar with
+regulars and add one more
+
+00:21:34.320 --> 00:21:37.840
+important detail that will help me when I
+generate the video.
+
+00:21:37.840 --> 00:21:42.000
+I've already created a separate folder
+where we'll work on the location.
+
+00:21:42.000 --> 00:21:47.040
+As I mentioned earlier in the lesson, we
+usually use C Dream 5.0 Pro for
+
+00:21:47.040 --> 00:21:51.830
+editing. I drag the downloaded location
+image into the prompt box and
+
+00:21:51.860 --> 00:21:54.000
+describe what I want to change.
+
+00:21:54.000 --> 00:21:57.780
+For straightforward edits like these,
+plain language is all you need.
+
+00:21:57.780 --> 00:22:02.400
+Add eight dive bar regulars, a mix of men
+and women.
+
+00:22:02.400 --> 00:22:05.960
+Some are playing pool, others are sitting
+at tables.
+
+00:22:05.960 --> 00:22:10.460
+Keep all bar stools empty and place a
+single mug of beer in the middle of
+
+00:22:10.460 --> 00:22:15.170
+the bar counter. I'll keep the original
+aspect ratio and generate four
+
+00:22:15.340 --> 00:22:17.680
+variations. There we go. They're ready.
+
+00:22:17.680 --> 00:22:20.160
+Let's check the changes. This one works.
+
+00:22:20.160 --> 00:22:24.200
+We've got people in the bar, the stools
+are empty, and the beer mug is right
+
+00:22:24.200 --> 00:22:25.340
+in the middle of the counter.
+
+00:22:25.340 --> 00:22:30.520
+The mug acts as a spatial anchor, an
+object I can reference when describing
+
+00:22:30.520 --> 00:22:33.080
+the action in my video prompt.
+
+00:22:33.080 --> 00:22:37.460
+Instead of explaining the entire layout, I
+can simply say my character is
+
+00:22:37.460 --> 00:22:41.780
+sitting on the bar stool beside the beer
+mug in the middle of the counter.
+
+00:22:41.780 --> 00:22:45.860
+That gives sedents enough context to place
+him correctly.
+
+00:22:45.860 --> 00:22:49.360
+Adding clear visual anchors to a location
+is a useful habit.
+
+00:22:49.360 --> 00:22:53.720
+It saves you time, makes spatial
+instructions less ambiguous, and increases
+
+00:22:53.720 --> 00:22:58.030
+your chances of getting a successful video
+generation.
+
+00:22:59.940 --> 00:23:03.620
+For my scene, I need one more view of this
+location.
+
+00:23:03.620 --> 00:23:07.980
+A reverse angle facing the door my
+character will walk through.
+
+00:23:07.980 --> 00:23:11.680
+I start a new chat in AI director and
+describe the shot.
+
+00:23:11.680 --> 00:23:16.850
+I ask it to use SeaDream 5.0 with the
+camera inside the bar
+
+00:23:17.140 --> 00:23:18.480
+looking toward the doorway.
+
+00:23:18.480 --> 00:23:22.880
+I want a tighter view close to the
+entrance with the door and just a couple
+
+00:23:22.880 --> 00:23:26.500
+of stools in frame. Then I drag in the bar
+image as a reference and send the
+
+00:23:26.500 --> 00:23:29.720
+request. The director uses that image and
+my instructions to work out the
+
+00:23:29.720 --> 00:23:33.680
+new angle. Alright, that one's finished,
+let's have a look.
+
+00:23:33.680 --> 00:23:37.290
+We're now looking towards the entrance
+with the counter and stools in the
+
+00:23:37.320 --> 00:23:40.920
+foreground, and it even created a jig box
+beside the door.
+
+00:23:40.920 --> 00:23:43.560
+This gives me the view I need for my
+character's arrival.
+
+00:23:43.560 --> 00:23:47.750
+We now have all the location assets we
+need, and we're ready to move
+
+00:23:47.800 --> 00:23:53.170
+on. The next step in preparing the scene
+
+00:23:53.300 --> 00:23:57.800
+is creating the props. You can use any of
+the models we covered earlier for
+
+00:23:57.800 --> 00:24:02.930
+this. To show you how their results
+differ, I'll compare four models using
+
+00:24:03.060 --> 00:24:07.260
+exactly the same prompt. For my scene, I
+need a briefcase.
+
+00:24:07.260 --> 00:24:11.400
+I want it to stand out both in my
+character's hand and against the location,
+
+00:24:11.400 --> 00:24:13.780
+so I'll make it bright orange.
+
+00:24:13.780 --> 00:24:18.190
+This creates a clear focal point in the
+frame and makes the audience wonder
+
+00:24:18.560 --> 00:24:20.200
+what might be hidden inside.
+
+00:24:20.200 --> 00:24:24.280
+I use this prompt, and here's what each of
+the four image models produced.
+
+00:24:24.280 --> 00:24:28.290
+A slim orange hard shell briefcase with a
+ribbed molded lid, rounded
+
+00:24:28.420 --> 00:24:31.420
+corners, a black top handle, and two metal
+latches.
+
+00:24:31.420 --> 00:24:34.920
+White background, soft studio light, no
+logos or text.
+
+00:24:34.920 --> 00:24:37.780
+For this scene, I prefer the first
+briefcase.
+
+00:24:37.780 --> 00:24:42.190
+I like its slightly porous texture, and
+the three quarter angle gives
+
+00:24:42.320 --> 00:24:45.840
+c-dance clear information about both the
+front and the side.
+
+00:24:45.840 --> 00:24:50.320
+That leaves less room for the model to
+interpret its shape, and helps the
+
+00:24:50.320 --> 00:24:52.860
+prop remain consistent from shot to shot.
+
+00:24:52.860 --> 00:24:57.140
+For more complex objects, with different
+details on the front, back, and
+
+00:24:57.140 --> 00:25:01.140
+sides, it's better to create a prop sheet
+that shows every important angle
+
+00:25:01.140 --> 00:25:05.500
+and feature. For this briefcase, a prop
+sheet could look like this.
+
+00:25:05.500 --> 00:25:09.370
+We'll cover how to prepare detailed assets
+like this, along with more
+
+00:25:09.540 --> 00:25:13.700
+advanced techniques for creating and
+editing characters in our advanced
+
+00:25:13.700 --> 00:25:17.540
+course. Now that all the assets are
+prepared and organized, I'm ready to
+
+00:25:17.540 --> 00:25:22.480
+move on to video generation, a process
+with even more variables to
+
+00:25:22.480 --> 00:25:27.970
+consider. But first, it's time for your
+homework.
+
+00:25:29.300 --> 00:25:33.240
+Now it's your turn to prepare assets for a
+scene of your own.
+
+00:25:33.240 --> 00:25:37.630
+Create one or two characters, and a
+character sheet for each.
+
+00:25:37.660 --> 00:25:41.060
+Then, generate a location where your scene
+will take place.
+
+00:25:41.060 --> 00:25:44.080
+Make a few deliberate edits to that
+location.
+
+00:25:44.080 --> 00:25:49.370
+You could add people, change an object, or
+introduce a detail your
+
+00:25:49.380 --> 00:25:52.820
+character will interact with.
+
+00:25:52.820 --> 00:25:56.520
+Think about what needs to happen in the
+scene, and make your edits serve
+
+00:25:56.520 --> 00:26:01.110
+that idea. Upload your character sheets
+and the before and after location
+
+00:26:01.200 --> 00:26:05.690
+images to the platform. Include a short
+description of your scene, and
+
+00:26:05.740 --> 00:26:08.570
+explain what you changed.
+
+00:26:10.380 --> 00:26:14.680
+Now, you should have your cast and your
+location, but how do you bring them
+
+00:26:14.680 --> 00:26:18.800
+together and turn separate images into a
+scene that feels connected?
+
+00:26:18.800 --> 00:26:22.720
+In lesson five, we'll place our characters
+into the environment and start
+
+00:26:22.720 --> 00:26:24.340
+building the scene in motion.
+
+00:26:24.340 --> 00:26:29.420
+We'll take a closer look at CDEN's 2.5,
+how it uses your references, how to
+
+00:26:29.420 --> 00:26:33.140
+guide the action, and how to get the
+characters and camera to do what you
+
+00:26:33.140 --> 00:26:37.320
+have in mind. So, bring the assets you've
+prepared and we'll put them to
+
+00:26:37.320 --> 00:26:40.070
+work in the next lesson. See you there.

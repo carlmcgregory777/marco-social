@@ -1,0 +1,811 @@
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+01 / 31
+CREATE AND
+EDIT ASSETS
+04
+Create and edit locations and characters for your scene.
+FIND WHAT YOU NEED
+02
+Check a term
+04
+Choose an image model
+12
+Spot the slop
+15
+Create and edit characters
+19
+Create and edit a location
+21
+Try the Soul Cinema reference workflow
+24
+Prompt Seedream 5.0 Pro
+25
+Use the Cineimage skill
+31
+Open useful links
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+02 / 31
+CONTENTS
+GLOSSARY
+Essential terms
+A raised number marks each term’s first use in the main text.
+01
+Prompt following
+How closely a model follows your instructions, including the requested objects, counts, positions
+and details.
+02
+Text-to-image
+Generating an image from a written description.
+03
+Image-to-image
+Generating a new image using an existing image as input. Whether you can also add text
+instructions depends on the model.
+04
+AI slop
+An informal term for low-quality AI-generated content. In this lesson, look for unnatural textures,
+repetitive details and objects that do not make visual sense.
+05
+CGI look
+An appearance resembling a computer-generated 3D render. Very smooth surfaces or overly
+perfect details can create this impression. It can be a deliberate style rather than a defect.
+06
+Tonal range
+The range of tones from dark to light. Examine how much detail remains visible in the shadows,
+midtones and highlights.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+03 / 31
+CONTENTS
+GLOSSARY
+Essential terms / continued
+07
+Spatial anchor
+A visible object used to describe where something should be. For example: "Seat the character
+beside the mug in the middle of the counter."
+08
+Reverse angle
+A view of a scene from the opposite direction. For example, first look into the bar from the
+entrance, then look towards the entrance from inside.
+09
+Depth of field
+The range of distances that appear acceptably sharp. A shallow depth of field leaves more of the
+foreground or background out of focus.
+10
+Bokeh
+The visual character of out-of-focus blur, especially the shape and softness of blurred points of
+light.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+04 / 31
+CONTENTS
+01
+CHOOSE AN IMAGE MODEL
+Soul Cinema
+Light, materials and atmosphere for photographic locations.
+STRENGTHS
+LIMITS TO CHECK
+Photographic light, natural skin and fabric textures,
+and a film-like finish are its strengths. Distinctive
+camera angles, palettes and lighting make it useful
+for 6 exploring a visual direction. A broad tonal
+range can 2 preserve detail for video. It supports
+text-to-image generation or a single image input
+without an accompanying prompt.
+Creative interpretation can change a precise
+composition and require several attempts. Prompt 1
+following needs checking, especially object
+placement. Inspect small objects for broken shapes
+and clutter, and night scenes for lost shadow detail.
+Single-image input reinterprets a reference; it does
+not offer text-guided local editing.
+Depth and distance
+Soft foreground corn separates the viewer
+from the farmhouse. Detail changes with
+distance.
+Readable light
+Illumination across the floor and walls makes
+the direction of the light visible.
+A usable location
+The bar establishes a mood and a space for
+action. Check the counter, seating and dark
+areas before editing.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+05 / 31
+CONTENTS
+01
+IMAGE MODELS
+Seedream 5.0 Pro
+Complex spaces, stylised environments and targeted image edits.
+STRENGTHS
+LIMITS TO CHECK
+Useful for architecture, large environments and
+deliberate colour styling. It edits whole images:
+people, objects, clothing, backgrounds and
+locations. Reference-based edits can retain image
+quality and original textures, including skin and
+fabric. Character sheets are one application; the
+lesson also uses it to add people and objects to a
+bar.
+Dense, elaborate briefs can produce an overly
+perfect 5 CGI look . Repeated objects or organic
+forms may share the same shape, scale and
+spacing. Check material variation and the spacing
+of repeated forms.
+Large-scale geometry
+The cylindrical city gives a complex
+environment a clear overall structure.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+06 / 31
+CONTENTS
+01
+IMAGE MODELS
+Seedream 5.0 Pro / continued
+An ordinary setting
+Subdued daylight and familiar materials
+establish a quiet residential street.
+Repeated organic
+forms
+The ferns echo a similar silhouette across
+several tanks. Inspect variation within the
+repeated structure.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+07 / 31
+CONTENTS
+01
+IMAGE MODELS
+GPT 2.5 Sunburst
+Detailed instructions, readable text and planned sequences.
+STRENGTHS
+LIMITS TO CHECK
+Strong prompt following supports precise objects,
+placements and lettering. It is useful for typography,
+infographics and storyboards. Specify the content,
+reading order or action in each panel. The examples
+here explore simple drawing and grey geometry as
+well as a finished illustrated sequence.
+Locations can become overloaded with detail.
+Over-sharpened textures, noise and a polished
+finish can reduce depth or feel artificial. Verify
+generated text character by character and check
+continuity between storyboard panels;
+instruction-following still needs a visual review.
+Working 2D sketches
+Simple silhouettes and limited shading keep
+attention on staging, camera distance and
+shot order.
+Grey mesh blocking
+Faceted geometry makes scale and camera
+placement clear. This is a generated
+viewport-style image, not an editable Blender
+scene.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+08 / 31
+CONTENTS
+01
+IMAGE MODELS
+GPT 2.5 Sunburst / continued
+Pencil sketches
+A station, a letter, a reaction and a departure
+form a sequence. Framing changes while the
+story remains clear.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+09 / 31
+CONTENTS
+01
+IMAGE MODELS / GPT EXAMPLES
+GPT 2.5 Sunburst
+Typography, structured information and lettering inside a detailed scene.
+A typographic spread
+A technical infographic
+Headlines, columns and annotations share a
+designed grid. Specify the copy and its reading
+order.
+Tables and charts use a fictional dataset. Check
+values, units and labels across every panel.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+10 / 31
+CONTENTS
+01
+IMAGE MODELS / GPT EXAMPLES
+GPT 2.5 Sunburst / continued
+A busy illustrated street
+A customised recorder
+Shop signs, prices and number plates sit among
+many small stories. Give each label a clear location.
+Stickers and marker sketches add character while
+controls, labels and the display remain readable.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+11 / 31
+CONTENTS
+01
+IMAGE MODELS
+Nano Banana Pro
+Broad image tasks with strong attention to the written brief.
+STRENGTHS
+LIMITS TO CHECK
+A general-purpose option for a range of image briefs. The default finish can look artificial, even when the
+The lesson highlights prompt following: requested requested content is present. Check depth, surface
+objects and scene elements can be described directly. texture and conspicuous reflections. In the lesson’s
+Use a concrete brief and inspect the result against the simple portrait test, faces often look idealised and
+content you asked for. similar; distinct identities need deliberate review.
+Farmhouse
+Review the clarity of the house and
+foreground plants. Uniform crispness can
+make depth less convincing.
+Lantern street
+The wet paving carries a bright band of
+reflections. Check whether the ground
+distracts from the scene’s focal point.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+12 / 31
+CONTENTS
+02
+SPOT THE SLOP4
+Texture, grain and sharpness
+Read the original frame, then inspect the enlarged detail from the same image.
+When detail becomes noise
+ORIGINAL IMAGE
+SKY / ENLARGED
+The enlarged sky reveals the amount and distribution of fine noise. The source brief explicitly asks for fine
+grain, so its presence alone is not a model error. Judge whether this texture suits the intended finish; for a
+cleaner result, revise the grain instruction.
+Sharp surfaces, a rendered feel
+ORIGINAL IMAGE
+ROOF AND WOOD / ENLARGED
+The enlarged roof tiles and wooden grids reveal the crisp edges and repeated fine detail. They can make
+the scene feel rendered even though the foreground is blurred. Judge whether this surface sharpness fits
+the photographic finish you want.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+13 / 31
+CONTENTS
+02
+SPOT THE SLOP
+Repetition and reflective
+surfaces
+Look for variation within patterns and inspect the surfaces that draw your eye.
+Salt flats
+Seedream 5.0 Pro
+Soul Cinema
+Raised, regular cells make the Seedream ground look more patterned. Soul produces flatter, more varied
+forms. Natural repetition is normal; uniform shape, scale and spacing are what deserve attention.
+Grass and shadow
+GPT 2.5 Sunburst
+Grass / enlarged
+The enlarged patch reveals the lawn’s dense, tightly packed texture. Look at how individual blades and
+highlights repeat across it. Uniformly busy detail can flatten depth and compete with the scene’s focal
+point.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+14 / 31
+CONTENTS
+02
+SPOT THE SLOP
+Repetition and reflective surfaces /
+continued
+Wet paving
+Nano Banana Pro
+Reflections / enlarged
+The enlarged paving shows the pale reflections and sharp tile edges near the bottom of the frame. Relate
+the highlights to the lights and surface, then judge whether their brightness draws attention away from the
+subject.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+15 / 31
+CONTENTS
+03
+CREATE AND EDIT CHARACTERS
+Start with AI Director
+Open the assistant, select Character Sheet and describe the person you need.
+01 Open AI Director
+In Cinema Studio, click AI Director in the left sidebar, under Tools.
+The conversation opens on the right.
+Give it a simple casting brief: the role, approximate age and clothing
+direction. In the lesson: a 25-year-old lead for a biker road movie, in
+modern clothing.
+02
+Select the Character Sheet skill
+Open Skills in the message box, or start typing “char” to find Character Sheet . Select it to attach the
+skill to your brief.
+03
+Submit the brief
+Check that the character-sheet chip is attached, then click the send arrow. AI Director prepares five
+casting options. Choose a candidate and answer the wardrobe questions before it builds the front, back
+and portrait sheet.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+16 / 31
+CONTENTS
+03
+CREATE A CHARACTER
+From casting to a character
+sheet
+Use AI Director to develop one character, then prepare a reference that can carry into video.
+AI Director is the conversational assistant for Cinema Studio. With the Character Sheet skill, it develops casting options from
+a short brief, asks about missing wardrobe details and prepares the selected person as a multi-view sheet.
+Where Soul 2.0 fits. In this workflow, Soul 2.0 supplies the casting portraits; Seedream builds the finished sheet. The
+lesson's portrait test shows greater variation in the Soul faces. That makes it useful for exploring a cast, rather than settling
+immediately on a familiar, idealised face.
+PROMPT
+Create a three-panel character sheet using the attached image as the identity and outfit reference: full-body front
+on the left, full-body back in the middle, and a three-quarter portrait from head to upper chest on the right. Preserve
+the person's face, age, build, haircut, black leather jacket, dark ribbed crew-neck top, silver hoop earring and other
+visible accessories. Keep the same identity, outfit and proportions across all panels. Complete the unseen lower
+outfit with full-length, straight-leg charcoal riding jeans and matte-black leather ankle-height motorcycle boots with
+rounded toes and low rubber soles. Match the jeans and boots in both full-body views. Use a seamless pure-white
+studio background with soft contact shadows. Remove the original environment and props. Show the full figure
+from head to shoes with space around it. Use a neutral stance, arms relaxed at the sides, empty hands and a calm,
+closed-mouth expression. The back view faces fully away; the portrait clearly shows the face. Use soft, even,
+neutral lighting, low contrast, subtle optical diffusion and natural skin and fabric texture. Preserve the outfit's
+colours.
+Prepared reference: the small face is covered so it does not compete with the larger portrait. The front and back views still
+describe the outfit and proportions. This is a reference-preparation technique, not a change to the character's face.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+17 / 31
+CONTENTS
+03
+EDIT THE CHARACTER
+Change the outfit, keep the
+person
+EDIT IN SEEDREAM 5.0 PRO
+Attach the original image in Seedream 5.0 Pro . Describe the change in the prompt and specify what must stay the same. Use
+the source image’s aspect ratio and resolution, keeping the other generation settings consistent, to retain its framing and visual
+quality.
+Here, keep the face, hair, jacket, pose and sheet layout; apply the wardrobe change to every view.
+PROMPT
+Give him a silver wallet chain hanging off his jeans pocket. Replace the black t-shirt with a plain white ribbed cotton
+tank top, same tank top in all views
+A multi-view edit must agree across the front, back and portrait. The
+same white tank top and silver chain should appear wherever visible.
+BEFORE
+AFTER
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+18 / 31
+CONTENTS
+VISUAL FIELD GUIDE
+Adil in the biker outfit
+ +
+@image_1
+@image_2
+PROMPT
+Create a three-panel character sheet: full-body front on the left, full-body back in the middle, and a three-quarter portrait
+from head to upper chest on the right.
+Use @Image1 only for identity. Preserve Adil's face, age, build, short dark curls, moustache, small goatee, earrings and fine
+necklace. Use @Image2 only for clothing; do not transfer that person's face or identity.
+Replace Adil's black T-shirt with the outfit from @Image2 : a black armored leather motorcycle jacket with ribbed shoulders,
+reinforced arms and elbows, a snap-tab stand collar, asymmetric chest panels and an open front zipper; a slate-gray
+crew-neck T-shirt; and gray jeans. Complete the jeans as full-length, straight-leg riding jeans over matte-black leather ankle
+boots with rounded toes and low rubber soles. Keep the clothing, proportions and jewelry consistent across all views,
+including the jacket's back.
+Use a seamless pure-white studio background, soft contact shadows and no reference-scene objects. Keep the full-body
+figures visible from head to shoes, with relaxed arms, empty hands and a neutral, closed-mouth expression. Use soft, even,
+neutral lighting, low contrast, subtle optical diffusion and natural skin and fabric texture. Preserve the clothing colours.
+RESULT / ADIL CHARACTER SHEET
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+19 / 31
+CONTENTS
+04
+CREATE AND EDIT A LOCATION
+Build the space for the scene
+Soul Cinema creates the base location; the layout should support the action you plan to stage.
+The brief places a dark wooden counter on the right, booths on the left and a pool table at the far end,
+viewed from the doorway. Starting with an empty room makes the architecture and usable space easier to
+judge.
+PROMPT
+Create an empty American dive bar. Place a dark wooden bar counter on the right, with leather
+stools and illuminated bottles behind it. Add a few neon signs, booths along the left wall, and a pool
+table at the far end beneath a hanging lamp. Frame the shot from the doorway.
+Why this option was selected
+Of the four bar generations, the selected image comes closest to the intended mood and layout. The first
+alternative felt too grainy; the second felt too empty. The decision is about the scene's needs, not
+choosing the most elaborate image.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+20 / 31
+CONTENTS
+04
+EDIT THE LOCATION
+Add action cues, then a new
+angle
+Use the selected bar as the reference for both steps.
+SEEDREAM 5.0 PRO / PEOPLE AND A SPATIAL ANCHOR7
+PROMPT
+Add eight dive bar regulars - a mix of men and women. Some are playing pool, others are sitting at tables. Keep all bar stools empty,
+and place a single mug of beer in the middle of the bar counter.
+The mug becomes a visible landmark: a character can sit beside it. Check the requested number of people and their placement rather than
+assuming every instruction was followed.
+REVERSE ANGLE8 / LOOKING TOWARDS THE DOOR
+PROMPT
+Use the attached image as the reference. Show the same bar from the opposite end, looking back towards the entrance. Make the
+entrance door clearly visible. Keep the existing chairs and bar stools, preserving their designs and positions within the room. Maintain
+the bar's layout, furniture, materials, lighting and atmosphere. Change only the camera viewpoint.
+Compare the doorway, counter and stools with the base image. A new angle still needs continuity; newly invented details were not necessarily
+present in the original room.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+21 / 31
+CONTENTS
+05
+SECRET TECHNIQUE: SOUL CINEMA
+From reference to Soul Cinema
+3 Use image-to-image generation to give a carefully composed reference a cinematic treatment.
+Start with a model that follows detailed instructions closely to establish the composition and objects you
+need. In these examples, the source images were generated in GPT 2.5 Sunburst . Soul Cinema then
+creates variations around the same concept and architectural structure, with natural textures, expressive
+light and photographic depth.
+01
+Select Soul Cinema
+Choose Higgsfield Soul Cinema in the generation panel.
+02
+Drop in the reference and generate
+Drag and drop the source image directly into the prompt box. Its thumbnail appears and text entry
+becomes unavailable. Click Generate with the image attached.
+The reference supplies the scene; Soul Cinema varies its visual treatment. Individual details and framing
+can change. The next pages show six results from each GPT source image.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+22 / 31
+CONTENTS
+05
+SECRET TECHNIQUE SOUL CINEMA
+Living room
+GPT 2.5 SUNBURST / SOURCE IMAGE
+ ONE REFERENCE, SIX VARIATIONS
+The living room was first generated in GPT 2.5 Sunburst to
+establish its furniture, palette and spatial concept. The six
+Soul Cinema results below use that image as the reference,
+without an additional text prompt. They explore softer light,
+richer material texture and a more cinematic atmosphere
+while keeping the room’s overall visual idea.
+PROMPT
+Wide cinematic interior still of a sunlit living room on a bright late morning, photographed from ordinary standing eye level in a wide three-quarter view
+that shows the room as a whole: the left wall, the back wall and the right wall with its window all in frame, the sofa standing free in the middle of the
+room, sunlight from the right flooding the floor. The composition is built for a very wide frame, the room's three walls forming an open box around the
+seating group.
+Place the camera approximately 1.55 metres above the floor, standing inside the room's near end just left of its centreline, aimed toward the far-right
+corner so the back wall runs across the frame, the left wall recedes along the left edge and the right wall with the window recedes along the right edge,
+with only a gentle downward tilt. Use a 24mm full-frame-equivalent refined spherical lens, approximately 74-degree horizontal field of view, clean
+rectilinear rendering, distortion off, verticals kept straight. Deep focus holds the near rug edge and the far corners equally sharp.
+The room is approximately six metres long and 4.5 metres wide with a 3.1-metre ceiling, of which a narrow band shows at the top of the frame — white
+plaster with one plain cornice. Its walls are smooth lime-plaster in a light warm orange — a soft apricot tone, matte, with gentle hand-trowelled
+variation and a slightly deeper shade in the corners. The floor is one continuous level plane of wide painted timber boards in a pale dusty blue-gray,
+worn to a soft sheen along the walking paths, the blue reading clearly against the orange walls, with no steps or raised areas. White-painted skirting
+boards, plain white door and window trims.
+Read the frame from the left. The left wall runs from the near edge into depth. In the far-left corner stands one armchair directly on the blue floor: a
+mid-century lounge chair with a light oak frame, angled toward the room's centre, upholstered in a dense woven fabric of deep teal-blue, a folded
+cream wool blanket draped over its left arm and one small rust-orange cushion in the seat. Beside it, against the left wall, a slender brass floor lamp
+with a wide pleated cream linen shade, switched off in the daylight, its brass disc base on the boards, and a small stack of two books on the floor by
+the chair's leg. On the left wall, midway along, hangs one framed vertical abstract print in muted blue and terracotta fields, thin oak frame, no lettering.
+Along the back wall runs a low walnut sideboard about 1.8 metres long on thin tapered legs, placed left of the wall's centre: three closed flat doors, a
+slightly worn top. On it, from left to right: a stack of three linen-bound books with blank spines, one tall stoneware jug in matte white, and a small round
+travertine tray with two brass candlesticks holding unlit ivory candles. Above it hangs one large horizontal canvas — a loose abstract in warm ochre,
+blue-gray and white — in a thin black frame. In the far-right corner, where the back wall meets the right wall, stands a tall potted fiddle-leaf fig in a
+ribbed terracotta pot, its big glossy leaves reaching toward the ceiling band.
+The middle of the room belongs to the seating group, standing free of every wall. A large flat-woven wool rug, approximately 3 by 2.2 metres, lies
+centred on the blue boards — off-white with two thin rust-orange stripes along its short ends. On the far half of the rug stands a two-seat sofa in
+oatmeal linen with low arms, parallel to the back wall and facing the camera, well clear of the sideboard behind it, with two cushions in dusty blue and a
+third in rust orange. In front of the sofa, on the near half of the rug, sits a round coffee table ninety centimetres across — a thick oak top on three
+splayed legs — carrying a wide low ceramic bowl in matte pale blue, one closed hardcover book, and a clear glass vase with a loose bunch of orange
+poppies and white cosmos, one poppy petal fallen on the tabletop. Clear blue floor surrounds the rug on all sides as walking routes.
+The right wall runs from the near edge into depth and carries the window in its middle: a tall window with a white-painted timber frame of six panes, sill
+at eighty centimetres, top near the cornice, with sheer white linen curtains pulled fully open to either side. On its sill stand three small terracotta pots of
+herbs — basil, rosemary and thyme — and a small glass of water. Below it, a white cast-iron radiator against the orange wall. Beyond the glass, only
+bright out-of-focus greenery and sky.
+Sunlight is the scene's engine. Bright late-morning sun pours through the right-wall window, throwing a long warm parallelogram of light across the
+blue boards from the right toward the room's centre, climbing onto the rug, striking the side of the sofa, the coffee table and the flowers, the window's
+six-pane grid printing softly on the floor. The herbs cast small crisp shadows on the sill; the sofa and table throw soft shadows toward the left. Broad
+bounced light fills the rest of the room so the far-left corner with the armchair and lamp stays fully readable in gentle open shade, the orange walls
+glowing warmly where the bounce hits them. Lamps remain off; the sun, sky and window glare stay outside the frame.
+Maintain a neutral photographic colour foundation with a broad, articulate middle register. Keep the walls a clear light orange and the floor a clear pale
+blue as the room's governing pair, with teal chair, rust accents, oak, walnut, white linen and green plants holding their own local colours. Let the sun be
+warm only where it physically falls and the open shade carry a faint natural coolness; no global warm wash.
+Use a clean modern digital-cinema capture character: precise natural detail, restrained contrast, no visible film grain, no haze, deep focus. Carry
+intimate domestic realism: curated but credible, lightly lived-in, presently empty.
+No people, silhouettes, faces, human figures or human-shaped reflections in the window glass or picture frames. No readable text on book spines,
+prints, canvases or objects. Keep exactly one armchair, one floor lamp, one sideboard, one sofa, one coffee table, one rug, one fig plant, one vase of
+flowers and one window. Avoid the sofa pushed against a wall, any platform or step under the chair, a second armchair, a television, ceiling fixtures,
+blinds, clutter on the floor, a doorway cutting the composition, warped perspective or a global orange tint over the blue floor.
+Soul Cinema
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+23 / 31
+CONTENTS
+05
+SECRET TECHNIQUE SOUL CINEMA
+Library
+GPT 2.5 SUNBURST / SOURCE IMAGE
+ ONE REFERENCE, SIX VARIATIONS
+The library was first generated in GPT 2.5 Sunburst. Its
+bookshelves, fireplace, table and warm practical lights
+establish the architectural character. Using the image as
+the Soul Cinema reference produces six cinematic
+interpretations of that setting, without an additional text
+prompt. The concept remains recognisable as lighting,
+texture and individual details vary.
+PROMPT
+Wide cinematic interior still of a moody living-and-dining room late at night, photographed from standing eye level in a wide three-quarter view that
+shows the left wall with its window, the back wall of bookshelves, and the right wall with a lit fireplace — a warm, enclosed room glowing only with its
+own practical light. The composition is built for a very wide frame, the three walls forming an open box around a central dining table under a single
+pendant.
+Place the camera approximately 1.55 metres above the floor, standing inside the room's near end just right of its centreline, aimed toward the far-left
+corner so the back wall runs across the frame, the left wall with the window recedes along the left edge and the right wall with the fireplace recedes
+along the right edge, with only a gentle downward tilt. Use a 24mm full-frame-equivalent refined spherical lens, approximately 74-degree horizontal
+field of view, clean rectilinear rendering, distortion off, verticals kept straight. Deep focus holds the near table edge and the far corners equally sharp.
+The room is approximately seven metres long and five metres wide with a 3.2-metre ceiling, a narrow band of which shows at the top — dark-stained
+timber boards between exposed beams. Its walls are painted a deep petrol green, matte, with a soft velvety depth that swallows light; the floor is dark
+terracotta tile laid in a herringbone pattern, waxed to a low sheen, its warm red-brown glowing where the lamps touch it. Skirting, door and window
+trims are black-painted timber.
+Read the frame from the left. The left wall carries one tall window in its middle: a black steel-framed casement of twelve small panes, no curtains, its
+glass a dark mirror of the room's lamps with only the faintest shapes of a night garden beyond — no exterior light. Below it runs a long low bench of
+black-stained oak with a flat linen cushion in dark mustard and a folded charcoal blanket; on the bench sits a short stack of records in plain sleeves. To
+the left of the window, a tall narrow brass floor lamp with a dark green glass shade is switched on, throwing a small warm cone down onto the bench
+and floor. On the wall right of the window hangs a single round convex mirror in a dark frame, reflecting the room as a tiny warm globe.
+The back wall is a floor-to-ceiling library: black-painted timber shelving divided into narrow bays, packed with old books in muted oxblood, ochre,
+green and gray cloth, all spines unreadable; two bays are interrupted by objects — a small dark bronze figure of an abstract bird, a stack of three
+ceramic bowls, a brass carriage clock with a plain face. A slim black rolling ladder leans against the shelves left of centre. At the base, a low cabinet
+with closed doors carries a vintage receiver and turntable, one small amber indicator glowing, and a single glass of dark wine beside it.
+The middle of the room holds the dining group, standing free of every wall. A round dark-walnut table, 1.4 metres across, on a heavy turned pedestal,
+is set for no one: a low bowl of dark figs, a brass candelabra with three lit tapers, a folded linen napkin in deep rust, one open book. Four dining chairs
+with black frames and woven rush seats surround it, one pulled slightly back. Directly above the table hangs one large pendant — a dome of
+hammered brass on a black cord — casting a wide, soft, warm pool that covers the tabletop and spills onto the tile. A faded Persian rug in deep red and
+indigo lies under the table, its fringe edges worn.
+The right wall carries the fireplace midway along: a plain rectangular opening in a surround of dark green-black marble with white veining, a low fire
+burning to orange embers with a few small flames, a black iron grate, a neat stack of split logs in a leather carrier beside it. On the mantel: a pair of
+short brass candlesticks, unlit, and one small framed dark landscape painting. To the right of the fireplace, a deep armchair in cracked cognac leather
+faces the fire at an angle, a wool throw slung over its back, a small round side table with a heavy glass ashtray beside it. A pair of brass wall sconces
+with tiny shades flank the mantel, both lit low.
+Light logic: five practical sources and nothing else — the brass pendant over the table as the key pool, the fire's low orange flicker on the marble, chair
+and tile, the green-shaded floor lamp's small cone by the bench, the two mantel sconces, and the turntable's amber point. Each keeps its own pool
+with generous falloff into the deep green shadow of the walls; the ceiling beams and upper shelves sink toward darkness while staying readable. No
+moonlight, no exterior light through the window.
+Maintain a neutral photographic colour foundation with a broad, articulate middle register beneath the warm practicals. Keep the walls a true deep
+petrol green and the floor a true terracotta red-brown as the room's governing pair, with cognac leather, mustard linen, oxblood book cloth, brass and
+black timber holding their own local colours; the warm lamp light stays confined to its pools and the fire's orange to the hearth zone — no global amber
+wash.
+Use a clean modern digital-cinema capture character: precise natural detail, restrained contrast, deep clean shadows, no visible film grain, halation
+only as natural candle and ember bloom, no haze, deep focus. Carry intimate domestic realism: collected, lived-in, presently empty.
+No people, silhouettes, faces, human figures or human-shaped reflections in the window glass or mirror. No readable text on book spines, records, the
+clock face or the painting. Keep exactly one window, one bench, one floor lamp, one round mirror, one library wall with one ladder, one turntable, one
+round table with four chairs and one pendant, one candelabra, one fireplace, one armchair, two sconces. Avoid daylight or moonlight, a sofa, a
+television, overhead ceiling spots, curtains, bright white walls, extra lamps, clutter on the floor, warped perspective or a global orange tint over the
+green walls.
+Soul Cinema
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+24 / 31
+CONTENTS
+06
+PROMPT SEEDREAM 5.0 PRO
+Write a concrete photographic
+brief
+Give the model a place, a purpose and a camera setup it can turn into a single image.
+01
+Name the image and the place
+Begin with “An empty photographic view of…” and name the setting. Add two or three concrete elements and their materials: small blue tiles, a clear grout grid and a
+deep rear wall. This establishes what must be visible.
+02
+Explain what the space is for
+Describe the action the location needs to support: “ample dry open floor for fifteen dancers” or “central open standing space allowing circular camera movement”.
+The purpose tells the model where to leave usable space.
+03
+Put the camera somewhere specific
+Give its position, height, direction and lens: centered at the near threshold, 1.4 m high, frontal view, 24 mm spherical lens. A 0.6 m viewpoint close to foliage creates
+a different frame. Choose one coherent setup.
+04
+Describe where the light comes from
+Name the source and direction, then the shadow area if it matters: cool overhead and rear light with a dark near foreground, or overcast daylight filtering from
+above. Replace vague “cinematic lighting” with a visible condition.
+05
+Choose the finish and material detail
+Set a short palette, the amount of grain if wanted, and one or two tangible textures: bark and leaf veins, or tile grout. These cues are more useful than piling up
+“beautiful”, “ultra-detailed” and “8K”.
+06
+Close with only relevant exclusions
+Use a short final list such as “No people, water, writing or logos.” Set aspect ratio and resolution in the controls. The supplied study uses roughly 60–90 words for
+location prompts; treat this as a useful starting length, not a hard limit.
+Space for dancers
+Space for movement
+Dry tiled floor; frontal camera at 1.4 m; cool overhead and rear light.
+Central clearing; low 0.6 m camera; near foliage framing the view.
+PROMPT
+An empty photographic view of a dense green woodland clearing: tall straight trunks and layered leaves, overcast daylight filtering from above. Low close
+camera at 0.6m looking toward central open standing space, near foliage encircling frame edges and allowing circular camera movement. 24mm spherical
+lens, rich natural greens, neutral midtones, mild analog grain, tactile bark and leaf veins. No people, writing or logos.
+Try it. Keep the place and purpose fixed, then change only the camera height. Compare the foreground, horizon and usable space. If the frame is wrong, revise that
+instruction before adding more adjectives.
+Image & Prompt Library
+The prompts and the images generated from them are collected in a separate PDF accompanying this lesson.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+25 / 31
+CONTENTS
+07
+CINEIMAGE SKILL
+Cineimage Skill
+Turn a simple idea or a reference image into a cinematic location prompt.
+Cineimage develops your brief into clear scene, camera and lighting instructions. It defines architecture,
+materials and spatial relationships so Soul Cinema can focus on cinematic light, natural texture and a clean
+photographic finish.
+01
+Install in Claude
+Open Customize in the sidebar, then Skills . This is where you can see your available and uploaded
+skills.
+Cineimage appears in this list after installation.
+CUSTOMIZE > SKILLS / CINEIMAGE-SOUL
+Click Add , then Upload skill .
+Drag the downloaded cineimage-soul.zip into the upload area, or click
+browse to choose it from your computer. Finish with Upload .
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+26 / 31
+CONTENTS
+07
+CINEIMAGE SKILL
+Cineimage Skill / continued
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+27 / 31
+CONTENTS
+07
+CINEIMAGE SKILL
+Explore skills in
+Supercomputer
+Browse existing skills, then add Cineimage to your own collection.
+Open Skills in the left sidebar. Supercomputer already includes skills you can explore and use for video,
+images, scripts and many other kinds of work. Choose a skill that fits the task you want to complete.
+SUPERCOMPUTER / SKILLS
+02 Upload your skill
+Click Create new and choose Upload a skill .
+Use the ZIP provided with this lesson; it
+contains the required SKILL.md file.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+28 / 31
+CONTENTS
+07
+CINEIMAGE SKILL
+Upload, then save
+Add the file and save the skill before returning to chat.
+03 Add the file
+Drag cineimage-soul.zip into the
+window, or click the upload area to
+select it from your computer.
+04 Save
+Cineimage
+Once the skill is loaded, review its
+name and click Save . It is now
+available from your chat.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+29 / 31
+CONTENTS
+07
+CINEIMAGE SKILL
+Call Cineimage from chat
+Start with /cineimage, then choose the skill from the suggestions.
+In Claude and Supercomputer, type /cineimage and select cineimage-soul or Cineimage Soul . The
+uploaded skill uses the name cineimage-soul ; the shorter text finds it in the menu.
+CLAUDE
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+30 / 31
+CONTENTS
+07
+CINEIMAGE SKILL
+Call Cineimage from chat / continued
+SUPERCOMPUTER
+Describe the location in plain language, or attach a reference image to the chat and explain what to
+preserve or change. Cineimage turns that input into a detailed prompt for Soul Cinema.
+Try it: “An empty neighbourhood cafe just before opening, viewed from the entrance. Warm side
+light, worn wood and a clear path to the counter.” With a reference: “Keep this room’s architecture
+and camera angle; make the light feel like early morning.”
+Cineimage skill file
+Open the PDF attachment, or download the skill from the files below this lesson.
+
+Academy
+Course 01 / Lesson 04
+CREATE AND EDIT ASSETS
+31 / 31
+CONTENTS
+USEFUL LINKS
+Further reading & practice
+Selected resources for this lesson. Click a title to open it.
+01
+Soul Cinema: Official Guide
+HIGGSFIELD / HELP CENTER
+Learn how to generate cinematic images, set basic controls and use a reference image. The guide
+also explains when the prompt field becomes unavailable.
+02
+Seedream 5.0 Pro: Official Tutorial
+BYTEPLUS / MODEL DOCUMENTATION
+Explore the official tutorial for the Seedream 5.0 Pro and Flash models.
+03
+Seedream 5.0 Pro: Interactive Editing
+BYTEPLUS / EDITING GUIDE
+Consult the official guide to interactive image editing with Seedream 5.0 Pro and Flash.
+04
+GPT Image: Prompting & Editing Examples
+OPENAI / PROMPTING GUIDE
+Explore worked examples for image generation, reference-based edits, typography and structured
+layouts. Focus on the prompts and visual examples; API code is optional.
+05
+Nano Banana: Creating & Editing Assets
+GOOGLE CLOUD / PROMPTING GUIDE
+Use reference images and specific instructions to create assets, change selected details and
+describe what should remain consistent.
+06
+Film Lighting: A Visual Guide
+STUDIOBINDER / FILMMAKING GUIDE
+Learn lighting terms and techniques you can use to describe a scene more precisely.

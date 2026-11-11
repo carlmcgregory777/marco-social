@@ -1,0 +1,45 @@
+# Trascrizione del reel di Amedeo Iasci (Jashi) — 05/11/2026
+https://www.instagram.com/reel/DfWvNy9o2nV/ — 88 s, 1080x1920
+Trascritta con faster-whisper small (italiano). Refusi automatici lasciati come sono.
+
+[  0.00 ->   5.28] col burri quello che ha predetto la crisi del 2008 ragazzi è andato short su oracle cosa significa short
+[  5.28 ->  10.08] scommesso contro oracle gli ultimi giorni abbiamo visto cose veramente brutte per oracle numero 1 oracle 5
+[ 10.08 ->  16.20] ne fa fatto un contratto con tennis net affittare 100.000 cip avanzati a questa azienda per 7
+[ 16.20 ->  20.36] miliardi sono rappresentati l'accordo più grande dell'azienda tennis net e sarebbero stato
+[ 20.36 ->  24.60] un affittore di datacenter nel sud estasiatico la parte di oracle con l'azienda i motivi
+[ 24.60 ->  30.40] erano due da un lato la pressione a parti stati uniti di non prestare e affittare cose a aziende in
+[ 30.40 ->  34.88] quella zona lì per via della vicinanza alla cina dall'altro la cina che ha detto l'azienda non affittare
+[ 34.88 ->  39.36] cip americani perchè c'è un rischio anche di geopolitica questo secondo financial time però
+[ 39.36 ->  44.20] roiters ha ripreso notizia detto no quel perchè non è stato confermato in parallel abbiamo
+[ 44.20 ->  50.56] anche invidia che due giorni fa dice a tutti quanti collaboratori che il 51% del business
+[ 50.64 ->  55.56] deve non essere cinese per i stessi rischi comunicata verbalmente al team vendita non per
+[ 55.56 ->  60.44] iscritto quindi anche qui molto blanda però è stata detta ora oracle è la posizione short più
+[ 60.44 ->  64.36] grande di michael burri e ne è già uscito un paio di volte negli ultimi mesi però anche
+[ 64.36 ->  68.20] confermato che la sua posizione ancora attiva nonostante oracle sia già crollata di un botto
+[ 68.20 ->  72.40] però mi raccomando metà della sua posizione già stata coperta a giugno quando oracle era
+[ 72.40 ->  77.32] in minimi storici quindi sì la sua teoria è stata confermata ma attenzione non è più così
+[ 77.32 ->  81.32] grande la sua posizione come era una volta come sempre proprio a profondimenti finanza mille
+[ 81.32 ->  85.68] punto com in soluzione finanza mille oppure i miei social dirette per notizie e spunti
+[ 85.68 ->  88.16] sulla finanza non colzione finanziare fa la vostra ricerca
+
+## Argomento
+**Michael Burry va short su Oracle.** Jashi racconta:
+- Burry ha scommesso contro Oracle (short).
+- Oracle avrebbe fatto un contratto con Tencent per affittare 100.000 chip avanzati per 7 miliardi — il più grande accordo di Tencent — come affittuario di datacenter nel Sud-Est asiatico.
+- I motivi del blocco: pressione USA a non affittare aziende vicine alla Cina; e la Cina che dice di non affittare chip americani (rischio geopolitico).
+- Financial Times ha dato la notizia, Reuters ha detto che non è confermata.
+- In parallelo **Nvidia**: due giorni fa ha detto ai collaboratori che il **51% del business** non deve essere cinese, per gli stessi rischi. Comunicato verbalmente al team vendite, non per iscritto — «molto blanda».
+- Oracle è la posizione short più grande di Burry, già uscito e rientrato più volte. Metà della posizione coperta a giugno, quando Oracle era ai minimi storici.
+- Conclusione di Jashi: la teoria di Burry è stata confermata, ma la sua posizione non è più grande come una volta.
+
+## Come è girato
+Selfie a mano in esterno, cielo azzurro, occhiali da sole rossi, auricolari bianchi, felpa nera con zip, espressione sorridente. Sopra la testa fluttua una **card dello strumento**: «Oracle $123.78» con grafico rosso. Sottotitoli in basso, una riga, con la parola chiave dentro un riquadro fucsia («ANCHE NVIDIA CHE DUE»).
+
+## Numeri da verificare prima di riusarli
+| Detto | Valore |
+|---|---|
+| prezzo Oracle nella card | $123.78 |
+| contratto Oracle-Tencent | 100.000 chip, 7 miliardi |
+| quota business Nvidia non cinese | 51% |
+| posizione coperta da Burry | metà, a giugno, ai minimi storici |
+| fonte | Financial Times; Reuters dice non confermata |

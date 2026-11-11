@@ -1,0 +1,44 @@
+{
+  "composizione": "A9MACHINE",
+  "cartella_public": "a9machine",
+  "valzer": 3,
+  "testo_voce": "attualita/A9-machine-learning/voce/testo-v2.txt",
+  "chiave": [
+    "MACHINE",
+    "LEARNING",
+    "INTELLIGENZA",
+    "ARTIFICIALE",
+    "ALGORITMO",
+    "BACKTEST",
+    "OVERFITTING",
+    "DECAY",
+    "DATI",
+    "VISTO",
+    "ETICHETTA",
+    "PROVA",
+    "SCATOLA",
+    "VANTAGGIO",
+    "VISTI",
+    "MULTATO"
+  ],
+  "tagli": [
+    12.0,
+    30.0,
+    50.0,
+    70.0
+  ],
+  "enfasi": [
+    "machine",
+    "backtest",
+    "overfitting",
+    "decay",
+    "etichetta",
+    "prova"
+  ],
+  "riser": [
+    28.0
+  ],
+  "clip_labiale": "attualita/A9-machine-learning/clip/C-parla.mp4",
+  "copertina": "CoverA9MACHINE",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

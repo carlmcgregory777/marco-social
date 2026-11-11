@@ -1,0 +1,39 @@
+{
+  "composizione": "A12ARMI",
+  "cartella_public": "a12armi",
+  "valzer": 0,
+  "testo_voce": "attualita/A12-armi/voce/testo-v1.txt",
+  "chiave": [
+    "RHEINMETALL",
+    "LEONARDO",
+    "LOCKHEED",
+    "ZOOM",
+    "PELOTON",
+    "DICIANNOVE",
+    "SENNO",
+    "BACKTEST",
+    "VINCITORE",
+    "OVVI",
+    "CASA"
+  ],
+  "tagli": [
+    12.0,
+    30.0,
+    50.0,
+    70.0
+  ],
+  "enfasi": [
+    "ottantunomila",
+    "lockheed",
+    "ovvia",
+    "diciannove",
+    "senno",
+    "backtest"
+  ],
+  "riser": [
+    30.0
+  ],
+  "clip_labiale": "attualita/A12-armi/clip/C-parla.mp4",
+  "copertina": "CoverA12ARMI",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}

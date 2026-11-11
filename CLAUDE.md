@@ -10,7 +10,8 @@ Marco è italiano, non programmatore: rispondi in italiano semplice, con passi c
 1. Usa la skill giusta in `.claude/skills/` (per esempio `social`, `copywriting`, `cro`, `offers`, `marketing-psychology`, `video`, `pricing`, `ig-caption-writer`, `ig-hook-extractor`, `ig-humanizer`, `instagram-marketing`). Non serve che Marco te lo chieda.
 2. Applica le lezioni della Theory University: leggi prima `theory/reference-theory-university.md` (indice e principi), poi solo il file del corso che serve (`theory/reference-theory-<corso>.md`). Per i testi segui `theory/feedback-copy-theory.md`.
 3. Per i reel applica `theory/reference-lezioni-reel-instagram.md`.
-4. Nel messaggio finale scrivi in una riga quali skill e lezioni hai usato.
+4. **Prima di rifare un reel che ha fatto poche views**, applica il **Metodo 3R** (`theory/reference-metodo-3r.md`): si diagnostica la *prima frattura di attenzione* (il secondo esatto in cui la gente se ne va) e la *prima frattura di fiducia* (cosa manca perché ti seguano o ti scrivano), e per ognuna si decide se si aggiusta riscrivendo o montando. Non si riscrive a caso e non si inventano i dati mancanti: si chiedono. I dati li hai in `docs/STATO.md`.
+5. Nel messaggio finale scrivi in una riga quali skill e lezioni hai usato.
 
 ## Regole generali
 - Non pubblicare, inviare o comprare niente senza l'ok esplicito di Marco.

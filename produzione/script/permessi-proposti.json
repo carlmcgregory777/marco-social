@@ -1,0 +1,54 @@
+{
+  "_istruzioni": "PERMESSI PER LA PIPELINE VIDEO. Copia il blocco 'permissions' dentro C:\\Users\\stang\\.claude\\settings.json (o in .claude\\settings.local.json del progetto), unendolo a quello che c'e' gia'. Non sostituire il resto del file.",
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(python -I:*)",
+      "Bash(py:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(npx remotion:*)",
+      "Bash(higgsfield:*)",
+      "Bash(yt-dlp:*)",
+      "Bash(cp:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Read(//c/Users/stang/code/marco-social/**)",
+      "Read(//c/Users/stang/Downloads/**)",
+      "Write(//c/Users/stang/code/marco-social/**)",
+      "Edit(//c/Users/stang/code/marco-social/**)",
+      "Skill(update-config)",
+      "PowerShell(python:*)",
+      "PowerShell(ffmpeg:*)",
+      "PowerShell(ffprobe:*)",
+      "PowerShell(npx:*)",
+      "PowerShell(higgsfield:*)",
+      "PowerShell(Get-Process:*)",
+      "PowerShell(Get-ChildItem:*)",
+      "PowerShell(Get-Item:*)",
+      "PowerShell(Stop-Process:*)",
+      "PowerShell(Start-Process:*)"
+    ],
+    "deny": [
+      "Read(//c/Users/stang/.claude/settings.json)",
+      "Write(//c/Users/stang/.claude/settings.json)",
+      "Bash(rm -rf:*)",
+      "PowerShell(Remove-Item -Recurse -Force C:\\:*)"
+    ]
+  },
+  "_cosa_fa": {
+    "python / ffmpeg / npx remotion": "taglio voce, sottotitoli, musica, render",
+    "higgsfield": "upload delle immagini e delle voci per il labiale",
+    "yt-dlp": "scarica i reel da analizzare",
+    "curl": "chiama ElevenLabs e Runpod",
+    "Get-Process / Stop-Process": "chiude i browser zombie prima del render",
+    "deny settings.json": "impedisce a Claude di modificare i propri permessi (protezione)"
+  },
+  "_cosa_non_risolve": [
+    "Il classificatore di sicurezza puo' comunque fermare comandi che legge come esfiltrazione di credenziali o dati. Le regole allow lo scavalcano per i comandi che corrispondono, ma non per tutti.",
+    "L'accesso a file fuori dalle cartelle elencate resta da approvare.",
+    "Non autorizza pubblicazioni: Instagram, TikTok, YouTube restano manuali."
+  ]
+}

@@ -1,23 +1,25 @@
 # Valzer "alla Tim Burton" generato col codice (zero crediti).
 # Re minore, 3/4, 24 battute che finiscono sulla dominante (La7) -> il loop torna su Rem.
-# Uso: python3 burton_waltz.py <durata_s> <out.wav> [variante 0-2]
+# Uso: python3 burton_waltz.py <durata_s> <out.wav> [variante 0-3]
 # Varianti (stessa firma, pezzi diversi -> non usare sempre la stessa):
 #  0 = Re minore, carillon + coro (reel Vox «costi»)
 #  1 = Mi minore, celesta + clavicembalo, melodia discendente, più lento
 #  2 = La minore, carillon acuto + fagotto pizzicato, melodia saltellante, più veloce
+#  3 = Sol minore, tempo FISSO ~155 BPM (non si stira sulla durata), pizzicato incalzante + tic di percussione:
+#      la più ritmata, scelta da Marco il 04/11/2026 per i video «C al microfono» («più calzante, più ritmata»)
 import numpy as np, wave, sys
 SR = 44100
 DUR = float(sys.argv[1]) if len(sys.argv) > 1 else 30.08
 OUT = sys.argv[2] if len(sys.argv) > 2 else "burton.wav"
 VAR = int(sys.argv[3]) if len(sys.argv) > 3 else 0
-TR = [0, 2, -5][VAR]                 # trasposizione: Rem / Mim / Lam
-BARS = [24, 20, 28][VAR]             # meno battute = più lento
+TR = [0, 2, -5, -7][VAR]                 # trasposizione: Rem / Mim / Lam
+BARS = [24, 20, 28, max(8, round(DUR / (3 * 60 / 155) / 8) * 8)][VAR]  # meno battute = più lento; la 3 ha tempo fisso
 BAR = DUR / BARS
 BEAT = BAR / 3
 f = lambda m: 440 * 2 ** ((m - 69) / 12)
 rng = np.random.default_rng(7 + VAR)
 N = int(DUR * SR) + SR * 3
-mix = {k: np.zeros(N) for k in ("box", "pizz", "choir", "bass", "bell")}
+mix = {k: np.zeros(N) for k in ("box", "pizz", "choir", "bass", "bell", "perc")}
 
 def put(track, start, sig):
     s = int(start * SR); e = min(N, s + len(sig)); mix[track][s:e] += sig[: e - s]
@@ -61,23 +63,32 @@ MEL1 = [[(81, 2), (77, 1)], [(76, 1), (74, 1), (73, 1)], [(74, 2), (70, 1)], [(7
         [(77, 2), (74, 1)], [(74, 1), (72, 1), (70, 1)], [(70, 1), (74, 1), (79, 1)], [(76, 2), (73, 1)]]
 MEL2 = [[(74, 1), (77, 0.5), (74, 0.5), (69, 1)], [(74, 1), (77, 0.5), (81, 0.5), (79, 1)], [(79, 1), (82, 0.5), (79, 0.5), (74, 1)], [(73, 1), (76, 1), (79, 1)],
         [(77, 1), (74, 0.5), (77, 0.5), (81, 1)], [(82, 1), (77, 1), (74, 1)], [(79, 0.5), (77, 0.5), (76, 1), (74, 1)], [(73, 1), (69, 1), (73, 1)]]
-MEL = [MEL0, MEL1, MEL2][VAR]
+MEL = [MEL0, MEL1, MEL2, MEL2][VAR]
 CH = [[n + TR for n in c] for c in CH]
 MEL = [[(m + TR, d) for m, d in bar] for bar in MEL]
-BOX_UP = [12, 12, 24][VAR]
+BOX_UP = [12, 12, 24, 12][VAR]
+
+def tick(amp, length=0.06):  # tic secco tipo spazzola/legnetto
+    n = int(length * SR); t = np.arange(n) / SR
+    x = rng.uniform(-1, 1, n); x = np.diff(np.concatenate([[0], x]))  # passa-alto grezzo
+    return x * np.exp(-t * 70) * amp
 
 for b in range(BARS):
-    t0 = b * BAR; c = CH[b % 8]; phrase = b // 8
-    put("bass", t0, pluck(c[0] - (24 if VAR == 2 else 12), 0.9 if VAR != 2 else 1.2, 0.9))           # oom
+    t0 = b * BAR; c = CH[b % 8]; phrase = b // 8 if VAR != 3 else (b // 8) % 4
+    if VAR == 3:  # tic su ogni tempo (accento sull'1) + contro-tempi pizzicati
+        for k in range(3): put("perc", t0 + k * BEAT, tick(0.9 if k == 0 else 0.45))
+        if b // 8 >= 1:
+            for k in (0.5, 1.5, 2.5): put("pizz", t0 + k * BEAT, pluck(c[2] + 12, 0.18, 0.18))
+    put("bass", t0, pluck(c[0] - (24 if VAR == 2 else 12), 0.9 if VAR != 2 else 1.2, 0.9 if VAR != 3 else 0.5))           # oom
     for k in (1, 2):                                         # pah-pah
         for m in c[1:]:
             put("pizz", t0 + k * BEAT, pluck(m + (24 if VAR == 1 else 12), 0.35 if VAR != 1 else 0.22, 0.35))
     tb = t0
     for m, beats in MEL[b % 8]:
-        put("box", tb, musicbox(m + BOX_UP, beats * BEAT, 0.5 if VAR != 2 else 0.4))
+        put("box", tb, musicbox(m + BOX_UP, beats * BEAT, 0.5 if VAR not in (2, 3) else 0.4))
         if phrase == 2 or (VAR == 1 and phrase >= 1): put("box", tb, musicbox(m + BOX_UP + 12, beats * BEAT, 0.18))  # ottava alta nel finale
         tb += beats * BEAT
-    if phrase >= (1 if VAR != 2 else 2): put("choir", t0, choir([m + 12 for m in c], BAR, 0.5))
+    if phrase >= (1 if VAR not in (2, 3) else 2): put("choir", t0, choir([m + 12 for m in c], BAR, 0.5))
     if b % 8 == 0: put("bell", t0, musicbox(38 + TR, 2.5, 0.35) * 0.8)  # rintocco grave a ogni frase
 
 def reverb(x, sec=2.2, wet=0.3):
@@ -86,7 +97,7 @@ def reverb(x, sec=2.2, wet=0.3):
     y = np.fft.irfft(np.fft.rfft(x, F) * np.fft.rfft(ir, F), F)[: len(x)]
     return x + wet * y / np.max(np.abs(y) + 1e-9) * np.max(np.abs(x) + 1e-9)
 
-dry = mix["box"] * 1.0 + mix["pizz"] * 0.8 + mix["choir"] * 0.55 + mix["bass"] * 0.9 + mix["bell"]
+dry = mix["box"] * 1.0 + mix["pizz"] * 0.8 + mix["choir"] * 0.55 + mix["bass"] * 0.9 + mix["bell"] + mix["perc"] * 0.5
 out = reverb(dry)[: int(DUR * SR)]
 fade = int(0.03 * SR); out[:fade] *= np.linspace(0, 1, fade); out[-fade:] *= np.linspace(1, 0, fade)
 out = out / np.max(np.abs(out)) * 0.8

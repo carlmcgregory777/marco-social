@@ -1,0 +1,13 @@
+{
+  "composizione": "A14TAGLIO",
+  "cartella_public": "a14taglio",
+  "valzer": 3,
+  "testo_voce": "attualita/A14-taglio/voce/testo-v1.txt",
+  "chiave": ["SPUTA", "VERO", "FALSA", "TAGLIATA", "PROVA", "FINISCE", "SOLDI", "MILIARDI", "SMENTITA", "TAGLIO", "TAGLIATO", "BUGIA"],
+  "tagli": [14.0, 34.0, 52.0, 70.0],
+  "enfasi": ["falsa", "tagliata", "finisce", "miliardi", "tagliato", "bugia"],
+  "riser": [34.0],
+  "clip_labiale": "attualita/A14-taglio/clip/C-parla.mp4",
+  "copertina": "CoverA14TAGLIO",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}
