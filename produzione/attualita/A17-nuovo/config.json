@@ -1,0 +1,13 @@
+{
+  "composizione": "A17LIBRO",
+  "cartella_public": "a17libro",
+  "valzer": 2,
+  "testo_voce": "attualita/A17-nuovo/voce/testo-v1.txt",
+  "chiave": ["SEICENTOSESSANTASEI", "LIBERTICIDE", "RITIRARLO", "CENSURA", "PROPAGANDA", "GRAVE", "NESSUNA", "NESSUNO", "TU", "OTTOCENTOCINQUE", "OTTOCENTO", "PAGINA", "PAGHI", "SCRITTO"],
+  "tagli": [12.0, 22.0, 34.0, 44.0],
+  "enfasi": ["liberticide", "censura", "nessuna", "nessuno", "tu", "ottocentocinque", "paghi", "scritto"],
+  "riser": [24.0],
+  "clip_labiale": "attualita/A17-nuovo/clip/C-parla.mp4",
+  "copertina": "CoverA17LIBRO",
+  "immagine": "attualita/A17-nuovo/set/C-aula.jpg"
+}

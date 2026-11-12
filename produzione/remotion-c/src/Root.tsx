@@ -16,6 +16,7 @@ import { A10PROP, CoverA10PROP, DURATA_A10 } from "./A10PROP";
 import { A13QI, CoverA13QI, DURATA_A13QI } from "./A13QI";
 import { A15BOLLETTE, CoverA15BOLLETTE, DURATA_A15BOLLETTE } from "./A15BOLLETTE";
 import { A16BOMBA, CoverA16BOMBA, DURATA_A16BOMBA } from "./A16BOMBA";
+import { A17LIBRO, CoverA17LIBRO, DURATA_A17LIBRO } from "./A17LIBRO";
 import { A14TAGLIO, CoverA14TAGLIO, DURATA_A14TAGLIO } from "./A14TAGLIO";
 import { A12ARMI, CoverA12ARMI, DURATA_A12ARMI } from "./A12ARMI";
 import { A11PENS, CoverA11PENS, DURATA_A11PENS } from "./A11PENS";
@@ -49,6 +50,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="CoverA15BOLLETTE" component={CoverA15BOLLETTE} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="A16BOMBA" component={A16BOMBA} durationInFrames={DURATA_A16BOMBA} fps={30} width={1080} height={1920} />
       <Composition id="CoverA16BOMBA" component={CoverA16BOMBA} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="A17LIBRO" component={A17LIBRO} durationInFrames={DURATA_A17LIBRO} fps={30} width={1080} height={1920} />
+      <Composition id="CoverA17LIBRO" component={CoverA17LIBRO} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="CoverA13QI" component={CoverA13QI} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="A12ARMI" component={A12ARMI} durationInFrames={DURATA_A12ARMI} fps={30} width={1080} height={1920} />
       <Composition id="CoverA12ARMI" component={CoverA12ARMI} durationInFrames={1} fps={30} width={1080} height={1920} />

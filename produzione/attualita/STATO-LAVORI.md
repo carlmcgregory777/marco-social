@@ -64,6 +64,7 @@ dell'episodio, mai a memoria.
 | A14 | `A14-taglio` | SchedeC | 76 s | `A14TAGLIO` | **10/11** da Mik Cosentino (Dfjft3gI_8S): clip Zelensky / re di Svezia vera ma tagliata prima della stretta di mano (Facta, Lead Stories) → falsi che muovono i mercati (2013: 136 mld $ in 3 min; 2025: 2.400 mld in 10 min) → «chi ti vende un corso taglia uguale». Da approvare |
 | A15 | `A15-bollette` | SchedeC | 76 s | `A15BOLLETTE` | **10/11** da Mik Cosentino (DfjdE5tIMGs, corteo di Torino 07/11): tenuti SOLO i fatti verificati (bollette bruciate, percorso, cori), scartati annuncio in arabo, Appendino, 4.000 persone (non trovati nelle cronache). Angolo: inflazione +5,4%, sciopero fino a 1 mld (CGIA), spread 116→107. Da approvare |
 | A16 | `A16-bomba` | SchedeC | 55 s | `A16BOMBA` | **11/11** da the_jashi_project (DfmkMfGqaAg): allarme bomba in ~6.000 scuole (mail «Mikhail Andropov») + frigoriferi hackerati → «l'opportunità è la cybersecurity»; C: CrowdStrike +114% / Palo Alto +99% da inizio anno, poi -17% in 5 giorni → «svegliato quando?». Gancio: vigili (Riviera24) + studenti (Il Messaggero). Da approvare, da far uscire l'11/11 |
+| A17 | `A17-nuovo` | SchedeC | 49 s | `A17LIBRO` | **12/11** da Mik Cosentino (DfonBfKo__H, manuale Laterza «Trame del tempo 3», pag. 666 «misure chiaramente liberticide»). Leva indignazione contro il sistema, non contro persone: Valditara stesso dice che nessuno valuta il rigore scientifico dei libri adottati, e la famiglia paga 805,15 € (Federconsumatori). Gancio: Tg1 02/09/2026 (libro di storia, lista libri). Da approvare |
 | HF3 | `higgsfield-aff/v3` | green screen | 30 s | `HF3` | **10/11** reel affiliato da Mik (DfieadGI32a, parola MIRACOLO, #higgsfieldcreator): C ritagliato sopra le clip ufficiali di Higgsfield Miracle. Solo cose verificate sul sito (vedi `didascalia.md`). Da approvare |
 
 **YouTube L0** «MI PRESENTO *non giudicatemi*» (youtu.be/RIrsWRF3X8w): caricato in 2K e **PROGRAMMATO per il 09/11/2026 alle 12:00** (08-09/11). Le 3 copertine A/B (`youtube/L0-presentazione/copertine/copertina-A/B/C.jpg`) NON sono caricate: YouTube chiede a Marco la verifica una tantum del canale (telefono) per miniature personalizzate e Test A/B.
@@ -260,3 +261,15 @@ i video sono troppo lunghi (visione media 6-23 s), condivisioni a zero, TikTok �
   le elezioni di metà mandato): video e didascalia li accostano nel tempo, non dicono che uno causa l'altro.
 - **litterbox giù (HTTP 500).** `runpod_pe.py` ha la modalità `RUNPOD_B64=1`: manda foto e voce dentro la richiesta come
   data URI, senza caricarle fuori. Tenere il carico piccolo: voce 16 kHz mono, foto in jpg (~3 MB in tutto). Labiale A16 ok, 0,25 $.
+
+### 12/11/2026 — A17 «Quanto paghi per non sapere» (ragebait, richiesta di Marco)
+
+- Marco 12/11: «cerchiamo di creare contenuti anche ragebait che sono quelli che funzionano meglio». Fatto con l'indignazione verso
+  il sistema (nessuno controlla i libri, paghi tu), non verso un partito o una persona: i nomi sono solo citati.
+- Fatti e fonti nei commenti di `A17-nuovo/montaggio/schede.py`. Scartate le frasi di Mik non verificate e tutte le parolacce.
+- Voce 46,5 s dopo taglio pause e ×1,1 (copione 130 parole): rispetta la regola 30-45 s dell'analisi dell'11/11.
+- Set di C in un'aula (`set/C-aula.png`, Nano Banana 0,13 $) + labiale 0,25 $. Un primo labiale lanciato per errore con l'mp3 grezzo
+  è stato annullato su Runpod dopo 17 s: il labiale va SEMPRE fatto con `montaggio/voce.wav` (16 kHz mono per RUNPOD_B64).
+- **Filmato a tutto schermo con banda del Tg in basso:** in modalità `tutto` lo `zoom` taglia solo ai lati finché non supera ~2,3
+  (l'altezza resta piena). Per togliere la banda: `"zoom": 2.6, "fy": 0.0`.
+- Copertina «805 € DI LIBRI / *MAI CONTROLLATI» #17: la versione a tre righe perdeva «CONTROLLA» nel ritaglio 4:5.
