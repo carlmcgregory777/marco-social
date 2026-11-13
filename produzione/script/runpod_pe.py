@@ -7,6 +7,7 @@
 #   python runpod_pe.py set  <foto.png> <prompt.txt> <out.png> [aspect 9:16] [res 2k]     Nano Banana 2 Edit (~0,13 $ a 2k)
 #   python runpod_pe.py talk <foto.png> <audio.wav|mp3> <out.mp4> [480p|720p] [prompt]    InfiniteTalk (0,25 / 0,50 $ a video)
 #   python runpod_pe.py clip <foto.png> <prompt.txt> <out.mp4> [secondi 4-12] [480p|720p]  Seedance 1.5 Pro I2V, camera fissa, muto (0,052 $/s a 720p)
+#   con CAMERA_MOVE=1 la camera si può muovere (dolly, orbita, carrellata: va scritto nel prompt)
 import json, os, sys, time, urllib.request, uuid, winreg
 
 UA = {"User-Agent": "marco-social/1.0"}
@@ -83,5 +84,5 @@ if __name__ == "__main__":
         dur = int(sys.argv[5]) if len(sys.argv) > 5 else 5
         res = sys.argv[6] if len(sys.argv) > 6 else "720p"
         inp = {"prompt": open(prompt, encoding="utf-8").read(), "image": carica(foto), "duration": dur, "resolution": res,
-               "aspect_ratio": "16:9", "camera_fixed": True, "generate_audio": False, "seed": -1}
+               "aspect_ratio": "16:9", "camera_fixed": os.environ.get("CAMERA_MOVE") != "1", "generate_audio": False, "seed": -1}
         fine(chiama("seedance-v1-5-pro-i2v", inp), out)
