@@ -1,0 +1,13 @@
+{
+  "composizione": "P2TRAILER",
+  "cartella_public": "p2",
+  "valzer": 0,
+  "testo_voce": "youtube/P2-prop-firm/trailer/voce/testo-trailer.txt",
+  "chiave": ["SETTE", "CENTOMILA", "CHALLENGE", "GENIO", "CHIUSO", "SCONTO", "RIPROVI", "NOVANTATRÉ"],
+  "tagli": [],
+  "enfasi": [],
+  "riser": [],
+  "clip_labiale": "youtube/P2-prop-firm/trailer/clip/C-parla.mp4",
+  "copertina": "CoverP2TRAILER",
+  "immagine": "youtube/P1-prototipo/set/C-studio.png"
+}

@@ -1,0 +1,13 @@
+{
+  "composizione": "A18CONTI",
+  "cartella_public": "a18conti",
+  "valzer": 0,
+  "testo_voce": "attualita/A18-nuovo/voce/testo-v1.txt",
+  "chiave": ["MILLEDUECENTO", "SETTECENTO", "TREMILA", "SCENDERE", "CONTI", "ALIQUOTA", "MARGINALE", "CENTO", "IRPEF", "REGOLA", "TORNA"],
+  "tagli": [10.0, 20.0, 30.0, 40.0],
+  "enfasi": ["milleduecento", "settecento", "tremila", "aliquota", "cento", "irpef", "torna"],
+  "riser": [24.0],
+  "clip_labiale": "attualita/A18-nuovo/clip/C-parla.mp4",
+  "copertina": "CoverA18CONTI",
+  "immagine": "attualita/A18-nuovo/set/C-base.jpg"
+}
