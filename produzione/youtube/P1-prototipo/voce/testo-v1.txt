@@ -1,0 +1,7 @@
+[casual] Se vuoi fare soldi col trading, non conta quanto sei bravo. Non conta quante ore passi davanti ai grafici. Conta in che gioco stai giocando.
+Ti faccio vedere la mappa. In verticale, quanta fatica ti costa. In orizzontale, quanti soldi puoi fare davvero.
+Primo: il trading a sentimento. Apri quando ti senti sicuro, chiudi quando hai paura. Tanta fatica, pochi soldi. È la casella da evitare.
+Secondo: i segnali a pagamento. Poca fatica. Ma i soldi li fa chi vende i segnali, non tu.
+Terzo: il trading con un piano scritto. Entrata, uscita, e quanto puoi perdere. Prima di cliccare.
+Quarto: un sistema con regole fisse, provato con un backtest, che rispetta il drawdown anche quando tu avresti paura.
+[serious] Quindi la domanda non è: quale trade faccio oggi? La domanda è: in che gioco sto giocando?

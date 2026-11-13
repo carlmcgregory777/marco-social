@@ -25,11 +25,13 @@ import { HFAFF, DURATA_HF, CoverHF, CoverHF2 } from "./HFAFF";
 import { HF3, CoverHF3, DURATA_HF3 } from "./HF3";
 import { SHORTSC, CoverSHORTSC, DURATA_SHORTSC } from "./SHORTSC";
 import { L0, DURATA_L0 } from "./L0";
+import { P1HORMOZI, DURATA_P1HORMOZI } from "./P1HORMOZI";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition id="L0" component={L0} durationInFrames={DURATA_L0} fps={30} width={1920} height={1080} />
+      <Composition id="P1HORMOZI" component={P1HORMOZI} durationInFrames={DURATA_P1HORMOZI} fps={30} width={1920} height={1080} />
       <Composition id="A4MIDTERM" component={A4MIDTERM} durationInFrames={DURATA_A4} fps={30} width={1080} height={1920} />
       <Composition id="A5MILANO" component={A5MILANO} durationInFrames={DURATA_A5} fps={30} width={1080} height={1920} />
       <Composition id="CoverA5" component={CoverA5} durationInFrames={1} fps={30} width={1080} height={1920} />

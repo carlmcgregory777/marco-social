@@ -1,0 +1,13 @@
+{
+  "composizione": "P1HORMOZI",
+  "cartella_public": "p1",
+  "valzer": 1,
+  "testo_voce": "youtube/P1-prototipo/voce/testo-v1.txt",
+  "chiave": ["GIOCO", "MAPPA", "FATICA", "SOLDI", "SENTIMENTO", "SEGNALI", "PIANO", "SISTEMA", "BACKTEST", "DRAWDOWN"],
+  "tagli": [],
+  "enfasi": [],
+  "riser": [],
+  "clip_labiale": "youtube/P1-prototipo/clip/C-parla.mp4",
+  "copertina": "CoverP1HORMOZI",
+  "immagine": "youtube/P1-prototipo/set/C-studio.png"
+}
