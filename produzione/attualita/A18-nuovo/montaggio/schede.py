@@ -1,4 +1,5 @@
 # A18 (13/11/2026): «Il conto che non torna» — formato SchedeC. Spunto: reel di Alessandro Colli Dfra5ThAedA (13/11/2026).
+# Gancio (Marco 13/11): filmati veri Tgcom24 «Assegno di inclusione, boom di domande» (youtu.be/eezMz8wMzzY, 19/12/2023): carta ADI, INPS, sportello.
 # Fatti e fonti in A18-nuovo/FATTI-A18.md:
 # - ADI, nucleo 2 genitori + 3 figli (uno sotto i 3 anni), reddito zero, in affitto: soglia 6.500 € × scala 1,80 = 11.700 € + affitto
 #   fino a 3.640 € = 15.340 €/anno ≈ 1.278 €/mese (tetto massimo, non media). Detto «circa milleduecento».
@@ -13,12 +14,14 @@ QUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(QUI, "..", "..", "..", "script"))
 from schede_lib import genera
 
+CR = "video: Tgcom24 · 19/12/2023"
+
 SCHEDE = [
-    ("Due", "tit", {"righe": ["2 GENITORI · 3 FIGLI", "*REDDITO ZERO"]}),
-    ("l'Assegno", "giornale", {"testata": "INPS · Assegno di inclusione 2026", "titolo": "Fino a 6.500 € l'anno per la scala di equivalenza, più fino a 3.640 € per l'affitto", "nota": "importo massimo, con reddito zero"}),
+    ("Due", "video", {"src": "a18conti/carta.mp4", "inizio": 0.0, "tutto": True, "righe": ["2 GENITORI · 3 FIGLI", "*REDDITO ZERO"], "credito": CR}),
+    ("l'Assegno", "video", {"src": "a18conti/inps.mp4", "inizio": 0.3, "tutto": True, "righe": ["ASSEGNO DI", "*INCLUSIONE"], "credito": CR}),
     ("milleduecento", "tit", {"righe": ["CIRCA *1.200 €", "AL MESE"], "grande": True}),
     ("Più", "tit", {"sopra": "+ ASSEGNO UNICO", "righe": ["OLTRE *700 €", "AL MESE"]}),
-    ("Poi", "tit", {"sopra": "POI UNO DEI DUE", "righe": ["TROVA *LAVORO"]}),
+    ("Poi", "video", {"src": "a18conti/impiego.mp4", "inizio": 0.0, "tutto": True, "righe": ["POI TROVA", "*LAVORO"], "credito": CR}),
     ("tremila", "timbro", {"primo": "3.000 €", "secondo": "POI SCENDE", "parola_b": "scendere"}),
     ("conti", "lista", {"voci": [["Stipendio", "+ STIPENDIO"], ["perde", "− SUSSIDIO PERSO"], ["benzina", "− BENZINA"]]}),
     ("resta", "tit", {"righe": ["E SE RESTA", "!POCO?"], "grande": True}),
