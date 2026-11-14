@@ -44,6 +44,9 @@ main{padding:0 16px;display:flex;flex-direction:column;gap:12px;margin-top:22px}
 .code span{color:#cfcbd9;font-size:12.5px;line-height:1.3}
 .code i{font-style:normal;font-weight:800;font-size:12px;background:var(--v);padding:6px 10px;border-radius:99px}
 .how{font-size:12.5px;color:var(--g);line-height:1.45;padding:2px 4px}.how b{color:#fff}
+.risk{font-size:11.5px;color:var(--g);line-height:1.45;padding:9px 12px;border-left:2px solid var(--b);margin:0 4px}
+.adv{display:inline-block;margin-top:7px;font:700 10.5px 'JetBrains Mono',monospace;font-style:normal;letter-spacing:.5px;color:var(--g);border:1px solid var(--b);border-radius:99px;padding:3px 8px}
+.card.top .adv{color:#fff;border-color:#ffffff59;background:#ffffff1a}
 .ic.hfl{background:#0d0d0f url(higgsfield.svg) center/62% no-repeat;border:1.5px solid #d2ff1f66}
 .card.hf{border-color:#d2ff1f55}.card.hf:hover{border-color:#d2ff1f}
 .ic.yt{background:#ff0033}.ic.yt svg{width:26px;height:26px;fill:#fff}
@@ -83,8 +86,8 @@ footer b{font-family:Anton,sans-serif;font-weight:400;font-size:18px;color:#fff;
 
   <div class="id">
     <h1>C — The <em>Trader</em></h1>
-    <p class="role">PROP TRADER · BOT TESTATI SUL SERIO</p>
-    <p class="bio">Il tuo trader di quartiere con i bot.<br>Ti mostro come li scelgo, li provo e li gestisco sul mio conto prop. Anche quando perdo.</p>
+    <p class="role">ALGO TRADER · BOT TESTATI SUL SERIO</p>
+    <p class="bio">Il tuo trader di quartiere con i bot.<br>Ti mostro come li scelgo, li provo e li gestisco sul mio conto. Anche quando perdo.</p>
     <p class="ai">🤖 personaggio AI · dietro c'è Marco</p>
     <nav class="soc">
       <a href="https://www.instagram.com/cthe.trader/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2.2c2.7 0 3 0 4 .1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.4.1 4s0 3-.1 4c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.4.1-4 .1s-3 0-4-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1-.1-1.4-.1-4s0-3 .1-4C4 3.7 5.3 2.4 8 2.3c1-.1 1.3-.1 4-.1ZM12 .4C9.3.4 8.9.4 7.9.5 4.3.6 2.3 2.6 2.1 6.2 2 7.2 2 7.6 2 10.3v3.4c0 2.7 0 3.1.1 4.1.2 3.6 2.2 5.6 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c3.6-.2 5.6-2.2 5.8-5.8.1-1 .1-1.4.1-4.1v-3.4c0-2.7 0-3.1-.1-4.1C21.7 2.6 19.7.6 16.1.5 15.1.4 14.7.4 12 .4Z"/></svg></a>
@@ -94,16 +97,19 @@ footer b{font-family:Anton,sans-serif;font-weight:400;font-size:18px;color:#fff;
   </div>
 
   <main>
-    <!-- Algory (link affiliato di Vaga, dal 03/11/2026): primo pulsante, passa da /vai/algory (netlify.toml).
-         Marco 04/11/2026: niente #ad né avviso di rischio nei pulsanti (l'avviso resta nel footer); codici spiegati come nella mail di Vaga. -->
+    <!-- Algory (link affiliato di Vaga, dal 03/11/2026).
+         12/11/2026: Instagram ha segnalato questa pagina («Link», account non consigliabile). Versione a norma:
+         link DIRETTO ad algory.app (niente rimando /vai/), rel="sponsored", #ad e avviso di rischio accanto al pulsante.
+         Sostituisce la scelta del 04/11 (niente #ad nei pulsanti), che violava AGCOM, regole Meta e termini di Vaga. -->
     <section class="algo">
-      <a class="card top" href="https://marcostangatrader.netlify.app/vai/algory" data-goal="algory"><div class="ic algo" role="img" aria-label="Logo Algory"></div><div><b>Algory: il software con cui creo e testo i miei bot</b><span>Entra dal mio link e usa uno dei miei codici sconto 👇</span></div></a>
+      <a class="card top" href="https://algory.app/index.html?p=stanga" rel="sponsored noopener" data-goal="algory"><div class="ic algo" role="img" aria-label="Logo Algory"></div><div><b>Algory: il software con cui creo e testo i miei bot</b><span>Entra dal mio link e usa uno dei miei codici sconto 👇</span><em class="adv">#ad · link affiliato</em></div></a>
       <button class="code" data-c="STANGA20"><b>STANGA20</b><span>-20% su ogni pagamento, finché resti abbonato</span><i>Copia</i></button>
       <button class="code" data-c="STANGA50"><b>STANGA50</b><span>-50% sul primo pagamento</span><i>Copia</i></button>
-      <p class="how"><b>Come si usano:</b> apri Algory dal pulsante viola, scegli il piano e al pagamento incolla <b>un</b> codice. STANGA20 se pensi di restare, STANGA50 se vuoi provare spendendo meno il primo mese.</p>
+      <p class="how"><b>Come si usano:</b> al pagamento incolla <b>un</b> codice. STANGA20 se pensi di restare, STANGA50 per provare spendendo meno.</p>
+      <p class="risk">Algory crea e testa strategie: non garantisce guadagni. Il trading comporta un alto rischio di perdita. Se ti abboni dal mio link ricevo una commissione; per te il prezzo non cambia.</p>
     </section>
 
-    <a class="card hf" href="https://marcostangatrader.netlify.app/vai/higgsfield" data-goal="higgsfield"><div class="ic hfl" role="img" aria-label="Logo Higgsfield"></div><div><b>Vuoi fare video come i miei e supportarmi?</b><span>Li faccio con Higgsfield. Iscriviti dal mio link: a te non costa niente di più.</span></div></a>
+    <a class="card hf" href="https://higgsfield.ai?fpr=marco-778d82" rel="sponsored noopener" data-goal="higgsfield"><div class="ic hfl" role="img" aria-label="Logo Higgsfield"></div><div><b>Vuoi fare video come i miei e supportarmi?</b><span>Li faccio con Higgsfield. Iscriviti dal mio link: a te non costa niente di più.</span><em class="adv">#ad · link affiliato</em></div></a>
 
     <a class="card" href="https://www.youtube.com/@cthe.trader" data-goal="youtube"><div class="ic yt"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></div><div><b>Il canale YouTube di C</b><span>I video lunghi: come creo, testo e gestisco i bot.</span></div></a>
 
