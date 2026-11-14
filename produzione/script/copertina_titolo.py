@@ -57,8 +57,9 @@ draw.rectangle([56, 64, 56 + 92, 64 + 92], fill=VIOLA)
 mw = draw.textlength("MS", font=ImageFont.truetype(ANTON, 56))
 draw.text((56 + (92 - mw) / 2, 70), "MS", font=ImageFont.truetype(ANTON, 56), fill="white")
 draw.text((60, 1838), "@cthe.trader", font=piccolo, fill=(255, 255, 255, 230))
-num = "ATTUALITÀ #" + sys.argv[4]
-draw.text((W - 60 - draw.textlength(num, font=piccolo), 1838), num, font=piccolo, fill=(139, 109, 255))
+# numero vuoto = niente etichetta di serie (es. reel tratti dai video YouTube)
+num = ("ATTUALITÀ #" + sys.argv[4]) if sys.argv[4].strip() else ""
+if num: draw.text((W - 60 - draw.textlength(num, font=piccolo), 1838), num, font=piccolo, fill=(139, 109, 255))
 
 img.save(sys.argv[2], quality=93)
 # anteprima del ritaglio 4:5 della griglia (zona centrale 1080x1350)
