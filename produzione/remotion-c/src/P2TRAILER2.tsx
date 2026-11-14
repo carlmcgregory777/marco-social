@@ -12,6 +12,7 @@ import { AbsoluteFill, Audio, Easing, interpolate, OffthreadVideo, Sequence, sta
 import { loadFont as loadPixel } from "@remotion/google-fonts/PressStart2P";
 import { INTER, molla, NERO, ROSSO, VIOLA } from "./FormatC";
 import { PAROLE_P2TRAILER as P, DURATA_P2TRAILER_S } from "./p2trailer-parole";
+import { Etichetta, Frase3D, LampoLuce, Titolo3D } from "./TitoliCine";
 
 const { fontFamily: PIXEL } = loadPixel();
 const C = "p2";
@@ -121,58 +122,6 @@ const Inquadratura: React.FC<{ i: number }> = ({ i }) => {
       </AbsoluteFill>
       <Pellicola />
     </AbsoluteFill>
-  );
-};
-
-// ---------- titolo a contorno con orario (come «CASINO' 21:00») ----------
-const Contorno: React.FC<{ a: number; b: number; testo: string; ora?: string; x?: number; y?: number; size?: number }> = ({ a, b, testo, ora, x = 140, y = 120, size = 190 }) => {
-  const f = useCurrentFrame();
-  if (f < F(a) || f > F(b)) return null;
-  const e = Easing.out(Easing.cubic)(ramp(f, F(a), F(a) + 14));
-  const u = ramp(f, F(b) - 6, F(b));
-  const deriva = (f - F(a)) * 0.25;  // segue lentamente la camera
-  return (
-    <div style={{ position: "absolute", left: x - deriva, top: y, opacity: 1 - u }}>
-      <div style={{ fontFamily: INTER, fontWeight: 900, fontSize: size, letterSpacing: 8, lineHeight: 1, color: "transparent", WebkitTextStroke: "3px rgba(255,255,255,0.92)",
-        clipPath: `inset(0 ${(1 - e) * 100}% 0 0)`, textShadow: "0 0 30px rgba(139,109,255,0.25)" }}>{testo}</div>
-      {ora && <div style={{ position: "absolute", right: -10, top: -34, fontFamily: INTER, fontWeight: 600, fontSize: 30, color: "#fff", opacity: e, letterSpacing: 2 }}>{ora}</div>}
-    </div>
-  );
-};
-
-// ---------- etichetta nella scena: cifra + linea che punta all'oggetto (come «1 REGOLA») ----------
-const Punta: React.FC<{ a: number; b: number; testo: string; x: number; y: number; dx: number; dy: number; col?: string; size?: number }> = ({ a, b, testo, x, y, dx, dy, col = "#fff", size = 58 }) => {
-  const f = useCurrentFrame();
-  if (f < F(a) || f > F(b)) return null;
-  const l = Easing.out(Easing.cubic)(ramp(f, F(a), F(a) + 9));
-  const tx = ramp(f, F(a) + 6, F(a) + 12);
-  const u = ramp(f, F(b) - 5, F(b));
-  const deriva = (f - F(a)) * 0.35;
-  const len = Math.hypot(dx, dy), ang = (Math.atan2(dy, dx) * 180) / Math.PI;
-  return (
-    <div style={{ position: "absolute", left: x - deriva, top: y, opacity: 1 - u }}>
-      <div style={{ position: "absolute", left: 0, top: 0, width: len * l, height: 3, background: col, transform: `rotate(${ang}deg)`, transformOrigin: "0 50%", boxShadow: "0 0 8px rgba(0,0,0,0.6)" }} />
-      <div style={{ position: "absolute", left: -7, top: -6, width: 14, height: 14, borderRadius: 7, background: col }} />
-      <div style={{ position: "absolute", left: dx + (dx >= 0 ? 16 : -16), top: dy - size * 0.62, transform: dx >= 0 ? undefined : "translateX(-100%)", whiteSpace: "nowrap",
-        fontFamily: INTER, fontWeight: 800, fontSize: size, color: col, letterSpacing: 1, opacity: tx, textShadow: "0 2px 18px rgba(0,0,0,0.8)" }}>{testo}</div>
-    </div>
-  );
-};
-
-// ---------- frase piccola + parola enorme (come «tu non sei come LORO») ----------
-const PiccoloGrande: React.FC<{ a: number; b: number; piccolo: string[]; grande: string; x: number; y: number; col?: string }> = ({ a, b, piccolo, grande, x, y, col = "#fff" }) => {
-  const f = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  if (f < F(a) || f > F(b)) return null;
-  const u = ramp(f, F(b) - 5, F(b));
-  const m = molla(f, fps, F(a) + 10, 11, 260);
-  return (
-    <div style={{ position: "absolute", left: x, top: y, opacity: 1 - u, color: col, textShadow: "0 4px 24px rgba(0,0,0,0.8)" }}>
-      {piccolo.map((r, k) => (
-        <div key={k} style={{ fontFamily: INTER, fontWeight: 500, fontStyle: "italic", fontSize: 44, lineHeight: 1.05, opacity: ramp(f, F(a) + 3 * k, F(a) + 3 * k + 5), marginLeft: 120 }}>{r}</div>
-      ))}
-      <div style={{ fontFamily: INTER, fontWeight: 900, fontSize: 200, lineHeight: 0.95, letterSpacing: -6, transform: `scale(${m})`, transformOrigin: "0 50%", opacity: m > 0.02 ? 1 : 0 }}>{grande}</div>
-    </div>
   );
 };
 
@@ -289,23 +238,15 @@ const Prossimamente: React.FC = () => {
 
 const Coda: React.FC = () => {
   const f = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const a = F(t.fine + 0.1);
-  if (f < a) return null;
-  const e = Easing.out(Easing.cubic)(ramp(f, a, a + 18));
-  const m2 = molla(f, fps, a + 22, 14, 200);
+  const a = t.fine + 0.1;
+  if (f < F(a)) return null;
+  const e = ramp(f, F(a) + 40, F(a) + 50);
   return (
-    <AbsoluteFill style={{ background: "#000", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ position: "relative", textAlign: "center" }}>
-        <div style={{ fontFamily: INTER, fontWeight: 900, fontSize: 150, letterSpacing: 6, lineHeight: 1.0, color: "transparent", WebkitTextStroke: "3px #fff", clipPath: `inset(0 ${(1 - e) * 100}% 0 0)` }}>
-          LE PROP FIRM
-        </div>
-        <div style={{ position: "absolute", right: 0, top: -40, fontFamily: INTER, fontWeight: 600, fontSize: 30, color: "#fff", opacity: e }}>08:00</div>
-        <div style={{ marginTop: 18, transform: `scale(${m2})`, opacity: m2 > 0.02 ? 1 : 0, fontFamily: INTER, fontWeight: 900, fontSize: 110, letterSpacing: -3, color: "#fff" }}>
-          SONO UNA <span style={{ background: VIOLA, padding: "0 20px" }}>TRAPPOLA?</span>
-        </div>
-      </div>
-      <div style={{ position: "absolute", left: 60, bottom: 50, fontFamily: INTER, fontWeight: 600, fontSize: 26, color: "#fff", letterSpacing: 3, opacity: m2 }}>IL FILM COMPLETO · PRESTO SU YOUTUBE</div>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, #1a1430 0%, #000 70%)" }}>
+      <Titolo3D a={a} b={a + CODA + 1} testo="LE PROP FIRM" ora="08:00" x={0} y={300} size={210} centro />
+      <Frase3D a={a + 0.7} b={a + CODA + 1} piccolo="" grande="SONO UNA TRAPPOLA?" x={0} y={570} size={150} accento centro />
+      <div style={{ position: "absolute", left: 60, bottom: 50, fontFamily: INTER, fontWeight: 600, fontSize: 26, color: "#fff", letterSpacing: 3, opacity: e }}>IL FILM COMPLETO · PRESTO SU YOUTUBE</div>
+      <Pellicola />
     </AbsoluteFill>
   );
 };
@@ -329,22 +270,23 @@ export const P2TRAILER2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       <Inquadratura i={i} />
-      <Contorno a={0.2} b={t.qualche - 0.05} testo="PROP FIRM" ora="23:47" x={150} y={150} />
-      <Punta a={t.qualche + 0.3} b={t.conto0 - 0.05} testo="540 €" x={890} y={420} dx={260} dy={-150} />
+      <Titolo3D a={0.2} b={t.qualche - 0.05} testo="PROP FIRM" ora="23:47" x={140} y={130} size={200} />
+      <Etichetta a={t.qualche + 0.25} b={t.conto0 - 0.05} testo="540 €" nota="PER PROVARCI" x={890} y={420} dx={240} dy={-170} />
       <Conteggio />
-      <Contorno a={t.sono} b={t.hai - 0.05} testo="09:00" x={760} y={820} size={170} />
-      <Contorno a={t.primo} b={t.ti - 0.05} testo="GIORNO 1" ora="09:12" x={140} y={820} size={150} />
-      <PiccoloGrande a={t.ti} b={t.secondo - 0.05} piccolo={["ti senti"]} grande="UN GENIO" x={120} y={680} />
-      <Contorno a={t.secondo} b={t.il2 - 0.05} testo="GIORNO 2" ora="14:30" x={140} y={130} size={150} />
-      <Punta a={t.meno + 0.2} b={t.conto - 0.05} testo="−5%" x={1150} y={380} dx={260} dy={-160} col={ROSSO} size={80} />
+      <Titolo3D a={t.sono} b={t.hai - 0.05} testo="09:00" x={740} y={800} size={190} vuoto />
+      <Titolo3D a={t.primo} b={t.ti - 0.05} testo="GIORNO 1" ora="09:12" x={130} y={800} size={170} />
+      <Frase3D a={t.ti} b={t.secondo - 0.05} piccolo="ti senti" grande="UN GENIO" x={110} y={650} accento />
+      <Titolo3D a={t.secondo} b={t.il2 - 0.05} testo="GIORNO 2" ora="14:30" x={130} y={120} size={170} />
+      <Etichetta a={t.meno + 0.15} b={t.conto - 0.05} testo="−5%" nota="IN UN GIORNO" x={1150} y={380} dx={240} dy={-170} col={ROSSO} size={110} />
       <OttoBit a={t.riprova - 0.05} b={t.prima - 0.05} />
       <Contatore />
       <Prossimamente />
       <Botta a={t.la + 0.1} b={t.ha - 0.05} righe={["NON HA BISOGNO", "CHE TU !PERDA"]} top={590} barra={t.perda + 0.3} />
       <Botta a={t.riprovi - 0.15} b={t.questa - 0.05} righe={["CHE TU *RIPROVI"]} top={790} size={140} />
       <Nome a={t.la + 0.1} b={t.riprovi - 0.3} />
-      <PiccoloGrande a={t.questa + 0.2} b={t.alla - 0.05} piccolo={["questa è", "la storia degli"]} grande="ALTRI 93" x={120} y={600} />
-      <PiccoloGrande a={t.sette3 - 0.6} b={t.fine} piccolo={["e cosa fanno"]} grande="I 7" x={1180} y={600} />
+      <Frase3D a={t.questa + 0.2} b={t.alla - 0.05} piccolo="questa è la storia degli" grande="ALTRI 93" x={110} y={600} accento />
+      <Frase3D a={t.sette3 - 0.6} b={t.fine} piccolo="e cosa fanno" grande="I 7" x={1240} y={600} />
+      <LampoLuce tempi={[t.qualche, t.su, t.sono, t.ti, t.secondo, t.e, t.questa, t.alla]} />
       <Coda />
       <Audio src={staticFile(`${C}/voce.wav`)} />
       <Audio src={staticFile(`${C}/musica.wav`)} volume={0.34} />
