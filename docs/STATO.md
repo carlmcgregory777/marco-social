@@ -211,3 +211,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Storia: A17 condiviso in storia. Le storie dei reel programmati vanno fatte il giorno dell'uscita (Instagram non programma le storie).
 - Evidenza NOTIZIE (A11-A17, copertina produzione/evidenza 09_ATTUALITA): Instagram NON salva (bottone Fine senza effetto, 2 tentativi). Da riprovare più tardi.
 - TikTok: A18 programmato al 15/11 12:30 ma il caricamento fallisce («Si è verificato un problema»): resta in Bozze. A12 e A13 non ancora caricati su TikTok.
+
+## 15/11/2026 notte (dal telefono, ok di Marco)
+- Correzione: A18 e' gia' uscito su Instagram; restano programmati A12 dom 15/11 12:30, A13 lun 16/11 12:30.
+- P1 reel v3 (produzione/youtube/P1-prototipo/finale/P1-reel-9x16-v3.mp4, zoom dei primi piani ridotto) PROGRAMMATO su Instagram mar 17/11 12:30 con copertina P1-reel-copertina.jpg ed etichetta IA. Verificato in Contenuti programmati.
+- TikTok: l'app sul Redmi NON ha l'opzione Programma. I caricamenti falliti erano file pesanti (32-60 MB): pronte versioni leggere in produzione/tiktok-leggeri/ (*-tt.mp4 per il telefono, web/*.mp4 sotto 10 MB), gia' copiate in DCIM/Camera. A18-tt salvato in Bozze con descrizione, copertina ed etichetta IA (non pubblicato).
+- TRAPPOLA: Chrome e' collegato a TikTok come @biancamonroe00, NON @cthe.trader: mai caricare da TikTok Studio su Chrome per C. Il caricamento di prova e' stato scartato senza pubblicare.
