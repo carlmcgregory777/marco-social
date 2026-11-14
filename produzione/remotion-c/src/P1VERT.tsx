@@ -62,13 +62,13 @@ type Shot =
   | { a: number; tipo: "parla"; s: number; o?: string; spinta?: number }
   | { a: number; tipo: "clip"; file: string; da?: number; s?: number; s2?: number; o?: string; vel?: number; op?: string }
   | { a: number; tipo: "grafico"; caselle: number; zoomSu?: number; zoomA?: number; cerchio?: { n: number; a: number }; croce?: { n: number; a: number }; flash?: boolean };
-const LARGO = 1.0, MEDIO = 1.28, STRETTO = 1.5;
+const LARGO = 1.0, MEDIO = 1.1, STRETTO = 1.2; // zoom contenuti: sopra la base 1,33 il viso si sgrana
 const O_VISO = "50% 33%"; // zoom ancorato alla cima della testa (y ~620): stringendo, la testa non sale verso i testi
 const SHOT: Shot[] = [
-  { a: 0, tipo: "clip", file: "largo", s: 1.0, s2: 1.3, o: "50% 45%" },                  // apertura: totale basso che stringe
+  { a: 0, tipo: "clip", file: "largo", s: 1.0, s2: 1.15, o: "50% 45%" },                  // apertura: totale basso che stringe
   { a: t.non1, tipo: "parla", s: MEDIO },
   { a: t.non2, tipo: "parla", s: LARGO },                                                  // + doodle grafici/ore
-  { a: t.conta3, tipo: "parla", s: STRETTO, o: O_VISO, spinta: 0.08 },
+  { a: t.conta3, tipo: "parla", s: STRETTO, o: O_VISO, spinta: 0.04 },
   { a: t.ti, tipo: "clip", file: "alto-mappa", s: 1.05, s2: 1.2, o: "50% 65%", op: "55% 50%" },           // dall'alto: disegna gli assi
   { a: t.mappa, tipo: "grafico", caselle: 1, zoomSu: 1, zoomA: t.sentimento - 0.2 },
   { a: t.apri, tipo: "clip", file: "laterale", s: 1.0, s2: 1.06, o: "50% 15%", op: "57% 50%" },          // laterale mentre scrive
@@ -76,14 +76,14 @@ const SHOT: Shot[] = [
   { a: t.tanta, tipo: "parla", s: MEDIO },
   { a: t.casella - 0.25, tipo: "grafico", caselle: 2, croce: { n: 1, a: t.casella }, zoomSu: 2, zoomA: t.segnali },
   { a: t.poca, tipo: "parla", s: LARGO },                                                  // + doodle segnali/venditore
-  { a: t.nonTu, tipo: "parla", s: STRETTO, o: O_VISO, spinta: 0.06 },
+  { a: t.nonTu, tipo: "parla", s: STRETTO, o: O_VISO, spinta: 0.03 },
   { a: t.terzo, tipo: "grafico", caselle: 3, zoomSu: 3, zoomA: t.piano },
   { a: t.entrata, tipo: "clip", file: "alto-lista", s: 1.0, s2: 1.08, o: "50% 50%", op: "58% 50%" },     // dall'alto: spunta la checklist
-  { a: t.prima, tipo: "parla", s: STRETTO, o: O_VISO, spinta: 0.05 },
+  { a: t.prima, tipo: "parla", s: STRETTO, o: O_VISO, spinta: 0.03 },
   { a: t.quarto, tipo: "grafico", caselle: 4, cerchio: { n: 4, a: t.sistema + 0.45 }, zoomSu: 4, zoomA: t.sistema + 0.9, flash: true },
   { a: t.provato, tipo: "parla", s: LARGO },                                               // + robot, scudo, definizioni
   { a: t.anche, tipo: "parla", s: MEDIO },
-  { a: t.quindi, tipo: "parla", s: MEDIO, spinta: 0.3 },                                   // la musica si ferma: spinta lenta verso il viso
+  { a: t.quindi, tipo: "parla", s: MEDIO, spinta: 0.12 },                                   // la musica si ferma: spinta lenta verso il viso
   { a: t.fine, tipo: "parla", s: STRETTO },                                                // (coda: titolo su nero sopra)
 ];
 const fineShot = (i: number) => (i + 1 < SHOT.length ? SHOT[i + 1].a : t.fine + CODA);
