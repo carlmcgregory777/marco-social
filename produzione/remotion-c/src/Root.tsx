@@ -22,6 +22,7 @@ import { A19EURO, CoverA19EURO, DURATA_A19EURO } from "./A19EURO";
 import { A20GAS, CoverA20GAS, DURATA_A20GAS } from "./A20GAS";
 import { A21TRUFFE, CoverA21TRUFFE, DURATA_A21TRUFFE } from "./A21TRUFFE";
 import { AL9INCUB, CoverAL9INCUB, DURATA_AL9INCUB } from "./AL9INCUB";
+import { AL9H, DURATA_AL9H } from "./AL9H";
 import { A14TAGLIO, CoverA14TAGLIO, DURATA_A14TAGLIO } from "./A14TAGLIO";
 import { A12ARMI, CoverA12ARMI, DURATA_A12ARMI } from "./A12ARMI";
 import { A11PENS, CoverA11PENS, DURATA_A11PENS } from "./A11PENS";
@@ -77,6 +78,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="CoverA21TRUFFE" component={CoverA21TRUFFE} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="AL9INCUB" component={AL9INCUB} durationInFrames={DURATA_AL9INCUB} fps={30} width={1080} height={1920} />
       <Composition id="CoverAL9INCUB" component={CoverAL9INCUB} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="AL9H" component={AL9H} durationInFrames={DURATA_AL9H} fps={30} width={1080} height={1920} />
       <Composition id="CoverA13QI" component={CoverA13QI} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="A12ARMI" component={A12ARMI} durationInFrames={DURATA_A12ARMI} fps={30} width={1080} height={1920} />
       <Composition id="CoverA12ARMI" component={CoverA12ARMI} durationInFrames={1} fps={30} width={1080} height={1920} />

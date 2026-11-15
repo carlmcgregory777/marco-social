@@ -230,3 +230,10 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Render: `finale/AL9-incubazione-FINALE.mp4` (50,7 s, −14,5 LUFS), `-telefono.mp4`, copertina «PRIMA IL 25%. POI TUTTO.» DENTRO ALGORY #9 (set C-cover Higgsfield gpt_image_2_6, 0,25 crediti).
 - Niente labiale: Runpod a 0,12 $ (ne servono 0,25). C compare in foto nel gancio (2,5 s) e in copertina; il resto è a tutto schermo sulle schermate, come il reel di Vaga.
 - CTA «link in bio + STANGA20», #ad e avviso di rischio nell'ultima schermata. Da confermare con Marco: «19 bot» sul conto da 100.000 $.
+- **v1 BOCCIATA da Marco** («non mi piace»): vuole lo stile Hormozi del P1 con le schermate Algory.
+
+## 15/11/2026 — Dentro Algory #9 v2 «Il bot più pericoloso» stile Hormozi (NON pubblicato, da approvare)
+- Cartella `produzione/algory9-hormozi/`: copione `voce/testo-v2.txt` (gancio «il bot col backtest più bello», esempio +30% → 4 perdite −4%, Panda/Ferrari, scala 25/50/100, panchina), `didascalia.md`, `montaggio/segmenti.py` (8 pezzi parlati in camera → `voce-camera.wav` 26,9 s per il labiale).
+- Remotion: `src/AL9H.tsx` (grafiche crollo e scala, doodle panda/ferrari/dadi/robot in panchina con il logo Algory in faccia, schermate Algory vere), render con `script/render-al9h.sh`.
+- Render: `finale/AL9H-FINALE.mp4` (55 s, −14,2 LUFS), `AL9H-telefono.mp4`, copertina «IL BOT PIÙ PERICOLOSO» DENTRO ALGORY #9.
+- C per ora è una FOTO FERMA (segnaposto `public-al9h/al9h/C-parla.mp4`). Labiale: Marco ricarica Runpod, poi `RUNPOD_B64=1 python -u runpod_pe.py talk algory9-hormozi/set/C-studio.png algory9-hormozi/montaggio/voce-camera.wav <out> 480p` (0,25 $), upscale come P1, sostituire il segnaposto e rilanciare il render.

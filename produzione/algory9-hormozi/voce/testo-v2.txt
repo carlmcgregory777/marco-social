@@ -1,0 +1,10 @@
+[casual] Il bot più pericoloso sul mio conto? È quello col backtest più bello.
+Immagina. Bot nuovo: nel backtest fa più trenta per cento, quasi zero perdite. Tu ti gasi, e gli dai il rischio pieno.
+[serious] Prima settimana: quattro perdite di fila. Meno quattro per cento. È sfortuna... o il bot non funziona? Non lo sai. E intanto paghi tu.
+[casual] Quindi sul mio conto ogni bot nuovo è un neopatentato. Prima la Panda... poi la Ferrari.
+Gradino uno: il venticinque per cento del rischio. Se sbaglia, si fa male poco.
+Gradino due: una decina di trade veri che passano i controlli? Sale al cinquanta.
+Gradino tre: una trentina? Rischio pieno. Se l'è guadagnato.
+E se poi si spegne? Non lo licenzio a sentimento: Algory lo segnala, e dalla panchina entra un bot nuovo.
+[serious] Ecco perché il backtest più bello è il più pericoloso: ti fa venire voglia di saltare i gradini.
+[casual] Il software è Algory. Link in bio: codice STANGA venti, venti per cento di sconto. E si parte gratis.
