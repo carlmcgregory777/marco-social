@@ -58,7 +58,7 @@ mw = draw.textlength("MS", font=ImageFont.truetype(ANTON, 56))
 draw.text((56 + (92 - mw) / 2, 70), "MS", font=ImageFont.truetype(ANTON, 56), fill="white")
 draw.text((60, 1838), "@cthe.trader", font=piccolo, fill=(255, 255, 255, 230))
 # numero vuoto = niente etichetta di serie (es. reel tratti dai video YouTube)
-num = ("ATTUALITÀ #" + sys.argv[4]) if sys.argv[4].strip() else ""
+num = (("ATTUALITÀ #" + sys.argv[4]) if sys.argv[4].strip().isdigit() else sys.argv[4]) if sys.argv[4].strip() else ""  # 15/11: testo libero, es. «DENTRO ALGORY #9»
 if num: draw.text((W - 60 - draw.textlength(num, font=piccolo), 1838), num, font=piccolo, fill=(139, 109, 255))
 
 img.save(sys.argv[2], quality=93)

@@ -24,7 +24,8 @@ export type EpisodioC = {
   chiave: RegExp;
   schede: Scheda[];
   fine: number; // fine dell'ultima parola (s)
-  finale: { righe: string[]; nota: string }; // "*parola" = riquadro viola
+  finale: { righe: string[]; nota: string; avviso?: string }; // "*parola" = riquadro viola; avviso = riga piccola (#ad, rischio)
+  etichetta?: string; // in alto a sinistra al posto di «ATTUALITÀ DI C · #n» (es. «DENTRO ALGORY · #9»)
 };
 
 export const durataEpisodio = (e: EpisodioC) => F(e.fine + 0.35 + OUTRO);
@@ -484,6 +485,7 @@ const Finale: React.FC<{ e: EpisodioC }> = ({ e }) => {
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 1180, textAlign: "center", fontFamily: MANO, fontWeight: 700, fontSize: 70, color: GIALLO, transform: `scale(${c}) rotate(-3deg)` }}>{e.finale.nota}</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 1320, textAlign: "center", fontFamily: MONO, fontSize: 40, letterSpacing: 4, color: "#ffffffcc", opacity: c }}>@cthe.trader</div>
+      {e.finale.avviso ? <div style={{ position: "absolute", left: 60, right: 60, top: 1700, textAlign: "center", fontFamily: MONO, fontSize: 28, lineHeight: 1.35, color: "#ffffffaa", opacity: c }}>{e.finale.avviso}</div> : null}
     </AbsoluteFill>
   );
 };
@@ -498,7 +500,7 @@ export const ReelSchedeC: React.FC<{ e: EpisodioC }> = ({ e }) => {
       <Sequence from={F(e.fine + 0.35)}>
         <Finale e={e} />
       </Sequence>
-      <div style={{ position: "absolute", left: 50, top: 70, fontFamily: MONO, fontSize: 26, color: "#ffffffbb", letterSpacing: 3, textShadow: "0 2px 8px #000" }}>ATTUALITÀ DI C · #{e.numero}</div>
+      <div style={{ position: "absolute", left: 50, top: 70, fontFamily: MONO, fontSize: 26, color: "#ffffffbb", letterSpacing: 3, textShadow: "0 2px 8px #000" }}>{e.etichetta || `ATTUALITÀ DI C · #${e.numero}`}</div>
       <AbsoluteFill style={{ pointerEvents: "none", background: "radial-gradient(ellipse at 50% 45%, transparent 62%, #0009 100%)" }} />
       <div style={{ position: "absolute", left: 0, bottom: 0, height: 8, width: `${(f / dur) * 100}%`, background: `linear-gradient(90deg,${VIOLA},${ACCENTO})` }} />
       <Audio src={staticFile(`${e.cartella}/voce.wav`)} volume={1} />

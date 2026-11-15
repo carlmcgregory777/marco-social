@@ -223,3 +223,10 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Commenti da @cthe.trader (account verificato sul Redmi): 10 commenti utili, senza link né promozione, su reel di mikcosentino, investireepertutti (4), m.a.provenzano, giulio_cncpt, andreacimi.ita, valentino_bottura, mayan.bulatovic. Fonte reel: hashtag #tradingitalia (il deep link https://www.instagram.com/explore/tags/<tag>/ funziona, la ricerca no).
 - Spesa: Runpod 3 labiali × 0,25 $ = 0,75 $ (saldo residuo circa 0,12 $: ricaricare prima dei prossimi labiali). Higgsfield 3 set × 0,25 crediti. ElevenLabs circa 2.500 caratteri.
 - ATTENZIONE: nell'app Instagram del Redmi resta aperta in background una schermata «Nuovo reel» (bozza di P1 con il tasto Condividi): non toccarla.
+
+## 15/11/2026 mattina — Dentro Algory #9 «Prima il 25%, poi tutto» (NON pubblicato, da approvare)
+- Modello: reel di Vaga DfuxnIMAR1n (richiesta di Marco: «usa parecchie schermate di Algory che vedi nel video»).
+- Cartella `produzione/algory9-incubazione/`: copione `voce/testo-v1.txt`, `FATTI-AL9.md` (incubazione 25% → 50% dopo ~10 trade → 100% dopo ~30, da algory.app), `didascalia.md`, `montaggio/clip.py` (20 ritagli dal reel di Vaga sotto le sue scritte; scartata la clip con «MODE FTMO»), `montaggio/schede.py`.
+- Render: `finale/AL9-incubazione-FINALE.mp4` (50,7 s, −14,5 LUFS), `-telefono.mp4`, copertina «PRIMA IL 25%. POI TUTTO.» DENTRO ALGORY #9 (set C-cover Higgsfield gpt_image_2_6, 0,25 crediti).
+- Niente labiale: Runpod a 0,12 $ (ne servono 0,25). C compare in foto nel gancio (2,5 s) e in copertina; il resto è a tutto schermo sulle schermate, come il reel di Vaga.
+- CTA «link in bio + STANGA20», #ad e avviso di rischio nell'ultima schermata. Da confermare con Marco: «19 bot» sul conto da 100.000 $.

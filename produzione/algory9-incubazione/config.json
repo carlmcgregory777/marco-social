@@ -1,0 +1,38 @@
+{
+  "composizione": "AL9INCUB",
+  "cartella_public": "al9incub",
+  "valzer": 1,
+  "testo_voce": "algory9-incubazione/voce/testo-v1.txt",
+  "chiave": [
+    "MIGLIAIA",
+    "NON",
+    "REGGONO",
+    "SPEGNE",
+    "DICIANNOVE",
+    "CENTOMILA",
+    "QUARTO",
+    "VENTICINQUE",
+    "METÀ",
+    "PIENO",
+    "FUORI",
+    "NUOVO",
+    "ALGORY",
+    "STANGA",
+    "GRATIS"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "migliaia",
+    "reggono",
+    "spegne",
+    "diciannove",
+    "quarto",
+    "pieno",
+    "fuori",
+    "algory"
+  ],
+  "riser": [],
+  "clip_labiale": "algory9-incubazione/clip/C-parla.mp4",
+  "copertina": "CoverAL9INCUB",
+  "immagine": "attualita/A4-midterm/set/C-microfono.png"
+}
