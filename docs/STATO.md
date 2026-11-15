@@ -237,3 +237,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Remotion: `src/AL9H.tsx` (grafiche crollo e scala, doodle panda/ferrari/dadi/robot in panchina con il logo Algory in faccia, schermate Algory vere), render con `script/render-al9h.sh`.
 - Render: `finale/AL9H-FINALE.mp4` (55 s, −14,2 LUFS), `AL9H-telefono.mp4`, copertina «IL BOT PIÙ PERICOLOSO» DENTRO ALGORY #9.
 - C per ora è una FOTO FERMA (segnaposto `public-al9h/al9h/C-parla.mp4`). Labiale: Marco ricarica Runpod, poi `RUNPOD_B64=1 python -u runpod_pe.py talk algory9-hormozi/set/C-studio.png algory9-hormozi/montaggio/voce-camera.wav <out> 480p` (0,25 $), upscale come P1, sostituire il segnaposto e rilanciare il render.
+
+## 15/11/2026 13:22 — A18 PUBBLICATO su TikTok (ok di Marco: «programma e pubblica un reel oggi»)
+- Dal Redmi, account @cthe.trader verificato: bozza leggera del 15/11 «Lavorare in regola conviene?», descrizione «Reddito zero, 3 figli, in affitto: fino a 1.200 euro al mese di sussidio...» con #assegnodiinclusione #assegnounico #tasse, lingua Italiano, «Contenuti generati dall'IA» ON, copertina dedicata. Online con «Etichettato dal creator come generato dall'IA».
+- Restano in Bozze TikTok: la vecchia bozza A18 pesante del 14/11 (da scartare) e una bozza vuota del 3/11. A12 e A13 non ancora su TikTok.
