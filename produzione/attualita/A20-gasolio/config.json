@@ -1,0 +1,34 @@
+{
+  "composizione": "A20GAS",
+  "cartella_public": "a20gas",
+  "valzer": 2,
+  "testo_voce": "attualita/A20-gasolio/voce/testo-v1.txt",
+  "chiave": [
+    "CENTODICIASSETTE",
+    "NOVANTA",
+    "QUARTO",
+    "CENTESIMI",
+    "ACCISE",
+    "CINQUE",
+    "OBBLIGA",
+    "RAFFINAZIONE",
+    "QUARANTA",
+    "BENZINA",
+    "VENTI",
+    "CHI"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "centodiciassette",
+    "novanta",
+    "centesimi",
+    "obbliga",
+    "raffinazione",
+    "venti",
+    "chi"
+  ],
+  "riser": [],
+  "clip_labiale": "attualita/A20-gasolio/clip/C-parla.mp4",
+  "copertina": "CoverA20GAS",
+  "immagine": "attualita/A20-gasolio/set/C-set.jpg"
+}

@@ -1,0 +1,34 @@
+{
+  "composizione": "A21TRUFFE",
+  "cartella_public": "a21truffe",
+  "valzer": 0,
+  "testo_voce": "attualita/A21-truffe/voce/testo-v1.txt",
+  "chiave": [
+    "DICIASSETTE",
+    "MILLEOTTOCENTOSETTANTOTTO",
+    "CLONE",
+    "FINTI",
+    "ARTIFICIALE",
+    "TRE",
+    "DIECI",
+    "CENTOSEDICI",
+    "IO",
+    "NO",
+    "CONSOB",
+    "TRUFFA"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "diciassette",
+    "milleottocentosettantotto",
+    "artificiale",
+    "dieci",
+    "centosedici",
+    "no",
+    "truffa"
+  ],
+  "riser": [],
+  "clip_labiale": "attualita/A21-truffe/clip/C-parla.mp4",
+  "copertina": "CoverA21TRUFFE",
+  "immagine": "attualita/A21-truffe/set/C-set.jpg"
+}

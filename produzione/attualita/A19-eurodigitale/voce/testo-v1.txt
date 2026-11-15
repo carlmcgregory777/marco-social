@@ -1,0 +1,4 @@
+[serious] Mercoledì diciotto novembre, a Bruxelles, si torna a trattare sull'euro digitale. E online è già partito il panico: la BCE vedrà cosa compri e potrà spegnerti i soldi.
+[casual] Allora, i fatti. Non è ancora legge: a luglio il Parlamento europeo ha votato solo il mandato per trattare. Si parla di un tetto fino a tremila euro a testa: oltre, i soldi vanno sul tuo conto in banca. E la BCE lo scrive nero su bianco: mai moneta programmabile. Il contante resta.
+[serious] Ma c'è una cosa che nessuno ti dice. Oggi più di due pagamenti con carta su tre, nell'area euro, passano da circuiti non europei. Ogni volta che paghi con la carta, qualcuno sa già dove compri e quanto spendi. Solo che non sta a Francoforte.
+[excited] Quindi la domanda non è se qualcuno guarderà i tuoi pagamenti. È chi li sta già guardando.

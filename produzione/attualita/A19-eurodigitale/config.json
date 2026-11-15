@@ -1,0 +1,13 @@
+{
+  "composizione": "A19EURO",
+  "cartella_public": "a19euro",
+  "valzer": 1,
+  "testo_voce": "attualita/A19-eurodigitale/voce/testo-v1.txt",
+  "chiave": ["DICIOTTO", "PANICO", "LEGGE", "TREMILA", "PROGRAMMABILE", "CONTANTE", "TRE", "EUROPEI", "FRANCOFORTE", "GIÀ"],
+  "tagli": [],
+  "enfasi": ["diciotto", "tremila", "programmabile", "europei", "francoforte", "già"],
+  "riser": [],
+  "clip_labiale": "attualita/A19-eurodigitale/clip/C-parla.mp4",
+  "copertina": "CoverA19EURO",
+  "immagine": "attualita/A19-eurodigitale/set/C-set.jpg"
+}
