@@ -241,3 +241,11 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 ## 15/11/2026 13:22 — A18 PUBBLICATO su TikTok (ok di Marco: «programma e pubblica un reel oggi»)
 - Dal Redmi, account @cthe.trader verificato: bozza leggera del 15/11 «Lavorare in regola conviene?», descrizione «Reddito zero, 3 figli, in affitto: fino a 1.200 euro al mese di sussidio...» con #assegnodiinclusione #assegnounico #tasse, lingua Italiano, «Contenuti generati dall'IA» ON, copertina dedicata. Online con «Etichettato dal creator come generato dall'IA».
 - Restano in Bozze TikTok: la vecchia bozza A18 pesante del 14/11 (da scartare) e una bozza vuota del 3/11. A12 e A13 non ancora su TikTok.
+
+### 15/11/2026 sera — AL9H v3 (crediti Higgsfield usati, richiesta di Marco)
+- Marco ha chiesto di spendere i 24,64 crediti Higgsfield sui modelli nuovi (Kling 4.0 e Higgsfield Intone). Restano 1,89 crediti.
+- Gancio (0–2,4 s): labiale vero con **Higgsfield Intone** (480p, 15 cr; personaggio pers_C.png + location C-studio.png + audio). Il parlato nella clip parte a 0,29 s. Upscale e innesto in `C-parla.mp4` con `produzione/script/al9h-intone.sh` (la foto ferma originale è in `algory9-hormozi/hf/C-parla-foto.mp4`). Su «col backtest più bello» si stacca sulla schermata Algory.
+- «Neopatentato… Prima la Panda… poi la Ferrari»: clip **Kling 4.0** 3 s 720p (6,75 cr), primo fotogramma C in utilitaria bianca col cartello P, ultimo C in supercar rossa (Seedream 5.0 Flash, 0,5 cr l'uno), whip-pan in mezzo. Inquadratura `film` in AL9H.tsx, velocità 0,7.
+- Prezzi verificati: Intone 480p = 9 + 3 cr/s (720p ≈ 7,8 cr/s); Kling 4.0 720p = 2,25 cr/s (minimo 3 s); Gemini Omni Flash 1.2 8 s 720p = 18; Seedance 2.0 Mini = 1 cr/s; Seedance 2.5 5 s = 35. Supercomputer = chat-agente di Higgsfield, generare costa crediti come dalla CLI.
+- Gli altri 7 pezzi parlati sono ancora foto ferma: labiale completo con Runpod (0,25 $) quando Marco ricarica.
+- File: `algory9-hormozi/finale/AL9H-FINALE.mp4`, `AL9H-telefono.mp4`, copertina nuova `AL9H-copertina-ferrari.jpg` (+ griglia); la v2 resta in `AL9H-v2-FINALE.mp4`. Da approvare.

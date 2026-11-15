@@ -1,4 +1,5 @@
 // Dentro Algory #9 «stile Hormozi» (15/11/2026, Marco: «più stile Hormozi del reel di prima, ma non tralasciare
+// v3 (15/11/2026 sera): gancio con labiale vero (Higgsfield Intone) e clip Kling 4.0 «Panda → Ferrari» sul neopatentato.
 // le schermate Algory, esempi che intrattengano fino alla fine, curiosità da subito»).
 // Modello: P1VERT.tsx (studio bianco, testi che esplodono, doodle, grafico-framework, DEFINIZIONE, tweet, coda).
 // Novità: schermate VERE di Algory a tutto schermo (ritagli dal reel di Vaga in algory9-incubazione/fonte),
@@ -43,7 +44,7 @@ const T = (w: string, n = 1, dopo = 0): number => {
   throw new Error("parola non trovata: " + w);
 };
 const t = {
-  pericoloso: T("pericoloso"), e1: T("È"), immagina: T("Immagina"), backtest: T("backtest", 2), trenta: T("trenta"),
+  pericoloso: T("pericoloso"), e1: T("È"), col: T("col"), immagina: T("Immagina"), backtest: T("backtest", 2), trenta: T("trenta"),
   tu: T("Tu"), rischio: T("rischio"), settimana: T("settimana"), quattro: T("quattro"), meno: T("Meno"),
   e2: T("È", 1, T("Meno")), sfortuna: T("sfortuna"), nonSai: T("Non", 1, T("funziona") + 0.3), paghi: T("paghi"), quindi: T("Quindi"),
   neopatentato: T("neopatentato"), panda: T("Panda"), ferrari: T("Ferrari"),
@@ -60,6 +61,7 @@ const t = {
 type Shot =
   | { a: number; tipo: "parla"; s: number; o?: string; spinta?: number }
   | { a: number; tipo: "algo"; file: string; vel?: number; s?: number; s2?: number; op?: string }
+  | { a: number; tipo: "film"; file: string; vel?: number }
   | { a: number; tipo: "crollo" }
   | { a: number; tipo: "scala"; n: 1 | 2 | 3 }
   | { a: number; tipo: "lavagna"; doodle: string; et: string };
@@ -68,12 +70,13 @@ const O_VISO = "50% 33%";
 const SHOT: Shot[] = [
   { a: 0, tipo: "parla", s: MEDIO },
   { a: t.e1, tipo: "parla", s: STRETTO, o: O_VISO, spinta: 0.05 },
-  { a: t.immagina, tipo: "algo", file: "passaporto", vel: 0.55, s: 1.0, s2: 1.12 },
+  { a: t.col - 0.03, tipo: "algo", file: "passaporto", vel: 0.49, s: 1.0, s2: 1.12 },
   { a: t.tu, tipo: "crollo" },
   { a: t.e2 - 0.15, tipo: "parla", s: MEDIO },
   { a: t.nonSai, tipo: "parla", s: STRETTO, o: O_VISO },
   { a: T("E", 1, t.nonSai), tipo: "parla", s: MEDIO },
   { a: t.quindi, tipo: "parla", s: LARGO },
+  { a: t.neopatentato - 0.1, tipo: "film", file: "panda-ferrari", vel: 0.7 },
   { a: t.g1, tipo: "scala", n: 1 },
   { a: t.se1 - 0.15, tipo: "parla", s: STRETTO, o: O_VISO },
   { a: t.g2, tipo: "scala", n: 2 },
@@ -141,6 +144,17 @@ const Inquadratura: React.FC<{ i: number }> = ({ i }) => {
         </Sequence>
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #000c 0%, transparent 30%, transparent 62%, #000b 100%)" }} />
         <div style={{ position: "absolute", left: 40, bottom: 120, fontFamily: MONO, fontSize: 24, letterSpacing: 2, color: "#ffffff99" }}>ALGORY · SCHERMATA VERA</div>
+      </Punch>
+    );
+  }
+  if (sh.tipo === "film") {
+    // clip generata (Kling 4.0, 15/11/2026): NON è una schermata di Algory, quindi niente etichetta
+    return (
+      <Punch a={a} base={1 + 0.05 * Easing.inOut(Easing.quad)(p)} o="50% 40%" whip bg="#000">
+        <Sequence from={F(a)} layout="none">
+          <OffthreadVideo src={staticFile(`${C}/clip/${sh.file}.mp4`)} muted playbackRate={sh.vel ?? 1} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </Sequence>
+        <AbsoluteFill style={{ background: "linear-gradient(180deg, #000a 0%, transparent 28%, transparent 66%, #000a 100%)" }} />
       </Punch>
     );
   }
@@ -429,21 +443,19 @@ const Coda: React.FC = () => {
 };
 
 // ---------- doodle ai lati di C ----------
-const DOODLES = [
+const DOODLES: { nome: string; a: number; b: number; x: number; y: number; h: number; et: string; col?: string }[] = [
   { nome: "dadi", a: t.sfortuna - 0.1, b: t.nonSai - 0.05, x: 540, y: 380, h: 250, et: "SFORTUNA?" },
-  { nome: "panda", a: t.panda - 0.1, b: t.g1, x: 270, y: 400, h: 215, et: "PANDA", col: VIOLA },
-  { nome: "ferrari", a: t.ferrari - 0.1, b: t.g1, x: 790, y: 410, h: 175, et: "FERRARI" },
 ];
 
 // ---------- effetti sonori ----------
 type Fx = [number, string, number?];
 export const FX: Fx[] = [
   [0, "boom", 0.6], [t.pericoloso, "impact", 0.9], [t.e1, "swish", 0.6],
-  [t.immagina - 0.15, "whoosh", 0.9], [t.trenta, "ding", 0.6],
+  [t.col - 0.15, "whoosh", 0.9], [t.immagina, "pop", 0.5], [t.trenta, "ding", 0.6],
   [t.tu - 0.15, "whoosh", 0.8], [t.tu, "scribble", 0.5], [t.rischio, "impact", 0.7], [t.settimana, "swish", 0.5],
   [t.quattro, "impact", 0.8], [t.quattro + 0.3, "impact", 0.8], [t.quattro + 0.6, "impact", 0.8], [t.quattro + 0.9, "impact", 0.9], [t.meno, "boom", 1.0],
   [t.e2 - 0.15, "swish", 0.6], [t.nonSai, "impact", 0.8], [t.paghi, "swish", 0.5],
-  [t.quindi, "swish", 0.6], [t.neopatentato, "impact", 0.6],
+  [t.quindi, "swish", 0.6], [t.neopatentato - 0.2, "whoosh", 0.9], [t.panda, "pop", 0.6], [t.ferrari - 0.1, "whoosh", 0.8], [t.ferrari + 0.05, "boom", 0.9],
   [t.g1 - 0.15, "whoosh", 0.9], [t.g1 + 0.1, "scribble", 0.6], [t.venticinque, "scribble", 0.6], [t.venticinque + 0.4, "ding", 0.5],
   [t.se1 - 0.15, "swish", 0.6],
   [t.g2 - 0.15, "whoosh", 0.8], [t.due + 0.1, "scribble", 0.6], [t.decina, "scribble", 0.5],
@@ -505,11 +517,15 @@ export const AL9H: React.FC = () => {
       {sh.tipo === "parla" && DOODLES.map((d) => <Doodle key={d.nome} nome={d.nome} a={d.a} b={d.b} x={d.x} y={d.y} h={d.h} etichetta={d.et} col={d.col} />)}
       {/* gancio */}
       <Botta a={0.05} b={t.e1 - 0.05} righe={["IL BOT PIÙ", "*PERICOLOSO"]} top={250} size={100} />
-      <Botta a={t.e1} b={t.immagina - 0.1} righe={["HA IL BACKTEST", "PIÙ *BELLO"]} top={250} size={90} />
+      <Botta a={t.e1} b={t.col - 0.05} righe={["HA IL BACKTEST", "PIÙ *BELLO"]} top={250} size={90} />
+      <Botta a={t.col} b={t.immagina - 0.1} righe={["HA IL BACKTEST", "PIÙ *BELLO"]} top={230} size={90} scuro />
       <Botta a={t.trenta - 0.1} b={t.tu - 0.1} righe={["BACKTEST", "*+30%"]} top={230} size={120} scuro />
       <Botta a={t.nonSai} b={T("E", 1, t.nonSai) - 0.05} righe={["NON LO *SAI."]} top={260} size={120} />
       <Botta a={t.paghi - 0.3} b={t.quindi - 0.05} righe={["E INTANTO", "PAGHI *TU"]} top={250} size={104} />
-      <Botta a={t.quindi + 0.1} b={t.panda - 0.15} righe={["OGNI BOT NUOVO", "È UN *NEOPATENTATO"]} top={250} size={76} />
+      <Botta a={t.quindi + 0.1} b={t.neopatentato - 0.15} righe={["OGNI BOT NUOVO", "È UN *NEOPATENTATO"]} top={250} size={76} />
+      <Botta a={t.neopatentato - 0.05} b={t.panda - 0.1} righe={["UN *NEOPATENTATO"]} top={230} size={96} scuro />
+      <Botta a={t.panda - 0.05} b={t.ferrari - 0.1} righe={["PRIMA LA", "*PANDA"]} top={230} size={120} scuro />
+      <Botta a={t.ferrari - 0.05} b={t.g1 - 0.05} righe={["POI LA", "*FERRARI"]} top={230} size={120} scuro />
       <Botta a={t.se1} b={t.g2 - 0.1} righe={["SI FA MALE", "*POCO"]} top={250} size={110} />
       <Botta a={t.trade} b={t.sale - 0.1} righe={["~10 TRADE", "*VERI"]} top={230} size={110} scuro />
       <Botta a={t.sale} b={t.g3 - 0.1} righe={["SALE AL", "*50%"]} top={230} size={120} scuro />
@@ -523,7 +539,7 @@ export const AL9H: React.FC = () => {
       <Botta a={t.codice} b={t.venti2 - 0.05} righe={["CODICE", "*STANGA20"]} top={230} size={110} scuro />
       <Botta a={t.venti2} b={t.e4 - 0.05} righe={["*−20%", "DI SCONTO"]} top={230} size={120} scuro />
       <Botta a={t.e4} b={t.fine + 0.3} righe={["SI PARTE", "*GRATIS"]} top={230} size={120} scuro />
-      <Nome a={t.quindi + 0.1} b={t.panda - 0.2} />
+      <Nome a={t.quindi + 0.1} b={t.neopatentato - 0.2} />
       <Definizione a={T("backtest", 2) + 0.1} b={t.tu - 0.15} termine="BACKTEST" testo="Il test di una strategia sui dati del passato, prima di usarla con soldi veri." />
       <Definizione a={t.trade + 0.2} b={t.sale - 0.15} termine="INCUBAZIONE (ALGORY)" testo="Il bot nuovo parte con un quarto del rischio e sale solo quando i suoi trade veri passano i controlli." />
       <Tweet a={t.ecco} b={t.il2 - 0.05} />
