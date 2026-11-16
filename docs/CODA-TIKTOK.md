@@ -5,8 +5,8 @@ un'attività programmata pubblica ogni giorno il primo video ancora DA FARE, dal
 
 | Giorno | Video | Stato |
 |---|---|---|
-| dom 15/11 | A18 «Lavorare in regola conviene?» | DA FARE |
-| lun 16/11 | A12 «Col senno di poi» | DA FARE |
+| dom 15/11 | A18 «Lavorare in regola conviene?» | FATTO 15/11 13:22 (37.500 views al 16/11, virale) |
+| lun 16/11 | A12 «Col senno di poi» | FATTO 16/11 11:13 (descrizione con gancio Rheinmetall 10.000 → 81.000) |
 | mar 17/11 | A13 «Un titolo non è una prova» | DA FARE |
 | mer 18/11 | P1 «Fare soldi col trading?» | DA FARE |
 

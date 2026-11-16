@@ -249,3 +249,16 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Prezzi verificati: Intone 480p = 9 + 3 cr/s (720p ≈ 7,8 cr/s); Kling 4.0 720p = 2,25 cr/s (minimo 3 s); Gemini Omni Flash 1.2 8 s 720p = 18; Seedance 2.0 Mini = 1 cr/s; Seedance 2.5 5 s = 35. Supercomputer = chat-agente di Higgsfield, generare costa crediti come dalla CLI.
 - Gli altri 7 pezzi parlati sono ancora foto ferma: labiale completo con Runpod (0,25 $) quando Marco ricarica.
 - File: `algory9-hormozi/finale/AL9H-FINALE.mp4`, `AL9H-telefono.mp4`, copertina nuova `AL9H-copertina-ferrari.jpg` (+ griglia); la v2 resta in `AL9H-v2-FINALE.mp4`. Da approvare.
+
+## 16/11/2026 mattina (dal Redmi, ok di Marco)
+- TikTok ~11:13 PUBBLICATO A12 «Col senno di poi» (A12-tt.mp4): «10.000 euro in Rheinmetall il 24 febbraio 2022: oggi circa 81.000. Col senno di poi li compravamo tutti. Fonte: Yahoo Finance - nessun consiglio finanziario #azioni #investire #trading», Italiano, IA ON, copertina dedicata. Account @cthe.trader verificato.
+- Instagram PROGRAMMATI dall'app (copertina dedicata, etichetta IA, didascalia completa con accenti ed €): A19 euro digitale mer 18/11 12:30 · A20 gasolio gio 19/11 12:30 · A21 truffe Consob ven 20/11 12:30. Restano in coda A13 (16/11) e P1 (17/11). Totale programmati: 5.
+- METODO didascalie con accenti/€ dal telefono: file .txt in /sdcard/Download → `am start -a android.intent.action.SEND -t text/plain -p com.miui.notes --es android.intent.extra.TEXT "$(cat file)"` → in Note pressione lunga → ⋮ → Seleziona tutto → Copia → nel campo didascalia di IG `keyevent 279` (incolla). Script guido-io/telefono/nota.sh. NON usare il menu Condividi generico (un tocco ha aperto Telegram).
+- TRAPPOLA IG: «Programma questo reel» è grigio finché «La tua storia» è attivo: spegnerlo («Non aggiungere questo reel»). La storia va fatta a mano il giorno dell'uscita.
+- TRAPPOLA IG: all'apertura l'app era su @marco_stanghelini: sempre controllare l'account.
+- TRAPPOLA: il classificatore dei comandi Bash a volte non risponde; da PowerShell (`& adb.exe ...` e `& "C:\Program Files\Git\bin\bash.exe" script`) funziona.
+
+### Numeri 16/11
+- TikTok A18 «Lavorare in regola conviene?» (15/11 13:22): 37.500 views (record), 437 like, 22 commenti, 77 condivisioni, 71 salvataggi, 68 nuovi follower; 100% «Per te», 100% non follower; visione media 11,2 s su 45 s (25%), 3,41% lo guarda tutto, la maggior parte esce a 0:02. Pubblico: 62% donne, 81% sopra i 35 anni (35-44 24%, 45-54 29%, 55+ 28%), Italia 98,3%. Profilo TikTok: 63 follower, 1.043 like.
+- TikTok altri: Higgsfield «Una frase» 2.093, «Montaggio con un comando» 315, «Questo video l'ha montato Claude» 271, «805 € di libri» 821.
+- Instagram: 105 follower (98 l'11/11), 18.193 views in 30 giorni (11.219 l'11/11). Reel: A18 1.504, A11 pensioni 1.337, bollette Torino 1.284, A12 Rheinmetall 1.219, Zelensky 593, A17 libro 462, A16 bomba 406, reel su Claude/Higgsfield 146-158. Commenti quasi a zero (2 sulle bollette).
