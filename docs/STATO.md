@@ -274,3 +274,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - `SchedeC.tsx`: la prima scheda ora è piena e nitida al fotogramma 0 (niente lampo/ingresso), per i prossimi reel.
 - 5 video nuovi «Il conto di casa»: analisi nicchia in `theory/analisi-nicchia-cosentino-jashi-tommyverse-17-11.md` (senza login: solo titoli e didascalie). Ricerca temi interrotta (forse `attualita/TEMI-CONTO-DI-CASA-17-11.md` parziale). Copioni e produzione NON iniziati.
 - Squadra accesa (`~/.claude/squadra.on`).
+
+## 17/11/2026 sera — trailer P2 pubblicato + 5 reel «Il conto di casa»
+- YouTube: **trailer P2 pubblicato** il 17/11 (pubblico): https://youtu.be/mN1kIxE9VMM — titolo «Prop firm: su 100 che ci provano, solo 7 vedono un pagamento», 44,7 s, 1440p, miniatura `trailer/copertina/copertina-trailer.jpg`, 13 tag, contenuti alterati = Sì, non per bambini. Base v1 (colori invariati) con: C rifatto nitido (Wan 2.6 I2V 1080p con labiale, Runpod 2×0,75 $), clip s02/s12 rigenerate, notifica «Riprova -20%», coda con CTA «ISCRIVITI + campanella». File: `youtube/P2-prop-firm/trailer/finale/P2-trailer-v1c-YOUTUBE-1440p.mp4`. Manca il commento fissato (testo in YOUTUBE-METADATI.md).
+- TRAPPOLA Remotion: `--width/--height` diversi dalla composizione spostano gli elementi a posizione fissa. Render a 1920x1080 nativo e poi ffmpeg lanczos a 2560x1440.
+- 5 reel nuovi formula A18 (da approvare): A22 bonus soglia ISEE, A23 aumento 100 € lordi, A24 tredicesima, A25 pensione minima vs assegno sociale, A26 pieno 50 € e tasse. Cartelle `produzione/attualita/A22…A26` con FATTI, didascalia, copertina, finale. A24 ha la base normativa più debole (regola detrazioni tredicesima da fonti secondarie). A26 cita lo sconto gasolio fino al 23/11: pubblicarlo entro il 23/11 o togliere la frase.
+- Spesa Runpod oggi ≈ 0,90 + 1,50 (Wan) + 0,66 (5 set) + 1,25 (5 labiali) ≈ 4,30 $.
