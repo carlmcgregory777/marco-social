@@ -1,4 +1,4 @@
-﻿# Coda TikTok di @cthe.trader — uno al giorno alle 12:30
+# Coda TikTok di @cthe.trader — uno al giorno alle 12:30
 
 Decisione di Marco (15/11/2026): «Uno al giorno, 12:30». L'app TikTok sul Redmi non programma, quindi
 un'attività programmata pubblica ogni giorno il primo video ancora DA FARE, dal telefono via adb.
@@ -9,7 +9,16 @@ un'attività programmata pubblica ogni giorno il primo video ancora DA FARE, dal
 | lun 16/11 | A12 «Col senno di poi» | FATTO 16/11 11:13 (descrizione con gancio Rheinmetall 10.000 → 81.000) |
 | mar 17/11 | A13 «Un titolo non è una prova» | FATTO 17/11 12:05 (copertina dedicata, IA ON) |
 | mer 18/11 | A20 «Gasolio» (Marco 17/11: anticipato, formula «Il conto di casa») | DA FARE |
-| dopo | P1 «Fare soldi col trading?» (spostato: tema trading, debole per la crescita) | DA FARE |
+| gio 19/11 | A26 «Il pieno è tassato due volte» (cita lo sconto gasolio fino al 23/11: deve uscire entro il 23) | DA FARE |
+| ven 20/11 | A22 «Bonus e soglia ISEE» | DA FARE |
+| sab 21/11 | A23 «100 € lordi di aumento» | DA FARE |
+| dom 22/11 | A24 «Tredicesima» | DA FARE |
+| lun 23/11 | A25 «Pensione minima» | DA FARE |
+| mar 24/11 | A21 «Truffe con l'IA, Consob» | DA FARE |
+| mer 25/11 | P1 «Fare soldi col trading?» (tema trading, debole per la crescita: per ultimo) | DA FARE |
+
+A19 «euro digitale» NON va su TikTok: era agganciato alla trattativa del 18/11 (il video dice «mercoledì»), dopo è superato.
+Coda allungata il 17/11/2026 sera su richiesta di Marco («programma tutti i reel che hai creato sia su tik tok che su instagram»).
 
 ## Dettagli per video (file già in /sdcard/DCIM/Camera/ sul Redmi)
 
@@ -33,6 +42,35 @@ un'attività programmata pubblica ogni giorno il primo video ancora DA FARE, dal
 ### P1
 - Video `P1-tt.mp4` (47 s), copertina `P1-copertina.jpg`.
 - Descrizione: `Non conta quanto sei bravo col trading. Conta in che gioco stai giocando. Tu in quale casella sei? Scrivilo nei commenti.` + `#trading #tradingitalia #educazionefinanziaria`
+
+### A26
+- Video `A26-tt.mp4` (35 s), copertina `A26-pieno-copertina.jpg`.
+- Descrizione: `Pieno di benzina da 50 euro: oltre 26 vanno allo Stato. Quasi 4 euro sono IVA calcolata sopra le accise, la tassa sulla tassa. Si doveva togliere?` + `#accise #benzina #carburanti`
+
+### A22
+- Video `A22-tt.mp4` (37 s), copertina `A22-bonus-soglia-copertina.jpg`.
+- Descrizione: `Famiglia di 4 persone, ISEE 9.797 euro: un euro sopra la soglia e perde il bonus luce da 186 euro annui. Si chiama effetto scalino. Meglio una soglia netta o uno scivolo?` + `#bonusbollette #isee #bonussociale`
+
+### A23
+- Video `A23-tt.mp4` (38 s), copertina `A23-aumento-copertina.jpg`.
+- Descrizione: `Operaio, 1.800 euro netti: 100 euro lordi di aumento diventano circa 56 in busta. Si chiama aliquota marginale effettiva. Chiedere un aumento conviene ancora?` + `#bustapaga #irpef #cuneofiscale`
+
+### A24
+- Video `A24-tt.mp4` (37 s), copertina `A24-tredicesima-copertina.jpg`.
+- Descrizione: `Impiegata, 2.000 euro lordi: busta normale circa 1.590 euro, tredicesima circa 1.400. Niente detrazione sulla tredicesima. Te ne eri accorto?` + `#tredicesima #bustapaga #irpef`
+
+### A25
+- Video `A25-tt.mp4` (38 s), copertina `A25-pensione-minima-copertina.jpg`.
+- Descrizione: `20 anni di contributi: pensione al minimo 611,85 euro. Zero contributi: assegno sociale 546,24 euro. 66 euro di differenza. Quanto dovrebbe valere un anno di lavoro?` + `#pensioni #assegnosociale #pensioneminima`
+
+### A21
+- Video `A21-tt.mp4` (48 s), copertina `A21-truffe-copertina.jpg`.
+- Descrizione: `1.878 siti oscurati dalla Consob dal 2019. Usano video e voci fatti con intelligenza artificiale. Anche io sono IA: io te lo dico, loro no.` + `#truffeonline #consob #trading`
+
+Descrizioni senza accenti, senza € e senza apostrofi: con adb non passano (l'apostrofo rompe il comando di tt_descrizione.sh).
+
+## File da copiare sul telefono (se non ci sono già)
+- Video in `produzione/tiktok-leggeri/<k>-tt.mp4`, copertine in `produzione/tiktok-leggeri/cop/`. Prima di pubblicare: `adb shell ls /sdcard/DCIM/Camera/` e, se mancano, `adb push <file> /sdcard/DCIM/Camera/` + `adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/DCIM/Camera/<nome>`. A20-tt.mp4 sul telefono è già la versione giusta (senza dissolvenza): non sovrascriverla.
 
 ## Come si pubblica dal Redmi (provato il 15/11/2026)
 - adb: `C:\Users\stang\Android\Sdk\platform-tools\adb.exe` (in Git Bash: `export MSYS_NO_PATHCONV=1`). Screenshot: `bash /c/Users/stang/code/guido-io/telefono/s.sh` → `guido-io/telefono/_sm.png` (450x1000, coordinate vere = x2,4). Il telefono a volte risponde in ritardo: aspettare 3-5 s tra un tocco e lo screenshot.

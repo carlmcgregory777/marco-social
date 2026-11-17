@@ -280,3 +280,20 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - TRAPPOLA Remotion: `--width/--height` diversi dalla composizione spostano gli elementi a posizione fissa. Render a 1920x1080 nativo e poi ffmpeg lanczos a 2560x1440.
 - 5 reel nuovi formula A18 (da approvare): A22 bonus soglia ISEE, A23 aumento 100 € lordi, A24 tredicesima, A25 pensione minima vs assegno sociale, A26 pieno 50 € e tasse. Cartelle `produzione/attualita/A22…A26` con FATTI, didascalia, copertina, finale. A24 ha la base normativa più debole (regola detrazioni tredicesima da fonti secondarie). A26 cita lo sconto gasolio fino al 23/11: pubblicarlo entro il 23/11 o togliere la frase.
 - Spesa Runpod oggi ≈ 0,90 + 1,50 (Wan) + 0,66 (5 set) + 1,25 (5 labiali) ≈ 4,30 $.
+
+## 17/11/2026 notte — programmazione di tutti i reel (Marco: «programma tutti i reel che hai creato sia su tik tok che su instagram e puoi metterli anche tutti su youtube shorts»)
+- **YouTube Shorts: 17 PROGRAMMATI** da YouTube Studio (Chrome, canale C - The Trader), file FINALE 1080x1920 caricati a pezzi, miniatura = copertina del reel, descrizione = didascalia Instagram, non per bambini, contenuti alterati = Sì, italiano, Istruzione. Titoli e dati in `produzione/youtube/shorts-attualita/shorts.py` (→ shorts.json). Slot 12:30 = reel nuovi (stesso giorno di Instagram), 18:30 = reel già usciti su IG che mancavano su YouTube.
+  - 18/11 12:30 A19 RiIXCHCNCA0 · 18:30 A18 XdSWl8XfPvI
+  - 19/11 12:30 A20 C23tmzBbz4c · 18:30 A11 SyC3t6kFteI
+  - 20/11 12:30 A21 Hen8vKcQlpU · 18:30 A12 hJYZmoIybY0
+  - 21/11 12:30 A26 SgKJq1jYhDE · 18:30 A15 EUWWyv6-sNs
+  - 22/11 12:30 A22 4XcaOdvTpgc · 18:30 A14 Lpxrbe-RwuQ
+  - 23/11 12:30 A23 RMhTRagh1Ic · 18:30 A13 WoYttJBAqYc
+  - 24/11 12:30 A24 f5_T6WPOTZw · 18:30 A17 fMV06F03x-Y
+  - 25/11 12:30 A25 KuRCLzIPDVY · 18:30 A16 P569v5tnXNg
+  - 26/11 18:30 P1 p_wOAFQsAgU
+  - Descrizioni ritoccate solo per il tempo: A12 «questa settimana» → «il 5-6 novembre», A15 «Sabato» → «Il 7 novembre», A16 «Oggi» → «L'11 novembre».
+  - Non messi su Shorts: A6-A10 (mai usciti su Instagram, da approvare).
+  - TRAPPOLA: non ricaricare/lasciare la pagina di Studio finché il caricamento non dice «Caricamento completato»: P1 si è interrotto («In sospeso»), copia eliminata e ricaricata. Se la pagina si appesantisce (molti caricamenti), ricaricarla tra un video e l'altro; un caricamento può restare «Bozza» senza titolo (successo ad A14, sistemato con «Modifica bozza»).
+- **TikTok**: coda in `docs/CODA-TIKTOK.md` allungata fino al 25/11 (A20 18/11, A26 19/11, A22 20/11, A23 21/11, A24 22/11, A25 23/11, A21 24/11, P1 25/11); l'attività programmata `tiktok-cthe-trader-1230` pubblica dal Redmi alle 12:30 dal 18 al 25/11 (l'app TikTok sul telefono non ha «Programma»). Serve il telefono collegato e sbloccato a quell'ora. A19 escluso da TikTok (legato al 18/11). Video leggeri e copertine in `produzione/tiktok-leggeri/`.
+- **Instagram**: in coda A19 18/11, A20 19/11, A21 20/11. Da programmare dall'app sul Redmi: A26 21/11, A22 22/11, A23 23/11, A24 24/11, A25 25/11 (12:30). Il 17/11 sera adb non vede il telefono (Windows non mostra il dispositivo Android): in attesa che Marco lo ricolleghi.
