@@ -446,7 +446,8 @@ const Blocco: React.FC<{ e: EpisodioC }> = ({ e }) => {
   const tutto = !!s && s.tipo === "video" && s.tutto;
   const diviso = s && s.tipo !== "pieno" && !tutto;
   const El = s ? DISEGNA[s.tipo] : undefined;
-  const d = s ? F(s.t) : 0;
+  // 17/11/2026 (analisi A18: la gente esce a 0:02): la prima scheda è già piena e nitida al fotogramma 0, senza lampo né ingresso
+  const d = s ? (s.t <= 0.15 ? -20 : F(s.t)) : 0;
   const lampo = s ? interpolate(f - d, [0, 4], [0.28, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
   return (
     <AbsoluteFill>

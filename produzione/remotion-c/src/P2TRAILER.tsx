@@ -199,6 +199,25 @@ const OttoBit: React.FC<{ a: number; b: number }> = ({ a, b }) => {
   );
 };
 
+// ---------- notifica leggibile sulla scena del telefono (17/11/2026: nel clip non si leggeva) ----------
+const Notifica: React.FC<{ a: number; b: number }> = ({ a, b }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (f < F(a) || f > F(b)) return null;
+  const m = molla(f, fps, F(a), 13, 260);
+  return (
+    <div style={{ position: "absolute", left: "50%", top: 70, width: 1180, transform: `translate(-50%, ${(1 - m) * -260}px)`, background: "#f4f3f8f2", borderRadius: 40,
+      boxShadow: "0 30px 80px #000a", padding: "30px 40px", display: "flex", alignItems: "center", gap: 34, fontFamily: INTER }}>
+      <div style={{ width: 110, height: 110, borderRadius: 26, background: VIOLA, color: "#fff", fontWeight: 900, fontSize: 56, display: "flex", alignItems: "center", justifyContent: "center" }}>%</div>
+      <div style={{ flex: 1 }}>
+        <div style={{ fontSize: 30, color: "#6b6878", fontWeight: 600 }}>PROP FIRM · adesso</div>
+        <div style={{ fontSize: 54, color: INCHIOSTRO, fontWeight: 900, letterSpacing: -1 }}>Riprova la tua challenge: -20%</div>
+      </div>
+      <div style={{ background: VIOLA, color: "#fff", fontWeight: 900, fontSize: 40, padding: "18px 30px", borderRadius: 22 }}>RIPROVA</div>
+    </div>
+  );
+};
+
 // ---------- contatore challenge ----------
 const Contatore: React.FC = () => {
   const f = useCurrentFrame();
@@ -283,6 +302,7 @@ export const P2TRAILER: React.FC = () => {
       <Botta a={t.genio - 0.1} b={t.secondo - 0.25} righe={["UN *GENIO"]} top={800} />
       <Botta a={t.meno} b={t.conto - 0.05} righe={["!-5% IN UN GIORNO"]} top={790} scuro={scuro} />
       <Botta a={t.chiuso - 0.05} b={t.e - 0.05} righe={["CONTO !CHIUSO"]} top={800} size={140} barra={t.chiuso + 0.15} scuro />
+      <Notifica a={t.e + 0.15} b={t.riprova - 0.1} />
       <OttoBit a={t.riprova - 0.05} b={t.prima - 0.05} />
       <Contatore />
       <Botta a={t.la + 0.1} b={t.ha - 0.05} righe={["NON HA BISOGNO", "CHE TU !PERDA"]} top={590} barra={t.perda + 0.3} />

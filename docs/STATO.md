@@ -268,3 +268,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Numeri al 17/11 12:02: TikTok A18 72.352 views, profilo 110 follower e 1.526 like; A12 791.
 - Instagram: P1 esce in automatico alle 12:30; storia P1 da fare a mano. Prossimo TikTok: P1 mer 18/11.
 - YouTube: trailer P2, Marco preferisce il v1; in attesa della scelta livello A (~2 $) o B (~10 $) per la qualità di C.
+
+## 17/11/2026 pomeriggio — lavori a metà (limite di utilizzo raggiunto)
+- Trailer P2 v1 «sistemato» (Marco: «come ritieni meglio», poi pubblicare su YouTube). Fatto: s02 e s12 rigenerati (`youtube/P2-prop-firm/trailer/fix/`, 0,52 $), notifica leggibile nel telefono (`Notifica` in `remotion-c/src/P2TRAILER.tsx`), clip ingrandite lanczos a 2560x1440 in `public-p2/p2/clip`, copertina `trailer/copertina/copertina-trailer.jpg` (base Runpod 0,13 $), testi in `trailer/YOUTUBE-METADATI.md` (titolo 1). In corso: labiale C 720p `fix/C-parla-720.mp4` (0,50 $). DA FARE: ingrandire C-parla-720 a 2560 (lanczos+unsharp) in `public-p2/p2/C-parla.mp4`, valutare STRETTO 1.5→1.35, bundle `--public-dir=public-p2` e render P2TRAILER 1440p, controllo, upload su YouTube (metodo in memoria reference-youtube-l0-pipeline).
+- `SchedeC.tsx`: la prima scheda ora è piena e nitida al fotogramma 0 (niente lampo/ingresso), per i prossimi reel.
+- 5 video nuovi «Il conto di casa»: analisi nicchia in `theory/analisi-nicchia-cosentino-jashi-tommyverse-17-11.md` (senza login: solo titoli e didascalie). Ricerca temi interrotta (forse `attualita/TEMI-CONTO-DI-CASA-17-11.md` parziale). Copioni e produzione NON iniziati.
+- Squadra accesa (`~/.claude/squadra.on`).
