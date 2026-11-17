@@ -72,7 +72,8 @@ if __name__ == "__main__":
         foto, prompt, out = sys.argv[2:5]
         ar = sys.argv[5] if len(sys.argv) > 5 else "9:16"
         res = sys.argv[6] if len(sys.argv) > 6 else "2k"
-        inp = {"images": [carica(foto)], "prompt": open(prompt, encoding="utf-8").read(), "resolution": res, "aspect_ratio": ar, "output_format": "png"}
+        inp = {"images": [carica(f) for f in foto.split(",")],  # più riferimenti separati da virgola (17/11/2026)
+               "prompt": open(prompt, encoding="utf-8").read(), "resolution": res, "aspect_ratio": ar, "output_format": "png"}
         fine(chiama("google-nano-banana-2-edit", inp), out)
     elif modo == "talk":
         foto, audio, out = sys.argv[2:5]
