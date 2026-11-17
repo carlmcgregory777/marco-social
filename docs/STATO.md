@@ -262,3 +262,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - TikTok A18 «Lavorare in regola conviene?» (15/11 13:22): 37.500 views (record), 437 like, 22 commenti, 77 condivisioni, 71 salvataggi, 68 nuovi follower; 100% «Per te», 100% non follower; visione media 11,2 s su 45 s (25%), 3,41% lo guarda tutto, la maggior parte esce a 0:02. Pubblico: 62% donne, 81% sopra i 35 anni (35-44 24%, 45-54 29%, 55+ 28%), Italia 98,3%. Profilo TikTok: 63 follower, 1.043 like.
 - TikTok altri: Higgsfield «Una frase» 2.093, «Montaggio con un comando» 315, «Questo video l'ha montato Claude» 271, «805 € di libri» 821.
 - Instagram: 105 follower (98 l'11/11), 18.193 views in 30 giorni (11.219 l'11/11). Reel: A18 1.504, A11 pensioni 1.337, bollette Torino 1.284, A12 Rheinmetall 1.219, Zelensky 593, A17 libro 462, A16 bomba 406, reel su Claude/Higgsfield 146-158. Commenti quasi a zero (2 sulle bollette).
+
+## 17/11/2026 (dal Redmi, ok di Marco)
+- TikTok 12:05 PUBBLICATO A13 «Un titolo non è una prova» (A13-tt.mp4, 1:24): «Un titolo non dimostra niente. Fonte: SFI Finfluencers - video: YoungHoon Kim - nessun consiglio finanziario #trading #finfluencer #investire», Italiano, IA ON, copertina A13-qi-copertina.jpg (copiata con data nuova per trovarla in cima a Carica, poi cancellata). Account @cthe.trader verificato.
+- Numeri al 17/11 12:02: TikTok A18 72.352 views, profilo 110 follower e 1.526 like; A12 791.
+- Instagram: P1 esce in automatico alle 12:30; storia P1 da fare a mano. Prossimo TikTok: P1 mer 18/11.
+- YouTube: trailer P2, Marco preferisce il v1; in attesa della scelta livello A (~2 $) o B (~10 $) per la qualità di C.
