@@ -8,7 +8,8 @@ un'attività programmata pubblica ogni giorno il primo video ancora DA FARE, dal
 | dom 15/11 | A18 «Lavorare in regola conviene?» | FATTO 15/11 13:22 (37.500 views al 16/11, virale) |
 | lun 16/11 | A12 «Col senno di poi» | FATTO 16/11 11:13 (descrizione con gancio Rheinmetall 10.000 → 81.000) |
 | mar 17/11 | A13 «Un titolo non è una prova» | FATTO 17/11 12:05 (copertina dedicata, IA ON) |
-| mer 18/11 | P1 «Fare soldi col trading?» | DA FARE |
+| mer 18/11 | A20 «Gasolio» (Marco 17/11: anticipato, formula «Il conto di casa») | DA FARE |
+| dopo | P1 «Fare soldi col trading?» (spostato: tema trading, debole per la crescita) | DA FARE |
 
 ## Dettagli per video (file già in /sdcard/DCIM/Camera/ sul Redmi)
 
@@ -24,6 +25,10 @@ un'attività programmata pubblica ogni giorno il primo video ancora DA FARE, dal
 ### A13
 - Video `A13-tt.mp4` (1:24), copertina `A13-qi-copertina.jpg`.
 - Descrizione: `Un titolo non dimostra niente. Fonte: SFI Finfluencers - video: YoungHoon Kim - nessun consiglio finanziario` + `#trading #finfluencer #investire`
+
+### A20
+- Video `A20-tt.mp4` (45 s, versione TikTok senza dissolvenza iniziale), copertina `A20-gasolio-copertina.jpg`.
+- Descrizione: `Petrolio quasi -25% da fine ottobre. Gasolio pochi centesimi. Dove finisce la differenza?` + `#gasolio #carburanti #accise` (con adb scrivere «per cento» se il % non passa).
 
 ### P1
 - Video `P1-tt.mp4` (47 s), copertina `P1-copertina.jpg`.
