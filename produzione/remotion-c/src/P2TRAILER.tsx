@@ -12,7 +12,7 @@ const { fontFamily: PIXEL } = loadPixel();
 const C = "p2";
 const FPS = 30;
 const F = (s: number) => Math.round(s * FPS);
-const CODA = 3.2;
+const CODA = 7.8; // 17/11/2026: era 3.2, allungata per la sequenza «iscriviti» (richiesta di Marco)
 export const DURATA_P2TRAILER = F(DURATA_P2TRAILER_S + CODA);
 const INCHIOSTRO = "#15131a";
 const cl = (x: number) => Math.max(0, Math.min(1, x));
@@ -265,12 +265,66 @@ const Coda: React.FC = () => {
   if (f < a) return null;
   const m = molla(f, fps, a, 12, 200);
   const m2 = molla(f, fps, a + 18, 14, 200);
+  const su = molla(f, fps, F(CTA), 16, 160); // il titolo sale e si rimpicciolisce quando arriva la CTA
   return (
     <AbsoluteFill style={{ background: NERO, alignItems: "center", justifyContent: "center" }}>
-      <div style={{ transform: `scale(${0.7 + 0.3 * m})`, opacity: m, textAlign: "center", fontFamily: INTER, fontWeight: 900, fontSize: 116, letterSpacing: -4, color: "#fff", lineHeight: 1.0 }}>
+      <div style={{ transform: `translateY(${-250 * su}px) scale(${(0.7 + 0.3 * m) * (1 - 0.3 * su)})`, opacity: m, textAlign: "center", fontFamily: INTER, fontWeight: 900, fontSize: 116, letterSpacing: -4, color: "#fff", lineHeight: 1.0 }}>
         LE PROP FIRM SONO<br />UNA <span style={{ background: VIOLA, padding: "0 20px" }}>TRAPPOLA?</span>
       </div>
-      <div style={{ marginTop: 50, opacity: m2, fontFamily: PIXEL, fontSize: 26, color: "#c8c8d0", letterSpacing: 2 }}>IL FILM COMPLETO · PRESTO SU YOUTUBE</div>
+      <div style={{ marginTop: 50, transform: `translateY(${-300 * su}px)`, opacity: m2, fontFamily: PIXEL, fontSize: 26, color: "#c8c8d0", letterSpacing: 2 }}>IL FILM COMPLETO · PRESTO SU YOUTUBE</div>
+      <Iscriviti />
+    </AbsoluteFill>
+  );
+};
+
+// ---------- CTA «iscriviti + campanella» (17/11/2026) ----------
+const CTA = DURATA_P2TRAILER_S + 2.6;
+const Campanella: React.FC<{ size: number; col: string }> = ({ size, col }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24"><path fill={col} d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1z" /></svg>
+);
+const Cursore: React.FC = () => (
+  <svg width={70} height={70} viewBox="0 0 24 24"><path d="M4 2l15 11.5-6.6.9 3.9 7.4-2.9 1.5-3.9-7.5L4 20z" fill="#fff" stroke="#000" strokeWidth={1.2} /></svg>
+);
+const Iscriviti: React.FC = () => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = F(CTA);
+  if (f < a) return null;
+  const m = molla(f, fps, a + 4, 14, 180);
+  const click1 = a + F(1.3), click2 = a + F(2.3);
+  const iscritto = f >= click1;
+  const premi1 = f >= click1 && f < click1 + 5 ? 0.92 : 1;
+  const premi2 = f >= click2 && f < click2 + 5 ? 0.85 : 1;
+  // cursore: entra dal basso a destra, va sul pulsante, poi sulla campanella, poi esce
+  const cx = interpolate(f, [a + F(0.5), click1 - 3, click1 + F(0.4), click2 - 3, click2 + F(0.6), click2 + F(1.2)], [1500, 1205, 1205, 1452, 1452, 1650], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const cy = interpolate(f, [a + F(0.5), click1 - 3, click1 + F(0.4), click2 - 3, click2 + F(0.6), click2 + F(1.2)], [1100, 632, 632, 632, 632, 1150], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const suona = f >= click2 ? Math.sin((f - click2) * 1.3) * 22 * Math.max(0, 1 - (f - click2) / F(1.4)) : 0;
+  const campOn = f >= click2;
+  const onda = f >= click1 ? ramp(f, click1, click1 + 12) : 0;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 560, display: "flex", justifyContent: "center", opacity: m, transform: `translateY(${(1 - m) * 60}px)` }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 34, background: "#17151f", border: "2px solid #2a2635", borderRadius: 30, padding: "26px 40px" }}>
+          <img src={staticFile(`${C}/avatar.jpg`)} style={{ width: 120, height: 120, borderRadius: 60, border: `4px solid ${VIOLA}` }} />
+          <div style={{ fontFamily: INTER, color: "#fff" }}>
+            <div style={{ fontSize: 44, fontWeight: 800 }}>C · The Trader</div>
+            <div style={{ fontSize: 28, color: "#a9a6b5", marginTop: 4 }}>@cthe.trader · il film esce solo qui</div>
+          </div>
+          <div style={{ position: "relative", marginLeft: 20, transform: `scale(${premi1})` }}>
+            <div style={{ position: "absolute", inset: -14, borderRadius: 60, border: `4px solid ${ROSSO}`, opacity: (1 - onda) * (onda > 0 ? 1 : 0), transform: `scale(${1 + onda * 0.4})` }} />
+            <div style={{ fontFamily: INTER, fontWeight: 800, fontSize: 40, padding: "22px 44px", borderRadius: 60, letterSpacing: 1,
+              background: iscritto ? "#3a3646" : "#e62117", color: iscritto ? "#d8d5e0" : "#fff" }}>{iscritto ? "ISCRITTO ✓" : "ISCRIVITI"}</div>
+          </div>
+          <div style={{ width: 96, height: 96, borderRadius: 48, display: "flex", alignItems: "center", justifyContent: "center", background: campOn ? VIOLA : "#2a2635",
+            transform: `scale(${premi2}) rotate(${suona}deg)`, opacity: ramp(f, click1 + 4, click1 + 12) }}>
+            <Campanella size={58} col="#fff" />
+          </div>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 800, textAlign: "center", fontFamily: PIXEL, fontSize: 24, color: "#c8c8d0", letterSpacing: 2, opacity: ramp(f, click2, click2 + 10) }}>
+        ATTIVA LA CAMPANELLA · TI AVVISO QUANDO ESCE
+      </div>
+      <div style={{ position: "absolute", left: cx, top: cy, transform: `scale(${f >= click1 && f < click1 + 5 || f >= click2 && f < click2 + 5 ? 0.85 : 1})` }}><Cursore /></div>
     </AbsoluteFill>
   );
 };
@@ -286,6 +340,7 @@ const FX: Fx[] = [
   [t.prima, "impact", 0.7], [t.seconda, "impact", 0.8], [t.terza, "boom", 0.9],
   [t.la, "whoosh", 0.5], [t.perda, "impact", 0.6], [t.ha, "swish", 0.5], [t.riprovi, "impact", 0.8],
   [t.questa - 0.1, "whoosh", 0.7], [t.novantatre, "impact", 0.7], [t.alla, "swish", 0.5], [t.fine + 0.1, "boom", 1.0],
+  [CTA, "whoosh", 0.6], [CTA + 1.3, "pop", 0.9], [CTA + 2.3, "ding", 0.9],
 ];
 
 export const P2TRAILER: React.FC = () => {

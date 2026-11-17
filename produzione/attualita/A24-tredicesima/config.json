@@ -1,0 +1,32 @@
+{
+  "composizione": "A24TREDICESIMA",
+  "cartella_public": "a24tredicesima",
+  "valzer": 0,
+  "testo_voce": "attualita/A24-tredicesima/voce/testo-v1.txt",
+  "chiave": [
+    "DUEMILA",
+    "MILLECINQUECENTONOVANTA",
+    "MILLEQUATTROCENTO",
+    "DUECENTO",
+    "DETRAZIONE",
+    "DODICI",
+    "TUTTA",
+    "REGOLA",
+    "NATALE",
+    "LÌ"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "millecinquecentonovanta",
+    "millequattrocento",
+    "duecento",
+    "detrazione",
+    "tutta",
+    "regola",
+    "natale"
+  ],
+  "riser": [],
+  "clip_labiale": "attualita/A24-tredicesima/clip/C-parla.mp4",
+  "copertina": "CoverA24TREDICESIMA",
+  "immagine": "attualita/A24-tredicesima/set/C-set.jpg"
+}

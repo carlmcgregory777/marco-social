@@ -1,0 +1,29 @@
+{
+  "composizione": "A25PENSIONE",
+  "cartella_public": "a25pensione",
+  "valzer": 1,
+  "testo_voce": "attualita/A25-pensione-minima/voce/testo-v1.txt",
+  "chiave": [
+    "SEICENTOUNDICI",
+    "CINQUECENTOQUARANTASEI",
+    "SESSANTASEI",
+    "NOVECENTO",
+    "INTEGRAZIONE",
+    "NULLA",
+    "NIENTE",
+    "VERA"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "seicentoundici",
+    "cinquecentoquarantasei",
+    "sessantasei",
+    "integrazione",
+    "nulla",
+    "vera"
+  ],
+  "riser": [],
+  "clip_labiale": "attualita/A25-pensione-minima/clip/C-parla.mp4",
+  "copertina": "CoverA25PENSIONE",
+  "immagine": "attualita/A25-pensione-minima/set/C-set.jpg"
+}

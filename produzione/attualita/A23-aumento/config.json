@@ -1,0 +1,32 @@
+{
+  "composizione": "A23AUMENTO",
+  "cartella_public": "a23aumento",
+  "valzer": 2,
+  "testo_voce": "attualita/A23-aumento/voce/testo-v1.txt",
+  "chiave": [
+    "MILLEOTTOCENTO",
+    "CENTO",
+    "CINQUANTASEI",
+    "QUARANTAQUATTRO",
+    "DETRAZIONI",
+    "MARGINALE",
+    "QUARANTA",
+    "TRENTATRÉ",
+    "NOVE",
+    "FRENA"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "milleottocento",
+    "cinquantasei",
+    "quarantaquattro",
+    "marginale",
+    "quaranta",
+    "nove",
+    "frena"
+  ],
+  "riser": [],
+  "clip_labiale": "attualita/A23-aumento/clip/C-parla.mp4",
+  "copertina": "CoverA23AUMENTO",
+  "immagine": "attualita/A23-aumento/set/C-set.jpg"
+}

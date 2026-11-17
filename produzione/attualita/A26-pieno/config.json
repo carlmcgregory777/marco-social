@@ -1,0 +1,32 @@
+{
+  "composizione": "A26PIENO",
+  "cartella_public": "a26pieno",
+  "valzer": 2,
+  "testo_voce": "attualita/A26-pieno/voce/testo-v1.txt",
+  "chiave": [
+    "CINQUANTA",
+    "VENTISEI",
+    "SESSANTASETTE",
+    "DICIASSETTE",
+    "NOVE",
+    "TASSA",
+    "QUATTRO",
+    "NIENTE",
+    "METÀ",
+    "TOGLIERE"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "cinquanta",
+    "ventisei",
+    "sessantasette",
+    "tassa",
+    "quattro",
+    "metà",
+    "togliere"
+  ],
+  "riser": [],
+  "clip_labiale": "attualita/A26-pieno/clip/C-parla.mp4",
+  "copertina": "CoverA26PIENO",
+  "immagine": "attualita/A26-pieno/set/C-set.jpg"
+}

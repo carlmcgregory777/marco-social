@@ -1,0 +1,29 @@
+{
+  "composizione": "A22BONUS",
+  "cartella_public": "a22bonus",
+  "valzer": 1,
+  "testo_voce": "attualita/A22-bonus-soglia/voce/testo-v1.txt",
+  "chiave": [
+    "NOVEMILASETTECENTONOVANTASETTE",
+    "EURO",
+    "CENTOTTANTASEI",
+    "ZERO",
+    "SCALINO",
+    "SCIVOLO",
+    "REGOLA",
+    "POCO"
+  ],
+  "tagli": [],
+  "enfasi": [
+    "novemilasettecentonovantasette",
+    "centottantasei",
+    "zero",
+    "scalino",
+    "scivolo",
+    "regola"
+  ],
+  "riser": [],
+  "clip_labiale": "attualita/A22-bonus-soglia/clip/C-parla.mp4",
+  "copertina": "CoverA22BONUS",
+  "immagine": "attualita/A22-bonus-soglia/set/C-set.jpg"
+}

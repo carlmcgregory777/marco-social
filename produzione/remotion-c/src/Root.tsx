@@ -21,6 +21,11 @@ import { A18CONTI, CoverA18CONTI, DURATA_A18CONTI } from "./A18CONTI";
 import { A19EURO, CoverA19EURO, DURATA_A19EURO } from "./A19EURO";
 import { A20GAS, CoverA20GAS, DURATA_A20GAS } from "./A20GAS";
 import { A21TRUFFE, CoverA21TRUFFE, DURATA_A21TRUFFE } from "./A21TRUFFE";
+import { A22BONUS, CoverA22BONUS, DURATA_A22BONUS } from "./A22BONUS";
+import { A23AUMENTO, CoverA23AUMENTO, DURATA_A23AUMENTO } from "./A23AUMENTO";
+import { A24TREDICESIMA, CoverA24TREDICESIMA, DURATA_A24TREDICESIMA } from "./A24TREDICESIMA";
+import { A25PENSIONE, CoverA25PENSIONE, DURATA_A25PENSIONE } from "./A25PENSIONE";
+import { A26PIENO, CoverA26PIENO, DURATA_A26PIENO } from "./A26PIENO";
 import { AL9INCUB, CoverAL9INCUB, DURATA_AL9INCUB } from "./AL9INCUB";
 import { AL9H, DURATA_AL9H } from "./AL9H";
 import { A14TAGLIO, CoverA14TAGLIO, DURATA_A14TAGLIO } from "./A14TAGLIO";
@@ -76,6 +81,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="CoverA20GAS" component={CoverA20GAS} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="A21TRUFFE" component={A21TRUFFE} durationInFrames={DURATA_A21TRUFFE} fps={30} width={1080} height={1920} />
       <Composition id="CoverA21TRUFFE" component={CoverA21TRUFFE} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="A22BONUS" component={A22BONUS} durationInFrames={DURATA_A22BONUS} fps={30} width={1080} height={1920} />
+      <Composition id="CoverA22BONUS" component={CoverA22BONUS} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="AL9INCUB" component={AL9INCUB} durationInFrames={DURATA_AL9INCUB} fps={30} width={1080} height={1920} />
       <Composition id="CoverAL9INCUB" component={CoverAL9INCUB} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="AL9H" component={AL9H} durationInFrames={DURATA_AL9H} fps={30} width={1080} height={1920} />
@@ -102,6 +109,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="A1POLONIA" component={A1POLONIA} durationInFrames={1371} fps={30} width={1080} height={1920} />
       <Composition id="A2ROMA" component={A2ROMA} durationInFrames={DURATA_A2} fps={30} width={1080} height={1920} />
       <Composition id="CoverA2Roma" component={CoverA2Roma} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="A23AUMENTO" component={A23AUMENTO} durationInFrames={DURATA_A23AUMENTO} fps={30} width={1080} height={1920} />
+      <Composition id="CoverA23AUMENTO" component={CoverA23AUMENTO} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="A24TREDICESIMA" component={A24TREDICESIMA} durationInFrames={DURATA_A24TREDICESIMA} fps={30} width={1080} height={1920} />
+      <Composition id="CoverA24TREDICESIMA" component={CoverA24TREDICESIMA} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="A25PENSIONE" component={A25PENSIONE} durationInFrames={DURATA_A25PENSIONE} fps={30} width={1080} height={1920} />
+      <Composition id="CoverA25PENSIONE" component={CoverA25PENSIONE} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="A26PIENO" component={A26PIENO} durationInFrames={DURATA_A26PIENO} fps={30} width={1080} height={1920} />
+      <Composition id="CoverA26PIENO" component={CoverA26PIENO} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="CoverA1Polonia" component={CoverA1Polonia} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="A1PoloniaGrafiche" component={A1PoloniaGrafiche} durationInFrames={1535} fps={30} width={1080} height={1920} />
       <Composition id="CoverAlgory1V5" component={CoverAlgory1V5} durationInFrames={1} fps={30} width={1080} height={1920} />
