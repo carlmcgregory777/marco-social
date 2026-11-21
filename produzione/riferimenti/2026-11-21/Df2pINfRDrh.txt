@@ -1,0 +1,16 @@
+lang=it
+[  3.9] Monda, ho una nuova missione per te. Ti mando la prima posizione.
+[  9.9] Ma cavoli, ci risiamo.
+[ 11.9] Ei, guarda dove vai!
+[ 19.9] Prosegui, Monda. Primo checkpoint, via Savona.
+[ 31.4] Benvenuta da Burghett. Come posso aiutarti?
+[ 37.1] Ben fatto, Monda. Prostimo checkpoint, via Marguera.
+[ 41.1] Hey, ma che fai? Attento!
+[ 55.8] Ottimo, Monda. Ora ti serve un outfit all'altezza. Ti ho trovato quello giusto.
+[ 59.8] Ti ho visto? Non mi scuggirai.
+[ 62.8] Hey, hey, calmo.
+[ 64.8] Oh, questo sì, Castile.
+[ 71.3] Perfetto. Ora sei pronto. Raggiungila.
+[ 76.3] Hey, ma che fai?
+[ 79.9] Sparisci, ora serve a me.
+[ 98.9] Era ora. Ho una fame.

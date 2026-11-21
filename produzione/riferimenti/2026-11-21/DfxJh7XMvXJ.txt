@@ -1,0 +1,12 @@
+lang=it
+[  0.0] Il CEO di NVIDIA si è dimesso e ora 5.000 dei suoi dipendenti vogliono riportarlo indietro.
+[  5.9] Jensen Huang ha fondato NVIDIA e la guidata per più di 30 anni, giovedì si è dimesso
+[ 11.3] dopo uno scandalo legato alla sua vita privata.
+[ 13.6] Ma poi è successa una cosa che nessuno si aspettava, una peticione per riportarlo al
+[ 18.2] suo posto ha raggiunto quasi 100.000 firme e più di 5.000 sono dipendenti di NVIDIA.
+[ 23.7] A rilanciarla c'è anche Elon Musk e alcuni grandi investitori hanno scritto al Consiglio
+[ 28.5] di NVIDIA per chiedere il suo ritorno.
+[ 30.6] Adesso il Consiglio deve decidere un nuovo CEO o riportare indietro Jensen e perché ti
+[ 35.3] riguarda?
+[ 36.3] Gran parte dell'intelligenza artificiale che usi ogni giorno gira su chief NVIDIA,
+[ 40.2] chi la guida pesa su tutto il settore.

@@ -1,0 +1,13 @@
+lang=it
+[  0.0] Mettiamo che voglio aprire una posizione qua e voglio rischiare mille con lo stop loss qua se io vado su
+[  8.9] sui setting del tool del
+[ 12.2] take profit
+[ 13.4] metto il mio account size in questo caso 100k voglio rischiare un capa trades metto rischio mille
+[ 21.1] usd
+[ 22.4] ok e poi qua come vedete se io
+[ 26.0] metto lo stop loss lontano o vicino
+[ 30.8] lui mi dice qua quanti contratti dovrei aprire ad esempio se volessi entrare long ora con stop loss sotto e lo dovrei aprire
+[ 37.8] 8,5 contratti ovviamente non c'è
+[ 41.3] il
+[ 42.6] la virgola nei contratti quindi 8 o 9 in questo caso però è molto semplice gestire una posizione così se volessi lo stop qua
+[ 50.8] sarebbero 5 ok
