@@ -1,0 +1,13 @@
+{
+  "composizione": "A27IRPEF",
+  "cartella_public": "a27irpef",
+  "valzer": 2,
+  "testo_voce": "attualita/A27-taglio-irpef/voce/testo-v1.txt",
+  "chiave": ["CINQUECENTO", "CINQUANTACINQUEMILA", "ZERO", "VENTICINQUEMILA", "TRENTACINQUEMILA", "MARGINALE", "EURO"],
+  "tagli": [],
+  "enfasi": ["cinquecento", "zero", "venticinquemila", "trentacinquemila", "marginale", "euro."],
+  "riser": [],
+  "clip_labiale": "attualita/A27-taglio-irpef/clip/C-parla.mp4",
+  "copertina": "CoverA27IRPEF",
+  "immagine": "attualita/A27-taglio-irpef/set/C-set.jpg"
+}

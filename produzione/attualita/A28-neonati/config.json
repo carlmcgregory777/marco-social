@@ -1,0 +1,13 @@
+{
+  "composizione": "A28NEONATI",
+  "cartella_public": "a28neonati",
+  "valzer": 0,
+  "testo_voce": "attualita/A28-neonati/voce/testo-v1.txt",
+  "chiave": ["CENTO", "MILLEOTTOCENTO", "ZERO", "INPS", "BLOCCATI", "COMPOSTO", "DUEMILATRECENTO", "CINQUEMILA", "FUORI"],
+  "tagli": [],
+  "enfasi": ["milleottocento", "zero", "composto", "duemilatrecento", "cinquemila", "fuori"],
+  "riser": [],
+  "clip_labiale": "attualita/A28-neonati/clip/C-parla.mp4",
+  "copertina": "CoverA28NEONATI",
+  "immagine": "attualita/A28-neonati/set/C-set.jpg"
+}

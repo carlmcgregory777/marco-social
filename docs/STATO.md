@@ -314,3 +314,10 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - ElevenLabs: restano circa 1.200 caratteri per novembre.
 - Analisi degli 8 reel salvati da Marco: `produzione/riferimenti/2026-11-21/ANALISI.md`.
 - 22/11/2026: G1 BOCCIATO due volte da Marco. Nella v1 la città era finta e il video muto. Nella v2 C era in 3D da cartone. G1 è in STAND-BY finché Marco non ricarica Runpod (~10 $ a 480p, ~18 $ a 720p). La ricetta giusta è in memoria (`reference-video-gta-ai`): fotogrammi veri di Milano, C inserito dentro, Seedance 2.5 I2V su Runpod (`16jsvx5ncmm24x`) con audio, HUD da `v2/hud2.py`. La missione resta «L'ultima copia».
+
+## 22/11/2026 notte — 2 reel nuovi «Il conto di casa» (DA APPROVARE, non pubblicati)
+- **A28 «Nato nel 2027: 1.800 €»** (fondo nuovi nati, manovra 2027): `produzione/attualita/A28-neonati/finale/A28-neonati-FINALE.mp4` (35,9 s, -14 LUFS), copertina `A28-neonati-copertina.jpg` (+ griglia), didascalie in `didascalia.md`, fatti in `FATTI-A28.md`. Si apre con la frase vera di Rai 1mattina News del 29/10 («per ogni nuovo nato lo Stato verserà 100 euro all'anno…»), poi parla C. Set di C riusato da A22 (niente credito per uno nuovo), labiale InfiniteTalk 0,25 $.
+- **A27 «Taglio tasse: 500 €, ma non a te»** (IRPEF 33% fino a 55.000 €): tutto pronto (voce, schede, composizione A27IRPEF, copertina, didascalie, fatti MEF) TRANNE il labiale di C (0,25 $). Comando: `python runpod_pe.py talk ".../A27-taglio-irpef/set/C-set.jpg" ".../A27-taglio-irpef/montaggio/voce.wav" ".../A27-taglio-irpef/clip/C-parla.mp4" 720p`, poi rilanciare `episodio.py`, render `A27IRPEF` e loudnorm (comandi stampati da `episodio.py`). Set riusato da A23.
+- Saldi: Runpod ~0,11 $, Higgsfield 0,81 crediti, ElevenLabs ~1.000 caratteri fino a inizio dicembre.
+- TRAPPOLA render: il primo render di A28 si è fermato a fine codifica («remotion-audio-mixing\0.wav: No such file or directory», cartella temporanea sparita). Rilanciato uguale: è andato.
+- I file modificati il 20/11 in A11-A13 e A22-A26 (schede, render-schede.sh, P2FILM) NON sono miei: lasciati come sono, fuori dai commit.
