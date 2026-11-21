@@ -313,3 +313,4 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Didascalia e fatti verificati in `produzione/gta6/copione.md`: 79,99 €, uscita il 19/11, 3,79 miliardi di dollari di vendite al dettaglio nel primo giorno (Take-Two, 20/11).
 - ElevenLabs: restano circa 1.200 caratteri per novembre.
 - Analisi degli 8 reel salvati da Marco: `produzione/riferimenti/2026-11-21/ANALISI.md`.
+- 22/11/2026: G1 BOCCIATO due volte da Marco. Nella v1 la città era finta e il video muto. Nella v2 C era in 3D da cartone. G1 è in STAND-BY finché Marco non ricarica Runpod (~10 $ a 480p, ~18 $ a 720p). La ricetta giusta è in memoria (`reference-video-gta-ai`): fotogrammi veri di Milano, C inserito dentro, Seedance 2.5 I2V su Runpod (`16jsvx5ncmm24x`) con audio, HUD da `v2/hud2.py`. La missione resta «L'ultima copia».
