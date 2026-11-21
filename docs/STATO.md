@@ -305,3 +305,11 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Blender valutato: in Download c'era solo `higgsfield_blender-1.5.62.zip`, add-on Higgsfield che genera con i crediti Higgsfield → scartato, Blender non installato (non serviva: montaggio già in Remotion).
 - Spesa oggi: 0,13 $ Runpod (copertina). Nessun pod creato.
 - DA FARE (con ok di Marco): caricare su YouTube Studio a pezzi da Chrome, miniatura, schermata finale, commento fissato; poi aggiornare la descrizione del trailer con il link al film.
+
+## 21/11/2026 — G1 «GTA Milano: la missione vera» PRONTO DA APPROVARE (non pubblicato)
+- Video `produzione/gta6/G1-GTA-milano-FINALE.mp4` (34,6 s, ×1,1, circa -17 LUFS). Copertina `G1-copertina.jpg` in stile poster GTA con il logo GTA VI «Milano», che Marco ha autorizzato: «usalo non ci sono problemi». Ritaglio griglia: `G1-copertina-griglia.jpg`.
+- Costruzione: 7 immagini Nano Banana 2 Edit (6 scene e la copertina) più 1 modifica per il logo, 6 clip Seedance 1.5 Pro 720p su Runpod. Costo circa 3,1 $, saldo Runpod da 9,80 $ dopo la ricarica di Marco.
+- Montaggio e audio: interfaccia da gioco (minimappa, stelle, dialoghi, checkpoint, MISSIONE COMPIUTA) disegnata con `hud.py`. Voci ElevenLabs: Julian per C, Brian per il contatto, Sarah per il passante. Musica e effetti da `musica_regia.py`.
+- Didascalia e fatti verificati in `produzione/gta6/copione.md`: 79,99 €, uscita il 19/11, 3,79 miliardi di dollari di vendite al dettaglio nel primo giorno (Take-Two, 20/11).
+- ElevenLabs: restano circa 1.200 caratteri per novembre.
+- Analisi degli 8 reel salvati da Marco: `produzione/riferimenti/2026-11-21/ANALISI.md`.

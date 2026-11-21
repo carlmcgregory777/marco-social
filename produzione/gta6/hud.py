@@ -136,8 +136,10 @@ def n_stelle(t):
 def hud(t):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    if t < SCENE[0][1]:  # logo
-        a = ease(t / 0.5) * (1 - ease((t - 2.1) / 0.4))
+    if t < SCENE[0][1]:  # apertura: il poster ha già il logo, niente HUD
+        return im
+    if False:  # vecchio logo disegnato (tenuto per riferimento)
+        a = 0
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         ld = ImageDraw.Draw(lay)
         sc = 1 + 0.04 * t
@@ -171,7 +173,7 @@ def hud(t):
     for k, t0, chi, tx, du in attive[-1:]:
         if t < t0 + du + 0.5:
             righe = a_capo(tx, F_SUB, W - 220, d)
-            y0 = 1500 - 30 * (len(righe) - 1)
+            y0 = 1290 - 30 * (len(righe) - 1)
             colore = (255, 214, 64, 255) if chi == "C" else (255, 255, 255, 255)
             testo_ombra(d, (W / 2, y0 - 60), chi, F_CHI, ACCENTO + (255,), spessore=3)
             for j, r in enumerate(righe):
@@ -223,8 +225,16 @@ def audio(out_wav):
         f = "highpass=f=300,lowpass=f=3400,volume=1.4" if chi == "CONTATTO" else "volume=1.0"
         filtri.append(f"[{i}:a]{f},adelay={int(t0 * 1000)}|{int(t0 * 1000)}[v{i}]")
     n = len(BATTUTE)
-    mix = "".join(f"[v{i}]" for i in range(n))
-    filtri.append(f"{mix}amix=inputs={n}:normalize=0,apad=whole_dur={DURATA}[a]")
+    # musica a crescendo + effetti (audio/ da musica_regia.py)
+    AU = os.path.join(QUI, "audio")
+    extra = [("musica.wav", 0.0, 0.22), ("whoosh.wav", 2.4, 0.6), ("whoosh.wav", 11.1, 0.6), ("ding.wav", 11.4, 0.7),
+             ("whoosh.wav", 16.1, 0.6), ("whoosh.wav", 20.1, 0.6), ("ding.wav", 20.4, 0.7), ("whoosh.wav", 24.6, 0.6),
+             ("riser.wav", 31.2, 0.5), ("impact.wav", COMPIUTA, 0.9)]
+    for j, (f, t0, vol) in enumerate(extra):
+        ins += ["-i", os.path.join(AU, f)]
+        filtri.append(f"[{n + j}:a]volume={vol},adelay={int(t0 * 1000)}|{int(t0 * 1000)}[x{j}]")
+    mix = "".join(f"[v{i}]" for i in range(n)) + "".join(f"[x{j}]" for j in range(len(extra)))
+    filtri.append(f"{mix}amix=inputs={n + len(extra)}:normalize=0,alimiter=limit=0.9,apad=whole_dur={DURATA}[a]")
     subprocess.run(["ffmpeg", "-v", "error", "-y", *ins, "-filter_complex", ";".join(filtri), "-map", "[a]", "-t", str(DURATA), out_wav], check=True)
 
 def main():
