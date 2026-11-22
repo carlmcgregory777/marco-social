@@ -2,10 +2,16 @@
 File: `film/finale/P2-film-YOUTUBE-1440p.mp4` (12:18, 2560x1440). Miniatura: `film/copertina/copertina-P2-film.jpg`.
 Non caricato, non programmato (serve l'ok di Marco).
 
-## Titoli (per «Test e confronto»)
-A. Le 7 trappole delle prop firm (che in home page non ti dicono) ← consigliato
-B. Prop firm: perché 93 trader su 100 non vedono mai un pagamento
-C. Ho studiato come guadagnano le prop firm. Ecco le 7 trappole
+## Titoli (per «Test e confronto», 22/11/2026)
+A. Le 7 trappole delle prop firm (che in home page non ti dicono) ← principale
+B. Prop firm: ti chiudono il conto anche quando sei in guadagno
+C. Prop firm: cosa fanno i 7 trader su 100 che vengono pagati
+
+## Copertine (per «Test e confronto»)
+A. `copertina/copertina-P2-film.jpg` · «LE 7 TRAPPOLE» + «delle prop firm» (C con la tagliola)
+B. `copertina/copertina-P2-film-B.jpg` · «IN GUADAGNO / E BOCCIATO» + «trappola n.2» (schermo ACCOUNT BREACHED, C stupito)
+C. `copertina/copertina-P2-film-C.jpg` · «COSA FANNO / I 7 SU 100» + «che vengono pagati» (sala di manichini, 7 viola)
+Prova piccola: `copertina/_confronto.jpg`. B e C fatte gratis (Runpod a saldo zero il 22/11): fotogrammi del film + C scontornato con rembg (`copertina/scritte_bc.py`); la base di C è la stessa della copertina B di prova del trailer.
 
 ## Descrizione
 Su cento persone che comprano una challenge, sette vedono un pagamento. In questo video ti metto dentro la storia: compri il conto da 100.000 $, il primo giorno va bene, e poi arrivano le sette trappole. Alcune ti chiudono il conto anche quando sei in guadagno. Alla fine ti faccio vedere cosa fanno i sette, con i numeri.
