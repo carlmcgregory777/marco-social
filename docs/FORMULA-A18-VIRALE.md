@@ -36,8 +36,8 @@ Checklist prima di ogni copione:
 3. **Fatti** verificati con fonte ufficiale (INPS, MEF, ISTAT, ARERA, Gazzetta), segnati nel file FATTI.
 4. **Colpevole** = il sistema, una regola, un'azienda. Mai una categoria di persone.
 5. **Un concetto finanziario** che spiega il meccanismo (aliquota marginale, inflazione, interesse composto, cuneo fiscale…): 1 frase.
-6. **Finale che divide**: una frase su cui si può essere d'accordo o no. La domanda va in didascalia, non nel parlato.
-7. **Durata 30-45 s.**
+6. **Finale che divide** + **call to action parlata** (Marco 22/11/2026): l'ultima battuta di C è sempre «Voi che ne dite? [domanda che divide]. Scrivetelo nei commenti.» La stessa domanda va anche in didascalia.
+7. **Durata 60-90 s** (Marco 22/11/2026: «allungali, anche quelli di Mik durano di più»). Più spiegazione, un esempio in più, cosa vuol dire per i tuoi soldi. Il gancio a 0 s resta.
 8. **Didascalia**:
    - prime 125 battute = persona + cifra + nome del tema (quello che la gente cerca);
    - una richiesta sola: «Mandalo a chi…»;
