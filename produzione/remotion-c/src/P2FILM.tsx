@@ -7,6 +7,7 @@ import { loadFont as loadPixel } from "@remotion/google-fonts/PressStart2P";
 import { loadFont as loadMarker } from "@remotion/google-fonts/PermanentMarker";
 import { INTER, molla, NERO, ROSSO, VIOLA } from "./FormatC";
 import { DURATA_P2FILM_S, FX, K, OVER, PEZZI, SHOT } from "./p2film-dati";
+import { CS } from "./p2film-cs";
 
 const { fontFamily: PIXEL } = loadPixel();
 const { fontFamily: PENNA } = loadMarker();
@@ -45,8 +46,22 @@ const Punch: React.FC<{ a: number; base: number; o: string; fino?: number; child
 
 // ---------- C che parla: sceglie il pezzo del labiale giusto ----------
 const ZOOM: Record<string, [number, string]> = { l: [1.0, "50% 40%"], m: [1.3, "50% 24%"], s: [1.62, "50% 17%"] };
-const Parla: React.FC<{ sh: any }> = ({ sh }) => {
+// primi piani rifatti in 1080p nativo con P-Video (21/11/2026): niente zoom digitale, la clip parte a CS[i] secondi del film
+const ParlaNuovo: React.FC<{ sh: any; idx: number }> = ({ sh, idx }) => {
   const f = useCurrentFrame();
+  const p = cl((f / FPS - sh.a) / Math.max(0.1, sh.b - sh.a));
+  return (
+    <Punch a={sh.a} base={1.0} o="50% 35%" fino={0.03 * Easing.inOut(Easing.quad)(p)}>
+      <Sequence from={F(CS[String(idx)])} layout="none">
+        <OffthreadVideo src={staticFile(`${C}/cs/${idx}.mp4`)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </Sequence>
+    </Punch>
+  );
+};
+
+const Parla: React.FC<{ sh: any; idx?: number }> = ({ sh, idx }) => {
+  const f = useCurrentFrame();
+  if (idx !== undefined && CS[String(idx)] !== undefined) return <ParlaNuovo sh={sh} idx={idx} />;
   const p = cl((f / FPS - sh.a) / Math.max(0.1, sh.b - sh.a));
   const [z, o] = ZOOM[sh.z] ?? ZOOM.m;
   const ora = f / FPS;
@@ -707,7 +722,7 @@ export const P2FILM: React.FC = () => {
   const fine = t >= K.fine + 1.0;
   return (
     <AbsoluteFill style={{ background: "#000" }}>
-      {sh.tipo === "parla" && <Parla sh={sh} />}
+      {sh.tipo === "parla" && <Parla sh={sh} idx={t < SHOT[0].a ? 0 : i} />}
       {sh.tipo === "clip" && <Clip sh={sh} />}
       {G && <G sh={sh} />}
       {OVER.map((o, k) => { const O = OV[o.tipo]; return O ? <O key={k} o={o} /> : null; })}
