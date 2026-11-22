@@ -27,6 +27,7 @@ import { A24TREDICESIMA, CoverA24TREDICESIMA, DURATA_A24TREDICESIMA } from "./A2
 import { A25PENSIONE, CoverA25PENSIONE, DURATA_A25PENSIONE } from "./A25PENSIONE";
 import { A26PIENO, CoverA26PIENO, DURATA_A26PIENO } from "./A26PIENO";
 import { A28NEONATI, CoverA28NEONATI, DURATA_A28NEONATI } from "./A28NEONATI";
+import { BF1BLACK, CoverBF1BLACK, DURATA_BF1BLACK } from "./BF1BLACK";
 import { A27IRPEF, CoverA27IRPEF, DURATA_A27IRPEF } from "./A27IRPEF";
 import { AL9INCUB, CoverAL9INCUB, DURATA_AL9INCUB } from "./AL9INCUB";
 import { AL9H, DURATA_AL9H } from "./AL9H";
@@ -125,6 +126,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="CoverA26PIENO" component={CoverA26PIENO} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="A28NEONATI" component={A28NEONATI} durationInFrames={DURATA_A28NEONATI} fps={30} width={1080} height={1920} />
       <Composition id="CoverA28NEONATI" component={CoverA28NEONATI} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="BF1BLACK" component={BF1BLACK} durationInFrames={DURATA_BF1BLACK} fps={30} width={1080} height={1920} />
+      <Composition id="CoverBF1BLACK" component={CoverBF1BLACK} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="A27IRPEF" component={A27IRPEF} durationInFrames={DURATA_A27IRPEF} fps={30} width={1080} height={1920} />
       <Composition id="CoverA27IRPEF" component={CoverA27IRPEF} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="CoverA1Polonia" component={CoverA1Polonia} durationInFrames={1} fps={30} width={1080} height={1920} />

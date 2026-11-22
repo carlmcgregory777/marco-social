@@ -345,3 +345,8 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
   - Instagram: GTA 180 views in circa 2 ore, A26 177, A22 148, A21 129, A20 440, A19 146, P1 86. Una settimana prima: A18 1.610, A12 1.277, pensioni 1.339, A13 818. Calo netto dal 18/11.
   - YouTube Shorts: o circa 1.000 views (A22 951, Torino 1.529, A26 973, Rheinmetall 1.229, pensioni 1.433) o circa 10 (A18 9, A19 8, A21 11).
   - TikTok: fermo dal 18 al 21/11.
+
+## 22/11/2026 sera — BF1 sponsorizzata Black Friday Higgsfield (NON pubblicata)
+- Copia del reel instagram.com/reel/DgDfpJusokh con C: `produzione/BF-blackfriday/finale/BF-blackfriday-FINALE.mp4` (53,5 s), didascalie e testi ManyChat in `BF-blackfriday/didascalia.md`. Remotion `BF1BLACK.tsx`, formato SchedeC.
+- Labiale con **Pruna P-Video 1080p** (`script/pruna_pvideo.py`): TRAPPOLA P-Video esce al massimo a **20 s** → voce tagliata in 3 pezzi (0-18,15 / 18,15-33,35 / 33,35-fine) e rincollati. Set nuovo con `script/pruna_pimage.py` (P-Image-Edit): Runpod dà 402, saldo finito.
+- ManyChat «BLACK FRIDAY» da creare (Chrome non è loggato su ManyChat) disattivando la vecchia automazione; «3 giorni gratis» da verificare su higgsfield.ai prima di sponsorizzare.

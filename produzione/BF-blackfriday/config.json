@@ -1,0 +1,13 @@
+{
+  "composizione": "BF1BLACK",
+  "cartella_public": "bf1black",
+  "valzer": 3,
+  "testo_voce": "BF-blackfriday/voce/testo-v1.txt",
+  "chiave": ["GIORNI", "GRATIS", "SITO", "REEL", "FILM", "GTA", "COMANDI", "BLACK", "FRIDAY"],
+  "tagli": [],
+  "enfasi": ["gratis", "uno", "due", "tre", "quattro", "friday"],
+  "riser": [],
+  "clip_labiale": "BF-blackfriday/clip/C-parla.mp4",
+  "copertina": "CoverBF1BLACK",
+  "immagine": "BF-blackfriday/set/C-studio.jpg"
+}
