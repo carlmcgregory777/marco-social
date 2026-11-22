@@ -7,3 +7,5 @@ dist
 out
 build-p2f/
 public-p2f/
+public-p2t2/
+build-p2t2/
