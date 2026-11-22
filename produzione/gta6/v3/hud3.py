@@ -18,7 +18,7 @@ def dur(f):
                                 capture_output=True, text=True).stdout.strip())
 
 # Scene: (sorgente, durata usata). s1 = poster.
-SCENE = [("c1", 3.0), ("s1", 8.0), ("s2", 8.0), ("s3", 8.0), ("s4", 8.0), ("s5", 8.0), ("s6", 8.0), ("fermo:s6", 11.0)]
+SCENE = [("c1", 3.0), ("s1", 8.0), ("s2", 8.0), ("s3", 8.0), ("s4", 8.0), ("s5", 8.0), ("s6", 8.0), ("fermo:s6", 12.0)]
 T0 = []
 _t = 0.0
 for _, d in SCENE:
@@ -35,17 +35,17 @@ BATTUTE = [
     ("c1", S(3, 2.0), "C", "Scusa, mi serve."),
     ("r1", S(3, 4.2), "N", "Ehi! Il mio motorino!"),
     ("k3", S(4, 0.3), "K", "Corso Buenos Aires. Taglia per il centro!"),
-    ("p1", S(4, 3.0), "N", "Ehi, attento!"),
+    ("p1", S(4, 3.6), "N", "Ehi, attento!"),
     ("k4", S(4, 5.4), "K", "Hai la polizia dietro. Non fermarti!"),
     ("g1", S(5, 3.8), "N", "Quella copia è mia, vecchio!"),
     ("c2", S(5, 6.3), "C", "Vedremo."),
     ("c3", S(7, 0.6), "C", "Rockstar ha incassato 3,79 miliardi di dollari. In un giorno."),
     ("c4", S(7, 6.6), "C", "Io ho vinto una copia. Loro hanno vinto la missione."),
-    ("c5", S(8, 1.2), "C", "Da una parte c'è chi dice: è solo un gioco. Dall'altra chi dice: ottanta euro sono ottanta euro. Che ne dite?"),
+    ("c5", S(8, 2.6), "C", "Da una parte c'è chi dice: è solo un gioco. Dall'altra chi dice: ottanta euro sono ottanta euro. Che ne dite?"),
 ]
 BATTUTE = [(k, t, chi, tx, dur(os.path.join(VOCE, k + ".mp3"))) for k, t, chi, tx in BATTUTE]
 
-STELLE = [(0, 0), (S(3, 4.2), 1), (S(4, 3.0), 2), (S(4, 5.6), 3), (S(5, 6.0), 4), (S(6, 6.0), 0)]
+STELLE = [(0, 0), (S(3, 4.2), 1), (S(4, 3.6), 2), (S(4, 5.6), 3), (S(5, 6.0), 4), (S(6, 6.0), 0)]
 TIMER_DA, TIMER_A, TIMER_SEC = S(2, 7.8), S(6, 6.0), 120  # il timer scende da 2:00 e si ferma quando prende la copia
 TITOLO = (S(2, 5.0), S(2, 8.0))                            # titolo della missione
 CHECK = (S(6, 0.1), S(6, 2.4), "Negozio di videogiochi")
@@ -283,7 +283,8 @@ def ambiente(out_wav):
     """Audio originale delle clip Dreamina (passi, motorino, sirene), messo in fila come le scene."""
     ins, fil, parti = [], [], []
     for i, (src, d) in enumerate(SCENE):
-        if src.startswith("s") and os.path.exists(os.path.join(QUI, "clip", src + ".mp4")):
+        # s2 e s4: Dreamina ci ha messo voci sue («Ah!», grida del ragazzino) che si sovrappongono alle nostre: fuori
+        if src.startswith("s") and src not in ("s2", "s4") and os.path.exists(os.path.join(QUI, "clip", src + ".mp4")):
             ins += ["-i", os.path.join(QUI, "clip", src + ".mp4")]
             j = len(parti); fil.append(f"[{j}:a]atrim=0:{d},asetpts=PTS-STARTPTS,aresample=44100,aformat=channel_layouts=stereo,adelay={int(T0[i]*1000)}|{int(T0[i]*1000)}[a{j}]"); parti.append(j)
     fil.append("".join(f"[a{j}]" for j in parti) + f"amix=inputs={len(parti)}:normalize=0,apad=whole_dur={DURATA}[o]")
