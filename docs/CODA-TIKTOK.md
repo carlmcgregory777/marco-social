@@ -1,16 +1,16 @@
 # Coda TikTok di @cthe.trader — uno al giorno alle 12:30
 
 Decisione di Marco (15/11/2026): «Uno al giorno, 12:30». L'app TikTok sul Redmi non programma, quindi
-un'attività programmata pubblica ogni giorno il primo video ancora DA FARE, dal telefono via adb.
+DAL 22/11/2026 TikTok si programma da Publora (connessione tiktok--000YVjky55LLS-NwHTZf3GYQbft1k8j2q6u, @cthe.trader, autorizzato da Marco). Piano Starter: 3 post programmati alla volta, 7 giorni avanti. L'attività del telefono `tiktok-cthe-trader-1230` è IN PAUSA. Le date della colonna 1 sono quelle vecchie.
 
 | Giorno | Video | Stato |
 |---|---|---|
 | dom 15/11 | A18 «Lavorare in regola conviene?» | FATTO 15/11 13:22 (37.500 views al 16/11, virale) |
 | lun 16/11 | A12 «Col senno di poi» | FATTO 16/11 11:13 (descrizione con gancio Rheinmetall 10.000 → 81.000) |
 | mar 17/11 | A13 «Un titolo non è una prova» | FATTO 17/11 12:05 (copertina dedicata, IA ON) |
-| mer 18/11 | A20 «Gasolio» (Marco 17/11: anticipato, formula «Il conto di casa») | DA FARE |
-| gio 19/11 | A26 «Il pieno è tassato due volte» (cita lo sconto gasolio fino al 23/11: deve uscire entro il 23) | DA FARE |
-| ven 20/11 | A22 «Bonus e soglia ISEE» | DA FARE |
+| mer 18/11 | A20 «Gasolio» (Marco 17/11: anticipato, formula «Il conto di casa») | PROGRAMMATO su Publora lun 23/11 12:30 (6b02c62ee149d41a369c6dcc) |
+| gio 19/11 | A26 «Il pieno è tassato due volte» (cita lo sconto gasolio fino al 23/11: deve uscire entro il 23) | PROGRAMMATO su Publora dom 22/11 12:30 (6b02c60ac1323910013f338f) |
+| ven 20/11 | A22 «Bonus e soglia ISEE» | PROGRAMMATO su Publora mar 24/11 12:30 (6b02c62fe149d41a369c6df0) |
 | sab 21/11 | A23 «100 € lordi di aumento» | DA FARE |
 | dom 22/11 | A24 «Tredicesima» | DA FARE |
 | lun 23/11 | A25 «Pensione minima» | DA FARE |
