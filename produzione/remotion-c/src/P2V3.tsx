@@ -21,6 +21,7 @@ const F = (s: number) => Math.round(s * FPS);
 const INK = "#15131a";
 const GRIGIO = "#77738a";
 const VERDE = "#16a34a";
+const cl = (x: number) => Math.max(0, Math.min(1, x));
 const ramp = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 const fmt = (n: number) => Math.round(n).toLocaleString("it-IT");
 void _FX; void PEZZI;
@@ -28,7 +29,12 @@ void _FX; void PEZZI;
 // innesto della trappola 2
 const T2A = 147.527, T2OLD = 227.461, T2LEN = DURATA_P2T2 / FPS, SPOSTA = T2A + T2LEN - T2OLD;
 const FILM_FINE = 738.502;
-export const DURATA_P2V3 = F(FILM_FINE + SPOSTA);
+// v3b (23/11 mattina, Marco: «lento, senza intro, primi piani inquietanti»): intro di 23,8 s prima del film,
+// sponsor di 28,4 s prima della trappola 4 (film 332,1 s), banner like/commenti/hype/iscriviti; velocità ×1,1 fatta in ffmpeg.
+const INTRO = 23.8, SP_FILM = 332.1, SP_LEN = 28.4;
+const OFF_A = INTRO, OFF_B = INTRO + SPOSTA, OFF_C = OFF_B + SP_LEN;
+const SP_A = SP_FILM + OFF_B;
+export const DURATA_P2V3 = F(FILM_FINE + OFF_C);
 
 // ---------- pezzi comuni ----------
 const Pop: React.FC<{ a: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ a, children, style }) => {
@@ -64,7 +70,8 @@ const Coperto: React.FC<{ a: number; children: React.ReactNode; w?: number }> = 
 // ---------- C in camera ----------
 const Zoom: React.FC<{ a: number; z: number; o?: string; children: React.ReactNode }> = ({ a, z, o = "50% 32%", children }) => {
   const f = useCurrentFrame();
-  const s = z * (1 + 0.012 * ramp(f, F(a), F(a + 4)));
+  const salto = Math.floor(Math.max(0, f / FPS - a) / 3.2) % 2 ? 1.08 : 1;
+  const s = z * salto * (1 + 0.012 * ramp(f, F(a), F(a + 4)));
   return (
     <AbsoluteFill style={{ background: "#fff", overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `scale(${s})`, transformOrigin: o }}>{children}</AbsoluteFill>
@@ -567,37 +574,212 @@ const Strade: React.FC<{ sh: any }> = ({ sh }) => {
     </AbsoluteFill>
   );
 };
+// ---------- v3b: grafiche al posto dei primi piani troppo stretti ----------
+const Cartello: React.FC<{ sh: any }> = ({ sh }) => (
+  <AbsoluteFill style={{ background: "#fff", alignItems: "center", justifyContent: "center" }}>
+    <svg width={560} height={350} viewBox="0 0 400 250">
+      {ICONE[sh.icona].map(([d, c], k) => <Tratto key={k} a={sh.a + 0.1 + 0.12 * k} dur={0.45} d={d} col={c ?? INK} w={7} />)}
+    </svg>
+    <Pop a={sh.a + 0.4} style={{ fontFamily: INTER, fontWeight: 900, fontSize: 96, letterSpacing: -3, color: INK, marginTop: 10 }}>{sh.testo}</Pop>
+    {sh.sotto && <Pop a={sh.a + 1.2} style={{ fontFamily: PENNA, fontSize: 54, color: VIOLA, marginTop: 10 }}>{sh.sotto}</Pop>}
+  </AbsoluteFill>
+);
+// «sempre lo stesso film»: due giorni su, poi l'operazione storta e i tre errori
+const Storia: React.FC<{ sh: any }> = ({ sh }) => {
+  const f = useCurrentFrame();
+  const t = f / FPS;
+  const pts: [number, number][] = [[308.3, 0], [309.4, 2.2], [310.6, 4.5], [311.6, 4.2], [312.4, 2.5], [313.8, 0.8], [315.0, -1.5], [316.4, -4.0], [317.8, -6.5]];
+  const W = 1500, H = 560, y = (v: number) => 60 + (5 - v) * (H - 120) / 11.5, tx = (s: number) => ((s - 308.3) / 9.5) * W;
+  const vis = pts.filter(([s]) => s <= t);
+  if (vis.length && vis.length < pts.length) {
+    const nx = pts[vis.length]; const [s0, v0] = vis[vis.length - 1]; const k = Math.min(1, (t - s0) / (nx[0] - s0));
+    vis.push([s0 + (nx[0] - s0) * k, v0 + (nx[1] - v0) * k]);
+  }
+  const d = vis.map(([s, v], i) => `${i ? "L" : "M"}${tx(s)},${y(v)}`).join(" ");
+  const nota = (a: number, x: number, v: number, testo: string, col: string) => t >= a && (
+    <Pop a={a} style={{ position: "absolute", left: 210 + tx(x) - 160, top: 240 + y(v), width: 320, textAlign: "center", fontFamily: PENNA, fontSize: 44, color: col }}>{testo}</Pop>
+  );
+  return (
+    <AbsoluteFill style={{ background: "#fff", fontFamily: INTER }}>
+      <Tit size={60} style={{ marginTop: 80 }}>SEMPRE <Vi>LO STESSO FILM</Vi></Tit>
+      <svg width={W} height={H} style={{ position: "absolute", left: 210, top: 240, overflow: "visible" }}>
+        <line x1={0} x2={W} y1={y(0)} y2={y(0)} stroke="#c9c6d6" strokeWidth={3} strokeDasharray="12 10" />
+        <path d={d} fill="none" stroke={vis.length && vis[vis.length - 1][1] < 0 ? ROSSO : VIOLA} strokeWidth={9} strokeLinejoin="round" strokeLinecap="round" />
+      </svg>
+      {nota(309.6, 1.3, 5.2, "2 giorni perfetti", VERDE)}
+      {nota(312.0, 3.9, 4.6, "un'operazione va storta", ROSSO)}
+      {nota(314.0, 6.0, -0.5, "sposti lo stop", ROSSO)}
+      {nota(316.0, 8.4, -3.0, "raddoppi", ROSSO)}
+    </AbsoluteFill>
+  );
+};
+// «hai perso, e proprio in quel momento arriva l'offerta»
+const Telefono: React.FC<{ sh: any }> = ({ sh }) => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ background: "#fff", alignItems: "center", justifyContent: "center", fontFamily: INTER }}>
+      <svg width={420} height={760} viewBox="0 0 420 760" style={{ position: "absolute" }}>
+        <Tratto a={sh.a + 2.4} dur={0.6} d="M60 20 L360 20 C 390 20, 400 30, 400 60 L400 700 C 400 730, 390 740, 360 740 L60 740 C 30 740, 20 730, 20 700 L20 60 C 20 30, 30 20, 60 20 Z" w={8} />
+      </svg>
+      {f >= F(sh.a + 2.6) && <Pop a={sh.a + 2.6} style={{ position: "absolute", top: 330, fontSize: 64, fontWeight: 900, color: ROSSO }}>CHALLENGE FALLITA</Pop>}
+      {f >= F(334.4) && <div style={{ position: "absolute", top: 200, width: 1200, height: 300 }}><Notifica o={{ a: 334.4, b: 340 }} /></div>}
+    </AbsoluteFill>
+  );
+};
+
+// ---------- intro: anteprima di tutto il film sulla voce (tempi = secondi dell'intro) ----------
+const Intro: React.FC = () => {
+  const t = useCurrentFrame() / FPS;
+  const scena = t < 4.9 ? 0 : t < 8.4 ? 1 : t < 12.4 ? 2 : t < 15.4 ? 3 : t < 19.3 ? 4 : 5;
+  const Box: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <AbsoluteFill style={{ background: "#fff", alignItems: "center", justifyContent: "center", fontFamily: INTER, color: INK }}>{children}</AbsoluteFill>
+  );
+  if (scena === 0) return (
+    <Box>
+      <div style={{ position: "relative" }}>
+        <Pop a={0.1}><Tit size={230} col={VIOLA} style={{ letterSpacing: -8 }}>100.000 $</Tit></Pop>
+        <svg width={1100} height={260} viewBox="0 0 1100 260" style={{ position: "absolute", left: 0, top: 0 }}><Tratto a={3.6} dur={0.3} col={ROSSO} d="M30 220 L1070 40" w={16} /></svg>
+      </div>
+      {t >= 3.7 && <Pop a={3.7} style={{ fontFamily: PENNA, fontSize: 90, color: ROSSO }}>NON ESISTONO</Pop>}
+    </Box>
+  );
+  if (scena === 1) return (
+    <Box>
+      <Pop a={4.9} style={{ fontSize: 46, fontWeight: 800, color: GRIGIO, letterSpacing: 3 }}>BASTA NON PERDERE PIÙ DEL</Pop>
+      <Pop a={6.8}><Tit size={260} col={ROSSO} style={{ letterSpacing: -10 }}>−5%</Tit></Pop>
+      {t >= 7.5 && <Pop a={7.5} style={{ fontFamily: PENNA, fontSize: 70 }}>al giorno?</Pop>}
+    </Box>
+  );
+  if (scena === 2) return (
+    <Box>
+      <div style={{ fontWeight: 900, fontSize: 280, letterSpacing: -10, color: t >= 10.3 ? ROSSO : INK, fontVariantNumeric: "tabular-nums" }}>{t >= 10.3 ? "00:00" : "23:59"}</div>
+      {t >= 11.0 && <Pop a={11.0} style={{ transform: "rotate(-3deg)" }}><span style={{ background: ROSSO, color: "#fff", fontWeight: 900, fontSize: 100, padding: "4px 36px" }}>CONTO CHIUSO</span></Pop>}
+    </Box>
+  );
+  if (scena === 3) return (
+    <Box>
+      <Pop a={12.5} style={{ fontSize: 50, fontWeight: 800, color: GRIGIO, letterSpacing: 3 }}>QUANDO VINCI TU</Pop>
+      <Pop a={13.3}><Tit size={150}>PER LORO È UN <Vi rosso>COSTO</Vi></Tit></Pop>
+    </Box>
+  );
+  if (scena === 4) return (
+    <Box>
+      <Tit size={90} style={{ marginBottom: 50 }}>LE <Vi>7 TRAPPOLE</Vi></Tit>
+      <div style={{ display: "flex", gap: 30 }}>
+        {Array.from({ length: 7 }, (_, k) => (
+          <Pop key={k} a={16.9 + 0.22 * k} style={{ width: 170, height: 200, border: `6px solid ${INK}`, borderRadius: 20, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 110, fontWeight: 900, color: k % 2 ? INK : VIOLA }}>{k + 1}</Pop>
+        ))}
+      </div>
+    </Box>
+  );
+  return (
+    <Box>
+      <Tit size={80} style={{ marginBottom: 30 }}>COSA FANNO <Vi>QUELLI CHE CE LA FANNO</Vi></Tit>
+      {["Rischio piccolo e fisso", "Più vicino al traguardo, meno rischio", "Regole scritte prima"].map((s, k) => (
+        <div key={k} style={{ fontSize: 58, fontWeight: 800, margin: "10px 0", filter: "blur(13px)", opacity: 0.5 }}>✔ {s}</div>
+      ))}
+      {t >= 22.2 && <Pop a={22.2} style={{ fontFamily: PENNA, fontSize: 70, color: VIOLA, marginTop: 20 }}>con i numeri</Pop>}
+    </Box>
+  );
+};
+
+// ---------- sponsor: C + i link + barra che dice quando finisce (tempi = secondi dello sponsor; voce da 0,4) ----------
+const SpCam: React.FC = () => (
+  <Zoom a={0} z={1}>
+    <OffthreadVideo src={staticFile(`${C}/extra/sponsor-c.mp4`)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+  </Zoom>
+);
+const Sponsor: React.FC = () => {
+  const f = useCurrentFrame();
+  const t = f / FPS;
+  const link: [number, string, string, string][] = [
+    [7.3, "ALGORY", "lo strumento con cui faccio trading", "codice STANGA50: −50% sul primo pagamento"],
+    [15.9, "HIGGSFIELD", "il personaggio e le scene", ""],
+    [17.8, "ELEVENLABS", "la voce", ""],
+    [19.4, "RUNPOD", "il labiale", ""],
+  ];
+  const p = cl(t / SP_LEN);
+  // dopo 19,2 s la seconda clip di P-Video era un primo piano troppo stretto: si passa alla schermata dei link
+  const schermata = t >= 19.2;
+  return (
+    <AbsoluteFill style={{ background: "#fff" }}>
+      {!schermata && <SpCam />}
+      {schermata && <Pop a={19.2} style={{ position: "absolute", left: 0, right: 0, top: 110, textAlign: "center", fontFamily: INTER, fontWeight: 900, fontSize: 64, color: INK, letterSpacing: -2 }}>TUTTI I MIEI LINK SONO <span style={{ background: VIOLA, color: "#fff", padding: "0 14px" }}>IN DESCRIZIONE</span></Pop>}
+      <div style={{ position: "absolute", left: 50, top: 40, fontFamily: INTER, fontWeight: 900, fontSize: 26, color: "#fff", background: VIOLA, padding: "10px 18px", letterSpacing: 2 }}>SPONSOR · I MIEI LINK</div>
+      <div style={schermata ? { position: "absolute", left: 460, top: 230, width: 1000, display: "flex", flexDirection: "column", gap: 16, transform: "scale(1.05)" } : { position: "absolute", right: 40, top: 120, width: 560, display: "flex", flexDirection: "column", gap: 16 }}>
+        {link.filter(([a]) => t >= a).map(([a, n, cosa, extra]) => (
+          <Pop key={n} a={a} style={{ background: "#fff", border: "2px solid #e4e2ea", boxShadow: "0 12px 34px #0002", borderRadius: 18, padding: "16px 24px", fontFamily: INTER }}>
+            <div style={{ fontSize: 40, fontWeight: 900, color: n === "ALGORY" ? VIOLA : INK }}>{n}</div>
+            <div style={{ fontSize: 26, color: GRIGIO }}>{cosa}</div>
+            {extra && t >= 10.4 && <div style={{ fontSize: 26, fontWeight: 800, color: VERDE, marginTop: 4 }}>{extra}</div>}
+          </Pop>
+        ))}
+        {t >= 20.9 && <Pop a={20.9} style={{ fontFamily: PENNA, fontSize: 40, color: VIOLA, textAlign: "center" }}>link in descrizione ↓ a te non costa niente in più</Pop>}
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 64, background: "#ffffffee", borderTop: "2px solid #e4e2ea", display: "flex", alignItems: "center", fontFamily: INTER }}>
+        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${p * 100}%`, background: `${VIOLA}33` }} />
+        <div style={{ position: "absolute", left: `${p * 100}%`, top: 0, bottom: 0, width: 6, background: VIOLA }} />
+        <div style={{ position: "relative", marginLeft: 30, fontSize: 26, fontWeight: 900, color: INK }}>SPONSORIZZATA · finisce tra {Math.max(0, Math.ceil(SP_LEN - t))} s</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ---------- banner like / commenta / hype / iscriviti (quando C parla e non ci sono altre grafiche) ----------
+const ENGAGE: number[] = [95.6, 252.0, 478.5, 676.6];
+const Engage: React.FC<{ a: number }> = ({ a }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (f < F(a) || f > F(a + 5.2)) return null;
+  const m = molla(f, fps, F(a), 14, 200);
+  const u = ramp(f, F(a + 4.7), F(a + 5.2));
+  const b: [string, number][] = [["👍 LIKE", 0.6], ["💬 COMMENTA", 1.4], ["🔥 HYPE", 2.2], ["ISCRIVITI", 3.0]];
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, bottom: 60, display: "flex", justifyContent: "center", opacity: m * (1 - u), transform: `translateY(${(1 - m) * 100}px)` }}>
+      <div style={{ display: "flex", gap: 14, background: "#fff", border: "2px solid #e4e2ea", boxShadow: "0 12px 40px #0002", borderRadius: 40, padding: "12px 16px", fontFamily: INTER }}>
+        {b.map(([s, d]) => {
+          const on = f >= F(a + d);
+          const isc = s === "ISCRIVITI";
+          return <div key={s} style={{ fontSize: 30, fontWeight: 900, padding: "12px 24px", borderRadius: 30, background: on ? (isc ? "#e62117" : VIOLA) : "#ecebf0", color: on ? "#fff" : INK, transform: `scale(${on && f < F(a + d) + 6 ? 1.12 : 1})` }}>{s}</div>;
+        })}
+      </div>
+    </div>
+  );
+};
+
 const GRAF: Record<string, React.FC<{ sh: any }>> = {
   omini: Omini, titolo: TitoloFilm, regole: Regole, citazione: Citazione, zeroset: ZeroSet, secchi: Secchi, obiettivo: Obiettivo, fondi: Fondi,
   giorni: Giorni, numero: Numero, carrelli: Carrelli, studio: Studio, pagina: Pagina, crollo: Crollo, denominatore: Denominatore, carte: Carte,
   lavagna: Lavagna, checklist: Checklist, ab: AB, nonesistono: NonEsistono, confronto: Confronto, slot: Slot, strade: Strade,
+  cartello: (p) => <Cartello {...p} />, storia: (p) => <Storia {...p} />, telefono: (p) => <Telefono {...p} />,
 };
 
 // ---------- regia v3: cosa cambia rispetto al film v2 (indice dello shot → nuova scena) ----------
 const cam = (nome: string) => ({ tipo: "cam3", nome });
 const num = (o: any) => ({ tipo: "graf", nome: "numero", ...o });
 const ZS = { tipo: "graf", nome: "zeroset", a: 103.8 };
+const CF = { tipo: "graf", nome: "confronto", a: 115.1 };
+const STO = { tipo: "graf", nome: "storia", a: 308.3 };
 const SL = { tipo: "graf", nome: "slot", a: 263.4 };
 const CH = { tipo: "graf", nome: "numero", a: 502.9, sopra: "PROP FIRM CHIUSE TRA 2024 E 2025", prima: "", n0: 0, n1: 100, dopo: "", sotto: "più o meno 1 su 7", t0: 511.9, ts: 513.6, scendi: true };
 const ST = { tipo: "graf", nome: "strade", a: 701.8 };
 const OVR: Record<number, any> = {
-  0: cam("s0"), 3: cam("s3"), 9: cam("s9"), 11: cam("s11"),
+  0: cam("s0"), 3: cam("s3"), 9: { tipo: "graf", nome: "cartello", a: 40.5, icona: "doc", testo: "COME SONO COSTRUITE", sotto: "anche quello che in homepage non c'è" }, 11: cam("s11"),
   12: num({ a: 59.2, sopra: "ORE 9:00 · HAI APPENA SPESO", prima: "", n0: 0, n1: 540, dopo: " €", sotto: "e non hai ancora fatto un'operazione", t0: 61.2, ts: 62.6, scendi: true }),
   13: num({ a: 65.2, sopra: "IN CAMBIO HAI UN CONTO DA", prima: "", n0: 0, n1: 100000, dopo: " $", sotto: "", t0: 66.4 }),
-  16: cam("s16"), 17: { tipo: "graf", nome: "nonesistono", a: 84.8 }, 20: cam("s20"), 21: ZS, 22: ZS, 24: cam("s24"),
-  25: { tipo: "graf", nome: "confronto", a: 119.3 },
-  42: cam("s42"), 46: cam("s46"), 47: SL, 48: SL, 50: cam("s50"), 54: cam("s54"), 55: cam("s54"),
+  16: cam("s16"), 17: { tipo: "graf", nome: "nonesistono", a: 84.8 }, 20: cam("s20"), 21: ZS, 22: ZS, 24: CF, 25: CF,
+  42: cam("s42"), 46: cam("s46"), 47: SL, 48: SL, 50: cam("s50"), 54: STO, 55: STO,
   56: num({ a: 317.8, sopra: "E IN", prima: "", n0: 0, n1: 20, dopo: " MINUTI", sotto: "l'esame è finito", t0: 317.9, ts: 318.9, scendi: true }),
-  58: cam("s58"), 60: cam("s60"), 67: cam("s67"),
+  58: cam("s58"), 60: { tipo: "graf", nome: "telefono", a: 332.1 }, 67: cam("s67"),
   68: num({ a: 376.3, sopra: "300.000 CONTI · 10 PROP FIRM", prima: "", n0: 0, n1: 3, dopo: "", sotto: "challenge comprate in media, a testa", t0: 381.2, ts: 381.8 }),
   71: cam("s71"), 74: cam("s74"), 80: cam("s80"),
   81: num({ a: 438.9, sopra: "PAGAMENTI IN RITARDO", prima: "", n0: 0, n1: 3300, dopo: " persone", sotto: "alcune aspettavano da più di un anno", t0: 444.3, ts: 445.8, scendi: true }),
   89: CH, 90: CH, 91: cam("s91"), 96: cam("s96"),
   98: num({ a: 542.6, sopra: "A CHI METTE IL CODICE SCONTO", prima: "fino al ", n0: 0, n1: 20, dopo: "%", sotto: "di quello che paghi", t0: 547.0 }),
-  108: cam("s108"), 111: cam("s111"), 115: cam("s115"), 118: ST, 119: ST, 120: ST,
+  108: { tipo: "graf", nome: "cartello", a: 613.6, icona: "dado", testo: "COME AL CASINÒ", sotto: "" }, 111: cam("s111"), 115: cam("s115"), 118: ST, 119: ST, 120: ST,
 };
 // la lista finale si alterna con C (inquadrature k1-k4) tra un punto e l'altro
-const CHK_C: [number, number, string][] = [[631.0, 638.0, "k1"], [641.7, 644.8, "k2"], [648.5, 653.3, "k3"], [661.6, 665.1, "k4"]];
+const CHK_C: [number, number, string][] = [[641.7, 644.8, "k2"], [648.5, 653.3, "k3"]];
 
 // ---------- sovrimpressioni ----------
 const Trappola: React.FC<{ o: any }> = ({ o }) => {
@@ -698,7 +880,7 @@ const CheckGratis: React.FC<{ o: any }> = ({ o }) => {
     </div>
   );
 };
-const OV: Record<string, React.FC<{ o: any }>> = { trappola: Trappola, nome: Nome, iscriviti: Iscriviti, notifica: Notifica, avviso: Avviso, checkgratis: CheckGratis };
+const OV: Record<string, React.FC<{ o: any }>> = { trappola: Trappola, nome: Nome, iscriviti: Iscriviti, avviso: Avviso, checkgratis: CheckGratis };
 
 // ---------- il film (tempo = secondi della voce originale) ----------
 const FilmLayer: React.FC = () => {
@@ -722,6 +904,7 @@ const FilmLayer: React.FC = () => {
     <AbsoluteFill style={{ background: "#fff" }}>
       <AbsoluteFill key={String(chiave)}>{scena}</AbsoluteFill>
       {suC && NOTE.filter((n) => t >= n.a && t < n.b).slice(-1).map((n, k) => <Doodle key={k + "-" + n.a} n={n} />)}
+      {suC && ENGAGE.map((a) => <Engage key={a} a={a} />)}
       {OVER.map((ov: any, k: number) => { const O = OV[ov.tipo]; return O ? <O key={k} o={ov} /> : null; })}
       <Contatore t={t} />
       {t >= K.fine + 1.0 && <AbsoluteFill style={{ background: "#fff" }} />}
@@ -735,22 +918,31 @@ const SUONI: [number, string][] = [
   ...NOTE.map((n: any): [number, string] => [n.a, "scribble"]),
 ];
 
+// montaggio: intro · film [0, T2A) · trappola 2 · film [T2OLD, SP_FILM) · sponsor · film [SP_FILM, fine)
 export const P2V3: React.FC = () => {
   const t = useCurrentFrame() / FPS;
   const suono = (lista: [number, string][], sposta: number) => lista.map(([tt, nome], k) => (
-    <Sequence key={nome + k} from={Math.max(0, F(tt + sposta))} durationInFrames={F(1.6)}>
+    <Sequence key={nome + k + "-" + sposta} from={Math.max(0, F(tt + sposta))} durationInFrames={F(1.6)}>
       <Audio src={staticFile(`${C}/sfx/${nome}.wav`)} volume={nome === "pop" ? 0.12 : 0.14} />
     </Sequence>
   ));
+  const voce = (da: number, a: number, off: number) => (
+    <Sequence from={F(off + da)} durationInFrames={F(a - da)}><Audio src={staticFile(`${C}/voce.wav`)} startFrom={F(da)} endAt={F(a)} /></Sequence>
+  );
   return (
     <AbsoluteFill style={{ background: "#fff" }}>
-      {t < T2A && <FilmLayer />}
-      <Sequence from={F(T2A)} durationInFrames={F(T2LEN)}><P2T2 /></Sequence>
-      <Sequence from={F(SPOSTA)} layout="none">{t >= T2A + T2LEN && <FilmLayer />}</Sequence>
-      <Audio src={staticFile(`${C}/voce.wav`)} endAt={F(T2A)} />
-      <Sequence from={F(T2A + T2LEN)}><Audio src={staticFile(`${C}/voce.wav`)} startFrom={F(T2OLD)} /></Sequence>
-      {suono(SUONI.filter(([tt]) => tt < T2A), 0)}
-      {suono(SUONI.filter(([tt]) => tt >= T2OLD), SPOSTA)}
+      <Sequence from={0} durationInFrames={F(INTRO)}><Intro /><Audio src={staticFile(`${C}/extra/intro-v2.wav`)} /></Sequence>
+      <Sequence from={F(OFF_A)} layout="none">{t >= INTRO && t < INTRO + T2A && <FilmLayer />}</Sequence>
+      <Sequence from={F(INTRO + T2A)} durationInFrames={F(T2LEN)}><P2T2 /></Sequence>
+      <Sequence from={F(OFF_B)} layout="none">{t >= INTRO + T2A + T2LEN && t < SP_A && <FilmLayer />}</Sequence>
+      <Sequence from={F(SP_A)} durationInFrames={F(SP_LEN)}><Sponsor /><Audio src={staticFile(`${C}/extra/sponsor-pv.wav`)} /></Sequence>
+      <Sequence from={F(OFF_C)} layout="none">{t >= SP_A + SP_LEN && <FilmLayer />}</Sequence>
+      {voce(0, T2A, OFF_A)}
+      {voce(T2OLD, SP_FILM, OFF_B)}
+      {voce(SP_FILM, FILM_FINE, OFF_C)}
+      {suono(SUONI.filter(([tt]) => tt < T2A), OFF_A)}
+      {suono(SUONI.filter(([tt]) => tt >= T2OLD && tt < SP_FILM), OFF_B)}
+      {suono(SUONI.filter(([tt]) => tt >= SP_FILM), OFF_C)}
     </AbsoluteFill>
   );
 };
