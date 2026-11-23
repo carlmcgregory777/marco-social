@@ -9,16 +9,17 @@ Labiale: Pruna P-Video 1080p in 3 pezzi (P-Video si ferma a 20 s), set con Pruna
   (serve una carta? si disdice?) vanno letti su higgsfield.ai.
 - Il riferimento diceva «Fallo prima del 25 novembre»: data NON verificata, quindi tolta dal video.
 
-## Instagram (didascalia)
-#ad · 3 giorni di Higgsfield GRATIS dentro Claude 👇
+## Instagram (didascalia) — versione BF3 23/11
+3 giorni di @higgsfield.ai GRATIS dentro Claude 👇
 
 Le 4 cose che farei io in quei 3 giorni:
 1. il sito (scegli 5 siti che ti piacciono, Claude lo rifà con quello stile)
-2. il reel montato da Claude con Shorts Studio
+2. il reel montato da Claude con Higgsfield Shorts
 3. una scena da film in 4K con Seedance 2.5
-4. uno spot stile GTA partendo da una foto
+4. uno spot partendo dalla foto di un prodotto
 
-Commenta BLACK FRIDAY e ti mando in DM il link all'offerta Black Friday di Higgsfield.
+Commenta BLACK FRIDAY e ti mando in DM il link all'offerta Black Friday di Higgsfield (fino al -60%).
+Occhio: la prova gratis di 3 giorni poi si rinnova da sola se non disdici.
 
 🎙️ Voce generata con AI · C è un personaggio AI, dietro c'è Marco · link affiliato
 #higgsfield #claude #intelligenzaartificiale
