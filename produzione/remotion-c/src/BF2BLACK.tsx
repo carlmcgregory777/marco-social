@@ -78,6 +78,13 @@ export const BF2BLACK: React.FC = () => (
       <Audio src={staticFile("bf1black/ponte.wav")} />
       <Sequence durationInFrames={F(1)}><Audio src={staticFile("bf1black/impact.wav")} volume={0.6} /></Sequence>
     </Sequence>
+    {/* suoni di transizione (23/11, Marco): solo nei passaggi */}
+    <Sequence durationInFrames={F(0.3)}><Audio src={staticFile("bf1black/pop.wav")} volume={0.7} /></Sequence>
+    <Sequence from={G - F(0.45)} durationInFrames={F(0.6)}><Audio src={staticFile("bf1black/whoosh.wav")} volume={0.7} /></Sequence>
+    <Sequence from={G} durationInFrames={F(1.6)}><Audio src={staticFile("bf1black/boom.wav")} volume={0.75} /></Sequence>
+    <Sequence from={G + M - F(2)} durationInFrames={F(2)}><Audio src={staticFile("bf1black/riser.wav")} volume={0.55} /></Sequence>
+    <Sequence from={G + M + F(1.9)} durationInFrames={F(0.7)}><Audio src={staticFile("bf1black/ding.wav")} volume={0.6} /></Sequence>
+    <Sequence from={G + M + P - F(0.15)} durationInFrames={F(0.3)}><Audio src={staticFile("bf1black/swish.wav")} volume={0.7} /></Sequence>
     <Sequence from={G + M + P} durationInFrames={BF1}>
       <OffthreadVideo src={staticFile("bf1black/bf1.mp4")} style={{ width: 1080, height: 1920 }} />
     </Sequence>
