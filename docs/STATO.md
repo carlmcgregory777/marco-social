@@ -387,7 +387,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - **23/11 sera, CLIP VERTICALI del film (richiesta di Marco: «clippiamo tutto il video… rimandiamo sempre al video»)**: 9 clip 1080×1920 in `youtube/P2-prop-firm/clip/` (`clip.py`, testi e ID in `TESTI.md`).
   - Contenuto: intro, le 7 trappole e «cosa fanno i 7», da 48 a 98 s l'una.
   - Grafica: titolo in alto, film 16:9 al centro, sottotitoli parola per parola (Whisper con correzioni a mano) e cartello finale «CONTINUA SU YOUTUBE» con la copertina del film.
-  - **YouTube Shorts**: 9 programmati, una al giorno alle 18:00 dal 24/11 al 02/12. La descrizione ha il link al film. Il «Video correlato» si può scegliere solo con il film pubblico (dalle 19:00 del 23/11).
+  - **YouTube Shorts**: 9 programmati, una al giorno alle 18:00 dal 24/11 al 02/12. La descrizione ha il link al film. «Video correlato» = il film su tutti e 9 (messo alle 19:05 del 23/11, appena il film è diventato pubblico).
   - **Instagram**: 9 reel programmati da instagram.com/scheduled_content, stessi giorni e orari, formato Originale, copertina, etichetta IA e «link in bio». c-thetrader.com/link porta al canale YouTube.
   - ManyChat gratuito lega la parola chiave solo a un reel già pubblicato, quindi niente «scrivi FILM».
   - **TikTok: NON programmato.** Publora ha solo 4 post fino al 30/11, che servono ai reel del giorno, e in Chrome TikTok è @biancamonroe00. Serve una decisione di Marco.
