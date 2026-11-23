@@ -351,7 +351,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Labiale con **Pruna P-Video 1080p** (`script/pruna_pvideo.py`): TRAPPOLA P-Video esce al massimo a **20 s** → voce tagliata in 3 pezzi (0-18,15 / 18,15-33,35 / 33,35-fine) e rincollati. Set nuovo con `script/pruna_pimage.py` (P-Image-Edit): Runpod dà 402, saldo finito.
 - ManyChat «BLACK FRIDAY» da creare (Chrome non è loggato su ManyChat) disattivando la vecchia automazione; «3 giorni gratis» da verificare su higgsfield.ai prima di sponsorizzare.
 
-## 22-23/11/2026 — P2 FILM v3: nuova trappola 2 e stile unico alla Hormozi (PROGRAMMATO 24/11 12:00)
+## 22-23/11/2026 — P2 FILM v3: nuova trappola 2 e stile unico alla Hormozi (PROGRAMMATO 23/11 19:00)
 - **Trappola 2 rifatta da zero** («Il minuto peggiore»): il trailing drawdown vale solo per alcune challenge, quindi ora la trappola è il limite di perdita giornaliero, che conta anche le posizioni aperte e la mezzanotte del server della firm. Fonte: pagine ufficiali «Maximum Daily Loss» di una grande firm europea, mai nominata. Copione `film/t2nuova/COPIONE-T2.md`, voce ElevenLabs Julian v4 dal sito, pause tagliate con `t2nuova/voce/taglia_t2.py` (`voce-v2.wav`, 84,8 s). Composizione `remotion-c/src/P2T2.tsx`.
 - **Stile unico** (Marco 22/11: «troppi stili mescolati, musichetta da AI, sembra AI slop»): tutto bianco come Hormozi.
   - C in camera quasi sempre, con note e doodle a pennarello accanto.
@@ -378,7 +378,7 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
   - File: `finale/P2-film-YOUTUBE-1440p-v3b.mp4` (12:04, 2560×1440, -13,9 LUFS), `anteprima-P2-v3b.mp4` e `anteprima-P2-v3b-telefono.mp4` (480p).
   - Script: `finale/monta_v5.sh`. Video a blocchi da 1500 frame, audio a blocchi da 4000 frame (in un pezzo solo, il browser si blocca verso il frame 13.000). Render a priorità bassa, al massimo 6 core su 8, concurrency 1 per l'audio (Marco: «stai a un 80%», «la RAM non usarla a palla»).
   - Metadati e capitoli per la v3b in `film/YOUTUBE-METADATI.md`. Da caricare e programmare SOLO dopo l'ok di Marco.
-  - **23/11 ~15:10 CARICATO e PROGRAMMATO (ok di Marco)**: pubblico il **24/11/2026 alle 12:00**, https://youtu.be/EaRMTEo5aV0.
+  - **23/11 ~15:10 CARICATO e PROGRAMMATO (ok di Marco)**: pubblico il **23/11/2026 alle 19:00** (Marco ha spostato l uscita da domani 12:00 a stasera), https://youtu.be/EaRMTEo5aV0.
     - Test A/B «titolo e miniatura» con 3 varianti: A «100.000 $ finti» con copertina-P2-A; B «Bocciato mentre dormi» con copertina-P2-C; C «la paghi 3 volte» con copertina-P2-B.
     - Descrizione completa con i capitoli, 13 tag, non per bambini, contenuti alterati = Sì, categoria Istruzione, italiano.
     - Schermata finale degli ultimi 20 s: L0 «MI PRESENTO» + Iscriviti.
