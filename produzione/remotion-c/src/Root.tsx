@@ -46,6 +46,7 @@ import { P2TRAILER, DURATA_P2TRAILER } from "./P2TRAILER";
 import { P2TRAILER2, DURATA_P2TRAILER2 } from "./P2TRAILER2";
 import { P2FILM, DURATA_P2FILM } from "./P2FILM";
 import { P2T2, DURATA_P2T2 } from "./P2T2";
+import { P2V3, DURATA_P2V3 } from "./P2V3";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -58,6 +59,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="P2TRAILER2" component={P2TRAILER2} durationInFrames={DURATA_P2TRAILER2} fps={30} width={1920} height={1080} />
       <Composition id="P2FILM" component={P2FILM} durationInFrames={DURATA_P2FILM} fps={30} width={1920} height={1080} />
       <Composition id="P2T2" component={P2T2} durationInFrames={DURATA_P2T2} fps={30} width={1920} height={1080} />
+      <Composition id="P2V3" component={P2V3} durationInFrames={DURATA_P2V3} fps={30} width={1920} height={1080} />
       <Composition id="A4MIDTERM" component={A4MIDTERM} durationInFrames={DURATA_A4} fps={30} width={1080} height={1920} />
       <Composition id="A5MILANO" component={A5MILANO} durationInFrames={DURATA_A5} fps={30} width={1080} height={1920} />
       <Composition id="CoverA5" component={CoverA5} durationInFrames={1} fps={30} width={1080} height={1920} />

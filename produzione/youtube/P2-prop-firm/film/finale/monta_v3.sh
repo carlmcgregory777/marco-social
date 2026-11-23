@@ -5,7 +5,7 @@ cd "$(dirname "$0")/../../../../remotion-c"
 F=../youtube/P2-prop-firm/film/finale; T=../youtube/P2-prop-firm/film/t2nuova
 mkdir -p /c/Users/stang/rtmp-p2f; export TEMP='C:\Users\stang\rtmp-p2f' TMP='C:\Users\stang\rtmp-p2f'
 [ -f build-p2f/index.html ] || npx remotion bundle src/index.ts --public-dir=public-p2f --out-dir=build-p2f > /dev/null 2>&1
-npx remotion render build-p2f P2FILM $F/P2-film-1080.mp4 --concurrency=4 --offthreadvideo-cache-size-in-bytes=400000000 --crf=18 > $F/render.log 2>&1
+npx remotion render build-p2f P2FILM $F/P2-film-1080.mp4 --concurrency=3 --port=3177 --offthreadvideo-cache-size-in-bytes=300000000 --crf=18 > $F/render.log 2>&1
 echo RENDER OK
 ffmpeg -v error -y -i $F/P2-film-1080.mp4 -i $T/P2T2-1080.mp4 -filter_complex "\
 [0:v]trim=0:147.527,setpts=PTS-STARTPTS[v1];[0:a]atrim=0:147.527,asetpts=PTS-STARTPTS[a1];\

@@ -1,5 +1,5 @@
 # P2 FILM · Testi per YouTube (21/11/2026)
-File: `film/finale/P2-film-YOUTUBE-1440p.mp4` (12:32, 2560x1440, v3 con la nuova trappola 2). Miniatura: `film/copertina2/copertina-P2-A.jpg` (più B e C per il test).
+File: `film/finale/P2-film-YOUTUBE-1440p-v3.mp4` (12:24, 2560x1440, v3 stile unico alla Hormozi: tutto bianco, C in camera, musica «Misdirection» dalla Raccolta audio YouTube). Miniatura: `film/copertina2/copertina-P2-A.jpg` (più B e C per il test).
 Non caricato, non programmato (serve l'ok di Marco).
 
 ## Titoli (per «Test e confronto», 22/11/2026 sera, v2)
@@ -24,14 +24,14 @@ Su cento persone che comprano una challenge, sette vedono un pagamento. In quest
 0:59 Ore 9:00, l'acquisto
 1:24 Trappola 1 · Il conto non esiste
 2:27 Trappola 2 · Il minuto peggiore
-4:01 Trappola 3 · L'obiettivo che ti fa rischiare
-5:45 Trappola 4 · Il cliente perfetto
-6:45 Trappola 5 · Le regole con gli aggettivi
-7:46 Trappola 6 · Quando vinci tu, per loro è un costo
-9:05 Trappola 7 · Chi te l'ha consigliata
-10:03 Il conto della serva
-10:33 Cosa fanno i 7
-11:56 Le due strade (e il prossimo video lo scegli tu)
+3:53 Trappola 3 · L'obiettivo che ti fa rischiare
+5:37 Trappola 4 · Il cliente perfetto
+6:37 Trappola 5 · Le regole con gli aggettivi
+7:38 Trappola 6 · Quando vinci tu, per loro è un costo
+8:57 Trappola 7 · Chi te l'ha consigliata
+9:55 Il conto della serva
+10:25 Cosa fanno i 7
+11:48 Le due strade (e il prossimo video lo scegli tu)
 
 ▶ Come ho iniziato (10 anni di trading e le 12 cose che ho imparato): https://youtu.be/RIrsWRF3X8w
 ▶ Il trailer di questo film: https://youtu.be/mN1kIxE9VMM
@@ -77,6 +77,6 @@ A o B? A: metto a confronto le regole di tre prop firm, aggettivi compresi. B: u
 ## Impostazioni (come L0 e trailer)
 - NON per bambini · Contenuti alterati o sintetici: SÌ · Promozione a pagamento: NO (i link affiliati sono dichiarati in descrizione).
 - Lingua: Italiano (trappola «Kikuyu» nel menu) · Categoria: Istruzione.
-- Schermata finale (ultimi ~10 s, da 12:22): video consigliato = L0 «come ho iniziato» (C dice «la mia storia è nel video qui a fianco») + iscriviti.
+- Schermata finale (ultimi ~10 s, da 12:14): video consigliato = L0 «come ho iniziato» (C dice «la mia storia è nel video qui a fianco») + iscriviti.
 - Caricamento da Chrome a pezzi (memoria reference-youtube-l0-pipeline).
 - Prima di caricare: la prop firm di Marco non compare mai (controllato: né voce né descrizione).

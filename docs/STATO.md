@@ -350,3 +350,22 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - Copia del reel instagram.com/reel/DgDfpJusokh con C: `produzione/BF-blackfriday/finale/BF-blackfriday-FINALE.mp4` (53,5 s), didascalie e testi ManyChat in `BF-blackfriday/didascalia.md`. Remotion `BF1BLACK.tsx`, formato SchedeC.
 - Labiale con **Pruna P-Video 1080p** (`script/pruna_pvideo.py`): TRAPPOLA P-Video esce al massimo a **20 s** → voce tagliata in 3 pezzi (0-18,15 / 18,15-33,35 / 33,35-fine) e rincollati. Set nuovo con `script/pruna_pimage.py` (P-Image-Edit): Runpod dà 402, saldo finito.
 - ManyChat «BLACK FRIDAY» da creare (Chrome non è loggato su ManyChat) disattivando la vecchia automazione; «3 giorni gratis» da verificare su higgsfield.ai prima di sponsorizzare.
+
+## 22-23/11/2026 — P2 FILM v3: nuova trappola 2 e stile unico alla Hormozi (FINITO 23/11 03:08, NON caricato)
+- **Trappola 2 rifatta da zero** («Il minuto peggiore»): il trailing drawdown vale solo per alcune challenge, quindi ora la trappola è il limite di perdita giornaliero, che conta anche le posizioni aperte e la mezzanotte del server della firm. Fonte: pagine ufficiali «Maximum Daily Loss» di una grande firm europea, mai nominata. Copione `film/t2nuova/COPIONE-T2.md`, voce ElevenLabs Julian v4 dal sito, pause tagliate con `t2nuova/voce/taglia_t2.py` (`voce-v2.wav`, 84,8 s). Composizione `remotion-c/src/P2T2.tsx`.
+- **Stile unico** (Marco 22/11: «troppi stili mescolati, musichetta da AI, sembra AI slop»): tutto bianco come Hormozi.
+  - C in camera quasi sempre, con note e doodle a pennarello accanto.
+  - Grafiche solo bianche; numeri e tabelle coperti da «?» finché la voce non ci arriva.
+  - Niente manichini Dreamina, sfondi scuri, flash o font pixel.
+  - Regole in memoria `feedback-stile-unico-hormozi`.
+  - Composizione `remotion-c/src/P2V3.tsx`, che include P2T2; public `public-p2v3`, con link fisici per non occupare disco.
+- **Nuovi look di C**: foto modificate con Pruna `p-image-edit` (0,01 $ l'una, `script/pruna_edit.py`): `film/look/` pennarello, cappello, tazza, tre quarti, largo.
+  - 26 nuove inquadrature parlate P-Video 1080p: `film/c720/scene_v3.py` → `film/c720/v3/`, 145 s ≈ 5,8 $.
+  - Trappola 2: 15 inquadrature in `t2nuova/c/` (`t2nuova/scene_c.py`), ≈ 2,2 $.
+- **Pruna**: chiave nella variabile utente `PRUNA_API_KEY` (`script/salva_chiave_pruna.ps1`), script `script/pruna_pvideo.py`. Spesa ≈ 8 + 8 $ dei 20 $ di bonus: ne restano circa 4.
+- **Runpod**: saldo a zero (402).
+- **Dreamina**: restano circa 300 crediti.
+- **Musica**: «Misdirection» (The Grey Room / Density & Time), presa dalla Raccolta audio di YouTube (uso libero, senza attribuzione), in `film/musica/`. È bassa e si abbassa ancora quando parla C (sidechain). Chrome ha bloccato i download multipli: le altre 3 tracce scelte (No Rush, Late Truth, Twinkle) non sono scese.
+- **Render**: `film/finale/monta_v4.sh` lavora a blocchi da 1500 frame, perché il render unico si chiudeva per RAM esaurita (8 GB). Poi aggiunge la musica, porta a 1440p e scrive `finale/P2-film-YOUTUBE-1440p-v3.mp4` (12:24) più `anteprima-P2-v3.mp4`.
+- Testi, titoli, copertine (`copertina2/`) e capitoli aggiornati in `film/YOUTUBE-METADATI.md`. Da caricare e programmare SOLO dopo l'ok di Marco.
+- Disco quasi pieno (1-2 GB liberi): cancellati `build-p2f` e le copie `public-p2f/p2f/{clip,labiale,musica.wav}`, che si possono rigenerare dagli originali in `film/`.
