@@ -64,3 +64,5 @@ Un file per corso, ogni lezione con un blocco «Per FORGE»:
   - le «balene»: scuole di certificazione per PT, catene di palestre e una versione «FORGE per centri» con più trainer (Organizzazione 4, Mindset 5).
 
 Si collega a [[project-forge-prodotto]], [[project-forge-social]] e [[reference-alex-theory-marketing]].
+
+Affiancato dal libro di Cialdini «Le armi della persuasione» (24/11/2026): [[reference-cialdini-persuasione]].
