@@ -397,3 +397,9 @@ Aggiornare a ogni pubblicazione. Publora: solo `instagram-17841457719707733`.
 - A27: labiale P-Video in 4 pezzi (2 rifatti perché C restava fermo/zoomava). Script nuovo `script/controlla_labiale.py`. NON programmato.
 - 23/11 ~14:11 (Marco): A23 pubblicato SUBITO su TikTok via Publora (publishNow, era programmato il 25/11), così TikTok ha lo stesso reel uscito oggi su Instagram. Il 25/11 su TikTok resta libero: rimettere A24 o A25.
 - 23/11 sera PROGRAMMATI: **A27 Instagram gio 26/11 12:30** (web, copertina A27-irpef-copertina.jpg, etichetta IA, file leggero `A27-instagram.mp4`). **TikTok Publora**: A24 mer 25/11 12:30 (6b04b3c61044eea68163e586), A27 gio 26/11 12:30 (6b04b3c71044eea68163e5c4), A22 resta mar 24/11; file con copertina in `tiktok-leggeri/cop/A24-ttc.mp4`, `A27-ttc.mp4`. Verificato: BF3 su IG ha «Contenuti IA» e la didascalia con @higgsfield.ai. Nel calendario IG ci sono anche caroselli «Trappola 1-4» e «Su 100…» alle 18:00/14:00 dal 24 al 28/11, programmati da un'altra sessione.
+
+## 24/11/2026 — Riposizionamento del canale YouTube
+- Diagnosi e azioni in `docs/youtube/RIPOSIZIONAMENTO-24-11.md`. In breve: il pubblico che YouTube associa al canale è «soldi degli italiani» (Short da 1.000-1.600 views); prop firm e trading fanno 5-14 views, il film P2 ha avuto 33 impressioni.
+- Fatto: descrizione e parole chiave del canale, impostazioni predefinite dei caricamenti, playlist Favorites in privato, 3 playlist tematiche nella home, MI PRESENTO rinominato «10 anni di trading in 12 lezioni: risparmi bruciati, prop firm e cosa ho capito», riga SEO in cima alla descrizione del film P2.
+- Short prop firm diradati: restano 25/11, 28/11, 01/12; spostati a 4, 7, 10, 13, 16, 19 dicembre alle 18:00. Buchi da riempire con Short sui soldi: 26, 27, 29, 30 novembre e 2 dicembre.
+- Prossimo video lungo: tema soldi degli italiani (busta paga 2027, pensione, TFR, ISEE), non prop firm.
